@@ -1,0 +1,82 @@
+name: Update World Cup Scores
+
+on:
+  schedule:
+    # Runs every 10 minutes, but only during match window (16:00-08:00 UTC = 13:00-05:00 AR)
+    # GitHub Actions cron is UTC. We run every 10 min across the full day window
+    # and the script itself decides whether AR time is within match hours.
+    - cron: '*/10 * * * *'
+  workflow_dispatch: {}
+
+jobs:
+  update-scores:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Check if within match window (13:00-05:00 AR)
+        id: check_window
+        run: |
+          AR_HOUR=$(TZ="America/Argentina/Buenos_Aires" date +%H)
+          echo "Current AR hour: $AR_HOUR"
+          # Match window: 13:00 to 23:59, OR 00:00 to 05:00
+          if [ "$AR_HOUR" -ge 13 ] || [ "$AR_HOUR" -lt 5 ]; then
+            echo "in_window=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "in_window=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Fetch World Cup scores
+        if: steps.check_window.outputs.in_window == 'true'
+        env:
+          API_KEY: ${{ secrets.API_FOOTBALL_KEY }}
+        run: |
+          # FIFA World Cup 2026 league id = 1 (verify in api docs), season = 2026
+          # Get today's fixtures for the World Cup
+          curl -s -H "x-apisports-key: $API_KEY" \
+            "https://v3.football.api-sports.io/fixtures?league=1&season=2026" \
+            -o raw_fixtures.json
+
+          # Parse into our simplified scores.json format using python
+          python3 << 'EOF'
+          import json
+          from datetime import datetime
+
+          with open('raw_fixtures.json') as f:
+              data = json.load(f)
+
+          scores = {}
+          for fx in data.get('response', []):
+              fixture = fx['fixture']
+              teams = fx['teams']
+              goals = fx['goals']
+              home = teams['home']['name'].upper()
+              away = teams['away']['name'].upper()
+              key = home + '-' + away
+              scores[key] = {
+                  'homeGoals': goals['home'],
+                  'awayGoals': goals['away'],
+                  'status': fixture['status']['short'],  # NS, 1H, HT, 2H, FT, etc
+                  'elapsed': fixture['status'].get('elapsed'),
+              }
+
+          output = {
+              'updated': datetime.utcnow().isoformat() + 'Z',
+              'matches': scores
+          }
+
+          with open('scores.json', 'w') as f:
+              json.dump(output, f, indent=2)
+
+          print(f"Wrote {len(scores)} matches to scores.json")
+          EOF
+
+      - name: Commit and push if changed
+        if: steps.check_window.outputs.in_window == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add scores.json
+          git diff --staged --quiet || git commit -m "Update scores [automated]"
+          git push
