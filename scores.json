@@ -1,12 +1,6 @@
 {
-  "updated": "2026-06-19T01:27:19.686868Z",
+  "updated": "2026-06-19T06:11:43.162364Z",
   "matches": {
-    "MEXICO-SOUTH KOREA": {
-      "homeGoals": 0,
-      "awayGoals": 0,
-      "status": "1H",
-      "elapsed": 27
-    },
     "MEXICO-SOUTH AFRICA": {
       "homeGoals": 2,
       "awayGoals": 0,
@@ -165,6 +159,12 @@
     },
     "CANADA-QATAR": {
       "homeGoals": 6,
+      "awayGoals": 0,
+      "status": "FT",
+      "elapsed": 90
+    },
+    "MEXICO-SOUTH KOREA": {
+      "homeGoals": 1,
       "awayGoals": 0,
       "status": "FT",
       "elapsed": 90
