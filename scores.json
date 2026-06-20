@@ -1,13 +1,22 @@
 {
-  "updated": "2026-06-20T20:20:28.262809Z",
+  "updated": "2026-06-20T20:30:44.713474Z",
   "matches": {
     "GERMANY-IVORY COAST": {
       "homeGoals": 0,
-      "awayGoals": 0,
+      "awayGoals": 1,
       "status": "1H",
-      "elapsed": 20,
+      "elapsed": 31,
       "kickoffUTC": "2026-06-20T20:00:00+00:00",
-      "events": []
+      "events": [
+        {
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "player": "F. Kessie",
+          "team": "IVORY COAST",
+          "minute": 30,
+          "extra": null
+        }
+      ]
     },
     "MEXICO-SOUTH AFRICA": {
       "homeGoals": 2,
