@@ -90,6 +90,10 @@
   }
   .detail-row.detail-away .detail-minute { text-align:right; }
   .detail-player { color:#1a1a2e; font-weight:600; }
+  .player-link {
+    color:#003087; text-decoration:none; border-bottom:1px dotted #003087;
+  }
+  .player-link:hover { color:#CC0000; border-bottom-color:#CC0000; }
   .detail-empty { font-size:11px; color:#94a3b8; font-style:italic; text-align:center; padding:6px 0; }
   .match-row { display:flex; align-items:center; justify-content:space-between; gap:10px; }
   .team { display:flex; align-items:center; gap:8px; flex:1; min-width:0; }
@@ -674,6 +678,11 @@ function buildMatchCard(m) {
   );
 }
 
+function googleSearchLink(playerName, teamName) {
+  const query = encodeURIComponent(playerName + ' ' + esName(teamName) + ' futbolista');
+  return 'https://www.google.com/search?q=' + query;
+}
+
 function buildEventsDetail(events, homeTeam, awayTeam) {
   const goals = events.filter(e => e.type === 'Goal');
   const cards = events.filter(e => e.type === 'Card');
@@ -687,9 +696,13 @@ function buildEventsDetail(events, homeTeam, awayTeam) {
       const minuteStr = g.minute + (g.extra ? '+' + g.extra : '') + "'";
       const ownGoal = g.detail === 'Own Goal' ? ' (en contra)' : '';
       const penalty = g.detail === 'Penalty' ? ' (penal)' : '';
+      const playerName = g.player || 'Desconocido';
+      const playerHtml = g.player
+        ? '<a href="' + googleSearchLink(playerName, g.team) + '" target="_blank" rel="noopener" class="player-link" onclick="event.stopPropagation()">' + playerName + '</a>'
+        : playerName;
       html += '<div class="detail-row ' + sideClass + '">' +
         '<span class="detail-minute">' + minuteStr + '</span>' +
-        '<span class="detail-player">' + (g.player || 'Desconocido') + ownGoal + penalty + '</span>' +
+        '<span class="detail-player">' + playerHtml + ownGoal + penalty + '</span>' +
       '</div>';
     });
   }
@@ -700,9 +713,13 @@ function buildEventsDetail(events, homeTeam, awayTeam) {
       const sideClass = c.team === homeTeam ? 'detail-home' : 'detail-away';
       const minuteStr = c.minute + (c.extra ? '+' + c.extra : '') + "'";
       const cardEmoji = c.detail === 'Red Card' ? '\u{1F7E5}' : '\u{1F7E8}';
+      const playerName = c.player || 'Desconocido';
+      const playerHtml = c.player
+        ? '<a href="' + googleSearchLink(playerName, c.team) + '" target="_blank" rel="noopener" class="player-link" onclick="event.stopPropagation()">' + playerName + '</a>'
+        : playerName;
       html += '<div class="detail-row ' + sideClass + '">' +
         '<span class="detail-minute">' + minuteStr + '</span>' +
-        '<span class="detail-player">' + cardEmoji + ' ' + (c.player || 'Desconocido') + '</span>' +
+        '<span class="detail-player">' + cardEmoji + ' ' + playerHtml + '</span>' +
       '</div>';
     });
   }
