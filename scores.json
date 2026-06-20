@@ -1,31 +1,6 @@
 {
-  "updated": "2026-06-20T18:00:46.211272Z",
+  "updated": "2026-06-20T19:20:32.092950Z",
   "matches": {
-    "NETHERLANDS-SWEDEN": {
-      "homeGoals": 2,
-      "awayGoals": 0,
-      "status": "HT",
-      "elapsed": 45,
-      "kickoffUTC": "2026-06-20T17:00:00+00:00",
-      "events": [
-        {
-          "type": "Goal",
-          "detail": "Normal Goal",
-          "player": "B. Brobbey",
-          "team": "NETHERLANDS",
-          "minute": 5,
-          "extra": null
-        },
-        {
-          "type": "Goal",
-          "detail": "Normal Goal",
-          "player": "B. Brobbey",
-          "team": "NETHERLANDS",
-          "minute": 17,
-          "extra": null
-        }
-      ]
-    },
     "MEXICO-SOUTH AFRICA": {
       "homeGoals": 2,
       "awayGoals": 0,
@@ -1766,6 +1741,87 @@
           "player": "E. Elmali",
           "team": "TURKIYE",
           "minute": 71,
+          "extra": null
+        }
+      ]
+    },
+    "NETHERLANDS-SWEDEN": {
+      "homeGoals": 5,
+      "awayGoals": 1,
+      "status": "FT",
+      "elapsed": 90,
+      "kickoffUTC": "2026-06-20T17:00:00+00:00",
+      "events": [
+        {
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "player": "B. Brobbey",
+          "team": "NETHERLANDS",
+          "minute": 5,
+          "extra": null
+        },
+        {
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "player": "B. Brobbey",
+          "team": "NETHERLANDS",
+          "minute": 17,
+          "extra": null
+        },
+        {
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "player": "C. Gakpo",
+          "team": "NETHERLANDS",
+          "minute": 47,
+          "extra": null
+        },
+        {
+          "type": "Card",
+          "detail": "Yellow Card",
+          "player": "G. Gudmundsson",
+          "team": "SWEDEN",
+          "minute": 53,
+          "extra": null
+        },
+        {
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "player": "C. Gakpo",
+          "team": "NETHERLANDS",
+          "minute": 54,
+          "extra": null
+        },
+        {
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "player": "A. Elanga",
+          "team": "SWEDEN",
+          "minute": 59,
+          "extra": null
+        },
+        {
+          "type": "Card",
+          "detail": "Yellow Card",
+          "player": "Y. Ayari",
+          "team": "SWEDEN",
+          "minute": 75,
+          "extra": null
+        },
+        {
+          "type": "Card",
+          "detail": "Yellow Card",
+          "player": "L. Bergvall",
+          "team": "SWEDEN",
+          "minute": 80,
+          "extra": null
+        },
+        {
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "player": "C. Summerville",
+          "team": "NETHERLANDS",
+          "minute": 89,
           "extra": null
         }
       ]
