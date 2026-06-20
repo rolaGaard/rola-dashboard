@@ -314,6 +314,12 @@
   }
   .search-results-label b { color:#FFD700; }
 
+  .lang-select {
+    background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.12);
+    color:#fff; font-size:13px; font-weight:700; border-radius:8px;
+    padding:8px 10px; cursor:pointer; flex-shrink:0;
+  }
+  .lang-select:hover { background:rgba(255,255,255,0.12); }
   .fullscreen-btn {
     width:68px; height:68px; border-radius:14px;
     background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.12);
@@ -348,12 +354,19 @@
     <div class="header-icon">🏆</div>
     <div>
       <div class="header-title">Mundial 2026 <span class="by">by rolaGaard</span></div>
-      <div class="header-sub">USA · Canadá · México</div>
+      <div class="header-sub" id="header-sub">USA · Canadá · México</div>
     </div>
   </div>
   <div style="display:flex; align-items:center; gap:14px;">
+    <select id="lang-select" class="lang-select" aria-label="Idioma / Language">
+      <option value="es">🇦🇷 ES</option>
+      <option value="en">🇬🇧 EN</option>
+      <option value="pt">🇧🇷 PT</option>
+      <option value="de">🇩🇪 DE</option>
+      <option value="nl">🇳🇱 NL</option>
+    </select>
     <div>
-      <div class="clock-label">Hora Argentina</div>
+      <div class="clock-label" id="hora-local-label">Hora Argentina</div>
       <div class="clock-value" id="clock">--:--</div>
     </div>
     <button id="install-btn" class="fullscreen-btn install-btn" aria-label="Instalar app" style="display:none;">📲</button>
@@ -362,7 +375,7 @@
 </div>
 
 <div id="ios-install-banner" class="ios-install-banner" style="display:none;">
-  <div class="ios-banner-text">
+  <div class="ios-banner-text" id="ios-banner-text">
     📲 Para instalar: tocá <b>Compartir</b> (□↑) y luego <b>"Agregar a pantalla de inicio"</b>
   </div>
   <button id="ios-banner-close" class="ios-banner-close">✕</button>
@@ -378,12 +391,12 @@
 </div>
 
 <div class="stats-bar" id="stats-filters">
-  <button class="stat-card active" data-filter="all"><div class="stat-icon">📋</div><div class="stat-num" id="stat-total">0</div><div class="stat-label">Todos</div></button>
-  <button class="stat-card" data-filter="finished"><div class="stat-icon">✅</div><div class="stat-num" id="stat-finished">0</div><div class="stat-label">Jugados</div></button>
-  <button class="stat-card" data-filter="today"><div class="stat-icon">📅</div><div class="stat-num" id="stat-today">0</div><div class="stat-label">Hoy</div></button>
-  <button class="stat-card" data-filter="live"><div class="stat-icon">🔴</div><div class="stat-num" id="stat-live">0</div><div class="stat-label">En vivo</div></button>
-  <button class="stat-card" data-filter="scheduled"><div class="stat-icon">🕐</div><div class="stat-num" id="stat-scheduled">0</div><div class="stat-label">Próximos</div></button>
-  <button class="stat-card" data-filter="fixture"><div class="stat-icon fixture-icon">🏆</div><div class="stat-label">Fixture</div></button>
+  <button class="stat-card active" data-filter="all"><div class="stat-icon">📋</div><div class="stat-num" id="stat-total">0</div><div class="stat-label" id="label-all">Todos</div></button>
+  <button class="stat-card" data-filter="finished"><div class="stat-icon">✅</div><div class="stat-num" id="stat-finished">0</div><div class="stat-label" id="label-finished">Jugados</div></button>
+  <button class="stat-card" data-filter="today"><div class="stat-icon">📅</div><div class="stat-num" id="stat-today">0</div><div class="stat-label" id="label-today">Hoy</div></button>
+  <button class="stat-card" data-filter="live"><div class="stat-icon">🔴</div><div class="stat-num" id="stat-live">0</div><div class="stat-label" id="label-live">En vivo</div></button>
+  <button class="stat-card" data-filter="scheduled"><div class="stat-icon">🕐</div><div class="stat-num" id="stat-scheduled">0</div><div class="stat-label" id="label-scheduled">Próximos</div></button>
+  <button class="stat-card" data-filter="fixture"><div class="stat-icon fixture-icon">🏆</div><div class="stat-label" id="label-fixture">Fixture</div></button>
 </div>
 
 <div class="matches-container" id="matches"></div>
@@ -400,7 +413,179 @@
 
 <button id="scroll-top-btn" class="scroll-top-btn" aria-label="Volver arriba">↑</button>
 
+
 <script>
+// ── i18n ───────────────────────────────────────────────────────────────────
+const I18N = {
+  es: {
+    headerSub: 'USA · Canadá · México',
+    searchPlaceholder: 'Buscar país o código FIFA (ej: Argentina, ARG...)',
+    horaLocal: 'Hora Argentina',
+    filterAll: 'Todos', filterFinished: 'Jugados', filterToday: 'Hoy',
+    filterLive: 'En vivo', filterScheduled: 'Próximos', filterFixture: 'Fixture',
+    grupo: 'GRUPO',
+    finalizado: 'FINALIZADO', enVivo: 'EN VIVO', primerTiempo: '1ER TIEMPO',
+    segundoTiempo: '2DO TIEMPO', entretiempo: 'ENTRETIEMPO', tiempoExtra: 'TIEMPO EXTRA',
+    penales: 'PENALES', sinDatos: 'S/D',
+    detalleMostrar: '▼ detalle', detalleOcultar: '▲ ocultar',
+    goles: '⚽ GOLES', tarjetas: '🟨 TARJETAS',
+    enContra: ' (en contra)', penal: ' (penal)', desconocido: 'Desconocido',
+    sinEventos: 'Sin eventos registrados todavía',
+    noHayPartidos: 'No hay partidos en esta vista',
+    noEncontrados: 'No se encontraron partidos para',
+    enEstaVista: 'en esta vista',
+    partidoEncontrado: 'partido encontrado', partidosEncontrados: 'partidos encontrados',
+    porDefinir: 'Por definir',
+    campeon: 'CAMPEÓN', tercerPuesto: '3ER PUESTO',
+    octavos: 'OCTAVOS', cuartos: 'CUARTOS', semis: 'SEMIS', semifinales: 'SEMIFINALES',
+    cuartosDeFinal: 'CUARTOS DE FINAL', octavosDeFinal: 'OCTAVOS DE FINAL',
+    bracketNote: 'El cuadro de eliminación se completa automáticamente cuando termine la fase de grupos (28 de junio)',
+    clasificadosTitle: 'CLASIFICADOS A OCTAVOS (se completa por grupo a medida que termina)',
+    datosFooter: 'Datos: API-Football · Última actualización:', hsAR: 'hs AR',
+    reportarProblema: '🐞 Reportar un problema',
+    instalarApp: 'Instalar app', pantallaCompleta: 'Pantalla completa', salirPantallaCompleta: 'Salir de pantalla completa',
+    volverArriba: 'Volver arriba',
+    iosInstallText: '📲 Para instalar: tocá <b>Compartir</b> (□↑) y luego <b>"Agregar a pantalla de inicio"</b>',
+    tituloMundo: 'títulos mundiales', tituloMundoSingular: 'título mundial',
+    pj: 'PJ', g: 'G', e: 'E', p: 'P', dg: 'DG', pts: 'PTS',
+  },
+  en: {
+    headerSub: 'USA · Canada · Mexico',
+    searchPlaceholder: 'Search country or FIFA code (e.g. Argentina, ARG...)',
+    horaLocal: 'Argentina Time',
+    filterAll: 'All', filterFinished: 'Finished', filterToday: 'Today',
+    filterLive: 'Live', filterScheduled: 'Upcoming', filterFixture: 'Fixture',
+    grupo: 'GROUP',
+    finalizado: 'FINISHED', enVivo: 'LIVE', primerTiempo: '1ST HALF',
+    segundoTiempo: '2ND HALF', entretiempo: 'HALFTIME', tiempoExtra: 'EXTRA TIME',
+    penales: 'PENALTIES', sinDatos: 'N/A',
+    detalleMostrar: '▼ details', detalleOcultar: '▲ hide',
+    goles: '⚽ GOALS', tarjetas: '🟨 CARDS',
+    enContra: ' (own goal)', penal: ' (penalty)', desconocido: 'Unknown',
+    sinEventos: 'No events recorded yet',
+    noHayPartidos: 'No matches in this view',
+    noEncontrados: 'No matches found for',
+    enEstaVista: 'in this view',
+    partidoEncontrado: 'match found', partidosEncontrados: 'matches found',
+    porDefinir: 'TBD',
+    campeon: 'CHAMPION', tercerPuesto: '3RD PLACE',
+    octavos: 'ROUND OF 32', cuartos: 'QUARTERS', semis: 'SEMIS', semifinales: 'SEMIFINALS',
+    cuartosDeFinal: 'QUARTERFINALS', octavosDeFinal: 'ROUND OF 32',
+    bracketNote: 'The knockout bracket fills in automatically once the group stage ends (June 28)',
+    clasificadosTitle: 'QUALIFIED FOR ROUND OF 32 (fills in per group as it finishes)',
+    datosFooter: 'Data: API-Football · Last update:', hsAR: 'AR time',
+    reportarProblema: '🐞 Report a problem',
+    instalarApp: 'Install app', pantallaCompleta: 'Fullscreen', salirPantallaCompleta: 'Exit fullscreen',
+    volverArriba: 'Back to top',
+    iosInstallText: '📲 To install: tap <b>Share</b> (□↑) then <b>"Add to Home Screen"</b>',
+    tituloMundo: 'World Cup titles', tituloMundoSingular: 'World Cup title',
+    pj: 'P', g: 'W', e: 'D', p: 'L', dg: 'GD', pts: 'PTS',
+  },
+  pt: {
+    headerSub: 'EUA · Canadá · México',
+    searchPlaceholder: 'Buscar país ou código FIFA (ex: Argentina, ARG...)',
+    horaLocal: 'Horário Argentina',
+    filterAll: 'Todos', filterFinished: 'Encerrados', filterToday: 'Hoje',
+    filterLive: 'Em jogo', filterScheduled: 'Próximos', filterFixture: 'Tabela',
+    grupo: 'GRUPO',
+    finalizado: 'ENCERRADO', enVivo: 'EM JOGO', primerTiempo: '1º TEMPO',
+    segundoTiempo: '2º TEMPO', entretiempo: 'INTERVALO', tiempoExtra: 'PRORROGAÇÃO',
+    penales: 'PÊNALTIS', sinDatos: 'S/D',
+    detalleMostrar: '▼ detalhes', detalleOcultar: '▲ ocultar',
+    goles: '⚽ GOLS', tarjetas: '🟨 CARTÕES',
+    enContra: ' (contra)', penal: ' (pênalti)', desconocido: 'Desconhecido',
+    sinEventos: 'Nenhum evento registrado ainda',
+    noHayPartidos: 'Nenhuma partida nesta visualização',
+    noEncontrados: 'Nenhuma partida encontrada para',
+    enEstaVista: 'nesta visualização',
+    partidoEncontrado: 'partida encontrada', partidosEncontrados: 'partidas encontradas',
+    porDefinir: 'A definir',
+    campeon: 'CAMPEÃO', tercerPuesto: '3º LUGAR',
+    octavos: 'OITAVAS', cuartos: 'QUARTAS', semis: 'SEMIS', semifinales: 'SEMIFINAIS',
+    cuartosDeFinal: 'QUARTAS DE FINAL', octavosDeFinal: 'OITAVAS DE FINAL',
+    bracketNote: 'O mata-mata é completado automaticamente quando a fase de grupos terminar (28 de junho)',
+    clasificadosTitle: 'CLASSIFICADOS PARA AS OITAVAS (completado por grupo conforme termina)',
+    datosFooter: 'Dados: API-Football · Última atualização:', hsAR: 'horário AR',
+    reportarProblema: '🐞 Reportar um problema',
+    instalarApp: 'Instalar app', pantallaCompleta: 'Tela cheia', salirPantallaCompleta: 'Sair da tela cheia',
+    volverArriba: 'Voltar ao topo',
+    iosInstallText: '📲 Para instalar: toque em <b>Compartilhar</b> (□↑) e depois <b>"Adicionar à Tela de Início"</b>',
+    tituloMundo: 'títulos mundiais', tituloMundoSingular: 'título mundial',
+    pj: 'PJ', g: 'V', e: 'E', p: 'D', dg: 'SG', pts: 'PTS',
+  },
+  de: {
+    headerSub: 'USA · Kanada · Mexiko',
+    searchPlaceholder: 'Land oder FIFA-Code suchen (z.B. Argentinien, ARG...)',
+    horaLocal: 'Argentinien-Zeit',
+    filterAll: 'Alle', filterFinished: 'Beendet', filterToday: 'Heute',
+    filterLive: 'Live', filterScheduled: 'Kommend', filterFixture: 'Turnierplan',
+    grupo: 'GRUPPE',
+    finalizado: 'BEENDET', enVivo: 'LIVE', primerTiempo: '1. HALBZEIT',
+    segundoTiempo: '2. HALBZEIT', entretiempo: 'HALBZEITPAUSE', tiempoExtra: 'VERLÄNGERUNG',
+    penales: 'ELFMETER', sinDatos: 'K.A.',
+    detalleMostrar: '▼ Details', detalleOcultar: '▲ ausblenden',
+    goles: '⚽ TORE', tarjetas: '🟨 KARTEN',
+    enContra: ' (Eigentor)', penal: ' (Elfmeter)', desconocido: 'Unbekannt',
+    sinEventos: 'Noch keine Ereignisse erfasst',
+    noHayPartidos: 'Keine Spiele in dieser Ansicht',
+    noEncontrados: 'Keine Spiele gefunden für',
+    enEstaVista: 'in dieser Ansicht',
+    partidoEncontrado: 'Spiel gefunden', partidosEncontrados: 'Spiele gefunden',
+    porDefinir: 'Noch offen',
+    campeon: 'MEISTER', tercerPuesto: '3. PLATZ',
+    octavos: 'ACHTELFINALE', cuartos: 'VIERTELFINALE', semis: 'HALBFINALE', semifinales: 'HALBFINALE',
+    cuartosDeFinal: 'VIERTELFINALE', octavosDeFinal: 'ACHTELFINALE',
+    bracketNote: 'Der K.O.-Plan wird automatisch ausgefüllt, sobald die Gruppenphase endet (28. Juni)',
+    clasificadosTitle: 'QUALIFIZIERT FÜR DAS ACHTELFINALE (wird pro Gruppe ausgefüllt)',
+    datosFooter: 'Daten: API-Football · Letzte Aktualisierung:', hsAR: 'Uhr AR',
+    reportarProblema: '🐞 Problem melden',
+    instalarApp: 'App installieren', pantallaCompleta: 'Vollbild', salirPantallaCompleta: 'Vollbild beenden',
+    volverArriba: 'Nach oben',
+    iosInstallText: '📲 Zum Installieren: <b>Teilen</b> (□↑) tippen, dann <b>"Zum Home-Bildschirm"</b>',
+    tituloMundo: 'Weltmeistertitel', tituloMundoSingular: 'Weltmeistertitel',
+    pj: 'Sp', g: 'S', e: 'U', p: 'N', dg: 'TD', pts: 'Pkt',
+  },
+  nl: {
+    headerSub: 'VS · Canada · Mexico',
+    searchPlaceholder: 'Zoek land of FIFA-code (bijv. Argentinië, ARG...)',
+    horaLocal: 'Argentijnse tijd',
+    filterAll: 'Alle', filterFinished: 'Gespeeld', filterToday: 'Vandaag',
+    filterLive: 'Live', filterScheduled: 'Aankomend', filterFixture: 'Schema',
+    grupo: 'GROEP',
+    finalizado: 'AFGELOPEN', enVivo: 'LIVE', primerTiempo: '1E HELFT',
+    segundoTiempo: '2E HELFT', entretiempo: 'RUST', tiempoExtra: 'VERLENGING',
+    penales: 'PENALTY\'S', sinDatos: 'N/B',
+    detalleMostrar: '▼ details', detalleOcultar: '▲ verbergen',
+    goles: '⚽ DOELPUNTEN', tarjetas: '🟨 KAARTEN',
+    enContra: ' (eigen doelpunt)', penal: ' (penalty)', desconocido: 'Onbekend',
+    sinEventos: 'Nog geen gebeurtenissen geregistreerd',
+    noHayPartidos: 'Geen wedstrijden in deze weergave',
+    noEncontrados: 'Geen wedstrijden gevonden voor',
+    enEstaVista: 'in deze weergave',
+    partidoEncontrado: 'wedstrijd gevonden', partidosEncontrados: 'wedstrijden gevonden',
+    porDefinir: 'Nog te bepalen',
+    campeon: 'KAMPIOEN', tercerPuesto: '3E PLAATS',
+    octavos: 'ACHTSTE FINALES', cuartos: 'KWARTFINALES', semis: 'HALVE FINALES', semifinales: 'HALVE FINALES',
+    cuartosDeFinal: 'KWARTFINALES', octavosDeFinal: 'ACHTSTE FINALES',
+    bracketNote: 'Het knock-outschema wordt automatisch aangevuld zodra de groepsfase is afgelopen (28 juni)',
+    clasificadosTitle: 'GEKWALIFICEERD VOOR ACHTSTE FINALES (per groep aangevuld zodra deze afloopt)',
+    datosFooter: 'Gegevens: API-Football · Laatste update:', hsAR: 'AR-tijd',
+    reportarProblema: '🐞 Probleem melden',
+    instalarApp: 'App installeren', pantallaCompleta: 'Volledig scherm', salirPantallaCompleta: 'Volledig scherm sluiten',
+    volverArriba: 'Terug naar boven',
+    iosInstallText: '📲 Om te installeren: tik op <b>Delen</b> (□↑) en dan <b>"Voeg toe aan beginscherm"</b>',
+    tituloMundo: 'wereldtitels', tituloMundoSingular: 'wereldtitel',
+    pj: 'G', g: 'W', e: 'G', p: 'V', dg: 'DV', pts: 'Pt',
+  },
+};
+
+let currentLang = localStorage.getItem('wcLang');
+if (!currentLang) {
+  const browserLang = (navigator.language || 'es').slice(0, 2).toLowerCase();
+  currentLang = I18N[browserLang] ? browserLang : 'es';
+}
+function t(key) { return (I18N[currentLang] && I18N[currentLang][key]) || I18N.es[key] || key; }
+
 const FLAGS = {
   'MEXICO':'🇲🇽','SOUTH AFRICA':'🇿🇦','CANADA':'🇨🇦','BOSNIA & HERZEGOVINA':'🇧🇦','SOUTH KOREA':'🇰🇷',
   'CZECHIA':'🇨🇿','USA':'🇺🇸','PARAGUAY':'🇵🇾','QATAR':'🇶🇦','SWITZERLAND':'🇨🇭',
@@ -557,7 +742,8 @@ const WORLD_CUP_TITLES = {
 function worldCupStars(teamName) {
   const titles = WORLD_CUP_TITLES[teamName] || 0;
   if (titles === 0) return '<span class="wc-stars wc-stars-empty">&nbsp;</span>';
-  return '<span class="wc-stars" title="' + titles + ' título' + (titles !== 1 ? 's' : '') + ' mundial' + (titles !== 1 ? 'es' : '') + '">' + '\u2B50'.repeat(titles) + '</span>';
+  const label = titles === 1 ? t('tituloMundoSingular') : t('tituloMundo');
+  return '<span class="wc-stars" title="' + titles + ' ' + label + '">' + '\u2B50'.repeat(titles) + '</span>';
 }
 function countryCode(name){ return (COUNTRY_CODES[name] || [name.slice(0,3)])[0]; }
 function matchKey(home, away){ return stripAccents(home) + '-' + stripAccents(away); }
@@ -574,9 +760,9 @@ function toARDateStr(utcStr){
 function isLiveStatus(s){ return ['1H','2H','HT','ET','BT','P'].includes(s); }
 function isFinishedStatus(s){ return ['FT','AET','PEN'].includes(s); }
 function statusLabel(apiStatus, elapsed){
-  const liveStates = {'1H':'1ER TIEMPO','2H':'2DO TIEMPO','HT':'ENTRETIEMPO','ET':'TIEMPO EXTRA','P':'PENALES'};
+  const liveStates = {'1H':t('primerTiempo'),'2H':t('segundoTiempo'),'HT':t('entretiempo'),'ET':t('tiempoExtra'),'P':t('penales')};
   if (liveStates[apiStatus]) return liveStates[apiStatus] + (elapsed ? ' · ' + elapsed + "'" : '');
-  if (apiStatus === 'FT' || apiStatus === 'AET' || apiStatus === 'PEN') return 'FINALIZADO';
+  if (apiStatus === 'FT' || apiStatus === 'AET' || apiStatus === 'PEN') return t('finalizado');
   return null;
 }
 
@@ -672,8 +858,8 @@ function buildMatchCard(m) {
   const arTime = utcToAR(realKickoffUTC);
   const timeOnly = arTime.split(' ').slice(-1)[0];
   let label = statusLabel(apiStatus, live ? live.elapsed : null);
-  if (!label && isLive) label = 'EN VIVO';
-  if (!label && isFinished) label = 'FINALIZADO';
+  if (!label && isLive) label = t('enVivo');
+  if (!label && isFinished) label = t('finalizado');
 
   let cardClass = 'match-card';
   if (isLive) cardClass += ' live';
@@ -685,7 +871,7 @@ function buildMatchCard(m) {
   if (hasScore) {
     scoreText = homeGoals + ' - ' + awayGoals;
   } else if (isFinished) {
-    scoreText = 'S/D';
+    scoreText = t('sinDatos');
   } else {
     scoreText = timeOnly;
   }
@@ -738,8 +924,8 @@ function buildMatchCard(m) {
         badgeHtml +
         '<span>\u{1F550} ' + arTime + '</span>' +
         '<span>\u{1F4CD} ' + m.stadium + ', ' + m.city + '</span>' +
-        '<span class="group-tag">GRUPO ' + m.group + '</span>' +
-        (hasDetail ? '<span class="detail-hint">' + (isExpanded ? '\u25B2 ocultar' : '\u25BC detalle') + '</span>' : '') +
+        '<span class="group-tag">' + t('grupo') + ' ' + m.group + '</span>' +
+        (hasDetail ? '<span class="detail-hint">' + (isExpanded ? t('detalleOcultar') : t('detalleMostrar')) + '</span>' : '') +
       '</div>' +
       detailHtml +
     '</div>'
@@ -758,13 +944,13 @@ function buildEventsDetail(events, homeTeam, awayTeam) {
   let html = '';
 
   if (goals.length > 0) {
-    html += '<div class="detail-section-label">\u26BD GOLES</div>';
+    html += '<div class="detail-section-label">' + t('goles') + '</div>';
     goals.forEach(g => {
       const sideClass = g.team === homeTeam ? 'detail-home' : 'detail-away';
       const minuteStr = g.minute + (g.extra ? '+' + g.extra : '') + "'";
-      const ownGoal = g.detail === 'Own Goal' ? ' (en contra)' : '';
-      const penalty = g.detail === 'Penalty' ? ' (penal)' : '';
-      const playerName = g.player || 'Desconocido';
+      const ownGoal = g.detail === 'Own Goal' ? t('enContra') : '';
+      const penalty = g.detail === 'Penalty' ? t('penal') : '';
+      const playerName = g.player || t('desconocido');
       const playerHtml = g.player
         ? '<a href="' + googleSearchLink(playerName, g.team) + '" target="_blank" rel="noopener" class="player-link" onclick="event.stopPropagation()">' + playerName + '</a>'
         : playerName;
@@ -776,12 +962,12 @@ function buildEventsDetail(events, homeTeam, awayTeam) {
   }
 
   if (cards.length > 0) {
-    html += '<div class="detail-section-label" style="margin-top:8px;">\u{1F7E8} TARJETAS</div>';
+    html += '<div class="detail-section-label" style="margin-top:8px;">' + t('tarjetas') + '</div>';
     cards.forEach(c => {
       const sideClass = c.team === homeTeam ? 'detail-home' : 'detail-away';
       const minuteStr = c.minute + (c.extra ? '+' + c.extra : '') + "'";
       const cardEmoji = c.detail === 'Red Card' ? '\u{1F7E5}' : '\u{1F7E8}';
-      const playerName = c.player || 'Desconocido';
+      const playerName = c.player || t('desconocido');
       const playerHtml = c.player
         ? '<a href="' + googleSearchLink(playerName, c.team) + '" target="_blank" rel="noopener" class="player-link" onclick="event.stopPropagation()">' + playerName + '</a>'
         : playerName;
@@ -793,7 +979,7 @@ function buildEventsDetail(events, homeTeam, awayTeam) {
   }
 
   if (goals.length === 0 && cards.length === 0) {
-    html = '<div class="detail-empty">Sin eventos registrados todavía</div>';
+    html = '<div class="detail-empty">' + t('sinEventos') + '</div>';
   }
 
   return html;
@@ -870,7 +1056,7 @@ function buildGroupGroupedHtml(sortedMatches) {
   Object.keys(byGroup).sort().forEach(g => {
     const color = GROUP_COLORS[g] || '#94a3b8';
     html += '<div class="date-section">';
-    html += '<div class="date-header" style="border-left:3px solid ' + color + ';">GRUPO ' + g + '</div>';
+    html += '<div class="date-header" style="border-left:3px solid ' + color + ';">' + t('grupo') + ' ' + g + '</div>';
     html += '<div class="match-grid">';
     byGroup[g].forEach(m => { html += buildMatchCard(m); });
     html += '</div></div>';
@@ -930,20 +1116,21 @@ function render() {
   if (searchTerm) {
     const sorted = filtered.slice().sort((a,b) => new Date(getKickoffUTC(a)) - new Date(getKickoffUTC(b)));
     if (sorted.length === 0) {
-      html = '<div class="empty-state">No se encontraron partidos para "' + searchTerm + '" en esta vista</div>';
+      html = '<div class="empty-state">' + t('noEncontrados') + ' "' + searchTerm + '" ' + t('enEstaVista') + '</div>';
       document.getElementById('search-label').innerHTML = '';
     } else {
       html += '<div class="match-grid">';
       sorted.forEach(m => { html += buildMatchCard(m); });
       html += '</div>';
-      document.getElementById('search-label').innerHTML = '<b>' + sorted.length + '</b> partido' + (sorted.length !== 1 ? 's' : '') + ' encontrado' + (sorted.length !== 1 ? 's' : '');
+      const foundWord = sorted.length !== 1 ? t('partidosEncontrados') : t('partidoEncontrado');
+      document.getElementById('search-label').innerHTML = '<b>' + sorted.length + '</b> ' + foundWord;
     }
   } else {
     document.getElementById('search-label').innerHTML = '';
     const sortedAll = filtered.slice().sort((a,b) => new Date(getKickoffUTC(a)) - new Date(getKickoffUTC(b)));
 
     if (sortedAll.length === 0) {
-      html = '<div class="empty-state">No hay partidos en esta vista</div>';
+      html = '<div class="empty-state">' + t('noHayPartidos') + '</div>';
     } else if (currentFilter === 'scheduled') {
       html += buildDateGroupedHtml(sortedAll);
     } else if (currentFilter === 'all' || currentFilter === 'finished') {
@@ -959,7 +1146,7 @@ function render() {
   const updateStr = lastUpdate
     ? new Date(lastUpdate).toLocaleTimeString('es-AR', {hour:'2-digit',minute:'2-digit',hour12:false,timeZone:'America/Argentina/Buenos_Aires'})
     : '--:--';
-  document.getElementById('footer').textContent = 'Datos: API-Football · Última actualización: ' + updateStr + ' hs AR';
+  document.getElementById('footer').textContent = t('datosFooter') + ' ' + updateStr + ' ' + t('hsAR');
 
   if (pendingFlashKey) {
     setTimeout(() => { pendingFlashKey = null; }, 3000);
@@ -1077,8 +1264,8 @@ function buildGroupsColumn(groupLetters) {
   groupLetters.forEach(g => {
     const standings = computeStandings(g);
     const color = GROUP_COLORS[g] || '#94a3b8';
-    html += '<div class="group-card" style="--gcolor:' + color + '"><div class="group-card-title">GRUPO ' + g + '</div>';
-    html += '<div class="standings-header"><span class="sh-team"></span><span>PJ</span><span>G</span><span>E</span><span>P</span><span>DG</span><span>PTS</span></div>';
+    html += '<div class="group-card" style="--gcolor:' + color + '"><div class="group-card-title">' + t('grupo') + ' ' + g + '</div>';
+    html += '<div class="standings-header"><span class="sh-team"></span><span>' + t('pj') + '</span><span>' + t('g') + '</span><span>' + t('e') + '</span><span>' + t('p') + '</span><span>' + t('dg') + '</span><span>' + t('pts') + '</span></div>';
     standings.forEach((row) => {
       const t = row.team;
       const gd = row.gf - row.ga;
@@ -1105,7 +1292,7 @@ function buildGroupsColumn(groupLetters) {
 function buildSlotsCol(count, cls, label) {
   let html = '<div class="bracket-side-col ' + cls + '"><div class="bracket-stage-label">' + label + '</div>';
   for (let i = 0; i < count; i++) {
-    html += '<div class="bracket-slot">Por definir</div>';
+    html += '<div class="bracket-slot">' + t('porDefinir') + '</div>';
   }
   html += '</div>';
   return html;
@@ -1114,16 +1301,16 @@ function buildSlotsCol(count, cls, label) {
 function buildQualifiersSummary() {
   const allGroups = ['A','B','C','D','E','F','G','H','I','J','K','L'];
   let html = '<div class="qualifiers-summary">';
-  html += '<div class="bracket-stage-label" style="font-size:11px; margin-bottom:8px;">CLASIFICADOS A OCTAVOS (se completa por grupo a medida que termina)</div>';
+  html += '<div class="bracket-stage-label" style="font-size:11px; margin-bottom:8px;">' + t('clasificadosTitle') + '</div>';
   html += '<div class="qualifiers-grid">';
   allGroups.forEach(g => {
     const first = getQualifier(g, 1);
     const second = getQualifier(g, 2);
     const color = GROUP_COLORS[g] || '#94a3b8';
     html += '<div class="qualifier-card" style="--gcolor:' + color + '">';
-    html += '<div class="qualifier-card-title">GRUPO ' + g + '</div>';
-    html += '<div class="qualifier-row">1° ' + (first ? '<span class="qteam">' + flag(first) + ' ' + esName(first) + '</span>' : '<span class="qpending">Por definir</span>') + '</div>';
-    html += '<div class="qualifier-row">2° ' + (second ? '<span class="qteam">' + flag(second) + ' ' + esName(second) + '</span>' : '<span class="qpending">Por definir</span>') + '</div>';
+    html += '<div class="qualifier-card-title">' + t('grupo') + ' ' + g + '</div>';
+    html += '<div class="qualifier-row">1° ' + (first ? '<span class="qteam">' + flag(first) + ' ' + esName(first) + '</span>' : '<span class="qpending">' + t('porDefinir') + '</span>') + '</div>';
+    html += '<div class="qualifier-row">2° ' + (second ? '<span class="qteam">' + flag(second) + ' ' + esName(second) + '</span>' : '<span class="qpending">' + t('porDefinir') + '</span>') + '</div>';
     html += '</div>';
   });
   html += '</div></div>';
@@ -1133,7 +1320,7 @@ function buildQualifiersSummary() {
 function buildMobileStage(count, label) {
   let html = '<div class="bracket-mobile-stage"><div class="bracket-stage-label">' + label + '</div>';
   for (let i = 0; i < count; i += 2) {
-    html += '<div class="bracket-mobile-row"><div class="bracket-slot">Por definir</div><div class="bracket-slot">Por definir</div></div>';
+    html += '<div class="bracket-mobile-row"><div class="bracket-slot">' + t('porDefinir') + '</div><div class="bracket-slot">' + t('porDefinir') + '</div></div>';
   }
   html += '</div>';
   return html;
@@ -1145,32 +1332,32 @@ function renderBracket() {
   const rightGroups = ['G','H','I','J','K','L'];
 
   let html = '<div class="bracket-funnel">';
-  html += buildSlotsCol(8, 'r8', 'OCTAVOS');
-  html += buildSlotsCol(4, 'r4', 'CUARTOS');
-  html += buildSlotsCol(2, 'r2', 'SEMIS');
+  html += buildSlotsCol(8, 'r8', t('octavos'));
+  html += buildSlotsCol(4, 'r4', t('cuartos'));
+  html += buildSlotsCol(2, 'r2', t('semis'));
   html += '<div class="bracket-center-final">';
   html += '<div class="bracket-trophy">🏆</div>';
-  html += '<div class="bracket-title">CAMPEÓN</div>';
-  html += '<div class="bracket-final-box">Por definir</div>';
-  html += '<div class="bracket-stage-label" style="margin-top:10px;">3ER PUESTO</div>';
-  html += '<div class="bracket-slot">Por definir</div>';
+  html += '<div class="bracket-title">' + t('campeon') + '</div>';
+  html += '<div class="bracket-final-box">' + t('porDefinir') + '</div>';
+  html += '<div class="bracket-stage-label" style="margin-top:10px;">' + t('tercerPuesto') + '</div>';
+  html += '<div class="bracket-slot">' + t('porDefinir') + '</div>';
   html += '</div>';
-  html += buildSlotsCol(2, 'r2', 'SEMIS');
-  html += buildSlotsCol(4, 'r4', 'CUARTOS');
-  html += buildSlotsCol(8, 'r8', 'OCTAVOS');
+  html += buildSlotsCol(2, 'r2', t('semis'));
+  html += buildSlotsCol(4, 'r4', t('cuartos'));
+  html += buildSlotsCol(8, 'r8', t('octavos'));
   html += '</div>';
 
   let mobileHtml = '<div class="bracket-mobile">';
-  mobileHtml += '<div style="text-align:center;"><div class="bracket-trophy">🏆</div><div class="bracket-title">CAMPEÓN</div>';
-  mobileHtml += '<div class="bracket-final-box" style="margin:8px auto; max-width:200px;">Por definir</div>';
-  mobileHtml += '<div class="bracket-stage-label" style="margin-top:8px;">3ER PUESTO</div>';
-  mobileHtml += '<div class="bracket-slot" style="max-width:200px; margin:4px auto;">Por definir</div></div>';
-  mobileHtml += buildMobileStage(4, 'SEMIFINALES');
-  mobileHtml += buildMobileStage(8, 'CUARTOS DE FINAL');
-  mobileHtml += buildMobileStage(16, 'OCTAVOS DE FINAL');
+  mobileHtml += '<div style="text-align:center;"><div class="bracket-trophy">🏆</div><div class="bracket-title">' + t('campeon') + '</div>';
+  mobileHtml += '<div class="bracket-final-box" style="margin:8px auto; max-width:200px;">' + t('porDefinir') + '</div>';
+  mobileHtml += '<div class="bracket-stage-label" style="margin-top:8px;">' + t('tercerPuesto') + '</div>';
+  mobileHtml += '<div class="bracket-slot" style="max-width:200px; margin:4px auto;">' + t('porDefinir') + '</div></div>';
+  mobileHtml += buildMobileStage(4, t('semifinales'));
+  mobileHtml += buildMobileStage(8, t('cuartosDeFinal'));
+  mobileHtml += buildMobileStage(16, t('octavosDeFinal'));
   mobileHtml += '</div>';
 
-  html += '<div class="bracket-note">El cuadro de eliminación se completa automáticamente cuando termine la fase de grupos (28 de junio)</div>';
+  html += '<div class="bracket-note">' + t('bracketNote') + '</div>';
   html += buildQualifiersSummary();
 
   let groupsHtml = '<div class="bracket-layout">';
@@ -1222,6 +1409,33 @@ function setupBugReportLink() {
   document.getElementById('report-bug-link').href =
     'https://github.com/rolaGaard/rola-dashboard/issues/new?' + params.toString();
 }
+
+function applyTranslations() {
+  document.getElementById('header-sub').textContent = t('headerSub');
+  document.getElementById('search-input').placeholder = t('searchPlaceholder');
+  document.getElementById('hora-local-label').textContent = t('horaLocal');
+  document.getElementById('label-all').textContent = t('filterAll');
+  document.getElementById('label-finished').textContent = t('filterFinished');
+  document.getElementById('label-today').textContent = t('filterToday');
+  document.getElementById('label-live').textContent = t('filterLive');
+  document.getElementById('label-scheduled').textContent = t('filterScheduled');
+  document.getElementById('label-fixture').textContent = t('filterFixture');
+  document.getElementById('report-bug-link').textContent = t('reportarProblema');
+  document.getElementById('scroll-top-btn').setAttribute('aria-label', t('volverArriba'));
+  document.getElementById('install-btn').setAttribute('aria-label', t('instalarApp'));
+  document.getElementById('ios-banner-text').innerHTML = t('iosInstallText');
+  updateFullscreenBtn();
+  document.getElementById('lang-select').value = currentLang;
+  document.documentElement.lang = currentLang;
+}
+
+document.getElementById('lang-select').addEventListener('change', (e) => {
+  currentLang = e.target.value;
+  localStorage.setItem('wcLang', currentLang);
+  applyTranslations();
+  render();
+  setupBugReportLink();
+});
 
 document.querySelectorAll('.stat-card[data-filter]').forEach(b => b.classList.remove('active'));
 document.querySelectorAll('[data-filter="' + currentFilter + '"]').forEach(b => b.classList.add('active'));
@@ -1311,6 +1525,9 @@ if ('Notification' in window && Notification.permission === 'default') {
     document.removeEventListener('click', requestPerm);
   }, { once: true });
 }
+
+applyTranslations();
+
 </script>
 </body>
 </html>
