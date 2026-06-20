@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-20T22:01:09.547383Z",
+  "updated": "2026-06-20T22:10:29.185243Z",
   "matches": {
     "MEXICO-SOUTH AFRICA": {
       "homeGoals": 2,
@@ -1490,7 +1490,32 @@
       "status": "FT",
       "elapsed": 90,
       "kickoffUTC": "2026-06-19T01:00:00+00:00",
-      "events": []
+      "events": [
+        {
+          "type": "Card",
+          "detail": "Yellow Card",
+          "player": "Kang-in Lee",
+          "team": "SOUTH KOREA",
+          "minute": 4,
+          "extra": null
+        },
+        {
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "player": "L. Romo",
+          "team": "MEXICO",
+          "minute": 50,
+          "extra": null
+        },
+        {
+          "type": "Card",
+          "detail": "Yellow Card",
+          "player": "Seung Ho Paik",
+          "team": "SOUTH KOREA",
+          "minute": 58,
+          "extra": null
+        }
+      ]
     },
     "USA-AUSTRALIA": {
       "homeGoals": 2,
