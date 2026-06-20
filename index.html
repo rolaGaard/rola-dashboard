@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Mundial 2026 - Fixture en Vivo</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚽</text></svg>">
 <style>
   * { margin:0; padding:0; box-sizing:border-box; }
   body {
@@ -40,9 +41,10 @@
   }
   .stat-card.active { background:#003087; box-shadow:0 0 0 2px #FFD700; }
   .stat-card.active .stat-num, .stat-card.active .stat-label { color:#FFD700; }
-  #fixture-btn.active { background:#FFD700; box-shadow:0 0 0 2px #003087; }
-  #fixture-btn.active .stat-label { color:#0a0a0a; }
+  .stat-card[data-filter="fixture"].active { background:#FFD700; box-shadow:0 0 0 2px #003087; }
+  .stat-card[data-filter="fixture"].active .stat-label { color:#0a0a0a; }
   .stat-icon { font-size:20px; }
+  .fixture-icon { font-size:30px; margin:4px 0; }
   .stat-num { font-size:22px; font-weight:700; color:#1a1a2e; }
   .stat-label { font-size:11px; color:#64748b; }
   @media (max-width:760px) {
@@ -84,44 +86,59 @@
 
   .bracket-view { padding:20px 16px 0; overflow-x:auto; }
   .bracket-layout {
-    display:grid; grid-template-columns:200px 1fr 200px; gap:16px;
-    min-width:880px; align-items:center;
+    display:grid; grid-template-columns:190px 1fr 190px; gap:14px;
+    min-width:1600px; align-items:start;
   }
   .groups-col { display:flex; flex-direction:column; gap:10px; }
   .group-card {
-    background:#fff; border-radius:10px; padding:8px 10px;
+    background:#fff; border-radius:10px; padding:0; overflow:hidden;
+    border:2px solid var(--gcolor, #94a3b8);
   }
   .group-card-title {
-    font-size:10px; font-weight:700; color:#94a3b8; margin-bottom:4px; letter-spacing:0.05em;
+    font-size:10px; font-weight:700; color:#fff; letter-spacing:0.05em;
+    background:var(--gcolor, #94a3b8); padding:4px 10px;
   }
   .group-team-row {
     display:flex; align-items:center; gap:6px; font-size:11px; font-weight:600;
-    color:#1a1a2e; padding:2px 0;
+    color:#1a1a2e; padding:3px 10px;
   }
   .group-team-row .gflag { font-size:14px; }
   .group-team-row .gcode { color:#94a3b8; font-size:9px; margin-left:auto; }
 
-  .bracket-center { display:flex; flex-direction:column; align-items:center; gap:18px; }
-  .bracket-trophy { font-size:46px; margin-bottom:6px; }
-  .bracket-title { color:#fff; font-size:13px; font-weight:700; letter-spacing:0.08em; }
   .bracket-stage-label {
-    color:#94a3b8; font-size:10px; font-weight:700; letter-spacing:0.08em;
-    text-align:center; margin-bottom:6px;
-  }
-  .bracket-slot {
-    background:#fff; border-radius:8px; padding:6px 10px; font-size:11px;
-    font-weight:600; color:#1a1a2e; min-width:140px; text-align:center;
-    border:1px dashed #cbd5e1;
+    color:#94a3b8; font-size:9px; font-weight:700; letter-spacing:0.06em;
+    text-align:center; margin-bottom:4px;
   }
   .bracket-final-box {
     background:linear-gradient(135deg, #FFD700, #C9A227); color:#0a0a0a;
-    border-radius:10px; padding:14px 20px; text-align:center; font-weight:700;
-    font-size:13px; letter-spacing:0.05em;
+    border-radius:10px; padding:12px 16px; text-align:center; font-weight:700;
+    font-size:12px; letter-spacing:0.04em;
   }
-  .bracket-stage-col { display:flex; flex-direction:column; gap:14px; align-items:center; }
   .bracket-note {
     text-align:center; color:#94a3b8; font-size:11px; margin-top:18px; padding:0 16px 8px;
   }
+
+  .bracket-funnel {
+    display:grid; grid-template-columns:1fr 1fr 1fr auto 1fr 1fr 1fr;
+    align-items:center; gap:6px; min-width:1180px;
+  }
+  .bracket-side-col { display:flex; flex-direction:column; gap:8px; justify-content:center; }
+  .bracket-side-col.r8 { gap:6px; }
+  .bracket-side-col.r4 { gap:40px; }
+  .bracket-side-col.r2 { gap:120px; }
+  .bracket-slot {
+    background:#fff; border-radius:8px; padding:5px 8px; font-size:10px;
+    font-weight:600; color:#1a1a2e; text-align:center;
+    border:1px dashed #cbd5e1; white-space:nowrap;
+  }
+  .bracket-side-col.r4 .bracket-slot { font-size:11px; padding:7px 10px; }
+  .bracket-side-col.r2 .bracket-slot { font-size:11px; padding:8px 10px; }
+  .bracket-center-final {
+    display:flex; flex-direction:column; align-items:center; gap:10px; padding:0 10px;
+    align-self:center;
+  }
+  .bracket-trophy { font-size:42px; }
+  .bracket-title { color:#fff; font-size:11px; font-weight:700; letter-spacing:0.06em; text-align:center; }
 
   @keyframes goalFlash {
     0%, 100% { box-shadow:0 1px 3px rgba(0,0,0,0.08); transform:scale(1); }
@@ -180,7 +197,7 @@
   <div class="header-left">
     <div class="header-icon">🏆</div>
     <div>
-      <div class="header-title">FIFA World Cup 2026 <span class="by">by Roy Bierregaard</span></div>
+      <div class="header-title">FIFA World Cup 2026 <span class="by">by rolaGaard</span></div>
       <div class="header-sub">USA · Canadá · México</div>
     </div>
   </div>
@@ -204,8 +221,8 @@
   <button class="stat-card" data-filter="finished"><div class="stat-icon">✅</div><div class="stat-num" id="stat-finished">0</div><div class="stat-label">Jugados</div></button>
   <button class="stat-card" data-filter="today"><div class="stat-icon">📅</div><div class="stat-num" id="stat-today">0</div><div class="stat-label">Hoy</div></button>
   <button class="stat-card" data-filter="live"><div class="stat-icon">🔴</div><div class="stat-num" id="stat-live">0</div><div class="stat-label">En vivo</div></button>
-  <button class="stat-card" data-filter="scheduled"><div class="stat-icon">⏳</div><div class="stat-num" id="stat-scheduled">0</div><div class="stat-label">Próximos</div></button>
-  <button class="stat-card" id="fixture-btn"><div class="stat-icon">🏆</div><div class="stat-num">&nbsp;</div><div class="stat-label">Fixture</div></button>
+  <button class="stat-card" data-filter="scheduled"><div class="stat-icon">🕐</div><div class="stat-num" id="stat-scheduled">0</div><div class="stat-label">Próximos</div></button>
+  <button class="stat-card" data-filter="fixture"><div class="stat-icon fixture-icon">🏆</div><div class="stat-label">Fixture</div></button>
 </div>
 
 <div class="matches-container" id="matches"></div>
@@ -450,8 +467,38 @@ function getEffectiveStatus(m) {
   return 'scheduled';
 }
 
+function updateCounters() {
+  const todayAR = toARDateStr(new Date().toISOString());
+  let liveCount = 0, finishedCount = 0, todayCount = 0, scheduledCount = 0;
+  SCHEDULE.forEach(m => {
+    const status = getEffectiveStatus(m);
+    const isToday = toARDateStr(m.kickoffUTC) === todayAR;
+    if (status === 'live') liveCount++;
+    if (status === 'finished') finishedCount++;
+    if (status === 'scheduled') scheduledCount++;
+    if (isToday) todayCount++;
+  });
+  document.getElementById('stat-live').textContent = liveCount;
+  document.getElementById('stat-today').textContent = todayCount;
+  document.getElementById('stat-finished').textContent = finishedCount;
+  document.getElementById('stat-scheduled').textContent = scheduledCount;
+  document.getElementById('stat-total').textContent = SCHEDULE.length;
+}
+
 function render() {
   const todayAR = toARDateStr(new Date().toISOString());
+
+  if (currentFilter === 'fixture') {
+    document.querySelector('.search-wrap').style.display = 'none';
+    document.getElementById('matches').style.display = 'none';
+    document.getElementById('bracket-view').style.display = '';
+    renderBracket();
+    updateCounters();
+    return;
+  }
+  document.querySelector('.search-wrap').style.display = '';
+  document.getElementById('matches').style.display = '';
+  document.getElementById('bracket-view').style.display = 'none';
 
   const filtered = SCHEDULE.filter(m => {
     if (searchTerm) {
@@ -481,21 +528,7 @@ function render() {
     grouped[m.group].push(m);
   });
 
-  let liveCount = 0, finishedCount = 0, todayCount = 0, scheduledCount = 0;
-  SCHEDULE.forEach(m => {
-    const status = getEffectiveStatus(m);
-    const isToday = toARDateStr(m.kickoffUTC) === todayAR;
-    if (status === 'live') liveCount++;
-    if (status === 'finished') finishedCount++;
-    if (status === 'scheduled') scheduledCount++;
-    if (isToday) todayCount++;
-  });
-
-  document.getElementById('stat-live').textContent = liveCount;
-  document.getElementById('stat-today').textContent = todayCount;
-  document.getElementById('stat-finished').textContent = finishedCount;
-  document.getElementById('stat-scheduled').textContent = scheduledCount;
-  document.getElementById('stat-total').textContent = SCHEDULE.length;
+  updateCounters();
 
   let html = '';
   if (searchTerm) {
@@ -624,12 +657,19 @@ document.getElementById('stats-filters').addEventListener('click', (e) => {
   setActiveFilter(btn.dataset.filter);
 });
 
+const GROUP_COLORS = {
+  'A':'#1DB954','B':'#E0263B','C':'#F2912B','D':'#3D6FE0',
+  'E':'#8B3FE0','F':'#C7E020','G':'#E0508F','H':'#2BC79A',
+  'I':'#7A2BC7','J':'#1B5E63','K':'#E0671B','L':'#2BAEE0',
+};
+
 function buildGroupsColumn(groupLetters) {
   let html = '';
   groupLetters.forEach(g => {
     const teamsInGroup = new Set();
     SCHEDULE.forEach(m => { if (m.group === g) { teamsInGroup.add(m.home); teamsInGroup.add(m.away); } });
-    html += '<div class="group-card"><div class="group-card-title">GRUPO ' + g + '</div>';
+    const color = GROUP_COLORS[g] || '#94a3b8';
+    html += '<div class="group-card" style="--gcolor:' + color + '"><div class="group-card-title">GRUPO ' + g + '</div>';
     Array.from(teamsInGroup).forEach(t => {
       html += '<div class="group-team-row"><span class="gflag">' + flag(t) + '</span><span>' + esName(t) + '</span><span class="gcode">' + countryCode(t) + '</span></div>';
     });
@@ -638,8 +678,8 @@ function buildGroupsColumn(groupLetters) {
   return html;
 }
 
-function buildBracketStage(count, label) {
-  let html = '<div class="bracket-stage-col"><div class="bracket-stage-label">' + label + '</div>';
+function buildSlotsCol(count, cls, label) {
+  let html = '<div class="bracket-side-col ' + cls + '"><div class="bracket-stage-label">' + label + '</div>';
   for (let i = 0; i < count; i++) {
     html += '<div class="bracket-slot">Por definir</div>';
   }
@@ -651,36 +691,36 @@ function renderBracket() {
   const leftGroups = ['A','B','C','D','E','F'];
   const rightGroups = ['G','H','I','J','K','L'];
 
-  let html = '<div class="bracket-layout">';
-  html += '<div class="groups-col">' + buildGroupsColumn(leftGroups) + '</div>';
+  let html = '<div class="bracket-funnel">';
 
-  html += '<div class="bracket-center">';
+  html += buildSlotsCol(8, 'r8', 'OCTAVOS');
+  html += buildSlotsCol(4, 'r4', 'CUARTOS');
+  html += buildSlotsCol(2, 'r2', 'SEMIS');
+
+  html += '<div class="bracket-center-final">';
   html += '<div class="bracket-trophy">🏆</div>';
-  html += '<div class="bracket-title">CAMINO A LA FINAL</div>';
-  html += '<div style="display:flex; gap:24px; align-items:center;">';
-  html += buildBracketStage(16, 'OCTAVOS');
-  html += buildBracketStage(8, 'CUARTOS');
-  html += buildBracketStage(4, 'SEMIS');
-  html += '<div class="bracket-stage-col"><div class="bracket-stage-label">FINAL</div><div class="bracket-final-box">🏆<br>CAMPEÓN</div></div>';
+  html += '<div class="bracket-title">CAMPEÓN</div>';
+  html += '<div class="bracket-final-box">Por definir</div>';
+  html += '<div class="bracket-stage-label" style="margin-top:10px;">3ER PUESTO</div>';
+  html += '<div class="bracket-slot">Por definir</div>';
   html += '</div>';
+
+  html += buildSlotsCol(2, 'r2', 'SEMIS');
+  html += buildSlotsCol(4, 'r4', 'CUARTOS');
+  html += buildSlotsCol(8, 'r8', 'OCTAVOS');
+
+  html += '</div>';
+
   html += '<div class="bracket-note">El cuadro de eliminación se completa automáticamente cuando termine la fase de grupos (28 de junio)</div>';
-  html += '</div>';
 
-  html += '<div class="groups-col">' + buildGroupsColumn(rightGroups) + '</div>';
-  html += '</div>';
+  let groupsHtml = '<div class="bracket-layout">';
+  groupsHtml += '<div class="groups-col">' + buildGroupsColumn(leftGroups) + '</div>';
+  groupsHtml += '<div>' + html + '</div>';
+  groupsHtml += '<div class="groups-col">' + buildGroupsColumn(rightGroups) + '</div>';
+  groupsHtml += '</div>';
 
-  document.getElementById('bracket-view').innerHTML = html;
+  document.getElementById('bracket-view').innerHTML = groupsHtml;
 }
-
-let showingBracket = false;
-document.getElementById('fixture-btn').addEventListener('click', () => {
-  showingBracket = !showingBracket;
-  document.getElementById('fixture-btn').classList.toggle('active', showingBracket);
-  document.getElementById('matches').style.display = showingBracket ? 'none' : '';
-  document.querySelector('.search-wrap').style.display = showingBracket ? 'none' : '';
-  document.getElementById('bracket-view').style.display = showingBracket ? '' : 'none';
-  if (showingBracket) renderBracket();
-});
 
 const searchInput = document.getElementById('search-input');
 const searchClear = document.getElementById('search-clear');
