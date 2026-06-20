@@ -1,6 +1,14 @@
 {
-  "updated": "2026-06-20T19:50:52.643365Z",
+  "updated": "2026-06-20T20:00:58.885765Z",
   "matches": {
+    "GERMANY-IVORY COAST": {
+      "homeGoals": 0,
+      "awayGoals": 0,
+      "status": "1H",
+      "elapsed": 1,
+      "kickoffUTC": "2026-06-20T20:00:00+00:00",
+      "events": []
+    },
     "MEXICO-SOUTH AFRICA": {
       "homeGoals": 2,
       "awayGoals": 0,
@@ -1825,13 +1833,6 @@
           "extra": null
         }
       ]
-    },
-    "GERMANY-IVORY COAST": {
-      "homeGoals": null,
-      "awayGoals": null,
-      "status": "NS",
-      "elapsed": null,
-      "kickoffUTC": "2026-06-20T20:00:00+00:00"
     },
     "ECUADOR-CURACAO": {
       "homeGoals": null,
