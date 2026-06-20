@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-20T05:52:40.182461Z",
+  "updated": "2026-06-20T16:43:02.324203Z",
   "matches": {
     "MEXICO-SOUTH AFRICA": {
       "homeGoals": 2,
@@ -1267,7 +1267,7 @@
         {
           "type": "Goal",
           "detail": "Normal Goal",
-          "player": "Michal Sad\u00edlek",
+          "player": "M. Sadilek",
           "team": "CZECHIA",
           "minute": 6,
           "extra": null
@@ -1299,7 +1299,7 @@
         {
           "type": "Goal",
           "detail": "Penalty",
-          "player": "Teboho Mokoena",
+          "player": "T. Mokoena",
           "team": "SOUTH AFRICA",
           "minute": 83,
           "extra": null
@@ -1405,7 +1405,7 @@
         {
           "type": "Goal",
           "detail": "Normal Goal",
-          "player": "Cyle Larin",
+          "player": "C. Larin",
           "team": "CANADA",
           "minute": 16,
           "extra": null
@@ -1413,7 +1413,7 @@
         {
           "type": "Goal",
           "detail": "Normal Goal",
-          "player": "Jonathan David",
+          "player": "J. David",
           "team": "CANADA",
           "minute": 29,
           "extra": null
@@ -1429,10 +1429,18 @@
         {
           "type": "Goal",
           "detail": "Normal Goal",
-          "player": "Jonathan David",
+          "player": null,
+          "team": "CANADA",
+          "minute": 33,
+          "extra": null
+        },
+        {
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "player": "J. David",
           "team": "CANADA",
           "minute": 45,
-          "extra": 3
+          "extra": null
         },
         {
           "type": "Card",
@@ -1453,7 +1461,7 @@
         {
           "type": "Goal",
           "detail": "Normal Goal",
-          "player": "Nathan-Dylan Saliba",
+          "player": "N. Saliba",
           "team": "CANADA",
           "minute": 64,
           "extra": null
@@ -1461,7 +1469,7 @@
         {
           "type": "Goal",
           "detail": "Own Goal",
-          "player": "Mohamed Naceur Almanai",
+          "player": "M. Al Mannai",
           "team": "CANADA",
           "minute": 75,
           "extra": null
@@ -1469,10 +1477,10 @@
         {
           "type": "Goal",
           "detail": "Normal Goal",
-          "player": "Jonathan David",
+          "player": "J. David",
           "team": "CANADA",
           "minute": 90,
-          "extra": 2
+          "extra": null
         }
       ]
     },
