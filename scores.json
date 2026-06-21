@@ -1,11 +1,11 @@
 {
-  "updated": "2026-06-21T17:20:29.221372Z",
+  "updated": "2026-06-21T17:30:48.666797Z",
   "matches": {
     "SPAIN-SAUDI ARABIA": {
       "homeGoals": 4,
       "awayGoals": 0,
       "status": "2H",
-      "elapsed": 58,
+      "elapsed": 68,
       "kickoffUTC": "2026-06-21T16:00:00+00:00",
       "events": [
         {
@@ -46,6 +46,14 @@
           "player": "H. Tambakti",
           "team": "SPAIN",
           "minute": 49,
+          "extra": null
+        },
+        {
+          "type": "Card",
+          "detail": "Yellow Card",
+          "player": "M. Kanno",
+          "team": "SAUDI ARABIA",
+          "minute": 60,
           "extra": null
         }
       ]
