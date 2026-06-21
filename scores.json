@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-21T04:50:31.912329Z",
+  "updated": "2026-06-21T05:00:53.556321Z",
   "matches": {
     "TUNISIA-JAPAN": {
       "homeGoals": 0,
@@ -1552,7 +1552,7 @@
         {
           "type": "Goal",
           "detail": "Own Goal",
-          "player": "Cameron Burgess",
+          "player": "C. Burgess",
           "team": "USA",
           "minute": 11,
           "extra": null
@@ -1576,9 +1576,9 @@
         {
           "type": "Goal",
           "detail": "Normal Goal",
-          "player": "Alexander Freeman",
+          "player": "A. Freeman",
           "team": "USA",
-          "minute": 44,
+          "minute": 43,
           "extra": null
         },
         {
@@ -1592,16 +1592,16 @@
         {
           "type": "Card",
           "detail": "Yellow Card",
-          "player": "Folarin Balogun",
-          "team": "USA",
-          "minute": 89,
+          "player": "Harry Souttar",
+          "team": "AUSTRALIA",
+          "minute": 88,
           "extra": null
         },
         {
           "type": "Card",
           "detail": "Yellow Card",
-          "player": "Harry Souttar",
-          "team": "AUSTRALIA",
+          "player": "Folarin Balogun",
+          "team": "USA",
           "minute": 89,
           "extra": null
         },
