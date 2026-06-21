@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-21T06:00:59.119100Z",
+  "updated": "2026-06-21T06:10:29.306273Z",
   "matches": {
     "MEXICO-SOUTH AFRICA": {
       "homeGoals": 2,
@@ -1608,7 +1608,7 @@
         {
           "type": "Goal",
           "detail": "Normal Goal",
-          "player": "Ismael Saibari",
+          "player": "I. Saibari",
           "team": "MOROCCO",
           "minute": 2,
           "extra": null
@@ -1626,7 +1626,7 @@
           "detail": "Yellow Card",
           "player": "Andy Robertson",
           "team": "SCOTLAND",
-          "minute": 66,
+          "minute": 65,
           "extra": null
         }
       ]
