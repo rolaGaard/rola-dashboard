@@ -1,6 +1,23 @@
 {
-  "updated": "2026-06-21T22:00:57.070303Z",
+  "updated": "2026-06-21T22:10:29.590081Z",
   "matches": {
+    "URUGUAY-CAPE VERDE": {
+      "homeGoals": 0,
+      "awayGoals": 0,
+      "status": "1H",
+      "elapsed": 10,
+      "kickoffUTC": "2026-06-21T22:00:00+00:00",
+      "events": [
+        {
+          "type": "Card",
+          "detail": "Yellow Card",
+          "player": "S. Lopes Cabral",
+          "team": "CAPE VERDE",
+          "minute": 5,
+          "extra": null
+        }
+      ]
+    },
     "MEXICO-SOUTH AFRICA": {
       "homeGoals": 2,
       "awayGoals": 0,
@@ -2038,13 +2055,6 @@
           "extra": null
         }
       ]
-    },
-    "URUGUAY-CAPE VERDE": {
-      "homeGoals": null,
-      "awayGoals": null,
-      "status": "NS",
-      "elapsed": null,
-      "kickoffUTC": "2026-06-21T22:00:00+00:00"
     },
     "NEW ZEALAND-EGYPT": {
       "homeGoals": null,
