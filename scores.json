@@ -1,11 +1,11 @@
 {
-  "updated": "2026-06-21T23:10:28.313608Z",
+  "updated": "2026-06-21T23:20:32.325357Z",
   "matches": {
     "URUGUAY-CAPE VERDE": {
       "homeGoals": 2,
       "awayGoals": 1,
-      "status": "HT",
-      "elapsed": 45,
+      "status": "2H",
+      "elapsed": 55,
       "kickoffUTC": "2026-06-21T22:00:00+00:00",
       "events": [
         {
