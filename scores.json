@@ -1,11 +1,11 @@
 {
-  "updated": "2026-06-21T05:00:53.556321Z",
+  "updated": "2026-06-21T05:10:28.324308Z",
   "matches": {
     "TUNISIA-JAPAN": {
       "homeGoals": 0,
       "awayGoals": 2,
-      "status": "HT",
-      "elapsed": 45,
+      "status": "2H",
+      "elapsed": 50,
       "kickoffUTC": "2026-06-21T04:00:00+00:00",
       "events": [
         {
@@ -1739,7 +1739,7 @@
         {
           "type": "Card",
           "detail": "Yellow Card",
-          "player": "M. Galarza",
+          "player": "Mat\u00edas Galarza",
           "team": "PARAGUAY",
           "minute": 4,
           "extra": null
@@ -1747,7 +1747,7 @@
         {
           "type": "Card",
           "detail": "Red Card",
-          "player": "M. Almiron",
+          "player": "Miguel Almir\u00f3n",
           "team": "PARAGUAY",
           "minute": 45,
           "extra": 3
@@ -1755,15 +1755,7 @@
         {
           "type": "Card",
           "detail": "Yellow Card",
-          "player": "V. Montella",
-          "team": "TURKIYE",
-          "minute": 63,
-          "extra": null
-        },
-        {
-          "type": "Card",
-          "detail": "Yellow Card",
-          "player": "E. Elmali",
+          "player": "Eren Elmal\u0131",
           "team": "TURKIYE",
           "minute": 71,
           "extra": null
