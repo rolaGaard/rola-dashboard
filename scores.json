@@ -1,11 +1,11 @@
 {
-  "updated": "2026-06-21T23:20:32.325357Z",
+  "updated": "2026-06-21T23:30:47.005931Z",
   "matches": {
     "URUGUAY-CAPE VERDE": {
       "homeGoals": 2,
-      "awayGoals": 1,
+      "awayGoals": 2,
       "status": "2H",
-      "elapsed": 55,
+      "elapsed": 65,
       "kickoffUTC": "2026-06-21T22:00:00+00:00",
       "events": [
         {
@@ -47,6 +47,22 @@
           "team": "URUGUAY",
           "minute": 45,
           "extra": 6
+        },
+        {
+          "type": "Card",
+          "detail": "Yellow Card",
+          "player": "M. Olivera",
+          "team": "URUGUAY",
+          "minute": 58,
+          "extra": null
+        },
+        {
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "player": "H. Varela",
+          "team": "CAPE VERDE",
+          "minute": 61,
+          "extra": null
         }
       ]
     },
