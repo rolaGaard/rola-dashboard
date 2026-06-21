@@ -1,13 +1,30 @@
 {
-  "updated": "2026-06-21T00:30:41.705247Z",
+  "updated": "2026-06-21T00:40:26.717750Z",
   "matches": {
     "ECUADOR-CURACAO": {
       "homeGoals": 0,
       "awayGoals": 0,
       "status": "1H",
-      "elapsed": 30,
+      "elapsed": 40,
       "kickoffUTC": "2026-06-21T00:00:00+00:00",
-      "events": []
+      "events": [
+        {
+          "type": "Card",
+          "detail": "Yellow Card",
+          "player": "J. Alcivar",
+          "team": "ECUADOR",
+          "minute": 38,
+          "extra": null
+        },
+        {
+          "type": "Card",
+          "detail": "Yellow Card",
+          "player": "L. Bacuna",
+          "team": "CURACAO",
+          "minute": 39,
+          "extra": null
+        }
+      ]
     },
     "MEXICO-SOUTH AFRICA": {
       "homeGoals": 2,
