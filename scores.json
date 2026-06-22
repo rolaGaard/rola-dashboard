@@ -1,11 +1,11 @@
 {
-  "updated": "2026-06-22T01:01:13.773800Z",
+  "updated": "2026-06-22T01:10:29.814095Z",
   "matches": {
     "NEW ZEALAND-EGYPT": {
       "homeGoals": 0,
       "awayGoals": 0,
       "status": "1H",
-      "elapsed": 1,
+      "elapsed": 10,
       "kickoffUTC": "2026-06-22T01:00:00+00:00",
       "events": []
     },
@@ -340,7 +340,40 @@
       "status": "FT",
       "elapsed": 90,
       "kickoffUTC": "2026-06-13T22:00:00+00:00",
-      "events": []
+      "events": [
+        {
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "player": "I. Saibari",
+          "team": "MOROCCO",
+          "minute": 21,
+          "extra": null
+        },
+        {
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "player": "Vinicius Junior",
+          "team": "BRAZIL",
+          "minute": 32,
+          "extra": null
+        },
+        {
+          "type": "Card",
+          "detail": "Yellow Card",
+          "player": "Casemiro",
+          "team": "BRAZIL",
+          "minute": 37,
+          "extra": null
+        },
+        {
+          "type": "Card",
+          "detail": "Yellow Card",
+          "player": "Roger Iba\u00f1ez",
+          "team": "BRAZIL",
+          "minute": 43,
+          "extra": null
+        }
+      ]
     },
     "HAITI-SCOTLAND": {
       "homeGoals": 0,
