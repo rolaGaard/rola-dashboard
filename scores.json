@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-22T04:01:09.123017Z",
+  "updated": "2026-06-22T04:10:32.742755Z",
   "matches": {
     "MEXICO-SOUTH AFRICA": {
       "homeGoals": 2,
@@ -969,7 +969,32 @@
       "status": "FT",
       "elapsed": 90,
       "kickoffUTC": "2026-06-17T01:00:00+00:00",
-      "events": []
+      "events": [
+        {
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "player": "L. Messi",
+          "team": "ARGENTINA",
+          "minute": 17,
+          "extra": null
+        },
+        {
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "player": "L. Messi",
+          "team": "ARGENTINA",
+          "minute": 60,
+          "extra": null
+        },
+        {
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "player": "L. Messi",
+          "team": "ARGENTINA",
+          "minute": 76,
+          "extra": null
+        }
+      ]
     },
     "AUSTRIA-JORDAN": {
       "homeGoals": 3,
@@ -2024,7 +2049,7 @@
         {
           "type": "Card",
           "detail": "Yellow Card",
-          "player": "S. Lopes Cabral",
+          "player": "Sidny Lopes Cabral",
           "team": "CAPE VERDE",
           "minute": 5,
           "extra": null
@@ -2032,7 +2057,7 @@
         {
           "type": "Card",
           "detail": "Yellow Card",
-          "player": "R. Bentancur",
+          "player": "Rodrigo Bentancur",
           "team": "URUGUAY",
           "minute": 20,
           "extra": null
@@ -2040,7 +2065,7 @@
         {
           "type": "Goal",
           "detail": "Normal Goal",
-          "player": "K. Lenini",
+          "player": "Kevin Lenini",
           "team": "CAPE VERDE",
           "minute": 21,
           "extra": null
@@ -2048,7 +2073,7 @@
         {
           "type": "Goal",
           "detail": "Normal Goal",
-          "player": "M. Araujo",
+          "player": "Maximiliano Ara\u00fajo",
           "team": "URUGUAY",
           "minute": 44,
           "extra": null
@@ -2056,7 +2081,7 @@
         {
           "type": "Goal",
           "detail": "Normal Goal",
-          "player": "A. Canobbio",
+          "player": "Agust\u00edn Canobbio",
           "team": "URUGUAY",
           "minute": 45,
           "extra": 6
@@ -2064,7 +2089,7 @@
         {
           "type": "Card",
           "detail": "Yellow Card",
-          "player": "M. Olivera",
+          "player": "Math\u00edas Olivera",
           "team": "URUGUAY",
           "minute": 58,
           "extra": null
@@ -2072,18 +2097,10 @@
         {
           "type": "Goal",
           "detail": "Normal Goal",
-          "player": "H. Varela",
+          "player": "H\u00e9lio Varela",
           "team": "CAPE VERDE",
           "minute": 61,
           "extra": null
-        },
-        {
-          "type": "Card",
-          "detail": "Yellow Card",
-          "player": "D. Borges",
-          "team": "CAPE VERDE",
-          "minute": 90,
-          "extra": 3
         }
       ]
     },
