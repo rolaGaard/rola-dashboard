@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-22T05:00:57.949901Z",
+  "updated": "2026-06-22T05:10:33.193291Z",
   "matches": {
     "MEXICO-SOUTH AFRICA": {
       "homeGoals": 2,
@@ -1747,7 +1747,7 @@
         {
           "type": "Goal",
           "detail": "Normal Goal",
-          "player": "Brian Brobbey",
+          "player": "B. Brobbey",
           "team": "NETHERLANDS",
           "minute": 5,
           "extra": null
@@ -1755,7 +1755,7 @@
         {
           "type": "Goal",
           "detail": "Normal Goal",
-          "player": "Brian Brobbey",
+          "player": "B. Brobbey",
           "team": "NETHERLANDS",
           "minute": 17,
           "extra": null
@@ -1763,7 +1763,7 @@
         {
           "type": "Goal",
           "detail": "Normal Goal",
-          "player": "Cody Gakpo",
+          "player": "C. Gakpo",
           "team": "NETHERLANDS",
           "minute": 47,
           "extra": null
@@ -1779,7 +1779,7 @@
         {
           "type": "Goal",
           "detail": "Normal Goal",
-          "player": "Cody Gakpo",
+          "player": "C. Gakpo",
           "team": "NETHERLANDS",
           "minute": 54,
           "extra": null
@@ -1787,7 +1787,7 @@
         {
           "type": "Goal",
           "detail": "Normal Goal",
-          "player": "Anthony Elanga",
+          "player": "A. Elanga",
           "team": "SWEDEN",
           "minute": 59,
           "extra": null
@@ -1811,7 +1811,7 @@
         {
           "type": "Goal",
           "detail": "Normal Goal",
-          "player": "Crysencio Summerville",
+          "player": "C. Summerville",
           "team": "NETHERLANDS",
           "minute": 89,
           "extra": null
