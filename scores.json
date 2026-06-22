@@ -1,11 +1,11 @@
 {
-  "updated": "2026-06-22T01:30:46.266204Z",
+  "updated": "2026-06-22T01:40:28.534092Z",
   "matches": {
     "NEW ZEALAND-EGYPT": {
       "homeGoals": 1,
       "awayGoals": 0,
       "status": "1H",
-      "elapsed": 31,
+      "elapsed": 40,
       "kickoffUTC": "2026-06-22T01:00:00+00:00",
       "events": [
         {
@@ -30,6 +30,14 @@
           "player": "S. Singh",
           "team": "NEW ZEALAND",
           "minute": 20,
+          "extra": null
+        },
+        {
+          "type": "Card",
+          "detail": "Yellow Card",
+          "player": "C. McCowatt",
+          "team": "NEW ZEALAND",
+          "minute": 34,
           "extra": null
         }
       ]
