@@ -1,11 +1,11 @@
 {
-  "updated": "2026-06-21T23:50:31.008220Z",
+  "updated": "2026-06-22T00:01:22.638943Z",
   "matches": {
     "URUGUAY-CAPE VERDE": {
       "homeGoals": 2,
       "awayGoals": 2,
       "status": "2H",
-      "elapsed": 85,
+      "elapsed": 90,
       "kickoffUTC": "2026-06-21T22:00:00+00:00",
       "events": [
         {
@@ -63,6 +63,14 @@
           "team": "CAPE VERDE",
           "minute": 61,
           "extra": null
+        },
+        {
+          "type": "Card",
+          "detail": "Yellow Card",
+          "player": "D. Borges",
+          "team": "CAPE VERDE",
+          "minute": 90,
+          "extra": 3
         }
       ]
     },
@@ -348,48 +356,7 @@
       "status": "FT",
       "elapsed": 90,
       "kickoffUTC": "2026-06-13T19:00:00+00:00",
-      "events": [
-        {
-          "type": "Card",
-          "detail": "Yellow Card",
-          "player": "Mahmud Abunada",
-          "team": "QATAR",
-          "minute": 16,
-          "extra": null
-        },
-        {
-          "type": "Goal",
-          "detail": "Penalty",
-          "player": "B. Embolo",
-          "team": "SWITZERLAND",
-          "minute": 17,
-          "extra": null
-        },
-        {
-          "type": "Card",
-          "detail": "Yellow Card",
-          "player": "Jassem Gaber Abdulsallam",
-          "team": "QATAR",
-          "minute": 23,
-          "extra": null
-        },
-        {
-          "type": "Card",
-          "detail": "Yellow Card",
-          "player": "Denis Zakaria",
-          "team": "SWITZERLAND",
-          "minute": 42,
-          "extra": null
-        },
-        {
-          "type": "Goal",
-          "detail": "Own Goal",
-          "player": "M. Muheim",
-          "team": "QATAR",
-          "minute": 90,
-          "extra": null
-        }
-      ]
+      "events": []
     },
     "BRAZIL-MOROCCO": {
       "homeGoals": 1,
