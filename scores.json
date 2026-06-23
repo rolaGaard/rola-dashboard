@@ -1,63 +1,6 @@
 {
-  "updated": "2026-06-23T18:50:32.432363Z",
+  "updated": "2026-06-23T19:01:07.419580Z",
   "matches": {
-    "PORTUGAL-UZBEKISTAN": {
-      "homeGoals": 4,
-      "awayGoals": 0,
-      "status": "2H",
-      "elapsed": 87,
-      "kickoffUTC": "2026-06-23T17:00:00+00:00",
-      "events": [
-        {
-          "type": "Goal",
-          "detail": "Normal Goal",
-          "player": "C. Ronaldo",
-          "team": "PORTUGAL",
-          "minute": 6,
-          "extra": null
-        },
-        {
-          "type": "Card",
-          "detail": "Yellow Card",
-          "player": "O. Khamrobekov",
-          "team": "UZBEKISTAN",
-          "minute": 14,
-          "extra": null
-        },
-        {
-          "type": "Goal",
-          "detail": "Normal Goal",
-          "player": "N. Mendes",
-          "team": "PORTUGAL",
-          "minute": 17,
-          "extra": null
-        },
-        {
-          "type": "Goal",
-          "detail": "Normal Goal",
-          "player": "C. Ronaldo",
-          "team": "PORTUGAL",
-          "minute": 39,
-          "extra": null
-        },
-        {
-          "type": "Goal",
-          "detail": "Own Goal",
-          "player": "A. Nematov",
-          "team": "PORTUGAL",
-          "minute": 60,
-          "extra": null
-        },
-        {
-          "type": "Card",
-          "detail": "Yellow Card",
-          "player": "R. Veiga",
-          "team": "PORTUGAL",
-          "minute": 68,
-          "extra": null
-        }
-      ]
-    },
     "MEXICO-SOUTH AFRICA": {
       "homeGoals": 2,
       "awayGoals": 0,
@@ -2434,6 +2377,71 @@
           "player": "A. Gouiri",
           "team": "ALGERIA",
           "minute": 82,
+          "extra": null
+        }
+      ]
+    },
+    "PORTUGAL-UZBEKISTAN": {
+      "homeGoals": 5,
+      "awayGoals": 0,
+      "status": "FT",
+      "elapsed": 90,
+      "kickoffUTC": "2026-06-23T17:00:00+00:00",
+      "events": [
+        {
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "player": "C. Ronaldo",
+          "team": "PORTUGAL",
+          "minute": 6,
+          "extra": null
+        },
+        {
+          "type": "Card",
+          "detail": "Yellow Card",
+          "player": "O. Khamrobekov",
+          "team": "UZBEKISTAN",
+          "minute": 14,
+          "extra": null
+        },
+        {
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "player": "N. Mendes",
+          "team": "PORTUGAL",
+          "minute": 17,
+          "extra": null
+        },
+        {
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "player": "C. Ronaldo",
+          "team": "PORTUGAL",
+          "minute": 39,
+          "extra": null
+        },
+        {
+          "type": "Goal",
+          "detail": "Own Goal",
+          "player": "A. Nematov",
+          "team": "PORTUGAL",
+          "minute": 60,
+          "extra": null
+        },
+        {
+          "type": "Card",
+          "detail": "Yellow Card",
+          "player": "R. Veiga",
+          "team": "PORTUGAL",
+          "minute": 68,
+          "extra": null
+        },
+        {
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "player": "R. Leao",
+          "team": "PORTUGAL",
+          "minute": 87,
           "extra": null
         }
       ]
