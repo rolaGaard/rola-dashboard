@@ -1,6 +1,14 @@
 {
-  "updated": "2026-06-23T19:50:32.035551Z",
+  "updated": "2026-06-23T20:01:19.397993Z",
   "matches": {
+    "ENGLAND-GHANA": {
+      "homeGoals": 0,
+      "awayGoals": 0,
+      "status": "1H",
+      "elapsed": 1,
+      "kickoffUTC": "2026-06-23T20:00:00+00:00",
+      "events": []
+    },
     "MEXICO-SOUTH AFRICA": {
       "homeGoals": 2,
       "awayGoals": 0,
@@ -2445,13 +2453,6 @@
           "extra": null
         }
       ]
-    },
-    "ENGLAND-GHANA": {
-      "homeGoals": null,
-      "awayGoals": null,
-      "status": "NS",
-      "elapsed": null,
-      "kickoffUTC": "2026-06-23T20:00:00+00:00"
     },
     "PANAMA-CROATIA": {
       "homeGoals": null,
