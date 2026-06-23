@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-23T02:01:06.913000Z",
+  "updated": "2026-06-23T02:10:31.381655Z",
   "matches": {
     "MEXICO-SOUTH AFRICA": {
       "homeGoals": 2,
@@ -2045,7 +2045,64 @@
       "status": "FT",
       "elapsed": 90,
       "kickoffUTC": "2026-06-21T22:00:00+00:00",
-      "events": []
+      "events": [
+        {
+          "type": "Card",
+          "detail": "Yellow Card",
+          "player": "Sidny Lopes Cabral",
+          "team": "CAPE VERDE",
+          "minute": 5,
+          "extra": null
+        },
+        {
+          "type": "Card",
+          "detail": "Yellow Card",
+          "player": "Rodrigo Bentancur",
+          "team": "URUGUAY",
+          "minute": 20,
+          "extra": null
+        },
+        {
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "player": "Kevin Lenini",
+          "team": "CAPE VERDE",
+          "minute": 21,
+          "extra": null
+        },
+        {
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "player": "Maximiliano Ara\u00fajo",
+          "team": "URUGUAY",
+          "minute": 44,
+          "extra": null
+        },
+        {
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "player": "Agust\u00edn Canobbio",
+          "team": "URUGUAY",
+          "minute": 45,
+          "extra": 6
+        },
+        {
+          "type": "Card",
+          "detail": "Yellow Card",
+          "player": "Math\u00edas Olivera",
+          "team": "URUGUAY",
+          "minute": 58,
+          "extra": null
+        },
+        {
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "player": "H\u00e9lio Varela",
+          "team": "CAPE VERDE",
+          "minute": 61,
+          "extra": null
+        }
+      ]
     },
     "NEW ZEALAND-EGYPT": {
       "homeGoals": 1,
