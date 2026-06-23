@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-23T05:53:33.950647Z",
+  "updated": "2026-06-23T06:01:14.702057Z",
   "matches": {
     "MEXICO-SOUTH AFRICA": {
       "homeGoals": 2,
@@ -121,64 +121,7 @@
       "status": "FT",
       "elapsed": 90,
       "kickoffUTC": "2026-06-12T19:00:00+00:00",
-      "events": [
-        {
-          "type": "Card",
-          "detail": "Yellow Card",
-          "player": "Alistair Johnston",
-          "team": "CANADA",
-          "minute": 11,
-          "extra": null
-        },
-        {
-          "type": "Goal",
-          "detail": "Normal Goal",
-          "player": "J. Lukic",
-          "team": "BOSNIA & HERZEGOVINA",
-          "minute": 21,
-          "extra": null
-        },
-        {
-          "type": "Card",
-          "detail": "Yellow Card",
-          "player": "Jovo Luki\u0107",
-          "team": "BOSNIA & HERZEGOVINA",
-          "minute": 45,
-          "extra": 1
-        },
-        {
-          "type": "Card",
-          "detail": "Yellow Card",
-          "player": "Ermedin Demirovi\u0107",
-          "team": "BOSNIA & HERZEGOVINA",
-          "minute": 45,
-          "extra": null
-        },
-        {
-          "type": "Card",
-          "detail": "Yellow Card",
-          "player": "Luc De Fougerolles",
-          "team": "CANADA",
-          "minute": 53,
-          "extra": null
-        },
-        {
-          "type": "Goal",
-          "detail": "Normal Goal",
-          "player": "C. Larin",
-          "team": "CANADA",
-          "minute": 78,
-          "extra": null
-        },
-        {
-          "type": "Card",
-          "detail": "Yellow Card",
-          "player": "Nikola Kati\u0107",
-          "team": "BOSNIA & HERZEGOVINA",
-          "minute": 90,
-          "extra": 3
-        }
-      ]
+      "events": []
     },
     "USA-PARAGUAY": {
       "homeGoals": 4,
@@ -1967,7 +1910,7 @@
         {
           "type": "Goal",
           "detail": "Normal Goal",
-          "player": "Mikel Oyarzabal",
+          "player": "M. Oyarzabal",
           "team": "SPAIN",
           "minute": 21,
           "extra": null
@@ -1975,7 +1918,7 @@
         {
           "type": "Goal",
           "detail": "Normal Goal",
-          "player": "Mikel Oyarzabal",
+          "player": "M. Oyarzabal",
           "team": "SPAIN",
           "minute": 24,
           "extra": null
@@ -1991,7 +1934,7 @@
         {
           "type": "Goal",
           "detail": "Own Goal",
-          "player": "Hassan Tambakti",
+          "player": "H. Tambakti",
           "team": "SPAIN",
           "minute": 49,
           "extra": null
@@ -2065,7 +2008,7 @@
         {
           "type": "Goal",
           "detail": "Normal Goal",
-          "player": "Kevin Lenini",
+          "player": "K. Lenini",
           "team": "CAPE VERDE",
           "minute": 21,
           "extra": null
@@ -2073,7 +2016,7 @@
         {
           "type": "Goal",
           "detail": "Normal Goal",
-          "player": "Maximiliano Ara\u00fajo",
+          "player": "M. Araujo",
           "team": "URUGUAY",
           "minute": 44,
           "extra": null
@@ -2081,10 +2024,10 @@
         {
           "type": "Goal",
           "detail": "Normal Goal",
-          "player": "Agust\u00edn Canobbio",
+          "player": "A. Canobbio",
           "team": "URUGUAY",
           "minute": 45,
-          "extra": 6
+          "extra": null
         },
         {
           "type": "Card",
@@ -2097,10 +2040,18 @@
         {
           "type": "Goal",
           "detail": "Normal Goal",
-          "player": "H\u00e9lio Varela",
+          "player": "H. Varela",
           "team": "CAPE VERDE",
           "minute": 61,
           "extra": null
+        },
+        {
+          "type": "Card",
+          "detail": "Yellow Card",
+          "player": "Diney Borges",
+          "team": "CAPE VERDE",
+          "minute": 90,
+          "extra": 3
         }
       ]
     },
