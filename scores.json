@@ -1,11 +1,11 @@
 {
-  "updated": "2026-06-23T17:20:34.322749Z",
+  "updated": "2026-06-23T17:30:56.818912Z",
   "matches": {
     "PORTUGAL-UZBEKISTAN": {
       "homeGoals": 2,
-      "awayGoals": 0,
+      "awayGoals": 1,
       "status": "1H",
-      "elapsed": 20,
+      "elapsed": 31,
       "kickoffUTC": "2026-06-23T17:00:00+00:00",
       "events": [
         {
@@ -30,6 +30,14 @@
           "player": "N. Mendes",
           "team": "PORTUGAL",
           "minute": 17,
+          "extra": null
+        },
+        {
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "player": "A. Ganiev",
+          "team": "UZBEKISTAN",
+          "minute": 29,
           "extra": null
         }
       ]
