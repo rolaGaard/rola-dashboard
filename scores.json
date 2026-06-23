@@ -1,31 +1,6 @@
 {
-  "updated": "2026-06-23T21:50:34.330015Z",
+  "updated": "2026-06-23T22:00:59.938864Z",
   "matches": {
-    "ENGLAND-GHANA": {
-      "homeGoals": 0,
-      "awayGoals": 0,
-      "status": "2H",
-      "elapsed": 86,
-      "kickoffUTC": "2026-06-23T20:00:00+00:00",
-      "events": [
-        {
-          "type": "Card",
-          "detail": "Yellow Card",
-          "player": "D. Rice",
-          "team": "ENGLAND",
-          "minute": 41,
-          "extra": null
-        },
-        {
-          "type": "Card",
-          "detail": "Yellow Card",
-          "player": "I. Williams",
-          "team": "GHANA",
-          "minute": 60,
-          "extra": null
-        }
-      ]
-    },
     "MEXICO-SOUTH AFRICA": {
       "homeGoals": 2,
       "awayGoals": 0,
@@ -2467,6 +2442,31 @@
           "player": "R. Leao",
           "team": "PORTUGAL",
           "minute": 87,
+          "extra": null
+        }
+      ]
+    },
+    "ENGLAND-GHANA": {
+      "homeGoals": 0,
+      "awayGoals": 0,
+      "status": "FT",
+      "elapsed": 90,
+      "kickoffUTC": "2026-06-23T20:00:00+00:00",
+      "events": [
+        {
+          "type": "Card",
+          "detail": "Yellow Card",
+          "player": "Declan Rice",
+          "team": "ENGLAND",
+          "minute": 41,
+          "extra": null
+        },
+        {
+          "type": "Card",
+          "detail": "Yellow Card",
+          "player": "I\u00f1aki Williams",
+          "team": "GHANA",
+          "minute": 60,
           "extra": null
         }
       ]
