@@ -1,11 +1,11 @@
 {
-  "updated": "2026-06-23T04:40:32.916031Z",
+  "updated": "2026-06-23T04:50:33.415828Z",
   "matches": {
     "JORDAN-ALGERIA": {
       "homeGoals": 1,
-      "awayGoals": 1,
+      "awayGoals": 2,
       "status": "2H",
-      "elapsed": 78,
+      "elapsed": 88,
       "kickoffUTC": "2026-06-23T03:00:00+00:00",
       "events": [
         {
@@ -38,6 +38,14 @@
           "player": "N. Benbouali",
           "team": "ALGERIA",
           "minute": 69,
+          "extra": null
+        },
+        {
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "player": "A. Gouiri",
+          "team": "ALGERIA",
+          "minute": 82,
           "extra": null
         }
       ]
