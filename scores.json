@@ -1,13 +1,22 @@
 {
-  "updated": "2026-06-23T00:40:28.142108Z",
+  "updated": "2026-06-23T00:50:31.368724Z",
   "matches": {
     "NORWAY-SENEGAL": {
-      "homeGoals": 0,
+      "homeGoals": 1,
       "awayGoals": 0,
-      "status": "1H",
-      "elapsed": 41,
+      "status": "HT",
+      "elapsed": 45,
       "kickoffUTC": "2026-06-23T00:00:00+00:00",
-      "events": []
+      "events": [
+        {
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "player": "M. Pedersen",
+          "team": "NORWAY",
+          "minute": 43,
+          "extra": null
+        }
+      ]
     },
     "MEXICO-SOUTH AFRICA": {
       "homeGoals": 2,
@@ -2242,6 +2251,47 @@
         }
       ]
     },
+    "FRANCE-IRAQ": {
+      "homeGoals": 3,
+      "awayGoals": 0,
+      "status": "FT",
+      "elapsed": 90,
+      "kickoffUTC": "2026-06-22T21:00:00+00:00",
+      "events": [
+        {
+          "type": "Card",
+          "detail": "Yellow Card",
+          "player": "Amir Al-Ammari",
+          "team": "IRAQ",
+          "minute": 6,
+          "extra": null
+        },
+        {
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "player": "Kylian Mbapp\u00e9",
+          "team": "FRANCE",
+          "minute": 14,
+          "extra": null
+        },
+        {
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "player": "Kylian Mbapp\u00e9",
+          "team": "FRANCE",
+          "minute": 54,
+          "extra": null
+        },
+        {
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "player": "Ousmane Demb\u00e9l\u00e9",
+          "team": "FRANCE",
+          "minute": 66,
+          "extra": null
+        }
+      ]
+    },
     "JORDAN-ALGERIA": {
       "homeGoals": null,
       "awayGoals": null,
@@ -2444,47 +2494,6 @@
       "status": "NS",
       "elapsed": null,
       "kickoffUTC": "2026-06-28T02:00:00+00:00"
-    },
-    "FRANCE-IRAQ": {
-      "homeGoals": 3,
-      "awayGoals": 0,
-      "status": "2H",
-      "elapsed": 85,
-      "kickoffUTC": "2026-06-22T21:00:00+00:00",
-      "events": [
-        {
-          "type": "Card",
-          "detail": "Yellow Card",
-          "player": "Amir Al-Ammari",
-          "team": "IRAQ",
-          "minute": 6,
-          "extra": null
-        },
-        {
-          "type": "Goal",
-          "detail": "Normal Goal",
-          "player": "Kylian Mbapp\u00e9",
-          "team": "FRANCE",
-          "minute": 14,
-          "extra": null
-        },
-        {
-          "type": "Goal",
-          "detail": "Normal Goal",
-          "player": "Kylian Mbapp\u00e9",
-          "team": "FRANCE",
-          "minute": 54,
-          "extra": null
-        },
-        {
-          "type": "Goal",
-          "detail": "Normal Goal",
-          "player": "Ousmane Demb\u00e9l\u00e9",
-          "team": "FRANCE",
-          "minute": 66,
-          "extra": null
-        }
-      ]
     }
   }
 }
