@@ -1,13 +1,30 @@
 {
-  "updated": "2026-06-24T00:12:45.759113Z",
+  "updated": "2026-06-24T00:20:33.650542Z",
   "matches": {
     "PANAMA-CROATIA": {
       "homeGoals": 0,
-      "awayGoals": 0,
+      "awayGoals": 1,
       "status": "2H",
-      "elapsed": 54,
+      "elapsed": 62,
       "kickoffUTC": "2026-06-23T23:00:00+00:00",
-      "events": []
+      "events": [
+        {
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "player": "A. Budimir",
+          "team": "CROATIA",
+          "minute": 54,
+          "extra": null
+        },
+        {
+          "type": "Card",
+          "detail": "Yellow Card",
+          "player": "Y. Barcenas",
+          "team": "PANAMA",
+          "minute": 61,
+          "extra": null
+        }
+      ]
     },
     "MEXICO-SOUTH AFRICA": {
       "homeGoals": 2,
