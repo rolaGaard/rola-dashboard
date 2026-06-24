@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-24T04:20:34.667572Z",
+  "updated": "2026-06-24T04:31:00.107064Z",
   "matches": {
     "MEXICO-SOUTH AFRICA": {
       "homeGoals": 2,
@@ -16872,7 +16872,7 @@
         {
           "type": "Goal",
           "detail": "Normal Goal",
-          "player": "C. Ronaldo",
+          "player": "Cristiano Ronaldo",
           "team": "PORTUGAL",
           "minute": 6,
           "extra": null
@@ -16880,7 +16880,7 @@
         {
           "type": "Card",
           "detail": "Yellow Card",
-          "player": "O. Khamrobekov",
+          "player": "Odiljon Khamrobekov",
           "team": "UZBEKISTAN",
           "minute": 14,
           "extra": null
@@ -16888,7 +16888,7 @@
         {
           "type": "Goal",
           "detail": "Normal Goal",
-          "player": "N. Mendes",
+          "player": "Nuno Mendes",
           "team": "PORTUGAL",
           "minute": 17,
           "extra": null
@@ -16896,7 +16896,7 @@
         {
           "type": "Goal",
           "detail": "Normal Goal",
-          "player": "C. Ronaldo",
+          "player": "Cristiano Ronaldo",
           "team": "PORTUGAL",
           "minute": 39,
           "extra": null
@@ -16904,7 +16904,7 @@
         {
           "type": "Goal",
           "detail": "Own Goal",
-          "player": "A. Nematov",
+          "player": "Abduvokhid Nematov",
           "team": "PORTUGAL",
           "minute": 60,
           "extra": null
@@ -16912,7 +16912,7 @@
         {
           "type": "Card",
           "detail": "Yellow Card",
-          "player": "R. Veiga",
+          "player": "Renato Veiga",
           "team": "PORTUGAL",
           "minute": 68,
           "extra": null
@@ -16920,7 +16920,7 @@
         {
           "type": "Goal",
           "detail": "Normal Goal",
-          "player": "R. Leao",
+          "player": "Rafael Le\u00e3o",
           "team": "PORTUGAL",
           "minute": 87,
           "extra": null
@@ -16929,55 +16929,55 @@
       "substitutions": {
         "PORTUGAL": [
           {
-            "out": "J. Cancelo",
-            "in": "N. Semedo",
+            "out": "Pedro Neto",
+            "in": "Francisco Concei\u00e7\u00e3o",
             "minute": 46
           },
           {
-            "out": "P. Neto",
-            "in": "F. Conceicao",
+            "out": "Jo\u00e3o Cancelo",
+            "in": "N\u00e9lson Semedo",
             "minute": 46
           },
           {
-            "out": "Joao Felix",
-            "in": "Trincao",
-            "minute": 63
+            "out": "Jo\u00e3o F\u00e9lix",
+            "in": "Francisco Trinc\u00e3o",
+            "minute": 64
           },
           {
-            "out": "J. Neves",
-            "in": "B. Silva",
+            "out": "Jo\u00e3o Neves",
+            "in": "Bernardo Silva",
             "minute": 76
           },
           {
             "out": "Vitinha",
-            "in": "R. Leao",
+            "in": "Rafael Le\u00e3o",
             "minute": 83
           }
         ],
         "UZBEKISTAN": [
           {
-            "out": "S. Nasrullaev",
-            "in": "K. Alizhonov",
+            "out": "Odiljon Khamrobekov",
+            "in": "Akmal Mozgovoy",
             "minute": 46
           },
           {
-            "out": "O. Khamrobekov",
-            "in": "A. Mozgovoy",
+            "out": "Sherzod Nasrullaev",
+            "in": "Khozhiakbar Alizhonov",
             "minute": 46
           },
           {
-            "out": "A. Fayzullaev",
-            "in": "I. Sergeev",
+            "out": "Abbosbek Fayzullaev",
+            "in": "Igor Sergeev",
             "minute": 73
           },
           {
-            "out": "B. Karimov",
-            "in": "R. Jiyanov",
+            "out": "Otabek Shukurov",
+            "in": "Sherzod Esanov",
             "minute": 90
           },
           {
-            "out": "O. Shukurov",
-            "in": "S. Esanov",
+            "out": "Bekhruz Karimov",
+            "in": "Ruslanbek Jiyanov",
             "minute": 90
           }
         ]
