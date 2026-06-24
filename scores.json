@@ -1,10 +1,10 @@
 {
-  "updated": "2026-06-24T02:50:36.967189Z",
+  "updated": "2026-06-24T03:01:29.360694Z",
   "matches": {
     "COLOMBIA-CONGO DR": {
       "homeGoals": 0,
       "awayGoals": 0,
-      "status": "1H",
+      "status": "HT",
       "elapsed": 45,
       "kickoffUTC": "2026-06-24T02:00:00+00:00",
       "events": [],
@@ -359,6 +359,57 @@
           "extra": 2
         }
       ],
+      "substitutions": {
+        "SOUTH AFRICA": [
+          {
+            "out": "L. Foster",
+            "in": "T. Mbatha",
+            "minute": 56
+          },
+          {
+            "out": "J. Adams",
+            "in": "T. Zwane",
+            "minute": 61
+          },
+          {
+            "out": "I. Rayners",
+            "in": "E. Makgopa",
+            "minute": 76
+          },
+          {
+            "out": "A. Modiba",
+            "in": "O. Appollis",
+            "minute": 77
+          }
+        ],
+        "MEXICO": [
+          {
+            "out": "B. Gutierrez",
+            "in": "L. Chavez",
+            "minute": 66
+          },
+          {
+            "out": "A. Fidalgo",
+            "in": "G. Mora",
+            "minute": 66
+          },
+          {
+            "out": "E. Lira",
+            "in": "E. Alvarez",
+            "minute": 76
+          },
+          {
+            "out": "R. Jimenez",
+            "in": "A. Gonzalez",
+            "minute": 76
+          },
+          {
+            "out": "J. Quinones",
+            "in": "A. Vega",
+            "minute": 79
+          }
+        ]
+      },
       "lineups": {
         "MEXICO": {
           "formation": "4-1-4-1",
@@ -678,6 +729,57 @@
           "extra": 6
         }
       ],
+      "substitutions": {
+        "SOUTH KOREA": [
+          {
+            "out": "Lee Jae-Sung",
+            "in": "Hwang Hee-Chan",
+            "minute": 62
+          },
+          {
+            "out": "Son Heung-Min",
+            "in": "Oh Hyeon-Gyu",
+            "minute": 69
+          },
+          {
+            "out": "Lee Tae-Seok",
+            "in": "Eom Ji-Sung",
+            "minute": 69
+          },
+          {
+            "out": "Hwang In-Beom",
+            "in": "Kim Jin-Gyu",
+            "minute": 84
+          },
+          {
+            "out": "Paik Seung-Ho",
+            "in": "Park Jin-Seob",
+            "minute": 84
+          }
+        ],
+        "CZECHIA": [
+          {
+            "out": "P. Sulc",
+            "in": "A. Hlozek",
+            "minute": 64
+          },
+          {
+            "out": "P. Schick",
+            "in": "T. Chory",
+            "minute": 64
+          },
+          {
+            "out": "L. Provod",
+            "in": "M. Sadilek",
+            "minute": 64
+          },
+          {
+            "out": "A. Sojka",
+            "in": "M. Chytil",
+            "minute": 84
+          }
+        ]
+      },
       "lineups": {
         "SOUTH KOREA": {
           "formation": "3-4-2-1",
@@ -1021,6 +1123,62 @@
           "extra": 3
         }
       ],
+      "substitutions": {
+        "CANADA": [
+          {
+            "out": "L. Millar",
+            "in": "J. Shaffelburg",
+            "minute": 61
+          },
+          {
+            "out": "J. David",
+            "in": "P. David",
+            "minute": 61
+          },
+          {
+            "out": "T. Buchanan",
+            "in": "A. Ahmed",
+            "minute": 61
+          },
+          {
+            "out": "T. Oluwaseyi",
+            "in": "C. Larin",
+            "minute": 76
+          },
+          {
+            "out": "S. Eustaquio",
+            "in": "J. Osorio",
+            "minute": 90
+          }
+        ],
+        "BOSNIA & HERZEGOVINA": [
+          {
+            "out": "I. Basic",
+            "in": "A. Gigovic",
+            "minute": 62
+          },
+          {
+            "out": "J. Lukic",
+            "in": "S. Bazdar",
+            "minute": 62
+          },
+          {
+            "out": "E. Bajraktarevic",
+            "in": "I. Sunjic",
+            "minute": 74
+          },
+          {
+            "out": "A. Memic",
+            "in": "K. Alajbegovic",
+            "minute": 74
+          },
+          {
+            "out": "S. Kolasinac",
+            "in": "D. Burnic",
+            "minute": 84
+          }
+        ]
+      },
       "lineups": {
         "CANADA": {
           "formation": "4-4-2",
@@ -1396,6 +1554,57 @@
           "extra": null
         }
       ],
+      "substitutions": {
+        "USA": [
+          {
+            "out": "C. Pulisic",
+            "in": "S. Berhalter",
+            "minute": 46
+          },
+          {
+            "out": "F. Balogun",
+            "in": "R. Pepi",
+            "minute": 72
+          },
+          {
+            "out": "S. Dest",
+            "in": "T. Weah",
+            "minute": 72
+          },
+          {
+            "out": "M. Tillman",
+            "in": "G. Reyna",
+            "minute": 82
+          }
+        ],
+        "PARAGUAY": [
+          {
+            "out": "D. Bobadilla",
+            "in": "Mauricio",
+            "minute": 46
+          },
+          {
+            "out": "A. Sanabria",
+            "in": "A. Arce",
+            "minute": 62
+          },
+          {
+            "out": "J. Caceres",
+            "in": "G. Velazquez",
+            "minute": 79
+          },
+          {
+            "out": "M. Almiron",
+            "in": "R. Sosa",
+            "minute": 79
+          },
+          {
+            "out": "D. Gomez",
+            "in": "Kaku",
+            "minute": 80
+          }
+        ]
+      },
       "lineups": {
         "USA": {
           "formation": "4-2-3-1",
@@ -1723,6 +1932,62 @@
           "extra": null
         }
       ],
+      "substitutions": {
+        "QATAR": [
+          {
+            "out": "A. Al Oui",
+            "in": "A. Fathi",
+            "minute": 60
+          },
+          {
+            "out": "J. Gaber",
+            "in": "K. Boudiaf",
+            "minute": 60
+          },
+          {
+            "out": "Y. Abdurisag",
+            "in": "A. Alaaeldin",
+            "minute": 60
+          },
+          {
+            "out": "A. O. Madibo",
+            "in": "M. Al Mannai",
+            "minute": 79
+          },
+          {
+            "out": "Edmilson Junior",
+            "in": "H. Al Haydos",
+            "minute": 88
+          }
+        ],
+        "SWITZERLAND": [
+          {
+            "out": "M. Aebischer",
+            "in": "F. Rieder",
+            "minute": 65
+          },
+          {
+            "out": "D. Ndoye",
+            "in": "J. Manzambi",
+            "minute": 65
+          },
+          {
+            "out": "R. Vargas",
+            "in": "Z. Amdouni",
+            "minute": 79
+          },
+          {
+            "out": "R. Rodriguez",
+            "in": "M. Muheim",
+            "minute": 89
+          },
+          {
+            "out": "R. Freuler",
+            "in": "A. Jashari",
+            "minute": 89
+          }
+        ]
+      },
       "lineups": {
         "QATAR": {
           "formation": "4-3-3",
@@ -2042,6 +2307,62 @@
           "extra": null
         }
       ],
+      "substitutions": {
+        "BRAZIL": [
+          {
+            "out": "Ibanez",
+            "in": "Danilo",
+            "minute": 46
+          },
+          {
+            "out": "Casemiro",
+            "in": "Fabinho",
+            "minute": 46
+          },
+          {
+            "out": "Lucas Paqueta",
+            "in": "M. Cunha",
+            "minute": 61
+          },
+          {
+            "out": "I. Thiago",
+            "in": "Luiz Henrique",
+            "minute": 62
+          },
+          {
+            "out": "Bruno Guimaraes",
+            "in": "Danilo Santos",
+            "minute": 80
+          }
+        ],
+        "MOROCCO": [
+          {
+            "out": "B. Diaz",
+            "in": "C. Talbi",
+            "minute": 65
+          },
+          {
+            "out": "A. Ounahi",
+            "in": "S. El Mourabet",
+            "minute": 65
+          },
+          {
+            "out": "N. Mazraoui",
+            "in": "A. Salah-Eddine",
+            "minute": 80
+          },
+          {
+            "out": "B. El Khannouss",
+            "in": "A. Amaimouni",
+            "minute": 80
+          },
+          {
+            "out": "I. Saibari",
+            "in": "S. Rahimi",
+            "minute": 89
+          }
+        ]
+      },
       "lineups": {
         "BRAZIL": {
           "formation": "4-2-3-1",
@@ -2364,6 +2685,52 @@
           "extra": 1
         }
       ],
+      "substitutions": {
+        "HAITI": [
+          {
+            "out": "L. Deedson",
+            "in": "J. Casimir",
+            "minute": 61
+          },
+          {
+            "out": "W. Isidor",
+            "in": "L. Joseph",
+            "minute": 76
+          },
+          {
+            "out": "R. Providence",
+            "in": "Y. Fortune",
+            "minute": 85
+          }
+        ],
+        "SCOTLAND": [
+          {
+            "out": "B. Gannon-Doak",
+            "in": "R. Christie",
+            "minute": 75
+          },
+          {
+            "out": "C. Adams",
+            "in": "L. Dykes",
+            "minute": 75
+          },
+          {
+            "out": "A. Hickey",
+            "in": "N. Patterson",
+            "minute": 75
+          },
+          {
+            "out": "L. Shankland",
+            "in": "K. McLean",
+            "minute": 83
+          },
+          {
+            "out": "J. McGinn",
+            "in": "F. Curtis",
+            "minute": 83
+          }
+        ]
+      },
       "lineups": {
         "HAITI": {
           "formation": "4-4-2",
@@ -2675,6 +3042,62 @@
           "extra": null
         }
       ],
+      "substitutions": {
+        "TURKIYE": [
+          {
+            "out": "B. Yilmaz",
+            "in": "K. Yildiz",
+            "minute": 46
+          },
+          {
+            "out": "O. Kokcu",
+            "in": "Y. Akgun",
+            "minute": 62
+          },
+          {
+            "out": "Z. Celik",
+            "in": "M. Muldur",
+            "minute": 81
+          },
+          {
+            "out": "I. Yuksek",
+            "in": "S. Ozcan",
+            "minute": 81
+          },
+          {
+            "out": "K. Akturkoglu",
+            "in": "D. Gul",
+            "minute": 85
+          }
+        ],
+        "AUSTRALIA": [
+          {
+            "out": "N. Irankunda",
+            "in": "N. Velupillay",
+            "minute": 61
+          },
+          {
+            "out": "J. Italiano",
+            "in": "J. Geria",
+            "minute": 74
+          },
+          {
+            "out": "M. Toure",
+            "in": "T. Yengi",
+            "minute": 74
+          },
+          {
+            "out": "J. Bos",
+            "in": "A. Behich",
+            "minute": 84
+          },
+          {
+            "out": "P. Okon-Engstler",
+            "in": "J. Irvine",
+            "minute": 84
+          }
+        ]
+      },
       "lineups": {
         "AUSTRALIA": {
           "formation": "5-4-1",
@@ -3026,6 +3449,52 @@
           "extra": null
         }
       ],
+      "substitutions": {
+        "CURACAO": [
+          {
+            "out": "S. Hansen",
+            "in": "J. Antonisse",
+            "minute": 46
+          },
+          {
+            "out": "J. Locadia",
+            "in": "J. Margaritha",
+            "minute": 65
+          },
+          {
+            "out": "T. Chong",
+            "in": "G. Kastaneer",
+            "minute": 83
+          }
+        ],
+        "GERMANY": [
+          {
+            "out": "J. Musiala",
+            "in": "D. Undav",
+            "minute": 64
+          },
+          {
+            "out": "F. Nmecha",
+            "in": "L. Goretzka",
+            "minute": 73
+          },
+          {
+            "out": "J. Tah",
+            "in": "A. Rudiger",
+            "minute": 73
+          },
+          {
+            "out": "N. Brown",
+            "in": "D. Raum",
+            "minute": 73
+          },
+          {
+            "out": "J. Kimmich",
+            "in": "W. Anton",
+            "minute": 83
+          }
+        ]
+      },
       "lineups": {
         "GERMANY": {
           "formation": "4-2-3-1",
@@ -3369,6 +3838,62 @@
           "extra": 1
         }
       ],
+      "substitutions": {
+        "JAPAN": [
+          {
+            "out": "D. Maeda",
+            "in": "J. Ito",
+            "minute": 66
+          },
+          {
+            "out": "T. Watanabe",
+            "in": "T. Tomiyasu",
+            "minute": 75
+          },
+          {
+            "out": "R. Doan",
+            "in": "Y. Sugawara",
+            "minute": 75
+          },
+          {
+            "out": "T. Kubo",
+            "in": "K. Ogawa",
+            "minute": 75
+          },
+          {
+            "out": "A. Ueda",
+            "in": "K. Shiogai",
+            "minute": 84
+          }
+        ],
+        "NETHERLANDS": [
+          {
+            "out": "D. Malen",
+            "in": "M. Depay",
+            "minute": 70
+          },
+          {
+            "out": "T. Reijnders",
+            "in": "Q. Timber",
+            "minute": 70
+          },
+          {
+            "out": "C. Summerville",
+            "in": "T. Koopmeiners",
+            "minute": 70
+          },
+          {
+            "out": "R. Gravenberch",
+            "in": "N. Ake",
+            "minute": 81
+          },
+          {
+            "out": "C. Gakpo",
+            "in": "B. Brobbey",
+            "minute": 85
+          }
+        ]
+      },
       "lineups": {
         "NETHERLANDS": {
           "formation": "4-3-3",
@@ -3696,6 +4221,57 @@
           "extra": null
         }
       ],
+      "substitutions": {
+        "IVORY COAST": [
+          {
+            "out": "B. Toure",
+            "in": "A. Diallo",
+            "minute": 56
+          },
+          {
+            "out": "E. Wahi",
+            "in": "A. Bonny",
+            "minute": 56
+          },
+          {
+            "out": "S. Fofana",
+            "in": "I. Sangare",
+            "minute": 77
+          },
+          {
+            "out": "N. Pepe",
+            "in": "C. Inao Oulai",
+            "minute": 77
+          },
+          {
+            "out": "G. Doue",
+            "in": "O. Kossounou",
+            "minute": 89
+          }
+        ],
+        "ECUADOR": [
+          {
+            "out": "A. Minda",
+            "in": "N. Angulo",
+            "minute": 56
+          },
+          {
+            "out": "J. Yeboah",
+            "in": "A. Preciado",
+            "minute": 62
+          },
+          {
+            "out": "A. Franco",
+            "in": "J. Porozo",
+            "minute": 62
+          },
+          {
+            "out": "E. Valencia",
+            "in": "K. Rodriguez",
+            "minute": 77
+          }
+        ]
+      },
       "lineups": {
         "IVORY COAST": {
           "formation": "4-4-2",
@@ -4039,6 +4615,62 @@
           "extra": null
         }
       ],
+      "substitutions": {
+        "SWEDEN": [
+          {
+            "out": "G. Gudmundsson",
+            "in": "E. Stroud",
+            "minute": 65
+          },
+          {
+            "out": "B. Nygren",
+            "in": "L. Bergvall",
+            "minute": 65
+          },
+          {
+            "out": "J. Karlstrom",
+            "in": "M. Svanberg",
+            "minute": 84
+          },
+          {
+            "out": "A. Isak",
+            "in": "A. Elanga",
+            "minute": 90
+          },
+          {
+            "out": "A. Bernhardsson",
+            "in": "D. Svensson",
+            "minute": 90
+          }
+        ],
+        "TUNISIA": [
+          {
+            "out": "E. Saad",
+            "in": "S. Tounekti",
+            "minute": 72
+          },
+          {
+            "out": "E. Skhiri",
+            "in": "E. Achouri",
+            "minute": 72
+          },
+          {
+            "out": "Y. Valery",
+            "in": "M. Belhadj",
+            "minute": 72
+          },
+          {
+            "out": "R. Khedira",
+            "in": "I. Gharbi",
+            "minute": 83
+          },
+          {
+            "out": "A. Slimane",
+            "in": "F. Chaouat",
+            "minute": 84
+          }
+        ]
+      },
       "lineups": {
         "SWEDEN": {
           "formation": "3-1-4-2",
@@ -4342,6 +4974,57 @@
           "extra": 3
         }
       ],
+      "substitutions": {
+        "CAPE VERDE": [
+          {
+            "out": "L. Duarte",
+            "in": "D. Duarte",
+            "minute": 61
+          },
+          {
+            "out": "D. Livramento",
+            "in": "N. Da Costa",
+            "minute": 61
+          },
+          {
+            "out": "J. Cabral",
+            "in": "W. Semedo",
+            "minute": 61
+          },
+          {
+            "out": "S. Lopes Cabral",
+            "in": "Joao Paulo",
+            "minute": 76
+          },
+          {
+            "out": "J. Monteiro",
+            "in": "T. Arcanjo",
+            "minute": 79
+          }
+        ],
+        "SPAIN": [
+          {
+            "out": "Gavi",
+            "in": "Lamine Yamal",
+            "minute": 71
+          },
+          {
+            "out": "F. Ruiz",
+            "in": "M. Merino",
+            "minute": 71
+          },
+          {
+            "out": "F. Torres",
+            "in": "D. Olmo",
+            "minute": 81
+          },
+          {
+            "out": "Rodri",
+            "in": "N. Williams",
+            "minute": 87
+          }
+        ]
+      },
       "lineups": {
         "SPAIN": {
           "formation": "4-3-3",
@@ -4677,6 +5360,62 @@
           "extra": null
         }
       ],
+      "substitutions": {
+        "BELGIUM": [
+          {
+            "out": "T. Castagne",
+            "in": "N. Raskin",
+            "minute": 56
+          },
+          {
+            "out": "A. Onana",
+            "in": "M. De Cuyper",
+            "minute": 56
+          },
+          {
+            "out": "C. De Ketelaere",
+            "in": "R. Lukaku",
+            "minute": 66
+          },
+          {
+            "out": "K. De Bruyne",
+            "in": "H. Vanaken",
+            "minute": 86
+          },
+          {
+            "out": "J. Doku",
+            "in": "M. Fernandez-Pardo",
+            "minute": 86
+          }
+        ],
+        "EGYPT": [
+          {
+            "out": "E. Ashour",
+            "in": "R. Rabia",
+            "minute": 71
+          },
+          {
+            "out": "M. Salah",
+            "in": "H. Abdelkarim",
+            "minute": 76
+          },
+          {
+            "out": "M. Ziko",
+            "in": "Zizo",
+            "minute": 76
+          },
+          {
+            "out": "H. Fathy",
+            "in": "I. Adel",
+            "minute": 88
+          },
+          {
+            "out": "A. Fatouh",
+            "in": "K. Hafez",
+            "minute": 88
+          }
+        ]
+      },
       "lineups": {
         "BELGIUM": {
           "formation": "4-2-3-1",
@@ -4983,6 +5722,62 @@
           "extra": null
         }
       ],
+      "substitutions": {
+        "URUGUAY": [
+          {
+            "out": "D. Nunez",
+            "in": "A. Canobbio",
+            "minute": 46
+          },
+          {
+            "out": "M. Vina",
+            "in": "J. Sanabria",
+            "minute": 46
+          },
+          {
+            "out": "M. Ugarte",
+            "in": "N. de la Cruz",
+            "minute": 72
+          },
+          {
+            "out": "M. Araujo",
+            "in": "B. Rodriguez",
+            "minute": 81
+          },
+          {
+            "out": "F. Vinas",
+            "in": "R. Aguirre",
+            "minute": 90
+          }
+        ],
+        "SAUDI ARABIA": [
+          {
+            "out": "M. Al Juwayr",
+            "in": "N. Al Dawsari",
+            "minute": 63
+          },
+          {
+            "out": "M. Abu Al Shamat",
+            "in": "N. Boushal",
+            "minute": 81
+          },
+          {
+            "out": "S. Abdulhamid",
+            "in": "A. Lajami",
+            "minute": 90
+          },
+          {
+            "out": "M. Al Harbi",
+            "in": "A. Al Hamdan",
+            "minute": 90
+          },
+          {
+            "out": "F. Al Buraikan",
+            "in": "A. Hejji",
+            "minute": 90
+          }
+        ]
+      },
       "lineups": {
         "SAUDI ARABIA": {
           "formation": "4-4-2",
@@ -5300,6 +6095,57 @@
           "extra": null
         }
       ],
+      "substitutions": {
+        "IRAN": [
+          {
+            "out": "A. Yousefi",
+            "in": "M. Ghaedi",
+            "minute": 46
+          },
+          {
+            "out": "S. Moghanlou",
+            "in": "A. Alipour",
+            "minute": 53
+          },
+          {
+            "out": "S. Ghoddos",
+            "in": "E. Hajsafi",
+            "minute": 65
+          },
+          {
+            "out": "M. Taremi",
+            "in": "A. Hosseinzadeh",
+            "minute": 80
+          }
+        ],
+        "NEW ZEALAND": [
+          {
+            "out": "C. McCowatt",
+            "in": "R. Thomas",
+            "minute": 68
+          },
+          {
+            "out": "L. Cacace",
+            "in": "B. Old",
+            "minute": 68
+          },
+          {
+            "out": "T. Payne",
+            "in": "C. Elliot",
+            "minute": 78
+          },
+          {
+            "out": "S. Singh",
+            "in": "J. Randall",
+            "minute": 90
+          },
+          {
+            "out": "M. Stamenic",
+            "in": "T. Bindon",
+            "minute": 90
+          }
+        ]
+      },
       "lineups": {
         "IRAN": {
           "formation": "4-4-2",
@@ -5614,6 +6460,47 @@
           "extra": null
         }
       ],
+      "substitutions": {
+        "SENEGAL": [
+          {
+            "out": "I. Sarr",
+            "in": "I. Mbaye",
+            "minute": 75
+          },
+          {
+            "out": "L. Camara",
+            "in": "H. Diarra",
+            "minute": 76
+          },
+          {
+            "out": "N. Jackson",
+            "in": "B. Dieng",
+            "minute": 83
+          },
+          {
+            "out": "P. Gueye",
+            "in": "I. Ndiaye",
+            "minute": 83
+          },
+          {
+            "out": "I. Gueye",
+            "in": "P. Ciss",
+            "minute": 88
+          }
+        ],
+        "FRANCE": [
+          {
+            "out": "O. Dembele",
+            "in": "B. Barcola",
+            "minute": 80
+          },
+          {
+            "out": "D. Doue",
+            "in": "R. Cherki",
+            "minute": 87
+          }
+        ]
+      },
       "lineups": {
         "FRANCE": {
           "formation": "4-2-3-1",
@@ -5949,6 +6836,62 @@
           "extra": null
         }
       ],
+      "substitutions": {
+        "IRAQ": [
+          {
+            "out": "Z. Ismaeel",
+            "in": "Z. Iqbal",
+            "minute": 59
+          },
+          {
+            "out": "A. Al Hamadi",
+            "in": "M. Farji",
+            "minute": 59
+          },
+          {
+            "out": "A. Jasim",
+            "in": "A. Qasem",
+            "minute": 73
+          },
+          {
+            "out": "H. Ali",
+            "in": "M. Saadoon",
+            "minute": 73
+          },
+          {
+            "out": "I. Bayesh",
+            "in": "Meme",
+            "minute": 78
+          }
+        ],
+        "NORWAY": [
+          {
+            "out": "A. Sorloth",
+            "in": "O. Bobb",
+            "minute": 73
+          },
+          {
+            "out": "D. Wolfe",
+            "in": "L. Ostigard",
+            "minute": 73
+          },
+          {
+            "out": "F. Aursnes",
+            "in": "K. Thorstvedt",
+            "minute": 73
+          },
+          {
+            "out": "A. Nusa",
+            "in": "A. Schjelderup",
+            "minute": 73
+          },
+          {
+            "out": "M. Odegaard",
+            "in": "P. Berg",
+            "minute": 81
+          }
+        ]
+      },
       "lineups": {
         "IRAQ": {
           "formation": "4-4-2",
@@ -6260,6 +7203,62 @@
           "extra": null
         }
       ],
+      "substitutions": {
+        "ARGENTINA": [
+          {
+            "out": "G. Montiel",
+            "in": "N. Molina",
+            "minute": 46
+          },
+          {
+            "out": "T. Almada",
+            "in": "N. Gonzalez",
+            "minute": 55
+          },
+          {
+            "out": "L. Martinez",
+            "in": "J. Alvarez",
+            "minute": 55
+          },
+          {
+            "out": "C. Romero",
+            "in": "N. Otamendi",
+            "minute": 80
+          },
+          {
+            "out": "L. Messi",
+            "in": "N. Paz",
+            "minute": 80
+          }
+        ],
+        "ALGERIA": [
+          {
+            "out": "A. Hadj Moussa",
+            "in": "R. Mahrez",
+            "minute": 64
+          },
+          {
+            "out": "H. Boudaoui",
+            "in": "H. Aouar",
+            "minute": 64
+          },
+          {
+            "out": "A. Gouiri",
+            "in": "M. Amoura",
+            "minute": 64
+          },
+          {
+            "out": "I. Maza",
+            "in": "A. Boulbina",
+            "minute": 81
+          },
+          {
+            "out": "N. Bentaleb",
+            "in": "R. Zerrouki",
+            "minute": 82
+          }
+        ]
+      },
       "lineups": {
         "ARGENTINA": {
           "formation": "4-4-2",
@@ -6587,6 +7586,62 @@
           "extra": null
         }
       ],
+      "substitutions": {
+        "AUSTRIA": [
+          {
+            "out": "S. Kalajdzic",
+            "in": "M. Arnautovic",
+            "minute": 46
+          },
+          {
+            "out": "P. Mwene",
+            "in": "P. Wanner",
+            "minute": 59
+          },
+          {
+            "out": "D. Alaba",
+            "in": "K. Danso",
+            "minute": 59
+          },
+          {
+            "out": "X. Schlager",
+            "in": "C. Chukwuemeka",
+            "minute": 59
+          },
+          {
+            "out": "R. Schmid",
+            "in": "P. Wimmer",
+            "minute": 83
+          }
+        ],
+        "JORDAN": [
+          {
+            "out": "M. Abualnadi",
+            "in": "S. Obaid",
+            "minute": 72
+          },
+          {
+            "out": "A. Nasib",
+            "in": "S. Al Rosan",
+            "minute": 81
+          },
+          {
+            "out": "E. Haddad",
+            "in": "M. Al Mardi",
+            "minute": 81
+          },
+          {
+            "out": "M. Tamari",
+            "in": "M. Al Daoud",
+            "minute": 88
+          },
+          {
+            "out": "O. Al Fakhouri",
+            "in": "A. Azaizeh",
+            "minute": 89
+          }
+        ]
+      },
       "lineups": {
         "AUSTRIA": {
           "formation": "4-2-3-1",
@@ -6922,6 +7977,57 @@
           "extra": 2
         }
       ],
+      "substitutions": {
+        "PORTUGAL": [
+          {
+            "out": "B. Silva",
+            "in": "F. Conceicao",
+            "minute": 46
+          },
+          {
+            "out": "P. Neto",
+            "in": "R. Leao",
+            "minute": 71
+          },
+          {
+            "out": "N. Mendes",
+            "in": "N. Semedo",
+            "minute": 72
+          },
+          {
+            "out": "Vitinha",
+            "in": "G. Ramos",
+            "minute": 83
+          }
+        ],
+        "CONGO DR": [
+          {
+            "out": "N. Mukau",
+            "in": "N. Sadiki",
+            "minute": 57
+          },
+          {
+            "out": "A. Masuaku",
+            "in": "J. Kayembe",
+            "minute": 74
+          },
+          {
+            "out": "E. Kayembe",
+            "in": "C. Pickel",
+            "minute": 74
+          },
+          {
+            "out": "A. Wan-Bissaka",
+            "in": "G. Kalulu",
+            "minute": 85
+          },
+          {
+            "out": "C. Bakambu",
+            "in": "S. Banza",
+            "minute": 85
+          }
+        ]
+      },
       "lineups": {
         "PORTUGAL": {
           "formation": "4-2-3-1",
@@ -7257,6 +8363,62 @@
           "extra": null
         }
       ],
+      "substitutions": {
+        "CROATIA": [
+          {
+            "out": "L. Modric",
+            "in": "M. Kovacic",
+            "minute": 58
+          },
+          {
+            "out": "L. Vuskovic",
+            "in": "M. Pasalic",
+            "minute": 66
+          },
+          {
+            "out": "P. Musa",
+            "in": "I. Matanovic",
+            "minute": 66
+          },
+          {
+            "out": "M. Pasalic",
+            "in": "A. Kramaric",
+            "minute": 78
+          },
+          {
+            "out": "M. Baturina",
+            "in": "N. Vlasic",
+            "minute": 78
+          }
+        ],
+        "ENGLAND": [
+          {
+            "out": "D. Rice",
+            "in": "M. Rogers",
+            "minute": 72
+          },
+          {
+            "out": "N. Madueke",
+            "in": "B. Saka",
+            "minute": 72
+          },
+          {
+            "out": "A. Gordon",
+            "in": "M. Rashford",
+            "minute": 72
+          },
+          {
+            "out": "J. Bellingham",
+            "in": "D. Spence",
+            "minute": 80
+          },
+          {
+            "out": "J. Stones",
+            "in": "M. Guehi",
+            "minute": 87
+          }
+        ]
+      },
       "lineups": {
         "ENGLAND": {
           "formation": "4-2-3-1",
@@ -7571,6 +8733,57 @@
           "extra": null
         }
       ],
+      "substitutions": {
+        "GHANA": [
+          {
+            "out": "L. Ati Zigi",
+            "in": "B. Asare",
+            "minute": 46
+          },
+          {
+            "out": "K. Sulemana",
+            "in": "B. Thomas-Asante",
+            "minute": 58
+          },
+          {
+            "out": "E. Nuamah",
+            "in": "I. Fatawu",
+            "minute": 58
+          },
+          {
+            "out": "E. Owusu",
+            "in": "K. Sibo",
+            "minute": 78
+          },
+          {
+            "out": "J. Ayew",
+            "in": "P. Adu",
+            "minute": 87
+          }
+        ],
+        "PANAMA": [
+          {
+            "out": "C. Waterman",
+            "in": "J. Fajardo",
+            "minute": 63
+          },
+          {
+            "out": "C. Martinez",
+            "in": "A. Londono",
+            "minute": 63
+          },
+          {
+            "out": "J. Rodriguez",
+            "in": "I. Diaz",
+            "minute": 74
+          },
+          {
+            "out": "C. Blackman",
+            "in": "A. Godoy",
+            "minute": 90
+          }
+        ]
+      },
       "lineups": {
         "GHANA": {
           "formation": "4-4-1-1",
@@ -7901,6 +9114,62 @@
           "extra": null
         }
       ],
+      "substitutions": {
+        "UZBEKISTAN": [
+          {
+            "out": "O. Urunov",
+            "in": "D. Khamdamov",
+            "minute": 46
+          },
+          {
+            "out": "S. Nasrullaev",
+            "in": "F. Sayfiev",
+            "minute": 46
+          },
+          {
+            "out": "A. Fayzullaev",
+            "in": "A. Amonov",
+            "minute": 77
+          },
+          {
+            "out": "R. Ashurmatov",
+            "in": "J. Urozov",
+            "minute": 77
+          },
+          {
+            "out": "E. Shomurodov",
+            "in": "I. Sergeev",
+            "minute": 90
+          }
+        ],
+        "COLOMBIA": [
+          {
+            "out": "J. Rodriguez",
+            "in": "J. Campaz",
+            "minute": 72
+          },
+          {
+            "out": "L. Suarez",
+            "in": "C. Hernandez",
+            "minute": 80
+          },
+          {
+            "out": "G. Puerta",
+            "in": "R. Rios",
+            "minute": 80
+          },
+          {
+            "out": "J. Arias",
+            "in": "K. Castano",
+            "minute": 90
+          },
+          {
+            "out": "L. Diaz",
+            "in": "A. Gomez",
+            "minute": 90
+          }
+        ]
+      },
       "lineups": {
         "UZBEKISTAN": {
           "formation": "3-4-2-1",
@@ -8228,6 +9497,52 @@
           "extra": null
         }
       ],
+      "substitutions": {
+        "SOUTH AFRICA": [
+          {
+            "out": "J. Adams",
+            "in": "R. Mofokeng",
+            "minute": 46
+          },
+          {
+            "out": "I. Rayners",
+            "in": "E. Makgopa",
+            "minute": 66
+          },
+          {
+            "out": "T. Maseko",
+            "in": "K. Sebelebele",
+            "minute": 84
+          }
+        ],
+        "CZECHIA": [
+          {
+            "out": "A. Sojka",
+            "in": "J. Zeleny",
+            "minute": 55
+          },
+          {
+            "out": "V. Darida",
+            "in": "P. Sulc",
+            "minute": 55
+          },
+          {
+            "out": "A. Hlozek",
+            "in": "L. Provod",
+            "minute": 67
+          },
+          {
+            "out": "M. Sadilek",
+            "in": "T. Soucek",
+            "minute": 67
+          },
+          {
+            "out": "L. Cerv",
+            "in": "D. Zima",
+            "minute": 78
+          }
+        ]
+      },
       "lineups": {
         "CZECHIA": {
           "formation": "3-5-2",
@@ -8572,6 +9887,62 @@
           "extra": null
         }
       ],
+      "substitutions": {
+        "BOSNIA & HERZEGOVINA": [
+          {
+            "out": "B. Tahirovic",
+            "in": "I. Basic",
+            "minute": 63
+          },
+          {
+            "out": "E. Dzeko",
+            "in": "E. Bajraktarevic",
+            "minute": 64
+          },
+          {
+            "out": "E. Demirovic",
+            "in": "J. Lukic",
+            "minute": 86
+          },
+          {
+            "out": "I. Sunjic",
+            "in": "A. Hadziahmetovic",
+            "minute": 86
+          },
+          {
+            "out": "K. Alajbegovic",
+            "in": "E. Mahmic",
+            "minute": 90
+          }
+        ],
+        "SWITZERLAND": [
+          {
+            "out": "M. Aebischer",
+            "in": "D. Sow",
+            "minute": 71
+          },
+          {
+            "out": "F. Rieder",
+            "in": "R. Vargas",
+            "minute": 71
+          },
+          {
+            "out": "D. Ndoye",
+            "in": "J. Manzambi",
+            "minute": 71
+          },
+          {
+            "out": "S. Widmer",
+            "in": "L. Jaquez",
+            "minute": 86
+          },
+          {
+            "out": "B. Embolo",
+            "in": "C. Itten",
+            "minute": 89
+          }
+        ]
+      },
       "lineups": {
         "SWITZERLAND": {
           "formation": "4-3-1-2",
@@ -8942,6 +10313,62 @@
           "extra": null
         }
       ],
+      "substitutions": {
+        "QATAR": [
+          {
+            "out": "Y. Abdurisag",
+            "in": "S. Al Brake",
+            "minute": 40
+          },
+          {
+            "out": "Edmilson Junior",
+            "in": "A. Fathi",
+            "minute": 46
+          },
+          {
+            "out": "J. Gaber",
+            "in": "M. Al Mannai",
+            "minute": 46
+          },
+          {
+            "out": "A. Afif",
+            "in": "A. Al Hussain",
+            "minute": 59
+          },
+          {
+            "out": null,
+            "in": "Lucas Mendes",
+            "minute": 87
+          }
+        ],
+        "CANADA": [
+          {
+            "out": "D. Cornelius",
+            "in": "M. Bombito",
+            "minute": 46
+          },
+          {
+            "out": "I. Kone",
+            "in": "N. Saliba",
+            "minute": 57
+          },
+          {
+            "out": "L. De Fougerolles",
+            "in": "J. Shaffelburg",
+            "minute": 71
+          },
+          {
+            "out": "A. Ahmed",
+            "in": "T. Oluwaseyi",
+            "minute": 71
+          },
+          {
+            "out": "T. Buchanan",
+            "in": "N. Sigur",
+            "minute": 83
+          }
+        ]
+      },
       "lineups": {
         "CANADA": {
           "formation": "4-4-2",
@@ -9248,6 +10675,62 @@
           "extra": null
         }
       ],
+      "substitutions": {
+        "SOUTH KOREA": [
+          {
+            "out": "Lee Jae-Sung",
+            "in": "Hwang Hee-Chan",
+            "minute": 57
+          },
+          {
+            "out": "Son Heung-Min",
+            "in": "Oh Hyeon-Gyu",
+            "minute": 57
+          },
+          {
+            "out": "Kim Moon-Hwan",
+            "in": "Eom Ji-Sung",
+            "minute": 71
+          },
+          {
+            "out": "Seol Young-Woo",
+            "in": "Yang Hyun-Jun",
+            "minute": 71
+          },
+          {
+            "out": "Paik Seung-Ho",
+            "in": "Cho Gue-Sung",
+            "minute": 77
+          }
+        ],
+        "MEXICO": [
+          {
+            "out": "L. Romo",
+            "in": "O. Vargas",
+            "minute": 71
+          },
+          {
+            "out": "B. Gutierrez",
+            "in": "O. Pineda",
+            "minute": 71
+          },
+          {
+            "out": "R. Alvarado",
+            "in": "I. Reyes",
+            "minute": 80
+          },
+          {
+            "out": "R. Jimenez",
+            "in": "S. Gimenez",
+            "minute": 80
+          },
+          {
+            "out": "J. Quinones",
+            "in": "C. S. Huerta Valera",
+            "minute": 84
+          }
+        ]
+      },
       "lineups": {
         "MEXICO": {
           "formation": "4-3-3",
@@ -9602,6 +11085,62 @@
           "extra": 3
         }
       ],
+      "substitutions": {
+        "AUSTRALIA": [
+          {
+            "out": "C. Burgess",
+            "in": "J. Geria",
+            "minute": 46
+          },
+          {
+            "out": "N. Velupillay",
+            "in": "C. Metcalfe",
+            "minute": 46
+          },
+          {
+            "out": "M. Toure",
+            "in": "N. Irankunda",
+            "minute": 46
+          },
+          {
+            "out": "M. Leckie",
+            "in": "C. Volpato",
+            "minute": 61
+          },
+          {
+            "out": "P. Okon-Engstler",
+            "in": "J. Irvine",
+            "minute": 78
+          }
+        ],
+        "USA": [
+          {
+            "out": "R. Pepi",
+            "in": "S. Berhalter",
+            "minute": 74
+          },
+          {
+            "out": "A. Robinson",
+            "in": "A. Trusty",
+            "minute": 80
+          },
+          {
+            "out": "S. Dest",
+            "in": "J. Scally",
+            "minute": 80
+          },
+          {
+            "out": "W. McKennie",
+            "in": "G. Reyna",
+            "minute": 90
+          },
+          {
+            "out": "F. Balogun",
+            "in": "H. Wright",
+            "minute": 90
+          }
+        ]
+      },
       "lineups": {
         "USA": {
           "formation": "3-5-2",
@@ -9908,6 +11447,57 @@
           "extra": null
         }
       ],
+      "substitutions": {
+        "SCOTLAND": [
+          {
+            "out": "K. Tierney",
+            "in": "B. Gannon-Doak",
+            "minute": 60
+          },
+          {
+            "out": "R. Christie",
+            "in": "K. McLean",
+            "minute": 71
+          },
+          {
+            "out": "C. Adams",
+            "in": "L. Dykes",
+            "minute": 71
+          },
+          {
+            "out": "N. Patterson",
+            "in": "A. Ralston",
+            "minute": 89
+          },
+          {
+            "out": "J. McGinn",
+            "in": "R. Stewart",
+            "minute": 89
+          }
+        ],
+        "MOROCCO": [
+          {
+            "out": "B. El Khannouss",
+            "in": "C. Talbi",
+            "minute": 84
+          },
+          {
+            "out": "I. Saibari",
+            "in": "S. Rahimi",
+            "minute": 84
+          },
+          {
+            "out": "B. Diaz",
+            "in": "A. Amaimouni",
+            "minute": 84
+          },
+          {
+            "out": "A. Ounahi",
+            "in": "S. El Mourabet",
+            "minute": 90
+          }
+        ]
+      },
       "lineups": {
         "SCOTLAND": {
           "formation": "4-4-1-1",
@@ -10251,6 +11841,62 @@
           "extra": null
         }
       ],
+      "substitutions": {
+        "BRAZIL": [
+          {
+            "out": "Raphinha",
+            "in": "Rayan",
+            "minute": 40
+          },
+          {
+            "out": "Lucas Paqueta",
+            "in": "G. Martinelli",
+            "minute": 64
+          },
+          {
+            "out": "M. Cunha",
+            "in": "Endrick",
+            "minute": 64
+          },
+          {
+            "out": "Bruno Guimaraes",
+            "in": "Ederson",
+            "minute": 81
+          },
+          {
+            "out": "Vinicius Junior",
+            "in": "Danilo Santos",
+            "minute": 81
+          }
+        ],
+        "HAITI": [
+          {
+            "out": "C. Arcus",
+            "in": "D. Simon",
+            "minute": 46
+          },
+          {
+            "out": "F. Pierrot",
+            "in": "W. Isidor",
+            "minute": 46
+          },
+          {
+            "out": "J. Casimir",
+            "in": "L. Deedson",
+            "minute": 62
+          },
+          {
+            "out": "R. Providence",
+            "in": "L. Joseph",
+            "minute": 71
+          },
+          {
+            "out": "J. Bellegarde",
+            "in": "D. Etienne",
+            "minute": 81
+          }
+        ]
+      },
       "lineups": {
         "BRAZIL": {
           "formation": "4-3-3",
@@ -10565,6 +12211,62 @@
           "extra": null
         }
       ],
+      "substitutions": {
+        "TURKIYE": [
+          {
+            "out": "K. Akturkoglu",
+            "in": "B. Yilmaz",
+            "minute": 46
+          },
+          {
+            "out": "Y. Akgun",
+            "in": "D. Gul",
+            "minute": 60
+          },
+          {
+            "out": "I. Yuksek",
+            "in": "C. Uzun",
+            "minute": 60
+          },
+          {
+            "out": "F. Kadioglu",
+            "in": "E. Elmali",
+            "minute": 70
+          },
+          {
+            "out": "A. Bardakci",
+            "in": "O. Kokcu",
+            "minute": 86
+          }
+        ],
+        "PARAGUAY": [
+          {
+            "out": "I. Pitta",
+            "in": "D. Bobadilla",
+            "minute": 46
+          },
+          {
+            "out": "D. Gomez",
+            "in": "G. Velazquez",
+            "minute": 67
+          },
+          {
+            "out": "J. Caceres",
+            "in": "A. Maidana",
+            "minute": 81
+          },
+          {
+            "out": "J. Enciso",
+            "in": "G. Avalos",
+            "minute": 90
+          },
+          {
+            "out": "M. Galarza",
+            "in": "J. Canale",
+            "minute": 90
+          }
+        ]
+      },
       "lineups": {
         "TURKIYE": {
           "formation": "4-2-3-1",
@@ -10924,6 +12626,62 @@
           "extra": null
         }
       ],
+      "substitutions": {
+        "NETHERLANDS": [
+          {
+            "out": "D. Malen",
+            "in": "C. Summerville",
+            "minute": 46
+          },
+          {
+            "out": "F. de Jong",
+            "in": "T. Koopmeiners",
+            "minute": 59
+          },
+          {
+            "out": "T. Reijnders",
+            "in": "G. Til",
+            "minute": 59
+          },
+          {
+            "out": "B. Brobbey",
+            "in": "M. Depay",
+            "minute": 72
+          },
+          {
+            "out": "C. Gakpo",
+            "in": "N. Lang",
+            "minute": 90
+          }
+        ],
+        "SWEDEN": [
+          {
+            "out": "A. Bernhardsson",
+            "in": "A. Elanga",
+            "minute": 55
+          },
+          {
+            "out": "B. Nygren",
+            "in": "L. Bergvall",
+            "minute": 56
+          },
+          {
+            "out": "J. Karlstrom",
+            "in": "B. Zeneli",
+            "minute": 56
+          },
+          {
+            "out": "Y. Ayari",
+            "in": "T. Ali",
+            "minute": 79
+          },
+          {
+            "out": "G. Gudmundsson",
+            "in": "E. Stroud",
+            "minute": 90
+          }
+        ]
+      },
       "lineups": {
         "NETHERLANDS": {
           "formation": "4-3-3",
@@ -11230,6 +12988,62 @@
           "extra": null
         }
       ],
+      "substitutions": {
+        "GERMANY": [
+          {
+            "out": "N. Schlotterbeck",
+            "in": "A. Rudiger",
+            "minute": 46
+          },
+          {
+            "out": "A. Pavlovic",
+            "in": "N. Amiri",
+            "minute": 60
+          },
+          {
+            "out": "L. Sane",
+            "in": "J. Leweling",
+            "minute": 60
+          },
+          {
+            "out": "J. Musiala",
+            "in": "D. Undav",
+            "minute": 60
+          },
+          {
+            "out": "K. Havertz",
+            "in": "L. Goretzka",
+            "minute": 85
+          }
+        ],
+        "IVORY COAST": [
+          {
+            "out": "I. Sangare",
+            "in": "S. Fofana",
+            "minute": 75
+          },
+          {
+            "out": "A. Bonny",
+            "in": "E. Guessand",
+            "minute": 75
+          },
+          {
+            "out": "A. Diallo",
+            "in": "S. Adingra",
+            "minute": 75
+          },
+          {
+            "out": "W. Singo",
+            "in": "G. Doue",
+            "minute": 82
+          },
+          {
+            "out": "Y. Diomande",
+            "in": "N. Pepe",
+            "minute": 85
+          }
+        ]
+      },
       "lineups": {
         "GERMANY": {
           "formation": "4-2-3-1",
@@ -11565,6 +13379,57 @@
           "extra": 1
         }
       ],
+      "substitutions": {
+        "ECUADOR": [
+          {
+            "out": "J. Alcivar",
+            "in": "K. Rodriguez",
+            "minute": 46
+          },
+          {
+            "out": "P. Estupinan",
+            "in": "N. Angulo",
+            "minute": 70
+          },
+          {
+            "out": "A. Franco",
+            "in": "A. Preciado",
+            "minute": 83
+          },
+          {
+            "out": "J. Yeboah",
+            "in": "J. Caicedo",
+            "minute": 89
+          }
+        ],
+        "CURACAO": [
+          {
+            "out": "J. Bacuna",
+            "in": "K. Gorre",
+            "minute": 75
+          },
+          {
+            "out": "D. Fonville",
+            "in": "R. van Eijma",
+            "minute": 76
+          },
+          {
+            "out": "T. Chong",
+            "in": "J. Margaritha",
+            "minute": 76
+          },
+          {
+            "out": "J. Locadia",
+            "in": "G. Kastaneer",
+            "minute": 83
+          },
+          {
+            "out": "L. Comenencia",
+            "in": "G. Roemeratoe",
+            "minute": 84
+          }
+        ]
+      },
       "lineups": {
         "ECUADOR": {
           "formation": "3-1-4-2",
@@ -11884,6 +13749,62 @@
           "extra": null
         }
       ],
+      "substitutions": {
+        "TUNISIA": [
+          {
+            "out": "D. Bronn",
+            "in": "M. Ben Hamida",
+            "minute": 46
+          },
+          {
+            "out": "E. Saad",
+            "in": "I. Gharbi",
+            "minute": 46
+          },
+          {
+            "out": "S. Tounekti",
+            "in": "F. Chaouat",
+            "minute": 65
+          },
+          {
+            "out": "A. Abdi",
+            "in": "E. Achouri",
+            "minute": 90
+          },
+          {
+            "out": "E. Skhiri",
+            "in": "R. Khedira",
+            "minute": 90
+          }
+        ],
+        "JAPAN": [
+          {
+            "out": "D. Kamada",
+            "in": "J. Suzuki",
+            "minute": 73
+          },
+          {
+            "out": "R. Doan",
+            "in": "Y. Sugawara",
+            "minute": 74
+          },
+          {
+            "out": "T. Tomiyasu",
+            "in": "A. Seko",
+            "minute": 79
+          },
+          {
+            "out": "K. Nakamura",
+            "in": "Y. Suzuki",
+            "minute": 79
+          },
+          {
+            "out": "A. Ueda",
+            "in": "K. Goto",
+            "minute": 84
+          }
+        ]
+      },
       "lineups": {
         "TUNISIA": {
           "formation": "3-4-2-1",
@@ -12209,6 +14130,62 @@
           "extra": null
         }
       ],
+      "substitutions": {
+        "SPAIN": [
+          {
+            "out": "M. Oyarzabal",
+            "in": "F. Torres",
+            "minute": 46
+          },
+          {
+            "out": "Lamine Yamal",
+            "in": "Y. Pino",
+            "minute": 46
+          },
+          {
+            "out": "D. Olmo",
+            "in": "M. Merino",
+            "minute": 61
+          },
+          {
+            "out": "A. Baena",
+            "in": "N. Williams",
+            "minute": 61
+          },
+          {
+            "out": "Pedri",
+            "in": "F. Ruiz",
+            "minute": 70
+          }
+        ],
+        "SAUDI ARABIA": [
+          {
+            "out": "A. Al Khaibari",
+            "in": "M. Kanno",
+            "minute": 46
+          },
+          {
+            "out": "M. Al Juwayr",
+            "in": "A. Al Hamdan",
+            "minute": 46
+          },
+          {
+            "out": "A. Al Amri",
+            "in": "A. Hejji",
+            "minute": 60
+          },
+          {
+            "out": "F. Al Buraikan",
+            "in": "M. Abu Al Shamat",
+            "minute": 60
+          },
+          {
+            "out": "N. Al Dawsari",
+            "in": "K. Al Ghannam",
+            "minute": 90
+          }
+        ]
+      },
       "lineups": {
         "SPAIN": {
           "formation": "4-3-3",
@@ -12520,6 +14497,62 @@
           "extra": null
         }
       ],
+      "substitutions": {
+        "IRAN": [
+          {
+            "out": "S. Hardani",
+            "in": "A. Jahanbakhsh",
+            "minute": 46
+          },
+          {
+            "out": "M. Mohebi",
+            "in": "M. Torabi",
+            "minute": 66
+          },
+          {
+            "out": "E. Hajsafi",
+            "in": "M. Mohammadi",
+            "minute": 66
+          },
+          {
+            "out": "S. Ghoddos",
+            "in": "S. Moghanlou",
+            "minute": 79
+          },
+          {
+            "out": "S. Ezatolahi",
+            "in": "A. Hosseinzadeh",
+            "minute": 85
+          }
+        ],
+        "BELGIUM": [
+          {
+            "out": "N. Raskin",
+            "in": "H. Vanaken",
+            "minute": 58
+          },
+          {
+            "out": "T. Meunier",
+            "in": "T. Castagne",
+            "minute": 58
+          },
+          {
+            "out": "A. Saelemaekers",
+            "in": "D. Lukebakio",
+            "minute": 58
+          },
+          {
+            "out": "R. Lukaku",
+            "in": "A. Theate",
+            "minute": 73
+          },
+          {
+            "out": "K. De Bruyne",
+            "in": "M. Fernandez-Pardo",
+            "minute": 87
+          }
+        ]
+      },
       "lineups": {
         "BELGIUM": {
           "formation": "4-2-3-1",
@@ -12861,6 +14894,52 @@
           "extra": 3
         }
       ],
+      "substitutions": {
+        "CAPE VERDE": [
+          {
+            "out": "T. Arcanjo",
+            "in": "D. Duarte",
+            "minute": 46
+          },
+          {
+            "out": "G. Rodrigues",
+            "in": "H. Varela",
+            "minute": 58
+          },
+          {
+            "out": "Benchimol",
+            "in": "N. Da Costa",
+            "minute": 58
+          },
+          {
+            "out": "K. Lenini",
+            "in": "L. Duarte",
+            "minute": 71
+          },
+          {
+            "out": "J. Monteiro",
+            "in": "Y. Semedo",
+            "minute": 80
+          }
+        ],
+        "URUGUAY": [
+          {
+            "out": "F. Vinas",
+            "in": "D. Nunez",
+            "minute": 70
+          },
+          {
+            "out": "M. Ugarte",
+            "in": "N. de la Cruz",
+            "minute": 70
+          },
+          {
+            "out": "M. Araujo",
+            "in": "B. Rodriguez",
+            "minute": 81
+          }
+        ]
+      },
       "lineups": {
         "URUGUAY": {
           "formation": "4-1-4-1",
@@ -13194,6 +15273,67 @@
           "extra": null
         }
       ],
+      "substitutions": {
+        "EGYPT": [
+          {
+            "out": "H. Fathy",
+            "in": "R. Rabia",
+            "minute": 41
+          },
+          {
+            "out": "O. Marmoush",
+            "in": "Trezeguet",
+            "minute": 76
+          },
+          {
+            "out": "M. Ziko",
+            "in": "H. Abdelkarim",
+            "minute": 76
+          },
+          {
+            "out": "E. Ashour",
+            "in": "Zizo",
+            "minute": 85
+          },
+          {
+            "out": "M. Salah",
+            "in": "H. Abdelmaguid",
+            "minute": 85
+          },
+          {
+            "out": null,
+            "in": "M. Abdelmonem",
+            "minute": 90
+          }
+        ],
+        "NEW ZEALAND": [
+          {
+            "out": "C. McCowatt",
+            "in": "B. Old",
+            "minute": 66
+          },
+          {
+            "out": "S. Singh",
+            "in": "R. Thomas",
+            "minute": 76
+          },
+          {
+            "out": "L. Cacace",
+            "in": "J. Randall",
+            "minute": 76
+          },
+          {
+            "out": "E. Just",
+            "in": "F. De Vries",
+            "minute": 85
+          },
+          {
+            "out": "T. Payne",
+            "in": "T. Bindon",
+            "minute": 85
+          }
+        ]
+      },
       "lineups": {
         "EGYPT": {
           "formation": "4-2-3-1",
@@ -13537,6 +15677,62 @@
           "extra": 5
         }
       ],
+      "substitutions": {
+        "ARGENTINA": [
+          {
+            "out": "C. Romero",
+            "in": "N. Otamendi",
+            "minute": 57
+          },
+          {
+            "out": "T. Almada",
+            "in": "J. Alvarez",
+            "minute": 64
+          },
+          {
+            "out": "L. Martinez",
+            "in": "N. Gonzalez",
+            "minute": 65
+          },
+          {
+            "out": "R. de Paul",
+            "in": "L. Paredes",
+            "minute": 82
+          },
+          {
+            "out": "F. Medina",
+            "in": "N. Tagliafico",
+            "minute": 82
+          }
+        ],
+        "AUSTRIA": [
+          {
+            "out": "D. Alaba",
+            "in": "M. Friedl",
+            "minute": 67
+          },
+          {
+            "out": "S. Posch",
+            "in": "A. Prass",
+            "minute": 68
+          },
+          {
+            "out": "P. Wanner",
+            "in": "M. Arnautovic",
+            "minute": 68
+          },
+          {
+            "out": "R. Schmid",
+            "in": "P. Wimmer",
+            "minute": 78
+          },
+          {
+            "out": "M. Gregoritsch",
+            "in": "C. Chukwuemeka",
+            "minute": 85
+          }
+        ]
+      },
       "lineups": {
         "ARGENTINA": {
           "formation": null,
@@ -13856,6 +16052,62 @@
           "extra": null
         }
       ],
+      "substitutions": {
+        "IRAQ": [
+          {
+            "out": "Aymen Hussein",
+            "in": "Ali Al-Hamadi",
+            "minute": 26
+          },
+          {
+            "out": "Zaid Ismail",
+            "in": "Youssef Amyn",
+            "minute": 60
+          },
+          {
+            "out": "Zaid Tahseen",
+            "in": "Rebin Sulaka",
+            "minute": 60
+          },
+          {
+            "out": "Amir Al-Ammari",
+            "in": "Aimar Sher",
+            "minute": 68
+          },
+          {
+            "out": "Ibrahim Bayesh",
+            "in": "Marko Farji",
+            "minute": 69
+          }
+        ],
+        "FRANCE": [
+          {
+            "out": "Michael Olise",
+            "in": "Rayan Cherki",
+            "minute": 68
+          },
+          {
+            "out": "Ousmane Demb\u00e9l\u00e9",
+            "in": "D\u00e9sir\u00e9 Dou\u00e9",
+            "minute": 68
+          },
+          {
+            "out": "Jules Kound\u00e9",
+            "in": "Malo Gusto",
+            "minute": 83
+          },
+          {
+            "out": "Bradley Barcola",
+            "in": "Maghnes Akliouche",
+            "minute": 83
+          },
+          {
+            "out": "Kylian Mbapp\u00e9",
+            "in": "Marcus Thuram",
+            "minute": 90
+          }
+        ]
+      },
       "lineups": {
         "FRANCE": {
           "formation": "4-2-3-1",
@@ -14183,6 +16435,62 @@
           "extra": 3
         }
       ],
+      "substitutions": {
+        "NORWAY": [
+          {
+            "out": "J. Ryerson",
+            "in": "M. Pedersen",
+            "minute": 13
+          },
+          {
+            "out": "F. Aursnes",
+            "in": "P. Berg",
+            "minute": 46
+          },
+          {
+            "out": "A. Nusa",
+            "in": "A. Schjelderup",
+            "minute": 71
+          },
+          {
+            "out": "T. Heggem",
+            "in": "L. Ostigard",
+            "minute": 84
+          },
+          {
+            "out": "A. Sorloth",
+            "in": "O. Bobb",
+            "minute": 84
+          }
+        ],
+        "SENEGAL": [
+          {
+            "out": "M. Diouf",
+            "in": "I. Jakobs",
+            "minute": 54
+          },
+          {
+            "out": "P. Gueye",
+            "in": "I. Mbaye",
+            "minute": 54
+          },
+          {
+            "out": "E. Mendy",
+            "in": "M. Diaw",
+            "minute": 63
+          },
+          {
+            "out": "L. Camara",
+            "in": "P. Ciss",
+            "minute": 63
+          },
+          {
+            "out": "K. Koulibaly",
+            "in": "P. M. Sarr",
+            "minute": 72
+          }
+        ]
+      },
       "lineups": {
         "NORWAY": {
           "formation": "4-3-3",
@@ -14510,6 +16818,62 @@
           "extra": null
         }
       ],
+      "substitutions": {
+        "ALGERIA": [
+          {
+            "out": "R. Zerrouki",
+            "in": "N. Bentaleb",
+            "minute": 46
+          },
+          {
+            "out": "H. Boudaoui",
+            "in": "N. Benbouali",
+            "minute": 46
+          },
+          {
+            "out": "R. Mahrez",
+            "in": "A. Hadj Moussa",
+            "minute": 76
+          },
+          {
+            "out": "R. Ait-Nouri",
+            "in": "J. Hadjam",
+            "minute": 85
+          },
+          {
+            "out": "A. Gouiri",
+            "in": "Z. Belaid",
+            "minute": 86
+          }
+        ],
+        "JORDAN": [
+          {
+            "out": "M. Al Mardi",
+            "in": "O. Al Fakhouri",
+            "minute": 76
+          },
+          {
+            "out": "M. Tamari",
+            "in": "A. Azaizeh",
+            "minute": 84
+          },
+          {
+            "out": "M. Abu Taha",
+            "in": "M. Abu Hasheesh",
+            "minute": 85
+          },
+          {
+            "out": "H. Abu Dahab",
+            "in": "S. Obaid",
+            "minute": 90
+          },
+          {
+            "out": "A. Olwan",
+            "in": "Shararh",
+            "minute": 90
+          }
+        ]
+      },
       "lineups": {
         "JORDAN": {
           "formation": "3-4-2-1",
@@ -14848,6 +17212,62 @@
           "extra": null
         }
       ],
+      "substitutions": {
+        "PORTUGAL": [
+          {
+            "out": "J. Cancelo",
+            "in": "N. Semedo",
+            "minute": 46
+          },
+          {
+            "out": "P. Neto",
+            "in": "F. Conceicao",
+            "minute": 46
+          },
+          {
+            "out": "Joao Felix",
+            "in": "Trincao",
+            "minute": 63
+          },
+          {
+            "out": "J. Neves",
+            "in": "B. Silva",
+            "minute": 76
+          },
+          {
+            "out": "Vitinha",
+            "in": "R. Leao",
+            "minute": 83
+          }
+        ],
+        "UZBEKISTAN": [
+          {
+            "out": "S. Nasrullaev",
+            "in": "K. Alizhonov",
+            "minute": 46
+          },
+          {
+            "out": "O. Khamrobekov",
+            "in": "A. Mozgovoy",
+            "minute": 46
+          },
+          {
+            "out": "A. Fayzullaev",
+            "in": "I. Sergeev",
+            "minute": 73
+          },
+          {
+            "out": "B. Karimov",
+            "in": "R. Jiyanov",
+            "minute": 90
+          },
+          {
+            "out": "O. Shukurov",
+            "in": "S. Esanov",
+            "minute": 90
+          }
+        ]
+      },
       "lineups": {
         "PORTUGAL": {
           "formation": "4-2-3-1",
@@ -15151,6 +17571,57 @@
           "extra": null
         }
       ],
+      "substitutions": {
+        "ENGLAND": [
+          {
+            "out": "Anthony Gordon",
+            "in": "Bukayo Saka",
+            "minute": 65
+          },
+          {
+            "out": "Djed Spence",
+            "in": "Nico O'Reilly",
+            "minute": 66
+          },
+          {
+            "out": "Jude Bellingham",
+            "in": "Morgan Rogers",
+            "minute": 73
+          },
+          {
+            "out": "Elliot Anderson",
+            "in": "Eberechi Eze",
+            "minute": 74
+          },
+          {
+            "out": "Noni Madueke",
+            "in": "Marcus Rashford",
+            "minute": 83
+          }
+        ],
+        "GHANA": [
+          {
+            "out": "I\u00f1aki Williams",
+            "in": "Abdul Fatawu Issahaku",
+            "minute": 66
+          },
+          {
+            "out": "Jordan Ayew",
+            "in": "Prince Kwabena Adu",
+            "minute": 67
+          },
+          {
+            "out": "Marvin Senaya",
+            "in": "Kojo Peprah Oppong",
+            "minute": 87
+          },
+          {
+            "out": "Prince Kwabena Adu",
+            "in": "Abdul Rahman Baba",
+            "minute": 95
+          }
+        ]
+      },
       "lineups": {
         "ENGLAND": {
           "formation": "4-2-3-1",
@@ -15462,6 +17933,57 @@
           "extra": 2
         }
       ],
+      "substitutions": {
+        "CROATIA": [
+          {
+            "out": "P. Musa",
+            "in": "A. Budimir",
+            "minute": 46
+          },
+          {
+            "out": "J. Gvardiol",
+            "in": "A. Kramaric",
+            "minute": 46
+          },
+          {
+            "out": "M. Pasalic",
+            "in": "L. Sucic",
+            "minute": 72
+          },
+          {
+            "out": "M. Kovacic",
+            "in": "P. Sucic",
+            "minute": 72
+          },
+          {
+            "out": "L. Modric",
+            "in": "M. Pasalic",
+            "minute": 81
+          }
+        ],
+        "PANAMA": [
+          {
+            "out": "J. Ramos",
+            "in": "C. Waterman",
+            "minute": 77
+          },
+          {
+            "out": "J. Fajardo",
+            "in": "A. Londono",
+            "minute": 83
+          },
+          {
+            "out": "C. Blackman",
+            "in": "E. Davis",
+            "minute": 90
+          },
+          {
+            "out": "Y. Barcenas",
+            "in": "T. Rodriguez",
+            "minute": 90
+          }
+        ]
+      },
       "lineups": {
         "PANAMA": {
           "formation": "5-4-1",
