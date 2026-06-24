@@ -57,6 +57,12 @@
   .stat-card[data-filter="paises"].active { background:#1a1a1a; box-shadow:0 0 0 2px #FFD700; }
   .stat-card[data-filter="paises"].active .stat-label { color:#FFD700; }
   .stat-icon { font-size:20px; }
+  .exit-sign-wrap { display:flex; align-items:center; justify-content:center; height:20px; }
+  .exit-sign {
+    background:#0a8a3c; color:#fff; font-size:9px; font-weight:800;
+    letter-spacing:0.4px; padding:4px 7px; border-radius:3px; line-height:1;
+    box-shadow:0 0 0 1.5px #086b2e inset;
+  }
   .fixture-icon { font-size:30px; margin:4px 0; }
   .stat-num { font-size:22px; font-weight:700; color:#1a1a2e; }
   .stat-label { font-size:13px; font-weight:700; color:#64748b; }
@@ -536,10 +542,6 @@
     </div>
   </div>
   <div class="header-right">
-    <div class="header-clock">
-      <div class="clock-label" id="hora-local-label">Hora Argentina</div>
-      <div class="clock-value" id="clock">--:--</div>
-    </div>
     <div class="header-controls">
       <select id="lang-select" class="lang-select" aria-label="Idioma / Language">
         <option value="es">🇦🇷 ES</option>
@@ -568,6 +570,10 @@
       </div>
     </div>
     <button id="fullscreen-btn" class="fullscreen-btn" aria-label="Pantalla completa">⛶</button>
+    </div>
+    <div class="header-clock">
+      <div class="clock-label" id="hora-local-label">Hora Argentina</div>
+      <div class="clock-value" id="clock">--:--</div>
     </div>
   </div>
 </div>
@@ -602,7 +608,7 @@
   <button class="stat-card" data-filter="live"><div class="stat-icon">🔴</div><div class="stat-num" id="stat-live">0</div><div class="stat-label" id="label-live">En vivo</div></button>
   <button class="stat-card" data-filter="scheduled"><div class="stat-icon">🕐</div><div class="stat-num" id="stat-scheduled">0</div><div class="stat-label" id="label-scheduled">Próximos</div></button>
   <button class="stat-card" data-filter="fixture"><div class="stat-icon fixture-icon">🏆</div><div class="stat-label" id="label-fixture">Fixture</div></button>
-  <button class="stat-card" data-filter="paises"><div class="stat-icon">🚫</div><div class="stat-num" style="visibility:hidden;">0</div><div class="stat-label" id="label-paises">Países Fuera</div></button>
+  <button class="stat-card" data-filter="paises"><div class="stat-icon exit-sign-wrap"><span class="exit-sign">EXIT</span></div><div class="stat-num" style="visibility:hidden;">0</div><div class="stat-label" id="label-paises">Países Fuera</div></button>
 </div>
 
 <div class="matches-container" id="matches"></div>
