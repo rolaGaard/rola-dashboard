@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-24T05:50:41.753613Z",
+  "updated": "2026-06-24T06:01:28.609866Z",
   "matches": {
     "MEXICO-SOUTH AFRICA": {
       "homeGoals": 2,
@@ -16146,7 +16146,7 @@
           "player": "I. Sarr",
           "team": "SENEGAL",
           "minute": 90,
-          "extra": 3
+          "extra": null
         }
       ],
       "substitutions": {
@@ -16167,13 +16167,13 @@
             "minute": 71
           },
           {
-            "out": "T. Heggem",
-            "in": "L. Ostigard",
+            "out": "A. Sorloth",
+            "in": "O. Bobb",
             "minute": 84
           },
           {
-            "out": "A. Sorloth",
-            "in": "O. Bobb",
+            "out": "T. Heggem",
+            "in": "L. Ostigard",
             "minute": 84
           }
         ],
