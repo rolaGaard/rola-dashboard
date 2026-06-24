@@ -1,11 +1,11 @@
 {
-  "updated": "2026-06-24T20:31:05.177666Z",
+  "updated": "2026-06-24T20:40:44.141843Z",
   "matches": {
     "SWITZERLAND-CANADA": {
       "homeGoals": 2,
-      "awayGoals": 0,
+      "awayGoals": 1,
       "status": "2H",
-      "elapsed": 70,
+      "elapsed": 82,
       "kickoffUTC": "2026-06-24T19:00:00+00:00",
       "events": [
         {
@@ -39,6 +39,14 @@
           "team": "SWITZERLAND",
           "minute": 57,
           "extra": null
+        },
+        {
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "player": "P. David",
+          "team": "CANADA",
+          "minute": 76,
+          "extra": null
         }
       ],
       "substitutions": {
@@ -57,6 +65,28 @@
             "out": "C. Larin",
             "in": "T. Oluwaseyi",
             "minute": 58
+          },
+          {
+            "out": "T. Buchanan",
+            "in": "P. David",
+            "minute": 75
+          }
+        ],
+        "SWITZERLAND": [
+          {
+            "out": "L. Jaquez",
+            "in": "S. Widmer",
+            "minute": 74
+          },
+          {
+            "out": "D. Sow",
+            "in": "M. Aebischer",
+            "minute": 74
+          },
+          {
+            "out": "R. Vargas",
+            "in": "D. Ndoye",
+            "minute": 80
           }
         ]
       },
@@ -256,6 +286,21 @@
           ],
           "substitutes": [
             {
+              "name": "Stephen Eustaquio",
+              "number": 7,
+              "pos": "M"
+            },
+            {
+              "name": "Liam Millar",
+              "number": 11,
+              "pos": "F"
+            },
+            {
+              "name": "Tani Oluwaseyi",
+              "number": 12,
+              "pos": "F"
+            },
+            {
               "name": "Dayne St. Clair",
               "number": 1,
               "pos": "G"
@@ -286,16 +331,6 @@
               "pos": "D"
             },
             {
-              "name": "Stephen Eustaquio",
-              "number": 7,
-              "pos": "M"
-            },
-            {
-              "name": "Liam Millar",
-              "number": 11,
-              "pos": "F"
-            },
-            {
               "name": "Jonathan Osorio",
               "number": 21,
               "pos": "M"
@@ -303,11 +338,6 @@
             {
               "name": "Jacob Shaffelburg",
               "number": 14,
-              "pos": "F"
-            },
-            {
-              "name": "Tani Oluwaseyi",
-              "number": 12,
               "pos": "F"
             },
             {
@@ -328,7 +358,7 @@
       "homeGoals": 2,
       "awayGoals": 1,
       "status": "2H",
-      "elapsed": 67,
+      "elapsed": 78,
       "kickoffUTC": "2026-06-24T19:00:00+00:00",
       "events": [
         {
@@ -342,7 +372,7 @@
         {
           "type": "Goal",
           "detail": "Own Goal",
-          "player": "S. Al Brake",
+          "player": "M. Abunada",
           "team": "BOSNIA & HERZEGOVINA",
           "minute": 34,
           "extra": null
@@ -389,6 +419,11 @@
             "out": "H. Al Haydos",
             "in": "A. Al Ganehi",
             "minute": 56
+          },
+          {
+            "out": "K. Boudiaf",
+            "in": "A. Ali",
+            "minute": 72
           }
         ]
       },
@@ -455,6 +490,26 @@
           ],
           "substitutes": [
             {
+              "name": "Benjamin Tahirovi\u0107",
+              "number": 6,
+              "pos": "M"
+            },
+            {
+              "name": "Amar Memi\u0107",
+              "number": 15,
+              "pos": "M"
+            },
+            {
+              "name": "Dennis Had\u017eikaduni\u0107",
+              "number": 3,
+              "pos": "D"
+            },
+            {
+              "name": "Ermin Mahmi\u0107",
+              "number": 26,
+              "pos": "M"
+            },
+            {
               "name": "Martin Zlomisli\u0107",
               "number": 22,
               "pos": "G"
@@ -467,11 +522,6 @@
             {
               "name": "Nihad Mujaki\u0107",
               "number": 2,
-              "pos": "D"
-            },
-            {
-              "name": "Dennis Had\u017eikaduni\u0107",
-              "number": 3,
               "pos": "D"
             },
             {
@@ -490,23 +540,8 @@
               "pos": "M"
             },
             {
-              "name": "Benjamin Tahirovi\u0107",
-              "number": 6,
-              "pos": "M"
-            },
-            {
               "name": "D\u017eenis Burni\u0107",
               "number": 17,
-              "pos": "M"
-            },
-            {
-              "name": "Ermin Mahmi\u0107",
-              "number": 26,
-              "pos": "M"
-            },
-            {
-              "name": "Amar Memi\u0107",
-              "number": 15,
               "pos": "M"
             },
             {
@@ -588,6 +623,16 @@
           ],
           "substitutes": [
             {
+              "name": "Abdelaziz Hatem",
+              "number": 6,
+              "pos": "M"
+            },
+            {
+              "name": "Ahmed Al-Ganehi",
+              "number": 17,
+              "pos": "F"
+            },
+            {
               "name": "Meshaal Barsham",
               "number": 22,
               "pos": "G"
@@ -621,16 +666,6 @@
               "name": "Mohamed Naceur Almanai",
               "number": 26,
               "pos": "M"
-            },
-            {
-              "name": "Abdelaziz Hatem",
-              "number": 6,
-              "pos": "M"
-            },
-            {
-              "name": "Ahmed Al-Ganehi",
-              "number": 17,
-              "pos": "F"
             },
             {
               "name": "Tahsin Mohammed Jamshid",
