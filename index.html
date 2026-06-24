@@ -52,10 +52,6 @@
   }
   .stat-card.active { background:#003087; box-shadow:0 0 0 2px #FFD700; }
   .stat-card.active .stat-num, .stat-card.active .stat-label { color:#FFD700; }
-  .stat-card[data-filter="fixture"].active { background:#FFD700; box-shadow:0 0 0 2px #003087; }
-  .stat-card[data-filter="fixture"].active .stat-label { color:#0a0a0a; }
-  .stat-card[data-filter="paises"].active { background:#1a1a1a; box-shadow:0 0 0 2px #FFD700; }
-  .stat-card[data-filter="paises"].active .stat-label { color:#FFD700; }
   .stat-icon { font-size:20px; }
   .exit-sign-wrap { display:flex; align-items:center; justify-content:center; height:20px; }
   .exit-sign {
@@ -475,7 +471,10 @@
   .shortcut-instructions-text { font-size:14px; line-height:1.6; color:#e2e8f0; }
 
   .install-confirm-box { text-align:center; max-width:300px; }
-  .install-confirm-icon { font-size:40px; margin-bottom:10px; }
+  .install-confirm-icon {
+    width:64px; height:64px; border-radius:50%; margin-bottom:12px;
+    box-shadow:0 0 0 2px #15151a, 0 0 0 4px #FFD700;
+  }
   .install-confirm-text { color:#fff; font-size:15px; font-weight:600; line-height:1.5; margin-bottom:20px; }
   .install-confirm-actions { display:flex; gap:10px; }
   .install-confirm-btn {
@@ -586,7 +585,7 @@
 <div id="install-confirm-modal" class="shortcut-instructions" style="display:none;">
   <div class="shortcut-instructions-box install-confirm-box">
     <button id="install-confirm-close" class="cookie-banner-close" aria-label="Cerrar">✕</button>
-    <div class="install-confirm-icon">📲</div>
+    <img class="install-confirm-icon" src="icons/icon-192.png" alt="">
     <div class="install-confirm-text" id="install-confirm-text">¿Querés instalar la app?</div>
     <div class="install-confirm-actions">
       <button id="install-confirm-cancel" class="install-confirm-btn install-confirm-cancel">Cancelar</button>
