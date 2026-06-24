@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-23T12:10:03.908167Z",
+  "updated": "2026-06-24T11:47:38.099509Z",
   "squads": {
     "BELGIUM": [
       {
@@ -232,7 +232,7 @@
       {
         "name": "B. Barcola",
         "number": 12,
-        "position": "Attacker"
+        "position": "Midfielder"
       },
       {
         "name": "J. Mateta",
@@ -725,7 +725,7 @@
       {
         "name": "J. Sanabria",
         "number": 25,
-        "position": "Midfielder"
+        "position": "Defender"
       },
       {
         "name": "M. Ugarte",
@@ -1014,7 +1014,7 @@
       {
         "name": "Álex Baena",
         "number": 15,
-        "position": "Midfielder"
+        "position": "Attacker"
       },
       {
         "name": "Dani Olmo",
@@ -1390,7 +1390,7 @@
       {
         "name": "D. Kamada",
         "number": 15,
-        "position": "Midfielder"
+        "position": "Attacker"
       },
       {
         "name": "K. Sano",
@@ -4344,7 +4344,7 @@
       {
         "name": "I. Williams",
         "number": 19,
-        "position": "Attacker"
+        "position": "Midfielder"
       },
       {
         "name": "E. Nuamah",
@@ -4750,7 +4750,7 @@
       {
         "name": "R. Mahrez",
         "number": 7,
-        "position": "Attacker"
+        "position": "Midfielder"
       }
     ],
     "CAPE VERDE": [
