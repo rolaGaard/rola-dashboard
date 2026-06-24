@@ -1,11 +1,11 @@
 {
-  "updated": "2026-06-24T20:10:37.962226Z",
+  "updated": "2026-06-24T20:20:37.716005Z",
   "matches": {
     "SWITZERLAND-CANADA": {
-      "homeGoals": 1,
+      "homeGoals": 2,
       "awayGoals": 0,
       "status": "2H",
-      "elapsed": 51,
+      "elapsed": 61,
       "kickoffUTC": "2026-06-24T19:00:00+00:00",
       "events": [
         {
@@ -31,8 +31,35 @@
           "team": "SWITZERLAND",
           "minute": 46,
           "extra": null
+        },
+        {
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "player": "J. Manzambi",
+          "team": "SWITZERLAND",
+          "minute": 57,
+          "extra": null
         }
       ],
+      "substitutions": {
+        "CANADA": [
+          {
+            "out": "M. Choiniere",
+            "in": "S. Eustaquio",
+            "minute": 58
+          },
+          {
+            "out": "A. Ahmed",
+            "in": "L. Millar",
+            "minute": 58
+          },
+          {
+            "out": "C. Larin",
+            "in": "T. Oluwaseyi",
+            "minute": 58
+          }
+        ]
+      },
       "lineups": {
         "SWITZERLAND": {
           "formation": "4-2-3-1",
@@ -301,7 +328,7 @@
       "homeGoals": 2,
       "awayGoals": 1,
       "status": "2H",
-      "elapsed": 48,
+      "elapsed": 58,
       "kickoffUTC": "2026-06-24T19:00:00+00:00",
       "events": [
         {
@@ -347,6 +374,11 @@
             "out": "J. Gaber",
             "in": "A. Hatem",
             "minute": 46
+          },
+          {
+            "out": "H. Al Haydos",
+            "in": "A. Al Ganehi",
+            "minute": 56
           }
         ]
       },
