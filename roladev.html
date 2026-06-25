@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dev Console - Fixture rolaGaard</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="icons/favicon-32.png">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    background:#0a0a0a; color:#e2e8f0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, monospace;
+    padding:20px;
+  }
+  .wrap { max-width:900px; margin:0 auto; }
+  h1 { font-size:20px; color:#fff; margin-bottom:4px; }
+  .subtitle { color:#64748b; font-size:12px; margin-bottom:20px; }
+  .refresh-btn {
+    background:#FFD700; color:#0a0a0a; border:none; border-radius:6px;
+    padding:8px 16px; font-size:13px; font-weight:700; cursor:pointer;
+    margin-bottom:20px;
+  }
+  .refresh-btn:hover { background:#e6c200; }
+  .card {
+    background:#15151a; border:1px solid #2a2a2a; border-radius:10px;
+    padding:18px 20px; margin-bottom:16px;
+  }
+  .card-title { font-size:13px; font-weight:700; color:#fff; margin-bottom:12px; }
+  .quota-bar-wrap { background:#1f1f1f; border-radius:6px; height:22px; overflow:hidden; margin:10px 0; }
+  .quota-bar { height:100%; transition:width 0.3s; display:flex; align-items:center; padding-left:8px; font-size:11px; font-weight:700; color:#0a0a0a; }
+  .quota-numbers { font-size:13px; color:#94a3b8; }
+  .quota-numbers b { color:#FFD700; }
+  .grid2 { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+  .stat-mini { background:#1a1a1f; border-radius:8px; padding:12px 14px; }
+  .stat-mini-num { font-size:22px; font-weight:800; color:#FFD700; }
+  .stat-mini-label { font-size:11px; color:#94a3b8; margin-top:2px; }
+  .stat-mini.warn .stat-mini-num { color:#E0263B; }
+  .stat-mini.ok .stat-mini-num { color:#1DB954; }
+  table { width:100%; border-collapse:collapse; font-size:12px; }
+  th { text-align:left; color:#64748b; font-weight:600; padding:4px 6px; border-bottom:1px solid #2a2a2a; }
+  td { padding:4px 6px; border-bottom:1px solid rgba(255,255,255,0.04); }
+  .badge { padding:2px 6px; border-radius:4px; font-size:10px; font-weight:700; }
+  .badge-ok { background:rgba(29,185,84,0.15); color:#1DB954; }
+  .badge-warn { background:rgba(224,38,59,0.15); color:#E0263B; }
+  .empty-msg { color:#64748b; font-size:12px; font-style:italic; padding:8px 0; }
+  .chart-svg { width:100%; height:120px; display:block; }
+  .loading { color:#64748b; font-size:13px; }
+  .verdict {
+    display:flex; align-items:center; gap:12px; padding:12px 14px;
+    border-radius:8px; font-size:15px; font-weight:700; margin-bottom:10px;
+  }
+  .verdict-ok { background:rgba(29,185,84,0.12); color:#1DB954; }
+  .verdict-warn { background:rgba(224,38,59,0.12); color:#E0263B; }
+  .verdict-neutral { background:rgba(148,163,184,0.10); color:#94a3b8; }
+  .health-detail { font-size:12px; color:#94a3b8; line-height:1.6; }
+  .health-detail b { color:#e2e8f0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>🛠️ Dev Console — Fixture rolaGaard</h1>
+  <div class="subtitle">Solo se actualiza al cargar o recargar esta página (sin auto-refresh)</div>
+  <button class="refresh-btn" onclick="loadAll()">🔄 Refrescar ahora</button>
+
+  <div class="card">
+    <div class="card-title">🩺 ¿Está funcionando el workflow ahora mismo?</div>
+    <div id="health-check" class="loading">Cargando...</div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">📊 Cuota de API-Football (hoy)</div>
+    <div id="quota-content" class="loading">Cargando...</div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">📈 Historial de cuota (últimas 48hs)</div>
+    <div id="quota-chart" class="loading">Cargando...</div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">⚽ Salud de los datos del torneo</div>
+    <div id="data-health" class="loading">Cargando...</div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">👥 Plantillas cargadas</div>
+    <div id="squads-health" class="loading">Cargando...</div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">⚠️ Partidos con datos faltantes o sospechosos</div>
+    <div id="issues-list" class="loading">Cargando...</div>
+  </div>
+</div>
+
+<script>
+async function fetchJson(path) {
+  try {
+    const res = await fetch('./' + path + '?t=' + Date.now());
+    if (!res.ok) return null;
+    return await res.json();
+  } catch (e) {
+    return null;
+  }
+}
+
+function fmtTime(iso) {
+  if (!iso) return '—';
+  return new Date(iso).toLocaleString('es-AR', { dateStyle:'short', timeStyle:'medium' });
+}
+
+function minutesAgo(iso) {
+  if (!iso) return null;
+  return (Date.now() - new Date(iso).getTime()) / 60000;
+}
+
+// El cron corre cada 10 minutos. Si pasaron más de 15 sin novedades, algo
+// está fallando (workflow caído, API sin responder, error silencioso, etc).
+function isWithinMatchWindow() {
+  const arHourStr = new Date().toLocaleString('en-US', {
+    timeZone: 'America/Argentina/Buenos_Aires', hour: '2-digit', hour12: false
+  });
+  const arHour = parseInt(arHourStr, 10);
+  return arHour >= 13 || arHour < 5;
+}
+
+// Formatea minutos en un texto legible, sin romperse si pasaron días o
+// meses (por ejemplo, entre el final de un mundial y el inicio del próximo).
+function fmtDuration(min) {
+  if (min === null || min === undefined) return 'desconocido';
+  if (min < 60) return min.toFixed(0) + ' min';
+  if (min < 60 * 24) return (min / 60).toFixed(1) + ' hs';
+  return (min / 60 / 24).toFixed(1) + ' días';
+}
+
+function renderHealthCheck(status, scores) {
+  const el = document.getElementById('health-check');
+  const inWindow = isWithinMatchWindow();
+
+  // El chequeo de cuota (/status) corre las 24hs, sin importar la ventana de
+  // partidos — su antigüedad nos dice si el workflow en sí sigue vivo.
+  const hasAnyStatusHistory = !!(status && status.history && status.history.length > 0);
+  const lastStatusEntry = hasAnyStatusHistory ? status.history[status.history.length - 1] : null;
+  const statusAge = lastStatusEntry ? minutesAgo(lastStatusEntry.time) : null;
+  const workflowAlive = statusAge !== null && statusAge <= 15;
+
+  // El chequeo de scores solo se espera fresco si estamos dentro de la
+  // ventana de partidos (13:00-05:00 AR) — fuera de esa ventana, no
+  // actualizarse es normal y esperado, no un problema.
+  const hasAnyScores = !!(scores && scores.updated);
+  const scoresAge = hasAnyScores ? minutesAgo(scores.updated) : null;
+  const scoresFresh = scoresAge !== null && scoresAge <= 15;
+
+  let html = '';
+
+  if (!hasAnyStatusHistory) {
+    // Caso "primera vez" — todavía no hay ningún registro. No es una falla,
+    // es el estado normal antes de que el workflow corra por primera vez
+    // (por ejemplo, recién desplegado para un nuevo torneo).
+    html = '<div class="verdict verdict-neutral">🌱 Sin registros todavía</div>' +
+      '<div class="health-detail">No encontramos ningún historial en status.json. Esto es normal si el sitio se desplegó recién, ' +
+      'o si todavía no pasó la primera corrida del workflow (cron cada 10 min). Si ya pasaron más de 15 minutos desde que subiste ' +
+      'el workflow y seguís viendo este mensaje, revisá la pestaña Actions del repo para confirmar que esté corriendo.</div>';
+  } else if (!workflowAlive) {
+    html = '<div class="verdict verdict-warn">⚠️ El workflow no corrió en los últimos 15 minutos</div>' +
+      '<div class="health-detail">El chequeo de cuota (que corre las 24hs, sin importar si hay partidos) tiene una antigüedad de <b>' +
+      fmtDuration(statusAge) + '</b>. Si ese número es de horas o días, probablemente no haya ningún torneo en curso ahora mismo y el ' +
+      'workflow simplemente no tiene nada para hacer (revisá si tu cron/disparador externo sigue activo). Si esperabas que corriera ' +
+      'recientemente, revisá la pestaña Actions del repo.</div>';
+  } else if (!hasAnyScores) {
+    html = '<div class="verdict verdict-neutral">🌱 El workflow corre, pero scores.json todavía no existe</div>' +
+      '<div class="health-detail">El chequeo de cuota está activo (hace ' + fmtDuration(statusAge) + '), pero todavía no se generó ningún ' +
+      'scores.json. Es esperable si el torneo no arrancó, o si estamos fuera de la ventana de partidos (13:00-05:00 hs AR).</div>';
+  } else if (inWindow && !scoresFresh) {
+    html = '<div class="verdict verdict-warn">⚠️ El workflow corre, pero scores.json no se actualiza</div>' +
+      '<div class="health-detail">Estamos dentro del horario de partidos y el workflow sigue activo (último chequeo de cuota hace ' +
+      fmtDuration(statusAge) + '), pero scores.json tiene ' + fmtDuration(scoresAge) +
+      ' sin cambios. Probable causa: la API está devolviendo una respuesta vacía y el script la está rechazando a propósito (para no pisar datos buenos) — revisá los logs del paso "Fetch World Cup scores".</div>';
+  } else if (inWindow && scoresFresh) {
+    html = '<div class="verdict verdict-ok">✅ Todo en orden — datos frescos</div>' +
+      '<div class="health-detail">Workflow activo (hace ' + fmtDuration(statusAge) + ') y scores.json actualizado hace ' + fmtDuration(scoresAge) + '. Estamos en horario de partidos.</div>';
+  } else {
+    html = '<div class="verdict verdict-neutral">😴 Fuera del horario de partidos</div>' +
+      '<div class="health-detail">El workflow sigue chequeando la cuota cada 10 min (hace ' + fmtDuration(statusAge) + '), pero no se esperan actualizaciones de resultados fuera de la ventana 13:00-05:00 hs AR. Esto es normal.</div>';
+  }
+
+  el.innerHTML = html;
+}
+
+function renderQuota(status) {
+  const el = document.getElementById('quota-content');
+  if (!status || !status.history || status.history.length === 0) {
+    el.innerHTML = '<div class="empty-msg">Sin datos de status.json todavía.</div>';
+    return;
+  }
+  const last = status.history[status.history.length - 1];
+  const pct = last.limit_day ? Math.min(100, (last.current / last.limit_day) * 100) : 0;
+  const color = pct >= 90 ? '#E0263B' : pct >= 70 ? '#F2912B' : '#1DB954';
+  el.innerHTML =
+    '<div class="quota-numbers"><b>' + last.current + '</b> / ' + last.limit_day + ' requests</div>' +
+    '<div class="quota-bar-wrap"><div class="quota-bar" style="width:' + pct.toFixed(1) + '%; background:' + color + ';">' + pct.toFixed(0) + '%</div></div>' +
+    '<div class="quota-numbers">Último chequeo: ' + fmtTime(last.time) + '</div>';
+}
+
+function renderChart(status) {
+  const el = document.getElementById('quota-chart');
+  if (!status || !status.history || status.history.length < 2) {
+    el.innerHTML = '<div class="empty-msg">Todavía no hay suficiente historial para graficar.</div>';
+    return;
+  }
+  const hist = status.history;
+  const w = 860, h = 110, pad = 8;
+  const maxVal = Math.max(...hist.map(h => h.limit_day || 1));
+  const points = hist.map((pt, i) => {
+    const x = pad + (i / (hist.length - 1)) * (w - pad * 2);
+    const y = h - pad - ((pt.current / maxVal) * (h - pad * 2));
+    return x + ',' + y;
+  }).join(' ');
+  el.innerHTML = '<svg class="chart-svg" viewBox="0 0 ' + w + ' ' + h + '" xmlns="http://www.w3.org/2000/svg">' +
+    '<polyline points="' + points + '" fill="none" stroke="#FFD700" stroke-width="2"/>' +
+    '</svg>' +
+    '<div class="quota-numbers">' + hist.length + ' mediciones registradas</div>';
+}
+
+function renderDataHealth(scores) {
+  const el = document.getElementById('data-health');
+  if (!scores || !scores.matches) {
+    el.innerHTML = '<div class="empty-msg">Sin datos de scores.json todavía.</div>';
+    return;
+  }
+  const matches = Object.values(scores.matches);
+  const total = matches.length;
+  const withScore = matches.filter(m => m.homeGoals !== null && m.homeGoals !== undefined).length;
+  const live = matches.filter(m => ['1H','2H','HT','ET','BT','P'].includes(m.status)).length;
+  const finished = matches.filter(m => ['FT','AET','PEN'].includes(m.status)).length;
+  const withLineups = matches.filter(m => m.lineups).length;
+
+  el.innerHTML =
+    '<div class="grid2">' +
+      '<div class="stat-mini"><div class="stat-mini-num">' + total + '</div><div class="stat-mini-label">Partidos en scores.json</div></div>' +
+      '<div class="stat-mini ok"><div class="stat-mini-num">' + withScore + '</div><div class="stat-mini-label">Con marcador cargado</div></div>' +
+      '<div class="stat-mini"><div class="stat-mini-num">' + live + '</div><div class="stat-mini-label">En vivo ahora</div></div>' +
+      '<div class="stat-mini"><div class="stat-mini-num">' + finished + '</div><div class="stat-mini-label">Finalizados</div></div>' +
+      '<div class="stat-mini"><div class="stat-mini-num">' + withLineups + '</div><div class="stat-mini-label">Con alineación</div></div>' +
+      '<div class="stat-mini"><div class="stat-mini-num">' + fmtTime(scores.updated) + '</div><div class="stat-mini-label">Última actualización</div></div>' +
+    '</div>';
+}
+
+function renderSquadsHealth(squads) {
+  const el = document.getElementById('squads-health');
+  if (!squads) {
+    el.innerHTML = '<div class="empty-msg">Sin datos de squads.json todavía.</div>';
+    return;
+  }
+  const teams = Object.keys(squads);
+  const empty = teams.filter(t => !squads[t] || squads[t].length === 0);
+  el.innerHTML =
+    '<div class="grid2">' +
+      '<div class="stat-mini"><div class="stat-mini-num">' + teams.length + '</div><div class="stat-mini-label">Equipos con datos</div></div>' +
+      '<div class="stat-mini ' + (empty.length > 0 ? 'warn' : 'ok') + '"><div class="stat-mini-num">' + empty.length + '</div><div class="stat-mini-label">Plantillas vacías</div></div>' +
+    '</div>' +
+    (empty.length > 0 ? '<div class="quota-numbers" style="margin-top:8px;">Vacíos: ' + empty.join(', ') + '</div>' : '');
+}
+
+function renderIssues(scores) {
+  const el = document.getElementById('issues-list');
+  if (!scores || !scores.matches) {
+    el.innerHTML = '<div class="empty-msg">Sin datos para analizar.</div>';
+    return;
+  }
+  const issues = [];
+  Object.entries(scores.matches).forEach(([key, m]) => {
+    const isLive = ['1H','2H','HT','ET','BT','P'].includes(m.status);
+    const isFinished = ['FT','AET','PEN'].includes(m.status);
+    if ((isLive || isFinished) && (m.homeGoals === null || m.homeGoals === undefined)) {
+      issues.push({ key, problem: 'Estado ' + m.status + ' pero sin marcador' });
+    }
+    if (isLive && !m.lineups) {
+      issues.push({ key, problem: 'En vivo pero sin alineación' });
+    }
+  });
+  if (issues.length === 0) {
+    el.innerHTML = '<div class="empty-msg">✅ No se detectaron problemas evidentes.</div>';
+    return;
+  }
+  el.innerHTML = '<table><tr><th>Partido</th><th>Problema</th></tr>' +
+    issues.map(i => '<tr><td>' + i.key + '</td><td><span class="badge badge-warn">' + i.problem + '</span></td></tr>').join('') +
+    '</table>';
+}
+
+async function loadAll() {
+  ['health-check','quota-content','quota-chart','data-health','squads-health','issues-list'].forEach(id => {
+    document.getElementById(id).innerHTML = '<div class="loading">Cargando...</div>';
+  });
+  const [status, scores, squads] = await Promise.all([
+    fetchJson('status.json'),
+    fetchJson('scores.json'),
+    fetchJson('squads.json'),
+  ]);
+  renderHealthCheck(status, scores);
+  renderQuota(status);
+  renderChart(status);
+  renderDataHealth(scores);
+  renderSquadsHealth(squads ? squads.squads || squads : squads);
+  renderIssues(scores);
+}
+
+loadAll();
+</script>
+</body>
+</html>
