@@ -532,53 +532,60 @@
   .ci-lineup-sub-title { color:#64748b; font-size:11px; font-weight:700; text-transform:uppercase; margin:10px 0 4px; }
   .ci-sub-tag { color:#1DB954; font-size:11px; font-weight:700; flex-shrink:0; }
 
-  .ci-squad-empty { color:#64748b; font-size:12px; font-style:italic; padding:6px 0; }
+  .ci-squad-empty { color:#64748b; font-size:13px; font-style:italic; padding:6px 0; }
   .ci-squad-list { display:flex; flex-direction:column; gap:1px; }
   .ci-player-row {
-    display:flex; align-items:center; gap:10px; padding:6px 4px;
-    border-bottom:1px solid rgba(255,255,255,0.05); font-size:14px;
+    display:flex; align-items:center; gap:10px; padding:8px 4px;
+    border-bottom:1px solid rgba(255,255,255,0.05); font-size:16px;
   }
   .ci-player-num {
-    color:#FFD700; font-weight:800; font-size:14px; min-width:22px; text-align:center;
+    color:#FFD700; font-weight:800; font-size:16px; min-width:26px; text-align:center;
     flex-shrink:0;
   }
   .ci-player-name {
     color:#e2e8f0; text-decoration:none; flex:1; min-width:0;
   }
   .ci-player-name:hover { color:#FFD700; text-decoration:underline; }
-  .ci-player-pos { color:#64748b; font-size:11px; flex-shrink:0; text-transform:uppercase; }
+  .ci-player-pos { color:#64748b; font-size:12px; flex-shrink:0; text-transform:uppercase; }
 
   /* Tamaño de letra dinámico según el ancho real de cada columna — chico en
      un celular angosto, más grande si hay espacio (pantalla grande, monitor,
      o el celular rotado a horizontal con más ancho disponible por columna). */
   @container cicol (min-width:260px) {
-    .ci-col-title { font-size:15px; }
-    .ci-player-row { font-size:15px; padding:7px 4px; }
-    .ci-player-num { font-size:15px; min-width:24px; }
-    .ci-player-pos { font-size:11px; }
-    .ci-lineup-meta { font-size:12px; }
+    .ci-col-title { font-size:18px; }
+    .ci-player-row { font-size:18px; padding:9px 4px; }
+    .ci-player-num { font-size:18px; min-width:28px; }
+    .ci-player-pos { font-size:13px; }
+    .ci-lineup-meta { font-size:13px; }
   }
   @container cicol (min-width:360px) {
-    .ci-col-title { font-size:17px; }
-    .ci-player-row { font-size:17px; padding:8px 5px; gap:12px; }
-    .ci-player-num { font-size:17px; min-width:28px; }
-    .ci-player-pos { font-size:12px; }
-    .ci-lineup-meta { font-size:13px; }
-    .ci-sub-tag { font-size:12px; }
+    .ci-col-title { font-size:21px; }
+    .ci-player-row { font-size:21px; padding:10px 5px; gap:12px; }
+    .ci-player-num { font-size:21px; min-width:32px; }
+    .ci-player-pos { font-size:14px; }
+    .ci-lineup-meta { font-size:14px; }
+    .ci-sub-tag { font-size:13px; }
   }
   @container cicol (min-width:460px) {
-    .ci-col-title { font-size:19px; }
-    .ci-player-row { font-size:19px; padding:9px 6px; gap:14px; }
-    .ci-player-num { font-size:19px; min-width:32px; }
-    .ci-player-pos { font-size:13px; }
-    .ci-lineup-meta { font-size:14px; }
+    .ci-col-title { font-size:24px; }
+    .ci-player-row { font-size:24px; padding:11px 6px; gap:14px; }
+    .ci-player-num { font-size:24px; min-width:36px; }
+    .ci-player-pos { font-size:15px; }
+    .ci-lineup-meta { font-size:15px; }
   }
   @container cicol (min-width:600px) {
-    .ci-col-title { font-size:22px; }
-    .ci-player-row { font-size:22px; padding:10px 6px; gap:16px; }
-    .ci-player-num { font-size:22px; min-width:36px; }
-    .ci-player-pos { font-size:14px; }
-    .ci-lineup-meta { font-size:15px; }
+    .ci-col-title { font-size:28px; }
+    .ci-player-row { font-size:28px; padding:13px 6px; gap:16px; }
+    .ci-player-num { font-size:28px; min-width:42px; }
+    .ci-player-pos { font-size:16px; }
+    .ci-lineup-meta { font-size:17px; }
+  }
+  @container cicol (min-width:800px) {
+    .ci-col-title { font-size:32px; }
+    .ci-player-row { font-size:32px; padding:15px 8px; gap:18px; }
+    .ci-player-num { font-size:32px; min-width:48px; }
+    .ci-player-pos { font-size:18px; }
+    .ci-lineup-meta { font-size:19px; }
   }
 
   /* En vertical: apilamos las columnas y se scrollea todo el cuadro normal. */
