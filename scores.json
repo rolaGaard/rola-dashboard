@@ -1,11 +1,11 @@
 {
-  "updated": "2026-06-25T20:30:40.620084Z",
+  "updated": "2026-06-25T20:40:26.312695Z",
   "matches": {
     "ECUADOR-GERMANY": {
       "homeGoals": 1,
       "awayGoals": 1,
       "status": "1H",
-      "elapsed": 30,
+      "elapsed": 40,
       "kickoffUTC": "2026-06-25T20:00:00+00:00",
       "referee": "Tori Penso, USA",
       "events": [
@@ -299,7 +299,7 @@
       "homeGoals": 0,
       "awayGoals": 1,
       "status": "1H",
-      "elapsed": 30,
+      "elapsed": 40,
       "kickoffUTC": "2026-06-25T20:00:00+00:00",
       "referee": "Glenn Nyberg, Sweden",
       "events": [
@@ -309,6 +309,14 @@
           "player": "Nicolas P\u00e9p\u00e9",
           "team": "IVORY COAST",
           "minute": 7,
+          "extra": null
+        },
+        {
+          "type": "Card",
+          "detail": "Yellow Card",
+          "player": "Nicolas P\u00e9p\u00e9",
+          "team": "IVORY COAST",
+          "minute": 35,
           "extra": null
         }
       ],
