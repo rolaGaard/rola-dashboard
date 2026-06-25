@@ -1,12 +1,13 @@
 {
-  "updated": "2026-06-25T02:20:22.726126Z",
+  "updated": "2026-06-25T02:30:38.709164Z",
   "matches": {
     "CZECHIA-MEXICO": {
       "homeGoals": 0,
-      "awayGoals": 1,
+      "awayGoals": 2,
       "status": "2H",
-      "elapsed": 60,
+      "elapsed": 70,
       "kickoffUTC": "2026-06-25T01:00:00+00:00",
+      "referee": "Yael Falcon Perez, Argentina",
       "events": [
         {
           "type": "Goal",
@@ -14,6 +15,22 @@
           "player": "M. Chavez Garcia",
           "team": "MEXICO",
           "minute": 55,
+          "extra": null
+        },
+        {
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "player": "J. Quinones",
+          "team": "MEXICO",
+          "minute": 61,
+          "extra": null
+        },
+        {
+          "type": "Card",
+          "detail": "Yellow Card",
+          "player": "E. Alvarez",
+          "team": "MEXICO",
+          "minute": 64,
           "extra": null
         }
       ],
@@ -23,6 +40,28 @@
             "out": "D. Visinsky",
             "in": "L. Provod",
             "minute": 56
+          },
+          {
+            "out": "A. Hlozek",
+            "in": "P. Schick",
+            "minute": 64
+          },
+          {
+            "out": "T. Holes",
+            "in": "T. Soucek",
+            "minute": 64
+          }
+        ],
+        "MEXICO": [
+          {
+            "out": "G. Martinez",
+            "in": "S. Gimenez",
+            "minute": 63
+          },
+          {
+            "out": "L. Romo",
+            "in": "O. Vargas",
+            "minute": 63
           }
         ]
       },
@@ -301,12 +340,22 @@
       }
     },
     "SOUTH AFRICA-SOUTH KOREA": {
-      "homeGoals": 0,
+      "homeGoals": 1,
       "awayGoals": 0,
       "status": "2H",
-      "elapsed": 60,
+      "elapsed": 70,
       "kickoffUTC": "2026-06-25T01:00:00+00:00",
-      "events": [],
+      "referee": "Facundo Raul Tello Figueroa, Argentina",
+      "events": [
+        {
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "player": "T. Maseko",
+          "team": "SOUTH AFRICA",
+          "minute": 63,
+          "extra": null
+        }
+      ],
       "substitutions": {
         "SOUTH KOREA": [
           {
@@ -323,6 +372,18 @@
             "out": "Lee Tae-Seok",
             "in": "J. Castrop",
             "minute": 46
+          },
+          {
+            "out": "Kim Min-Jae",
+            "in": "Park Jin-Seob",
+            "minute": 66
+          }
+        ],
+        "SOUTH AFRICA": [
+          {
+            "out": "O. Appollis",
+            "in": "T. Moremi",
+            "minute": 62
           }
         ]
       },
@@ -601,6 +662,7 @@
       "status": "FT",
       "elapsed": 90,
       "kickoffUTC": "2026-06-11T19:00:00+00:00",
+      "referee": "Wilton Pereira Sampaio, Brazil",
       "events": [
         {
           "type": "Goal",
@@ -1003,6 +1065,7 @@
       "status": "FT",
       "elapsed": 90,
       "kickoffUTC": "2026-06-12T02:00:00+00:00",
+      "referee": "Amin Mohamed Omar, Egypt",
       "events": [
         {
           "type": "Goal",
@@ -1373,6 +1436,7 @@
       "status": "FT",
       "elapsed": 90,
       "kickoffUTC": "2026-06-12T19:00:00+00:00",
+      "referee": "Facundo Raul Tello Figueroa, Argentina",
       "events": [
         {
           "type": "Card",
@@ -1772,6 +1836,7 @@
       "status": "FT",
       "elapsed": 90,
       "kickoffUTC": "2026-06-13T01:00:00+00:00",
+      "referee": "Danny Makkelie, Netherlands",
       "events": [
         {
           "type": "Goal",
@@ -2198,6 +2263,7 @@
       "status": "FT",
       "elapsed": 90,
       "kickoffUTC": "2026-06-13T19:00:00+00:00",
+      "referee": "Said Martinez, Honduras",
       "events": [
         {
           "type": "Card",
@@ -2581,6 +2647,7 @@
       "status": "FT",
       "elapsed": 90,
       "kickoffUTC": "2026-06-13T22:00:00+00:00",
+      "referee": "Slavko Vin\u010di\u0107, Slovenia",
       "events": [
         {
           "type": "Goal",
@@ -2951,6 +3018,7 @@
       "status": "FT",
       "elapsed": 90,
       "kickoffUTC": "2026-06-14T01:00:00+00:00",
+      "referee": "Mustapha Ghorbal, Algeria",
       "events": [
         {
           "type": "Goal",
@@ -3324,6 +3392,7 @@
       "status": "FT",
       "elapsed": 90,
       "kickoffUTC": "2026-06-14T04:00:00+00:00",
+      "referee": "Jes\u00fas Valenzuela, Venezuela",
       "events": [
         {
           "type": "Goal",
@@ -3691,6 +3760,7 @@
       "status": "FT",
       "elapsed": 90,
       "kickoffUTC": "2026-06-14T17:00:00+00:00",
+      "referee": "Jalal Jayed, Morocco",
       "events": [
         {
           "type": "Goal",
@@ -4088,6 +4158,7 @@
       "status": "FT",
       "elapsed": 90,
       "kickoffUTC": "2026-06-14T20:00:00+00:00",
+      "referee": "Ismail Elfath, USA",
       "events": [
         {
           "type": "Goal",
@@ -4487,6 +4558,7 @@
       "status": "FT",
       "elapsed": 90,
       "kickoffUTC": "2026-06-14T23:00:00+00:00",
+      "referee": "Fran\u00e7ois Letexier, France",
       "events": [
         {
           "type": "Card",
@@ -4865,6 +4937,7 @@
       "status": "FT",
       "elapsed": 90,
       "kickoffUTC": "2026-06-15T02:00:00+00:00",
+      "referee": "Yael Falcon Perez, Argentina",
       "events": [
         {
           "type": "Goal",
@@ -5264,6 +5337,7 @@
       "status": "FT",
       "elapsed": 90,
       "kickoffUTC": "2026-06-15T16:00:00+00:00",
+      "referee": "Adham Mohammad, Jordan",
       "events": [
         {
           "type": "Card",
@@ -5618,6 +5692,7 @@
       "status": "FT",
       "elapsed": 90,
       "kickoffUTC": "2026-06-15T19:00:00+00:00",
+      "referee": "Ramon Abatti Abel, Brazil",
       "events": [
         {
           "type": "Card",
@@ -6004,6 +6079,7 @@
       "status": "FT",
       "elapsed": 90,
       "kickoffUTC": "2026-06-15T22:00:00+00:00",
+      "referee": "Maurizio Mariani, Italy",
       "events": [
         {
           "type": "Goal",
@@ -6361,6 +6437,7 @@
       "status": "FT",
       "elapsed": 90,
       "kickoffUTC": "2026-06-16T01:00:00+00:00",
+      "referee": "C\u00e9sar Ramos Palazuelos, Mexico",
       "events": [
         {
           "type": "Goal",
@@ -6734,6 +6811,7 @@
       "status": "FT",
       "elapsed": 90,
       "kickoffUTC": "2026-06-16T19:00:00+00:00",
+      "referee": "Alireza Faghani, Australia",
       "events": [
         {
           "type": "Goal",
@@ -7094,6 +7172,7 @@
       "status": "FT",
       "elapsed": 90,
       "kickoffUTC": "2026-06-16T22:00:00+00:00",
+      "referee": "Pierre Ghislain Atcho, Gabon",
       "events": [
         {
           "type": "Goal",
@@ -7485,6 +7564,7 @@
       "status": "FT",
       "elapsed": 90,
       "kickoffUTC": "2026-06-17T01:00:00+00:00",
+      "referee": "Szymon Marciniak, Poland",
       "events": [
         {
           "type": "Goal",
@@ -7852,6 +7932,7 @@
       "status": "FT",
       "elapsed": 90,
       "kickoffUTC": "2026-06-17T04:00:00+00:00",
+      "referee": "Dahane Beida, Mauritania",
       "events": [
         {
           "type": "Goal",
@@ -8235,6 +8316,7 @@
       "status": "FT",
       "elapsed": 90,
       "kickoffUTC": "2026-06-17T17:00:00+00:00",
+      "referee": "Abdulrahman Al-Jassim, Qatar",
       "events": [
         {
           "type": "Goal",
@@ -8621,6 +8703,7 @@
       "status": "FT",
       "elapsed": 90,
       "kickoffUTC": "2026-06-17T20:00:00+00:00",
+      "referee": "Clement Turpin, France",
       "events": [
         {
           "type": "Goal",
@@ -9007,6 +9090,7 @@
       "status": "FT",
       "elapsed": 90,
       "kickoffUTC": "2026-06-17T23:00:00+00:00",
+      "referee": "Glenn Nyberg, Sweden",
       "events": [
         {
           "type": "Card",
@@ -9372,6 +9456,7 @@
       "status": "FT",
       "elapsed": 90,
       "kickoffUTC": "2026-06-18T02:00:00+00:00",
+      "referee": "Anthony Taylor, England",
       "events": [
         {
           "type": "Card",
@@ -9763,6 +9848,7 @@
       "status": "FT",
       "elapsed": 90,
       "kickoffUTC": "2026-06-18T16:00:00+00:00",
+      "referee": "Tori Penso, USA",
       "events": [
         {
           "type": "Goal",
@@ -10121,6 +10207,7 @@
       "status": "FT",
       "elapsed": 90,
       "kickoffUTC": "2026-06-18T19:00:00+00:00",
+      "referee": "Joao Pedro Pinheiro, Portugal",
       "events": [
         {
           "type": "Card",
@@ -10531,6 +10618,7 @@
       "status": "FT",
       "elapsed": 90,
       "kickoffUTC": "2026-06-18T22:00:00+00:00",
+      "referee": "Cristian Garay, Chile",
       "events": [
         {
           "type": "Card",
@@ -10957,6 +11045,7 @@
       "status": "FT",
       "elapsed": 90,
       "kickoffUTC": "2026-06-19T01:00:00+00:00",
+      "referee": "Gustavo Tejera, Uruguay",
       "events": [
         {
           "type": "Card",
@@ -11319,6 +11408,7 @@
       "status": "FT",
       "elapsed": 90,
       "kickoffUTC": "2026-06-19T19:00:00+00:00",
+      "referee": "Felix Zwayer, Germany",
       "events": [
         {
           "type": "Goal",
@@ -11729,6 +11819,7 @@
       "status": "FT",
       "elapsed": 90,
       "kickoffUTC": "2026-06-19T22:00:00+00:00",
+      "referee": "Ilgiz Tantashev, Uzbekistan",
       "events": [
         {
           "type": "Goal",
@@ -12091,6 +12182,7 @@
       "status": "FT",
       "elapsed": 90,
       "kickoffUTC": "2026-06-20T00:30:00+00:00",
+      "referee": "Alejandro Hernandez, Spain",
       "events": [
         {
           "type": "Card",
@@ -12485,6 +12577,7 @@
       "status": "FT",
       "elapsed": 90,
       "kickoffUTC": "2026-06-20T03:00:00+00:00",
+      "referee": "Iv\u00e1n Barton, El Salvador",
       "events": [
         {
           "type": "Goal",
@@ -12860,6 +12953,7 @@
       "status": "FT",
       "elapsed": 90,
       "kickoffUTC": "2026-06-20T17:00:00+00:00",
+      "referee": "Michael Oliver, England",
       "events": [
         {
           "type": "Goal",
@@ -13270,6 +13364,7 @@
       "status": "FT",
       "elapsed": 90,
       "kickoffUTC": "2026-06-20T20:00:00+00:00",
+      "referee": "Juan Gabriel Benitez, Paraguay",
       "events": [
         {
           "type": "Goal",
@@ -13637,6 +13732,7 @@
       "status": "FT",
       "elapsed": 90,
       "kickoffUTC": "2026-06-21T00:00:00+00:00",
+      "referee": "Ma Ning, China",
       "events": [
         {
           "type": "Card",
@@ -14023,6 +14119,7 @@
       "status": "FT",
       "elapsed": 90,
       "kickoffUTC": "2026-06-21T04:00:00+00:00",
+      "referee": "Istvan Kovacs, Romania",
       "events": [
         {
           "type": "Goal",
@@ -14388,6 +14485,7 @@
       "status": "FT",
       "elapsed": 90,
       "kickoffUTC": "2026-06-21T16:00:00+00:00",
+      "referee": "Raphael Claus, Brazil",
       "events": [
         {
           "type": "Goal",
@@ -14779,6 +14877,7 @@
       "status": "FT",
       "elapsed": 90,
       "kickoffUTC": "2026-06-21T19:00:00+00:00",
+      "referee": "Dario Herrera, Argentina",
       "events": [
         {
           "type": "Card",
@@ -15136,6 +15235,7 @@
       "status": "FT",
       "elapsed": 90,
       "kickoffUTC": "2026-06-21T22:00:00+00:00",
+      "referee": "Espen Eskas, Norway",
       "events": [
         {
           "type": "Card",
@@ -15523,6 +15623,7 @@
       "status": "FT",
       "elapsed": 90,
       "kickoffUTC": "2026-06-22T01:00:00+00:00",
+      "referee": "Omar Mohamed Al Ali, United Arab Emirates",
       "events": [
         {
           "type": "Goal",
@@ -15927,6 +16028,7 @@
       "status": "FT",
       "elapsed": 90,
       "kickoffUTC": "2026-06-22T17:00:00+00:00",
+      "referee": "Amin Mohamed Omar, Egypt",
       "events": [
         {
           "type": "Goal",
@@ -16326,6 +16428,7 @@
       "status": "FT",
       "elapsed": 90,
       "kickoffUTC": "2026-06-22T21:00:00+00:00",
+      "referee": "Drew Fischer, Canada",
       "events": [
         {
           "type": "Card",
@@ -16701,6 +16804,7 @@
       "status": "FT",
       "elapsed": 90,
       "kickoffUTC": "2026-06-23T00:00:00+00:00",
+      "referee": "Wilton Pereira Sampaio, Brazil",
       "events": [
         {
           "type": "Goal",
@@ -17084,6 +17188,7 @@
       "status": "FT",
       "elapsed": 90,
       "kickoffUTC": "2026-06-23T03:00:00+00:00",
+      "referee": "Slavko Vin\u010di\u0107, Slovenia",
       "events": [
         {
           "type": "Goal",
@@ -17462,6 +17567,7 @@
       "status": "FT",
       "elapsed": 90,
       "kickoffUTC": "2026-06-23T17:00:00+00:00",
+      "referee": "Jalal Jayed, Morocco",
       "events": [
         {
           "type": "Goal",
@@ -17861,6 +17967,7 @@
       "status": "FT",
       "elapsed": 90,
       "kickoffUTC": "2026-06-23T20:00:00+00:00",
+      "referee": "Said Martinez, Honduras",
       "events": [
         {
           "type": "Card",
@@ -18215,6 +18322,7 @@
       "status": "FT",
       "elapsed": 90,
       "kickoffUTC": "2026-06-23T23:00:00+00:00",
+      "referee": "Pierre Ghislain Atcho, Gabon",
       "events": [
         {
           "type": "Goal",
@@ -18577,6 +18685,7 @@
       "status": "FT",
       "elapsed": 90,
       "kickoffUTC": "2026-06-24T02:00:00+00:00",
+      "referee": "Maurizio Mariani, Italy",
       "events": [
         {
           "type": "Card",
@@ -18942,6 +19051,7 @@
       "status": "FT",
       "elapsed": 90,
       "kickoffUTC": "2026-06-24T19:00:00+00:00",
+      "referee": "Ramon Abatti Abel, Brazil",
       "events": [
         {
           "type": "Card",
@@ -19318,6 +19428,7 @@
       "status": "FT",
       "elapsed": 90,
       "kickoffUTC": "2026-06-24T19:00:00+00:00",
+      "referee": "Jes\u00fas Valenzuela, Venezuela",
       "events": [
         {
           "type": "Goal",
@@ -19694,6 +19805,7 @@
       "status": "FT",
       "elapsed": 90,
       "kickoffUTC": "2026-06-24T22:00:00+00:00",
+      "referee": "Danny Makkelie, Netherlands",
       "events": [
         {
           "type": "Goal",
@@ -20109,6 +20221,7 @@
       "status": "FT",
       "elapsed": 90,
       "kickoffUTC": "2026-06-24T22:00:00+00:00",
+      "referee": "C\u00e9sar Ramos Palazuelos, Mexico",
       "events": [
         {
           "type": "Goal",
@@ -20494,126 +20607,144 @@
       "awayGoals": null,
       "status": "NS",
       "elapsed": null,
-      "kickoffUTC": "2026-06-25T20:00:00+00:00"
+      "kickoffUTC": "2026-06-25T20:00:00+00:00",
+      "referee": null
     },
     "CURACAO-IVORY COAST": {
       "homeGoals": null,
       "awayGoals": null,
       "status": "NS",
       "elapsed": null,
-      "kickoffUTC": "2026-06-25T20:00:00+00:00"
+      "kickoffUTC": "2026-06-25T20:00:00+00:00",
+      "referee": null
     },
     "JAPAN-SWEDEN": {
       "homeGoals": null,
       "awayGoals": null,
       "status": "NS",
       "elapsed": null,
-      "kickoffUTC": "2026-06-25T23:00:00+00:00"
+      "kickoffUTC": "2026-06-25T23:00:00+00:00",
+      "referee": null
     },
     "TUNISIA-NETHERLANDS": {
       "homeGoals": null,
       "awayGoals": null,
       "status": "NS",
       "elapsed": null,
-      "kickoffUTC": "2026-06-25T23:00:00+00:00"
+      "kickoffUTC": "2026-06-25T23:00:00+00:00",
+      "referee": null
     },
     "TURKIYE-USA": {
       "homeGoals": null,
       "awayGoals": null,
       "status": "NS",
       "elapsed": null,
-      "kickoffUTC": "2026-06-26T02:00:00+00:00"
+      "kickoffUTC": "2026-06-26T02:00:00+00:00",
+      "referee": null
     },
     "PARAGUAY-AUSTRALIA": {
       "homeGoals": null,
       "awayGoals": null,
       "status": "NS",
       "elapsed": null,
-      "kickoffUTC": "2026-06-26T02:00:00+00:00"
+      "kickoffUTC": "2026-06-26T02:00:00+00:00",
+      "referee": null
     },
     "SENEGAL-IRAQ": {
       "homeGoals": null,
       "awayGoals": null,
       "status": "NS",
       "elapsed": null,
-      "kickoffUTC": "2026-06-26T19:00:00+00:00"
+      "kickoffUTC": "2026-06-26T19:00:00+00:00",
+      "referee": null
     },
     "NORWAY-FRANCE": {
       "homeGoals": null,
       "awayGoals": null,
       "status": "NS",
       "elapsed": null,
-      "kickoffUTC": "2026-06-26T19:00:00+00:00"
+      "kickoffUTC": "2026-06-26T19:00:00+00:00",
+      "referee": null
     },
     "URUGUAY-SPAIN": {
       "homeGoals": null,
       "awayGoals": null,
       "status": "NS",
       "elapsed": null,
-      "kickoffUTC": "2026-06-27T00:00:00+00:00"
+      "kickoffUTC": "2026-06-27T00:00:00+00:00",
+      "referee": null
     },
     "CAPE VERDE-SAUDI ARABIA": {
       "homeGoals": null,
       "awayGoals": null,
       "status": "NS",
       "elapsed": null,
-      "kickoffUTC": "2026-06-27T00:00:00+00:00"
+      "kickoffUTC": "2026-06-27T00:00:00+00:00",
+      "referee": null
     },
     "EGYPT-IRAN": {
       "homeGoals": null,
       "awayGoals": null,
       "status": "NS",
       "elapsed": null,
-      "kickoffUTC": "2026-06-27T03:00:00+00:00"
+      "kickoffUTC": "2026-06-27T03:00:00+00:00",
+      "referee": null
     },
     "NEW ZEALAND-BELGIUM": {
       "homeGoals": null,
       "awayGoals": null,
       "status": "NS",
       "elapsed": null,
-      "kickoffUTC": "2026-06-27T03:00:00+00:00"
+      "kickoffUTC": "2026-06-27T03:00:00+00:00",
+      "referee": null
     },
     "CROATIA-GHANA": {
       "homeGoals": null,
       "awayGoals": null,
       "status": "NS",
       "elapsed": null,
-      "kickoffUTC": "2026-06-27T21:00:00+00:00"
+      "kickoffUTC": "2026-06-27T21:00:00+00:00",
+      "referee": null
     },
     "PANAMA-ENGLAND": {
       "homeGoals": null,
       "awayGoals": null,
       "status": "NS",
       "elapsed": null,
-      "kickoffUTC": "2026-06-27T21:00:00+00:00"
+      "kickoffUTC": "2026-06-27T21:00:00+00:00",
+      "referee": null
     },
     "COLOMBIA-PORTUGAL": {
       "homeGoals": null,
       "awayGoals": null,
       "status": "NS",
       "elapsed": null,
-      "kickoffUTC": "2026-06-27T23:30:00+00:00"
+      "kickoffUTC": "2026-06-27T23:30:00+00:00",
+      "referee": null
     },
     "CONGO DR-UZBEKISTAN": {
       "homeGoals": null,
       "awayGoals": null,
       "status": "NS",
       "elapsed": null,
-      "kickoffUTC": "2026-06-27T23:30:00+00:00"
+      "kickoffUTC": "2026-06-27T23:30:00+00:00",
+      "referee": null
     },
     "ALGERIA-AUSTRIA": {
       "homeGoals": null,
       "awayGoals": null,
       "status": "NS",
       "elapsed": null,
-      "kickoffUTC": "2026-06-28T02:00:00+00:00"
+      "kickoffUTC": "2026-06-28T02:00:00+00:00",
+      "referee": null
     },
     "JORDAN-ARGENTINA": {
       "homeGoals": null,
       "awayGoals": null,
       "status": "NS",
       "elapsed": null,
-      "kickoffUTC": "2026-06-28T02:00:00+00:00"
+      "kickoffUTC": "2026-06-28T02:00:00+00:00",
+      "referee": null
     }
   }
 }
