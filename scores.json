@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-25T21:40:23.290250Z",
+  "updated": "2026-06-25T21:50:23.252249Z",
   "matches": {
     "MEXICO-SOUTH AFRICA": {
       "homeGoals": 2,
@@ -20798,7 +20798,7 @@
       "homeGoals": 2,
       "awayGoals": 1,
       "status": "2H",
-      "elapsed": 80,
+      "elapsed": 90,
       "kickoffUTC": "2026-06-25T20:00:00+00:00",
       "referee": "Tori Penso, USA",
       "events": [
@@ -20849,6 +20849,14 @@
           "team": "ECUADOR",
           "minute": 77,
           "extra": null
+        },
+        {
+          "type": "Card",
+          "detail": "Yellow Card",
+          "player": "Gonzalo Plata",
+          "team": "ECUADOR",
+          "minute": 89,
+          "extra": null
         }
       ],
       "substitutions": {
@@ -20894,6 +20902,16 @@
             "out": "Piero Hincapi\u00e9",
             "in": "Pervis Estupinan",
             "minute": 71
+          },
+          {
+            "out": "John Yeboah",
+            "in": "Felix Torres",
+            "minute": 85
+          },
+          {
+            "out": "Nilson Angulo",
+            "in": "Jordy Caicedo",
+            "minute": 85
           }
         ]
       },
@@ -21170,7 +21188,7 @@
       "homeGoals": 0,
       "awayGoals": 2,
       "status": "2H",
-      "elapsed": 79,
+      "elapsed": 89,
       "kickoffUTC": "2026-06-25T20:00:00+00:00",
       "referee": "Glenn Nyberg, Sweden",
       "events": [
@@ -21204,6 +21222,14 @@
           "player": "Juninho Bacuna",
           "team": "CURACAO",
           "minute": 75,
+          "extra": null
+        },
+        {
+          "type": "Card",
+          "detail": "Yellow Card",
+          "player": "Gervane Kastaneer",
+          "team": "CURACAO",
+          "minute": 83,
           "extra": null
         }
       ],
