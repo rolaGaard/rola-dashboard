@@ -170,6 +170,8 @@ jobs:
               fixture = fx['fixture']
               teams = fx['teams']
               goals = fx['goals']
+              score = fx.get('score', {})
+              penalty = score.get('penalty', {}) or {}
               home = normalize_team(teams['home']['name'])
               away = normalize_team(teams['away']['name'])
               key = home + '-' + away
@@ -182,7 +184,13 @@ jobs:
                   'status': status,
                   'elapsed': fixture['status'].get('elapsed'),
                   'kickoffUTC': fixture.get('date'),
+                  'referee': fixture.get('referee'),
               }
+              # Si el partido se definió por penales, la API trae el resultado
+              # de la tanda en un campo separado (no se suma al marcador normal).
+              if penalty.get('home') is not None or penalty.get('away') is not None:
+                  entry['penaltyHome'] = penalty.get('home')
+                  entry['penaltyAway'] = penalty.get('away')
 
               # Los eventos (goles/tarjetas/cambios) solo cambian mientras el
               # partido está en vivo. Una vez finalizado, ya no cambian más —
@@ -245,11 +253,58 @@ jobs:
           print(f"Wrote {len(scores)} matches to scores.json")
           EOF
 
+      # El endpoint /status NO consume cuota — lo llamamos siempre (no solo
+      # en la ventana de partidos) para llevar un registro completo del uso
+      # diario, útil para la página de control de desarrollador.
+      - name: Check API quota usage (free endpoint, doesn't count against quota)
+        env:
+          API_KEY: ${{ secrets.API_FOOTBALL_KEY }}
+        run: |
+          curl -s -H "x-apisports-key: $API_KEY" \
+            "https://v3.football.api-sports.io/status" \
+            -o raw_status.json
+
+          python3 << 'EOF'
+          import json
+          from datetime import datetime, timedelta
+
+          try:
+              with open('raw_status.json') as f:
+                  raw = json.load(f)
+              req = raw.get('response', {}).get('requests', {})
+              current = req.get('current')
+              limit_day = req.get('limit_day')
+          except Exception as e:
+              print(f"Could not read API status: {e}")
+              current, limit_day = None, None
+
+          try:
+              with open('status.json') as f:
+                  history = json.load(f).get('history', [])
+          except Exception:
+              history = []
+
+          if current is not None:
+              history.append({
+                  'time': datetime.utcnow().isoformat() + 'Z',
+                  'current': current,
+                  'limit_day': limit_day,
+              })
+
+          # Guardamos solo las últimas 48hs para que el archivo no crezca sin límite
+          cutoff = datetime.utcnow() - timedelta(hours=48)
+          history = [h for h in history if datetime.fromisoformat(h['time'].replace('Z', '')) >= cutoff]
+
+          with open('status.json', 'w') as f:
+              json.dump({'history': history}, f, indent=2)
+
+          print(f"API quota: {current}/{limit_day}. History entries: {len(history)}")
+          EOF
+
       - name: Commit and push if changed
-        if: steps.check_window.outputs.in_window == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add scores.json
-          git diff --staged --quiet || git commit -m "Update scores [automated]"
+          git add scores.json status.json
+          git diff --staged --quiet || git commit -m "Update scores and API status [automated]"
           git push
