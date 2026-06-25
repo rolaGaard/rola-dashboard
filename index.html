@@ -1287,7 +1287,10 @@ function getMatchResult(m) {
   const now = new Date();
   const kickoff = new Date(getKickoffUTC(m));
   const estimatedEnd = new Date(kickoff.getTime() + 115 * 60000);
-  const isFinished = (apiStatus && isFinishedStatus(apiStatus)) || (!apiStatus && now >= estimatedEnd);
+  // Si la API ya confirmó "en vivo" o "finalizado", confiamos en eso.
+  // Si dice cualquier otra cosa (incluido "NS" desactualizado, justo al
+  // arrancar el partido) o no dice nada, inferimos por horario.
+  const isFinished = isFinishedStatus(apiStatus) || (!isLiveStatus(apiStatus) && now >= estimatedEnd);
   const hasScore = homeGoals !== null && homeGoals !== undefined;
   return { isFinished, hasScore, homeGoals, awayGoals };
 }
@@ -1430,8 +1433,8 @@ function buildMatchCard(m) {
   const timeInferredLive = now >= kickoff && now < estimatedEnd;
   const timeInferredFinished = now >= estimatedEnd;
 
-  const isLive = (apiStatus && isLiveStatus(apiStatus)) || (!apiStatus && timeInferredLive);
-  const isFinished = (apiStatus && isFinishedStatus(apiStatus)) || (!apiStatus && timeInferredFinished);
+  const isLive = isLiveStatus(apiStatus) || (!isFinishedStatus(apiStatus) && timeInferredLive);
+  const isFinished = isFinishedStatus(apiStatus) || (!isLiveStatus(apiStatus) && timeInferredFinished);
   const hasScore = homeGoals !== null && homeGoals !== undefined;
 
   const arTime = utcToAR(realKickoffUTC);
