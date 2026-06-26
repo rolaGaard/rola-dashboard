@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-26T00:50:23.614770Z",
+  "updated": "2026-06-26T01:00:51.134022Z",
   "matches": {
     "MEXICO-SOUTH AFRICA": {
       "homeGoals": 2,
@@ -21422,130 +21422,10 @@
         }
       }
     },
-    "TURKIYE-USA": {
-      "homeGoals": null,
-      "awayGoals": null,
-      "status": "NS",
-      "elapsed": null,
-      "kickoffUTC": "2026-06-26T02:00:00+00:00",
-      "referee": "M. Ghorbal"
-    },
-    "PARAGUAY-AUSTRALIA": {
-      "homeGoals": null,
-      "awayGoals": null,
-      "status": "NS",
-      "elapsed": null,
-      "kickoffUTC": "2026-06-26T02:00:00+00:00",
-      "referee": "C. Turpin"
-    },
-    "SENEGAL-IRAQ": {
-      "homeGoals": null,
-      "awayGoals": null,
-      "status": "NS",
-      "elapsed": null,
-      "kickoffUTC": "2026-06-26T19:00:00+00:00",
-      "referee": "A. Taylor"
-    },
-    "NORWAY-FRANCE": {
-      "homeGoals": null,
-      "awayGoals": null,
-      "status": "NS",
-      "elapsed": null,
-      "kickoffUTC": "2026-06-26T19:00:00+00:00",
-      "referee": "M. Oliver"
-    },
-    "URUGUAY-SPAIN": {
-      "homeGoals": null,
-      "awayGoals": null,
-      "status": "NS",
-      "elapsed": null,
-      "kickoffUTC": "2026-06-27T00:00:00+00:00",
-      "referee": "I. Elfath"
-    },
-    "CAPE VERDE-SAUDI ARABIA": {
-      "homeGoals": null,
-      "awayGoals": null,
-      "status": "NS",
-      "elapsed": null,
-      "kickoffUTC": "2026-06-27T00:00:00+00:00",
-      "referee": "F. Letexier"
-    },
-    "EGYPT-IRAN": {
-      "homeGoals": null,
-      "awayGoals": null,
-      "status": "NS",
-      "elapsed": null,
-      "kickoffUTC": "2026-06-27T03:00:00+00:00",
-      "referee": "S. Marciniak"
-    },
-    "NEW ZEALAND-BELGIUM": {
-      "homeGoals": null,
-      "awayGoals": null,
-      "status": "NS",
-      "elapsed": null,
-      "kickoffUTC": "2026-06-27T03:00:00+00:00",
-      "referee": "A. Makhadmeh"
-    },
-    "CROATIA-GHANA": {
-      "homeGoals": null,
-      "awayGoals": null,
-      "status": "NS",
-      "elapsed": null,
-      "kickoffUTC": "2026-06-27T21:00:00+00:00",
-      "referee": "D. Fischer"
-    },
-    "PANAMA-ENGLAND": {
-      "homeGoals": null,
-      "awayGoals": null,
-      "status": "NS",
-      "elapsed": null,
-      "kickoffUTC": "2026-06-27T21:00:00+00:00",
-      "referee": "A. Al Jassim"
-    },
-    "COLOMBIA-PORTUGAL": {
-      "homeGoals": null,
-      "awayGoals": null,
-      "status": "NS",
-      "elapsed": null,
-      "kickoffUTC": "2026-06-27T23:30:00+00:00",
-      "referee": "A. Faghani"
-    },
-    "CONGO DR-UZBEKISTAN": {
-      "homeGoals": null,
-      "awayGoals": null,
-      "status": "NS",
-      "elapsed": null,
-      "kickoffUTC": "2026-06-27T23:30:00+00:00",
-      "referee": "F. Zwayer"
-    },
-    "ALGERIA-AUSTRIA": {
-      "homeGoals": null,
-      "awayGoals": null,
-      "status": "NS",
-      "elapsed": null,
-      "kickoffUTC": "2026-06-28T02:00:00+00:00",
-      "referee": "I. Tantashev"
-    },
-    "JORDAN-ARGENTINA": {
-      "homeGoals": null,
-      "awayGoals": null,
-      "status": "NS",
-      "elapsed": null,
-      "kickoffUTC": "2026-06-28T02:00:00+00:00",
-      "referee": "I. Kovacs"
-    },
-    "SOUTH AFRICA-CANADA": {
-      "homeGoals": null,
-      "awayGoals": null,
-      "status": "NS",
-      "elapsed": null,
-      "kickoffUTC": "2026-06-28T19:00:00+00:00",
-      "referee": null
-    },
     "JAPAN-SWEDEN": {
       "homeGoals": 1,
       "awayGoals": 1,
-      "status": "2H",
+      "status": "FT",
       "elapsed": 90,
       "kickoffUTC": "2026-06-25T23:00:00+00:00",
       "referee": "I. Barton",
@@ -21924,7 +21804,7 @@
     "TUNISIA-NETHERLANDS": {
       "homeGoals": 1,
       "awayGoals": 3,
-      "status": "2H",
+      "status": "FT",
       "elapsed": 90,
       "kickoffUTC": "2026-06-25T23:00:00+00:00",
       "referee": "K. I. Garcia Mendoza",
@@ -22286,6 +22166,126 @@
           ]
         }
       }
+    },
+    "TURKIYE-USA": {
+      "homeGoals": null,
+      "awayGoals": null,
+      "status": "NS",
+      "elapsed": null,
+      "kickoffUTC": "2026-06-26T02:00:00+00:00",
+      "referee": "M. Ghorbal"
+    },
+    "PARAGUAY-AUSTRALIA": {
+      "homeGoals": null,
+      "awayGoals": null,
+      "status": "NS",
+      "elapsed": null,
+      "kickoffUTC": "2026-06-26T02:00:00+00:00",
+      "referee": "C. Turpin"
+    },
+    "SENEGAL-IRAQ": {
+      "homeGoals": null,
+      "awayGoals": null,
+      "status": "NS",
+      "elapsed": null,
+      "kickoffUTC": "2026-06-26T19:00:00+00:00",
+      "referee": "A. Taylor"
+    },
+    "NORWAY-FRANCE": {
+      "homeGoals": null,
+      "awayGoals": null,
+      "status": "NS",
+      "elapsed": null,
+      "kickoffUTC": "2026-06-26T19:00:00+00:00",
+      "referee": "M. Oliver"
+    },
+    "URUGUAY-SPAIN": {
+      "homeGoals": null,
+      "awayGoals": null,
+      "status": "NS",
+      "elapsed": null,
+      "kickoffUTC": "2026-06-27T00:00:00+00:00",
+      "referee": "I. Elfath"
+    },
+    "CAPE VERDE-SAUDI ARABIA": {
+      "homeGoals": null,
+      "awayGoals": null,
+      "status": "NS",
+      "elapsed": null,
+      "kickoffUTC": "2026-06-27T00:00:00+00:00",
+      "referee": "F. Letexier"
+    },
+    "EGYPT-IRAN": {
+      "homeGoals": null,
+      "awayGoals": null,
+      "status": "NS",
+      "elapsed": null,
+      "kickoffUTC": "2026-06-27T03:00:00+00:00",
+      "referee": "S. Marciniak"
+    },
+    "NEW ZEALAND-BELGIUM": {
+      "homeGoals": null,
+      "awayGoals": null,
+      "status": "NS",
+      "elapsed": null,
+      "kickoffUTC": "2026-06-27T03:00:00+00:00",
+      "referee": "A. Makhadmeh"
+    },
+    "CROATIA-GHANA": {
+      "homeGoals": null,
+      "awayGoals": null,
+      "status": "NS",
+      "elapsed": null,
+      "kickoffUTC": "2026-06-27T21:00:00+00:00",
+      "referee": "D. Fischer"
+    },
+    "PANAMA-ENGLAND": {
+      "homeGoals": null,
+      "awayGoals": null,
+      "status": "NS",
+      "elapsed": null,
+      "kickoffUTC": "2026-06-27T21:00:00+00:00",
+      "referee": "A. Al Jassim"
+    },
+    "COLOMBIA-PORTUGAL": {
+      "homeGoals": null,
+      "awayGoals": null,
+      "status": "NS",
+      "elapsed": null,
+      "kickoffUTC": "2026-06-27T23:30:00+00:00",
+      "referee": "A. Faghani"
+    },
+    "CONGO DR-UZBEKISTAN": {
+      "homeGoals": null,
+      "awayGoals": null,
+      "status": "NS",
+      "elapsed": null,
+      "kickoffUTC": "2026-06-27T23:30:00+00:00",
+      "referee": "F. Zwayer"
+    },
+    "ALGERIA-AUSTRIA": {
+      "homeGoals": null,
+      "awayGoals": null,
+      "status": "NS",
+      "elapsed": null,
+      "kickoffUTC": "2026-06-28T02:00:00+00:00",
+      "referee": "I. Tantashev"
+    },
+    "JORDAN-ARGENTINA": {
+      "homeGoals": null,
+      "awayGoals": null,
+      "status": "NS",
+      "elapsed": null,
+      "kickoffUTC": "2026-06-28T02:00:00+00:00",
+      "referee": "I. Kovacs"
+    },
+    "SOUTH AFRICA-CANADA": {
+      "homeGoals": null,
+      "awayGoals": null,
+      "status": "NS",
+      "elapsed": null,
+      "kickoffUTC": "2026-06-28T19:00:00+00:00",
+      "referee": null
     }
   }
 }
