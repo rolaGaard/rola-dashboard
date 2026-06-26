@@ -277,7 +277,7 @@
   .groups-col { display:flex; flex-direction:column; gap:8px; min-width:0; }
   .group-card {
     background:#fff; border-radius:8px; padding:0; overflow:hidden;
-    border:2px solid var(--gcolor, #94a3b8);
+    border:2px solid var(--gcolor, #94a3b8); cursor:pointer;
   }
   .group-card-title {
     font-size:9px; font-weight:700; color:#fff; letter-spacing:0.04em;
@@ -528,6 +528,21 @@
     container-type:inline-size; container-name:cibox;
   }
 
+  .group-zoom-box {
+    width:min(94vw, 560px); max-width:560px; padding:24px 26px;
+    container-type:inline-size; container-name:gzbox;
+  }
+  .group-zoom-box .group-card { box-shadow:none; }
+  .group-zoom-box .group-card-title { font-size:18px; padding:10px 14px; }
+  .group-zoom-box .standings-header,
+  .group-zoom-box .standings-row { font-size:14px; padding:8px 8px; }
+  .group-zoom-box .gflag { width:1.3em; }
+  @container gzbox (min-width:480px) {
+    .group-zoom-box .group-card-title { font-size:21px; }
+    .group-zoom-box .standings-header,
+    .group-zoom-box .standings-row { font-size:16px; padding:10px 8px; }
+  }
+
   /* ── Header compacto: bandera + nombre + código + estrellas ──────────── */
   .ci-header { display:flex; align-items:center; gap:12px; margin-bottom:4px; padding-right:28px; }
   .ci-flag-img { width:48px; height:32px; object-fit:cover; border-radius:3px; flex-shrink:0; }
@@ -771,6 +786,13 @@
   </div>
 </div>
 
+<div id="group-zoom-modal" class="shortcut-instructions" style="display:none;">
+  <div class="shortcut-instructions-box group-zoom-box">
+    <button id="group-zoom-close" class="cookie-banner-close" aria-label="Cerrar">✕</button>
+    <div id="group-zoom-content"></div>
+  </div>
+</div>
+
 <div class="search-wrap">
   <div class="search-box">
     <span class="search-icon">🔎</span>
@@ -856,7 +878,7 @@ const I18N = {
     alineacionSinPartidos: 'No hay partidos cargados para este equipo.',
     alineacionNoDisponible: 'Todavía no está confirmada. La FIFA la publica aproximadamente 1 hora antes del partido.', alineacionRivalNoDisponible: 'Alineación del rival todavía no disponible', arbitro: 'Árbitro', hidratacion: 'Hidratación', hidratacionAviso: 'Estimado: FIFA fija la pausa de hidratación ~minuto 22 de cada tiempo. La API no confirma el momento exacto.',
     paisesTitulo: 'Estado del Mundial 2026', paisesCompiten: 'Siguen en carrera', paisesAfuera: 'Quedaron eliminados',
-    paisesDisclaimer: 'Un equipo pasa a "Eliminados" cuando su grupo terminó los 6 partidos y quedó 3° o 4°. Por ahora no incluye eliminaciones de fases posteriores a la de grupos.', paisesSinEliminados: 'Todavía no hay equipos eliminados.',
+    paisesDisclaimer: 'Un equipo en 4° queda eliminado al terminar su grupo. Uno en 3° recién se sabe si queda eliminado cuando terminan los 12 grupos (depende de si entra entre los 8 mejores terceros). Por ahora no incluye eliminaciones de fases posteriores a dieciseisavos.', paisesSinEliminados: 'Todavía no hay equipos eliminados.',
     pj: 'PJ', g: 'G', e: 'E', p: 'P', dg: 'DG', pts: 'PTS',
   },
   en: {
@@ -905,7 +927,7 @@ const I18N = {
     alineacionSinPartidos: 'No matches loaded for this team.',
     alineacionNoDisponible: 'Not confirmed yet. FIFA publishes it about 1 hour before kickoff.', alineacionRivalNoDisponible: 'Opponent lineup not available yet', arbitro: 'Referee', hidratacion: 'Hydration', hidratacionAviso: 'Estimated: FIFA sets the hydration break at ~minute 22 of each half. The API does not confirm the exact moment.',
     paisesTitulo: '2026 World Cup status', paisesCompiten: 'Still in the running', paisesAfuera: 'Eliminated',
-    paisesDisclaimer: 'A team moves to "Eliminated" once its group finishes all 6 matches and it placed 3rd or 4th. Doesn\'t yet account for eliminations beyond the group stage.', paisesSinEliminados: 'No teams eliminated yet.',
+    paisesDisclaimer: 'A team in 4th is eliminated once its group finishes. A team in 3rd is only confirmed once all 12 groups finish (depends on making the best-8 thirds). Doesn\'t yet account for eliminations past the Round of 32.', paisesSinEliminados: 'No teams eliminated yet.',
     pj: 'P', g: 'W', e: 'D', p: 'L', dg: 'GD', pts: 'PTS',
   },
   pt: {
@@ -954,7 +976,7 @@ const I18N = {
     alineacionSinPartidos: 'Não há jogos carregados para esta seleção.',
     alineacionNoDisponible: 'Ainda não confirmada. A FIFA publica cerca de 1 hora antes do jogo.', alineacionRivalNoDisponible: 'Escalação do adversário ainda não disponível', arbitro: 'Árbitro', hidratacion: 'Hidratação', hidratacionAviso: 'Estimado: a FIFA define a pausa de hidratação por volta do minuto 22 de cada tempo. A API não confirma o momento exato.',
     paisesTitulo: 'Situação da Copa do Mundo 2026', paisesCompiten: 'Seguem na disputa', paisesAfuera: 'Foram eliminados',
-    paisesDisclaimer: 'Uma seleção passa para "Eliminados" quando seu grupo termina os 6 jogos e ela fica em 3° ou 4°. Por enquanto não considera eliminações além da fase de grupos.', paisesSinEliminados: 'Ainda não há seleções eliminadas.',
+    paisesDisclaimer: 'Uma seleção em 4° é eliminada quando seu grupo termina. Uma em 3° só se confirma quando os 12 grupos terminam (depende de entrar entre os 8 melhores terceiros). Por enquanto não considera eliminações além dos dezesseis avos.', paisesSinEliminados: 'Ainda não há seleções eliminadas.',
     pj: 'PJ', g: 'V', e: 'E', p: 'D', dg: 'SG', pts: 'PTS',
   },
   de: {
@@ -1003,7 +1025,7 @@ const I18N = {
     alineacionSinPartidos: 'Keine Spiele für dieses Team geladen.',
     alineacionNoDisponible: 'Noch nicht bestätigt. Die FIFA veröffentlicht sie etwa 1 Stunde vor dem Spiel.', alineacionRivalNoDisponible: 'Aufstellung des Gegners noch nicht verfügbar', arbitro: 'Schiedsrichter', hidratacion: 'Trinkpause', hidratacionAviso: 'Geschätzt: Die FIFA legt die Trinkpause auf ca. Minute 22 jeder Halbzeit fest. Die API bestätigt den genauen Zeitpunkt nicht.',
     paisesTitulo: 'WM-2026-Stand', paisesCompiten: 'Noch im Turnier', paisesAfuera: 'Ausgeschieden',
-    paisesDisclaimer: 'Ein Team gilt als "Ausgeschieden", sobald seine Gruppe alle 6 Spiele beendet hat und es Platz 3 oder 4 belegte. Ausscheiden nach der Gruppenphase wird derzeit nicht berücksichtigt.', paisesSinEliminados: 'Noch keine Teams ausgeschieden.',
+    paisesDisclaimer: 'Ein Team auf Platz 4 ist nach Ende seiner Gruppe ausgeschieden. Bei Platz 3 steht das erst fest, wenn alle 12 Gruppen beendet sind (abhängig von den besten 8 Drittplatzierten). Ausscheiden nach der Runde der 32 wird noch nicht berücksichtigt.', paisesSinEliminados: 'Noch keine Teams ausgeschieden.',
     pj: 'Sp', g: 'S', e: 'U', p: 'N', dg: 'TD', pts: 'Pkt',
   },
   nl: {
@@ -1052,7 +1074,7 @@ const I18N = {
     alineacionSinPartidos: 'Geen wedstrijden geladen voor dit land.',
     alineacionNoDisponible: 'Nog niet bevestigd. FIFA publiceert dit ongeveer 1 uur voor de wedstrijd.', alineacionRivalNoDisponible: 'Opstelling van de tegenstander nog niet beschikbaar', arbitro: 'Scheidsrechter', hidratacion: 'Hydratatie', hidratacionAviso: 'Geschat: FIFA plant de hydratatiepauze rond minuut 22 van elke helft. De API bevestigt het exacte moment niet.',
     paisesTitulo: 'WK 2026-status', paisesCompiten: 'Nog in de strijd', paisesAfuera: 'Uitgeschakeld',
-    paisesDisclaimer: 'Een land verhuist naar "Uitgeschakeld" zodra zijn groep alle 6 wedstrijden heeft afgerond en het 3e of 4e werd. Uitschakelingen na de groepsfase worden nog niet meegenomen.', paisesSinEliminados: 'Nog geen landen uitgeschakeld.',
+    paisesDisclaimer: 'Een land op de 4e plek is uitgeschakeld zodra zijn groep is afgelopen. Bij de 3e plek staat dit pas vast als alle 12 groepen klaar zijn (hangt af van de beste 8 derde plekken). Uitschakelingen na de ronde van 32 worden nog niet meegenomen.', paisesSinEliminados: 'Nog geen landen uitgeschakeld.',
     pj: 'G', g: 'W', e: 'G', p: 'V', dg: 'DV', pts: 'Pt',
   },
 };
@@ -2074,29 +2096,32 @@ const GROUP_COLORS = {
   'I':'#7A2BC7','J':'#1B5E63','K':'#E0671B','L':'#2BAEE0',
 };
 
+function buildSingleGroupCardHtml(g) {
+  const standings = computeStandings(g);
+  const color = GROUP_COLORS[g] || '#94a3b8';
+  let html = '<div class="group-card" style="--gcolor:' + color + '" onclick="openGroupZoom(\'' + g + '\')"><div class="group-card-title">' + t('grupo') + ' ' + g + '</div>';
+  html += '<div class="standings-header"><span class="sh-team"></span><span>' + t('pj') + '</span><span>' + t('g') + '</span><span>' + t('e') + '</span><span>' + t('p') + '</span><span>' + t('dg') + '</span><span>' + t('pts') + '</span></div>';
+  standings.forEach((row) => {
+    const code = row.team;
+    const gd = row.gf - row.ga;
+    const gdStr = gd > 0 ? '+' + gd : String(gd);
+    html += '<div class="standings-row">' +
+      '<span class="st-team team-clickable" title="' + esName(code) + '" onclick="event.stopPropagation(); openCountryInfo(\'' + code.replace(/'/g, "\\'") + '\')"><span class="gflag">' + flag(code) + '</span><span class="gname">' + esName(code) + '</span></span>' +
+      '<span>' + row.played + '</span>' +
+      '<span>' + row.w + '</span>' +
+      '<span>' + row.d + '</span>' +
+      '<span>' + row.l + '</span>' +
+      '<span>' + gdStr + '</span>' +
+      '<span class="st-pts">' + row.pts + '</span>' +
+    '</div>';
+  });
+  html += '</div>';
+  return html;
+}
+
 function buildGroupsColumn(groupLetters) {
   let html = '';
-  groupLetters.forEach(g => {
-    const standings = computeStandings(g);
-    const color = GROUP_COLORS[g] || '#94a3b8';
-    html += '<div class="group-card" style="--gcolor:' + color + '"><div class="group-card-title">' + t('grupo') + ' ' + g + '</div>';
-    html += '<div class="standings-header"><span class="sh-team"></span><span>' + t('pj') + '</span><span>' + t('g') + '</span><span>' + t('e') + '</span><span>' + t('p') + '</span><span>' + t('dg') + '</span><span>' + t('pts') + '</span></div>';
-    standings.forEach((row) => {
-      const t = row.team;
-      const gd = row.gf - row.ga;
-      const gdStr = gd > 0 ? '+' + gd : String(gd);
-      html += '<div class="standings-row">' +
-        '<span class="st-team team-clickable" title="' + esName(t) + '" onclick="event.stopPropagation(); openCountryInfo(\'' + t.replace(/'/g, "\\'") + '\')"><span class="gflag">' + flag(t) + '</span><span class="gname">' + esName(t) + '</span></span>' +
-        '<span>' + row.played + '</span>' +
-        '<span>' + row.w + '</span>' +
-        '<span>' + row.d + '</span>' +
-        '<span>' + row.l + '</span>' +
-        '<span>' + gdStr + '</span>' +
-        '<span class="st-pts">' + row.pts + '</span>' +
-      '</div>';
-    });
-    html += '</div>';
-  });
+  groupLetters.forEach(g => { html += buildSingleGroupCardHtml(g); });
   return html;
 }
 
@@ -2180,22 +2205,28 @@ function buildThirdPlaceTable() {
 // con un solo candidato posible — si hay más de una opción válida, prefiere
 // mostrar el conjunto de grupos candidatos en vez de arriesgar una
 // asignación que podría no coincidir con la tabla oficial de la FIFA.
-function buildRoundOf32() {
-  const allGroupsFinished = ['A','B','C','D','E','F','G','H','I','J','K','L'].every(g =>
+// Devuelve la lista de los 8 grupos cuyo 3er puesto clasifica, o null si
+// todavía no se puede saber (faltan partidos de la fase de grupos en
+// cualquier grupo — la comparación de terceros es entre los 12, así que
+// hace falta que TODOS hayan terminado, no solo el del equipo en cuestión).
+function getQualifiedThirdGroups() {
+  const allGroups = ['A','B','C','D','E','F','G','H','I','J','K','L'];
+  const allGroupsFinished = allGroups.every(g =>
     SCHEDULE.filter(m => m.group === g).every(m => getMatchResult(m).isFinished && getMatchResult(m).hasScore)
   );
+  if (!allGroupsFinished) return null;
 
-  let qualifiedThirdGroups = null; // null = todavía no se sabe
-  if (allGroupsFinished) {
-    const allGroups = ['A','B','C','D','E','F','G','H','I','J','K','L'];
-    const thirds = allGroups.map(g => {
-      const standings = computeStandings(g);
-      const row = standings[2];
-      return row ? { group: g, ...row, gd: row.gf - row.ga } : null;
-    }).filter(Boolean);
-    thirds.sort((a, b) => (b.pts - a.pts) || (b.gd - a.gd) || (b.gf - a.gf));
-    qualifiedThirdGroups = thirds.slice(0, 8).map(t => t.group);
-  }
+  const thirds = allGroups.map(g => {
+    const standings = computeStandings(g);
+    const row = standings[2];
+    return row ? { group: g, ...row, gd: row.gf - row.ga } : null;
+  }).filter(Boolean);
+  thirds.sort((a, b) => (b.pts - a.pts) || (b.gd - a.gd) || (b.gf - a.gf));
+  return thirds.slice(0, 8).map(t => t.group);
+}
+
+function buildRoundOf32() {
+  const qualifiedThirdGroups = getQualifiedThirdGroups();
 
   function thirdTeamFor(slotGroup) {
     if (!qualifiedThirdGroups) return null;
@@ -2276,7 +2307,16 @@ function isTeamEliminated(code) {
   if (!allFinished) return false;
   const standings = computeStandings(groupLetter);
   const idx = standings.findIndex(row => row.team === code);
-  return idx >= 2; // posición 3 o 4 del grupo
+  if (idx === 3) return true; // 4° puesto: eliminado siempre, no hay salvavidas
+  if (idx === 2) {
+    // 3er puesto: puede salvarse si entra entre los 8 mejores terceros —
+    // pero eso recién se sabe cuando terminan los 12 grupos (no solo el
+    // propio). Hasta entonces, no lo marcamos eliminado.
+    const qualifiedThirdGroups = getQualifiedThirdGroups();
+    if (!qualifiedThirdGroups) return false;
+    return !qualifiedThirdGroups.includes(groupLetter);
+  }
+  return false; // 1° o 2° puesto
 }
 
 function renderCountriesList() {
@@ -2316,7 +2356,11 @@ function renderBracket() {
   const leftGroups = ['A','B','C','D','E','F'];
   const rightGroups = ['G','H','I','J','K','L'];
 
-  let html = '<div class="bracket-funnel">';
+  let html = buildRoundOf32();
+  html += buildThirdPlaceTable();
+  html += '<div class="bracket-note">' + t('bracketNote') + '</div>';
+
+  html += '<div class="bracket-funnel">';
   html += buildSlotsCol(8, 'r8', t('octavos'));
   html += buildSlotsCol(4, 'r4', t('cuartos'));
   html += buildSlotsCol(2, 'r2', t('semis'));
@@ -2342,9 +2386,6 @@ function renderBracket() {
   mobileHtml += buildMobileStage(16, t('octavosDeFinal'));
   mobileHtml += '</div>';
 
-  html += '<div class="bracket-note">' + t('bracketNote') + '</div>';
-  html += buildThirdPlaceTable();
-  html += buildRoundOf32();
   html += buildQualifiersSummary();
 
   let groupsHtml = '<div class="bracket-layout">';
@@ -2963,6 +3004,30 @@ countryInfoClose.addEventListener('click', closeCountryInfo);
 countryInfoModal.addEventListener('click', (e) => {
   if (e.target === countryInfoModal) closeCountryInfo();
 });
+
+// ── Zoom de tablita de grupo ─────────────────────────────────────────────
+const groupZoomModal = document.getElementById('group-zoom-modal');
+const groupZoomContent = document.getElementById('group-zoom-content');
+const groupZoomClose = document.getElementById('group-zoom-close');
+
+function openGroupZoom(g) {
+  groupZoomContent.innerHTML = buildSingleGroupCardHtml(g);
+  groupZoomModal.style.display = 'flex';
+  history.pushState({ modal: 'group-zoom' }, '');
+}
+function closeGroupZoom() {
+  if (groupZoomModal.style.display === 'none') return;
+  if (history.state && history.state.modal === 'group-zoom') {
+    history.back();
+  } else {
+    groupZoomModal.style.display = 'none';
+  }
+}
+groupZoomClose.addEventListener('click', closeGroupZoom);
+groupZoomModal.addEventListener('click', (e) => {
+  if (e.target === groupZoomModal) closeGroupZoom();
+});
+
 window.addEventListener('popstate', (e) => {
   // Llega tanto al usar el botón "atrás" físico/del navegador como al
   // llamar nosotros a history.back() — en ambos casos, solo ocultamos.
@@ -2972,11 +3037,15 @@ window.addEventListener('popstate', (e) => {
   if (installConfirmModal.style.display !== 'none') {
     installConfirmModal.style.display = 'none';
   }
+  if (groupZoomModal.style.display !== 'none') {
+    groupZoomModal.style.display = 'none';
+  }
 });
 document.addEventListener('keydown', (e) => {
   if (e.key !== 'Escape') return;
   if (countryInfoModal.style.display !== 'none') closeCountryInfo();
   if (installConfirmModal.style.display !== 'none') closeInstallConfirm();
+  if (groupZoomModal.style.display !== 'none') closeGroupZoom();
 });
 
 
