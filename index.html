@@ -116,6 +116,11 @@
     font-weight:700; color:#94a3b8; font-size:10px; flex-shrink:0; min-width:28px;
   }
   .detail-player { color:#1a1a2e; font-weight:600; }
+  .sub-player { display:flex; flex-direction:column; gap:2px; }
+  .sub-line { display:flex; align-items:center; gap:4px; }
+  .sub-icon { font-size:10px; flex-shrink:0; }
+  .sub-icon.sub-out { color:#E0263B; }
+  .sub-icon.sub-in { color:#1DB954; }
   .player-link {
     color:#003087; text-decoration:none; border-bottom:1px dotted #003087;
   }
@@ -1806,36 +1811,51 @@ function buildEventsDetail(events, homeTeam, awayTeam, homeSubs, awaySubs) {
     return '<div class="detail-empty">' + t('sinEventos') + '</div>';
   }
 
+  function lastName(fullName) {
+    const parts = fullName.trim().split(/\s+/);
+    return parts[parts.length - 1];
+  }
+
   function goalEntry(g) {
     const minuteStr = g.minute + (g.extra ? '+' + g.extra : '') + "'";
     const ownGoal = g.detail === 'Own Goal' ? ' ' + t('enContra') : '';
     const penalty = g.detail === 'Penalty' ? ' ' + t('penal') : '';
     const playerName = g.player || t('desconocido');
+    const displayName = g.player ? lastName(playerName) : playerName;
     const playerHtml = g.player
-      ? '<a href="' + googleSearchLink(playerName, g.team) + '" target="_blank" rel="noopener" class="player-link" onclick="event.stopPropagation()">' + playerName + '</a>'
-      : playerName;
+      ? '<a href="' + googleSearchLink(playerName, g.team) + '" target="_blank" rel="noopener" class="player-link" title="' + playerName + '" onclick="event.stopPropagation()">' + displayName + '</a>'
+      : displayName;
     return '<div class="detail-entry"><span class="detail-minute">' + minuteStr + '</span><span class="detail-player">\u26BD ' + playerHtml + ownGoal + penalty + '</span></div>';
   }
   function cardEntry(c) {
     const minuteStr = c.minute + (c.extra ? '+' + c.extra : '') + "'";
     const cardEmoji = c.detail === 'Red Card' ? '\u{1F7E5}' : '\u{1F7E8}';
     const playerName = c.player || t('desconocido');
+    const displayName = c.player ? lastName(playerName) : playerName;
     const playerHtml = c.player
-      ? '<a href="' + googleSearchLink(playerName, c.team) + '" target="_blank" rel="noopener" class="player-link" onclick="event.stopPropagation()">' + playerName + '</a>'
-      : playerName;
+      ? '<a href="' + googleSearchLink(playerName, c.team) + '" target="_blank" rel="noopener" class="player-link" title="' + playerName + '" onclick="event.stopPropagation()">' + displayName + '</a>'
+      : displayName;
     return '<div class="detail-entry"><span class="detail-minute">' + minuteStr + '</span><span class="detail-player">' + cardEmoji + ' ' + playerHtml + '</span></div>';
   }
   function subEntry(s) {
     const minuteStr = s.minute + "'";
     const outName = s.out || t('desconocido');
     const inName = s.in || t('desconocido');
+    const outDisplay = s.out ? lastName(outName) : outName;
+    const inDisplay = s.in ? lastName(inName) : inName;
     const outHtml = s.out
-      ? '<a href="' + googleSearchLink(outName, s.team) + '" target="_blank" rel="noopener" class="player-link" onclick="event.stopPropagation()">' + outName + '</a>'
-      : outName;
+      ? '<a href="' + googleSearchLink(outName, s.team) + '" target="_blank" rel="noopener" class="player-link" title="' + outName + '" onclick="event.stopPropagation()">' + outDisplay + '</a>'
+      : outDisplay;
     const inHtml = s.in
-      ? '<a href="' + googleSearchLink(inName, s.team) + '" target="_blank" rel="noopener" class="player-link" onclick="event.stopPropagation()">' + inName + '</a>'
-      : inName;
-    return '<div class="detail-entry"><span class="detail-minute">' + minuteStr + '</span><span class="detail-player">\u{1F53A} ' + outHtml + ' \u2192 \u{1F53C} ' + inHtml + '</span></div>';
+      ? '<a href="' + googleSearchLink(inName, s.team) + '" target="_blank" rel="noopener" class="player-link" title="' + inName + '" onclick="event.stopPropagation()">' + inDisplay + '</a>'
+      : inDisplay;
+    return '<div class="detail-entry sub-entry">' +
+      '<span class="detail-minute">' + minuteStr + '</span>' +
+      '<span class="detail-player sub-player">' +
+        '<span class="sub-line"><span class="sub-icon sub-out">\u25B2</span>' + outHtml + '</span>' +
+        '<span class="sub-line"><span class="sub-icon sub-in">\u25BC</span>' + inHtml + '</span>' +
+      '</span>' +
+    '</div>';
   }
 
   function cell(items, renderFn) {
