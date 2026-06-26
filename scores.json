@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-26T07:20:23.500203Z",
+  "updated": "2026-06-26T07:30:40.608265Z",
   "matches": {
     "MEXICO-SOUTH AFRICA": {
       "homeGoals": 2,
@@ -21428,7 +21428,7 @@
       "status": "FT",
       "elapsed": 90,
       "kickoffUTC": "2026-06-25T23:00:00+00:00",
-      "referee": "I. Barton",
+      "referee": "Iv\u00e1n Barton, El Salvador",
       "events": [
         {
           "type": "Card",
@@ -21807,7 +21807,7 @@
       "status": "FT",
       "elapsed": 90,
       "kickoffUTC": "2026-06-25T23:00:00+00:00",
-      "referee": "K. I. Garcia Mendoza",
+      "referee": "Katia Garc\u00eda, Mexico",
       "events": [
         {
           "type": "Goal",
@@ -22173,7 +22173,7 @@
       "status": "FT",
       "elapsed": 90,
       "kickoffUTC": "2026-06-26T02:00:00+00:00",
-      "referee": "M. Ghorbal",
+      "referee": "Mustapha Ghorbal, Algeria",
       "events": [],
       "lineups": {
         "TURKIYE": {
@@ -22455,7 +22455,7 @@
       "status": "FT",
       "elapsed": 90,
       "kickoffUTC": "2026-06-26T02:00:00+00:00",
-      "referee": "C. Turpin",
+      "referee": "Clement Turpin, France",
       "events": [
         {
           "type": "Card",
