@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-26T03:20:22.555010Z",
+  "updated": "2026-06-26T03:30:39.394744Z",
   "matches": {
     "MEXICO-SOUTH AFRICA": {
       "homeGoals": 2,
@@ -22275,7 +22275,7 @@
       "homeGoals": 2,
       "awayGoals": 2,
       "status": "2H",
-      "elapsed": 58,
+      "elapsed": 68,
       "kickoffUTC": "2026-06-26T02:00:00+00:00",
       "referee": "M. Ghorbal",
       "events": [
@@ -22306,7 +22306,7 @@
         {
           "type": "Goal",
           "detail": "Normal Goal",
-          "player": "Orkun K\u00f6k\u00e7\u00fc",
+          "player": "Baris Alper Yilmaz",
           "team": "TURKIYE",
           "minute": 31,
           "extra": null
@@ -22320,6 +22320,15 @@
           "extra": null
         }
       ],
+      "substitutions": {
+        "USA": [
+          {
+            "out": "Timothy Weah",
+            "in": "Christian Pulisic",
+            "minute": 58
+          }
+        ]
+      },
       "lineups": {
         "TURKIYE": {
           "formation": "4-2-3-1",
@@ -22598,7 +22607,7 @@
       "homeGoals": 0,
       "awayGoals": 0,
       "status": "2H",
-      "elapsed": 57,
+      "elapsed": 67,
       "kickoffUTC": "2026-06-26T02:00:00+00:00",
       "referee": "C. Turpin",
       "events": [
@@ -22617,6 +22626,18 @@
             "out": "Alexandro Maidana",
             "in": "Maur\u00edcio Magalh\u00e3es Prado",
             "minute": 45
+          },
+          {
+            "out": "Julio Enciso",
+            "in": "Alex Arce",
+            "minute": 67
+          }
+        ],
+        "AUSTRALIA": [
+          {
+            "out": "Cristian Volpato",
+            "in": "Ajdin Hrustic",
+            "minute": 58
           }
         ]
       },
