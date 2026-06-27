@@ -489,6 +489,18 @@
     from { opacity:1; }
     to { opacity:0; transform:translateX(-50%) translateY(-20px); }
   }
+  .progress-wrap {
+    display:flex; align-items:center; gap:8px; padding:14px 24px 0;
+  }
+  .progress-track {
+    flex:1; height:10px; background:rgba(255,255,255,0.12); border-radius:6px;
+    overflow:hidden;
+  }
+  .progress-fill {
+    height:100%; width:0%; background:linear-gradient(90deg, #1DB954, #FFD700);
+    border-radius:6px; transition:width 0.6s ease;
+  }
+  .progress-trophy { font-size:18px; flex-shrink:0; filter:grayscale(0.3); }
   .search-wrap { padding:18px 24px 0; }
   .search-box {
     position:relative; max-width:480px; margin:0 auto;
@@ -824,6 +836,13 @@
       <div class="clock-value" id="clock">--:--</div>
     </div>
   </div>
+</div>
+
+<div class="progress-wrap" id="progress-wrap">
+  <div class="progress-track">
+    <div class="progress-fill" id="progress-fill"></div>
+  </div>
+  <div class="progress-trophy">🏆</div>
 </div>
 
 <div id="shortcut-instructions" class="shortcut-instructions" style="display:none;">
@@ -2047,8 +2066,23 @@ function buildGroupGroupedHtml(sortedMatches) {
   return html;
 }
 
+// Progreso real del Mundial: partidos jugados (de los 104 totales, grupos +
+// eliminatoria) sobre el total — la barra se actualiza cada vez que se
+// renderiza, así que sigue avanzando sola a medida que se juegan partidos.
+function updateTournamentProgress() {
+  let finished = 0;
+  SCHEDULE.forEach(m => { if (getEffectiveStatus(m) === 'finished') finished++; });
+  const knockoutEntries = getAllKnockoutEntries();
+  knockoutEntries.forEach(m => { if (knockoutEntryStatus(m).status === 'finished') finished++; });
+  const total = SCHEDULE.length + knockoutEntries.length;
+  const pct = total > 0 ? Math.min(100, (finished / total) * 100) : 0;
+  const fillEl = document.getElementById('progress-fill');
+  if (fillEl) fillEl.style.width = pct + '%';
+}
+
 function render() {
   const todayAR = toARDateStr(new Date().toISOString());
+  updateTournamentProgress();
 
   if (currentFilter === 'stats') {
     document.querySelector('.search-wrap').style.display = 'none';
@@ -2946,37 +2980,18 @@ function buildCardsData(allEvents) {
 function renderStatsView() {
   const allEvents = collectTournamentEvents();
   const scorers = buildScorersRanking(allEvents).slice(0, 10);
-  const cards = buildCardsData(allEvents);
 
   let html = '<div class="bracket-stage-label" style="font-size:11px; margin-bottom:8px;">\u26BD ' + t('goleadoresTitle') + ' (Top 10)</div>';
   if (scorers.length === 0) {
     html += '<div class="ci-pitch-empty">' + t('sinDatosAun') + '</div>';
   } else {
-    html += '<table class="thirds-table"><tr><th>#</th><th></th><th>' + t('goles') + '</th></tr>';
+    html += '<table class="thirds-table"><tr><th>#</th><th style="text-align:left;"></th><th>' + t('goles') + '</th></tr>';
     scorers.forEach((s, idx) => {
       html += '<tr class="thirds-row">' +
         '<td class="thirds-rank">' + (idx + 1) + '</td>' +
-        '<td class="thirds-team">' + '<a href="' + googleSearchLink(s.player, s.team) + '" target="_blank" rel="noopener" class="player-link">' + s.player + '</a>' +
+        '<td class="thirds-team" style="text-align:left;">' + '<a href="' + googleSearchLink(s.player, s.team) + '" target="_blank" rel="noopener" class="player-link">' + s.player + '</a>' +
           ' <span class="stats-team-tag">' + flag(s.team) + ' ' + esName(s.team) + '</span></td>' +
         '<td><b>' + s.goals + '</b></td>' +
-      '</tr>';
-    });
-    html += '</table>';
-  }
-
-  html += '<div class="bracket-stage-label" style="font-size:11px; margin:18px 0 8px;">\u{1F7E8}\u{1F7E5} ' + t('tarjetasTitle') + '</div>';
-  html += '<div class="thirds-disclaimer">' + t('tarjetasRuleExplainer') + '</div>';
-  if (cards.length === 0) {
-    html += '<div class="ci-pitch-empty">' + t('sinDatosAun') + '</div>';
-  } else {
-    html += '<table class="thirds-table"><tr><th></th><th>\u{1F7E8}</th><th>\u{1F7E5}</th><th>' + t('estado') + '</th></tr>';
-    cards.forEach(c => {
-      html += '<tr class="thirds-row' + (c.suspended ? ' eliminated' : '') + '">' +
-        '<td class="thirds-team">' + '<a href="' + googleSearchLink(c.player, c.team) + '" target="_blank" rel="noopener" class="player-link">' + c.player + '</a>' +
-          ' <span class="stats-team-tag">' + flag(c.team) + ' ' + esName(c.team) + '</span></td>' +
-        '<td>' + (c.yellowTotal || '') + '</td>' +
-        '<td>' + (c.redCount || '') + '</td>' +
-        '<td>' + (c.suspended ? '<span class="badge badge-warn">' + t('suspendido') + '</span>' : '') + '</td>' +
       '</tr>';
     });
     html += '</table>';
