@@ -1,11 +1,11 @@
 {
-  "updated": "2026-06-27T04:40:21.690894Z",
+  "updated": "2026-06-27T04:50:20.346711Z",
   "matches": {
     "EGYPT-IRAN": {
       "homeGoals": 1,
       "awayGoals": 1,
       "status": "2H",
-      "elapsed": 76,
+      "elapsed": 86,
       "kickoffUTC": "2026-06-27T03:00:00+00:00",
       "referee": "Szymon Marciniak, Poland",
       "events": [
@@ -64,6 +64,14 @@
           "team": "IRAN",
           "minute": 43,
           "extra": null
+        },
+        {
+          "type": "Card",
+          "detail": "Yellow Card",
+          "player": "S. Ezatolahi",
+          "team": "IRAN",
+          "minute": 79,
+          "extra": null
         }
       ],
       "substitutions": {
@@ -87,6 +95,11 @@
             "out": "M. Salah",
             "in": "Zizo",
             "minute": 57
+          },
+          {
+            "out": "M. Ziko",
+            "in": "H. Abdelkarim",
+            "minute": 76
           }
         ],
         "IRAN": [
@@ -372,10 +385,10 @@
       }
     },
     "NEW ZEALAND-BELGIUM": {
-      "homeGoals": 0,
-      "awayGoals": 3,
+      "homeGoals": 1,
+      "awayGoals": 4,
       "status": "2H",
-      "elapsed": 78,
+      "elapsed": 88,
       "kickoffUTC": "2026-06-27T03:00:00+00:00",
       "referee": "Adham Mohammad, Jordan",
       "events": [
@@ -418,6 +431,22 @@
           "team": "BELGIUM",
           "minute": 66,
           "extra": null
+        },
+        {
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "player": "E. Just",
+          "team": "NEW ZEALAND",
+          "minute": 84,
+          "extra": null
+        },
+        {
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "player": "R. Lukaku",
+          "team": "BELGIUM",
+          "minute": 86,
+          "extra": null
         }
       ],
       "substitutions": {
@@ -441,6 +470,11 @@
             "out": "J. Bell",
             "in": "C. McCowatt",
             "minute": 64
+          },
+          {
+            "out": "L. Cacace",
+            "in": "F. De Vries",
+            "minute": 79
           }
         ],
         "BELGIUM": [
@@ -458,6 +492,16 @@
             "out": "K. De Bruyne",
             "in": "A. Onana",
             "minute": 72
+          },
+          {
+            "out": "C. De Ketelaere",
+            "in": "R. Lukaku",
+            "minute": 85
+          },
+          {
+            "out": "Y. Tielemans",
+            "in": "N. Raskin",
+            "minute": 85
           }
         ]
       },
