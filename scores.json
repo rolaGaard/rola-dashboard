@@ -1,11 +1,11 @@
 {
-  "updated": "2026-06-27T04:10:21.269154Z",
+  "updated": "2026-06-27T04:20:22.974824Z",
   "matches": {
     "EGYPT-IRAN": {
       "homeGoals": 1,
       "awayGoals": 1,
       "status": "2H",
-      "elapsed": 46,
+      "elapsed": 56,
       "kickoffUTC": "2026-06-27T03:00:00+00:00",
       "referee": "Szymon Marciniak, Poland",
       "events": [
@@ -363,9 +363,9 @@
     },
     "NEW ZEALAND-BELGIUM": {
       "homeGoals": 0,
-      "awayGoals": 1,
+      "awayGoals": 2,
       "status": "2H",
-      "elapsed": 48,
+      "elapsed": 58,
       "kickoffUTC": "2026-06-27T03:00:00+00:00",
       "referee": "Adham Mohammad, Jordan",
       "events": [
@@ -384,6 +384,22 @@
           "team": "NEW ZEALAND",
           "minute": 46,
           "extra": null
+        },
+        {
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "player": "L. Trossard",
+          "team": "BELGIUM",
+          "minute": 50,
+          "extra": null
+        },
+        {
+          "type": "Card",
+          "detail": "Yellow Card",
+          "player": "E. Just",
+          "team": "NEW ZEALAND",
+          "minute": 56,
+          "extra": null
         }
       ],
       "substitutions": {
@@ -397,6 +413,13 @@
             "out": "R. Thomas",
             "in": "B. Old",
             "minute": 46
+          }
+        ],
+        "BELGIUM": [
+          {
+            "out": "J. Doku",
+            "in": "M. Fernandez-Pardo",
+            "minute": 56
           }
         ]
       },
