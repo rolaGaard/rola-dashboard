@@ -1,11 +1,11 @@
 {
-  "updated": "2026-06-27T01:10:21.401431Z",
+  "updated": "2026-06-27T01:20:21.069569Z",
   "matches": {
     "URUGUAY-SPAIN": {
       "homeGoals": 0,
       "awayGoals": 1,
       "status": "2H",
-      "elapsed": 46,
+      "elapsed": 56,
       "kickoffUTC": "2026-06-27T00:00:00+00:00",
       "referee": "Ismail Elfath, USA",
       "events": [
@@ -15,6 +15,22 @@
           "player": "A. Baena",
           "team": "SPAIN",
           "minute": 42,
+          "extra": null
+        },
+        {
+          "type": "Card",
+          "detail": "Yellow Card",
+          "player": "A. Baena",
+          "team": "SPAIN",
+          "minute": 46,
+          "extra": null
+        },
+        {
+          "type": "Card",
+          "detail": "Yellow Card",
+          "player": "J. Sanabria",
+          "team": "URUGUAY",
+          "minute": 54,
           "extra": null
         }
       ],
@@ -315,7 +331,7 @@
       "homeGoals": 0,
       "awayGoals": 0,
       "status": "2H",
-      "elapsed": 47,
+      "elapsed": 56,
       "kickoffUTC": "2026-06-27T00:00:00+00:00",
       "referee": "Fran\u00e7ois Letexier, France",
       "events": [
