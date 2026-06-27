@@ -1,11 +1,11 @@
 {
-  "updated": "2026-06-27T03:20:23.404533Z",
+  "updated": "2026-06-27T03:30:37.105948Z",
   "matches": {
     "EGYPT-IRAN": {
       "homeGoals": 1,
       "awayGoals": 1,
       "status": "1H",
-      "elapsed": 20,
+      "elapsed": 30,
       "kickoffUTC": "2026-06-27T03:00:00+00:00",
       "referee": "Szymon Marciniak, Poland",
       "events": [
@@ -39,6 +39,14 @@
           "player": "H. Kanaani",
           "team": "IRAN",
           "minute": 19,
+          "extra": null
+        },
+        {
+          "type": "Card",
+          "detail": "Yellow Card",
+          "player": "M. Saber",
+          "team": "EGYPT",
+          "minute": 20,
           "extra": null
         }
       ],
@@ -322,12 +330,21 @@
     },
     "NEW ZEALAND-BELGIUM": {
       "homeGoals": 0,
-      "awayGoals": 0,
+      "awayGoals": 1,
       "status": "1H",
-      "elapsed": 19,
+      "elapsed": 29,
       "kickoffUTC": "2026-06-27T03:00:00+00:00",
       "referee": "Adham Mohammad, Jordan",
-      "events": [],
+      "events": [
+        {
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "player": "L. Trossard",
+          "team": "BELGIUM",
+          "minute": 28,
+          "extra": null
+        }
+      ],
       "lineups": {
         "NEW ZEALAND": {
           "formation": "4-2-3-1",
