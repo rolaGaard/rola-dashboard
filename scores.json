@@ -1,11 +1,11 @@
 {
-  "updated": "2026-06-27T22:30:38.304650Z",
+  "updated": "2026-06-27T22:40:22.569209Z",
   "matches": {
     "CROATIA-GHANA": {
       "homeGoals": 1,
-      "awayGoals": 0,
+      "awayGoals": 1,
       "status": "2H",
-      "elapsed": 70,
+      "elapsed": 79,
       "kickoffUTC": "2026-06-27T21:00:00+00:00",
       "referee": "Drew Fischer, Canada",
       "events": [
@@ -24,6 +24,14 @@
           "team": "CROATIA",
           "minute": 68,
           "extra": null
+        },
+        {
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "player": "D. Luckassen",
+          "team": "GHANA",
+          "minute": 73,
+          "extra": null
         }
       ],
       "substitutions": {
@@ -37,6 +45,16 @@
             "out": "E. Owusu",
             "in": "I. Fatawu",
             "minute": 46
+          },
+          {
+            "out": "J. Ayew",
+            "in": "B. Thomas-Asante",
+            "minute": 71
+          },
+          {
+            "out": "K. Sulemana",
+            "in": "E. Nuamah",
+            "minute": 71
           }
         ],
         "CROATIA": [
@@ -44,6 +62,11 @@
             "out": "A. Budimir",
             "in": "I. Matanovic",
             "minute": 66
+          },
+          {
+            "out": "M. Kovacic",
+            "in": "M. Pasalic",
+            "minute": 78
           }
         ]
       },
@@ -330,7 +353,7 @@
       "homeGoals": 0,
       "awayGoals": 2,
       "status": "2H",
-      "elapsed": 72,
+      "elapsed": 82,
       "kickoffUTC": "2026-06-27T21:00:00+00:00",
       "referee": "Abdulrahman Al-Jassim, Qatar",
       "events": [
@@ -378,6 +401,11 @@
             "out": "Y. Barcenas",
             "in": "I. Diaz",
             "minute": 71
+          },
+          {
+            "out": "J. Rodriguez",
+            "in": "A. Londono",
+            "minute": 71
           }
         ],
         "ENGLAND": [
@@ -390,6 +418,11 @@
             "out": "B. Saka",
             "in": "N. Madueke",
             "minute": 63
+          },
+          {
+            "out": "J. Bellingham",
+            "in": "E. Eze",
+            "minute": 71
           }
         ]
       },
@@ -25791,7 +25824,7 @@
       "status": "NS",
       "elapsed": null,
       "kickoffUTC": "2026-06-27T23:30:00+00:00",
-      "referee": "A. Faghani"
+      "referee": "Alireza Faghani, Australia"
     },
     "CONGO DR-UZBEKISTAN": {
       "homeGoals": null,
@@ -25799,7 +25832,7 @@
       "status": "NS",
       "elapsed": null,
       "kickoffUTC": "2026-06-27T23:30:00+00:00",
-      "referee": "F. Zwayer"
+      "referee": "Felix Zwayer, Germany"
     },
     "ALGERIA-AUSTRIA": {
       "homeGoals": null,
