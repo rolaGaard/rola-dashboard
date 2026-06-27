@@ -1,11 +1,11 @@
 {
-  "updated": "2026-06-27T01:00:51.729223Z",
+  "updated": "2026-06-27T01:10:21.401431Z",
   "matches": {
     "URUGUAY-SPAIN": {
       "homeGoals": 0,
       "awayGoals": 1,
-      "status": "HT",
-      "elapsed": 45,
+      "status": "2H",
+      "elapsed": 46,
       "kickoffUTC": "2026-06-27T00:00:00+00:00",
       "referee": "Ismail Elfath, USA",
       "events": [
@@ -24,6 +24,11 @@
             "out": "M. Ugarte",
             "in": "N. de la Cruz",
             "minute": 45
+          },
+          {
+            "out": "F. Muslera",
+            "in": "S. Rochet",
+            "minute": 46
           }
         ]
       },
@@ -309,8 +314,8 @@
     "CAPE VERDE-SAUDI ARABIA": {
       "homeGoals": 0,
       "awayGoals": 0,
-      "status": "HT",
-      "elapsed": 45,
+      "status": "2H",
+      "elapsed": 47,
       "kickoffUTC": "2026-06-27T00:00:00+00:00",
       "referee": "Fran\u00e7ois Letexier, France",
       "events": [
@@ -337,6 +342,11 @@
             "out": "H. Tambakti",
             "in": "A. Lajami",
             "minute": 33
+          },
+          {
+            "out": "A. Al Khaibari",
+            "in": "M. Al Juwayr",
+            "minute": 46
           }
         ]
       },
