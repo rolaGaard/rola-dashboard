@@ -1,11 +1,11 @@
 {
-  "updated": "2026-06-27T03:30:37.105948Z",
+  "updated": "2026-06-27T03:40:22.275963Z",
   "matches": {
     "EGYPT-IRAN": {
       "homeGoals": 1,
       "awayGoals": 1,
       "status": "1H",
-      "elapsed": 30,
+      "elapsed": 39,
       "kickoffUTC": "2026-06-27T03:00:00+00:00",
       "referee": "Szymon Marciniak, Poland",
       "events": [
@@ -332,7 +332,7 @@
       "homeGoals": 0,
       "awayGoals": 1,
       "status": "1H",
-      "elapsed": 29,
+      "elapsed": 39,
       "kickoffUTC": "2026-06-27T03:00:00+00:00",
       "referee": "Adham Mohammad, Jordan",
       "events": [
