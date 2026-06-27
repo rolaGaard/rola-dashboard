@@ -2436,6 +2436,54 @@ function buildThirdPlaceTable() {
 // con un solo candidato posible — si hay más de una opción válida, prefiere
 // mostrar el conjunto de grupos candidatos en vez de arriesgar una
 // asignación que podría no coincidir con la tabla oficial de la FIFA.
+// El menor puntaje que el 3er puesto de este grupo PODRÍA terminar
+// teniendo, considerando todas las combinaciones posibles de los partidos
+// que le faltan. Si el grupo ya terminó, es simplemente el puntaje real.
+function worstPossibleThirdPoints(groupLetter) {
+  const groupMatches = SCHEDULE.filter(m => m.group === groupLetter);
+  const allFinished = groupMatches.every(m => getMatchResult(m).isFinished && getMatchResult(m).hasScore);
+  if (allFinished) {
+    const standings = computeStandings(groupLetter);
+    return standings[2] ? standings[2].pts : 0;
+  }
+  const { teams, basePts, outcomes } = simulateGroupOutcomes(groupLetter);
+  let worst = Infinity;
+  outcomes.forEach(outcome => {
+    const finalsDesc = teams.map(team => basePts[team] + (outcome[team] || 0)).sort((a, b) => b - a);
+    const thirdPts = finalsDesc[2];
+    if (thirdPts < worst) worst = thirdPts;
+  });
+  return worst;
+}
+
+// Un 3er puesto está MATEMÁTICAMENTE eliminado de la tabla de terceros si,
+// incluso en el escenario más generoso posible para él (su puntaje fijo
+// contra el PEOR resultado posible de cada uno de los otros 11 grupos), de
+// todas formas no entra entre los 8 mejores. No es una probabilidad — es
+// una certeza, porque ningún resultado real puede ser mejor para él que
+// este escenario hipotético ya construido a su favor.
+function isThirdMathematicallyOut(code) {
+  const anyMatch = SCHEDULE.find(m => m.home === code || m.away === code);
+  if (!anyMatch) return false;
+  const myGroup = anyMatch.group;
+  const myGroupFinished = SCHEDULE.filter(m => m.group === myGroup).every(m => getMatchResult(m).isFinished && getMatchResult(m).hasScore);
+  if (!myGroupFinished) return false;
+  const standings = computeStandings(myGroup);
+  const idx = standings.findIndex(r => r.team === code);
+  if (idx !== 2) return false;
+  const myPts = standings[2].pts;
+
+  const allGroups = ['A','B','C','D','E','F','G','H','I','J','K','L'];
+  let groupsThatCanMatchOrBeatMe = 0;
+  allGroups.forEach(g => {
+    if (g === myGroup) return;
+    if (worstPossibleThirdPoints(g) >= myPts) groupsThatCanMatchOrBeatMe++;
+  });
+  // Si 8 de los otros 11 grupos pueden, en su peor caso, igualarme o
+  // superarme, mi mejor posición posible es 9° — fuera de los 8 que pasan.
+  return groupsThatCanMatchOrBeatMe >= 8;
+}
+
 // Devuelve la lista de los 8 grupos cuyo 3er puesto clasifica, o null si
 // todavía no se puede saber (faltan partidos de la fase de grupos en
 // cualquier grupo — la comparación de terceros es entre los 12, así que
@@ -2763,9 +2811,12 @@ function isTeamEliminated(code) {
   const idx = standings.findIndex(row => row.team === code);
   if (idx === 3) return true; // 4° puesto: eliminado siempre, no hay salvavidas
   if (idx === 2) {
-    // 3er puesto: puede salvarse si entra entre los 8 mejores terceros —
-    // pero eso recién se sabe cuando terminan los 12 grupos (no solo el
-    // propio). Hasta entonces, no lo marcamos eliminado.
+    // 3er puesto: primero chequeamos si ya es matemáticamente imposible
+    // que entre entre los 8 mejores (esto no necesita esperar a que
+    // terminen los 12 grupos — es una certeza, no una probabilidad).
+    if (isThirdMathematicallyOut(code)) return true;
+    // Si todavía no es matemáticamente seguro, recién ahí esperamos a que
+    // terminen los 12 grupos para la confirmación final.
     const qualifiedThirdGroups = getQualifiedThirdGroups();
     if (!qualifiedThirdGroups) return false;
     return !qualifiedThirdGroups.includes(groupLetter);
