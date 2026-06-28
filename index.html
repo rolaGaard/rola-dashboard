@@ -2593,9 +2593,16 @@ function getQualifiedThirdGroups() {
 }
 
 // Resuelve cuántos terceros entraron al cupo de 1° vs 3° del grupo ganador.
+// La FIFA asigna cuál tercero específico le toca a cada cupo de "1° vs 3°"
+// con una tabla propia (no es deducible solo con lógica de conjuntos — hay
+// 22 combinaciones matemáticamente válidas distintas, y la FIFA usa una
+// sola, fija de antemano). Confirmado cruzando CBS Sports, Yahoo Sports,
+// FOX Sports y Sports Illustrated el 28 de junio de 2026, una vez que
+// terminó la fase de grupos: E→D, I→F, A→E, D→B, G→I, L→K, B→J, K→L.
 function thirdTeamForGroup(slotGroup) {
   const qualifiedThirdGroups = getQualifiedThirdGroups();
   if (!qualifiedThirdGroups) return null;
+
   const candidates = R32_WINNER_VS_THIRD[slotGroup].filter(g => qualifiedThirdGroups.includes(g));
   if (candidates.length !== 1) return null; // ambiguo o sin datos — no arriesgamos
   return getQualifier(candidates[0], 3) || null;
@@ -2606,9 +2613,52 @@ function thirdTeamForGroup(slotGroup) {
 // (perdedor del partido 101). Los 'W'/'L' de partidos posteriores a
 // dieciseisavos quedan en null hasta que tengamos resultados reales de esa
 // fase — no inventamos quién ganó un partido que todavía no se jugó.
+// La propia api-football ya resuelve estos cruces apenas la FIFA los
+// confirma (el mismo /fixtures?league=1&season=2026 que ya traemos para
+// todo lo demás incluye los 32 partidos de eliminatoria, no solo los 72 de
+// grupos) — así que en vez de intentar adivinar nosotros la asignación de
+// terceros (que ni la lógica más prolija puede resolver, según confirmamos
+// charlando: hay 22 combinaciones matemáticamente válidas y la FIFA usa
+// una tabla fija de 495 que no es pública como fórmula), buscamos
+// directamente en los datos reales el partido que coincide en hora de
+// inicio con el cupo que estamos mostrando.
+function findKnockoutLiveEntry(targetKickoffUTC) {
+  if (!liveData) return null;
+  const targetTime = new Date(targetKickoffUTC).getTime();
+  for (const key in liveData) {
+    const entry = liveData[key];
+    if (!entry || !entry.kickoffUTC) continue;
+    const entryTime = new Date(entry.kickoffUTC).getTime();
+    if (Math.abs(entryTime - targetTime) > 30 * 60 * 1000) continue; // margen de 30 min
+    const idx = key.indexOf('-');
+    if (idx === -1) continue;
+    return { home: key.slice(0, idx), away: key.slice(idx + 1) };
+  }
+  return null;
+}
+
+// Resuelve los dos lados de un partido de eliminatoria: primero intenta
+// con el dato real de la API (búsqueda por hora de inicio); si la API
+// todavía no lo confirmó, recién ahí usamos nuestra propia lógica de
+// posiciones de grupo — pero SOLO para los casos 100% determinables sin
+// adivinar (1° vs 2°, 2° vs 2°). Los cupos de "1° vs 3°" quedan en TBD
+// hasta que la API los resuelva — no los inventamos.
+function resolveKnockoutSides(calendarEntry) {
+  const live = findKnockoutLiveEntry(calendarEntry.kickoffUTC);
+  if (live) return { teamA: live.home, teamB: live.away };
+  return {
+    teamA: resolveBracketSlot(calendarEntry.a),
+    teamB: resolveBracketSlot(calendarEntry.b),
+  };
+}
+
 function resolveBracketSlot(spec) {
   if (spec.startsWith('third')) return thirdTeamForGroup(spec.slice(5));
-  if (spec[0] === 'W' || spec[0] === 'L') return null;
+  // 'Wxx'/'Lxx' (ganador/perdedor del partido N° xx, de 2 o 3 cifras) son
+  // partidos de eliminatoria todavía sin jugar — pero ¡ojo! el Grupo L
+  // también empieza con "L" (ej. 'L1' = 1° del Grupo L), así que hay que
+  // distinguirlos por la cantidad de dígitos, no solo por la primera letra.
+  if (/^[WL]\d{2,3}$/.test(spec)) return null;
   const g = spec[0];
   const pos = parseInt(spec[1], 10);
   return getQualifier(g, pos) || null;
@@ -2640,8 +2690,7 @@ function buildRoundOf32() {
   let html = '<div class="bracket-stage-label" style="font-size:11px; margin:14px 0 8px;">' + t('dieciseisavosTitle') + '</div>';
   html += '<div class="r32-grid">';
   sorted.forEach(m => {
-    const teamA = resolveBracketSlot(m.a);
-    const teamB = resolveBracketSlot(m.b);
+    const { teamA, teamB } = resolveKnockoutSides(m);
     const dateStr = new Date(m.kickoffUTC).toLocaleString(dateLocale(), {
       weekday:'short', day:'numeric', month:'short', hour:'2-digit', minute:'2-digit', hour12:false
     });
@@ -2681,8 +2730,7 @@ function getAllKnockoutEntries() {
 // partidos de grupo (getEffectiveStatus), pero para un cupo de eliminatoria
 // — si todavía no se sabe quién juega (TBD), es "programado" sin más vueltas.
 function knockoutEntryStatus(m) {
-  const teamA = resolveBracketSlot(m.a);
-  const teamB = resolveBracketSlot(m.b);
+  const { teamA, teamB } = resolveKnockoutSides(m);
   if (!teamA || !teamB) return { status: 'scheduled', teamA: null, teamB: null };
   const live = getLiveData({ home: teamA, away: teamB, kickoffUTC: m.kickoffUTC });
   const apiStatus = live ? live.status : null;
@@ -2723,8 +2771,7 @@ function buildKnockoutDateGroupedHtml(entries, descending) {
 }
 
 function buildKnockoutCardHtml(m) {
-  const teamA = resolveBracketSlot(m.a);
-  const teamB = resolveBracketSlot(m.b);
+  const { teamA, teamB } = resolveKnockoutSides(m);
   const dateStr = new Date(m.kickoffUTC).toLocaleString(dateLocale(), {
     weekday:'short', day:'numeric', month:'short', hour:'2-digit', minute:'2-digit', hour12:false
   });
@@ -2934,8 +2981,7 @@ function collectTournamentEvents() {
   ];
   knockoutRounds.forEach(({ cal, round }) => {
     cal.forEach(m => {
-      const teamA = resolveBracketSlot(m.a);
-      const teamB = resolveBracketSlot(m.b);
+      const { teamA, teamB } = resolveKnockoutSides(m);
       if (!teamA || !teamB) return;
       const live = getLiveData({ home: teamA, away: teamB, kickoffUTC: m.kickoffUTC });
       if (live && live.events) {
