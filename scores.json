@@ -1,11 +1,11 @@
 {
-  "updated": "2026-06-28T02:30:40.053108Z",
+  "updated": "2026-06-28T02:40:23.043929Z",
   "matches": {
     "ALGERIA-AUSTRIA": {
       "homeGoals": 0,
       "awayGoals": 1,
       "status": "1H",
-      "elapsed": 30,
+      "elapsed": 40,
       "kickoffUTC": "2026-06-28T02:00:00+00:00",
       "referee": "Ilgiz Tantashev, Uzbekistan",
       "events": [
@@ -302,9 +302,9 @@
     },
     "JORDAN-ARGENTINA": {
       "homeGoals": 0,
-      "awayGoals": 1,
+      "awayGoals": 2,
       "status": "1H",
-      "elapsed": 30,
+      "elapsed": 40,
       "kickoffUTC": "2026-06-28T02:00:00+00:00",
       "referee": "Istvan Kovacs, Romania",
       "events": [
@@ -322,6 +322,14 @@
           "player": "G. Lo Celso",
           "team": "ARGENTINA",
           "minute": 19,
+          "extra": null
+        },
+        {
+          "type": "Goal",
+          "detail": "Penalty",
+          "player": "L. Martinez",
+          "team": "ARGENTINA",
+          "minute": 31,
           "extra": null
         }
       ],
