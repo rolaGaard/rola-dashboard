@@ -2151,6 +2151,31 @@ function render() {
     return true;
   });
 
+  // La búsqueda y los filtros también deben encontrar partidos de
+  // eliminatoria — si un equipo ya está jugando ahí, buscar su nombre (o
+  // mirar "En vivo"/"Hoy"/etc.) tiene que traerlo igual que a los de grupo.
+  const knockoutFiltered = getAllKnockoutEntries().filter(m => {
+    const { status, teamA, teamB } = knockoutEntryStatus(m);
+    if (searchTerm) {
+      if (!teamA || !teamB) return false; // un TBD no tiene nombre para buscar
+      const homeCodes = COUNTRY_CODES[teamA] || [];
+      const awayCodes = COUNTRY_CODES[teamB] || [];
+      const homeMatch = esName(teamA).toLowerCase().includes(searchTerm)
+        || teamA.toLowerCase().includes(searchTerm)
+        || homeCodes.some(c => c.toLowerCase() === searchTerm);
+      const awayMatch = esName(teamB).toLowerCase().includes(searchTerm)
+        || teamB.toLowerCase().includes(searchTerm)
+        || awayCodes.some(c => c.toLowerCase() === searchTerm);
+      if (!(homeMatch || awayMatch)) return false;
+    }
+    if (currentFilter === 'all') return true;
+    if (currentFilter === 'live') return status === 'live';
+    if (currentFilter === 'today') return toARDateStr(m.kickoffUTC) === todayAR;
+    if (currentFilter === 'finished') return status === 'finished';
+    if (currentFilter === 'scheduled') return status === 'scheduled';
+    return true;
+  });
+
   const grouped = {};
   filtered.forEach(m => {
     if (!grouped[m.group]) grouped[m.group] = [];
@@ -2161,16 +2186,18 @@ function render() {
 
   let html = '';
   if (searchTerm) {
-    const sorted = filtered.slice().sort((a,b) => new Date(getKickoffUTC(a)) - new Date(getKickoffUTC(b)));
-    if (sorted.length === 0) {
+    const items = filtered.map(m => ({ date: getKickoffUTC(m), render: () => buildMatchCard(m) }))
+      .concat(knockoutFiltered.map(m => ({ date: m.kickoffUTC, render: () => buildKnockoutCardHtml(m) })));
+    items.sort((a, b) => new Date(a.date) - new Date(b.date));
+    if (items.length === 0) {
       html = '<div class="empty-state">' + t('noEncontrados') + ' "' + searchTerm + '" ' + t('enEstaVista') + '</div>';
       document.getElementById('search-label').innerHTML = '';
     } else {
       html += '<div class="match-grid">';
-      sorted.forEach(m => { html += buildMatchCard(m); });
+      items.forEach(item => { html += item.render(); });
       html += '</div>';
-      const foundWord = sorted.length !== 1 ? t('partidosEncontrados') : t('partidoEncontrado');
-      document.getElementById('search-label').innerHTML = '<b>' + sorted.length + '</b> ' + foundWord;
+      const foundWord = items.length !== 1 ? t('partidosEncontrados') : t('partidoEncontrado');
+      document.getElementById('search-label').innerHTML = '<b>' + items.length + '</b> ' + foundWord;
     }
   } else {
     document.getElementById('search-label').innerHTML = '';
@@ -2181,7 +2208,7 @@ function render() {
       ? filtered.slice().sort((a,b) => new Date(getKickoffUTC(b)) - new Date(getKickoffUTC(a)))
       : filtered.slice().sort((a,b) => new Date(getKickoffUTC(a)) - new Date(getKickoffUTC(b)));
 
-    if (sortedAll.length === 0 && currentFilter !== 'scheduled' && currentFilter !== 'finished' && currentFilter !== 'today') {
+    if (sortedAll.length === 0 && currentFilter !== 'scheduled' && currentFilter !== 'finished' && currentFilter !== 'today' && currentFilter !== 'live') {
       html = '<div class="empty-state">' + t('noHayPartidos') + '</div>';
     } else if (currentFilter === 'scheduled') {
       const knockoutScheduled = getAllKnockoutEntries().filter(m => knockoutEntryStatus(m).status === 'scheduled');
@@ -2202,12 +2229,16 @@ function render() {
     } else {
       html += '<div class="match-grid">';
       sortedAll.forEach(m => { html += buildMatchCard(m); });
-      // "Hoy" también incluye los partidos de eliminatoria que caigan en
-      // la fecha de hoy — el contador ya los suma, faltaba mostrarlos acá.
+      // "Hoy" y "En vivo" también incluyen partidos de eliminatoria — el
+      // contador ya los suma, faltaba mostrarlos acá.
       if (currentFilter === 'today') {
         getAllKnockoutEntries()
           .filter(m => toARDateStr(m.kickoffUTC) === todayAR)
           .sort((a, b) => new Date(b.kickoffUTC) - new Date(a.kickoffUTC))
+          .forEach(m => { html += buildKnockoutCardHtml(m); });
+      } else if (currentFilter === 'live') {
+        getAllKnockoutEntries()
+          .filter(m => knockoutEntryStatus(m).status === 'live')
           .forEach(m => { html += buildKnockoutCardHtml(m); });
       }
       html += '</div>';
@@ -2215,9 +2246,11 @@ function render() {
   }
   document.getElementById('matches').innerHTML = html;
 
-  if (currentFilter === 'today') {
-    const knockoutToday = getAllKnockoutEntries().filter(m => toARDateStr(m.kickoffUTC) === todayAR);
-    if (sortedAll.length === 0 && knockoutToday.length === 0 && !searchTerm) {
+  if (currentFilter === 'today' || currentFilter === 'live') {
+    const knockoutExtra = currentFilter === 'today'
+      ? getAllKnockoutEntries().filter(m => toARDateStr(m.kickoffUTC) === todayAR)
+      : getAllKnockoutEntries().filter(m => knockoutEntryStatus(m).status === 'live');
+    if (sortedAll.length === 0 && knockoutExtra.length === 0 && !searchTerm) {
       document.getElementById('matches').innerHTML = '<div class="empty-state">' + t('noHayPartidos') + '</div>';
     }
   }
