@@ -1,11 +1,11 @@
 {
-  "updated": "2026-06-28T02:20:22.826413Z",
+  "updated": "2026-06-28T02:30:40.053108Z",
   "matches": {
     "ALGERIA-AUSTRIA": {
       "homeGoals": 0,
-      "awayGoals": 0,
+      "awayGoals": 1,
       "status": "1H",
-      "elapsed": 20,
+      "elapsed": 30,
       "kickoffUTC": "2026-06-28T02:00:00+00:00",
       "referee": "Ilgiz Tantashev, Uzbekistan",
       "events": [
@@ -15,6 +15,14 @@
           "player": "M. Arnautovic",
           "team": "AUSTRIA",
           "minute": 11,
+          "extra": null
+        },
+        {
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "player": "M. Arnautovic",
+          "team": "AUSTRIA",
+          "minute": 28,
           "extra": null
         }
       ],
@@ -296,7 +304,7 @@
       "homeGoals": 0,
       "awayGoals": 1,
       "status": "1H",
-      "elapsed": 20,
+      "elapsed": 30,
       "kickoffUTC": "2026-06-28T02:00:00+00:00",
       "referee": "Istvan Kovacs, Romania",
       "events": [
