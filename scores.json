@@ -1,11 +1,11 @@
 {
-  "updated": "2026-06-28T19:40:21.946767Z",
+  "updated": "2026-06-28T19:50:22.925310Z",
   "matches": {
     "SOUTH AFRICA-CANADA": {
       "homeGoals": 0,
       "awayGoals": 0,
-      "status": "1H",
-      "elapsed": 40,
+      "status": "HT",
+      "elapsed": 45,
       "kickoffUTC": "2026-06-28T19:00:00+00:00",
       "referee": "Joao Pedro Pinheiro, Portugal",
       "events": [],
