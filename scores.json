@@ -1,11 +1,11 @@
 {
-  "updated": "2026-06-28T00:50:21.949729Z",
+  "updated": "2026-06-28T01:00:50.885376Z",
   "matches": {
     "COLOMBIA-PORTUGAL": {
       "homeGoals": 0,
       "awayGoals": 0,
       "status": "2H",
-      "elapsed": 58,
+      "elapsed": 69,
       "kickoffUTC": "2026-06-27T23:30:00+00:00",
       "referee": "Alireza Faghani, Australia",
       "events": [],
@@ -20,6 +20,18 @@
             "out": "J. Cancelo",
             "in": "D. Dalot",
             "minute": 46
+          }
+        ],
+        "COLOMBIA": [
+          {
+            "out": "J. Lerma",
+            "in": "R. Rios",
+            "minute": 60
+          },
+          {
+            "out": "J. Cordoba",
+            "in": "L. Suarez",
+            "minute": 60
           }
         ]
       },
@@ -306,7 +318,7 @@
       "homeGoals": 0,
       "awayGoals": 1,
       "status": "2H",
-      "elapsed": 57,
+      "elapsed": 67,
       "kickoffUTC": "2026-06-27T23:30:00+00:00",
       "referee": "Felix Zwayer, Germany",
       "events": [
@@ -349,6 +361,14 @@
           "team": "UZBEKISTAN",
           "minute": 48,
           "extra": null
+        },
+        {
+          "type": "Card",
+          "detail": "Yellow Card",
+          "player": "S. Moutoussamy",
+          "team": "CONGO DR",
+          "minute": 62,
+          "extra": null
         }
       ],
       "substitutions": {
@@ -357,6 +377,18 @@
             "out": "C. Bakambu",
             "in": "F. Mayele",
             "minute": 51
+          }
+        ],
+        "UZBEKISTAN": [
+          {
+            "out": "O. Shukurov",
+            "in": "O. Khamrobekov",
+            "minute": 59
+          },
+          {
+            "out": "D. Khamdamov",
+            "in": "A. Ganiev",
+            "minute": 59
           }
         ]
       },
