@@ -1,11 +1,11 @@
 {
-  "updated": "2026-06-28T00:40:22.226255Z",
+  "updated": "2026-06-28T00:50:21.949729Z",
   "matches": {
     "COLOMBIA-PORTUGAL": {
       "homeGoals": 0,
       "awayGoals": 0,
       "status": "2H",
-      "elapsed": 48,
+      "elapsed": 58,
       "kickoffUTC": "2026-06-27T23:30:00+00:00",
       "referee": "Alireza Faghani, Australia",
       "events": [],
@@ -306,7 +306,7 @@
       "homeGoals": 0,
       "awayGoals": 1,
       "status": "2H",
-      "elapsed": 47,
+      "elapsed": 57,
       "kickoffUTC": "2026-06-27T23:30:00+00:00",
       "referee": "Felix Zwayer, Germany",
       "events": [
@@ -341,8 +341,25 @@
           "team": "CONGO DR",
           "minute": 45,
           "extra": 5
+        },
+        {
+          "type": "Card",
+          "detail": "Yellow Card",
+          "player": "S. Nasrullaev",
+          "team": "UZBEKISTAN",
+          "minute": 48,
+          "extra": null
         }
       ],
+      "substitutions": {
+        "CONGO DR": [
+          {
+            "out": "C. Bakambu",
+            "in": "F. Mayele",
+            "minute": 51
+          }
+        ]
+      },
       "lineups": {
         "CONGO DR": {
           "formation": "4-4-2",
