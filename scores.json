@@ -1,422 +1,6 @@
 {
-  "updated": "2026-06-28T01:30:40.099158Z",
+  "updated": "2026-06-28T01:40:20.301678Z",
   "matches": {
-    "CONGO DR-UZBEKISTAN": {
-      "homeGoals": 3,
-      "awayGoals": 1,
-      "status": "2H",
-      "elapsed": 90,
-      "kickoffUTC": "2026-06-27T23:30:00+00:00",
-      "referee": "Felix Zwayer, Germany",
-      "events": [
-        {
-          "type": "Goal",
-          "detail": "Normal Goal",
-          "player": "E. Shomurodov",
-          "team": "UZBEKISTAN",
-          "minute": 10,
-          "extra": null
-        },
-        {
-          "type": "Card",
-          "detail": "Yellow Card",
-          "player": "N. Sadiki",
-          "team": "CONGO DR",
-          "minute": 21,
-          "extra": null
-        },
-        {
-          "type": "Card",
-          "detail": "Yellow Card",
-          "player": "A. Khusanov",
-          "team": "UZBEKISTAN",
-          "minute": 43,
-          "extra": null
-        },
-        {
-          "type": "Card",
-          "detail": "Yellow Card",
-          "player": "N. Mbuku",
-          "team": "CONGO DR",
-          "minute": 45,
-          "extra": 5
-        },
-        {
-          "type": "Card",
-          "detail": "Yellow Card",
-          "player": "S. Nasrullaev",
-          "team": "UZBEKISTAN",
-          "minute": 48,
-          "extra": null
-        },
-        {
-          "type": "Card",
-          "detail": "Yellow Card",
-          "player": "S. Moutoussamy",
-          "team": "CONGO DR",
-          "minute": 62,
-          "extra": null
-        },
-        {
-          "type": "Goal",
-          "detail": "Penalty",
-          "player": "Y. Wissa",
-          "team": "CONGO DR",
-          "minute": 68,
-          "extra": null
-        },
-        {
-          "type": "Goal",
-          "detail": "Normal Goal",
-          "player": "F. Mayele",
-          "team": "CONGO DR",
-          "minute": 78,
-          "extra": null
-        },
-        {
-          "type": "Goal",
-          "detail": "Normal Goal",
-          "player": "Y. Wissa",
-          "team": "CONGO DR",
-          "minute": 90,
-          "extra": 1
-        }
-      ],
-      "substitutions": {
-        "CONGO DR": [
-          {
-            "out": "C. Bakambu",
-            "in": "F. Mayele",
-            "minute": 51
-          },
-          {
-            "out": "B. Cipenga",
-            "in": "T. Bongonda",
-            "minute": 72
-          },
-          {
-            "out": "S. Moutoussamy",
-            "in": "N. Mukau",
-            "minute": 72
-          },
-          {
-            "out": "N. Mbuku",
-            "in": "M. Elia",
-            "minute": 72
-          },
-          {
-            "out": "A. Masuaku",
-            "in": "J. Kayembe",
-            "minute": 83
-          }
-        ],
-        "UZBEKISTAN": [
-          {
-            "out": "O. Shukurov",
-            "in": "O. Khamrobekov",
-            "minute": 59
-          },
-          {
-            "out": "D. Khamdamov",
-            "in": "A. Ganiev",
-            "minute": 59
-          },
-          {
-            "out": "A. Fayzullaev",
-            "in": "O. Urunov",
-            "minute": 73
-          },
-          {
-            "out": "J. Urozov",
-            "in": "I. Sergeev",
-            "minute": 82
-          },
-          {
-            "out": "A. Mozgovoy",
-            "in": "J. Iskanderov",
-            "minute": 82
-          }
-        ]
-      },
-      "lineups": {
-        "CONGO DR": {
-          "formation": "4-4-2",
-          "coach": "Sebastien Desabre",
-          "startXI": [
-            {
-              "name": "Lionel Mpasi Nzau",
-              "number": 1,
-              "pos": "G"
-            },
-            {
-              "name": "Aaron Wan-Bissaka",
-              "number": 2,
-              "pos": "D"
-            },
-            {
-              "name": "Chancel Mbemba",
-              "number": 22,
-              "pos": "D"
-            },
-            {
-              "name": "Axel Tuanzebe",
-              "number": 4,
-              "pos": "D"
-            },
-            {
-              "name": "Arthur Masuaku",
-              "number": 26,
-              "pos": "D"
-            },
-            {
-              "name": "Nathana\u00ebl Mbuku",
-              "number": 7,
-              "pos": "M"
-            },
-            {
-              "name": "Samuel Moutoussamy",
-              "number": 8,
-              "pos": "M"
-            },
-            {
-              "name": "Noah Sadiki",
-              "number": 14,
-              "pos": "M"
-            },
-            {
-              "name": "Brian Cipenga",
-              "number": 9,
-              "pos": "M"
-            },
-            {
-              "name": "Yoane Wissa",
-              "number": 20,
-              "pos": "F"
-            },
-            {
-              "name": "C\u00e9dric Bakambu",
-              "number": 17,
-              "pos": "F"
-            }
-          ],
-          "substitutes": [
-            {
-              "name": "Matthieu Epolo",
-              "number": 21,
-              "pos": "G"
-            },
-            {
-              "name": "Timothy Fayulu",
-              "number": 16,
-              "pos": "G"
-            },
-            {
-              "name": "Dylan Batubinsika",
-              "number": 5,
-              "pos": "D"
-            },
-            {
-              "name": "Gedeon Kalulu",
-              "number": 24,
-              "pos": "D"
-            },
-            {
-              "name": "Joris Kayembe",
-              "number": 12,
-              "pos": "D"
-            },
-            {
-              "name": "Steve Kapuadi",
-              "number": 3,
-              "pos": "D"
-            },
-            {
-              "name": "Aaron Tshibola",
-              "number": 15,
-              "pos": "M"
-            },
-            {
-              "name": "Charles Pickel",
-              "number": 18,
-              "pos": "M"
-            },
-            {
-              "name": "Ga\u00ebl Kakuta",
-              "number": 11,
-              "pos": "M"
-            },
-            {
-              "name": "Th\u00e9o Bongonda",
-              "number": 10,
-              "pos": "M"
-            },
-            {
-              "name": "Edo Kayembe",
-              "number": 25,
-              "pos": "M"
-            },
-            {
-              "name": "Ngal'ayel Mukau",
-              "number": 6,
-              "pos": "M"
-            },
-            {
-              "name": "Fiston Mayele",
-              "number": 19,
-              "pos": "F"
-            },
-            {
-              "name": "Meschak Elia",
-              "number": 13,
-              "pos": "F"
-            },
-            {
-              "name": "Simon Banza",
-              "number": 23,
-              "pos": "F"
-            }
-          ]
-        },
-        "UZBEKISTAN": {
-          "formation": "3-4-2-1",
-          "coach": "Fabio Cannavaro",
-          "startXI": [
-            {
-              "name": "Abduvokhid Nematov",
-              "number": 12,
-              "pos": "G"
-            },
-            {
-              "name": "Abdukodir Khusanov",
-              "number": 2,
-              "pos": "D"
-            },
-            {
-              "name": "Jakhongir Urozov",
-              "number": 26,
-              "pos": "D"
-            },
-            {
-              "name": "Rustam Ashurmatov",
-              "number": 5,
-              "pos": "D"
-            },
-            {
-              "name": "Khozhiakbar Alizhonov",
-              "number": 3,
-              "pos": "M"
-            },
-            {
-              "name": "Akmal Mozgovoy",
-              "number": 6,
-              "pos": "M"
-            },
-            {
-              "name": "Otabek Shukurov",
-              "number": 7,
-              "pos": "M"
-            },
-            {
-              "name": "Sherzod Nasrullaev",
-              "number": 13,
-              "pos": "M"
-            },
-            {
-              "name": "Dostonbek Khamdamov",
-              "number": 17,
-              "pos": "F"
-            },
-            {
-              "name": "Abbosbek Fayzullaev",
-              "number": 22,
-              "pos": "F"
-            },
-            {
-              "name": "Eldor Shomurodov",
-              "number": 14,
-              "pos": "F"
-            }
-          ],
-          "substitutes": [
-            {
-              "name": "Botirali Ergashev",
-              "number": 16,
-              "pos": "G"
-            },
-            {
-              "name": "Utkir Yusupov",
-              "number": 1,
-              "pos": "G"
-            },
-            {
-              "name": "Avazbek Ulmasaliyev",
-              "number": 25,
-              "pos": "D"
-            },
-            {
-              "name": "Farrukh Sayfiev",
-              "number": 4,
-              "pos": "D"
-            },
-            {
-              "name": "Umarbek Eshmuradov",
-              "number": 15,
-              "pos": "D"
-            },
-            {
-              "name": "Bekhruz Karimov",
-              "number": 24,
-              "pos": "D"
-            },
-            {
-              "name": "Azizbek Amanov",
-              "number": 20,
-              "pos": "F"
-            },
-            {
-              "name": "Jamshid Iskandarov",
-              "number": 8,
-              "pos": "M"
-            },
-            {
-              "name": "Oston Urunov",
-              "number": 11,
-              "pos": "M"
-            },
-            {
-              "name": "Ruslanbek Jiyanov",
-              "number": 10,
-              "pos": "M"
-            },
-            {
-              "name": "Sherzod Esanov",
-              "number": 23,
-              "pos": "M"
-            },
-            {
-              "name": "Abdulla Abdullaev",
-              "number": 18,
-              "pos": "M"
-            },
-            {
-              "name": "Azizjon Ganiev",
-              "number": 19,
-              "pos": "M"
-            },
-            {
-              "name": "Odiljon Khamrobekov",
-              "number": 9,
-              "pos": "M"
-            },
-            {
-              "name": "Igor Sergeev",
-              "number": 21,
-              "pos": "F"
-            }
-          ]
-        }
-      }
-    },
     "MEXICO-SOUTH AFRICA": {
       "homeGoals": 2,
       "awayGoals": 0,
@@ -26621,6 +26205,422 @@
             {
               "name": "Rafael Le\u00e3o",
               "number": 17,
+              "pos": "F"
+            }
+          ]
+        }
+      }
+    },
+    "CONGO DR-UZBEKISTAN": {
+      "homeGoals": 3,
+      "awayGoals": 1,
+      "status": "FT",
+      "elapsed": 90,
+      "kickoffUTC": "2026-06-27T23:30:00+00:00",
+      "referee": "Felix Zwayer, Germany",
+      "events": [
+        {
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "player": "E. Shomurodov",
+          "team": "UZBEKISTAN",
+          "minute": 10,
+          "extra": null
+        },
+        {
+          "type": "Card",
+          "detail": "Yellow Card",
+          "player": "N. Sadiki",
+          "team": "CONGO DR",
+          "minute": 21,
+          "extra": null
+        },
+        {
+          "type": "Card",
+          "detail": "Yellow Card",
+          "player": "A. Khusanov",
+          "team": "UZBEKISTAN",
+          "minute": 43,
+          "extra": null
+        },
+        {
+          "type": "Card",
+          "detail": "Yellow Card",
+          "player": "N. Mbuku",
+          "team": "CONGO DR",
+          "minute": 45,
+          "extra": 5
+        },
+        {
+          "type": "Card",
+          "detail": "Yellow Card",
+          "player": "S. Nasrullaev",
+          "team": "UZBEKISTAN",
+          "minute": 48,
+          "extra": null
+        },
+        {
+          "type": "Card",
+          "detail": "Yellow Card",
+          "player": "S. Moutoussamy",
+          "team": "CONGO DR",
+          "minute": 62,
+          "extra": null
+        },
+        {
+          "type": "Goal",
+          "detail": "Penalty",
+          "player": "Y. Wissa",
+          "team": "CONGO DR",
+          "minute": 68,
+          "extra": null
+        },
+        {
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "player": "F. Mayele",
+          "team": "CONGO DR",
+          "minute": 78,
+          "extra": null
+        },
+        {
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "player": "Y. Wissa",
+          "team": "CONGO DR",
+          "minute": 90,
+          "extra": 1
+        }
+      ],
+      "substitutions": {
+        "CONGO DR": [
+          {
+            "out": "C. Bakambu",
+            "in": "F. Mayele",
+            "minute": 51
+          },
+          {
+            "out": "B. Cipenga",
+            "in": "T. Bongonda",
+            "minute": 72
+          },
+          {
+            "out": "S. Moutoussamy",
+            "in": "N. Mukau",
+            "minute": 72
+          },
+          {
+            "out": "N. Mbuku",
+            "in": "M. Elia",
+            "minute": 72
+          },
+          {
+            "out": "A. Masuaku",
+            "in": "J. Kayembe",
+            "minute": 83
+          }
+        ],
+        "UZBEKISTAN": [
+          {
+            "out": "O. Shukurov",
+            "in": "O. Khamrobekov",
+            "minute": 59
+          },
+          {
+            "out": "D. Khamdamov",
+            "in": "A. Ganiev",
+            "minute": 59
+          },
+          {
+            "out": "A. Fayzullaev",
+            "in": "O. Urunov",
+            "minute": 73
+          },
+          {
+            "out": "J. Urozov",
+            "in": "I. Sergeev",
+            "minute": 82
+          },
+          {
+            "out": "A. Mozgovoy",
+            "in": "J. Iskanderov",
+            "minute": 82
+          }
+        ]
+      },
+      "lineups": {
+        "CONGO DR": {
+          "formation": "4-4-2",
+          "coach": "Sebastien Desabre",
+          "startXI": [
+            {
+              "name": "Lionel Mpasi Nzau",
+              "number": 1,
+              "pos": "G"
+            },
+            {
+              "name": "Aaron Wan-Bissaka",
+              "number": 2,
+              "pos": "D"
+            },
+            {
+              "name": "Chancel Mbemba",
+              "number": 22,
+              "pos": "D"
+            },
+            {
+              "name": "Axel Tuanzebe",
+              "number": 4,
+              "pos": "D"
+            },
+            {
+              "name": "Arthur Masuaku",
+              "number": 26,
+              "pos": "D"
+            },
+            {
+              "name": "Nathana\u00ebl Mbuku",
+              "number": 7,
+              "pos": "M"
+            },
+            {
+              "name": "Samuel Moutoussamy",
+              "number": 8,
+              "pos": "M"
+            },
+            {
+              "name": "Noah Sadiki",
+              "number": 14,
+              "pos": "M"
+            },
+            {
+              "name": "Brian Cipenga",
+              "number": 9,
+              "pos": "M"
+            },
+            {
+              "name": "Yoane Wissa",
+              "number": 20,
+              "pos": "F"
+            },
+            {
+              "name": "C\u00e9dric Bakambu",
+              "number": 17,
+              "pos": "F"
+            }
+          ],
+          "substitutes": [
+            {
+              "name": "Matthieu Epolo",
+              "number": 21,
+              "pos": "G"
+            },
+            {
+              "name": "Timothy Fayulu",
+              "number": 16,
+              "pos": "G"
+            },
+            {
+              "name": "Dylan Batubinsika",
+              "number": 5,
+              "pos": "D"
+            },
+            {
+              "name": "Gedeon Kalulu",
+              "number": 24,
+              "pos": "D"
+            },
+            {
+              "name": "Joris Kayembe",
+              "number": 12,
+              "pos": "D"
+            },
+            {
+              "name": "Steve Kapuadi",
+              "number": 3,
+              "pos": "D"
+            },
+            {
+              "name": "Aaron Tshibola",
+              "number": 15,
+              "pos": "M"
+            },
+            {
+              "name": "Charles Pickel",
+              "number": 18,
+              "pos": "M"
+            },
+            {
+              "name": "Ga\u00ebl Kakuta",
+              "number": 11,
+              "pos": "M"
+            },
+            {
+              "name": "Th\u00e9o Bongonda",
+              "number": 10,
+              "pos": "M"
+            },
+            {
+              "name": "Edo Kayembe",
+              "number": 25,
+              "pos": "M"
+            },
+            {
+              "name": "Ngal'ayel Mukau",
+              "number": 6,
+              "pos": "M"
+            },
+            {
+              "name": "Fiston Mayele",
+              "number": 19,
+              "pos": "F"
+            },
+            {
+              "name": "Meschak Elia",
+              "number": 13,
+              "pos": "F"
+            },
+            {
+              "name": "Simon Banza",
+              "number": 23,
+              "pos": "F"
+            }
+          ]
+        },
+        "UZBEKISTAN": {
+          "formation": "3-4-2-1",
+          "coach": "Fabio Cannavaro",
+          "startXI": [
+            {
+              "name": "Abduvokhid Nematov",
+              "number": 12,
+              "pos": "G"
+            },
+            {
+              "name": "Abdukodir Khusanov",
+              "number": 2,
+              "pos": "D"
+            },
+            {
+              "name": "Jakhongir Urozov",
+              "number": 26,
+              "pos": "D"
+            },
+            {
+              "name": "Rustam Ashurmatov",
+              "number": 5,
+              "pos": "D"
+            },
+            {
+              "name": "Khozhiakbar Alizhonov",
+              "number": 3,
+              "pos": "M"
+            },
+            {
+              "name": "Akmal Mozgovoy",
+              "number": 6,
+              "pos": "M"
+            },
+            {
+              "name": "Otabek Shukurov",
+              "number": 7,
+              "pos": "M"
+            },
+            {
+              "name": "Sherzod Nasrullaev",
+              "number": 13,
+              "pos": "M"
+            },
+            {
+              "name": "Dostonbek Khamdamov",
+              "number": 17,
+              "pos": "F"
+            },
+            {
+              "name": "Abbosbek Fayzullaev",
+              "number": 22,
+              "pos": "F"
+            },
+            {
+              "name": "Eldor Shomurodov",
+              "number": 14,
+              "pos": "F"
+            }
+          ],
+          "substitutes": [
+            {
+              "name": "Botirali Ergashev",
+              "number": 16,
+              "pos": "G"
+            },
+            {
+              "name": "Utkir Yusupov",
+              "number": 1,
+              "pos": "G"
+            },
+            {
+              "name": "Avazbek Ulmasaliyev",
+              "number": 25,
+              "pos": "D"
+            },
+            {
+              "name": "Farrukh Sayfiev",
+              "number": 4,
+              "pos": "D"
+            },
+            {
+              "name": "Umarbek Eshmuradov",
+              "number": 15,
+              "pos": "D"
+            },
+            {
+              "name": "Bekhruz Karimov",
+              "number": 24,
+              "pos": "D"
+            },
+            {
+              "name": "Azizbek Amanov",
+              "number": 20,
+              "pos": "F"
+            },
+            {
+              "name": "Jamshid Iskandarov",
+              "number": 8,
+              "pos": "M"
+            },
+            {
+              "name": "Oston Urunov",
+              "number": 11,
+              "pos": "M"
+            },
+            {
+              "name": "Ruslanbek Jiyanov",
+              "number": 10,
+              "pos": "M"
+            },
+            {
+              "name": "Sherzod Esanov",
+              "number": 23,
+              "pos": "M"
+            },
+            {
+              "name": "Abdulla Abdullaev",
+              "number": 18,
+              "pos": "M"
+            },
+            {
+              "name": "Azizjon Ganiev",
+              "number": 19,
+              "pos": "M"
+            },
+            {
+              "name": "Odiljon Khamrobekov",
+              "number": 9,
+              "pos": "M"
+            },
+            {
+              "name": "Igor Sergeev",
+              "number": 21,
               "pos": "F"
             }
           ]
