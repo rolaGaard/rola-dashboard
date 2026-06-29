@@ -1,11 +1,11 @@
 {
-  "updated": "2026-06-29T21:50:22.261691Z",
+  "updated": "2026-06-29T22:00:51.780641Z",
   "matches": {
     "GERMANY-PARAGUAY": {
       "homeGoals": 1,
       "awayGoals": 1,
       "status": "2H",
-      "elapsed": 57,
+      "elapsed": 68,
       "kickoffUTC": "2026-06-29T20:30:00+00:00",
       "referee": "Jalal Jayed, Morocco",
       "events": [
@@ -24,6 +24,14 @@
           "team": "GERMANY",
           "minute": 54,
           "extra": null
+        },
+        {
+          "type": "Card",
+          "detail": "Yellow Card",
+          "player": "A. Cubas",
+          "team": "PARAGUAY",
+          "minute": 65,
+          "extra": null
         }
       ],
       "substitutions": {
@@ -32,6 +40,11 @@
             "out": "F. Nmecha",
             "in": "L. Goretzka",
             "minute": 46
+          },
+          {
+            "out": "D. Undav",
+            "in": "J. Musiala",
+            "minute": 63
           }
         ],
         "PARAGUAY": [
@@ -39,6 +52,11 @@
             "out": "G. Avalos",
             "in": "G. Caballero",
             "minute": 55
+          },
+          {
+            "out": "J. Enciso",
+            "in": "Mauricio",
+            "minute": 57
           }
         ]
       },
