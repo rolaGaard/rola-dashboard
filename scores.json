@@ -1,11 +1,11 @@
 {
-  "updated": "2026-06-29T22:10:22.541990Z",
+  "updated": "2026-06-29T22:16:41.182419Z",
   "matches": {
     "GERMANY-PARAGUAY": {
       "homeGoals": 1,
       "awayGoals": 1,
       "status": "2H",
-      "elapsed": 77,
+      "elapsed": 84,
       "kickoffUTC": "2026-06-29T20:30:00+00:00",
       "referee": "Jalal Jayed, Morocco",
       "events": [
@@ -45,6 +45,11 @@
             "out": "D. Undav",
             "in": "J. Musiala",
             "minute": 63
+          },
+          {
+            "out": "A. Pavlovic",
+            "in": "W. Anton",
+            "minute": 79
           }
         ],
         "PARAGUAY": [
