@@ -3228,8 +3228,9 @@ function buildVbHalf(sections, side) {
 
   let html = '<div class="vb-half vb-' + side + '">';
 
-  // Función que decide si agregar conector entre rondas
-  const roundOrder = side === 'left' ? rounds : [...rounds].reverse();
+  // Para el lado derecho NO invertimos el array — el CSS row-reverse ya lo
+  // muestra de afuera (R32) hacia adentro (SF), que es lo correcto.
+  const roundOrder = rounds;
 
   roundOrder.forEach((round, ri) => {
     // Entre columnas de rondas, ponemos un mini-conector horizontal
