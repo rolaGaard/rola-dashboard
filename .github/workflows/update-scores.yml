@@ -147,6 +147,7 @@ jobs:
                           'coach': (side.get('coach') or {}).get('name'),
                           'startXI': start_xi,
                           'substitutes': subs,
+                          'colors': (side.get('team') or {}).get('colors'),
                       }
                   return result
               except Exception as e:
