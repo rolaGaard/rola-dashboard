@@ -1,11 +1,11 @@
 {
-  "updated": "2026-06-29T18:50:24.839472Z",
+  "updated": "2026-06-29T19:00:52.019039Z",
   "matches": {
     "BRAZIL-JAPAN": {
-      "homeGoals": 1,
+      "homeGoals": 2,
       "awayGoals": 1,
       "status": "2H",
-      "elapsed": 89,
+      "elapsed": 90,
       "kickoffUTC": "2026-06-29T17:00:00+00:00",
       "referee": "Maurizio Mariani, Italy",
       "events": [
@@ -64,6 +64,14 @@
           "team": "JAPAN",
           "minute": 84,
           "extra": null
+        },
+        {
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "player": "G. Martinelli",
+          "team": "BRAZIL",
+          "minute": 90,
+          "extra": 5
         }
       ],
       "substitutions": {
@@ -77,6 +85,16 @@
             "out": "M. Cunha",
             "in": "G. Martinelli",
             "minute": 66
+          },
+          {
+            "out": "Casemiro",
+            "in": "Fabinho",
+            "minute": 90
+          },
+          {
+            "out": "Bruno Guimaraes",
+            "in": "Danilo Santos",
+            "minute": 90
           }
         ],
         "JAPAN": [
@@ -99,6 +117,11 @@
             "out": "J. Ito",
             "in": "S. Machino",
             "minute": 78
+          },
+          {
+            "out": "D. Maeda",
+            "in": "K. Ogawa",
+            "minute": 90
           }
         ]
       },
