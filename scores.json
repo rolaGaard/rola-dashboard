@@ -1,14 +1,23 @@
 {
-  "updated": "2026-06-29T21:10:22.348900Z",
+  "updated": "2026-06-29T21:20:22.817388Z",
   "matches": {
     "GERMANY-PARAGUAY": {
       "homeGoals": 0,
-      "awayGoals": 0,
+      "awayGoals": 1,
       "status": "1H",
-      "elapsed": 40,
+      "elapsed": 45,
       "kickoffUTC": "2026-06-29T20:30:00+00:00",
       "referee": "Jalal Jayed, Morocco",
-      "events": [],
+      "events": [
+        {
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "player": "J. Enciso",
+          "team": "PARAGUAY",
+          "minute": 42,
+          "extra": null
+        }
+      ],
       "lineups": {
         "GERMANY": {
           "formation": "4-2-3-1",
