@@ -1,11 +1,11 @@
 {
-  "updated": "2026-06-30T02:40:22.425360Z",
+  "updated": "2026-06-30T02:50:23.608823Z",
   "matches": {
     "NETHERLANDS-MOROCCO": {
       "homeGoals": 1,
       "awayGoals": 0,
       "status": "2H",
-      "elapsed": 79,
+      "elapsed": 88,
       "kickoffUTC": "2026-06-30T01:00:00+00:00",
       "referee": "Wilton Pereira Sampaio, Brazil",
       "events": [
@@ -37,6 +37,16 @@
             "out": "B. Brobbey",
             "in": "W. Weghorst",
             "minute": 71
+          },
+          {
+            "out": "R. Gravenberch",
+            "in": "Q. Timber",
+            "minute": 87
+          },
+          {
+            "out": "M. van de Ven",
+            "in": "J. Hato",
+            "minute": 87
           }
         ],
         "MOROCCO": [
@@ -44,6 +54,26 @@
             "out": "C. Riad",
             "in": "A. Salah-Eddine",
             "minute": 75
+          },
+          {
+            "out": "B. Diaz",
+            "in": "G. Yassine",
+            "minute": 79
+          },
+          {
+            "out": "A. Bouaddi",
+            "in": "S. El Mourabet",
+            "minute": 79
+          },
+          {
+            "out": "A. Ounahi",
+            "in": "A. Sbai",
+            "minute": 87
+          },
+          {
+            "out": "B. El Khannouss",
+            "in": "C. Talbi",
+            "minute": 87
           }
         ]
       },
