@@ -1,14 +1,23 @@
 {
-  "updated": "2026-06-30T17:30:41.763137Z",
+  "updated": "2026-06-30T17:40:27.686611Z",
   "matches": {
     "IVORY COAST-NORWAY": {
       "homeGoals": 0,
-      "awayGoals": 0,
+      "awayGoals": 1,
       "status": "1H",
-      "elapsed": 30,
+      "elapsed": 40,
       "kickoffUTC": "2026-06-30T17:00:00+00:00",
       "referee": "Jes\u00fas Valenzuela, Venezuela",
-      "events": [],
+      "events": [
+        {
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "player": "A. Nusa",
+          "team": "NORWAY",
+          "minute": 39,
+          "extra": null
+        }
+      ],
       "lineups": {
         "IVORY COAST": {
           "formation": "4-1-4-1",
