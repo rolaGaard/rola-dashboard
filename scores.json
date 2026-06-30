@@ -1,11 +1,11 @@
 {
-  "updated": "2026-06-30T18:30:41.349118Z",
+  "updated": "2026-06-30T18:40:27.074276Z",
   "matches": {
     "IVORY COAST-NORWAY": {
-      "homeGoals": 0,
+      "homeGoals": 1,
       "awayGoals": 1,
       "status": "2H",
-      "elapsed": 71,
+      "elapsed": 81,
       "kickoffUTC": "2026-06-30T17:00:00+00:00",
       "referee": "Jes\u00fas Valenzuela, Venezuela",
       "events": [
@@ -24,6 +24,14 @@
           "team": "NORWAY",
           "minute": 45,
           "extra": 1
+        },
+        {
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "player": "A. Diallo",
+          "team": "IVORY COAST",
+          "minute": 74,
+          "extra": null
         }
       ],
       "substitutions": {
@@ -37,6 +45,18 @@
             "out": "A. Bonny",
             "in": "E. Wahi",
             "minute": 60
+          }
+        ],
+        "NORWAY": [
+          {
+            "out": "A. Sorloth",
+            "in": "O. Bobb",
+            "minute": 71
+          },
+          {
+            "out": "A. Nusa",
+            "in": "A. Schjelderup",
+            "minute": 71
           }
         ]
       },
