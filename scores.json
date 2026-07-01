@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-01T03:55:14.563866Z",
+  "updated": "2026-07-01T03:56:10.971538Z",
   "matches": {
     "MEXICO-ECUADOR": {
       "fixtureId": 1567306,
@@ -34,6 +34,14 @@
           "team": "ECUADOR",
           "minute": 45,
           "extra": 1
+        },
+        {
+          "type": "Card",
+          "detail": "Yellow Card",
+          "player": "K. Paez",
+          "team": "ECUADOR",
+          "minute": 90,
+          "extra": 3
         }
       ],
       "substitutions": {
