@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-01T03:59:09.582682Z",
+  "updated": "2026-07-01T04:00:54.811253Z",
   "matches": {
     "MEXICO-ECUADOR": {
       "fixtureId": 1567306,
@@ -50,6 +50,14 @@
           "team": "ECUADOR",
           "minute": 90,
           "extra": 5
+        },
+        {
+          "type": "Card",
+          "detail": "Yellow Card",
+          "player": "M. Caicedo",
+          "team": "ECUADOR",
+          "minute": 90,
+          "extra": 9
         }
       ],
       "substitutions": {
