@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-01T04:00:54.811253Z",
+  "updated": "2026-07-01T04:01:10.078775Z",
   "matches": {
     "MEXICO-ECUADOR": {
       "fixtureId": 1567306,
@@ -427,7 +427,7 @@
       "status": "FT",
       "elapsed": 90,
       "kickoffUTC": "2026-06-11T19:00:00+00:00",
-      "referee": "W. Sampaio",
+      "referee": "Wilton Pereira Sampaio, Brazil",
       "events": [
         {
           "type": "Goal",
@@ -832,7 +832,7 @@
       "status": "FT",
       "elapsed": 90,
       "kickoffUTC": "2026-06-12T02:00:00+00:00",
-      "referee": "A. Omar",
+      "referee": "Amin Mohamed Omar, Egypt",
       "events": [
         {
           "type": "Goal",
