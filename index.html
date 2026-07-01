@@ -968,11 +968,11 @@
 
 <div id="group-zoom-modal" class="shortcut-instructions" style="display:none;">
 
-<div id="rotate-toast" style="position:fixed;top:0;left:0;right:0;bottom:0;z-index:9999;pointer-events:none;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,0.55);">
-  <svg id="rotate-toast-icon" width="80" height="80" viewBox="0 0 80 80" style="opacity:0;transform:rotate(0deg);">
-    <rect x="20" y="8" width="40" height="64" rx="6" fill="none" stroke="white" stroke-width="3"/>
-    <rect x="30" y="12" width="20" height="3" rx="1.5" fill="white"/>
-    <circle cx="40" cy="65" r="3" fill="white"/>
+<div id="rotate-toast" style="display:none;text-align:center;padding:24px 0 8px;">
+  <svg id="rotate-toast-icon" width="60" height="60" viewBox="0 0 80 80">
+    <rect x="20" y="8" width="40" height="64" rx="6" fill="none" stroke="#94a3b8" stroke-width="3"/>
+    <rect x="30" y="12" width="20" height="3" rx="1.5" fill="#94a3b8"/>
+    <circle cx="40" cy="65" r="3" fill="#94a3b8"/>
   </svg>
 </div>
   <div class="shortcut-instructions-box group-zoom-box">
@@ -2276,26 +2276,32 @@ function render() {
     renderBracket();
     // En portrait, mostrar el hint de rotación solo la primera vez
     if (window.innerHeight > window.innerWidth) {
+      const toast = document.getElementById('rotate-toast');
       const icon = document.getElementById('rotate-toast-icon');
-      if (!icon) return;
-      // Reset completo
+      if (!toast || !icon) return;
+      // Mostrar el contenedor
+      toast.style.display = 'block';
+      // Reset
       icon.style.transition = 'none';
       icon.style.transform = 'rotate(0deg)';
       icon.style.opacity = '0';
-      icon.offsetHeight; // reflow
+      icon.offsetHeight;
       // Aparecer
       icon.style.transition = 'opacity 0.3s ease';
       icon.style.opacity = '1';
       // Rotar
       setTimeout(() => {
-        icon.style.transition = 'transform 0.8s ease';
+        icon.style.transition = 'transform 0.9s ease';
         icon.style.transform = 'rotate(90deg)';
       }, 400);
-      // Desaparecer
+      // Desaparecer y ocultar
       setTimeout(() => {
         icon.style.transition = 'opacity 0.4s ease';
         icon.style.opacity = '0';
-      }, 1400);
+      }, 1500);
+      setTimeout(() => {
+        toast.style.display = 'none';
+      }, 2000);
     }
     updateCounters(); return;
   }
@@ -3437,7 +3443,8 @@ function renderBracket() {
   const labels4 = t('cuartosDeFinal');
   const labelsSF = t('semifinales');
 
-  let bracketHtml = '<div class="vb-section-title">\u{1F3C6} ' + t('cuadroEliminatorio') + '</div>';
+  let bracketHtml = document.getElementById('rotate-toast').outerHTML +
+    '<div class="vb-section-title">\u{1F3C6} ' + t('cuadroEliminatorio') + '</div>';
   bracketHtml += '<div class="vb-wrap">';
   bracketHtml += buildVbHalfFromSections(left, 'left', labels16, labels8, labels4, labelsSF);
 
