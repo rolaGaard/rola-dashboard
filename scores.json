@@ -1,11 +1,13 @@
 {
-  "updated": "2026-07-01T03:21:11.521957Z",
+  "updated": "2026-07-01T03:22:11.320048Z",
   "matches": {
     "MEXICO-ECUADOR": {
+      "fixtureId": 1567306,
+      "round": "Round of 32",
       "homeGoals": 2,
       "awayGoals": 0,
       "status": "2H",
-      "elapsed": 59,
+      "elapsed": 60,
       "kickoffUTC": "2026-07-01T01:00:00+00:00",
       "referee": "Slavko Vin\u010di\u0107, Slovenia",
       "events": [
@@ -364,6 +366,8 @@
       }
     },
     "MEXICO-SOUTH AFRICA": {
+      "fixtureId": 1489369,
+      "round": "Group Stage - 1",
       "homeGoals": 2,
       "awayGoals": 0,
       "status": "FT",
@@ -767,6 +771,8 @@
       }
     },
     "SOUTH KOREA-CZECHIA": {
+      "fixtureId": 1538999,
+      "round": "Group Stage - 1",
       "homeGoals": 2,
       "awayGoals": 1,
       "status": "FT",
@@ -1138,6 +1144,8 @@
       }
     },
     "CANADA-BOSNIA & HERZEGOVINA": {
+      "fixtureId": 1539000,
+      "round": "Group Stage - 1",
       "homeGoals": 1,
       "awayGoals": 1,
       "status": "FT",
@@ -1538,6 +1546,8 @@
       }
     },
     "USA-PARAGUAY": {
+      "fixtureId": 1489370,
+      "round": "Group Stage - 1",
       "homeGoals": 4,
       "awayGoals": 1,
       "status": "FT",
@@ -1965,6 +1975,8 @@
       }
     },
     "QATAR-SWITZERLAND": {
+      "fixtureId": 1489373,
+      "round": "Group Stage - 1",
       "homeGoals": 1,
       "awayGoals": 1,
       "status": "FT",
@@ -2349,6 +2361,8 @@
       }
     },
     "BRAZIL-MOROCCO": {
+      "fixtureId": 1489371,
+      "round": "Group Stage - 1",
       "homeGoals": 1,
       "awayGoals": 1,
       "status": "FT",
@@ -2720,6 +2734,8 @@
       }
     },
     "HAITI-SCOTLAND": {
+      "fixtureId": 1489372,
+      "round": "Group Stage - 1",
       "homeGoals": 0,
       "awayGoals": 1,
       "status": "FT",
@@ -3094,6 +3110,8 @@
       }
     },
     "AUSTRALIA-TURKIYE": {
+      "fixtureId": 1539001,
+      "round": "Group Stage - 1",
       "homeGoals": 2,
       "awayGoals": 0,
       "status": "FT",
@@ -3462,6 +3480,8 @@
       }
     },
     "GERMANY-CURACAO": {
+      "fixtureId": 1489374,
+      "round": "Group Stage - 1",
       "homeGoals": 7,
       "awayGoals": 1,
       "status": "FT",
@@ -3860,6 +3880,8 @@
       }
     },
     "NETHERLANDS-JAPAN": {
+      "fixtureId": 1489376,
+      "round": "Group Stage - 1",
       "homeGoals": 2,
       "awayGoals": 2,
       "status": "FT",
@@ -4260,6 +4282,8 @@
       }
     },
     "IVORY COAST-ECUADOR": {
+      "fixtureId": 1489375,
+      "round": "Group Stage - 1",
       "homeGoals": 1,
       "awayGoals": 0,
       "status": "FT",
@@ -4639,6 +4663,8 @@
       }
     },
     "SWEDEN-TUNISIA": {
+      "fixtureId": 1539002,
+      "round": "Group Stage - 1",
       "homeGoals": 5,
       "awayGoals": 1,
       "status": "FT",
@@ -5039,6 +5065,8 @@
       }
     },
     "SPAIN-CAPE VERDE": {
+      "fixtureId": 1489380,
+      "round": "Group Stage - 1",
       "homeGoals": 0,
       "awayGoals": 0,
       "status": "FT",
@@ -5394,6 +5422,8 @@
       }
     },
     "BELGIUM-EGYPT": {
+      "fixtureId": 1489377,
+      "round": "Group Stage - 1",
       "homeGoals": 1,
       "awayGoals": 1,
       "status": "FT",
@@ -5781,6 +5811,8 @@
       }
     },
     "SAUDI ARABIA-URUGUAY": {
+      "fixtureId": 1489379,
+      "round": "Group Stage - 1",
       "homeGoals": 1,
       "awayGoals": 1,
       "status": "FT",
@@ -6139,6 +6171,8 @@
       }
     },
     "IRAN-NEW ZEALAND": {
+      "fixtureId": 1489378,
+      "round": "Group Stage - 1",
       "homeGoals": 2,
       "awayGoals": 2,
       "status": "FT",
@@ -6513,6 +6547,8 @@
       }
     },
     "FRANCE-SENEGAL": {
+      "fixtureId": 1489383,
+      "round": "Group Stage - 1",
       "homeGoals": 3,
       "awayGoals": 1,
       "status": "FT",
@@ -6874,6 +6910,8 @@
       }
     },
     "IRAQ-NORWAY": {
+      "fixtureId": 1539016,
+      "round": "Group Stage - 1",
       "homeGoals": 1,
       "awayGoals": 4,
       "status": "FT",
@@ -7266,6 +7304,8 @@
       }
     },
     "ARGENTINA-ALGERIA": {
+      "fixtureId": 1489381,
+      "round": "Group Stage - 1",
       "homeGoals": 3,
       "awayGoals": 0,
       "status": "FT",
@@ -7634,6 +7674,8 @@
       }
     },
     "AUSTRIA-JORDAN": {
+      "fixtureId": 1489382,
+      "round": "Group Stage - 1",
       "homeGoals": 3,
       "awayGoals": 1,
       "status": "FT",
@@ -8018,6 +8060,8 @@
       }
     },
     "PORTUGAL-CONGO DR": {
+      "fixtureId": 1539003,
+      "round": "Group Stage - 1",
       "homeGoals": 1,
       "awayGoals": 1,
       "status": "FT",
@@ -8405,6 +8449,8 @@
       }
     },
     "ENGLAND-CROATIA": {
+      "fixtureId": 1489384,
+      "round": "Group Stage - 1",
       "homeGoals": 4,
       "awayGoals": 2,
       "status": "FT",
@@ -8792,6 +8838,8 @@
       }
     },
     "GHANA-PANAMA": {
+      "fixtureId": 1489385,
+      "round": "Group Stage - 1",
       "homeGoals": 1,
       "awayGoals": 0,
       "status": "FT",
@@ -9158,6 +9206,8 @@
       }
     },
     "UZBEKISTAN-COLOMBIA": {
+      "fixtureId": 1489386,
+      "round": "Group Stage - 1",
       "homeGoals": 1,
       "awayGoals": 3,
       "status": "FT",
@@ -9550,6 +9600,8 @@
       }
     },
     "CZECHIA-SOUTH AFRICA": {
+      "fixtureId": 1539004,
+      "round": "Group Stage - 2",
       "homeGoals": 1,
       "awayGoals": 1,
       "status": "FT",
@@ -9909,6 +9961,8 @@
       }
     },
     "SWITZERLAND-BOSNIA & HERZEGOVINA": {
+      "fixtureId": 1539005,
+      "round": "Group Stage - 2",
       "homeGoals": 4,
       "awayGoals": 1,
       "status": "FT",
@@ -10320,6 +10374,8 @@
       }
     },
     "CANADA-QATAR": {
+      "fixtureId": 1489387,
+      "round": "Group Stage - 2",
       "homeGoals": 6,
       "awayGoals": 0,
       "status": "FT",
@@ -10747,6 +10803,8 @@
       }
     },
     "MEXICO-SOUTH KOREA": {
+      "fixtureId": 1489388,
+      "round": "Group Stage - 2",
       "homeGoals": 1,
       "awayGoals": 0,
       "status": "FT",
@@ -11110,6 +11168,8 @@
       }
     },
     "USA-AUSTRALIA": {
+      "fixtureId": 1489391,
+      "round": "Group Stage - 2",
       "homeGoals": 2,
       "awayGoals": 0,
       "status": "FT",
@@ -11521,6 +11581,8 @@
       }
     },
     "SCOTLAND-MOROCCO": {
+      "fixtureId": 1489390,
+      "round": "Group Stage - 2",
       "homeGoals": 0,
       "awayGoals": 1,
       "status": "FT",
@@ -11884,6 +11946,8 @@
       }
     },
     "BRAZIL-HAITI": {
+      "fixtureId": 1489389,
+      "round": "Group Stage - 2",
       "homeGoals": 3,
       "awayGoals": 0,
       "status": "FT",
@@ -12279,6 +12343,8 @@
       }
     },
     "TURKIYE-PARAGUAY": {
+      "fixtureId": 1539006,
+      "round": "Group Stage - 2",
       "homeGoals": 0,
       "awayGoals": 1,
       "status": "FT",
@@ -12655,6 +12721,8 @@
       }
     },
     "NETHERLANDS-SWEDEN": {
+      "fixtureId": 1539007,
+      "round": "Group Stage - 2",
       "homeGoals": 5,
       "awayGoals": 1,
       "status": "FT",
@@ -13066,6 +13134,8 @@
       }
     },
     "GERMANY-IVORY COAST": {
+      "fixtureId": 1489393,
+      "round": "Group Stage - 2",
       "homeGoals": 2,
       "awayGoals": 1,
       "status": "FT",
@@ -13434,6 +13504,8 @@
       }
     },
     "ECUADOR-CURACAO": {
+      "fixtureId": 1489392,
+      "round": "Group Stage - 2",
       "homeGoals": 0,
       "awayGoals": 0,
       "status": "FT",
@@ -13821,6 +13893,8 @@
       }
     },
     "TUNISIA-JAPAN": {
+      "fixtureId": 1489394,
+      "round": "Group Stage - 2",
       "homeGoals": 0,
       "awayGoals": 4,
       "status": "FT",
@@ -14187,6 +14261,8 @@
       }
     },
     "SPAIN-SAUDI ARABIA": {
+      "fixtureId": 1489397,
+      "round": "Group Stage - 2",
       "homeGoals": 4,
       "awayGoals": 0,
       "status": "FT",
@@ -14579,6 +14655,8 @@
       }
     },
     "BELGIUM-IRAN": {
+      "fixtureId": 1489395,
+      "round": "Group Stage - 2",
       "homeGoals": 0,
       "awayGoals": 0,
       "status": "FT",
@@ -14937,6 +15015,8 @@
       }
     },
     "URUGUAY-CAPE VERDE": {
+      "fixtureId": 1489398,
+      "round": "Group Stage - 2",
       "homeGoals": 2,
       "awayGoals": 2,
       "status": "FT",
@@ -15325,6 +15405,8 @@
       }
     },
     "NEW ZEALAND-EGYPT": {
+      "fixtureId": 1489396,
+      "round": "Group Stage - 2",
       "homeGoals": 1,
       "awayGoals": 3,
       "status": "FT",
@@ -15730,6 +15812,8 @@
       }
     },
     "ARGENTINA-AUSTRIA": {
+      "fixtureId": 1489399,
+      "round": "Group Stage - 2",
       "homeGoals": 2,
       "awayGoals": 0,
       "status": "FT",
@@ -16130,6 +16214,8 @@
       }
     },
     "FRANCE-IRAQ": {
+      "fixtureId": 1539017,
+      "round": "Group Stage - 2",
       "homeGoals": 3,
       "awayGoals": 0,
       "status": "FT",
@@ -16506,6 +16592,8 @@
       }
     },
     "NORWAY-SENEGAL": {
+      "fixtureId": 1489401,
+      "round": "Group Stage - 2",
       "homeGoals": 3,
       "awayGoals": 2,
       "status": "FT",
@@ -16890,6 +16978,8 @@
       }
     },
     "JORDAN-ALGERIA": {
+      "fixtureId": 1489400,
+      "round": "Group Stage - 2",
       "homeGoals": 1,
       "awayGoals": 2,
       "status": "FT",
@@ -17269,6 +17359,8 @@
       }
     },
     "PORTUGAL-UZBEKISTAN": {
+      "fixtureId": 1489404,
+      "round": "Group Stage - 2",
       "homeGoals": 5,
       "awayGoals": 0,
       "status": "FT",
@@ -17669,6 +17761,8 @@
       }
     },
     "ENGLAND-GHANA": {
+      "fixtureId": 1489402,
+      "round": "Group Stage - 2",
       "homeGoals": 0,
       "awayGoals": 0,
       "status": "FT",
@@ -18024,6 +18118,8 @@
       }
     },
     "PANAMA-CROATIA": {
+      "fixtureId": 1489403,
+      "round": "Group Stage - 2",
       "homeGoals": 0,
       "awayGoals": 1,
       "status": "FT",
@@ -18387,6 +18483,8 @@
       }
     },
     "COLOMBIA-CONGO DR": {
+      "fixtureId": 1539008,
+      "round": "Group Stage - 2",
       "homeGoals": 1,
       "awayGoals": 0,
       "status": "FT",
@@ -18753,6 +18851,8 @@
       }
     },
     "SWITZERLAND-CANADA": {
+      "fixtureId": 1489408,
+      "round": "Group Stage - 3",
       "homeGoals": 2,
       "awayGoals": 1,
       "status": "FT",
@@ -19130,6 +19230,8 @@
       }
     },
     "BOSNIA & HERZEGOVINA-QATAR": {
+      "fixtureId": 1539009,
+      "round": "Group Stage - 3",
       "homeGoals": 3,
       "awayGoals": 1,
       "status": "FT",
@@ -19507,6 +19609,8 @@
       }
     },
     "MOROCCO-HAITI": {
+      "fixtureId": 1489405,
+      "round": "Group Stage - 3",
       "homeGoals": 4,
       "awayGoals": 2,
       "status": "FT",
@@ -19923,6 +20027,8 @@
       }
     },
     "SCOTLAND-BRAZIL": {
+      "fixtureId": 1489406,
+      "round": "Group Stage - 3",
       "homeGoals": 0,
       "awayGoals": 3,
       "status": "FT",
@@ -20310,6 +20416,8 @@
       }
     },
     "CZECHIA-MEXICO": {
+      "fixtureId": 1539010,
+      "round": "Group Stage - 3",
       "homeGoals": 0,
       "awayGoals": 3,
       "status": "FT",
@@ -20673,6 +20781,8 @@
       }
     },
     "SOUTH AFRICA-SOUTH KOREA": {
+      "fixtureId": 1489407,
+      "round": "Group Stage - 3",
       "homeGoals": 1,
       "awayGoals": 0,
       "status": "FT",
@@ -21021,6 +21131,8 @@
       }
     },
     "ECUADOR-GERMANY": {
+      "fixtureId": 1489410,
+      "round": "Group Stage - 3",
       "homeGoals": 2,
       "awayGoals": 1,
       "status": "FT",
@@ -21411,6 +21523,8 @@
       }
     },
     "CURACAO-IVORY COAST": {
+      "fixtureId": 1489409,
+      "round": "Group Stage - 3",
       "homeGoals": 0,
       "awayGoals": 2,
       "status": "FT",
@@ -21785,6 +21899,8 @@
       }
     },
     "JAPAN-SWEDEN": {
+      "fixtureId": 1539011,
+      "round": "Group Stage - 3",
       "homeGoals": 1,
       "awayGoals": 1,
       "status": "FT",
@@ -22164,6 +22280,8 @@
       }
     },
     "TUNISIA-NETHERLANDS": {
+      "fixtureId": 1489412,
+      "round": "Group Stage - 3",
       "homeGoals": 1,
       "awayGoals": 3,
       "status": "FT",
@@ -22530,6 +22648,8 @@
       }
     },
     "TURKIYE-USA": {
+      "fixtureId": 1539012,
+      "round": "Group Stage - 3",
       "homeGoals": 3,
       "awayGoals": 2,
       "status": "FT",
@@ -22812,6 +22932,8 @@
       }
     },
     "PARAGUAY-AUSTRALIA": {
+      "fixtureId": 1489411,
+      "round": "Group Stage - 3",
       "homeGoals": 0,
       "awayGoals": 0,
       "status": "FT",
@@ -23137,6 +23259,8 @@
       }
     },
     "SENEGAL-IRAQ": {
+      "fixtureId": 1539074,
+      "round": "Group Stage - 3",
       "homeGoals": 5,
       "awayGoals": 0,
       "status": "FT",
@@ -23556,6 +23680,8 @@
       }
     },
     "NORWAY-FRANCE": {
+      "fixtureId": 1489416,
+      "round": "Group Stage - 3",
       "homeGoals": 1,
       "awayGoals": 4,
       "status": "FT",
@@ -23956,6 +24082,8 @@
       }
     },
     "URUGUAY-SPAIN": {
+      "fixtureId": 1489417,
+      "round": "Group Stage - 3",
       "homeGoals": 0,
       "awayGoals": 1,
       "status": "FT",
@@ -24343,6 +24471,8 @@
       }
     },
     "CAPE VERDE-SAUDI ARABIA": {
+      "fixtureId": 1489413,
+      "round": "Group Stage - 3",
       "homeGoals": 0,
       "awayGoals": 0,
       "status": "FT",
@@ -24696,6 +24826,8 @@
       }
     },
     "EGYPT-IRAN": {
+      "fixtureId": 1489414,
+      "round": "Group Stage - 3",
       "homeGoals": 1,
       "awayGoals": 1,
       "status": "FT",
@@ -25092,6 +25224,8 @@
       }
     },
     "NEW ZEALAND-BELGIUM": {
+      "fixtureId": 1489415,
+      "round": "Group Stage - 3",
       "homeGoals": 1,
       "awayGoals": 5,
       "status": "FT",
@@ -25482,6 +25616,8 @@
       }
     },
     "CROATIA-GHANA": {
+      "fixtureId": 1489420,
+      "round": "Group Stage - 3",
       "homeGoals": 2,
       "awayGoals": 1,
       "status": "FT",
@@ -25848,6 +25984,8 @@
       }
     },
     "PANAMA-ENGLAND": {
+      "fixtureId": 1489422,
+      "round": "Group Stage - 3",
       "homeGoals": 0,
       "awayGoals": 2,
       "status": "FT",
@@ -26227,6 +26365,8 @@
       }
     },
     "COLOMBIA-PORTUGAL": {
+      "fixtureId": 1489419,
+      "round": "Group Stage - 3",
       "homeGoals": 0,
       "awayGoals": 0,
       "status": "FT",
@@ -26574,6 +26714,8 @@
       }
     },
     "CONGO DR-UZBEKISTAN": {
+      "fixtureId": 1539013,
+      "round": "Group Stage - 3",
       "homeGoals": 3,
       "awayGoals": 1,
       "status": "FT",
@@ -26990,6 +27132,8 @@
       }
     },
     "ALGERIA-AUSTRIA": {
+      "fixtureId": 1489418,
+      "round": "Group Stage - 3",
       "homeGoals": 3,
       "awayGoals": 3,
       "status": "FT",
@@ -27354,6 +27498,8 @@
       }
     },
     "JORDAN-ARGENTINA": {
+      "fixtureId": 1489421,
+      "round": "Group Stage - 3",
       "homeGoals": 1,
       "awayGoals": 3,
       "status": "FT",
@@ -27736,6 +27882,8 @@
       }
     },
     "SOUTH AFRICA-CANADA": {
+      "fixtureId": 1561329,
+      "round": "Round of 32",
       "homeGoals": 0,
       "awayGoals": 1,
       "status": "FT",
@@ -28076,6 +28224,8 @@
       }
     },
     "BRAZIL-JAPAN": {
+      "fixtureId": 1562344,
+      "round": "Round of 32",
       "homeGoals": 2,
       "awayGoals": 1,
       "status": "FT",
@@ -28474,6 +28624,8 @@
       }
     },
     "GERMANY-PARAGUAY": {
+      "fixtureId": 1565176,
+      "round": "Round of 32",
       "homeGoals": 1,
       "awayGoals": 1,
       "status": "PEN",
@@ -28924,6 +29076,8 @@
       }
     },
     "NETHERLANDS-MOROCCO": {
+      "fixtureId": 1562345,
+      "round": "Round of 32",
       "homeGoals": 1,
       "awayGoals": 1,
       "status": "PEN",
@@ -29371,6 +29525,8 @@
       }
     },
     "IVORY COAST-NORWAY": {
+      "fixtureId": 1564789,
+      "round": "Round of 32",
       "homeGoals": 1,
       "awayGoals": 2,
       "status": "FT",
@@ -29751,6 +29907,8 @@
       }
     },
     "FRANCE-SWEDEN": {
+      "fixtureId": 1565177,
+      "round": "Round of 32",
       "homeGoals": 3,
       "awayGoals": 0,
       "status": "FT",
@@ -30138,6 +30296,8 @@
       }
     },
     "ENGLAND-CONGO DR": {
+      "fixtureId": 1567307,
+      "round": "Round of 32",
       "homeGoals": null,
       "awayGoals": null,
       "status": "NS",
@@ -30146,6 +30306,8 @@
       "referee": "A. Makhadmeh"
     },
     "BELGIUM-SENEGAL": {
+      "fixtureId": 1567308,
+      "round": "Round of 32",
       "homeGoals": null,
       "awayGoals": null,
       "status": "NS",
@@ -30154,6 +30316,8 @@
       "referee": "S. Martinez"
     },
     "USA-BOSNIA & HERZEGOVINA": {
+      "fixtureId": 1562586,
+      "round": "Round of 32",
       "homeGoals": null,
       "awayGoals": null,
       "status": "NS",
@@ -30162,6 +30326,8 @@
       "referee": "R. Claus"
     },
     "SPAIN-AUSTRIA": {
+      "fixtureId": 1567311,
+      "round": "Round of 32",
       "homeGoals": null,
       "awayGoals": null,
       "status": "NS",
@@ -30170,6 +30336,8 @@
       "referee": "G. Nyberg"
     },
     "PORTUGAL-CROATIA": {
+      "fixtureId": 1567309,
+      "round": "Round of 32",
       "homeGoals": null,
       "awayGoals": null,
       "status": "NS",
@@ -30178,6 +30346,8 @@
       "referee": "E. Eskas"
     },
     "SWITZERLAND-ALGERIA": {
+      "fixtureId": 1567312,
+      "round": "Round of 32",
       "homeGoals": null,
       "awayGoals": null,
       "status": "NS",
@@ -30186,6 +30356,8 @@
       "referee": "Y. Perez"
     },
     "AUSTRALIA-EGYPT": {
+      "fixtureId": 1565178,
+      "round": "Round of 32",
       "homeGoals": null,
       "awayGoals": null,
       "status": "NS",
@@ -30194,6 +30366,8 @@
       "referee": null
     },
     "ARGENTINA-CAPE VERDE": {
+      "fixtureId": 1565179,
+      "round": "Round of 32",
       "homeGoals": null,
       "awayGoals": null,
       "status": "NS",
@@ -30202,6 +30376,8 @@
       "referee": null
     },
     "COLOMBIA-GHANA": {
+      "fixtureId": 1567310,
+      "round": "Round of 32",
       "homeGoals": null,
       "awayGoals": null,
       "status": "NS",
@@ -30210,6 +30386,8 @@
       "referee": null
     },
     "CANADA-MOROCCO": {
+      "fixtureId": 1567824,
+      "round": "Round of 16",
       "homeGoals": null,
       "awayGoals": null,
       "status": "NS",
@@ -30218,6 +30396,8 @@
       "referee": null
     },
     "BRAZIL-NORWAY": {
+      "fixtureId": 1568100,
+      "round": "Round of 16",
       "homeGoals": null,
       "awayGoals": null,
       "status": "NS",
