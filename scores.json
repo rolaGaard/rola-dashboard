@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-01T03:25:16.073722Z",
+  "updated": "2026-07-01T03:26:11.327312Z",
   "matches": {
     "MEXICO-SOUTH AFRICA": {
       "fixtureId": 1489369,
@@ -30047,14 +30047,14 @@
       "homeGoals": 2,
       "awayGoals": 0,
       "status": "2H",
-      "elapsed": 63,
+      "elapsed": 64,
       "kickoffUTC": "2026-07-01T01:00:00+00:00",
       "referee": "Slavko Vin\u010di\u0107, Slovenia",
       "events": [
         {
           "type": "Goal",
           "detail": "Normal Goal",
-          "player": "J. Quinones",
+          "player": "Juli\u00e1n Qui\u00f1ones",
           "team": "MEXICO",
           "minute": 22,
           "extra": null
@@ -30062,7 +30062,7 @@
         {
           "type": "Goal",
           "detail": "Normal Goal",
-          "player": "R. Jimenez",
+          "player": "Ra\u00fal Jim\u00e9nez",
           "team": "MEXICO",
           "minute": 31,
           "extra": null
@@ -30070,34 +30070,34 @@
         {
           "type": "Card",
           "detail": "Yellow Card",
-          "player": "A. Franco",
+          "player": "Alan Franco",
           "team": "ECUADOR",
-          "minute": 45,
-          "extra": 1
+          "minute": 46,
+          "extra": null
         }
       ],
       "substitutions": {
         "ECUADOR": [
           {
-            "out": "A. Franco",
-            "in": "Y. Medina",
-            "minute": 46
+            "out": "Joel Ordonez",
+            "in": "Angelo Preciado",
+            "minute": 45
           },
           {
-            "out": "J. Ordonez",
-            "in": "A. Preciado",
-            "minute": 46
+            "out": "Alan Franco",
+            "in": "Yaimar Medina",
+            "minute": 45
           },
           {
-            "out": "E. Valencia",
-            "in": "K. Rodriguez",
+            "out": "Enner Valencia",
+            "in": "Kevin Rodriguez",
             "minute": 59
           }
         ],
         "MEXICO": [
           {
-            "out": "G. Mora",
-            "in": "B. Gutierrez",
+            "out": "Gilberto Mora",
+            "in": "Brian Gutierrez",
             "minute": 58
           }
         ]
