@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-01T03:22:11.320048Z",
+  "updated": "2026-07-01T03:23:10.632898Z",
   "matches": {
     "MEXICO-ECUADOR": {
       "fixtureId": 1567306,
@@ -7,7 +7,7 @@
       "homeGoals": 2,
       "awayGoals": 0,
       "status": "2H",
-      "elapsed": 60,
+      "elapsed": 61,
       "kickoffUTC": "2026-07-01T01:00:00+00:00",
       "referee": "Slavko Vin\u010di\u0107, Slovenia",
       "events": [
@@ -58,7 +58,7 @@
           {
             "out": "G. Mora",
             "in": "B. Gutierrez",
-            "minute": 59
+            "minute": 58
           }
         ]
       },
