@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-01T21:40:25.726485Z",
+  "updated": "2026-07-01T21:41:11.385928Z",
   "matches": {
     "BELGIUM-SENEGAL": {
       "fixtureId": 1567308,
@@ -7,7 +7,7 @@
       "homeGoals": 0,
       "awayGoals": 2,
       "status": "2H",
-      "elapsed": 78,
+      "elapsed": 79,
       "kickoffUTC": "2026-07-01T20:00:00+00:00",
       "referee": "Said Martinez, Honduras",
       "events": [
@@ -65,6 +65,11 @@
             "out": "H. Vanaken",
             "in": "D. Moreira",
             "minute": 63
+          },
+          {
+            "out": "M. De Cuyper",
+            "in": "T. Meunier",
+            "minute": 78
           }
         ],
         "SENEGAL": [
