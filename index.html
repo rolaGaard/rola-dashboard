@@ -300,7 +300,28 @@
     display:grid; grid-template-columns:1fr 3fr 1fr; gap:10px;
     align-items:start; width:100%;
   }
-  .groups-col { display:flex; flex-direction:column; gap:8px; min-width:0; }
+  .rotate-toast {
+    position:fixed; top:50%; left:50%; transform:translate(-50%,-50%);
+    z-index:9999; pointer-events:none;
+    display:flex; flex-direction:column; align-items:center; gap:8px;
+    animation: rotate-fade 1.8s ease forwards;
+  }
+  .rotate-icon {
+    font-size:52px;
+    animation: rotate-phone 1.8s ease forwards;
+  }
+  @keyframes rotate-phone {
+    0%   { transform: rotate(0deg); opacity:0; }
+    20%  { transform: rotate(0deg); opacity:1; }
+    70%  { transform: rotate(90deg); opacity:1; }
+    100% { transform: rotate(90deg); opacity:0; }
+  }
+  @keyframes rotate-fade {
+    0%   { opacity:0; }
+    15%  { opacity:1; }
+    75%  { opacity:1; }
+    100% { opacity:0; }
+  }
   .groups-below {
     display:grid; grid-template-columns:repeat(6,1fr); gap:8px; margin-top:20px;
   }
@@ -944,6 +965,10 @@
 </div>
 
 <div id="group-zoom-modal" class="shortcut-instructions" style="display:none;">
+
+<div id="rotate-toast" class="rotate-toast" style="display:none;">
+  <div class="rotate-icon">📱</div>
+</div>
   <div class="shortcut-instructions-box group-zoom-box">
     <button id="group-zoom-close" class="cookie-banner-close" aria-label="Cerrar">✕</button>
     <div id="group-zoom-content"></div>
@@ -2242,7 +2267,17 @@ function render() {
     document.querySelector('.search-wrap').style.display = 'none';
     document.getElementById('matches').style.display = 'none';
     document.getElementById('bracket-view').style.display = '';
-    renderBracket(); updateCounters(); return;
+    renderBracket();
+    // En portrait, mostrar el hint de rotación solo la primera vez
+    if (window.innerHeight > window.innerWidth) {
+      const toast = document.getElementById('rotate-toast');
+      if (toast && !toast._shown) {
+        toast._shown = true;
+        toast.style.display = 'flex';
+        setTimeout(() => { toast.style.display = 'none'; }, 1900);
+      }
+    }
+    updateCounters(); return;
   }
   document.querySelector('.search-wrap').style.display = '';
   document.getElementById('matches').style.display = '';
