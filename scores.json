@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-01T21:36:11.901919Z",
+  "updated": "2026-07-01T21:37:11.864212Z",
   "matches": {
     "BELGIUM-SENEGAL": {
       "fixtureId": 1567308,
@@ -76,6 +76,11 @@
           {
             "out": "I. Ndiaye",
             "in": "I. Mbaye",
+            "minute": 73
+          },
+          {
+            "out": "H. Diarra",
+            "in": "P. M. Sarr",
             "minute": 73
           }
         ]
