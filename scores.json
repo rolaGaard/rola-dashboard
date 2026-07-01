@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-01T03:37:10.723139Z",
+  "updated": "2026-07-01T03:38:13.943955Z",
   "matches": {
     "MEXICO-ECUADOR": {
       "fixtureId": 1567306,
@@ -7,7 +7,7 @@
       "homeGoals": 2,
       "awayGoals": 0,
       "status": "2H",
-      "elapsed": 75,
+      "elapsed": 76,
       "kickoffUTC": "2026-07-01T01:00:00+00:00",
       "referee": "Slavko Vin\u010di\u0107, Slovenia",
       "events": [
@@ -63,7 +63,7 @@
           {
             "out": "L. Romo",
             "in": "O. Vargas",
-            "minute": 74
+            "minute": 73
           },
           {
             "out": "R. Jimenez",
