@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-02T20:51:09.888653Z",
+  "updated": "2026-07-02T20:52:13.566125Z",
   "matches": {
     "MEXICO-SOUTH AFRICA": {
       "fixtureId": 1489369,
@@ -31609,10 +31609,10 @@
     "SPAIN-AUSTRIA": {
       "fixtureId": 1567311,
       "round": "Round of 32",
-      "homeGoals": 2,
+      "homeGoals": 3,
       "awayGoals": 0,
       "status": "2H",
-      "elapsed": 89,
+      "elapsed": 90,
       "kickoffUTC": "2026-07-02T19:00:00+00:00",
       "referee": "Glenn Nyberg, Sweden",
       "events": [
