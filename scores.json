@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-02T01:47:09.859794Z",
+  "updated": "2026-07-02T01:48:13.310774Z",
   "matches": {
     "USA-BOSNIA & HERZEGOVINA": {
       "fixtureId": 1562586,
@@ -7,7 +7,7 @@
       "homeGoals": 1,
       "awayGoals": 0,
       "status": "2H",
-      "elapsed": 81,
+      "elapsed": 82,
       "kickoffUTC": "2026-07-02T00:00:00+00:00",
       "referee": "Raphael Claus, Brazil",
       "events": [
@@ -25,6 +25,14 @@
           "player": "F. Balogun",
           "team": "USA",
           "minute": 64,
+          "extra": null
+        },
+        {
+          "type": "Card",
+          "detail": "Yellow Card",
+          "player": "S. Radeljic",
+          "team": "BOSNIA & HERZEGOVINA",
+          "minute": 80,
           "extra": null
         }
       ],
