@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-02T20:50:29.139509Z",
+  "updated": "2026-07-02T20:51:09.888653Z",
   "matches": {
     "MEXICO-SOUTH AFRICA": {
       "fixtureId": 1489369,
@@ -31638,6 +31638,14 @@
           "player": "Stefan Posch",
           "team": "AUSTRIA",
           "minute": 83,
+          "extra": null
+        },
+        {
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "player": "Mikel Oyarzabal",
+          "team": "SPAIN",
+          "minute": 89,
           "extra": null
         }
       ],
