@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-02T20:55:15.474563Z",
+  "updated": "2026-07-02T20:56:14.295216Z",
   "matches": {
     "SPAIN-AUSTRIA": {
       "fixtureId": 1567311,
@@ -91,6 +91,11 @@
           {
             "out": "Pedri",
             "in": "F. Ruiz",
+            "minute": 90
+          },
+          {
+            "out": "A. Laporte",
+            "in": "M. Pubill",
             "minute": 90
           }
         ]
