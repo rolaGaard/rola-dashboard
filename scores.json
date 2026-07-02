@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-02T22:29:10.570369Z",
+  "updated": "2026-07-02T22:30:44.136714Z",
   "matches": {
     "MEXICO-SOUTH AFRICA": {
       "fixtureId": 1489369,
@@ -31892,7 +31892,285 @@
       "status": "NS",
       "elapsed": null,
       "kickoffUTC": "2026-07-02T23:00:00+00:00",
-      "referee": "Espen Eskas, Norway"
+      "referee": "Espen Eskas, Norway",
+      "lineups": {
+        "PORTUGAL": {
+          "formation": "4-2-3-1",
+          "coach": "Roberto Martinez",
+          "startXI": [
+            {
+              "name": "Diogo Costa",
+              "number": 1,
+              "pos": "G"
+            },
+            {
+              "name": "Jo\u00e3o Cancelo",
+              "number": 20,
+              "pos": "D"
+            },
+            {
+              "name": "R\u00faben Dias",
+              "number": 3,
+              "pos": "D"
+            },
+            {
+              "name": "Renato Veiga",
+              "number": 13,
+              "pos": "D"
+            },
+            {
+              "name": "Nuno Mendes",
+              "number": 25,
+              "pos": "D"
+            },
+            {
+              "name": "Jo\u00e3o Neves",
+              "number": 15,
+              "pos": "M"
+            },
+            {
+              "name": "Vitinha",
+              "number": 23,
+              "pos": "M"
+            },
+            {
+              "name": "Pedro Neto",
+              "number": 18,
+              "pos": "M"
+            },
+            {
+              "name": "Bruno Fernandes",
+              "number": 8,
+              "pos": "M"
+            },
+            {
+              "name": "Rafael Le\u00e3o",
+              "number": 17,
+              "pos": "M"
+            },
+            {
+              "name": "Cristiano Ronaldo",
+              "number": 7,
+              "pos": "F"
+            }
+          ],
+          "substitutes": [
+            {
+              "name": "Jos\u00e9 S\u00e1",
+              "number": 12,
+              "pos": "G"
+            },
+            {
+              "name": "Rui Silva",
+              "number": 22,
+              "pos": "G"
+            },
+            {
+              "name": "Tom\u00e1s Ara\u00fajo",
+              "number": 4,
+              "pos": "D"
+            },
+            {
+              "name": "N\u00e9lson Semedo",
+              "number": 2,
+              "pos": "D"
+            },
+            {
+              "name": "Matheus Nunes",
+              "number": 6,
+              "pos": "M"
+            },
+            {
+              "name": "Gon\u00e7alo In\u00e1cio",
+              "number": 14,
+              "pos": "D"
+            },
+            {
+              "name": "Diogo Dalot",
+              "number": 5,
+              "pos": "D"
+            },
+            {
+              "name": "Francisco Trinc\u00e3o",
+              "number": 16,
+              "pos": "F"
+            },
+            {
+              "name": "Gon\u00e7alo Guedes",
+              "number": 19,
+              "pos": "F"
+            },
+            {
+              "name": "Bernardo Silva",
+              "number": 10,
+              "pos": "M"
+            },
+            {
+              "name": "R\u00faben Neves",
+              "number": 21,
+              "pos": "M"
+            },
+            {
+              "name": "Sam\u00fa Costa",
+              "number": 24,
+              "pos": "M"
+            },
+            {
+              "name": "Francisco Concei\u00e7\u00e3o",
+              "number": 26,
+              "pos": "F"
+            },
+            {
+              "name": "Gon\u00e7alo Ramos",
+              "number": 9,
+              "pos": "F"
+            },
+            {
+              "name": "Jo\u00e3o F\u00e9lix",
+              "number": 11,
+              "pos": "F"
+            }
+          ]
+        },
+        "CROATIA": {
+          "formation": "4-2-3-1",
+          "coach": "Zlatko Dalic",
+          "startXI": [
+            {
+              "name": "Dominik Livakovi\u0107",
+              "number": 1,
+              "pos": "G"
+            },
+            {
+              "name": "Josip Stani\u0161i\u0107",
+              "number": 2,
+              "pos": "D"
+            },
+            {
+              "name": "Josip \u0160utalo",
+              "number": 6,
+              "pos": "D"
+            },
+            {
+              "name": "Marin Pongra\u010di\u0107",
+              "number": 3,
+              "pos": "D"
+            },
+            {
+              "name": "Ivan Peri\u0161i\u0107",
+              "number": 14,
+              "pos": "D"
+            },
+            {
+              "name": "Luka Modri\u0107",
+              "number": 10,
+              "pos": "M"
+            },
+            {
+              "name": "Mateo Kova\u010di\u0107",
+              "number": 8,
+              "pos": "M"
+            },
+            {
+              "name": "Nikola Vla\u0161i\u0107",
+              "number": 13,
+              "pos": "M"
+            },
+            {
+              "name": "Petar Su\u010di\u0107",
+              "number": 17,
+              "pos": "M"
+            },
+            {
+              "name": "Martin Baturina",
+              "number": 16,
+              "pos": "M"
+            },
+            {
+              "name": "Ante Budimir",
+              "number": 11,
+              "pos": "F"
+            }
+          ],
+          "substitutes": [
+            {
+              "name": "Ivor Pandur",
+              "number": 12,
+              "pos": "G"
+            },
+            {
+              "name": "Dominik Kotarski",
+              "number": 23,
+              "pos": "G"
+            },
+            {
+              "name": "Jo\u0161ko Gvardiol",
+              "number": 4,
+              "pos": "D"
+            },
+            {
+              "name": "Duje \u0106aleta-Car",
+              "number": 5,
+              "pos": "D"
+            },
+            {
+              "name": "Luka Vu\u0161kovi\u0107",
+              "number": 22,
+              "pos": "D"
+            },
+            {
+              "name": "Martin Erli\u0107",
+              "number": 25,
+              "pos": "D"
+            },
+            {
+              "name": "Nikola Moro",
+              "number": 7,
+              "pos": "M"
+            },
+            {
+              "name": "Mario Pa\u0161ali\u0107",
+              "number": 15,
+              "pos": "M"
+            },
+            {
+              "name": "Marco Pa\u0161ali\u0107",
+              "number": 24,
+              "pos": "F"
+            },
+            {
+              "name": "Toni Fruk",
+              "number": 19,
+              "pos": "M"
+            },
+            {
+              "name": "Luka Su\u010di\u0107",
+              "number": 21,
+              "pos": "M"
+            },
+            {
+              "name": "Kristijan Jaki\u0107",
+              "number": 18,
+              "pos": "M"
+            },
+            {
+              "name": "Andrej Kramari\u0107",
+              "number": 9,
+              "pos": "F"
+            },
+            {
+              "name": "Igor Matanovi\u0107",
+              "number": 20,
+              "pos": "F"
+            },
+            {
+              "name": "Petar Musa",
+              "number": 26,
+              "pos": "F"
+            }
+          ]
+        }
+      }
     },
     "SWITZERLAND-ALGERIA": {
       "fixtureId": 1567312,
