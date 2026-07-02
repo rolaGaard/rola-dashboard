@@ -1,13 +1,13 @@
 {
-  "updated": "2026-07-02T01:48:13.310774Z",
+  "updated": "2026-07-02T01:49:10.203234Z",
   "matches": {
     "USA-BOSNIA & HERZEGOVINA": {
       "fixtureId": 1562586,
       "round": "Round of 32",
-      "homeGoals": 1,
+      "homeGoals": 2,
       "awayGoals": 0,
       "status": "2H",
-      "elapsed": 82,
+      "elapsed": 83,
       "kickoffUTC": "2026-07-02T00:00:00+00:00",
       "referee": "Raphael Claus, Brazil",
       "events": [
@@ -33,6 +33,14 @@
           "player": "S. Radeljic",
           "team": "BOSNIA & HERZEGOVINA",
           "minute": 80,
+          "extra": null
+        },
+        {
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "player": "M. Tillman",
+          "team": "USA",
+          "minute": 82,
           "extra": null
         }
       ],
