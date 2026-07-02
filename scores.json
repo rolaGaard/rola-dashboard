@@ -1,12 +1,12 @@
 {
-  "updated": "2026-07-02T23:49:11.989451Z",
+  "updated": "2026-07-02T23:50:27.937003Z",
   "matches": {
     "PORTUGAL-CROATIA": {
       "fixtureId": 1567309,
       "round": "Round of 32",
       "homeGoals": 0,
       "awayGoals": 0,
-      "status": "1H",
+      "status": "HT",
       "elapsed": 45,
       "kickoffUTC": "2026-07-02T23:00:00+00:00",
       "referee": "Espen Eskas, Norway",
