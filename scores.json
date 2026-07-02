@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-02T01:54:13.339680Z",
+  "updated": "2026-07-02T01:55:17.922938Z",
   "matches": {
     "USA-BOSNIA & HERZEGOVINA": {
       "fixtureId": 1562586,
@@ -7,7 +7,7 @@
       "homeGoals": 2,
       "awayGoals": 0,
       "status": "2H",
-      "elapsed": 88,
+      "elapsed": 89,
       "kickoffUTC": "2026-07-02T00:00:00+00:00",
       "referee": "Raphael Claus, Brazil",
       "events": [
@@ -84,7 +84,7 @@
           {
             "out": "S. Dest",
             "in": "S. Berhalter",
-            "minute": 88
+            "minute": 87
           },
           {
             "out": "C. Pulisic",
