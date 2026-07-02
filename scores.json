@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-02T20:54:12.413717Z",
+  "updated": "2026-07-02T20:55:15.474563Z",
   "matches": {
     "SPAIN-AUSTRIA": {
       "fixtureId": 1567311,
@@ -87,6 +87,11 @@
             "out": "Lamine Yamal",
             "in": "Gavi",
             "minute": 85
+          },
+          {
+            "out": "Pedri",
+            "in": "F. Ruiz",
+            "minute": 90
           }
         ]
       },
