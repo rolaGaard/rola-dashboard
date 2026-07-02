@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-02T02:01:09.977265Z",
+  "updated": "2026-07-02T02:02:12.267285Z",
   "matches": {
     "USA-BOSNIA & HERZEGOVINA": {
       "fixtureId": 1562586,
@@ -90,6 +90,11 @@
             "out": "C. Pulisic",
             "in": "R. Pepi",
             "minute": 88
+          },
+          {
+            "out": "W. McKennie",
+            "in": "G. Reyna",
+            "minute": 90
           }
         ]
       },
