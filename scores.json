@@ -1,12 +1,12 @@
 {
-  "updated": "2026-07-02T19:49:12.214625Z",
+  "updated": "2026-07-02T19:50:28.613751Z",
   "matches": {
     "SPAIN-AUSTRIA": {
       "fixtureId": 1567311,
       "round": "Round of 32",
       "homeGoals": 1,
       "awayGoals": 0,
-      "status": "1H",
+      "status": "HT",
       "elapsed": 45,
       "kickoffUTC": "2026-07-02T19:00:00+00:00",
       "referee": "Glenn Nyberg, Sweden",
