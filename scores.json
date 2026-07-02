@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-02T20:45:24.228254Z",
+  "updated": "2026-07-02T20:46:12.938485Z",
   "matches": {
     "SPAIN-AUSTRIA": {
       "fixtureId": 1567311,
@@ -7,7 +7,7 @@
       "homeGoals": 2,
       "awayGoals": 0,
       "status": "2H",
-      "elapsed": 83,
+      "elapsed": 84,
       "kickoffUTC": "2026-07-02T19:00:00+00:00",
       "referee": "Glenn Nyberg, Sweden",
       "events": [
@@ -25,6 +25,14 @@
           "player": "P. Porro",
           "team": "SPAIN",
           "minute": 66,
+          "extra": null
+        },
+        {
+          "type": "Card",
+          "detail": "Yellow Card",
+          "player": "S. Posch",
+          "team": "AUSTRIA",
+          "minute": 83,
           "extra": null
         }
       ],
