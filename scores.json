@@ -1,366 +1,6 @@
 {
-  "updated": "2026-07-02T20:49:09.606606Z",
+  "updated": "2026-07-02T20:50:29.139509Z",
   "matches": {
-    "SPAIN-AUSTRIA": {
-      "fixtureId": 1567311,
-      "round": "Round of 32",
-      "homeGoals": 2,
-      "awayGoals": 0,
-      "status": "2H",
-      "elapsed": 87,
-      "kickoffUTC": "2026-07-02T19:00:00+00:00",
-      "referee": "Glenn Nyberg, Sweden",
-      "events": [
-        {
-          "type": "Goal",
-          "detail": "Normal Goal",
-          "player": "M. Oyarzabal",
-          "team": "SPAIN",
-          "minute": 36,
-          "extra": null
-        },
-        {
-          "type": "Goal",
-          "detail": "Normal Goal",
-          "player": "P. Porro",
-          "team": "SPAIN",
-          "minute": 66,
-          "extra": null
-        },
-        {
-          "type": "Card",
-          "detail": "Yellow Card",
-          "player": "S. Posch",
-          "team": "AUSTRIA",
-          "minute": 83,
-          "extra": null
-        }
-      ],
-      "substitutions": {
-        "AUSTRIA": [
-          {
-            "out": "N. Seiwald",
-            "in": "C. Chukwuemeka",
-            "minute": 46
-          },
-          {
-            "out": "X. Schlager",
-            "in": "F. Grillitsch",
-            "minute": 46
-          },
-          {
-            "out": "M. Gregoritsch",
-            "in": "M. Arnautovic",
-            "minute": 60
-          },
-          {
-            "out": "R. Schmid",
-            "in": "S. Kalajdzic",
-            "minute": 60
-          },
-          {
-            "out": "S. Posch",
-            "in": "A. Prass",
-            "minute": 86
-          }
-        ],
-        "SPAIN": [
-          {
-            "out": "A. Baena",
-            "in": "F. Torres",
-            "minute": 71
-          },
-          {
-            "out": "D. Olmo",
-            "in": "M. Merino",
-            "minute": 71
-          },
-          {
-            "out": "Lamine Yamal",
-            "in": "Gavi",
-            "minute": 85
-          }
-        ]
-      },
-      "lineups": {
-        "SPAIN": {
-          "formation": "4-1-2-3",
-          "coach": "Luis de la Fuente",
-          "startXI": [
-            {
-              "name": "Unai Sim\u00f3n",
-              "number": 23,
-              "pos": "G"
-            },
-            {
-              "name": "Pedro Porro",
-              "number": 12,
-              "pos": "D"
-            },
-            {
-              "name": "Pau Cubars\u00ed Paredes",
-              "number": 22,
-              "pos": "D"
-            },
-            {
-              "name": "Aymeric Laporte",
-              "number": 14,
-              "pos": "D"
-            },
-            {
-              "name": "Marc Cucurella",
-              "number": 24,
-              "pos": "D"
-            },
-            {
-              "name": "Rodri",
-              "number": 16,
-              "pos": "M"
-            },
-            {
-              "name": "Dani Olmo",
-              "number": 10,
-              "pos": "M"
-            },
-            {
-              "name": "Pedri",
-              "number": 20,
-              "pos": "M"
-            },
-            {
-              "name": "Lamine Yamal",
-              "number": 19,
-              "pos": "F"
-            },
-            {
-              "name": "Mikel Oyarzabal",
-              "number": 21,
-              "pos": "F"
-            },
-            {
-              "name": "\u00c1lex Baena",
-              "number": 15,
-              "pos": "M"
-            }
-          ],
-          "substitutes": [
-            {
-              "name": "David Raya",
-              "number": 1,
-              "pos": "G"
-            },
-            {
-              "name": "Marcos Llorente",
-              "number": 5,
-              "pos": "D"
-            },
-            {
-              "name": "\u00c1lex Grimaldo",
-              "number": 3,
-              "pos": "D"
-            },
-            {
-              "name": "Mikel Merino",
-              "number": 6,
-              "pos": "M"
-            },
-            {
-              "name": "V\u00edctor Mu\u00f1oz",
-              "number": 25,
-              "pos": "F"
-            },
-            {
-              "name": "Fabi\u00e1n Ruiz",
-              "number": 8,
-              "pos": "M"
-            },
-            {
-              "name": "Borja Iglesias",
-              "number": 26,
-              "pos": "F"
-            },
-            {
-              "name": "Ferran Torres",
-              "number": 7,
-              "pos": "F"
-            },
-            {
-              "name": "Eric Garc\u00eda",
-              "number": 4,
-              "pos": "D"
-            },
-            {
-              "name": "Mart\u00edn Zubimendi",
-              "number": 18,
-              "pos": "M"
-            },
-            {
-              "name": "Yeremy Pino",
-              "number": 11,
-              "pos": "F"
-            },
-            {
-              "name": "Joan Garc\u00eda",
-              "number": 13,
-              "pos": "G"
-            },
-            {
-              "name": "Nico Williams",
-              "number": 17,
-              "pos": "F"
-            },
-            {
-              "name": "Gavi",
-              "number": 9,
-              "pos": "M"
-            },
-            {
-              "name": "Marc Pubill",
-              "number": 2,
-              "pos": "D"
-            }
-          ]
-        },
-        "AUSTRIA": {
-          "formation": "4-2-3-1",
-          "coach": "R. Rangnick",
-          "startXI": [
-            {
-              "name": "A. Schlager",
-              "number": 1,
-              "pos": "G"
-            },
-            {
-              "name": "S. Posch",
-              "number": 5,
-              "pos": "D"
-            },
-            {
-              "name": "K. Danso",
-              "number": 3,
-              "pos": "D"
-            },
-            {
-              "name": "D. Alaba",
-              "number": 8,
-              "pos": "D"
-            },
-            {
-              "name": "K. Laimer",
-              "number": 20,
-              "pos": "M"
-            },
-            {
-              "name": "N. Seiwald",
-              "number": 6,
-              "pos": "M"
-            },
-            {
-              "name": "X. Schlager",
-              "number": 4,
-              "pos": "M"
-            },
-            {
-              "name": "R. Schmid",
-              "number": 18,
-              "pos": "M"
-            },
-            {
-              "name": "P. Wanner",
-              "number": 24,
-              "pos": "M"
-            },
-            {
-              "name": "M. Sabitzer",
-              "number": 9,
-              "pos": "M"
-            },
-            {
-              "name": "M. Gregoritsch",
-              "number": 11,
-              "pos": "F"
-            }
-          ],
-          "substitutes": [
-            {
-              "name": "C. Chukwuemeka",
-              "number": 17,
-              "pos": "M"
-            },
-            {
-              "name": "D. Affengruber",
-              "number": 2,
-              "pos": "D"
-            },
-            {
-              "name": "P. Wimmer",
-              "number": 21,
-              "pos": "F"
-            },
-            {
-              "name": "A. Prass",
-              "number": 22,
-              "pos": "D"
-            },
-            {
-              "name": "F. Wiegele",
-              "number": 12,
-              "pos": "G"
-            },
-            {
-              "name": "M. Svoboda",
-              "number": 25,
-              "pos": "D"
-            },
-            {
-              "name": "S. Kalajdzic",
-              "number": 14,
-              "pos": "F"
-            },
-            {
-              "name": "D. Ljubi\u010di\u0107",
-              "number": 19,
-              "pos": "M"
-            },
-            {
-              "name": "M. Friedl",
-              "number": 23,
-              "pos": "D"
-            },
-            {
-              "name": "P. Pentz",
-              "number": 13,
-              "pos": "G"
-            },
-            {
-              "name": "P. Lienhart",
-              "number": 15,
-              "pos": "D"
-            },
-            {
-              "name": "F. Grillitsch",
-              "number": 10,
-              "pos": "M"
-            },
-            {
-              "name": "A. Sch\u00f6pf",
-              "number": 26,
-              "pos": "M"
-            },
-            {
-              "name": "P. Mwene",
-              "number": 16,
-              "pos": "D"
-            },
-            {
-              "name": "M. Arnautovi\u0107",
-              "number": 7,
-              "pos": "F"
-            }
-          ]
-        }
-      }
-    },
     "MEXICO-SOUTH AFRICA": {
       "fixtureId": 1489369,
       "round": "Group Stage - 1",
@@ -31965,6 +31605,366 @@
       "elapsed": null,
       "kickoffUTC": "2026-07-07T00:00:00+00:00",
       "referee": null
+    },
+    "SPAIN-AUSTRIA": {
+      "fixtureId": 1567311,
+      "round": "Round of 32",
+      "homeGoals": 2,
+      "awayGoals": 0,
+      "status": "2H",
+      "elapsed": 89,
+      "kickoffUTC": "2026-07-02T19:00:00+00:00",
+      "referee": "Glenn Nyberg, Sweden",
+      "events": [
+        {
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "player": "Mikel Oyarzabal",
+          "team": "SPAIN",
+          "minute": 36,
+          "extra": null
+        },
+        {
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "player": "Pedro Porro",
+          "team": "SPAIN",
+          "minute": 66,
+          "extra": null
+        },
+        {
+          "type": "Card",
+          "detail": "Yellow Card",
+          "player": "Stefan Posch",
+          "team": "AUSTRIA",
+          "minute": 83,
+          "extra": null
+        }
+      ],
+      "substitutions": {
+        "AUSTRIA": [
+          {
+            "out": "Xaver Schlager",
+            "in": "Florian Grillitsch",
+            "minute": 45
+          },
+          {
+            "out": "Nicolas Seiwald",
+            "in": "Carney Chukwuemeka",
+            "minute": 45
+          },
+          {
+            "out": "Romano Schmid",
+            "in": "Sasa Kalajdzic",
+            "minute": 60
+          },
+          {
+            "out": "Michael Gregoritsch",
+            "in": "Marko Arnautovi\u0107",
+            "minute": 60
+          },
+          {
+            "out": "Stefan Posch",
+            "in": "Alexander Prass",
+            "minute": 85
+          }
+        ],
+        "SPAIN": [
+          {
+            "out": "Alejandro Baena Rodr\u00edguez",
+            "in": "Ferr\u00e1n Torres",
+            "minute": 71
+          },
+          {
+            "out": "Daniel Olmo Carvajal",
+            "in": "Mikel Merino",
+            "minute": 71
+          },
+          {
+            "out": "Lamine Yamal",
+            "in": "Pablo Mart\u00edn P\u00e1ez Gavira",
+            "minute": 85
+          }
+        ]
+      },
+      "lineups": {
+        "SPAIN": {
+          "formation": "4-1-2-3",
+          "coach": "Luis de la Fuente",
+          "startXI": [
+            {
+              "name": "Unai Sim\u00f3n",
+              "number": 23,
+              "pos": "G"
+            },
+            {
+              "name": "Pedro Porro",
+              "number": 12,
+              "pos": "D"
+            },
+            {
+              "name": "Pau Cubars\u00ed Paredes",
+              "number": 22,
+              "pos": "D"
+            },
+            {
+              "name": "Aymeric Laporte",
+              "number": 14,
+              "pos": "D"
+            },
+            {
+              "name": "Marc Cucurella",
+              "number": 24,
+              "pos": "D"
+            },
+            {
+              "name": "Rodri",
+              "number": 16,
+              "pos": "M"
+            },
+            {
+              "name": "Dani Olmo",
+              "number": 10,
+              "pos": "M"
+            },
+            {
+              "name": "Pedri",
+              "number": 20,
+              "pos": "M"
+            },
+            {
+              "name": "Lamine Yamal",
+              "number": 19,
+              "pos": "F"
+            },
+            {
+              "name": "Mikel Oyarzabal",
+              "number": 21,
+              "pos": "F"
+            },
+            {
+              "name": "\u00c1lex Baena",
+              "number": 15,
+              "pos": "M"
+            }
+          ],
+          "substitutes": [
+            {
+              "name": "David Raya",
+              "number": 1,
+              "pos": "G"
+            },
+            {
+              "name": "Marcos Llorente",
+              "number": 5,
+              "pos": "D"
+            },
+            {
+              "name": "\u00c1lex Grimaldo",
+              "number": 3,
+              "pos": "D"
+            },
+            {
+              "name": "Mikel Merino",
+              "number": 6,
+              "pos": "M"
+            },
+            {
+              "name": "V\u00edctor Mu\u00f1oz",
+              "number": 25,
+              "pos": "F"
+            },
+            {
+              "name": "Fabi\u00e1n Ruiz",
+              "number": 8,
+              "pos": "M"
+            },
+            {
+              "name": "Borja Iglesias",
+              "number": 26,
+              "pos": "F"
+            },
+            {
+              "name": "Ferran Torres",
+              "number": 7,
+              "pos": "F"
+            },
+            {
+              "name": "Eric Garc\u00eda",
+              "number": 4,
+              "pos": "D"
+            },
+            {
+              "name": "Mart\u00edn Zubimendi",
+              "number": 18,
+              "pos": "M"
+            },
+            {
+              "name": "Yeremy Pino",
+              "number": 11,
+              "pos": "F"
+            },
+            {
+              "name": "Joan Garc\u00eda",
+              "number": 13,
+              "pos": "G"
+            },
+            {
+              "name": "Nico Williams",
+              "number": 17,
+              "pos": "F"
+            },
+            {
+              "name": "Gavi",
+              "number": 9,
+              "pos": "M"
+            },
+            {
+              "name": "Marc Pubill",
+              "number": 2,
+              "pos": "D"
+            }
+          ]
+        },
+        "AUSTRIA": {
+          "formation": "4-2-3-1",
+          "coach": "R. Rangnick",
+          "startXI": [
+            {
+              "name": "A. Schlager",
+              "number": 1,
+              "pos": "G"
+            },
+            {
+              "name": "S. Posch",
+              "number": 5,
+              "pos": "D"
+            },
+            {
+              "name": "K. Danso",
+              "number": 3,
+              "pos": "D"
+            },
+            {
+              "name": "D. Alaba",
+              "number": 8,
+              "pos": "D"
+            },
+            {
+              "name": "K. Laimer",
+              "number": 20,
+              "pos": "M"
+            },
+            {
+              "name": "N. Seiwald",
+              "number": 6,
+              "pos": "M"
+            },
+            {
+              "name": "X. Schlager",
+              "number": 4,
+              "pos": "M"
+            },
+            {
+              "name": "R. Schmid",
+              "number": 18,
+              "pos": "M"
+            },
+            {
+              "name": "P. Wanner",
+              "number": 24,
+              "pos": "M"
+            },
+            {
+              "name": "M. Sabitzer",
+              "number": 9,
+              "pos": "M"
+            },
+            {
+              "name": "M. Gregoritsch",
+              "number": 11,
+              "pos": "F"
+            }
+          ],
+          "substitutes": [
+            {
+              "name": "C. Chukwuemeka",
+              "number": 17,
+              "pos": "M"
+            },
+            {
+              "name": "D. Affengruber",
+              "number": 2,
+              "pos": "D"
+            },
+            {
+              "name": "P. Wimmer",
+              "number": 21,
+              "pos": "F"
+            },
+            {
+              "name": "A. Prass",
+              "number": 22,
+              "pos": "D"
+            },
+            {
+              "name": "F. Wiegele",
+              "number": 12,
+              "pos": "G"
+            },
+            {
+              "name": "M. Svoboda",
+              "number": 25,
+              "pos": "D"
+            },
+            {
+              "name": "S. Kalajdzic",
+              "number": 14,
+              "pos": "F"
+            },
+            {
+              "name": "D. Ljubi\u010di\u0107",
+              "number": 19,
+              "pos": "M"
+            },
+            {
+              "name": "M. Friedl",
+              "number": 23,
+              "pos": "D"
+            },
+            {
+              "name": "P. Pentz",
+              "number": 13,
+              "pos": "G"
+            },
+            {
+              "name": "P. Lienhart",
+              "number": 15,
+              "pos": "D"
+            },
+            {
+              "name": "F. Grillitsch",
+              "number": 10,
+              "pos": "M"
+            },
+            {
+              "name": "A. Sch\u00f6pf",
+              "number": 26,
+              "pos": "M"
+            },
+            {
+              "name": "P. Mwene",
+              "number": 16,
+              "pos": "D"
+            },
+            {
+              "name": "M. Arnautovi\u0107",
+              "number": 7,
+              "pos": "F"
+            }
+          ]
+        }
+      }
     }
   }
 }
