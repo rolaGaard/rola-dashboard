@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-02T23:16:11.738776Z",
+  "updated": "2026-07-02T23:17:09.374173Z",
   "matches": {
     "PORTUGAL-CROATIA": {
       "fixtureId": 1567309,
@@ -7,10 +7,19 @@
       "homeGoals": 0,
       "awayGoals": 0,
       "status": "1H",
-      "elapsed": 16,
+      "elapsed": 17,
       "kickoffUTC": "2026-07-02T23:00:00+00:00",
       "referee": "Espen Eskas, Norway",
-      "events": [],
+      "events": [
+        {
+          "type": "Card",
+          "detail": "Yellow Card",
+          "player": "R. Dias",
+          "team": "PORTUGAL",
+          "minute": 17,
+          "extra": null
+        }
+      ],
       "lineups": {
         "PORTUGAL": {
           "formation": "4-2-3-1",
