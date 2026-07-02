@@ -1,13 +1,13 @@
 {
-  "updated": "2026-07-02T20:28:13.822891Z",
+  "updated": "2026-07-02T20:29:09.917322Z",
   "matches": {
     "SPAIN-AUSTRIA": {
       "fixtureId": 1567311,
       "round": "Round of 32",
-      "homeGoals": 1,
+      "homeGoals": 2,
       "awayGoals": 0,
       "status": "2H",
-      "elapsed": 66,
+      "elapsed": 67,
       "kickoffUTC": "2026-07-02T19:00:00+00:00",
       "referee": "Glenn Nyberg, Sweden",
       "events": [
@@ -17,6 +17,14 @@
           "player": "M. Oyarzabal",
           "team": "SPAIN",
           "minute": 36,
+          "extra": null
+        },
+        {
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "player": "P. Porro",
+          "team": "SPAIN",
+          "minute": 66,
           "extra": null
         }
       ],
