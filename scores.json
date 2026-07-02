@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-02T20:33:13.493012Z",
+  "updated": "2026-07-02T20:34:12.263514Z",
   "matches": {
     "SPAIN-AUSTRIA": {
       "fixtureId": 1567311,
@@ -7,7 +7,7 @@
       "homeGoals": 2,
       "awayGoals": 0,
       "status": "2H",
-      "elapsed": 71,
+      "elapsed": 72,
       "kickoffUTC": "2026-07-02T19:00:00+00:00",
       "referee": "Glenn Nyberg, Sweden",
       "events": [
@@ -49,6 +49,18 @@
             "out": "R. Schmid",
             "in": "S. Kalajdzic",
             "minute": 60
+          }
+        ],
+        "SPAIN": [
+          {
+            "out": "A. Baena",
+            "in": "F. Torres",
+            "minute": 71
+          },
+          {
+            "out": "D. Olmo",
+            "in": "M. Merino",
+            "minute": 71
           }
         ]
       },
