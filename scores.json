@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-02T23:20:30.754059Z",
+  "updated": "2026-07-02T23:21:11.574744Z",
   "matches": {
     "PORTUGAL-CROATIA": {
       "fixtureId": 1567309,
@@ -14,7 +14,7 @@
         {
           "type": "Card",
           "detail": "Yellow Card",
-          "player": "R. Dias",
+          "player": "R\u00faben Dias",
           "team": "PORTUGAL",
           "minute": 17,
           "extra": null
