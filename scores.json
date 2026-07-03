@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-03T00:30:48.124679Z",
+  "updated": "2026-07-03T00:31:11.360297Z",
   "matches": {
     "PORTUGAL-CROATIA": {
       "fixtureId": 1567309,
@@ -50,6 +50,11 @@
             "out": "A. Budimir",
             "in": "I. Matanovic",
             "minute": 46
+          },
+          {
+            "out": "M. Baturina",
+            "in": "M. Pasalic",
+            "minute": 68
           }
         ],
         "PORTUGAL": [
