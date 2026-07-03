@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-03T19:36:14.007437Z",
+  "updated": "2026-07-03T19:37:10.172695Z",
   "matches": {
     "AUSTRALIA-EGYPT": {
       "fixtureId": 1565178,
@@ -7,7 +7,7 @@
       "homeGoals": 1,
       "awayGoals": 1,
       "status": "2H",
-      "elapsed": 74,
+      "elapsed": 75,
       "kickoffUTC": "2026-07-03T18:00:00+00:00",
       "referee": "Gustavo Tejera, Uruguay",
       "events": [
@@ -34,6 +34,16 @@
             "out": "J. Bos",
             "in": "K. Trewin",
             "minute": 46
+          },
+          {
+            "out": "C. Volpato",
+            "in": "A. Hrustic",
+            "minute": 74
+          },
+          {
+            "out": "N. Irankunda",
+            "in": "M. Toure",
+            "minute": 74
           }
         ],
         "EGYPT": [
