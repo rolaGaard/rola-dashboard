@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-03T23:29:10.952658Z",
+  "updated": "2026-07-03T23:30:44.868992Z",
   "matches": {
     "ARGENTINA-CAPE VERDE": {
       "fixtureId": 1565179,
@@ -7,7 +7,7 @@
       "homeGoals": 1,
       "awayGoals": 1,
       "status": "2H",
-      "elapsed": 69,
+      "elapsed": 70,
       "kickoffUTC": "2026-07-03T22:00:00+00:00",
       "referee": "Drew Fischer, Canada",
       "events": [
@@ -25,6 +25,14 @@
           "player": "D. Duarte",
           "team": "CAPE VERDE",
           "minute": 59,
+          "extra": null
+        },
+        {
+          "type": "Card",
+          "detail": "Yellow Card",
+          "player": "K. Lenini",
+          "team": "CAPE VERDE",
+          "minute": 68,
           "extra": null
         }
       ],
