@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-03T04:46:11.494973Z",
+  "updated": "2026-07-03T04:47:11.697943Z",
   "matches": {
     "MEXICO-SOUTH AFRICA": {
       "fixtureId": 1489369,
@@ -32359,7 +32359,7 @@
       "homeGoals": 2,
       "awayGoals": 0,
       "status": "2H",
-      "elapsed": 86,
+      "elapsed": 87,
       "kickoffUTC": "2026-07-03T03:00:00+00:00",
       "referee": "Yael Falcon Perez, Argentina",
       "events": [
@@ -32439,6 +32439,16 @@
             "out": "Breel Embolo",
             "in": "Zeki Amdouni",
             "minute": 83
+          },
+          {
+            "out": "Dan Ndoye",
+            "in": "Michel Aebischer",
+            "minute": 87
+          },
+          {
+            "out": "Denis Zakaria",
+            "in": "Silvan Widmer",
+            "minute": 87
           }
         ]
       },
