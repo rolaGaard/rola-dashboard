@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-03T20:52:11.767732Z",
+  "updated": "2026-07-03T20:53:09.537562Z",
   "matches": {
     "MEXICO-SOUTH AFRICA": {
       "fixtureId": 1489369,
@@ -32636,97 +32636,17 @@
         }
       }
     },
-    "ARGENTINA-CAPE VERDE": {
-      "fixtureId": 1565179,
-      "round": "Round of 32",
-      "homeGoals": null,
-      "awayGoals": null,
-      "status": "NS",
-      "elapsed": null,
-      "kickoffUTC": "2026-07-03T22:00:00+00:00",
-      "referee": "D. Fischer"
-    },
-    "COLOMBIA-GHANA": {
-      "fixtureId": 1567310,
-      "round": "Round of 32",
-      "homeGoals": null,
-      "awayGoals": null,
-      "status": "NS",
-      "elapsed": null,
-      "kickoffUTC": "2026-07-04T01:30:00+00:00",
-      "referee": "C. Turpin"
-    },
-    "CANADA-MOROCCO": {
-      "fixtureId": 1567824,
-      "round": "Round of 16",
-      "homeGoals": null,
-      "awayGoals": null,
-      "status": "NS",
-      "elapsed": null,
-      "kickoffUTC": "2026-07-04T17:00:00+00:00",
-      "referee": null
-    },
-    "PARAGUAY-FRANCE": {
-      "fixtureId": 1569870,
-      "round": "Round of 16",
-      "homeGoals": null,
-      "awayGoals": null,
-      "status": "NS",
-      "elapsed": null,
-      "kickoffUTC": "2026-07-04T21:00:00+00:00",
-      "referee": null
-    },
-    "BRAZIL-NORWAY": {
-      "fixtureId": 1568100,
-      "round": "Round of 16",
-      "homeGoals": null,
-      "awayGoals": null,
-      "status": "NS",
-      "elapsed": null,
-      "kickoffUTC": "2026-07-05T20:00:00+00:00",
-      "referee": null
-    },
-    "MEXICO-ENGLAND": {
-      "fixtureId": 1570714,
-      "round": "Round of 16",
-      "homeGoals": null,
-      "awayGoals": null,
-      "status": "NS",
-      "elapsed": null,
-      "kickoffUTC": "2026-07-06T00:00:00+00:00",
-      "referee": null
-    },
-    "PORTUGAL-SPAIN": {
-      "fixtureId": 1576756,
-      "round": "Round of 16",
-      "homeGoals": null,
-      "awayGoals": null,
-      "status": "NS",
-      "elapsed": null,
-      "kickoffUTC": "2026-07-06T19:00:00+00:00",
-      "referee": null
-    },
-    "USA-BELGIUM": {
-      "fixtureId": 1570715,
-      "round": "Round of 16",
-      "homeGoals": null,
-      "awayGoals": null,
-      "status": "NS",
-      "elapsed": null,
-      "kickoffUTC": "2026-07-07T00:00:00+00:00",
-      "referee": null
-    },
     "AUSTRALIA-EGYPT": {
       "fixtureId": 1565178,
       "round": "Round of 32",
       "homeGoals": 1,
       "awayGoals": 1,
-      "status": "P",
-      "elapsed": null,
+      "status": "PEN",
+      "elapsed": 120,
       "kickoffUTC": "2026-07-03T18:00:00+00:00",
       "referee": "Gustavo Tejera, Uruguay",
       "penaltyHome": 2,
-      "penaltyAway": 3,
+      "penaltyAway": 4,
       "events": [
         {
           "type": "Goal",
@@ -33131,6 +33051,86 @@
           ]
         }
       }
+    },
+    "ARGENTINA-CAPE VERDE": {
+      "fixtureId": 1565179,
+      "round": "Round of 32",
+      "homeGoals": null,
+      "awayGoals": null,
+      "status": "NS",
+      "elapsed": null,
+      "kickoffUTC": "2026-07-03T22:00:00+00:00",
+      "referee": "D. Fischer"
+    },
+    "COLOMBIA-GHANA": {
+      "fixtureId": 1567310,
+      "round": "Round of 32",
+      "homeGoals": null,
+      "awayGoals": null,
+      "status": "NS",
+      "elapsed": null,
+      "kickoffUTC": "2026-07-04T01:30:00+00:00",
+      "referee": "C. Turpin"
+    },
+    "CANADA-MOROCCO": {
+      "fixtureId": 1567824,
+      "round": "Round of 16",
+      "homeGoals": null,
+      "awayGoals": null,
+      "status": "NS",
+      "elapsed": null,
+      "kickoffUTC": "2026-07-04T17:00:00+00:00",
+      "referee": null
+    },
+    "PARAGUAY-FRANCE": {
+      "fixtureId": 1569870,
+      "round": "Round of 16",
+      "homeGoals": null,
+      "awayGoals": null,
+      "status": "NS",
+      "elapsed": null,
+      "kickoffUTC": "2026-07-04T21:00:00+00:00",
+      "referee": null
+    },
+    "BRAZIL-NORWAY": {
+      "fixtureId": 1568100,
+      "round": "Round of 16",
+      "homeGoals": null,
+      "awayGoals": null,
+      "status": "NS",
+      "elapsed": null,
+      "kickoffUTC": "2026-07-05T20:00:00+00:00",
+      "referee": null
+    },
+    "MEXICO-ENGLAND": {
+      "fixtureId": 1570714,
+      "round": "Round of 16",
+      "homeGoals": null,
+      "awayGoals": null,
+      "status": "NS",
+      "elapsed": null,
+      "kickoffUTC": "2026-07-06T00:00:00+00:00",
+      "referee": null
+    },
+    "PORTUGAL-SPAIN": {
+      "fixtureId": 1576756,
+      "round": "Round of 16",
+      "homeGoals": null,
+      "awayGoals": null,
+      "status": "NS",
+      "elapsed": null,
+      "kickoffUTC": "2026-07-06T19:00:00+00:00",
+      "referee": null
+    },
+    "USA-BELGIUM": {
+      "fixtureId": 1570715,
+      "round": "Round of 16",
+      "homeGoals": null,
+      "awayGoals": null,
+      "status": "NS",
+      "elapsed": null,
+      "kickoffUTC": "2026-07-07T00:00:00+00:00",
+      "referee": null
     }
   }
 }
