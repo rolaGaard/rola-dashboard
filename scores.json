@@ -1,6 +1,280 @@
 {
-  "updated": "2026-07-03T02:59:09.201261Z",
+  "updated": "2026-07-03T03:01:00.904789Z",
   "matches": {
+    "SWITZERLAND-ALGERIA": {
+      "fixtureId": 1567312,
+      "round": "Round of 32",
+      "homeGoals": 0,
+      "awayGoals": 0,
+      "status": "1H",
+      "elapsed": 1,
+      "kickoffUTC": "2026-07-03T03:00:00+00:00",
+      "referee": "Yael Falcon Perez, Argentina",
+      "events": [],
+      "lineups": {
+        "SWITZERLAND": {
+          "formation": "4-2-3-1",
+          "coach": "Murat Yakin",
+          "startXI": [
+            {
+              "name": "Gregor Kobel",
+              "number": 1,
+              "pos": "G"
+            },
+            {
+              "name": "Denis Zakaria",
+              "number": 6,
+              "pos": "D"
+            },
+            {
+              "name": "Nico Elvedi",
+              "number": 4,
+              "pos": "D"
+            },
+            {
+              "name": "Manuel Akanji",
+              "number": 5,
+              "pos": "D"
+            },
+            {
+              "name": "Ricardo Rodr\u00edguez",
+              "number": 13,
+              "pos": "D"
+            },
+            {
+              "name": "Remo Freuler",
+              "number": 8,
+              "pos": "M"
+            },
+            {
+              "name": "Granit Xhaka",
+              "number": 10,
+              "pos": "M"
+            },
+            {
+              "name": "Dan Ndoye",
+              "number": 11,
+              "pos": "M"
+            },
+            {
+              "name": "Johan Manzambi",
+              "number": 9,
+              "pos": "M"
+            },
+            {
+              "name": "Rub\u00e9n Vargas",
+              "number": 17,
+              "pos": "M"
+            },
+            {
+              "name": "Breel Embolo",
+              "number": 7,
+              "pos": "F"
+            }
+          ],
+          "substitutes": [
+            {
+              "name": "Yvon Mvogo",
+              "number": 12,
+              "pos": "G"
+            },
+            {
+              "name": "Marvin Keller",
+              "number": 21,
+              "pos": "G"
+            },
+            {
+              "name": "Eray C\u00f6mert",
+              "number": 18,
+              "pos": "D"
+            },
+            {
+              "name": "Aur\u00e8le Amenda",
+              "number": 24,
+              "pos": "D"
+            },
+            {
+              "name": "Silvan Widmer",
+              "number": 3,
+              "pos": "D"
+            },
+            {
+              "name": "Miro Muheim",
+              "number": 2,
+              "pos": "D"
+            },
+            {
+              "name": "Christian Fassnacht",
+              "number": 16,
+              "pos": "M"
+            },
+            {
+              "name": "Ardon Jashari",
+              "number": 14,
+              "pos": "M"
+            },
+            {
+              "name": "Djibril Sow",
+              "number": 15,
+              "pos": "M"
+            },
+            {
+              "name": "Fabian Rieder",
+              "number": 22,
+              "pos": "M"
+            },
+            {
+              "name": "Michel Aebischer",
+              "number": 20,
+              "pos": "M"
+            },
+            {
+              "name": "C\u00e9dric Itten",
+              "number": 26,
+              "pos": "F"
+            },
+            {
+              "name": "Noah Okafor",
+              "number": 19,
+              "pos": "F"
+            },
+            {
+              "name": "Zeki Amdouni",
+              "number": 23,
+              "pos": "F"
+            }
+          ]
+        },
+        "ALGERIA": {
+          "formation": "4-2-3-1",
+          "coach": "Vladimir Petkovic",
+          "startXI": [
+            {
+              "name": "Luca Zidane",
+              "number": 23,
+              "pos": "G"
+            },
+            {
+              "name": "Rafik Belghali",
+              "number": 17,
+              "pos": "D"
+            },
+            {
+              "name": "A\u00efssa Mandi",
+              "number": 2,
+              "pos": "D"
+            },
+            {
+              "name": "Ramy Bensebaini",
+              "number": 21,
+              "pos": "D"
+            },
+            {
+              "name": "Rayan A\u00eft-Nouri",
+              "number": 15,
+              "pos": "D"
+            },
+            {
+              "name": "Ramiz Zerrouki",
+              "number": 6,
+              "pos": "M"
+            },
+            {
+              "name": "Nabil Bentaleb",
+              "number": 19,
+              "pos": "M"
+            },
+            {
+              "name": "Riyad Mahrez",
+              "number": 7,
+              "pos": "M"
+            },
+            {
+              "name": "Houssem Aouar",
+              "number": 8,
+              "pos": "M"
+            },
+            {
+              "name": "Far\u00e8s Cha\u00efbi",
+              "number": 10,
+              "pos": "M"
+            },
+            {
+              "name": "Ibrahim Maza",
+              "number": 22,
+              "pos": "F"
+            }
+          ],
+          "substitutes": [
+            {
+              "name": "Melvin Mastil",
+              "number": 1,
+              "pos": "G"
+            },
+            {
+              "name": "Oussama Benbot",
+              "number": 16,
+              "pos": "G"
+            },
+            {
+              "name": "Achref Abada",
+              "number": 3,
+              "pos": "D"
+            },
+            {
+              "name": "Mohamed Tougai",
+              "number": 4,
+              "pos": "D"
+            },
+            {
+              "name": "Zineddine Belaid",
+              "number": 5,
+              "pos": "D"
+            },
+            {
+              "name": "Jaouen Hadjam",
+              "number": 13,
+              "pos": "D"
+            },
+            {
+              "name": "Samir Sophian Chergui",
+              "number": 26,
+              "pos": "D"
+            },
+            {
+              "name": "Adil Boulbina",
+              "number": 20,
+              "pos": "F"
+            },
+            {
+              "name": "Anis Hadj Moussa",
+              "number": 11,
+              "pos": "F"
+            },
+            {
+              "name": "Hicham Boudaoui",
+              "number": 14,
+              "pos": "M"
+            },
+            {
+              "name": "Yassine Titraoui",
+              "number": 24,
+              "pos": "M"
+            },
+            {
+              "name": "Amine Gouiri",
+              "number": 9,
+              "pos": "F"
+            },
+            {
+              "name": "Far\u00e8s Ghedjemis",
+              "number": 25,
+              "pos": "F"
+            }
+          ]
+        }
+      }
+    },
     "MEXICO-SOUTH AFRICA": {
       "fixtureId": 1489369,
       "round": "Group Stage - 1",
@@ -32267,279 +32541,6 @@
             {
               "name": "Petar Musa",
               "number": 26,
-              "pos": "F"
-            }
-          ]
-        }
-      }
-    },
-    "SWITZERLAND-ALGERIA": {
-      "fixtureId": 1567312,
-      "round": "Round of 32",
-      "homeGoals": null,
-      "awayGoals": null,
-      "status": "NS",
-      "elapsed": null,
-      "kickoffUTC": "2026-07-03T03:00:00+00:00",
-      "referee": "Yael Falcon Perez, Argentina",
-      "lineups": {
-        "SWITZERLAND": {
-          "formation": "4-2-3-1",
-          "coach": "Murat Yakin",
-          "startXI": [
-            {
-              "name": "Gregor Kobel",
-              "number": 1,
-              "pos": "G"
-            },
-            {
-              "name": "Denis Zakaria",
-              "number": 6,
-              "pos": "D"
-            },
-            {
-              "name": "Nico Elvedi",
-              "number": 4,
-              "pos": "D"
-            },
-            {
-              "name": "Manuel Akanji",
-              "number": 5,
-              "pos": "D"
-            },
-            {
-              "name": "Ricardo Rodr\u00edguez",
-              "number": 13,
-              "pos": "D"
-            },
-            {
-              "name": "Remo Freuler",
-              "number": 8,
-              "pos": "M"
-            },
-            {
-              "name": "Granit Xhaka",
-              "number": 10,
-              "pos": "M"
-            },
-            {
-              "name": "Dan Ndoye",
-              "number": 11,
-              "pos": "M"
-            },
-            {
-              "name": "Johan Manzambi",
-              "number": 9,
-              "pos": "M"
-            },
-            {
-              "name": "Rub\u00e9n Vargas",
-              "number": 17,
-              "pos": "M"
-            },
-            {
-              "name": "Breel Embolo",
-              "number": 7,
-              "pos": "F"
-            }
-          ],
-          "substitutes": [
-            {
-              "name": "Yvon Mvogo",
-              "number": 12,
-              "pos": "G"
-            },
-            {
-              "name": "Marvin Keller",
-              "number": 21,
-              "pos": "G"
-            },
-            {
-              "name": "Eray C\u00f6mert",
-              "number": 18,
-              "pos": "D"
-            },
-            {
-              "name": "Aur\u00e8le Amenda",
-              "number": 24,
-              "pos": "D"
-            },
-            {
-              "name": "Silvan Widmer",
-              "number": 3,
-              "pos": "D"
-            },
-            {
-              "name": "Miro Muheim",
-              "number": 2,
-              "pos": "D"
-            },
-            {
-              "name": "Christian Fassnacht",
-              "number": 16,
-              "pos": "M"
-            },
-            {
-              "name": "Ardon Jashari",
-              "number": 14,
-              "pos": "M"
-            },
-            {
-              "name": "Djibril Sow",
-              "number": 15,
-              "pos": "M"
-            },
-            {
-              "name": "Fabian Rieder",
-              "number": 22,
-              "pos": "M"
-            },
-            {
-              "name": "Michel Aebischer",
-              "number": 20,
-              "pos": "M"
-            },
-            {
-              "name": "C\u00e9dric Itten",
-              "number": 26,
-              "pos": "F"
-            },
-            {
-              "name": "Noah Okafor",
-              "number": 19,
-              "pos": "F"
-            },
-            {
-              "name": "Zeki Amdouni",
-              "number": 23,
-              "pos": "F"
-            }
-          ]
-        },
-        "ALGERIA": {
-          "formation": "4-2-3-1",
-          "coach": "Vladimir Petkovic",
-          "startXI": [
-            {
-              "name": "Luca Zidane",
-              "number": 23,
-              "pos": "G"
-            },
-            {
-              "name": "Rafik Belghali",
-              "number": 17,
-              "pos": "D"
-            },
-            {
-              "name": "A\u00efssa Mandi",
-              "number": 2,
-              "pos": "D"
-            },
-            {
-              "name": "Ramy Bensebaini",
-              "number": 21,
-              "pos": "D"
-            },
-            {
-              "name": "Rayan A\u00eft-Nouri",
-              "number": 15,
-              "pos": "D"
-            },
-            {
-              "name": "Ramiz Zerrouki",
-              "number": 6,
-              "pos": "M"
-            },
-            {
-              "name": "Nabil Bentaleb",
-              "number": 19,
-              "pos": "M"
-            },
-            {
-              "name": "Riyad Mahrez",
-              "number": 7,
-              "pos": "M"
-            },
-            {
-              "name": "Houssem Aouar",
-              "number": 8,
-              "pos": "M"
-            },
-            {
-              "name": "Far\u00e8s Cha\u00efbi",
-              "number": 10,
-              "pos": "M"
-            },
-            {
-              "name": "Ibrahim Maza",
-              "number": 22,
-              "pos": "F"
-            }
-          ],
-          "substitutes": [
-            {
-              "name": "Melvin Mastil",
-              "number": 1,
-              "pos": "G"
-            },
-            {
-              "name": "Oussama Benbot",
-              "number": 16,
-              "pos": "G"
-            },
-            {
-              "name": "Achref Abada",
-              "number": 3,
-              "pos": "D"
-            },
-            {
-              "name": "Mohamed Tougai",
-              "number": 4,
-              "pos": "D"
-            },
-            {
-              "name": "Zineddine Belaid",
-              "number": 5,
-              "pos": "D"
-            },
-            {
-              "name": "Jaouen Hadjam",
-              "number": 13,
-              "pos": "D"
-            },
-            {
-              "name": "Samir Sophian Chergui",
-              "number": 26,
-              "pos": "D"
-            },
-            {
-              "name": "Adil Boulbina",
-              "number": 20,
-              "pos": "F"
-            },
-            {
-              "name": "Anis Hadj Moussa",
-              "number": 11,
-              "pos": "F"
-            },
-            {
-              "name": "Hicham Boudaoui",
-              "number": 14,
-              "pos": "M"
-            },
-            {
-              "name": "Yassine Titraoui",
-              "number": 24,
-              "pos": "M"
-            },
-            {
-              "name": "Amine Gouiri",
-              "number": 9,
-              "pos": "F"
-            },
-            {
-              "name": "Far\u00e8s Ghedjemis",
-              "number": 25,
               "pos": "F"
             }
           ]
