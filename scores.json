@@ -1,12 +1,12 @@
 {
-  "updated": "2026-07-03T18:51:10.966656Z",
+  "updated": "2026-07-03T18:52:11.043685Z",
   "matches": {
     "AUSTRALIA-EGYPT": {
       "fixtureId": 1565178,
       "round": "Round of 32",
       "homeGoals": 0,
       "awayGoals": 1,
-      "status": "1H",
+      "status": "HT",
       "elapsed": 45,
       "kickoffUTC": "2026-07-03T18:00:00+00:00",
       "referee": "Gustavo Tejera, Uruguay",
