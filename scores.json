@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-03T04:29:10.371088Z",
+  "updated": "2026-07-03T04:30:46.682514Z",
   "matches": {
     "MEXICO-SOUTH AFRICA": {
       "fixtureId": 1489369,
@@ -32359,7 +32359,7 @@
       "homeGoals": 2,
       "awayGoals": 0,
       "status": "2H",
-      "elapsed": 69,
+      "elapsed": 71,
       "kickoffUTC": "2026-07-03T03:00:00+00:00",
       "referee": "Yael Falcon Perez, Argentina",
       "events": [
@@ -32399,6 +32399,18 @@
             "out": "Ramiz Zerrouki",
             "in": "Amine Gouiri",
             "minute": 58
+          }
+        ],
+        "SWITZERLAND": [
+          {
+            "out": "Rub\u00e9n Vargas",
+            "in": "Fabian Rieder",
+            "minute": 71
+          },
+          {
+            "out": "Johan Manzambi",
+            "in": "Noah Okafor",
+            "minute": 71
           }
         ]
       },
