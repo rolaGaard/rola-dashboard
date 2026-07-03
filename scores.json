@@ -1,11 +1,11 @@
 {
-  "updated": "2026-07-03T01:03:10.096239Z",
+  "updated": "2026-07-03T01:04:12.203795Z",
   "matches": {
     "PORTUGAL-CROATIA": {
       "fixtureId": 1567309,
       "round": "Round of 32",
       "homeGoals": 2,
-      "awayGoals": 1,
+      "awayGoals": 2,
       "status": "2H",
       "elapsed": 90,
       "kickoffUTC": "2026-07-02T23:00:00+00:00",
@@ -58,6 +58,14 @@
           "team": "CROATIA",
           "minute": 90,
           "extra": 8
+        },
+        {
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "player": "J. Gvardiol",
+          "team": "CROATIA",
+          "minute": 90,
+          "extra": 13
         }
       ],
       "substitutions": {
