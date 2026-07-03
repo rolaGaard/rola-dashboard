@@ -1,13 +1,13 @@
 {
-  "updated": "2026-07-03T04:05:18.569046Z",
+  "updated": "2026-07-03T04:06:11.603684Z",
   "matches": {
     "SWITZERLAND-ALGERIA": {
       "fixtureId": 1567312,
       "round": "Round of 32",
-      "homeGoals": 1,
+      "homeGoals": 2,
       "awayGoals": 0,
-      "status": "HT",
-      "elapsed": 45,
+      "status": "2H",
+      "elapsed": 47,
       "kickoffUTC": "2026-07-03T03:00:00+00:00",
       "referee": "Yael Falcon Perez, Argentina",
       "events": [
@@ -25,6 +25,14 @@
           "player": "F. Chaibi",
           "team": "ALGERIA",
           "minute": 36,
+          "extra": null
+        },
+        {
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "player": null,
+          "team": "SWITZERLAND",
+          "minute": 46,
           "extra": null
         }
       ],
