@@ -1,279 +1,6 @@
 {
-  "updated": "2026-07-03T19:09:10.618313Z",
+  "updated": "2026-07-03T19:10:27.286112Z",
   "matches": {
-    "AUSTRALIA-EGYPT": {
-      "fixtureId": 1565178,
-      "round": "Round of 32",
-      "homeGoals": 0,
-      "awayGoals": 1,
-      "status": "HT",
-      "elapsed": 45,
-      "kickoffUTC": "2026-07-03T18:00:00+00:00",
-      "referee": "Gustavo Tejera, Uruguay",
-      "events": [
-        {
-          "type": "Goal",
-          "detail": "Normal Goal",
-          "player": "E. Ashour",
-          "team": "EGYPT",
-          "minute": 13,
-          "extra": null
-        }
-      ],
-      "lineups": {
-        "AUSTRALIA": {
-          "formation": "3-4-2-1",
-          "coach": "Tony Popovic",
-          "startXI": [
-            {
-              "name": "Patrick Beach",
-              "number": 18,
-              "pos": "G"
-            },
-            {
-              "name": "Alessandro Circati",
-              "number": 3,
-              "pos": "D"
-            },
-            {
-              "name": "Harry Souttar",
-              "number": 19,
-              "pos": "D"
-            },
-            {
-              "name": "Lucas Herrington",
-              "number": 25,
-              "pos": "D"
-            },
-            {
-              "name": "Jordan Bos",
-              "number": 5,
-              "pos": "M"
-            },
-            {
-              "name": "Aiden O'Neill",
-              "number": 13,
-              "pos": "M"
-            },
-            {
-              "name": "Jackson Irvine",
-              "number": 22,
-              "pos": "M"
-            },
-            {
-              "name": "Aziz Behich",
-              "number": 16,
-              "pos": "M"
-            },
-            {
-              "name": "Cristian Volpato",
-              "number": 20,
-              "pos": "F"
-            },
-            {
-              "name": "Connor Metcalfe",
-              "number": 8,
-              "pos": "F"
-            },
-            {
-              "name": "Nestory Irankunda",
-              "number": 17,
-              "pos": "F"
-            }
-          ],
-          "substitutes": [
-            {
-              "name": "Mathew Ryan",
-              "number": 1,
-              "pos": "G"
-            },
-            {
-              "name": "Paul Izzo",
-              "number": 12,
-              "pos": "G"
-            },
-            {
-              "name": "Milo\u0161 Degenek",
-              "number": 2,
-              "pos": "D"
-            },
-            {
-              "name": "Jason Geria",
-              "number": 6,
-              "pos": "D"
-            },
-            {
-              "name": "Cameron Burgess",
-              "number": 21,
-              "pos": "D"
-            },
-            {
-              "name": "Kai Trewin",
-              "number": 15,
-              "pos": "D"
-            },
-            {
-              "name": "Cameron Devlin",
-              "number": 14,
-              "pos": "M"
-            },
-            {
-              "name": "Paul Okon-Engstler",
-              "number": 24,
-              "pos": "M"
-            },
-            {
-              "name": "Ajdin Hrusti\u0107",
-              "number": 10,
-              "pos": "M"
-            },
-            {
-              "name": "Awer Mabil",
-              "number": 11,
-              "pos": "M"
-            },
-            {
-              "name": "Nishan Velupillay",
-              "number": 23,
-              "pos": "F"
-            },
-            {
-              "name": "Mohamed Tour\u00e9",
-              "number": 9,
-              "pos": "F"
-            },
-            {
-              "name": "Tete Yengi",
-              "number": 26,
-              "pos": "F"
-            }
-          ]
-        },
-        "EGYPT": {
-          "formation": "4-2-3-1",
-          "coach": "Hossam Hassan",
-          "startXI": [
-            {
-              "name": "Mostafa Shobeir",
-              "number": 23,
-              "pos": "G"
-            },
-            {
-              "name": "Mohamed Hany",
-              "number": 3,
-              "pos": "D"
-            },
-            {
-              "name": "Rami Rabia",
-              "number": 5,
-              "pos": "D"
-            },
-            {
-              "name": "Yasser Ibrahim",
-              "number": 2,
-              "pos": "D"
-            },
-            {
-              "name": "Karim Hafez",
-              "number": 15,
-              "pos": "D"
-            },
-            {
-              "name": "Hamdy Fathy",
-              "number": 14,
-              "pos": "M"
-            },
-            {
-              "name": "Marwan Attia",
-              "number": 19,
-              "pos": "M"
-            },
-            {
-              "name": "Emam Ashour",
-              "number": 8,
-              "pos": "M"
-            },
-            {
-              "name": "Mohamed Salah",
-              "number": 10,
-              "pos": "M"
-            },
-            {
-              "name": "Mostafa Ziko",
-              "number": 11,
-              "pos": "M"
-            },
-            {
-              "name": "Omar Marmoush",
-              "number": 22,
-              "pos": "F"
-            }
-          ],
-          "substitutes": [
-            {
-              "name": "Mohamed El-Shenawy",
-              "number": 1,
-              "pos": "G"
-            },
-            {
-              "name": "Mohamed Alaa",
-              "number": 26,
-              "pos": "G"
-            },
-            {
-              "name": "Mahdi Soliman",
-              "number": 16,
-              "pos": "G"
-            },
-            {
-              "name": "Hossam Abdelmaguid",
-              "number": 4,
-              "pos": "D"
-            },
-            {
-              "name": "Tarek Alaa",
-              "number": 24,
-              "pos": "D"
-            },
-            {
-              "name": "Nabil Donga",
-              "number": 18,
-              "pos": "M"
-            },
-            {
-              "name": "Mahmoud Tr\u00e9z\u00e9guet",
-              "number": 7,
-              "pos": "F"
-            },
-            {
-              "name": "Mahmoud Saber",
-              "number": 21,
-              "pos": "M"
-            },
-            {
-              "name": "Haissem Hassan",
-              "number": 12,
-              "pos": "F"
-            },
-            {
-              "name": "Ibrahim Adel",
-              "number": 20,
-              "pos": "F"
-            },
-            {
-              "name": "Zizo",
-              "number": 25,
-              "pos": "F"
-            },
-            {
-              "name": "Hamza Abdelkarim",
-              "number": 9,
-              "pos": "F"
-            }
-          ]
-        }
-      }
-    },
     "MEXICO-SOUTH AFRICA": {
       "fixtureId": 1489369,
       "round": "Group Stage - 1",
@@ -32988,6 +32715,288 @@
       "elapsed": null,
       "kickoffUTC": "2026-07-07T00:00:00+00:00",
       "referee": null
+    },
+    "AUSTRALIA-EGYPT": {
+      "fixtureId": 1565178,
+      "round": "Round of 32",
+      "homeGoals": 0,
+      "awayGoals": 1,
+      "status": "2H",
+      "elapsed": 48,
+      "kickoffUTC": "2026-07-03T18:00:00+00:00",
+      "referee": "Gustavo Tejera, Uruguay",
+      "events": [
+        {
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "player": "E. Ashour",
+          "team": "EGYPT",
+          "minute": 13,
+          "extra": null
+        }
+      ],
+      "substitutions": {
+        "AUSTRALIA": [
+          {
+            "out": "J. Bos",
+            "in": "K. Trewin",
+            "minute": 46
+          }
+        ]
+      },
+      "lineups": {
+        "AUSTRALIA": {
+          "formation": "3-4-2-1",
+          "coach": "Tony Popovic",
+          "startXI": [
+            {
+              "name": "Patrick Beach",
+              "number": 18,
+              "pos": "G"
+            },
+            {
+              "name": "Alessandro Circati",
+              "number": 3,
+              "pos": "D"
+            },
+            {
+              "name": "Harry Souttar",
+              "number": 19,
+              "pos": "D"
+            },
+            {
+              "name": "Lucas Herrington",
+              "number": 25,
+              "pos": "D"
+            },
+            {
+              "name": "Jordan Bos",
+              "number": 5,
+              "pos": "M"
+            },
+            {
+              "name": "Aiden O'Neill",
+              "number": 13,
+              "pos": "M"
+            },
+            {
+              "name": "Jackson Irvine",
+              "number": 22,
+              "pos": "M"
+            },
+            {
+              "name": "Aziz Behich",
+              "number": 16,
+              "pos": "M"
+            },
+            {
+              "name": "Cristian Volpato",
+              "number": 20,
+              "pos": "F"
+            },
+            {
+              "name": "Connor Metcalfe",
+              "number": 8,
+              "pos": "F"
+            },
+            {
+              "name": "Nestory Irankunda",
+              "number": 17,
+              "pos": "F"
+            }
+          ],
+          "substitutes": [
+            {
+              "name": "Mathew Ryan",
+              "number": 1,
+              "pos": "G"
+            },
+            {
+              "name": "Paul Izzo",
+              "number": 12,
+              "pos": "G"
+            },
+            {
+              "name": "Milo\u0161 Degenek",
+              "number": 2,
+              "pos": "D"
+            },
+            {
+              "name": "Jason Geria",
+              "number": 6,
+              "pos": "D"
+            },
+            {
+              "name": "Cameron Burgess",
+              "number": 21,
+              "pos": "D"
+            },
+            {
+              "name": "Kai Trewin",
+              "number": 15,
+              "pos": "D"
+            },
+            {
+              "name": "Cameron Devlin",
+              "number": 14,
+              "pos": "M"
+            },
+            {
+              "name": "Paul Okon-Engstler",
+              "number": 24,
+              "pos": "M"
+            },
+            {
+              "name": "Ajdin Hrusti\u0107",
+              "number": 10,
+              "pos": "M"
+            },
+            {
+              "name": "Awer Mabil",
+              "number": 11,
+              "pos": "M"
+            },
+            {
+              "name": "Nishan Velupillay",
+              "number": 23,
+              "pos": "F"
+            },
+            {
+              "name": "Mohamed Tour\u00e9",
+              "number": 9,
+              "pos": "F"
+            },
+            {
+              "name": "Tete Yengi",
+              "number": 26,
+              "pos": "F"
+            }
+          ]
+        },
+        "EGYPT": {
+          "formation": "4-2-3-1",
+          "coach": "Hossam Hassan",
+          "startXI": [
+            {
+              "name": "Mostafa Shobeir",
+              "number": 23,
+              "pos": "G"
+            },
+            {
+              "name": "Mohamed Hany",
+              "number": 3,
+              "pos": "D"
+            },
+            {
+              "name": "Rami Rabia",
+              "number": 5,
+              "pos": "D"
+            },
+            {
+              "name": "Yasser Ibrahim",
+              "number": 2,
+              "pos": "D"
+            },
+            {
+              "name": "Karim Hafez",
+              "number": 15,
+              "pos": "D"
+            },
+            {
+              "name": "Hamdy Fathy",
+              "number": 14,
+              "pos": "M"
+            },
+            {
+              "name": "Marwan Attia",
+              "number": 19,
+              "pos": "M"
+            },
+            {
+              "name": "Emam Ashour",
+              "number": 8,
+              "pos": "M"
+            },
+            {
+              "name": "Mohamed Salah",
+              "number": 10,
+              "pos": "M"
+            },
+            {
+              "name": "Mostafa Ziko",
+              "number": 11,
+              "pos": "M"
+            },
+            {
+              "name": "Omar Marmoush",
+              "number": 22,
+              "pos": "F"
+            }
+          ],
+          "substitutes": [
+            {
+              "name": "Mohamed El-Shenawy",
+              "number": 1,
+              "pos": "G"
+            },
+            {
+              "name": "Mohamed Alaa",
+              "number": 26,
+              "pos": "G"
+            },
+            {
+              "name": "Mahdi Soliman",
+              "number": 16,
+              "pos": "G"
+            },
+            {
+              "name": "Hossam Abdelmaguid",
+              "number": 4,
+              "pos": "D"
+            },
+            {
+              "name": "Tarek Alaa",
+              "number": 24,
+              "pos": "D"
+            },
+            {
+              "name": "Nabil Donga",
+              "number": 18,
+              "pos": "M"
+            },
+            {
+              "name": "Mahmoud Tr\u00e9z\u00e9guet",
+              "number": 7,
+              "pos": "F"
+            },
+            {
+              "name": "Mahmoud Saber",
+              "number": 21,
+              "pos": "M"
+            },
+            {
+              "name": "Haissem Hassan",
+              "number": 12,
+              "pos": "F"
+            },
+            {
+              "name": "Ibrahim Adel",
+              "number": 20,
+              "pos": "F"
+            },
+            {
+              "name": "Zizo",
+              "number": 25,
+              "pos": "F"
+            },
+            {
+              "name": "Hamza Abdelkarim",
+              "number": 9,
+              "pos": "F"
+            }
+          ]
+        }
+      }
     }
   }
 }
