@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-03T20:44:11.824259Z",
+  "updated": "2026-07-03T20:45:26.504132Z",
   "matches": {
     "MEXICO-SOUTH AFRICA": {
       "fixtureId": 1489369,
@@ -32725,6 +32725,8 @@
       "elapsed": null,
       "kickoffUTC": "2026-07-03T18:00:00+00:00",
       "referee": "Gustavo Tejera, Uruguay",
+      "penaltyHome": 0,
+      "penaltyAway": 0,
       "events": [
         {
           "type": "Goal",
@@ -32757,6 +32759,14 @@
           "team": "EGYPT",
           "minute": 120,
           "extra": null
+        },
+        {
+          "type": "Goal",
+          "detail": "Missed Penalty",
+          "player": "H. Souttar",
+          "team": "AUSTRALIA",
+          "minute": 120,
+          "extra": 1
         }
       ],
       "substitutions": {
