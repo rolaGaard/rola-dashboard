@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-03T19:17:11.302986Z",
+  "updated": "2026-07-03T19:18:12.019760Z",
   "matches": {
     "AUSTRALIA-EGYPT": {
       "fixtureId": 1565178,
@@ -7,7 +7,7 @@
       "homeGoals": 1,
       "awayGoals": 1,
       "status": "2H",
-      "elapsed": 55,
+      "elapsed": 56,
       "kickoffUTC": "2026-07-03T18:00:00+00:00",
       "referee": "Gustavo Tejera, Uruguay",
       "events": [
@@ -21,8 +21,8 @@
         },
         {
           "type": "Goal",
-          "detail": "Normal Goal",
-          "player": "H. Souttar",
+          "detail": "Own Goal",
+          "player": "M. Hany",
           "team": "AUSTRALIA",
           "minute": 55,
           "extra": null
