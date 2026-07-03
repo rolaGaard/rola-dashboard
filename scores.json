@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-03T23:40:28.556571Z",
+  "updated": "2026-07-03T23:41:11.464937Z",
   "matches": {
     "ARGENTINA-CAPE VERDE": {
       "fixtureId": 1565179,
@@ -63,6 +63,11 @@
           {
             "out": "R. Mendes",
             "in": "W. Semedo",
+            "minute": 80
+          },
+          {
+            "out": "J. Cabral",
+            "in": "H. Varela",
             "minute": 80
           }
         ]
