@@ -1,13 +1,13 @@
 {
-  "updated": "2026-07-03T00:05:16.506932Z",
+  "updated": "2026-07-03T00:06:14.024068Z",
   "matches": {
     "PORTUGAL-CROATIA": {
       "fixtureId": 1567309,
       "round": "Round of 32",
       "homeGoals": 0,
       "awayGoals": 0,
-      "status": "HT",
-      "elapsed": 45,
+      "status": "2H",
+      "elapsed": 46,
       "kickoffUTC": "2026-07-02T23:00:00+00:00",
       "referee": "Espen Eskas, Norway",
       "events": [
@@ -20,6 +20,15 @@
           "extra": null
         }
       ],
+      "substitutions": {
+        "CROATIA": [
+          {
+            "out": "A. Budimir",
+            "in": "I. Matanovic",
+            "minute": 46
+          }
+        ]
+      },
       "lineups": {
         "PORTUGAL": {
           "formation": "4-2-3-1",
