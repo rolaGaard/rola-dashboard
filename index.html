@@ -908,7 +908,7 @@
     <img class="header-icon" src="icons/icon-192.png" alt="rolaGaard">
     <div class="header-text">
       <div class="header-title">Mundial 2026</div>
-      <div class="header-by">by rolaGaard &nbsp;<span class="app-version">v2.6</span></div>
+      <div class="header-by">by rolaGaard &nbsp;<span class="app-version">v2.7</span></div>
       <div class="header-sub" id="header-sub">USA · Canadá · México</div>
     </div>
   </div>
@@ -3406,30 +3406,153 @@ function buildVbHalfFromSections(sections, side, label16, label8, label4, labelS
   return html;
 }
 
-function buildVbMobileDynamic() {
-  const labels = {
-    r32: t('dieciseisavosTitle').split('(')[0].trim(),
-    r16: t('octavosDeFinal'), qf: t('cuartosDeFinal'),
-    sf: t('semifinales'), final: t('finalTitle'), third: t('tercerPuesto'),
-  };
-  const allCals = [
-    { label: labels.r32, matches: R32_CALENDAR },
-    { label: labels.r16, matches: R16_CALENDAR },
-    { label: labels.qf, matches: QF_CALENDAR },
-    { label: labels.sf, matches: SF_CALENDAR },
-    { label: labels.final, matches: FINAL_CALENDAR },
-    { label: labels.third, matches: THIRD_PLACE_CALENDAR },
-  ];
-  let html = '<div class="vb-mobile">';
-  allCals.forEach(({ label, matches }) => {
-    const cols = matches.length === 1 ? ' one-col' : '';
-    html += '<div class="vb-mobile-round"><div class="vb-mobile-label">' + label + '</div>';
-    html += '<div class="vb-mobile-grid' + cols + '">';
-    matches.forEach(cal => { html += buildVbCardFromMatch(resolveVbMatch(cal)); });
-    html += '</div></div>';
+function buildRadialBracket() {
+  const W = 360, H = 380, cx = W/2, cy = H/2;
+
+  // Radios de cada ronda (de afuera hacia adentro)
+  const R = { team:168, r32:145, r16:115, qf:87, sf:58, final:28 };
+
+  // Orden de los 16 partidos de 16avos en el bracket FIFA (sentido horario desde arriba)
+  const R32_ORDER = [74,77,73,75,83,84,81,82,76,78,79,80,86,88,85,87];
+
+  // Mapeo de árbol del bracket
+  const R16_MAP = [[89,[74,77]],[90,[73,75]],[93,[83,84]],[94,[81,82]],[91,[76,78]],[92,[79,80]],[95,[86,88]],[96,[85,87]]];
+  const QF_MAP  = [[97,[89,90]],[98,[93,94]],[99,[91,92]],[100,[95,96]]];
+  const SF_MAP  = [[101,[97,98]],[102,[99,100]]];
+
+  // Ángulos: cada R32 ocupa 22.5° (360/16), los padres en el punto medio de sus hijos
+  const ang = {};
+  R32_ORDER.forEach((n,i) => { ang['r32_'+n] = i*22.5; });
+  R16_MAP.forEach(([n,[a,b]]) => { ang['r16_'+n] = (ang['r32_'+a]+ang['r32_'+b])/2; });
+  QF_MAP .forEach(([n,[a,b]]) => { ang['qf_' +n] = (ang['r16_'+a]+ang['r16_'+b])/2; });
+  SF_MAP .forEach(([n,[a,b]]) => { ang['sf_' +n] = (ang['qf_' +a]+ang['qf_' +b])/2; });
+
+  // Polar a cartesiano (0° = arriba, sentido horario)
+  function pt(r, deg) {
+    const rad = (deg - 90) * Math.PI / 180;
+    return [cx + r*Math.cos(rad), cy + r*Math.sin(rad)];
+  }
+
+  // Nodo de partido — círculo con marcador o "?"
+  function matchNode(r, deg, resolved, radius=11) {
+    const [nx,ny] = pt(r, deg);
+    const {home,away,homeGoals,awayGoals,status,penaltyHome,penaltyAway} = resolved||{};
+    const now = new Date();
+    const live   = status && isLiveStatus(status);
+    const done   = status && isFinishedStatus(status);
+    const hasScore = homeGoals!==null && homeGoals!==undefined;
+    const fill   = live ? '#CC0000' : done ? '#0f2a5e' : '#1a1f35';
+    const stroke = live ? '#ff4444' : done ? '#3b82f6' : '#334155';
+    let out = `<circle cx="${nx.toFixed(1)}" cy="${ny.toFixed(1)}" r="${radius}" fill="${fill}" stroke="${stroke}" stroke-width="1.5"/>`;
+    if (hasScore) {
+      const sc = homeGoals+'-'+awayGoals + (penaltyHome!=null?' ('+penaltyHome+'-'+penaltyAway+')p':'');
+      out += `<text x="${nx.toFixed(1)}" y="${(ny+3.5).toFixed(1)}" text-anchor="middle" font-size="7.5" font-weight="700" fill="white">${homeGoals}-${awayGoals}</text>`;
+    } else if (home && away) {
+      out += `<text x="${nx.toFixed(1)}" y="${(ny+1).toFixed(1)}" text-anchor="middle" font-size="5.5" fill="#94a3b8">${countryCode(home)}</text>`;
+      out += `<text x="${nx.toFixed(1)}" y="${(ny+8).toFixed(1)}" text-anchor="middle" font-size="5.5" fill="#94a3b8">${countryCode(away)}</text>`;
+    } else {
+      out += `<text x="${nx.toFixed(1)}" y="${(ny+4).toFixed(1)}" text-anchor="middle" font-size="9" fill="#475569">?</text>`;
+    }
+    return out;
+  }
+
+  let svg = `<svg viewBox="0 0 ${W} ${H}" width="100%" style="max-height:82vw;display:block;margin:auto;">`;
+
+  // Anillos de fondo
+  [R.r32,R.r16,R.qf,R.sf].forEach(r => {
+    svg += `<circle cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="#1e2a3a" stroke-width="0.5"/>`;
   });
-  html += '</div>';
-  return html;
+
+  // Líneas R32 → R16
+  R16_MAP.forEach(([r16n,[a,b]]) => {
+    const [x2,y2] = pt(R.r16, ang['r16_'+r16n]);
+    [a,b].forEach(r32n => {
+      const [x1,y1] = pt(R.r32, ang['r32_'+r32n]);
+      svg += `<line x1="${x1.toFixed(1)}" y1="${y1.toFixed(1)}" x2="${x2.toFixed(1)}" y2="${y2.toFixed(1)}" stroke="#2a3a4a" stroke-width="1.5"/>`;
+    });
+  });
+  // R16 → QF
+  QF_MAP.forEach(([qfn,[a,b]]) => {
+    const [x2,y2] = pt(R.qf, ang['qf_'+qfn]);
+    [a,b].forEach(r16n => {
+      const [x1,y1] = pt(R.r16, ang['r16_'+r16n]);
+      svg += `<line x1="${x1.toFixed(1)}" y1="${y1.toFixed(1)}" x2="${x2.toFixed(1)}" y2="${y2.toFixed(1)}" stroke="#2a3a4a" stroke-width="1.5"/>`;
+    });
+  });
+  // QF → SF
+  SF_MAP.forEach(([sfn,[a,b]]) => {
+    const [x2,y2] = pt(R.sf, ang['sf_'+sfn]);
+    [a,b].forEach(qfn => {
+      const [x1,y1] = pt(R.qf, ang['qf_'+qfn]);
+      svg += `<line x1="${x1.toFixed(1)}" y1="${y1.toFixed(1)}" x2="${x2.toFixed(1)}" y2="${y2.toFixed(1)}" stroke="#2a3a4a" stroke-width="1.5"/>`;
+    });
+  });
+  // SF → Final
+  SF_MAP.forEach(([sfn]) => {
+    const [x1,y1] = pt(R.sf, ang['sf_'+sfn]);
+    svg += `<line x1="${x1.toFixed(1)}" y1="${y1.toFixed(1)}" x2="${cx}" y2="${cy}" stroke="#2a3a4a" stroke-width="1.5"/>`;
+  });
+
+  // Nodos R32 + equipo flags
+  R32_ORDER.forEach(matchNum => {
+    const cal = R32_CALENDAR.find(m => m.match === matchNum);
+    const res = resolveVbMatch(cal);
+    const {home,away,homeGoals,awayGoals,status} = res||{};
+    const done = status && isFinishedStatus(status);
+    const hasScore = homeGoals!==null && homeGoals!==undefined;
+    const deg = ang['r32_'+matchNum];
+
+    // Flags en el anillo exterior
+    const [hx,hy] = pt(R.team, deg - 5.5);
+    const [ax,ay] = pt(R.team, deg + 5.5);
+    if (home) {
+      const hw = done && hasScore && homeGoals < awayGoals ? 0.3 : 1;
+      svg += `<text x="${hx.toFixed(1)}" y="${(hy+5).toFixed(1)}" text-anchor="middle" font-size="15" opacity="${hw}">${flag(home)}</text>`;
+    } else {
+      svg += `<text x="${hx.toFixed(1)}" y="${(hy+4).toFixed(1)}" text-anchor="middle" font-size="9" fill="#475569">?</text>`;
+    }
+    if (away) {
+      const aw = done && hasScore && awayGoals < homeGoals ? 0.3 : 1;
+      svg += `<text x="${ax.toFixed(1)}" y="${(ay+5).toFixed(1)}" text-anchor="middle" font-size="15" opacity="${aw}">${flag(away)}</text>`;
+    } else {
+      svg += `<text x="${ax.toFixed(1)}" y="${(ay+4).toFixed(1)}" text-anchor="middle" font-size="9" fill="#475569">?</text>`;
+    }
+    svg += matchNode(R.r32, deg, res, 11);
+  });
+
+  // Nodos R16
+  R16_MAP.forEach(([r16n]) => {
+    const cal = R16_CALENDAR.find(m => m.match === r16n);
+    svg += matchNode(R.r16, ang['r16_'+r16n], resolveVbMatch(cal), 11);
+  });
+  // Nodos QF
+  QF_MAP.forEach(([qfn]) => {
+    const cal = QF_CALENDAR.find(m => m.match === qfn);
+    svg += matchNode(R.qf, ang['qf_'+qfn], resolveVbMatch(cal), 12);
+  });
+  // Nodos SF
+  SF_MAP.forEach(([sfn]) => {
+    const cal = SF_CALENDAR.find(m => m.match === sfn);
+    svg += matchNode(R.sf, ang['sf_'+sfn], resolveVbMatch(cal), 13);
+  });
+
+  // Centro: trofeo + final
+  const finalRes = resolveVbMatch(FINAL_CALENDAR[0]);
+  const {home:fh,away:fa,homeGoals:fhg,awayGoals:fag} = finalRes||{};
+  const fDone = finalRes?.status && isFinishedStatus(finalRes.status);
+  svg += `<text x="${cx}" y="${(cy+6).toFixed(1)}" text-anchor="middle" font-size="26">🏆</text>`;
+  if (fhg!==null && fhg!==undefined) {
+    svg += `<text x="${cx}" y="${(cy+18).toFixed(1)}" text-anchor="middle" font-size="9" font-weight="800" fill="#FFD700">${fhg}-${fag}</text>`;
+  } else if (fh && fa) {
+    svg += `<text x="${cx}" y="${(cy+18).toFixed(1)}" text-anchor="middle" font-size="7" fill="#64748b">${countryCode(fh)} · ${countryCode(fa)}</text>`;
+  }
+
+  svg += '</svg>';
+  return '<div style="padding:12px 4px 4px;">' + svg + '</div>';
+}
+
+function buildVbMobileDynamic() {
+  return buildRadialBracket();
 }
 
 function renderBracket() {
