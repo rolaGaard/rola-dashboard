@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-03T19:41:11.975449Z",
+  "updated": "2026-07-03T19:42:11.633763Z",
   "matches": {
     "AUSTRALIA-EGYPT": {
       "fixtureId": 1565178,
@@ -7,7 +7,7 @@
       "homeGoals": 1,
       "awayGoals": 1,
       "status": "2H",
-      "elapsed": 79,
+      "elapsed": 80,
       "kickoffUTC": "2026-07-03T18:00:00+00:00",
       "referee": "Gustavo Tejera, Uruguay",
       "events": [
@@ -56,6 +56,11 @@
             "out": "H. Fathy",
             "in": "H. Abdelmaguid",
             "minute": 67
+          },
+          {
+            "out": "K. Hafez",
+            "in": "Trezeguet",
+            "minute": 80
           }
         ]
       },
