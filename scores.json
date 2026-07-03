@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-03T20:36:12.881179Z",
+  "updated": "2026-07-03T20:37:10.469094Z",
   "matches": {
     "AUSTRALIA-EGYPT": {
       "fixtureId": 1565178,
@@ -7,7 +7,7 @@
       "homeGoals": 1,
       "awayGoals": 1,
       "status": "ET",
-      "elapsed": 121,
+      "elapsed": 122,
       "kickoffUTC": "2026-07-03T18:00:00+00:00",
       "referee": "Gustavo Tejera, Uruguay",
       "events": [
@@ -33,6 +33,14 @@
           "player": "H. Hassan",
           "team": "EGYPT",
           "minute": 105,
+          "extra": null
+        },
+        {
+          "type": "Card",
+          "detail": "Yellow Card",
+          "player": "Y. Ibrahim",
+          "team": "EGYPT",
+          "minute": 120,
           "extra": null
         }
       ],
@@ -89,6 +97,11 @@
             "out": "O. Marmoush",
             "in": "H. Abdelkarim",
             "minute": 106
+          },
+          {
+            "out": "M. Attia",
+            "in": "M. Saber",
+            "minute": 120
           }
         ]
       },
