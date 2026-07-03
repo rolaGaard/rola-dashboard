@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-03T20:47:10.713749Z",
+  "updated": "2026-07-03T20:48:12.534828Z",
   "matches": {
     "MEXICO-SOUTH AFRICA": {
       "fixtureId": 1489369,
@@ -32726,7 +32726,7 @@
       "kickoffUTC": "2026-07-03T18:00:00+00:00",
       "referee": "Gustavo Tejera, Uruguay",
       "penaltyHome": 1,
-      "penaltyAway": 1,
+      "penaltyAway": 2,
       "events": [
         {
           "type": "Goal",
@@ -32781,6 +32781,14 @@
           "detail": "Penalty",
           "player": "J. Irvine",
           "team": "AUSTRALIA",
+          "minute": 120,
+          "extra": 2
+        },
+        {
+          "type": "Goal",
+          "detail": "Penalty",
+          "player": "R. Rabia",
+          "team": "EGYPT",
           "minute": 120,
           "extra": 2
         }
