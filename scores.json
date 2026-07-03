@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-03T06:53:10.122567Z",
+  "updated": "2026-07-03T06:54:12.771931Z",
   "matches": {
     "MEXICO-SOUTH AFRICA": {
       "fixtureId": 1489369,
@@ -32704,6 +32704,16 @@
       "status": "NS",
       "elapsed": null,
       "kickoffUTC": "2026-07-06T00:00:00+00:00",
+      "referee": null
+    },
+    "PORTUGAL-SPAIN": {
+      "fixtureId": 1576756,
+      "round": "Round of 16",
+      "homeGoals": null,
+      "awayGoals": null,
+      "status": "NS",
+      "elapsed": null,
+      "kickoffUTC": "2026-07-06T19:00:00+00:00",
       "referee": null
     },
     "USA-BELGIUM": {
