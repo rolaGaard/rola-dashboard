@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-03T20:50:32.546453Z",
+  "updated": "2026-07-03T20:51:11.204339Z",
   "matches": {
     "MEXICO-SOUTH AFRICA": {
       "fixtureId": 1489369,
@@ -32807,6 +32807,14 @@
           "team": "EGYPT",
           "minute": 120,
           "extra": 3
+        },
+        {
+          "type": "Goal",
+          "detail": "Missed Penalty",
+          "player": "L. Herrington",
+          "team": "AUSTRALIA",
+          "minute": 120,
+          "extra": 4
         }
       ],
       "substitutions": {
