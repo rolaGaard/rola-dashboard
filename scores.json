@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-03T00:25:16.900239Z",
+  "updated": "2026-07-03T00:26:13.022718Z",
   "matches": {
     "PORTUGAL-CROATIA": {
       "fixtureId": 1567309,
@@ -7,7 +7,7 @@
       "homeGoals": 0,
       "awayGoals": 1,
       "status": "2H",
-      "elapsed": 65,
+      "elapsed": 66,
       "kickoffUTC": "2026-07-02T23:00:00+00:00",
       "referee": "Espen Eskas, Norway",
       "events": [
@@ -46,14 +46,14 @@
         ],
         "PORTUGAL": [
           {
-            "out": "P. Neto",
-            "in": "F. Conceicao",
-            "minute": 62
-          },
-          {
             "out": "Vitinha",
             "in": "B. Silva",
             "minute": 62
+          },
+          {
+            "out": "P. Neto",
+            "in": "F. Conceicao",
+            "minute": 63
           },
           {
             "out": "B. Fernandes",
