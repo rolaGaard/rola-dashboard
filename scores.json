@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-03T03:13:11.603523Z",
+  "updated": "2026-07-03T03:14:12.460200Z",
   "matches": {
     "SWITZERLAND-ALGERIA": {
       "fixtureId": 1567312,
@@ -7,7 +7,7 @@
       "homeGoals": 1,
       "awayGoals": 0,
       "status": "1H",
-      "elapsed": 13,
+      "elapsed": 14,
       "kickoffUTC": "2026-07-03T03:00:00+00:00",
       "referee": "Yael Falcon Perez, Argentina",
       "events": [
@@ -16,7 +16,7 @@
           "detail": "Normal Goal",
           "player": "B. Embolo",
           "team": "SWITZERLAND",
-          "minute": 11,
+          "minute": 10,
           "extra": null
         }
       ],
