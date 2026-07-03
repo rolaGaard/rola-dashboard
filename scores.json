@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-03T00:23:10.252508Z",
+  "updated": "2026-07-03T00:24:13.545778Z",
   "matches": {
     "PORTUGAL-CROATIA": {
       "fixtureId": 1567309,
@@ -7,7 +7,7 @@
       "homeGoals": 0,
       "awayGoals": 1,
       "status": "2H",
-      "elapsed": 63,
+      "elapsed": 64,
       "kickoffUTC": "2026-07-02T23:00:00+00:00",
       "referee": "Espen Eskas, Norway",
       "events": [
@@ -58,6 +58,11 @@
           {
             "out": "B. Fernandes",
             "in": "N. Semedo",
+            "minute": 63
+          },
+          {
+            "out": "J. Cancelo",
+            "in": "G. Ramos",
             "minute": 63
           }
         ]
