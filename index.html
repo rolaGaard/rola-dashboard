@@ -908,7 +908,7 @@
     <img class="header-icon" src="icons/icon-192.png" alt="rolaGaard">
     <div class="header-text">
       <div class="header-title">Mundial 2026</div>
-      <div class="header-by">by rolaGaard &nbsp;<span class="app-version">v2.8</span></div>
+      <div class="header-by">by rolaGaard &nbsp;<span class="app-version">v2.9</span></div>
       <div class="header-sub" id="header-sub">USA · Canadá · México</div>
     </div>
   </div>
@@ -3407,67 +3407,80 @@ function buildVbHalfFromSections(sections, side, label16, label8, label4, labelS
 }
 
 function buildRadialBracket() {
-  const W = 340, H = 340, cx = W/2, cy = H/2;
-  const R = { team:152, r32:130, r16:104, qf:78, sf:52, final:24 };
-  const R32_ORDER = [74,77,73,75,83,84,81,82,76,78,79,80,86,88,85,87];
-  const R16_MAP = [[89,[74,77]],[90,[73,75]],[93,[83,84]],[94,[81,82]],[91,[76,78]],[92,[79,80]],[95,[86,88]],[96,[85,87]]];
-  const QF_MAP  = [[97,[89,90]],[98,[93,94]],[99,[91,92]],[100,[95,96]]];
-  const SF_MAP  = [[101,[97,98]],[102,[99,100]]];
+  const W=340, H=430, cx=W/2, cy=148;
+  const R={team:138,r32:116,r16:93,qf:70,sf:47,final:22};
+  const R32_ORDER=[74,77,73,75,83,84,81,82,76,78,79,80,86,88,85,87];
+  const R16_MAP=[[89,[74,77]],[90,[73,75]],[93,[83,84]],[94,[81,82]],[91,[76,78]],[92,[79,80]],[95,[86,88]],[96,[85,87]]];
+  const QF_MAP =[[97,[89,90]],[98,[93,94]],[99,[91,92]],[100,[95,96]]];
+  const SF_MAP =[[101,[97,98]],[102,[99,100]]];
 
-  const ang = {};
-  R32_ORDER.forEach((n,i) => { ang['r32_'+n] = i*22.5; });
-  R16_MAP.forEach(([n,[a,b]]) => { ang['r16_'+n]=(ang['r32_'+a]+ang['r32_'+b])/2; });
-  QF_MAP .forEach(([n,[a,b]]) => { ang['qf_' +n]=(ang['r16_'+a]+ang['r16_'+b])/2; });
-  SF_MAP .forEach(([n,[a,b]]) => { ang['sf_' +n]=(ang['qf_' +a]+ang['qf_' +b])/2; });
+  const ang={};
+  R32_ORDER.forEach((n,i)=>{ang['r32_'+n]=i*22.5;});
+  R16_MAP.forEach(([n,[a,b]])=>{ang['r16_'+n]=(ang['r32_'+a]+ang['r32_'+b])/2;});
+  QF_MAP .forEach(([n,[a,b]])=>{ang['qf_' +n]=(ang['r16_'+a]+ang['r16_'+b])/2;});
+  SF_MAP .forEach(([n,[a,b]])=>{ang['sf_' +n]=(ang['qf_' +a]+ang['qf_' +b])/2;});
 
-  function pt(r,deg) {
+  function pt(r,deg){
     const rad=(deg-90)*Math.PI/180;
-    return [+(cx+r*Math.cos(rad)).toFixed(1), +(cy+r*Math.sin(rad)).toFixed(1)];
+    return [+(cx+r*Math.cos(rad)).toFixed(1),+(cy+r*Math.sin(rad)).toFixed(1)];
   }
 
-  function node(r,deg,res,radius) {
-    const [nx,ny]=pt(r,deg);
+  function getWinner(rv){
+    if(!rv||!rv.home||!rv.away) return null;
+    if(rv.penaltyHome!=null&&rv.penaltyHome!==undefined)
+      return rv.penaltyHome>rv.penaltyAway?rv.home:rv.away;
+    if(rv.homeGoals>rv.awayGoals) return rv.home;
+    if(rv.awayGoals>rv.homeGoals) return rv.away;
+    return null;
+  }
+
+  // Nodo: bandera del ganador si jugado, códigos si se sabe quién juega, vacío si TBD
+  function node(r,deg,res,radius){
+    const[nx,ny]=pt(r,deg);
     const rv=res||{};
     const done=rv.status&&isFinishedStatus(rv.status);
     const live=rv.status&&isLiveStatus(rv.status);
     const hs=rv.homeGoals!=null&&rv.homeGoals!==undefined;
-    const fill=live?'#7f0000':done?'#0f2a5e':'#1a2035';
-    const sk=live?'#ef4444':done?'#3b82f6':'#3a4a60';
+    const fill=live?'#5a0000':done?'#0a1f4a':'#141c30';
+    const sk=live?'#ef4444':done?'#3b82f6':'#2a3a50';
     let s=`<circle cx="${nx}" cy="${ny}" r="${radius}" fill="${fill}" stroke="${sk}" stroke-width="1.5"/>`;
-    if(hs){
-      s+=`<text x="${nx}" y="${+(ny+3).toFixed(1)}" text-anchor="middle" font-family="monospace" font-size="${radius>11?8:7}" font-weight="700" fill="white">${rv.homeGoals}-${rv.awayGoals}</text>`;
-    } else if(rv.home&&rv.away){
-      s+=`<text x="${nx}" y="${+(ny+1).toFixed(1)}" text-anchor="middle" font-family="monospace" font-size="5" fill="#64748b">${countryCode(rv.home)}</text>`;
-      s+=`<text x="${nx}" y="${+(ny+7).toFixed(1)}" text-anchor="middle" font-family="monospace" font-size="5" fill="#64748b">${countryCode(rv.away)}</text>`;
-    } else {
-      s+=`<text x="${nx}" y="${+(ny+3.5).toFixed(1)}" text-anchor="middle" font-size="8" fill="#334155">?</text>`;
+    if(done&&hs&&rv.home&&rv.away){
+      const winner=getWinner(rv);
+      if(winner){
+        const fs=radius*1.5;
+        s+=`<foreignObject x="${+(nx-fs/2).toFixed(1)}" y="${+(ny-fs/2).toFixed(1)}" width="${fs}" height="${fs}"><div xmlns="http://www.w3.org/1999/xhtml" style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:${Math.round(fs*0.75)}px;line-height:1;">${flag(winner)}</div></foreignObject>`;
+      }
+    }else if(!done&&rv.home&&rv.away){
+      s+=`<text x="${nx}" y="${+(ny+2).toFixed(1)}" text-anchor="middle" font-family="monospace" font-size="5.5" fill="#6a7a8a">${countryCode(rv.home)}</text>`;
+      s+=`<text x="${nx}" y="${+(ny+8.5).toFixed(1)}" text-anchor="middle" font-family="monospace" font-size="5.5" fill="#6a7a8a">${countryCode(rv.away)}</text>`;
     }
+    // Si no se sabe quién juega: círculo vacío
     return s;
   }
 
   let s=`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" width="100%" style="display:block;max-width:340px;margin:0 auto;">`;
-  s+=`<rect width="${W}" height="${H}" rx="12" fill="#0d1117"/>`;
+  s+=`<rect width="${W}" height="${H}" rx="12" fill="#0a0e1a"/>`;
+
+  // Anillos guía
   [R.r32,R.r16,R.qf,R.sf].forEach(r=>{
-    s+=`<circle cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="#1e2a3a" stroke-width="0.5" stroke-dasharray="2,3"/>`;
+    s+=`<circle cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="#1a2535" stroke-width="0.5" stroke-dasharray="2,4"/>`;
   });
 
-  // Líneas
-  R16_MAP.forEach(([r16n,[a,b]])=>{
-    [a,b].forEach(r32n=>{const[x1,y1]=pt(R.r32,ang['r32_'+r32n]),[x2,y2]=pt(R.r16,ang['r16_'+r16n]);s+=`<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="#2a3a50" stroke-width="1.5"/>`;});
-  });
-  QF_MAP.forEach(([qfn,[a,b]])=>{
-    [a,b].forEach(r16n=>{const[x1,y1]=pt(R.r16,ang['r16_'+r16n]),[x2,y2]=pt(R.qf,ang['qf_'+qfn]);s+=`<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="#2a3a50" stroke-width="1.5"/>`;});
-  });
-  SF_MAP.forEach(([sfn,[a,b]])=>{
-    [a,b].forEach(qfn=>{const[x1,y1]=pt(R.qf,ang['qf_'+qfn]),[x2,y2]=pt(R.sf,ang['sf_'+sfn]);s+=`<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="#2a3a50" stroke-width="1.5"/>`;});
-  });
-  SF_MAP.forEach(([sfn])=>{const[x1,y1]=pt(R.sf,ang['sf_'+sfn]);s+=`<line x1="${x1}" y1="${y1}" x2="${cx}" y2="${cy}" stroke="#2a3a50" stroke-width="1.5"/>`;});
+  // Líneas conectoras
+  R16_MAP.forEach(([r16n,[a,b]])=>{[a,b].forEach(r32n=>{const[x1,y1]=pt(R.r32,ang['r32_'+r32n]),[x2,y2]=pt(R.r16,ang['r16_'+r16n]);s+=`<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="#1e2e42" stroke-width="1.3"/>`;});});
+  QF_MAP .forEach(([qfn,[a,b]])=>{[a,b].forEach(r16n=>{const[x1,y1]=pt(R.r16,ang['r16_'+r16n]),[x2,y2]=pt(R.qf,ang['qf_'+qfn]);s+=`<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="#1e2e42" stroke-width="1.3"/>`;});});
+  SF_MAP .forEach(([sfn,[a,b]])=>{[a,b].forEach(qfn=>{const[x1,y1]=pt(R.qf,ang['qf_'+qfn]),[x2,y2]=pt(R.sf,ang['sf_'+sfn]);s+=`<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="#1e2e42" stroke-width="1.3"/>`;});});
+  SF_MAP .forEach(([sfn])=>{const[x1,y1]=pt(R.sf,ang['sf_'+sfn]);s+=`<line x1="${x1}" y1="${y1}" x2="${cx}" y2="${cy}" stroke="#1e2e42" stroke-width="1.3"/>`;});
 
-  // Nodos R32 + labels (solo texto, sin HTML de flag)
+  // Extensión 3er puesto: línea desde la Final hacia abajo
+  const thirdY=cy+R.team+52;
+  s+=`<line x1="${cx}" y1="${+(cy+R.final).toFixed(1)}" x2="${cx}" y2="${+(thirdY-18).toFixed(1)}" stroke="#1e2e42" stroke-width="1.3" stroke-dasharray="4,3"/>`;
+
+  // Labels del anillo exterior (solo texto, sin HTML)
   R32_ORDER.forEach(matchNum=>{
     const cal=R32_CALENDAR.find(m=>m.match===matchNum);
     const res=resolveVbMatch(cal)||{};
-    const {home,away,homeGoals,awayGoals,status}=res;
+    const{home,away,homeGoals,awayGoals,status}=res;
     const done=status&&isFinishedStatus(status);
     const hs=homeGoals!=null&&homeGoals!==undefined;
     const deg=ang['r32_'+matchNum];
@@ -3475,32 +3488,50 @@ function buildRadialBracket() {
     const[ax,ay]=pt(R.team,deg+5.5);
     const hWin=done&&hs&&homeGoals>awayGoals;
     const aWin=done&&hs&&awayGoals>homeGoals;
-    const hO=done&&hs&&!hWin?0.35:1;
-    const aO=done&&hs&&!aWin?0.35:1;
-    const hC=hWin?'#FFD700':done?'#94a3b8':'#cbd5e1';
-    const aC=aWin?'#FFD700':done?'#94a3b8':'#cbd5e1';
-    s+=`<text x="${hx}" y="${+(hy+3).toFixed(1)}" text-anchor="middle" font-family="monospace" font-size="7" font-weight="${hWin?700:500}" fill="${hC}" opacity="${hO}">${home?countryCode(home):'?'}</text>`;
-    s+=`<text x="${ax}" y="${+(ay+3).toFixed(1)}" text-anchor="middle" font-family="monospace" font-size="7" font-weight="${aWin?700:500}" fill="${aC}" opacity="${aO}">${away?countryCode(away):'?'}</text>`;
+    if(home) s+=`<text x="${hx}" y="${+(hy+3).toFixed(1)}" text-anchor="middle" font-family="monospace" font-size="7" font-weight="${hWin?700:400}" fill="${hWin?'#FFD700':done&&hs&&!hWin?'#334155':'#8899aa'}" opacity="${done&&hs&&!hWin?0.4:1}">${countryCode(home)}</text>`;
+    if(away) s+=`<text x="${ax}" y="${+(ay+3).toFixed(1)}" text-anchor="middle" font-family="monospace" font-size="7" font-weight="${aWin?700:400}" fill="${aWin?'#FFD700':done&&hs&&!aWin?'#334155':'#8899aa'}" opacity="${done&&hs&&!aWin?0.4:1}">${countryCode(away)}</text>`;
     s+=node(R.r32,deg,res,11);
   });
 
+  // Nodos R16, QF, SF
   R16_MAP.forEach(([r16n])=>{s+=node(R.r16,ang['r16_'+r16n],resolveVbMatch(R16_CALENDAR.find(m=>m.match===r16n)),11);});
   QF_MAP .forEach(([qfn]) =>{s+=node(R.qf, ang['qf_' +qfn], resolveVbMatch(QF_CALENDAR .find(m=>m.match===qfn)), 12);});
   SF_MAP .forEach(([sfn]) =>{s+=node(R.sf, ang['sf_' +sfn], resolveVbMatch(SF_CALENDAR .find(m=>m.match===sfn)), 13);});
 
-  // Centro
+  // Centro: Final
   const fRes=resolveVbMatch(FINAL_CALENDAR[0])||{};
   const fDone=fRes.status&&isFinishedStatus(fRes.status);
-  s+=`<circle cx="${cx}" cy="${cy}" r="${R.final}" fill="${fDone?'#0f2a5e':'#1a2035'}" stroke="${fDone?'#FFD700':'#3a4a60'}" stroke-width="2"/>`;
-  if(fRes.homeGoals!=null&&fRes.homeGoals!==undefined){
-    s+=`<text x="${cx}" y="${+(cy-2).toFixed(1)}" text-anchor="middle" font-size="12">\u{1F3C6}</text>`;
-    s+=`<text x="${cx}" y="${+(cy+9).toFixed(1)}" text-anchor="middle" font-size="8" font-weight="700" fill="#FFD700">${fRes.homeGoals}-${fRes.awayGoals}</text>`;
-  }else if(fRes.home&&fRes.away){
-    s+=`<text x="${cx}" y="${+(cy-2).toFixed(1)}" text-anchor="middle" font-size="12">\u{1F3C6}</text>`;
-    s+=`<text x="${cx}" y="${+(cy+9).toFixed(1)}" text-anchor="middle" font-size="6" fill="#64748b">${countryCode(fRes.home)}\u00B7${countryCode(fRes.away)}</text>`;
+  const fHs=fRes.homeGoals!=null&&fRes.homeGoals!==undefined;
+  const fFill=fDone&&fHs?'#0a1f4a':'#141c30';
+  const fSk=fDone&&fHs?'#FFD700':'#2a3a50';
+  s+=`<circle cx="${cx}" cy="${cy}" r="${R.final}" fill="${fFill}" stroke="${fSk}" stroke-width="2"/>`;
+  if(fDone&&fHs&&fRes.home&&fRes.away){
+    const winner=getWinner(fRes);
+    const loser=winner===fRes.home?fRes.away:fRes.home;
+    if(winner){
+      const wfs=R.final*1.4;
+      s+=`<foreignObject x="${+(cx-wfs/2).toFixed(1)}" y="${+(cy-R.final*0.85).toFixed(1)}" width="${wfs}" height="${wfs}"><div xmlns="http://www.w3.org/1999/xhtml" style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:${Math.round(wfs*0.8)}px;line-height:1;">${flag(winner)}</div></foreignObject>`;
+      const lfs=R.final*0.85;
+      s+=`<foreignObject x="${+(cx-lfs/2).toFixed(1)}" y="${+(cy+R.final*0.25).toFixed(1)}" width="${lfs}" height="${lfs}"><div xmlns="http://www.w3.org/1999/xhtml" style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:${Math.round(lfs*0.75)}px;line-height:1;opacity:0.6;">${flag(loser)}</div></foreignObject>`;
+    }
   }else{
-    s+=`<text x="${cx}" y="${+(cy+6).toFixed(1)}" text-anchor="middle" font-size="18">\u{1F3C6}</text>`;
+    s+=`<text x="${cx}" y="${+(cy+7).toFixed(1)}" text-anchor="middle" font-size="17">\u{1F3C6}</text>`;
   }
+
+  // Nodo 3er puesto
+  const tRes=resolveVbMatch(THIRD_PLACE_CALENDAR[0])||{};
+  const tDone=tRes.status&&isFinishedStatus(tRes.status);
+  const tHs=tRes.homeGoals!=null&&tRes.homeGoals!==undefined;
+  s+=`<circle cx="${cx}" cy="${thirdY}" r="16" fill="${tDone&&tHs?'#0a1f4a':'#141c30'}" stroke="${tDone&&tHs?'#94a3b8':'#2a3a50'}" stroke-width="1.5"/>`;
+  if(tDone&&tHs&&tRes.home&&tRes.away){
+    const tw=getWinner(tRes);
+    if(tw){const fs=16*1.5;s+=`<foreignObject x="${+(cx-fs/2).toFixed(1)}" y="${+(thirdY-fs/2).toFixed(1)}" width="${fs}" height="${fs}"><div xmlns="http://www.w3.org/1999/xhtml" style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:${Math.round(fs*0.75)}px;line-height:1;">${flag(tw)}</div></foreignObject>`;}
+  }else if(tRes.home&&tRes.away){
+    s+=`<text x="${cx}" y="${+(thirdY+2).toFixed(1)}" text-anchor="middle" font-family="monospace" font-size="5.5" fill="#6a7a8a">${countryCode(tRes.home)}</text>`;
+    s+=`<text x="${cx}" y="${+(thirdY+8.5).toFixed(1)}" text-anchor="middle" font-family="monospace" font-size="5.5" fill="#6a7a8a">${countryCode(tRes.away)}</text>`;
+  }
+  s+=`<text x="${cx}" y="${+(thirdY+30).toFixed(1)}" text-anchor="middle" font-size="8" fill="#374151">3\u00b0</text>`;
+
   s+='</svg>';
   return `<div style="padding:8px 0 4px;">${s}</div>`;
 }
