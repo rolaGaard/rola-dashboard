@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-03T00:19:09.505138Z",
+  "updated": "2026-07-03T00:20:31.496173Z",
   "matches": {
     "PORTUGAL-CROATIA": {
       "fixtureId": 1567309,
@@ -7,7 +7,7 @@
       "homeGoals": 0,
       "awayGoals": 1,
       "status": "2H",
-      "elapsed": 59,
+      "elapsed": 60,
       "kickoffUTC": "2026-07-02T23:00:00+00:00",
       "referee": "Espen Eskas, Norway",
       "events": [
@@ -25,6 +25,14 @@
           "player": "I. Perisic",
           "team": "CROATIA",
           "minute": 53,
+          "extra": null
+        },
+        {
+          "type": "Card",
+          "detail": "Yellow Card",
+          "player": "L. Modric",
+          "team": "CROATIA",
+          "minute": 60,
           "extra": null
         }
       ],
