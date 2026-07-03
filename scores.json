@@ -1,13 +1,13 @@
 {
-  "updated": "2026-07-03T20:03:10.138580Z",
+  "updated": "2026-07-03T20:04:14.102269Z",
   "matches": {
     "AUSTRALIA-EGYPT": {
       "fixtureId": 1565178,
       "round": "Round of 32",
       "homeGoals": 1,
       "awayGoals": 1,
-      "status": "BT",
-      "elapsed": null,
+      "status": "ET",
+      "elapsed": 97,
       "kickoffUTC": "2026-07-03T18:00:00+00:00",
       "referee": "Gustavo Tejera, Uruguay",
       "events": [
@@ -44,6 +44,16 @@
             "out": "N. Irankunda",
             "in": "M. Toure",
             "minute": 74
+          },
+          {
+            "out": "A. O'Neill",
+            "in": "P. Okon-Engstler",
+            "minute": 91
+          },
+          {
+            "out": "C. Metcalfe",
+            "in": "A. Mabil",
+            "minute": 91
           }
         ],
         "EGYPT": [
