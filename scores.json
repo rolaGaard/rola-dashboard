@@ -1,13 +1,13 @@
 {
-  "updated": "2026-07-03T00:27:09.448516Z",
+  "updated": "2026-07-03T00:28:11.573171Z",
   "matches": {
     "PORTUGAL-CROATIA": {
       "fixtureId": 1567309,
       "round": "Round of 32",
-      "homeGoals": 0,
+      "homeGoals": 1,
       "awayGoals": 1,
       "status": "2H",
-      "elapsed": 67,
+      "elapsed": 68,
       "kickoffUTC": "2026-07-02T23:00:00+00:00",
       "referee": "Espen Eskas, Norway",
       "events": [
@@ -33,6 +33,14 @@
           "player": "L. Modric",
           "team": "CROATIA",
           "minute": 59,
+          "extra": null
+        },
+        {
+          "type": "Goal",
+          "detail": "Penalty",
+          "player": "C. Ronaldo",
+          "team": "PORTUGAL",
+          "minute": 68,
           "extra": null
         }
       ],
