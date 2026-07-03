@@ -3486,10 +3486,12 @@ function buildRadialBracket() {
     const deg=ang['r32_'+matchNum];
     const[hx,hy]=pt(R.team,deg-5.5);
     const[ax,ay]=pt(R.team,deg+5.5);
-    const hWin=done&&hs&&homeGoals>awayGoals;
-    const aWin=done&&hs&&awayGoals>homeGoals;
-    if(home) s+=`<text x="${hx}" y="${+(hy+3).toFixed(1)}" text-anchor="middle" font-family="monospace" font-size="7" font-weight="${hWin?700:400}" fill="${hWin?'#FFD700':done&&hs&&!hWin?'#334155':'#8899aa'}" opacity="${done&&hs&&!hWin?0.4:1}">${countryCode(home)}</text>`;
-    if(away) s+=`<text x="${ax}" y="${+(ay+3).toFixed(1)}" text-anchor="middle" font-family="monospace" font-size="7" font-weight="${aWin?700:400}" fill="${aWin?'#FFD700':done&&hs&&!aWin?'#334155':'#8899aa'}" opacity="${done&&hs&&!aWin?0.4:1}">${countryCode(away)}</text>`;
+    // Usar getWinner() en vez de comparar goles directamente — cubre penales
+    const winner=done&&hs?getWinner(res):null;
+    const hWin=winner&&winner===home;
+    const aWin=winner&&winner===away;
+    if(home) s+=`<text x="${hx}" y="${+(hy+3).toFixed(1)}" text-anchor="middle" font-family="monospace" font-size="7" font-weight="${hWin?700:400}" fill="${hWin?'#FFD700':done&&hs?'#334155':'#8899aa'}" opacity="${done&&hs&&!hWin?0.4:1}">${countryCode(home)}</text>`;
+    if(away) s+=`<text x="${ax}" y="${+(ay+3).toFixed(1)}" text-anchor="middle" font-family="monospace" font-size="7" font-weight="${aWin?700:400}" fill="${aWin?'#FFD700':done&&hs?'#334155':'#8899aa'}" opacity="${done&&hs&&!aWin?0.4:1}">${countryCode(away)}</text>`;
     s+=node(R.r32,deg,res,11);
   });
 
@@ -3562,7 +3564,9 @@ function renderBracket() {
   bracketHtml += '</div>';
   bracketHtml += buildVbHalfFromSections(right, 'right', labels16, labels8, labels4, labelsSF);
   bracketHtml += '</div>';
-  bracketHtml += buildVbMobileDynamic();
+  // El bracket radial vive dentro de .vb-mobile — el CSS ya lo muestra solo en portrait
+  // y lo oculta en landscape/desktop (donde se usa el .vb-wrap horizontal)
+  bracketHtml += '<div class="vb-mobile">' + buildVbMobileDynamic() + '</div>';
 
   // Grupos debajo del bracket — los 12 en una grilla
   const allGroups = ['A','B','C','D','E','F','G','H','I','J','K','L'];
