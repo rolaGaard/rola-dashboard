@@ -1,16 +1,25 @@
 {
-  "updated": "2026-07-03T18:12:12.221971Z",
+  "updated": "2026-07-03T18:13:09.906274Z",
   "matches": {
     "AUSTRALIA-EGYPT": {
       "fixtureId": 1565178,
       "round": "Round of 32",
       "homeGoals": 0,
-      "awayGoals": 0,
+      "awayGoals": 1,
       "status": "1H",
-      "elapsed": 12,
+      "elapsed": 13,
       "kickoffUTC": "2026-07-03T18:00:00+00:00",
       "referee": "Gustavo Tejera, Uruguay",
-      "events": [],
+      "events": [
+        {
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "player": null,
+          "team": "EGYPT",
+          "minute": 13,
+          "extra": null
+        }
+      ],
       "lineups": {
         "AUSTRALIA": {
           "formation": "3-4-2-1",
