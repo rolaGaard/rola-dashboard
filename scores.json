@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-03T04:42:13.474690Z",
+  "updated": "2026-07-03T04:43:09.743567Z",
   "matches": {
     "SWITZERLAND-ALGERIA": {
       "fixtureId": 1567312,
@@ -14,7 +14,7 @@
         {
           "type": "Goal",
           "detail": "Normal Goal",
-          "player": "B. Embolo",
+          "player": "Breel Embolo",
           "team": "SWITZERLAND",
           "minute": 10,
           "extra": null
@@ -22,7 +22,7 @@
         {
           "type": "Card",
           "detail": "Yellow Card",
-          "player": "F. Chaibi",
+          "player": "Fares Chaibi",
           "team": "ALGERIA",
           "minute": 36,
           "extra": null
@@ -30,7 +30,7 @@
         {
           "type": "Goal",
           "detail": "Normal Goal",
-          "player": "D. Ndoye",
+          "player": "Dan Ndoye",
           "team": "SWITZERLAND",
           "minute": 46,
           "extra": null
@@ -38,7 +38,7 @@
         {
           "type": "Card",
           "detail": "Yellow Card",
-          "player": "H. Boudaoui",
+          "player": "Hicham Boudaoui",
           "team": "ALGERIA",
           "minute": 72,
           "extra": null
@@ -47,36 +47,46 @@
       "substitutions": {
         "ALGERIA": [
           {
-            "out": "H. Aouar",
-            "in": "J. Hadjam",
+            "out": "Houssem Aouar",
+            "in": "Jaouen Hadjam",
             "minute": 58
           },
           {
-            "out": "R. Zerrouki",
-            "in": "A. Gouiri",
+            "out": "Ramiz Zerrouki",
+            "in": "Amine Gouiri",
             "minute": 58
           },
           {
-            "out": "R. Mahrez",
-            "in": "A. Hadj Moussa",
+            "out": "Riyad Mahrez",
+            "in": "Anis Hadj Moussa",
             "minute": 71
           },
           {
-            "out": "N. Bentaleb",
-            "in": "H. Boudaoui",
+            "out": "Nabil Bentaleb",
+            "in": "Hicham Boudaoui",
             "minute": 71
+          },
+          {
+            "out": "Rafik Belghali",
+            "in": "Adil Boulbina",
+            "minute": 82
           }
         ],
         "SWITZERLAND": [
           {
-            "out": "R. Vargas",
-            "in": "F. Rieder",
+            "out": "Rub\u00e9n Vargas",
+            "in": "Fabian Rieder",
             "minute": 71
           },
           {
-            "out": "J. Manzambi",
-            "in": "N. Okafor",
+            "out": "Johan Manzambi",
+            "in": "Noah Okafor",
             "minute": 71
+          },
+          {
+            "out": "Breel Embolo",
+            "in": "Zeki Amdouni",
+            "minute": 83
           }
         ]
       },
