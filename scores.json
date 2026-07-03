@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-03T00:57:11.165606Z",
+  "updated": "2026-07-03T00:58:12.834418Z",
   "matches": {
     "PORTUGAL-CROATIA": {
       "fixtureId": 1567309,
@@ -50,6 +50,14 @@
           "team": "PORTUGAL",
           "minute": 90,
           "extra": 4
+        },
+        {
+          "type": "Card",
+          "detail": "Yellow Card",
+          "player": "I. Perisic",
+          "team": "CROATIA",
+          "minute": 90,
+          "extra": 8
         }
       ],
       "substitutions": {
