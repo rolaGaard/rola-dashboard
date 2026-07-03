@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-03T04:04:12.009865Z",
+  "updated": "2026-07-03T04:05:18.569046Z",
   "matches": {
     "SWITZERLAND-ALGERIA": {
       "fixtureId": 1567312,
@@ -26299,7 +26299,7 @@
       "status": "FT",
       "elapsed": 90,
       "kickoffUTC": "2026-06-27T23:30:00+00:00",
-      "referee": "A. Faghani",
+      "referee": "Alireza Faghani, Australia",
       "events": [
         {
           "type": "Card",
@@ -26648,7 +26648,7 @@
       "status": "FT",
       "elapsed": 90,
       "kickoffUTC": "2026-06-27T23:30:00+00:00",
-      "referee": "F. Zwayer",
+      "referee": "Felix Zwayer, Germany",
       "events": [
         {
           "type": "Goal",
@@ -27816,7 +27816,7 @@
       "status": "FT",
       "elapsed": 90,
       "kickoffUTC": "2026-06-28T19:00:00+00:00",
-      "referee": "J. Pinheiro",
+      "referee": "Joao Pedro Pinheiro, Portugal",
       "events": [
         {
           "type": "Card",
@@ -28158,7 +28158,7 @@
       "status": "FT",
       "elapsed": 90,
       "kickoffUTC": "2026-06-29T17:00:00+00:00",
-      "referee": "M. Mariani",
+      "referee": "Maurizio Mariani, Italy",
       "events": [
         {
           "type": "Card",
@@ -28558,7 +28558,7 @@
       "status": "PEN",
       "elapsed": 120,
       "kickoffUTC": "2026-06-29T20:30:00+00:00",
-      "referee": "J. Jayed",
+      "referee": "Jalal Jayed, Morocco",
       "penaltyHome": 3,
       "penaltyAway": 4,
       "events": [
@@ -29459,7 +29459,7 @@
       "status": "FT",
       "elapsed": 90,
       "kickoffUTC": "2026-06-30T17:00:00+00:00",
-      "referee": "J. Valenzuela",
+      "referee": "Jes\u00fas Valenzuela, Venezuela",
       "events": [
         {
           "type": "Goal",
@@ -29841,7 +29841,7 @@
       "status": "FT",
       "elapsed": 90,
       "kickoffUTC": "2026-06-30T21:00:00+00:00",
-      "referee": "D. Makkelie",
+      "referee": "Danny Makkelie, Netherlands",
       "events": [
         {
           "type": "Goal",
@@ -30648,7 +30648,7 @@
       "status": "FT",
       "elapsed": 90,
       "kickoffUTC": "2026-07-01T16:00:00+00:00",
-      "referee": "A. Makhadmeh",
+      "referee": "Adham Mohammad, Jordan",
       "events": [
         {
           "type": "Goal",
@@ -31029,7 +31029,7 @@
       "status": "AET",
       "elapsed": 120,
       "kickoffUTC": "2026-07-01T20:00:00+00:00",
-      "referee": "S. Martinez",
+      "referee": "Said Martinez, Honduras",
       "events": [
         {
           "type": "Goal",
