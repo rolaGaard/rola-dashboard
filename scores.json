@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-03T03:59:09.739255Z",
+  "updated": "2026-07-03T04:00:56.928578Z",
   "matches": {
     "SWITZERLAND-ALGERIA": {
       "fixtureId": 1567312,
@@ -14,7 +14,7 @@
         {
           "type": "Goal",
           "detail": "Normal Goal",
-          "player": "B. Embolo",
+          "player": "Breel Embolo",
           "team": "SWITZERLAND",
           "minute": 10,
           "extra": null
@@ -22,7 +22,7 @@
         {
           "type": "Card",
           "detail": "Yellow Card",
-          "player": "F. Chaibi",
+          "player": "Fares Chaibi",
           "team": "ALGERIA",
           "minute": 36,
           "extra": null
