@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-03T00:20:31.496173Z",
+  "updated": "2026-07-03T00:21:11.406372Z",
   "matches": {
     "PORTUGAL-CROATIA": {
       "fixtureId": 1567309,
@@ -7,7 +7,7 @@
       "homeGoals": 0,
       "awayGoals": 1,
       "status": "2H",
-      "elapsed": 60,
+      "elapsed": 61,
       "kickoffUTC": "2026-07-02T23:00:00+00:00",
       "referee": "Espen Eskas, Norway",
       "events": [
@@ -32,7 +32,7 @@
           "detail": "Yellow Card",
           "player": "L. Modric",
           "team": "CROATIA",
-          "minute": 60,
+          "minute": 59,
           "extra": null
         }
       ],
