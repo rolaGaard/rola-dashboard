@@ -1,13 +1,13 @@
 {
-  "updated": "2026-07-03T00:13:10.557671Z",
+  "updated": "2026-07-03T00:14:12.031383Z",
   "matches": {
     "PORTUGAL-CROATIA": {
       "fixtureId": 1567309,
       "round": "Round of 32",
       "homeGoals": 0,
-      "awayGoals": 0,
+      "awayGoals": 1,
       "status": "2H",
-      "elapsed": 53,
+      "elapsed": 54,
       "kickoffUTC": "2026-07-02T23:00:00+00:00",
       "referee": "Espen Eskas, Norway",
       "events": [
@@ -17,6 +17,14 @@
           "player": "R. Dias",
           "team": "PORTUGAL",
           "minute": 17,
+          "extra": null
+        },
+        {
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "player": "I. Perisic",
+          "team": "CROATIA",
+          "minute": 53,
           "extra": null
         }
       ],
