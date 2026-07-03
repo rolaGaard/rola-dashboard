@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-03T20:18:14.292698Z",
+  "updated": "2026-07-03T20:19:09.607236Z",
   "matches": {
     "AUSTRALIA-EGYPT": {
       "fixtureId": 1565178,
@@ -7,7 +7,7 @@
       "homeGoals": 1,
       "awayGoals": 1,
       "status": "ET",
-      "elapsed": 105,
+      "elapsed": 106,
       "kickoffUTC": "2026-07-03T18:00:00+00:00",
       "referee": "Gustavo Tejera, Uruguay",
       "events": [
@@ -25,6 +25,14 @@
           "player": "M. Hany",
           "team": "AUSTRALIA",
           "minute": 55,
+          "extra": null
+        },
+        {
+          "type": "Card",
+          "detail": "Yellow Card",
+          "player": "H. Hassan",
+          "team": "EGYPT",
+          "minute": 105,
           "extra": null
         }
       ],
