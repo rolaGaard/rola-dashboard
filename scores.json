@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-03T18:13:09.906274Z",
+  "updated": "2026-07-03T18:14:12.211920Z",
   "matches": {
     "AUSTRALIA-EGYPT": {
       "fixtureId": 1565178,
@@ -7,14 +7,14 @@
       "homeGoals": 0,
       "awayGoals": 1,
       "status": "1H",
-      "elapsed": 13,
+      "elapsed": 14,
       "kickoffUTC": "2026-07-03T18:00:00+00:00",
       "referee": "Gustavo Tejera, Uruguay",
       "events": [
         {
           "type": "Goal",
           "detail": "Normal Goal",
-          "player": null,
+          "player": "E. Ashour",
           "team": "EGYPT",
           "minute": 13,
           "extra": null
