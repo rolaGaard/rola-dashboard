@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-03T20:46:11.185648Z",
+  "updated": "2026-07-03T20:47:10.713749Z",
   "matches": {
     "MEXICO-SOUTH AFRICA": {
       "fixtureId": 1489369,
@@ -32725,7 +32725,7 @@
       "elapsed": null,
       "kickoffUTC": "2026-07-03T18:00:00+00:00",
       "referee": "Gustavo Tejera, Uruguay",
-      "penaltyHome": 0,
+      "penaltyHome": 1,
       "penaltyAway": 1,
       "events": [
         {
@@ -32771,10 +32771,18 @@
         {
           "type": "Goal",
           "detail": "Penalty",
-          "player": null,
+          "player": "M. Saber",
           "team": "EGYPT",
           "minute": 120,
           "extra": 1
+        },
+        {
+          "type": "Goal",
+          "detail": "Penalty",
+          "player": "J. Irvine",
+          "team": "AUSTRALIA",
+          "minute": 120,
+          "extra": 2
         }
       ],
       "substitutions": {
