@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-03T20:49:09.076180Z",
+  "updated": "2026-07-03T20:50:32.546453Z",
   "matches": {
     "MEXICO-SOUTH AFRICA": {
       "fixtureId": 1489369,
@@ -32726,7 +32726,7 @@
       "kickoffUTC": "2026-07-03T18:00:00+00:00",
       "referee": "Gustavo Tejera, Uruguay",
       "penaltyHome": 2,
-      "penaltyAway": 2,
+      "penaltyAway": 3,
       "events": [
         {
           "type": "Goal",
@@ -32797,6 +32797,14 @@
           "detail": "Penalty",
           "player": "A. Mabil",
           "team": "AUSTRALIA",
+          "minute": 120,
+          "extra": 3
+        },
+        {
+          "type": "Goal",
+          "detail": "Penalty",
+          "player": "M. Salah",
+          "team": "EGYPT",
           "minute": 120,
           "extra": 3
         }
