@@ -1,13 +1,13 @@
 {
-  "updated": "2026-07-04T18:13:10.292565Z",
+  "updated": "2026-07-04T18:14:13.006903Z",
   "matches": {
     "CANADA-MOROCCO": {
       "fixtureId": 1567824,
       "round": "Round of 16",
       "homeGoals": 0,
-      "awayGoals": 0,
+      "awayGoals": 1,
       "status": "2H",
-      "elapsed": 49,
+      "elapsed": 50,
       "kickoffUTC": "2026-07-04T17:00:00+00:00",
       "referee": "Michael Oliver, England",
       "events": [
@@ -58,6 +58,22 @@
           "team": "MOROCCO",
           "minute": 45,
           "extra": 6
+        },
+        {
+          "type": "Card",
+          "detail": "Yellow Card",
+          "player": "L. De Fougerolles",
+          "team": "CANADA",
+          "minute": 49,
+          "extra": null
+        },
+        {
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "player": "A. Ounahi",
+          "team": "MOROCCO",
+          "minute": 50,
+          "extra": null
         }
       ],
       "substitutions": {
