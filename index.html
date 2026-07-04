@@ -732,11 +732,13 @@
   }
   .cast-remote-scroll-btn:active { background:#1e2a3a; transform:scale(0.94); }
   .cast-remote-disconnect {
-    margin:0 16px 8px; width:calc(100% - 32px); padding:10px;
-    background:rgba(255,255,255,0.05); color:#64748b;
-    border:1px solid #1f2937; border-radius:10px;
+    margin:0 16px 8px; width:calc(100% - 32px); padding:12px;
+    background:rgba(220,38,38,0.12); color:#f87171;
+    border:1px solid rgba(220,38,38,0.3); border-radius:10px;
     font-size:13px; font-weight:700; cursor:pointer; font-family:inherit; flex-shrink:0;
+    transition:background 0.15s;
   }
+  .cast-remote-disconnect:active { background:rgba(220,38,38,0.25); }
 
 
   .settings-menu-wrap { position:relative; }
@@ -1002,7 +1004,7 @@
     <img class="header-icon" src="icons/icon-512.png" alt="rolaGaard">
     <div class="header-text">
       <div class="header-title">Mundial 2026</div>
-      <div class="header-by">by rolaGaard &nbsp;<span class="app-version">v3.1</span></div>
+      <div class="header-by">by rolaGaard &nbsp;<span class="app-version">v3.2</span></div>
       <div class="header-sub" id="header-sub">USA · Canadá · México</div>
     </div>
   </div>
@@ -4513,7 +4515,7 @@ function onCastSessionChanged(event) {
   if (state === S.SESSION_STARTED || state === S.SESSION_RESUMED) {
     castSession = cast.framework.CastContext.getInstance().getCurrentSession();
     castBtn.classList.add('cast-btn-active', 'cast-btn-casting');
-    castBtn.title = 'Transmitiendo — tocá para controlar';
+    castBtn.title = 'Transmitiendo — tocá para controlar o detener';
     // Mostrar nombre de la TV
     const device = castSession.getCastDevice();
     if (castRemoteTvName && device) castRemoteTvName.textContent = device.friendlyName || 'TV';
@@ -4536,8 +4538,14 @@ function onCastSessionChanged(event) {
 // ── Botón Cast: conectar o abrir control remoto ────────────────────────────────
 castBtn.addEventListener('click', () => {
   if (castSession) {
-    // Ya conectado → abrir control remoto inline
-    castRemoteModal.style.display = 'flex';
+    // Si el modal ya está visible → desconectar
+    if (castRemoteModal.style.display !== 'none') {
+      cast.framework.CastContext.getInstance().endCurrentSession(true);
+      castRemoteModal.style.display = 'none';
+    } else {
+      // Primer toque → abrir control remoto inline
+      castRemoteModal.style.display = 'flex';
+    }
   } else {
     cast.framework.CastContext.getInstance().requestSession()
       .catch(err => { if (err !== 'cancel') console.error('Cast error:', err); });
