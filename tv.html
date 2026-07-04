@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fixture rolaGaard — TV</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    background:#0a0e1a;
+    color:#fff;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    min-height:100vh;
+    overflow:hidden;
+  }
+
+  /* ── HEADER ── */
+  .tv-header {
+    background:#0a0a0a;
+    border-bottom:2px solid #FFD700;
+    padding:18px 48px;
+    display:flex; align-items:center; justify-content:space-between;
+  }
+  .tv-header-left { display:flex; align-items:center; gap:20px; }
+  .tv-logo {
+    width:64px; height:64px; border-radius:22.5%;
+    box-shadow:0 0 0 2px #0a0a0a, 0 0 0 3px #FFD700;
+  }
+  .tv-title { font-size:32px; font-weight:800; color:#fff; }
+  .tv-subtitle { font-size:16px; color:#94a3b8; margin-top:2px; }
+  .tv-clock { font-size:42px; font-weight:700; color:#FFD700; font-variant-numeric:tabular-nums; }
+
+  /* ── FILTRO ACTIVO BADGE ── */
+  .tv-filter-badge {
+    background:#003087; color:#FFD700;
+    font-size:14px; font-weight:800; letter-spacing:1px;
+    padding:6px 16px; border-radius:20px;
+    border:1px solid #FFD700;
+  }
+
+  /* ── CONTENIDO PRINCIPAL ── */
+  .tv-content {
+    padding:32px 48px;
+    height:calc(100vh - 110px);
+    overflow-y:auto;
+    scroll-behavior:smooth;
+  }
+
+  /* ── GRID DE PARTIDOS ── */
+  .tv-match-grid {
+    display:grid;
+    grid-template-columns:repeat(auto-fill, minmax(420px, 1fr));
+    gap:16px;
+  }
+
+  /* ── TARJETA DE PARTIDO ── */
+  .tv-card {
+    background:#fff;
+    border-radius:16px;
+    padding:20px 24px;
+    border-left:5px solid #e2e8f0;
+    display:flex; flex-direction:column; gap:10px;
+  }
+  .tv-card.live { border-left-color:#CC0000; }
+  .tv-card.finished { border-left-color:#003087; background:#e9eaed; }
+  .tv-card-header {
+    display:flex; align-items:center; justify-content:space-between;
+    font-size:12px; color:#64748b; font-weight:600; letter-spacing:0.04em;
+  }
+  .tv-card-status-live {
+    background:#CC0000; color:#fff;
+    font-size:12px; font-weight:800; padding:3px 10px; border-radius:20px;
+    letter-spacing:0.04em;
+  }
+  .tv-card-status-finished {
+    background:#003087; color:#FFD700;
+    font-size:12px; font-weight:800; padding:3px 10px; border-radius:20px;
+  }
+  .tv-card-status-ns {
+    color:#94a3b8; font-size:13px; font-weight:600;
+  }
+  .tv-teams {
+    display:flex; align-items:center; justify-content:space-between; gap:12px;
+  }
+  .tv-team { display:flex; flex-direction:column; align-items:center; gap:6px; flex:1; }
+  .tv-team-flag { font-size:36px; line-height:1; }
+  .tv-team-name {
+    font-size:16px; font-weight:800; color:#1a1a2e;
+    text-align:center; line-height:1.2;
+  }
+  .tv-score-wrap {
+    display:flex; align-items:center; gap:8px;
+    font-size:52px; font-weight:900; color:#1a1a2e;
+    font-variant-numeric:tabular-nums; flex-shrink:0;
+  }
+  .tv-score-sep { font-size:28px; color:#94a3b8; font-weight:400; }
+  .tv-time-ns { font-size:18px; font-weight:700; color:#1a1a2e; text-align:center; }
+
+  /* ── FIXTURE / BRACKET vista ── */
+  .tv-bracket-wrap { width:100%; height:calc(100vh - 180px); overflow:auto; }
+
+  /* ── GOLEADORES ── */
+  .tv-stats-grid {
+    display:grid; grid-template-columns:1fr 1fr; gap:24px;
+  }
+  .tv-stats-section {
+    background:#111827; border-radius:16px; padding:24px;
+    border:1px solid #1f2937;
+  }
+  .tv-stats-title {
+    font-size:18px; font-weight:800; color:#FFD700;
+    margin-bottom:16px; letter-spacing:0.04em;
+  }
+  .tv-stats-row {
+    display:flex; align-items:center; justify-content:space-between;
+    padding:10px 0; border-bottom:1px solid #1f2937;
+    font-size:16px; color:#fff;
+  }
+  .tv-stats-row:last-child { border-bottom:none; }
+  .tv-stats-rank { color:#64748b; font-weight:700; min-width:28px; }
+  .tv-stats-name { flex:1; font-weight:600; }
+  .tv-stats-val { font-weight:800; color:#FFD700; font-size:20px; }
+
+  /* ── SCROLL OVERLAY (cuando el celular hace scroll) ── */
+  .tv-scroll-indicator {
+    position:fixed; bottom:20px; right:20px;
+    background:rgba(0,0,0,0.7); color:#FFD700;
+    padding:8px 16px; border-radius:20px;
+    font-size:13px; font-weight:700;
+    opacity:0; transition:opacity 0.3s;
+    pointer-events:none;
+  }
+  .tv-scroll-indicator.visible { opacity:1; }
+
+  /* ── EMPTY STATE ── */
+  .tv-empty {
+    text-align:center; padding:80px 24px;
+    color:#64748b; font-size:20px;
+  }
+
+  /* ── CONNECTING STATE ── */
+  .tv-connecting {
+    position:fixed; inset:0;
+    background:#0a0e1a;
+    display:flex; flex-direction:column;
+    align-items:center; justify-content:center; gap:24px;
+    z-index:999;
+  }
+  .tv-connecting-logo {
+    width:120px; height:120px; border-radius:22.5%;
+    box-shadow:0 0 0 3px #0a0a0a, 0 0 0 5px #FFD700;
+  }
+  .tv-connecting-title { font-size:36px; font-weight:800; color:#fff; }
+  .tv-connecting-sub { font-size:18px; color:#94a3b8; }
+  .tv-connecting-dot {
+    display:flex; gap:10px;
+  }
+  .tv-connecting-dot span {
+    width:12px; height:12px; border-radius:50%; background:#FFD700;
+    animation:tvdot 1.2s infinite ease-in-out;
+  }
+  .tv-connecting-dot span:nth-child(2) { animation-delay:0.2s; }
+  .tv-connecting-dot span:nth-child(3) { animation-delay:0.4s; }
+  @keyframes tvdot {
+    0%,80%,100% { transform:scale(0.5); opacity:0.4; }
+    40% { transform:scale(1); opacity:1; }
+  }
+
+  /* ── GRUPO LABEL ── */
+  .tv-group-label {
+    color:#FFD700; font-size:14px; font-weight:800;
+    letter-spacing:0.08em; margin-bottom:10px; margin-top:4px;
+  }
+  .tv-group-block { margin-bottom:24px; }
+</style>
+</head>
+<body>
+
+<!-- Estado de espera antes de recibir conexión -->
+<div class="tv-connecting" id="tv-connecting">
+  <img class="tv-connecting-logo" src="icons/icon-512.png" alt="rolaGaard">
+  <div class="tv-connecting-title">Fixture rolaGaard</div>
+  <div class="tv-connecting-sub">Esperando conexión desde el celular...</div>
+  <div class="tv-connecting-dot"><span></span><span></span><span></span></div>
+</div>
+
+<!-- Header principal -->
+<div class="tv-header" id="tv-header" style="display:none;">
+  <div class="tv-header-left">
+    <img class="tv-logo" src="icons/icon-512.png" alt="rolaGaard">
+    <div>
+      <div class="tv-title">Mundial 2026</div>
+      <div class="tv-subtitle">fixture.rolagaard.com</div>
+    </div>
+  </div>
+  <div style="display:flex;align-items:center;gap:24px;">
+    <div class="tv-filter-badge" id="tv-filter-badge">TODOS</div>
+    <div class="tv-clock" id="tv-clock">--:--</div>
+  </div>
+</div>
+
+<!-- Contenido principal -->
+<div class="tv-content" id="tv-content" style="display:none;"></div>
+
+<!-- Indicador de scroll -->
+<div class="tv-scroll-indicator" id="tv-scroll-indicator">↕ Scroll desde celular</div>
+
+<!-- Cast Receiver SDK -->
+<script src="https://www.gstatic.com/cast/sdk/libs/caf_receiver/v3/cast_receiver_framework.js"></script>
+
+<script>
+// ── Constantes ───────────────────────────────────────────────────────────────
+const APP_ID = 'CEC8990A';
+const SCORES_URL = 'scores.json';
+const POLL_INTERVAL = 30000; // 30 seg
+
+// ── Estado ───────────────────────────────────────────────────────────────────
+let scoresData = [];
+let currentFilter = 'all';
+let scrollY = 0;
+
+// ── Cast Receiver ─────────────────────────────────────────────────────────────
+const context = cast.framework.CastReceiverContext.getInstance();
+const playerManager = context.getPlayerManager();
+
+context.addCustomMessageListener('urn:x-cast:com.rolagaard.fixture', (event) => {
+  const msg = event.data;
+  if (!msg || !msg.type) return;
+
+  if (msg.type === 'filter') {
+    currentFilter = msg.value;
+    render();
+  } else if (msg.type === 'scroll') {
+    const content = document.getElementById('tv-content');
+    content.scrollTop += msg.delta;
+    showScrollIndicator();
+  } else if (msg.type === 'zoom') {
+    // zoom futuro: escalar el contenido
+  }
+});
+
+context.addEventListener(cast.framework.system.EventType.READY, () => {
+  document.getElementById('tv-connecting').style.display = 'none';
+  document.getElementById('tv-header').style.display = 'flex';
+  document.getElementById('tv-content').style.display = 'block';
+  loadData();
+});
+
+context.start({ disableIdleTimeout: true });
+
+// ── Reloj ─────────────────────────────────────────────────────────────────────
+function updateClock() {
+  const now = new Date();
+  document.getElementById('tv-clock').textContent =
+    now.toLocaleTimeString([], { hour:'2-digit', minute:'2-digit' });
+}
+updateClock();
+setInterval(updateClock, 1000);
+
+// ── Carga de datos ────────────────────────────────────────────────────────────
+async function loadData() {
+  try {
+    const r = await fetch(SCORES_URL + '?t=' + Date.now());
+    const json = await r.json();
+    scoresData = json.fixtures || json || [];
+    render();
+  } catch(e) {
+    console.error('TV: error cargando scores.json', e);
+  }
+}
+setInterval(loadData, POLL_INTERVAL);
+
+// ── Helpers ───────────────────────────────────────────────────────────────────
+const STATUS_LIVE = ['1H','HT','2H','ET','BT','P'];
+const STATUS_DONE = ['FT','AET','PEN'];
+
+function isLive(m) { return STATUS_LIVE.includes(m.status); }
+function isDone(m) { return STATUS_DONE.includes(m.status); }
+function isNS(m)   { return m.status === 'NS'; }
+
+function statusLabel(m) {
+  if (m.status === 'FT' || m.status === 'AET' || m.status === 'PEN') return 'FINALIZADO';
+  if (m.status === 'HT') return 'ENTRETIEMPO';
+  if (m.status === 'BT') return 'DESCANSO ET';
+  if (m.status === 'P')  return 'PENALES';
+  if (m.status === '1H') return (m.elapsed || '') + "'";
+  if (m.status === '2H') return (m.elapsed === 99 ? '90+9\'' : (m.elapsed || '') + "'");
+  if (m.status === 'ET') return 'T. EXTRA ' + (m.elapsed || '') + "'";
+  if (m.status === 'NS') {
+    const d = new Date(m.kickoff || m.date);
+    return d.toLocaleTimeString([], { hour:'2-digit', minute:'2-digit' });
+  }
+  return m.status;
+}
+
+function flagEmoji(code) {
+  if (!code) return '🏴';
+  const c = code.toUpperCase();
+  // Mapeo de códigos FIFA a emoji de bandera
+  const map = {
+    'ARG':'🇦🇷','BRA':'🇧🇷','FRA':'🇫🇷','GER':'🇩🇪','ESP':'🇪🇸','ITA':'🇮🇹',
+    'ENG':'🏴󠁧󠁢󠁥󠁮󠁧󠁿','POR':'🇵🇹','NED':'🇳🇱','BEL':'🇧🇪','URU':'🇺🇾','COL':'🇨🇴',
+    'MEX':'🇲🇽','USA':'🇺🇸','CAN':'🇨🇦','JAP':'🇯🇵','KOR':'🇰🇷','MAR':'🇲🇦',
+    'SEN':'🇸🇳','GHA':'🇬🇭','CIV':'🇨🇮','NGA':'🇳🇬','CMR':'🇨🇲','TUN':'🇹🇳',
+    'EGY':'🇪🇬','ALG':'🇩🇿','AUS':'🇦🇺','NZL':'🇳🇿','IRN':'🇮🇷','KSA':'🇸🇦',
+    'QAT':'🇶🇦','UAE':'🇦🇪','JOR':'🇯🇴','IRQ':'🇮🇶','SYR':'🇸🇾','UZB':'🇺🇿',
+    'CHN':'🇨🇳','IND':'🇮🇳','THA':'🇹🇭','VNM':'🇻🇳','PHL':'🇵🇭','IDN':'🇮🇩',
+    'POL':'🇵🇱','CRO':'🇭🇷','SVK':'🇸🇰','CZE':'🇨🇿','HUN':'🇭🇺','ROU':'🇷🇴',
+    'SRB':'🇷🇸','UKR':'🇺🇦','AUT':'🇦🇹','SUI':'🇨🇭','DEN':'🇩🇰','SWE':'🇸🇪',
+    'NOR':'🇳🇴','FIN':'🇫🇮','SCO':'🏴󠁧󠁢󠁳󠁣󠁴󠁿','WAL':'🏴󠁧󠁢󠁷󠁬󠁳󠁿','IRL':'🇮🇪','GRE':'🇬🇷',
+    'TUR':'🇹🇷','RUS':'🇷🇺','CHI':'🇨🇱','ECU':'🇪🇨','PER':'🇵🇪','BOL':'🇧🇴',
+    'PAR':'🇵🇾','VEN':'🇻🇪','PAN':'🇵🇦','CRC':'🇨🇷','HON':'🇭🇳','GTM':'🇬🇹',
+    'JAM':'🇯🇲','TRI':'🇹🇹','CUB':'🇨🇺','HAI':'🇭🇹',
+  };
+  return map[c] || '🏴';
+}
+
+// ── Filtrado ──────────────────────────────────────────────────────────────────
+function filterMatches(filter) {
+  const now = new Date();
+  const todayStr = now.toISOString().slice(0,10);
+  switch(filter) {
+    case 'all':       return [...scoresData];
+    case 'live':      return scoresData.filter(isLive);
+    case 'finished':  return scoresData.filter(isDone);
+    case 'scheduled': return scoresData.filter(isNS);
+    case 'today':
+      return scoresData.filter(m => {
+        const d = m.kickoff || m.date;
+        return d && d.slice(0,10) === todayStr;
+      });
+    default:          return [...scoresData];
+  }
+}
+
+// ── Badge de filtro ───────────────────────────────────────────────────────────
+const FILTER_LABELS = {
+  all:'TODOS', live:'EN VIVO', finished:'JUGADOS',
+  scheduled:'PRÓXIMOS', today:'HOY', fixture:'FIXTURE',
+  paises:'PAÍSES', stats:'ESTADÍSTICAS'
+};
+
+// ── Render ────────────────────────────────────────────────────────────────────
+function render() {
+  const badge = document.getElementById('tv-filter-badge');
+  badge.textContent = FILTER_LABELS[currentFilter] || currentFilter.toUpperCase();
+
+  const content = document.getElementById('tv-content');
+
+  if (currentFilter === 'fixture') {
+    renderBracket(content);
+    return;
+  }
+  if (currentFilter === 'stats') {
+    renderStats(content);
+    return;
+  }
+  if (currentFilter === 'paises') {
+    renderPaises(content);
+    return;
+  }
+
+  const matches = filterMatches(currentFilter);
+
+  // Ordenar: live → scheduled → finished
+  const sorted = [...matches].sort((a,b) => {
+    const pri = m => isLive(m) ? 0 : isNS(m) ? 1 : 2;
+    if (pri(a) !== pri(b)) return pri(a) - pri(b);
+    const da = new Date(a.kickoff || a.date);
+    const db = new Date(b.kickoff || b.date);
+    return da - db;
+  });
+
+  if (!sorted.length) {
+    content.innerHTML = '<div class="tv-empty">No hay partidos en esta vista</div>';
+    return;
+  }
+
+  // Agrupar por grupo/ronda
+  const groups = {};
+  sorted.forEach(m => {
+    const g = m.group || m.round || 'Otros';
+    if (!groups[g]) groups[g] = [];
+    groups[g].push(m);
+  });
+
+  let html = '<div>';
+  Object.entries(groups).forEach(([gname, gmatches]) => {
+    html += `<div class="tv-group-block">
+      <div class="tv-group-label">${gname}</div>
+      <div class="tv-match-grid">`;
+    gmatches.forEach(m => { html += buildCard(m); });
+    html += '</div></div>';
+  });
+  html += '</div>';
+  content.innerHTML = html;
+}
+
+// ── Tarjeta de partido ────────────────────────────────────────────────────────
+function buildCard(m) {
+  const live = isLive(m);
+  const done = isDone(m);
+  const ns   = isNS(m);
+  const cls  = live ? 'live' : done ? 'finished' : '';
+  const sl   = statusLabel(m);
+
+  let statusHtml = '';
+  if (live)      statusHtml = `<span class="tv-card-status-live">🔴 ${sl}</span>`;
+  else if (done) statusHtml = `<span class="tv-card-status-finished">${sl}</span>`;
+  else           statusHtml = `<span class="tv-card-status-ns">${sl}</span>`;
+
+  const hg = m.home_goals ?? (ns ? '' : '0');
+  const ag = m.away_goals ?? (ns ? '' : '0');
+
+  const scoreHtml = ns
+    ? `<div class="tv-time-ns">${sl}</div>`
+    : `<div class="tv-score-wrap">
+        <span>${hg}</span>
+        <span class="tv-score-sep">–</span>
+        <span>${ag}</span>
+      </div>`;
+
+  return `<div class="tv-card ${cls}">
+    <div class="tv-card-header">
+      <span>${m.venue || ''}</span>
+      ${statusHtml}
+    </div>
+    <div class="tv-teams">
+      <div class="tv-team">
+        <div class="tv-team-flag">${flagEmoji(m.home_code)}</div>
+        <div class="tv-team-name">${m.home_name || m.home_code || 'TBD'}</div>
+      </div>
+      ${scoreHtml}
+      <div class="tv-team">
+        <div class="tv-team-flag">${flagEmoji(m.away_code)}</div>
+        <div class="tv-team-name">${m.away_name || m.away_code || 'TBD'}</div>
+      </div>
+    </div>
+  </div>`;
+}
+
+// ── Bracket (simplificado para TV) ────────────────────────────────────────────
+function renderBracket(content) {
+  content.innerHTML = `<div class="tv-empty">
+    🏆 Vista Fixture — usá el control remoto para navegar los filtros
+  </div>`;
+  // La vista bracket completa requiere la lógica de index.html
+  // Por ahora muestra el aviso; puede expandirse en iteraciones futuras
+}
+
+// ── Stats ─────────────────────────────────────────────────────────────────────
+function renderStats(content) {
+  // Goleadores: acumular de los eventos de cada partido
+  const scorers = {};
+  const cards   = {};
+  scoresData.forEach(m => {
+    (m.events || []).forEach(ev => {
+      if (ev.type === 'Goal' && ev.detail !== 'Own Goal') {
+        const k = ev.player || 'Desconocido';
+        scorers[k] = (scorers[k] || 0) + 1;
+      }
+      if (ev.type === 'Card' && ev.detail === 'Yellow Card') {
+        const k = ev.player || 'Desconocido';
+        cards[k] = (cards[k] || 0) + 1;
+      }
+    });
+  });
+
+  const topScorers = Object.entries(scorers).sort((a,b)=>b[1]-a[1]).slice(0,10);
+  const topCards   = Object.entries(cards).sort((a,b)=>b[1]-a[1]).slice(0,10);
+
+  const rows = (list) => list.map(([name,val],i) =>
+    `<div class="tv-stats-row">
+      <span class="tv-stats-rank">${i+1}</span>
+      <span class="tv-stats-name">${name}</span>
+      <span class="tv-stats-val">${val}</span>
+    </div>`
+  ).join('');
+
+  content.innerHTML = `<div class="tv-stats-grid">
+    <div class="tv-stats-section">
+      <div class="tv-stats-title">⚽ Goleadores</div>
+      ${topScorers.length ? rows(topScorers) : '<div style="color:#64748b;">Sin datos aún</div>'}
+    </div>
+    <div class="tv-stats-section">
+      <div class="tv-stats-title">🟨 Tarjetas Amarillas</div>
+      ${topCards.length ? rows(topCards) : '<div style="color:#64748b;">Sin datos aún</div>'}
+    </div>
+  </div>`;
+}
+
+// ── Países ────────────────────────────────────────────────────────────────────
+function renderPaises(content) {
+  content.innerHTML = '<div class="tv-empty">Vista Países — próximamente en TV</div>';
+}
+
+// ── Scroll indicator ──────────────────────────────────────────────────────────
+let scrollTimer = null;
+function showScrollIndicator() {
+  const el = document.getElementById('tv-scroll-indicator');
+  el.classList.add('visible');
+  clearTimeout(scrollTimer);
+  scrollTimer = setTimeout(() => el.classList.remove('visible'), 1500);
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>Fixture rolaGaard — Control remoto</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; -webkit-tap-highlight-color:transparent; }
+  body {
+    background:#0a0e1a;
+    color:#fff;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    min-height:100vh;
+    display:flex; flex-direction:column;
+    user-select:none;
+  }
+
+  /* ── HEADER ── */
+  .rm-header {
+    background:#0a0a0a;
+    border-bottom:1px solid #1f1f1f;
+    padding:14px 20px;
+    display:flex; align-items:center; justify-content:space-between;
+  }
+  .rm-header-left { display:flex; align-items:center; gap:12px; }
+  .rm-logo { width:40px; height:40px; border-radius:22.5%; box-shadow:0 0 0 2px #FFD700; }
+  .rm-title { font-size:16px; font-weight:800; color:#fff; }
+  .rm-sub { font-size:11px; color:#64748b; }
+  .rm-cast-status {
+    display:flex; align-items:center; gap:6px;
+    font-size:12px; font-weight:700;
+  }
+  .rm-cast-dot {
+    width:10px; height:10px; border-radius:50%;
+    background:#64748b; transition:background 0.3s;
+  }
+  .rm-cast-dot.connected { background:#22c55e; }
+  .rm-cast-dot.connecting { background:#FFD700; animation:pulse 1s infinite; }
+  @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.3} }
+
+  /* ── SECCIÓN: CONECTAR ── */
+  .rm-connect-section {
+    padding:20px;
+    display:flex; flex-direction:column; gap:12px;
+  }
+  .rm-cast-btn {
+    width:100%; padding:14px;
+    background:#FFD700; color:#0a0a0a;
+    border:none; border-radius:12px;
+    font-size:16px; font-weight:800;
+    cursor:pointer; font-family:inherit;
+    display:flex; align-items:center; justify-content:center; gap:10px;
+  }
+  .rm-cast-btn:disabled { background:#2a2a2a; color:#64748b; }
+  .rm-cast-btn.connected { background:#22c55e; color:#fff; }
+  .rm-disconnect-btn {
+    width:100%; padding:10px;
+    background:rgba(255,255,255,0.06); color:#94a3b8;
+    border:1px solid #2a2a2a; border-radius:10px;
+    font-size:13px; font-weight:700;
+    cursor:pointer; font-family:inherit;
+  }
+
+  /* ── SECCIÓN: FILTROS ── */
+  .rm-section-title {
+    font-size:11px; font-weight:800; color:#64748b;
+    letter-spacing:0.08em; padding:0 20px; margin-top:8px;
+  }
+  .rm-filters {
+    padding:12px 20px;
+    display:grid; grid-template-columns:repeat(4,1fr); gap:8px;
+  }
+  .rm-filter-btn {
+    background:#111827; border:1px solid #1f2937;
+    border-radius:10px; padding:10px 4px;
+    font-size:11px; font-weight:700; color:#94a3b8;
+    cursor:pointer; font-family:inherit;
+    text-align:center; display:flex; flex-direction:column;
+    align-items:center; gap:4px;
+    transition:all 0.15s;
+    -webkit-tap-highlight-color:transparent;
+  }
+  .rm-filter-btn.active {
+    background:#003087; border-color:#FFD700; color:#FFD700;
+  }
+  .rm-filter-btn:active { transform:scale(0.93); }
+  .rm-filter-icon { font-size:20px; }
+
+  /* ── SECCIÓN: TRACKPAD ── */
+  .rm-trackpad-wrap { padding:12px 20px; flex:1; display:flex; flex-direction:column; gap:8px; }
+  .rm-trackpad {
+    flex:1; min-height:200px;
+    background:#111827;
+    border:1px solid #1f2937;
+    border-radius:16px;
+    position:relative;
+    overflow:hidden;
+    cursor:pointer;
+    display:flex; align-items:center; justify-content:center;
+  }
+  .rm-trackpad-hint {
+    color:#2a3a50; font-size:14px; font-weight:700;
+    text-align:center; pointer-events:none;
+    line-height:1.6;
+  }
+  .rm-trackpad-finger {
+    position:absolute;
+    width:48px; height:48px; border-radius:50%;
+    background:rgba(255,215,0,0.25);
+    border:2px solid #FFD700;
+    transform:translate(-50%,-50%);
+    pointer-events:none;
+    opacity:0; transition:opacity 0.2s;
+  }
+  .rm-trackpad.touching .rm-trackpad-finger { opacity:1; }
+
+  /* ── SCROLL RÁPIDO ── */
+  .rm-scroll-btns {
+    display:grid; grid-template-columns:1fr 1fr; gap:8px;
+  }
+  .rm-scroll-btn {
+    background:#111827; border:1px solid #1f2937;
+    border-radius:10px; padding:12px;
+    font-size:20px; color:#94a3b8;
+    cursor:pointer; text-align:center;
+    font-family:inherit; border:none;
+    transition:all 0.1s;
+  }
+  .rm-scroll-btn:active { background:#1e2a3a; transform:scale(0.94); }
+
+  /* ── ESTADO DESCONECTADO ── */
+  .rm-offline-overlay {
+    position:fixed; inset:0; z-index:999;
+    background:#0a0e1a;
+    display:flex; flex-direction:column;
+    align-items:center; justify-content:center; gap:20px;
+    padding:32px;
+  }
+  .rm-offline-logo { width:80px; height:80px; border-radius:22.5%; box-shadow:0 0 0 3px #FFD700; }
+  .rm-offline-title { font-size:22px; font-weight:800; text-align:center; }
+  .rm-offline-sub { font-size:14px; color:#64748b; text-align:center; line-height:1.6; }
+  .rm-offline-cast-btn {
+    width:100%; max-width:280px; padding:16px;
+    background:#FFD700; color:#0a0a0a;
+    border:none; border-radius:12px;
+    font-size:17px; font-weight:800;
+    cursor:pointer; font-family:inherit;
+    display:flex; align-items:center; justify-content:center; gap:10px;
+  }
+
+  /* ── CAST ICON SVG ── */
+  .cast-icon { width:24px; height:24px; fill:currentColor; }
+</style>
+</head>
+<body>
+
+<!-- Pantalla inicial si no hay sesión Cast -->
+<div class="rm-offline-overlay" id="rm-offline-overlay">
+  <img class="rm-offline-logo" src="icons/icon-512.png" alt="rolaGaard">
+  <div class="rm-offline-title">Control Remoto</div>
+  <div class="rm-offline-sub">
+    Conectate a tu TV con Chromecast para usar esta pantalla como control remoto del Mundial 2026.
+  </div>
+  <button class="rm-offline-cast-btn" id="rm-cast-btn-main" onclick="startCast()">
+    <svg class="cast-icon" viewBox="0 0 24 24"><path d="M21 3H3c-1.1 0-2 .9-2 2v3h2V5h18v14h-7v2h7c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM1 18v3h3c0-1.66-1.34-3-3-3zm0-4v2c2.76 0 5 2.24 5 5h2c0-3.87-3.13-7-7-7zm0-4v2c4.97 0 9 4.03 9 9h2c0-6.08-4.93-11-11-11z"/></svg>
+    Conectar a TV
+  </button>
+</div>
+
+<!-- Control principal (visible cuando está conectado) -->
+<div id="rm-main" style="display:none; flex-direction:column; height:100vh;">
+
+  <!-- Header -->
+  <div class="rm-header">
+    <div class="rm-header-left">
+      <img class="rm-logo" src="icons/icon-512.png" alt="">
+      <div>
+        <div class="rm-title">Control Remoto</div>
+        <div class="rm-sub">Mundial 2026 · TV</div>
+      </div>
+    </div>
+    <div class="rm-cast-status">
+      <div class="rm-cast-dot connected" id="rm-cast-dot"></div>
+      <span id="rm-cast-status-text">Conectado</span>
+    </div>
+  </div>
+
+  <!-- Filtros -->
+  <div class="rm-section-title">FILTROS</div>
+  <div class="rm-filters">
+    <button class="rm-filter-btn active" data-filter="all" onclick="sendFilter('all', this)">
+      <span class="rm-filter-icon">📋</span>Todos
+    </button>
+    <button class="rm-filter-btn" data-filter="today" onclick="sendFilter('today', this)">
+      <span class="rm-filter-icon">📅</span>Hoy
+    </button>
+    <button class="rm-filter-btn" data-filter="live" onclick="sendFilter('live', this)">
+      <span class="rm-filter-icon">🔴</span>En vivo
+    </button>
+    <button class="rm-filter-btn" data-filter="finished" onclick="sendFilter('finished', this)">
+      <span class="rm-filter-icon">✅</span>Jugados
+    </button>
+    <button class="rm-filter-btn" data-filter="scheduled" onclick="sendFilter('scheduled', this)">
+      <span class="rm-filter-icon">🕐</span>Próximos
+    </button>
+    <button class="rm-filter-btn" data-filter="fixture" onclick="sendFilter('fixture', this)">
+      <span class="rm-filter-icon">🏆</span>Fixture
+    </button>
+    <button class="rm-filter-btn" data-filter="paises" onclick="sendFilter('paises', this)">
+      <span class="rm-filter-icon">🌍</span>Países
+    </button>
+    <button class="rm-filter-btn" data-filter="stats" onclick="sendFilter('stats', this)">
+      <span class="rm-filter-icon">📊</span>Stats
+    </button>
+  </div>
+
+  <!-- Trackpad -->
+  <div class="rm-trackpad-wrap">
+    <div class="rm-section-title" style="padding:0;">TRACKPAD — deslizá para hacer scroll en la TV</div>
+    <div class="rm-trackpad" id="rm-trackpad">
+      <div class="rm-trackpad-hint">↕ Deslizá el dedo<br>para hacer scroll</div>
+      <div class="rm-trackpad-finger" id="rm-finger"></div>
+    </div>
+
+    <!-- Botones de scroll rápido -->
+    <div class="rm-scroll-btns">
+      <button class="rm-scroll-btn" onpointerdown="quickScroll(-300)">↑ Arriba</button>
+      <button class="rm-scroll-btn" onpointerdown="quickScroll(300)">↓ Abajo</button>
+    </div>
+
+    <!-- Desconectar -->
+    <button class="rm-disconnect-btn" onclick="stopCast()">⏹ Desconectar de TV</button>
+  </div>
+
+</div>
+
+<!-- Cast Sender SDK -->
+<script src="https://www.gstatic.com/cv/js/sender/v1/cast_sender.js?loadCastFramework=1"></script>
+
+<script>
+const APP_ID = 'CEC8990A';
+const NAMESPACE = 'urn:x-cast:com.rolagaard.fixture';
+
+let castSession = null;
+let activeFilter = 'all';
+
+// ── Inicializar Cast API ───────────────────────────────────────────────────────
+window['__onGCastApiAvailable'] = function(isAvailable) {
+  if (!isAvailable) {
+    console.warn('Cast API no disponible');
+    return;
+  }
+
+  const options = new cast.framework.CastOptions();
+  options.receiverApplicationId = APP_ID;
+  options.autoJoinPolicy = chrome.cast.AutoJoinPolicy.ORIGIN_SCOPED;
+
+  cast.framework.CastContext.getInstance().setOptions(options);
+  cast.framework.CastContext.getInstance().addEventListener(
+    cast.framework.CastContextEventType.SESSION_STATE_CHANGED,
+    onSessionStateChanged
+  );
+};
+
+function onSessionStateChanged(event) {
+  const state = event.sessionState;
+  const S = cast.framework.SessionState;
+
+  if (state === S.SESSION_STARTED || state === S.SESSION_RESUMED) {
+    castSession = cast.framework.CastContext.getInstance().getCurrentSession();
+    showMainUI();
+  } else if (state === S.SESSION_ENDED) {
+    castSession = null;
+    showOfflineUI();
+  }
+}
+
+// ── UI helpers ────────────────────────────────────────────────────────────────
+function showMainUI() {
+  document.getElementById('rm-offline-overlay').style.display = 'none';
+  document.getElementById('rm-main').style.display = 'flex';
+}
+function showOfflineUI() {
+  document.getElementById('rm-offline-overlay').style.display = 'flex';
+  document.getElementById('rm-main').style.display = 'none';
+}
+
+// ── Cast ──────────────────────────────────────────────────────────────────────
+function startCast() {
+  cast.framework.CastContext.getInstance().requestSession().catch(err => {
+    console.error('Cast request failed:', err);
+  });
+}
+function stopCast() {
+  const ctx = cast.framework.CastContext.getInstance();
+  ctx.endCurrentSession(true);
+}
+
+// ── Enviar mensaje a TV ───────────────────────────────────────────────────────
+function sendMessage(msg) {
+  if (!castSession) return;
+  castSession.sendMessage(NAMESPACE, msg).catch(err => {
+    console.error('sendMessage error:', err);
+  });
+}
+
+// ── Filtros ───────────────────────────────────────────────────────────────────
+function sendFilter(filter, btn) {
+  activeFilter = filter;
+  // Actualizar UI
+  document.querySelectorAll('.rm-filter-btn').forEach(b => b.classList.remove('active'));
+  if (btn) btn.classList.add('active');
+  // Enviar a TV
+  sendMessage({ type: 'filter', value: filter });
+}
+
+// ── Scroll rápido ─────────────────────────────────────────────────────────────
+function quickScroll(delta) {
+  sendMessage({ type: 'scroll', delta });
+}
+
+// ── Trackpad ──────────────────────────────────────────────────────────────────
+const trackpad = document.getElementById('rm-trackpad');
+const finger   = document.getElementById('rm-finger');
+
+let lastY = null;
+let scrollThrottle = null;
+
+trackpad.addEventListener('pointerdown', (e) => {
+  trackpad.setPointerCapture(e.pointerId);
+  lastY = e.clientY;
+  trackpad.classList.add('touching');
+  moveFinger(e);
+});
+
+trackpad.addEventListener('pointermove', (e) => {
+  if (lastY === null) return;
+  moveFinger(e);
+
+  const dy = e.clientY - lastY;
+  lastY = e.clientY;
+
+  if (!scrollThrottle) {
+    scrollThrottle = setTimeout(() => { scrollThrottle = null; }, 50);
+    sendMessage({ type: 'scroll', delta: dy * 2.5 });
+  }
+});
+
+trackpad.addEventListener('pointerup', (e) => {
+  lastY = null;
+  trackpad.classList.remove('touching');
+});
+trackpad.addEventListener('pointercancel', (e) => {
+  lastY = null;
+  trackpad.classList.remove('touching');
+});
+
+function moveFinger(e) {
+  const rect = trackpad.getBoundingClientRect();
+  const x = e.clientX - rect.left;
+  const y = e.clientY - rect.top;
+  finger.style.left = x + 'px';
+  finger.style.top  = y + 'px';
+}
+</script>
+</body>
+</html>
