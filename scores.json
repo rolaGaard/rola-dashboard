@@ -1,6 +1,295 @@
 {
-  "updated": "2026-07-04T21:04:11.466270Z",
+  "updated": "2026-07-04T21:05:16.989930Z",
   "matches": {
+    "PARAGUAY-FRANCE": {
+      "fixtureId": 1569870,
+      "round": "Round of 16",
+      "homeGoals": 0,
+      "awayGoals": 0,
+      "status": "1H",
+      "elapsed": 1,
+      "kickoffUTC": "2026-07-04T21:00:00+00:00",
+      "referee": "Ilgiz Tantashev, Uzbekistan",
+      "events": [],
+      "lineups": {
+        "PARAGUAY": {
+          "formation": "5-4-1",
+          "coach": "Gustavo Alfaro",
+          "startXI": [
+            {
+              "name": "Orlando Gill",
+              "number": 12,
+              "pos": "G"
+            },
+            {
+              "name": "Juan C\u00e1ceres",
+              "number": 4,
+              "pos": "D"
+            },
+            {
+              "name": "Gustavo Vel\u00e1zquez",
+              "number": 2,
+              "pos": "D"
+            },
+            {
+              "name": "Gustavo G\u00f3mez",
+              "number": 15,
+              "pos": "D"
+            },
+            {
+              "name": "Omar Alderete",
+              "number": 3,
+              "pos": "D"
+            },
+            {
+              "name": "Junior Alonso",
+              "number": 6,
+              "pos": "D"
+            },
+            {
+              "name": "Diego G\u00f3mez",
+              "number": 8,
+              "pos": "M"
+            },
+            {
+              "name": "Andr\u00e9s Cubas",
+              "number": 14,
+              "pos": "M"
+            },
+            {
+              "name": "Mat\u00edas Galarza",
+              "number": 23,
+              "pos": "M"
+            },
+            {
+              "name": "Miguel Almir\u00f3n",
+              "number": 10,
+              "pos": "M"
+            },
+            {
+              "name": "Julio Enciso",
+              "number": 19,
+              "pos": "F"
+            }
+          ],
+          "substitutes": [
+            {
+              "name": "Gast\u00f3n Olveira",
+              "number": 22,
+              "pos": "G"
+            },
+            {
+              "name": "Roberto Fern\u00e1ndez",
+              "number": 1,
+              "pos": "G"
+            },
+            {
+              "name": "Fabi\u00e1n Balbuena",
+              "number": 5,
+              "pos": "D"
+            },
+            {
+              "name": "Jos\u00e9 Canale",
+              "number": 13,
+              "pos": "D"
+            },
+            {
+              "name": "Alexandro Maidana",
+              "number": 26,
+              "pos": "D"
+            },
+            {
+              "name": "Mauricio",
+              "number": 11,
+              "pos": "M"
+            },
+            {
+              "name": "Dami\u00e1n Bobadilla",
+              "number": 16,
+              "pos": "M"
+            },
+            {
+              "name": "Braian Ojeda",
+              "number": 20,
+              "pos": "M"
+            },
+            {
+              "name": "Gustavo Caballero",
+              "number": 24,
+              "pos": "F"
+            },
+            {
+              "name": "Alejandro Romero",
+              "number": 17,
+              "pos": "M"
+            },
+            {
+              "name": "Ram\u00f3n Sosa",
+              "number": 7,
+              "pos": "F"
+            },
+            {
+              "name": "Antonio Sanabria",
+              "number": 9,
+              "pos": "F"
+            },
+            {
+              "name": "Alex Arce",
+              "number": 18,
+              "pos": "F"
+            },
+            {
+              "name": "Gabriel \u00c1valos",
+              "number": 21,
+              "pos": "F"
+            },
+            {
+              "name": "Isidro Pitta",
+              "number": 25,
+              "pos": "F"
+            }
+          ]
+        },
+        "FRANCE": {
+          "formation": "4-2-3-1",
+          "coach": "Didier Deschamps",
+          "startXI": [
+            {
+              "name": "Mike Maignan",
+              "number": 16,
+              "pos": "G"
+            },
+            {
+              "name": "Jules Kound\u00e9",
+              "number": 5,
+              "pos": "D"
+            },
+            {
+              "name": "Dayot Upamecano",
+              "number": 4,
+              "pos": "D"
+            },
+            {
+              "name": "William Saliba",
+              "number": 17,
+              "pos": "D"
+            },
+            {
+              "name": "Lucas Digne",
+              "number": 3,
+              "pos": "D"
+            },
+            {
+              "name": "Manu Kon\u00e9",
+              "number": 6,
+              "pos": "M"
+            },
+            {
+              "name": "Adrien Rabiot",
+              "number": 14,
+              "pos": "M"
+            },
+            {
+              "name": "Ousmane Demb\u00e9l\u00e9",
+              "number": 7,
+              "pos": "M"
+            },
+            {
+              "name": "Michael Olise",
+              "number": 11,
+              "pos": "M"
+            },
+            {
+              "name": "Bradley Barcola",
+              "number": 12,
+              "pos": "M"
+            },
+            {
+              "name": "Kylian Mbapp\u00e9",
+              "number": 10,
+              "pos": "F"
+            }
+          ],
+          "substitutes": [
+            {
+              "name": "Robin Risser",
+              "number": 23,
+              "pos": "G"
+            },
+            {
+              "name": "Brice Samba",
+              "number": 1,
+              "pos": "G"
+            },
+            {
+              "name": "Malo Gusto",
+              "number": 2,
+              "pos": "D"
+            },
+            {
+              "name": "Ibrahima Konat\u00e9",
+              "number": 15,
+              "pos": "D"
+            },
+            {
+              "name": "Theo Hern\u00e1ndez",
+              "number": 19,
+              "pos": "D"
+            },
+            {
+              "name": "Lucas Hern\u00e1ndez",
+              "number": 21,
+              "pos": "D"
+            },
+            {
+              "name": "Maxence Lacroix",
+              "number": 26,
+              "pos": "D"
+            },
+            {
+              "name": "Aur\u00e9lien Tchouam\u00e9ni",
+              "number": 8,
+              "pos": "M"
+            },
+            {
+              "name": "N'Golo Kant\u00e9",
+              "number": 13,
+              "pos": "M"
+            },
+            {
+              "name": "Warren Za\u00efre-Emery",
+              "number": 18,
+              "pos": "M"
+            },
+            {
+              "name": "Rayan Cherki",
+              "number": 24,
+              "pos": "M"
+            },
+            {
+              "name": "Maghnes Akliouche",
+              "number": 25,
+              "pos": "M"
+            },
+            {
+              "name": "Marcus Thuram",
+              "number": 9,
+              "pos": "F"
+            },
+            {
+              "name": "D\u00e9sir\u00e9 Dou\u00e9",
+              "number": 20,
+              "pos": "F"
+            },
+            {
+              "name": "Jean-Philippe Mateta",
+              "number": 22,
+              "pos": "F"
+            }
+          ]
+        }
+      }
+    },
     "MEXICO-SOUTH AFRICA": {
       "fixtureId": 1489369,
       "round": "Group Stage - 1",
@@ -34271,294 +34560,6 @@
             {
               "name": "Ayoube Amaimouni Echghouyab",
               "number": 21,
-              "pos": "F"
-            }
-          ]
-        }
-      }
-    },
-    "PARAGUAY-FRANCE": {
-      "fixtureId": 1569870,
-      "round": "Round of 16",
-      "homeGoals": null,
-      "awayGoals": null,
-      "status": "NS",
-      "elapsed": null,
-      "kickoffUTC": "2026-07-04T21:00:00+00:00",
-      "referee": "Ilgiz Tantashev, Uzbekistan",
-      "lineups": {
-        "PARAGUAY": {
-          "formation": "5-4-1",
-          "coach": "Gustavo Alfaro",
-          "startXI": [
-            {
-              "name": "Orlando Gill",
-              "number": 12,
-              "pos": "G"
-            },
-            {
-              "name": "Juan C\u00e1ceres",
-              "number": 4,
-              "pos": "D"
-            },
-            {
-              "name": "Gustavo Vel\u00e1zquez",
-              "number": 2,
-              "pos": "D"
-            },
-            {
-              "name": "Gustavo G\u00f3mez",
-              "number": 15,
-              "pos": "D"
-            },
-            {
-              "name": "Omar Alderete",
-              "number": 3,
-              "pos": "D"
-            },
-            {
-              "name": "Junior Alonso",
-              "number": 6,
-              "pos": "D"
-            },
-            {
-              "name": "Diego G\u00f3mez",
-              "number": 8,
-              "pos": "M"
-            },
-            {
-              "name": "Andr\u00e9s Cubas",
-              "number": 14,
-              "pos": "M"
-            },
-            {
-              "name": "Mat\u00edas Galarza",
-              "number": 23,
-              "pos": "M"
-            },
-            {
-              "name": "Miguel Almir\u00f3n",
-              "number": 10,
-              "pos": "M"
-            },
-            {
-              "name": "Julio Enciso",
-              "number": 19,
-              "pos": "F"
-            }
-          ],
-          "substitutes": [
-            {
-              "name": "Gast\u00f3n Olveira",
-              "number": 22,
-              "pos": "G"
-            },
-            {
-              "name": "Roberto Fern\u00e1ndez",
-              "number": 1,
-              "pos": "G"
-            },
-            {
-              "name": "Fabi\u00e1n Balbuena",
-              "number": 5,
-              "pos": "D"
-            },
-            {
-              "name": "Jos\u00e9 Canale",
-              "number": 13,
-              "pos": "D"
-            },
-            {
-              "name": "Alexandro Maidana",
-              "number": 26,
-              "pos": "D"
-            },
-            {
-              "name": "Mauricio",
-              "number": 11,
-              "pos": "M"
-            },
-            {
-              "name": "Dami\u00e1n Bobadilla",
-              "number": 16,
-              "pos": "M"
-            },
-            {
-              "name": "Braian Ojeda",
-              "number": 20,
-              "pos": "M"
-            },
-            {
-              "name": "Gustavo Caballero",
-              "number": 24,
-              "pos": "F"
-            },
-            {
-              "name": "Alejandro Romero",
-              "number": 17,
-              "pos": "M"
-            },
-            {
-              "name": "Ram\u00f3n Sosa",
-              "number": 7,
-              "pos": "F"
-            },
-            {
-              "name": "Antonio Sanabria",
-              "number": 9,
-              "pos": "F"
-            },
-            {
-              "name": "Alex Arce",
-              "number": 18,
-              "pos": "F"
-            },
-            {
-              "name": "Gabriel \u00c1valos",
-              "number": 21,
-              "pos": "F"
-            },
-            {
-              "name": "Isidro Pitta",
-              "number": 25,
-              "pos": "F"
-            }
-          ]
-        },
-        "FRANCE": {
-          "formation": "4-2-3-1",
-          "coach": "Didier Deschamps",
-          "startXI": [
-            {
-              "name": "Mike Maignan",
-              "number": 16,
-              "pos": "G"
-            },
-            {
-              "name": "Jules Kound\u00e9",
-              "number": 5,
-              "pos": "D"
-            },
-            {
-              "name": "Dayot Upamecano",
-              "number": 4,
-              "pos": "D"
-            },
-            {
-              "name": "William Saliba",
-              "number": 17,
-              "pos": "D"
-            },
-            {
-              "name": "Lucas Digne",
-              "number": 3,
-              "pos": "D"
-            },
-            {
-              "name": "Manu Kon\u00e9",
-              "number": 6,
-              "pos": "M"
-            },
-            {
-              "name": "Adrien Rabiot",
-              "number": 14,
-              "pos": "M"
-            },
-            {
-              "name": "Ousmane Demb\u00e9l\u00e9",
-              "number": 7,
-              "pos": "M"
-            },
-            {
-              "name": "Michael Olise",
-              "number": 11,
-              "pos": "M"
-            },
-            {
-              "name": "Bradley Barcola",
-              "number": 12,
-              "pos": "M"
-            },
-            {
-              "name": "Kylian Mbapp\u00e9",
-              "number": 10,
-              "pos": "F"
-            }
-          ],
-          "substitutes": [
-            {
-              "name": "Robin Risser",
-              "number": 23,
-              "pos": "G"
-            },
-            {
-              "name": "Brice Samba",
-              "number": 1,
-              "pos": "G"
-            },
-            {
-              "name": "Malo Gusto",
-              "number": 2,
-              "pos": "D"
-            },
-            {
-              "name": "Ibrahima Konat\u00e9",
-              "number": 15,
-              "pos": "D"
-            },
-            {
-              "name": "Theo Hern\u00e1ndez",
-              "number": 19,
-              "pos": "D"
-            },
-            {
-              "name": "Lucas Hern\u00e1ndez",
-              "number": 21,
-              "pos": "D"
-            },
-            {
-              "name": "Maxence Lacroix",
-              "number": 26,
-              "pos": "D"
-            },
-            {
-              "name": "Aur\u00e9lien Tchouam\u00e9ni",
-              "number": 8,
-              "pos": "M"
-            },
-            {
-              "name": "N'Golo Kant\u00e9",
-              "number": 13,
-              "pos": "M"
-            },
-            {
-              "name": "Warren Za\u00efre-Emery",
-              "number": 18,
-              "pos": "M"
-            },
-            {
-              "name": "Rayan Cherki",
-              "number": 24,
-              "pos": "M"
-            },
-            {
-              "name": "Maghnes Akliouche",
-              "number": 25,
-              "pos": "M"
-            },
-            {
-              "name": "Marcus Thuram",
-              "number": 9,
-              "pos": "F"
-            },
-            {
-              "name": "D\u00e9sir\u00e9 Dou\u00e9",
-              "number": 20,
-              "pos": "F"
-            },
-            {
-              "name": "Jean-Philippe Mateta",
-              "number": 22,
               "pos": "F"
             }
           ]
