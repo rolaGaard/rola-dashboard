@@ -647,6 +647,97 @@
   .cast-btn-active { color:#00b4d8 !important; border-color:#00b4d8 !important; }
   @keyframes cast-pulse { 0%,100%{opacity:1} 50%{opacity:0.5} }
   .cast-btn-casting { animation:cast-pulse 2s infinite; }
+  /* ── Control Remoto Cast (modal inline) ── */
+  .cast-remote-modal {
+    position:fixed; inset:0; z-index:1100;
+    background:rgba(0,0,0,0.75);
+    display:flex; align-items:flex-end; justify-content:center;
+  }
+  .cast-remote-panel {
+    background:#0a0e1a; border-top:2px solid #00b4d8;
+    border-radius:20px 20px 0 0; width:100%; max-width:480px;
+    padding:0 0 env(safe-area-inset-bottom,16px);
+    display:flex; flex-direction:column; max-height:92vh;
+  }
+  .cast-remote-handle {
+    width:40px; height:4px; border-radius:2px;
+    background:#2a3a50; margin:12px auto 8px; flex-shrink:0;
+  }
+  .cast-remote-header {
+    display:flex; align-items:center; justify-content:space-between;
+    padding:8px 20px 12px; border-bottom:1px solid #1f2937; flex-shrink:0;
+  }
+  .cast-remote-title {
+    display:flex; align-items:center; gap:10px;
+    font-size:15px; font-weight:800; color:#fff;
+  }
+  .cast-remote-dot {
+    width:10px; height:10px; border-radius:50%; background:#22c55e;
+    animation:cast-pulse 2s infinite;
+  }
+  .cast-remote-tv-name { font-size:12px; color:#64748b; font-weight:500; }
+  .cast-remote-close {
+    background:none; border:none; color:#64748b;
+    font-size:20px; cursor:pointer; padding:4px 8px; line-height:1;
+  }
+  .cast-remote-section-title {
+    font-size:10px; font-weight:800; color:#64748b;
+    letter-spacing:0.08em; padding:12px 20px 6px; flex-shrink:0;
+  }
+  .cast-remote-filters {
+    display:grid; grid-template-columns:repeat(4,1fr); gap:8px;
+    padding:0 16px 12px; flex-shrink:0;
+  }
+  .cast-remote-filter-btn {
+    background:#111827; border:1px solid #1f2937;
+    border-radius:10px; padding:10px 4px;
+    font-size:11px; font-weight:700; color:#94a3b8;
+    cursor:pointer; font-family:inherit; text-align:center;
+    display:flex; flex-direction:column; align-items:center; gap:4px;
+    transition:all 0.12s; -webkit-tap-highlight-color:transparent;
+  }
+  .cast-remote-filter-btn.active { background:#003087; border-color:#FFD700; color:#FFD700; }
+  .cast-remote-filter-btn:active { transform:scale(0.92); }
+  .cast-remote-filter-icon { font-size:18px; }
+  .cast-remote-trackpad-wrap {
+    flex:1; display:flex; flex-direction:column;
+    gap:8px; padding:0 16px 12px; min-height:0;
+  }
+  .cast-remote-trackpad {
+    flex:1; min-height:120px; max-height:200px;
+    background:#111827; border:1px solid #1f2937;
+    border-radius:14px; position:relative; overflow:hidden;
+    display:flex; align-items:center; justify-content:center;
+    touch-action:none;
+  }
+  .cast-remote-trackpad-hint {
+    color:#2a3a50; font-size:13px; font-weight:700;
+    text-align:center; pointer-events:none; line-height:1.6;
+  }
+  .cast-remote-finger {
+    position:absolute; width:44px; height:44px; border-radius:50%;
+    background:rgba(0,180,216,0.2); border:2px solid #00b4d8;
+    transform:translate(-50%,-50%); pointer-events:none;
+    opacity:0; transition:opacity 0.15s;
+  }
+  .cast-remote-trackpad.touching .cast-remote-finger { opacity:1; }
+  .cast-remote-scroll-btns {
+    display:grid; grid-template-columns:1fr 1fr; gap:8px; flex-shrink:0;
+  }
+  .cast-remote-scroll-btn {
+    background:#111827; border:1px solid #1f2937;
+    border-radius:10px; padding:11px; font-size:18px; color:#94a3b8;
+    cursor:pointer; text-align:center; font-family:inherit;
+    transition:all 0.1s; -webkit-tap-highlight-color:transparent;
+  }
+  .cast-remote-scroll-btn:active { background:#1e2a3a; transform:scale(0.94); }
+  .cast-remote-disconnect {
+    margin:0 16px 8px; width:calc(100% - 32px); padding:10px;
+    background:rgba(255,255,255,0.05); color:#64748b;
+    border:1px solid #1f2937; border-radius:10px;
+    font-size:13px; font-weight:700; cursor:pointer; font-family:inherit; flex-shrink:0;
+  }
+
 
   .settings-menu-wrap { position:relative; }
   .settings-dropdown {
@@ -911,7 +1002,7 @@
     <img class="header-icon" src="icons/icon-512.png" alt="rolaGaard">
     <div class="header-text">
       <div class="header-title">Mundial 2026</div>
-      <div class="header-by">by rolaGaard &nbsp;<span class="app-version">v3.0</span></div>
+      <div class="header-by">by rolaGaard &nbsp;<span class="app-version">v3.1</span></div>
       <div class="header-sub" id="header-sub">USA · Canadá · México</div>
     </div>
   </div>
@@ -4323,6 +4414,65 @@ applyTranslations();
 </body>
 </html>
 
+
+<!-- ── Modal Control Remoto Cast (inline) ── -->
+<div id="cast-remote-modal" class="cast-remote-modal" style="display:none;">
+  <div class="cast-remote-panel">
+    <div class="cast-remote-handle"></div>
+    <div class="cast-remote-header">
+      <div class="cast-remote-title">
+        <div class="cast-remote-dot"></div>
+        <div>
+          <div>Transmitiendo en TV</div>
+          <div class="cast-remote-tv-name" id="cast-remote-tv-name">Conectando...</div>
+        </div>
+      </div>
+      <button class="cast-remote-close" id="cast-remote-close" aria-label="Cerrar">✕</button>
+    </div>
+
+    <div class="cast-remote-section-title">FILTROS</div>
+    <div class="cast-remote-filters">
+      <button class="cast-remote-filter-btn active" data-castfilter="all">
+        <span class="cast-remote-filter-icon">📋</span>Todos
+      </button>
+      <button class="cast-remote-filter-btn" data-castfilter="today">
+        <span class="cast-remote-filter-icon">📅</span>Hoy
+      </button>
+      <button class="cast-remote-filter-btn" data-castfilter="live">
+        <span class="cast-remote-filter-icon">🔴</span>En vivo
+      </button>
+      <button class="cast-remote-filter-btn" data-castfilter="finished">
+        <span class="cast-remote-filter-icon">✅</span>Jugados
+      </button>
+      <button class="cast-remote-filter-btn" data-castfilter="scheduled">
+        <span class="cast-remote-filter-icon">🕐</span>Próximos
+      </button>
+      <button class="cast-remote-filter-btn" data-castfilter="fixture">
+        <span class="cast-remote-filter-icon">🏆</span>Fixture
+      </button>
+      <button class="cast-remote-filter-btn" data-castfilter="paises">
+        <span class="cast-remote-filter-icon">🌍</span>Países
+      </button>
+      <button class="cast-remote-filter-btn" data-castfilter="stats">
+        <span class="cast-remote-filter-icon">📊</span>Stats
+      </button>
+    </div>
+
+    <div class="cast-remote-section-title">TRACKPAD — deslizá para hacer scroll en la TV</div>
+    <div class="cast-remote-trackpad-wrap">
+      <div class="cast-remote-trackpad" id="cast-remote-trackpad">
+        <div class="cast-remote-trackpad-hint">↕ Deslizá el dedo<br>para hacer scroll</div>
+        <div class="cast-remote-finger" id="cast-remote-finger"></div>
+      </div>
+      <div class="cast-remote-scroll-btns">
+        <button class="cast-remote-scroll-btn" id="cast-scroll-up">↑ Arriba</button>
+        <button class="cast-remote-scroll-btn" id="cast-scroll-down">↓ Abajo</button>
+      </div>
+      <button class="cast-remote-disconnect" id="cast-remote-disconnect">⏹ Desconectar de TV</button>
+    </div>
+  </div>
+</div>
+
 <!-- Cast Sender SDK — única dependencia externa, necesaria para Google Cast -->
 <script src="https://www.gstatic.com/cv/js/sender/v1/cast_sender.js?loadCastFramework=1"></script>
 <script>
@@ -4330,19 +4480,27 @@ applyTranslations();
 const CAST_APP_ID    = 'CEC8990A';
 const CAST_NAMESPACE = 'urn:x-cast:com.rolagaard.fixture';
 
-let castSession  = null;
+let castSession = null;
 const castBtn = document.getElementById('cast-btn');
 
-// Callback que la SDK llama cuando está lista
+// ── Referencias al modal de control remoto ────────────────────────────────────
+const castRemoteModal    = document.getElementById('cast-remote-modal');
+const castRemoteClose    = document.getElementById('cast-remote-close');
+const castRemoteTvName   = document.getElementById('cast-remote-tv-name');
+const castRemoteTrackpad = document.getElementById('cast-remote-trackpad');
+const castRemoteFinger   = document.getElementById('cast-remote-finger');
+const castScrollUp       = document.getElementById('cast-scroll-up');
+const castScrollDown     = document.getElementById('cast-scroll-down');
+const castDisconnect     = document.getElementById('cast-remote-disconnect');
+
+// ── Cast SDK init ─────────────────────────────────────────────────────────────
 window['__onGCastApiAvailable'] = function(isAvailable) {
   if (!isAvailable) return;
   const options = new cast.framework.CastOptions();
   options.receiverApplicationId = CAST_APP_ID;
   options.autoJoinPolicy = chrome.cast.AutoJoinPolicy.ORIGIN_SCOPED;
   cast.framework.CastContext.getInstance().setOptions(options);
-  // Mostrar el botón Cast
   castBtn.style.display = 'flex';
-  // Escuchar cambios de sesión
   cast.framework.CastContext.getInstance().addEventListener(
     cast.framework.CastContextEventType.SESSION_STATE_CHANGED,
     onCastSessionChanged
@@ -4355,38 +4513,111 @@ function onCastSessionChanged(event) {
   if (state === S.SESSION_STARTED || state === S.SESSION_RESUMED) {
     castSession = cast.framework.CastContext.getInstance().getCurrentSession();
     castBtn.classList.add('cast-btn-active', 'cast-btn-casting');
-    castBtn.title = 'Transmitiendo en TV — tocá para abrir el control remoto';
-    // Sincronizar filtro activo con la TV
+    castBtn.title = 'Transmitiendo — tocá para controlar';
+    // Mostrar nombre de la TV
+    const device = castSession.getCastDevice();
+    if (castRemoteTvName && device) castRemoteTvName.textContent = device.friendlyName || 'TV';
+    // Sincronizar filtro activo
     const activeStat = document.querySelector('.stat-card.active');
     if (activeStat) castSendMessage({ type:'filter', value: activeStat.dataset.filter || 'all' });
+    // Sincronizar botones del remote con el filtro activo
+    const af = activeStat ? activeStat.dataset.filter : 'all';
+    document.querySelectorAll('.cast-remote-filter-btn').forEach(b => {
+      b.classList.toggle('active', b.dataset.castfilter === af);
+    });
   } else if (state === S.SESSION_ENDED) {
     castSession = null;
     castBtn.classList.remove('cast-btn-active', 'cast-btn-casting');
     castBtn.title = 'Ver en TV';
+    castRemoteModal.style.display = 'none';
   }
 }
 
-// Botón: si ya conectado → abrir control remoto; si no → iniciar sesión
+// ── Botón Cast: conectar o abrir control remoto ────────────────────────────────
 castBtn.addEventListener('click', () => {
   if (castSession) {
-    window.open('remote.html', '_blank');
+    // Ya conectado → abrir control remoto inline
+    castRemoteModal.style.display = 'flex';
   } else {
     cast.framework.CastContext.getInstance().requestSession()
       .catch(err => { if (err !== 'cancel') console.error('Cast error:', err); });
   }
 });
 
-// Enviar mensaje a la TV
+// Cerrar modal
+castRemoteClose.addEventListener('click', () => { castRemoteModal.style.display = 'none'; });
+castRemoteModal.addEventListener('click', (e) => {
+  if (e.target === castRemoteModal) castRemoteModal.style.display = 'none';
+});
+
+// Desconectar
+castDisconnect.addEventListener('click', () => {
+  cast.framework.CastContext.getInstance().endCurrentSession(true);
+  castRemoteModal.style.display = 'none';
+});
+
+// ── Filtros del control remoto ────────────────────────────────────────────────
+document.querySelectorAll('.cast-remote-filter-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.cast-remote-filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    castSendMessage({ type:'filter', value: btn.dataset.castfilter });
+  });
+});
+
+// ── Sincronizar filtro principal → remote ─────────────────────────────────────
+document.getElementById('stats-filters').addEventListener('click', (e) => {
+  const btn = e.target.closest('[data-filter]');
+  if (!btn || !castSession) return;
+  castSendMessage({ type:'filter', value: btn.dataset.filter });
+  // Reflejar en botones del remote
+  document.querySelectorAll('.cast-remote-filter-btn').forEach(b => {
+    b.classList.toggle('active', b.dataset.castfilter === btn.dataset.filter);
+  });
+}, true);
+
+// ── Scroll rápido ─────────────────────────────────────────────────────────────
+castScrollUp.addEventListener('click', () => castSendMessage({ type:'scroll', delta:-300 }));
+castScrollDown.addEventListener('click', () => castSendMessage({ type:'scroll', delta:300 }));
+
+// ── Trackpad ──────────────────────────────────────────────────────────────────
+let castLastY = null;
+let castScrollThrottle = null;
+
+castRemoteTrackpad.addEventListener('pointerdown', (e) => {
+  castRemoteTrackpad.setPointerCapture(e.pointerId);
+  castLastY = e.clientY;
+  castRemoteTrackpad.classList.add('touching');
+  moveCastFinger(e);
+});
+castRemoteTrackpad.addEventListener('pointermove', (e) => {
+  if (castLastY === null) return;
+  moveCastFinger(e);
+  const dy = e.clientY - castLastY;
+  castLastY = e.clientY;
+  if (!castScrollThrottle) {
+    castScrollThrottle = setTimeout(() => { castScrollThrottle = null; }, 50);
+    castSendMessage({ type:'scroll', delta: dy * 2.5 });
+  }
+});
+castRemoteTrackpad.addEventListener('pointerup', () => {
+  castLastY = null;
+  castRemoteTrackpad.classList.remove('touching');
+});
+castRemoteTrackpad.addEventListener('pointercancel', () => {
+  castLastY = null;
+  castRemoteTrackpad.classList.remove('touching');
+});
+function moveCastFinger(e) {
+  const rect = castRemoteTrackpad.getBoundingClientRect();
+  castRemoteFinger.style.left = (e.clientX - rect.left) + 'px';
+  castRemoteFinger.style.top  = (e.clientY - rect.top)  + 'px';
+}
+
+// ── Enviar mensaje a TV ───────────────────────────────────────────────────────
 function castSendMessage(msg) {
   if (!castSession) return;
   castSession.sendMessage(CAST_NAMESPACE, msg)
     .catch(err => console.error('castSendMessage error:', err));
 }
-
-// Sincronizar filtro con TV cuando cambia en el celular
-document.getElementById('stats-filters').addEventListener('click', (e) => {
-  const btn = e.target.closest('[data-filter]');
-  if (!btn || !castSession) return;
-  castSendMessage({ type:'filter', value: btn.dataset.filter });
-}, true);
 </script>
