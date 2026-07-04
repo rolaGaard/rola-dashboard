@@ -649,7 +649,7 @@
   .cast-btn-casting { animation:cast-pulse 2s infinite; }
   /* ── Control Remoto Cast (modal inline) ── */
   .cast-remote-modal {
-    position:fixed; inset:0; z-index:1100;
+    position:fixed; inset:0; z-index:9999;
     background:rgba(0,0,0,0.75);
     display:flex; align-items:flex-end; justify-content:center;
   }
@@ -1004,7 +1004,7 @@
     <img class="header-icon" src="icons/icon-512.png" alt="rolaGaard">
     <div class="header-text">
       <div class="header-title">Mundial 2026</div>
-      <div class="header-by">by rolaGaard &nbsp;<span class="app-version">v3.2</span></div>
+      <div class="header-by">by rolaGaard &nbsp;<span class="app-version">v3.4</span></div>
       <div class="header-sub" id="header-sub">USA · Canadá · México</div>
     </div>
   </div>
@@ -4538,19 +4538,41 @@ function onCastSessionChanged(event) {
 // ── Botón Cast: conectar o abrir control remoto ────────────────────────────────
 castBtn.addEventListener('click', () => {
   if (castSession) {
-    // Si el modal ya está visible → desconectar
-    if (castRemoteModal.style.display !== 'none') {
+    const modalVisible = castRemoteModal.style.display !== 'none';
+    if (modalVisible) {
+      // 2do toque con modal abierto → desconectar
       cast.framework.CastContext.getInstance().endCurrentSession(true);
       castRemoteModal.style.display = 'none';
     } else {
-      // Primer toque → abrir control remoto inline
+      // 1er toque con sesión activa → mostrar control remoto
+      document.body.appendChild(castRemoteModal); // mover al final del body para z-index correcto
       castRemoteModal.style.display = 'flex';
     }
   } else {
+    // Sin sesión activa — mostrar toast de diagnóstico 3 seg
+    showCastDiagToast('Sin sesión Cast activa. Intentando conectar...');
     cast.framework.CastContext.getInstance().requestSession()
       .catch(err => { if (err !== 'cancel') console.error('Cast error:', err); });
   }
 });
+
+// Toast de diagnóstico Cast
+function showCastDiagToast(msg) {
+  let t = document.getElementById('cast-diag-toast');
+  if (!t) {
+    t = document.createElement('div');
+    t.id = 'cast-diag-toast';
+    t.style.cssText = 'position:fixed;bottom:80px;left:50%;transform:translateX(-50%);' +
+      'background:#1e293b;color:#fff;padding:10px 18px;border-radius:20px;' +
+      'font-size:13px;font-weight:600;z-index:9999;border:1px solid #FFD700;' +
+      'white-space:nowrap;pointer-events:none;';
+    document.body.appendChild(t);
+  }
+  t.textContent = msg;
+  t.style.opacity = '1';
+  clearTimeout(t._timer);
+  t._timer = setTimeout(() => { t.style.opacity = '0'; }, 3000);
+}
 
 // Cerrar modal
 castRemoteClose.addEventListener('click', () => { castRemoteModal.style.display = 'none'; });
