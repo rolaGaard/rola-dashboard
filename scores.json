@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-04T21:22:11.183307Z",
+  "updated": "2026-07-04T21:23:11.264059Z",
   "matches": {
     "PARAGUAY-FRANCE": {
       "fixtureId": 1569870,
@@ -10,7 +10,16 @@
       "elapsed": 17,
       "kickoffUTC": "2026-07-04T21:00:00+00:00",
       "referee": "Ilgiz Tantashev, Uzbekistan",
-      "events": [],
+      "events": [
+        {
+          "type": "Card",
+          "detail": "Yellow Card",
+          "player": "Bradley Barcola",
+          "team": "FRANCE",
+          "minute": 19,
+          "extra": null
+        }
+      ],
       "lineups": {
         "PARAGUAY": {
           "formation": "5-4-1",
