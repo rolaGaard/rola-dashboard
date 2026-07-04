@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-04T17:51:09.439226Z",
+  "updated": "2026-07-04T17:52:10.749048Z",
   "matches": {
     "CANADA-MOROCCO": {
       "fixtureId": 1567824,
@@ -50,6 +50,14 @@
           "team": "MOROCCO",
           "minute": 45,
           "extra": null
+        },
+        {
+          "type": "Card",
+          "detail": "Yellow Card",
+          "player": "B. El Khannouss",
+          "team": "MOROCCO",
+          "minute": 45,
+          "extra": 6
         }
       ],
       "substitutions": {
