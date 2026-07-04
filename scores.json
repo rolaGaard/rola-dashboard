@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-04T05:20:29.175603Z",
+  "updated": "2026-07-04T05:21:11.749776Z",
   "matches": {
     "MEXICO-SOUTH AFRICA": {
       "fixtureId": 1489369,
@@ -33906,6 +33906,26 @@
       "status": "NS",
       "elapsed": null,
       "kickoffUTC": "2026-07-07T00:00:00+00:00",
+      "referee": null
+    },
+    "ARGENTINA-EGYPT": {
+      "fixtureId": 1576804,
+      "round": "Round of 16",
+      "homeGoals": null,
+      "awayGoals": null,
+      "status": "NS",
+      "elapsed": null,
+      "kickoffUTC": "2026-07-07T16:00:00+00:00",
+      "referee": null
+    },
+    "SWITZERLAND-COLOMBIA": {
+      "fixtureId": 1576805,
+      "round": "Round of 16",
+      "homeGoals": null,
+      "awayGoals": null,
+      "status": "NS",
+      "elapsed": null,
+      "kickoffUTC": "2026-07-07T20:00:00+00:00",
       "referee": null
     }
   }
