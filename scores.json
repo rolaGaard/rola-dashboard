@@ -1,13 +1,13 @@
 {
-  "updated": "2026-07-04T00:17:09.340895Z",
+  "updated": "2026-07-04T00:18:11.897076Z",
   "matches": {
     "ARGENTINA-CAPE VERDE": {
       "fixtureId": 1565179,
       "round": "Round of 32",
       "homeGoals": 2,
-      "awayGoals": 1,
+      "awayGoals": 2,
       "status": "ET",
-      "elapsed": 103,
+      "elapsed": 104,
       "kickoffUTC": "2026-07-03T22:00:00+00:00",
       "referee": "Drew Fischer, Canada",
       "events": [
@@ -41,6 +41,14 @@
           "player": "L. Martinez",
           "team": "ARGENTINA",
           "minute": 92,
+          "extra": null
+        },
+        {
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "player": "S. Lopes Cabral",
+          "team": "CAPE VERDE",
+          "minute": 103,
           "extra": null
         }
       ],
