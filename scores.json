@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-04T00:20:28.599432Z",
+  "updated": "2026-07-04T00:21:10.892524Z",
   "matches": {
     "ARGENTINA-CAPE VERDE": {
       "fixtureId": 1565179,
@@ -7,7 +7,7 @@
       "homeGoals": 2,
       "awayGoals": 2,
       "status": "ET",
-      "elapsed": 106,
+      "elapsed": 107,
       "kickoffUTC": "2026-07-03T22:00:00+00:00",
       "referee": "Drew Fischer, Canada",
       "events": [
@@ -77,7 +77,7 @@
           {
             "out": "N. Molina",
             "in": "G. Montiel",
-            "minute": 105
+            "minute": 104
           }
         ],
         "CAPE VERDE": [
