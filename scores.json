@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-04T01:37:10.049059Z",
+  "updated": "2026-07-04T01:38:11.442647Z",
   "matches": {
     "COLOMBIA-GHANA": {
       "fixtureId": 1567310,
@@ -7,10 +7,19 @@
       "homeGoals": 0,
       "awayGoals": 0,
       "status": "1H",
-      "elapsed": 7,
+      "elapsed": 8,
       "kickoffUTC": "2026-07-04T01:30:00+00:00",
       "referee": "Clement Turpin, France",
       "events": [],
+      "substitutions": {
+        "COLOMBIA": [
+          {
+            "out": "J. Cordoba",
+            "in": "L. Suarez",
+            "minute": 8
+          }
+        ]
+      },
       "lineups": {
         "COLOMBIA": {
           "formation": "4-3-3",
