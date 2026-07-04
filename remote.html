@@ -136,6 +136,7 @@ body {
     Conectar a TV
   </button>
   <div class="connect-status" id="connect-status">Buscando dispositivos Cast...</div>
+  <div id="debug-log" style="margin-top:16px;font-size:11px;color:#64748b;text-align:left;width:100%;max-width:300px;background:#111827;border-radius:8px;padding:10px;line-height:1.8;word-break:break-all;"></div>
 </div>
 
 <!-- PANTALLA 2: CONTROL REMOTO -->
@@ -201,11 +202,19 @@ const trackpad      = document.getElementById('remote-trackpad');
 const finger        = document.getElementById('remote-finger');
 
 // ── Cast SDK init ─────────────────────────────────────────────────────────────
+function dbg(msg) {
+  const el = document.getElementById('debug-log');
+  if (el) el.innerHTML += (new Date().toLocaleTimeString()) + ' ' + msg + '<br>';
+  console.log('[Cast]', msg);
+}
+
 window['__onGCastApiAvailable'] = function(isAvailable) {
+  dbg('API available: ' + isAvailable);
   if (!isAvailable) {
     connectStatus.textContent = 'Cast no disponible en este browser.';
     connectStatus.className = 'connect-status error';
     connectBtn.disabled = true;
+    dbg('ERROR: Cast no disponible');
     return;
   }
 
@@ -216,6 +225,7 @@ window['__onGCastApiAvailable'] = function(isAvailable) {
 
   connectStatus.textContent = 'Listo. Tocá "Conectar a TV".';
   connectStatus.className = 'connect-status ok';
+  dbg('SDK lista ✅');
 
   cast.framework.CastContext.getInstance().addEventListener(
     cast.framework.CastContextEventType.SESSION_STATE_CHANGED,
@@ -225,8 +235,11 @@ window['__onGCastApiAvailable'] = function(isAvailable) {
   // Si ya hay una sesión activa (reconexión automática), usarla
   const existing = cast.framework.CastContext.getInstance().getCurrentSession();
   if (existing) {
+    dbg('Sesión existente detectada');
     castSession = existing;
     showRemoteScreen(castSession.getCastDevice()?.friendlyName || 'TV');
+  } else {
+    dbg('Sin sesión previa');
   }
 };
 
@@ -234,6 +247,7 @@ function onSessionStateChanged(event) {
   const S = cast.framework.SessionState;
   const state = event.sessionState;
 
+  dbg('Estado sesión: ' + state);
   if (state === S.SESSION_STARTED || state === S.SESSION_RESUMED) {
     try {
       castSession = cast.framework.CastContext.getInstance().getCurrentSession();
@@ -274,8 +288,10 @@ function showConnectScreen() {
 connectBtn.addEventListener('click', () => {
   connectStatus.textContent = 'Buscando TV...';
   connectStatus.className = 'connect-status';
+  dbg('Iniciando requestSession...');
   cast.framework.CastContext.getInstance().requestSession()
     .catch(err => {
+      dbg('requestSession error: ' + JSON.stringify(err));
       if (err === 'cancel') {
         connectStatus.textContent = 'Cancelado.';
       } else {
