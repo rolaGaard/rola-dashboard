@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-04T03:11:11.274346Z",
+  "updated": "2026-07-04T03:12:13.884532Z",
   "matches": {
     "COLOMBIA-GHANA": {
       "fixtureId": 1567310,
@@ -7,7 +7,7 @@
       "homeGoals": 1,
       "awayGoals": 0,
       "status": "2H",
-      "elapsed": 77,
+      "elapsed": 79,
       "kickoffUTC": "2026-07-04T01:30:00+00:00",
       "referee": "Clement Turpin, France",
       "events": [
@@ -49,6 +49,14 @@
           "player": "A. Seidu",
           "team": "GHANA",
           "minute": 76,
+          "extra": null
+        },
+        {
+          "type": "Card",
+          "detail": "Yellow Card",
+          "player": "R. Rios",
+          "team": "COLOMBIA",
+          "minute": 78,
           "extra": null
         }
       ],
