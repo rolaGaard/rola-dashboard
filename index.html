@@ -2338,7 +2338,22 @@ function render() {
   updateCounters();
 
   const descending = currentFilter === 'finished';
+
+  // Para "Hoy": en vivo → próximos (cronológico) → finalizados
+  function todayPriority(m) {
+    const s = getUnifiedStatus(m);
+    if (s === 'live') return 0;
+    if (s === 'scheduled') return 1;
+    return 2; // finished
+  }
+
   const sorted = filtered.slice().sort((a, b) => {
+    if (currentFilter === 'today') {
+      const pa = todayPriority(a), pb = todayPriority(b);
+      if (pa !== pb) return pa - pb;
+      // Dentro del mismo grupo: cronológico ascendente
+      return new Date(getUnifiedKickoff(a)) - new Date(getUnifiedKickoff(b));
+    }
     const ka = getUnifiedKickoff(a), kb = getUnifiedKickoff(b);
     return descending ? new Date(kb) - new Date(ka) : new Date(ka) - new Date(kb);
   });
@@ -2357,6 +2372,36 @@ function render() {
   } else if (currentFilter === 'all') {
     document.getElementById('search-label').innerHTML = '';
     html = buildUnifiedGroupedHtml(sorted);
+  } else if (currentFilter === 'today') {
+    document.getElementById('search-label').innerHTML = '';
+    // Mezclamos grupos y eliminatoria en una sola lista ordenada por prioridad
+    const knockoutToday = getAllKnockoutEntries()
+      .filter(m => toARDateStr(m.kickoffUTC) === todayAR)
+      .map(m => {
+        const {teamA, teamB} = resolveKnockoutSides(m);
+        const status = knockoutEntryStatus(m).status;
+        return { _ko: m, _status: status, _kickoff: m.kickoffUTC };
+      });
+    // Unir todos los partidos de hoy en una lista con prioridad
+    const allToday = [
+      ...sorted.map(m => ({ _m: m, _status: getUnifiedStatus(m), _kickoff: getUnifiedKickoff(m) })),
+      ...knockoutToday,
+    ].sort((a, b) => {
+      const statusPriority = s => s === 'live' ? 0 : s === 'scheduled' ? 1 : 2;
+      const pa = statusPriority(a._status), pb = statusPriority(b._status);
+      if (pa !== pb) return pa - pb;
+      return new Date(a._kickoff) - new Date(b._kickoff);
+    });
+    let knockoutExtraCount = knockoutToday.length;
+    html = '<div class="match-grid">';
+    allToday.forEach(item => {
+      if (item._m) html += buildMatchCard(item._m);
+      else          html += buildKnockoutCardHtml(item._ko);
+    });
+    html += '</div>';
+    if (sorted.length === 0 && knockoutExtraCount === 0) {
+      html = '<div class="empty-state">' + t('noHayPartidos') + '</div>';
+    }
   } else {
     document.getElementById('search-label').innerHTML = '';
     html = buildUnifiedByDateHtml(sorted);
