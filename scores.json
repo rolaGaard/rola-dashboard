@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-04T01:42:11.191401Z",
+  "updated": "2026-07-04T01:43:16.325750Z",
   "matches": {
     "COLOMBIA-GHANA": {
       "fixtureId": 1567310,
@@ -7,16 +7,32 @@
       "homeGoals": 0,
       "awayGoals": 0,
       "status": "1H",
-      "elapsed": 12,
+      "elapsed": 13,
       "kickoffUTC": "2026-07-04T01:30:00+00:00",
       "referee": "Clement Turpin, France",
-      "events": [],
+      "events": [
+        {
+          "type": "Card",
+          "detail": "Yellow Card",
+          "player": "J. Arias",
+          "team": "COLOMBIA",
+          "minute": 12,
+          "extra": null
+        }
+      ],
       "substitutions": {
         "COLOMBIA": [
           {
             "out": "J. Cordoba",
             "in": "L. Suarez",
             "minute": 8
+          }
+        ],
+        "GHANA": [
+          {
+            "out": "M. Senaya",
+            "in": "A. Seidu",
+            "minute": 13
           }
         ]
       },
