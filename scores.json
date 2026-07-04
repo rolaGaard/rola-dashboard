@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-04T00:15:23.882672Z",
+  "updated": "2026-07-04T00:17:09.340895Z",
   "matches": {
     "ARGENTINA-CAPE VERDE": {
       "fixtureId": 1565179,
@@ -7,7 +7,7 @@
       "homeGoals": 2,
       "awayGoals": 1,
       "status": "ET",
-      "elapsed": 100,
+      "elapsed": 103,
       "kickoffUTC": "2026-07-03T22:00:00+00:00",
       "referee": "Drew Fischer, Canada",
       "events": [
@@ -91,6 +91,11 @@
           {
             "out": "D. Duarte",
             "in": "Y. Semedo",
+            "minute": 100
+          },
+          {
+            "out": "K. Lenini",
+            "in": "Benchimol",
             "minute": 100
           }
         ]
