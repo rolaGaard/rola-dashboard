@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-04T17:55:18.215389Z",
+  "updated": "2026-07-04T17:56:12.938439Z",
   "matches": {
     "CANADA-MOROCCO": {
       "fixtureId": 1567824,
@@ -14,7 +14,7 @@
         {
           "type": "Card",
           "detail": "Yellow Card",
-          "player": "R. Halhal",
+          "player": "Redouane Halhal",
           "team": "MOROCCO",
           "minute": 20,
           "extra": null
@@ -22,7 +22,7 @@
         {
           "type": "Card",
           "detail": "Yellow Card",
-          "player": "A. Hakimi",
+          "player": "Achraf Hakimi",
           "team": "MOROCCO",
           "minute": 40,
           "extra": null
@@ -30,7 +30,7 @@
         {
           "type": "Card",
           "detail": "Yellow Card",
-          "player": "R. Laryea",
+          "player": "Richie Laryea",
           "team": "CANADA",
           "minute": 40,
           "extra": null
@@ -38,7 +38,7 @@
         {
           "type": "Card",
           "detail": "Yellow Card",
-          "player": "J. David",
+          "player": "Jonathan David",
           "team": "CANADA",
           "minute": 43,
           "extra": null
@@ -46,7 +46,7 @@
         {
           "type": "Card",
           "detail": "Yellow Card",
-          "player": "A. Ounahi",
+          "player": "Azzedine Ounahi",
           "team": "MOROCCO",
           "minute": 45,
           "extra": null
@@ -54,7 +54,7 @@
         {
           "type": "Card",
           "detail": "Yellow Card",
-          "player": "B. El Khannouss",
+          "player": "Bilal El Khannouss",
           "team": "MOROCCO",
           "minute": 45,
           "extra": 6
@@ -63,8 +63,8 @@
       "substitutions": {
         "MOROCCO": [
           {
-            "out": "I. Saibari",
-            "in": "S. Rahimi",
+            "out": "Ismael Saibari",
+            "in": "Soufiane Rahimi",
             "minute": 22
           }
         ]
