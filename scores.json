@@ -1,13 +1,13 @@
 {
-  "updated": "2026-07-04T00:07:11.797324Z",
+  "updated": "2026-07-04T00:08:11.600529Z",
   "matches": {
     "ARGENTINA-CAPE VERDE": {
       "fixtureId": 1565179,
       "round": "Round of 32",
-      "homeGoals": 1,
+      "homeGoals": 2,
       "awayGoals": 1,
       "status": "ET",
-      "elapsed": 98,
+      "elapsed": 99,
       "kickoffUTC": "2026-07-03T22:00:00+00:00",
       "referee": "Drew Fischer, Canada",
       "events": [
@@ -33,6 +33,14 @@
           "player": "K. Lenini",
           "team": "CAPE VERDE",
           "minute": 68,
+          "extra": null
+        },
+        {
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "player": "L. Martinez",
+          "team": "ARGENTINA",
+          "minute": 92,
           "extra": null
         }
       ],
