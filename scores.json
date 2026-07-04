@@ -1,12 +1,12 @@
 {
-  "updated": "2026-07-04T17:52:10.749048Z",
+  "updated": "2026-07-04T17:53:13.253158Z",
   "matches": {
     "CANADA-MOROCCO": {
       "fixtureId": 1567824,
       "round": "Round of 16",
       "homeGoals": 0,
       "awayGoals": 0,
-      "status": "1H",
+      "status": "HT",
       "elapsed": 45,
       "kickoffUTC": "2026-07-04T17:00:00+00:00",
       "referee": "Michael Oliver, England",
