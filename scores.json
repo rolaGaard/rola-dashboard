@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-04T00:01:14.990102Z",
+  "updated": "2026-07-04T00:02:21.714257Z",
   "matches": {
     "ARGENTINA-CAPE VERDE": {
       "fixtureId": 1565179,
@@ -10,78 +10,7 @@
       "elapsed": null,
       "kickoffUTC": "2026-07-03T22:00:00+00:00",
       "referee": "Drew Fischer, Canada",
-      "events": [
-        {
-          "type": "Goal",
-          "detail": "Normal Goal",
-          "player": "L. Messi",
-          "team": "ARGENTINA",
-          "minute": 29,
-          "extra": null
-        },
-        {
-          "type": "Goal",
-          "detail": "Normal Goal",
-          "player": "D. Duarte",
-          "team": "CAPE VERDE",
-          "minute": 59,
-          "extra": null
-        },
-        {
-          "type": "Card",
-          "detail": "Yellow Card",
-          "player": "K. Lenini",
-          "team": "CAPE VERDE",
-          "minute": 68,
-          "extra": null
-        }
-      ],
-      "substitutions": {
-        "ARGENTINA": [
-          {
-            "out": "L. Martinez",
-            "in": "J. Alvarez",
-            "minute": 63
-          },
-          {
-            "out": "T. Almada",
-            "in": "N. Gonzalez",
-            "minute": 64
-          },
-          {
-            "out": "R. de Paul",
-            "in": "L. Paredes",
-            "minute": 84
-          },
-          {
-            "out": "F. Medina",
-            "in": "N. Tagliafico",
-            "minute": 86
-          }
-        ],
-        "CAPE VERDE": [
-          {
-            "out": "L. Duarte",
-            "in": "J. Monteiro",
-            "minute": 67
-          },
-          {
-            "out": "N. Da Costa",
-            "in": "D. Livramento",
-            "minute": 67
-          },
-          {
-            "out": "R. Mendes",
-            "in": "W. Semedo",
-            "minute": 80
-          },
-          {
-            "out": "J. Cabral",
-            "in": "H. Varela",
-            "minute": 80
-          }
-        ]
-      },
+      "events": [],
       "lineups": {
         "ARGENTINA": {
           "formation": "4-4-2",
