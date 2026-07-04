@@ -1,427 +1,6 @@
 {
-  "updated": "2026-07-04T18:54:10.859462Z",
+  "updated": "2026-07-04T18:55:15.908685Z",
   "matches": {
-    "CANADA-MOROCCO": {
-      "fixtureId": 1567824,
-      "round": "Round of 16",
-      "homeGoals": 0,
-      "awayGoals": 2,
-      "status": "2H",
-      "elapsed": 88,
-      "kickoffUTC": "2026-07-04T17:00:00+00:00",
-      "referee": "Michael Oliver, England",
-      "events": [
-        {
-          "type": "Card",
-          "detail": "Yellow Card",
-          "player": "Redouane Halhal",
-          "team": "MOROCCO",
-          "minute": 20,
-          "extra": null
-        },
-        {
-          "type": "Card",
-          "detail": "Yellow Card",
-          "player": "Achraf Hakimi",
-          "team": "MOROCCO",
-          "minute": 40,
-          "extra": null
-        },
-        {
-          "type": "Card",
-          "detail": "Yellow Card",
-          "player": "Richie Laryea",
-          "team": "CANADA",
-          "minute": 40,
-          "extra": null
-        },
-        {
-          "type": "Card",
-          "detail": "Yellow Card",
-          "player": "Jonathan David",
-          "team": "CANADA",
-          "minute": 43,
-          "extra": null
-        },
-        {
-          "type": "Card",
-          "detail": "Yellow Card",
-          "player": "Azzedine Ounahi",
-          "team": "MOROCCO",
-          "minute": 45,
-          "extra": null
-        },
-        {
-          "type": "Card",
-          "detail": "Yellow Card",
-          "player": "Bilal El Khannouss",
-          "team": "MOROCCO",
-          "minute": 45,
-          "extra": 6
-        },
-        {
-          "type": "Card",
-          "detail": "Yellow Card",
-          "player": "Luc De Fougerolles",
-          "team": "CANADA",
-          "minute": 49,
-          "extra": null
-        },
-        {
-          "type": "Goal",
-          "detail": "Normal Goal",
-          "player": "Azzedine Ounahi",
-          "team": "MOROCCO",
-          "minute": 50,
-          "extra": null
-        },
-        {
-          "type": "Card",
-          "detail": "Yellow Card",
-          "player": "Cyle Larin",
-          "team": "CANADA",
-          "minute": 67,
-          "extra": null
-        },
-        {
-          "type": "Goal",
-          "detail": "Normal Goal",
-          "player": "Azzedine Ounahi",
-          "team": "MOROCCO",
-          "minute": 82,
-          "extra": null
-        }
-      ],
-      "substitutions": {
-        "MOROCCO": [
-          {
-            "out": "Ismael Saibari",
-            "in": "Soufiane Rahimi",
-            "minute": 22
-          },
-          {
-            "out": "Bilal El Khannouss",
-            "in": "Chemsdine Talbi",
-            "minute": 63
-          },
-          {
-            "out": "Ayyoub Bouaddi",
-            "in": "Sofyan Amrabat",
-            "minute": 63
-          },
-          {
-            "out": "Issa Diop",
-            "in": "Marwane Saadane",
-            "minute": 87
-          },
-          {
-            "out": "Azzedine Ounahi",
-            "in": "Samir El-Mourabet",
-            "minute": 87
-          }
-        ],
-        "CANADA": [
-          {
-            "out": "Tani Oluwaseyi",
-            "in": "Cyle Larin",
-            "minute": 63
-          },
-          {
-            "out": "Ali Ahmed",
-            "in": "Promise David",
-            "minute": 78
-          },
-          {
-            "out": "Richie Laryea",
-            "in": "Jacob Shaffelburg",
-            "minute": 78
-          },
-          {
-            "out": "Niko Sigur",
-            "in": "Jonathan Osorio",
-            "minute": 87
-          },
-          {
-            "out": "Tajon Buchanan",
-            "in": "Jayden Nelson",
-            "minute": 87
-          }
-        ]
-      },
-      "lineups": {
-        "CANADA": {
-          "formation": "4-4-2",
-          "coach": "Jesse Marsch",
-          "startXI": [
-            {
-              "name": "Maxime Cr\u00e9peau",
-              "number": 16,
-              "pos": "G"
-            },
-            {
-              "name": "Alistair Johnston",
-              "number": 2,
-              "pos": "D"
-            },
-            {
-              "name": "Luc De Fougerolles",
-              "number": 4,
-              "pos": "D"
-            },
-            {
-              "name": "Moise Bombito",
-              "number": 15,
-              "pos": "D"
-            },
-            {
-              "name": "Richie Laryea",
-              "number": 22,
-              "pos": "D"
-            },
-            {
-              "name": "Tajon Buchanan",
-              "number": 17,
-              "pos": "M"
-            },
-            {
-              "name": "Niko Sigur",
-              "number": 23,
-              "pos": "M"
-            },
-            {
-              "name": "Stephen Eustaquio",
-              "number": 7,
-              "pos": "M"
-            },
-            {
-              "name": "Ali Ahmed",
-              "number": 20,
-              "pos": "M"
-            },
-            {
-              "name": "Jonathan David",
-              "number": 10,
-              "pos": "F"
-            },
-            {
-              "name": "Tani Oluwaseyi",
-              "number": 12,
-              "pos": "F"
-            }
-          ],
-          "substitutes": [
-            {
-              "name": "Owen Goodman",
-              "number": 18,
-              "pos": "G"
-            },
-            {
-              "name": "Dayne St. Clair",
-              "number": 1,
-              "pos": "G"
-            },
-            {
-              "name": "Joel Waterman",
-              "number": 5,
-              "pos": "D"
-            },
-            {
-              "name": "Alphonso Davies",
-              "number": 19,
-              "pos": "D"
-            },
-            {
-              "name": "Alfie Jones",
-              "number": 3,
-              "pos": "D"
-            },
-            {
-              "name": "Derek Cornelius",
-              "number": 13,
-              "pos": "D"
-            },
-            {
-              "name": "Jonathan Osorio",
-              "number": 21,
-              "pos": "M"
-            },
-            {
-              "name": "Mathieu Choini\u00e8re",
-              "number": 6,
-              "pos": "M"
-            },
-            {
-              "name": "Jacob Shaffelburg",
-              "number": 14,
-              "pos": "F"
-            },
-            {
-              "name": "Nathan-Dylan Saliba",
-              "number": 25,
-              "pos": "M"
-            },
-            {
-              "name": "Liam Millar",
-              "number": 11,
-              "pos": "F"
-            },
-            {
-              "name": "Promise David",
-              "number": 24,
-              "pos": "F"
-            },
-            {
-              "name": "Cyle Larin",
-              "number": 9,
-              "pos": "F"
-            },
-            {
-              "name": "Jayden Nelson",
-              "number": 26,
-              "pos": "F"
-            }
-          ]
-        },
-        "MOROCCO": {
-          "formation": "4-2-3-1",
-          "coach": "Mohamed Ouahbi",
-          "startXI": [
-            {
-              "name": "Yassine Bounou",
-              "number": 1,
-              "pos": "G"
-            },
-            {
-              "name": "Achraf Hakimi",
-              "number": 2,
-              "pos": "D"
-            },
-            {
-              "name": "Issa Diop",
-              "number": 14,
-              "pos": "D"
-            },
-            {
-              "name": "Redouane Halhal",
-              "number": 25,
-              "pos": "D"
-            },
-            {
-              "name": "Noussair Mazraoui",
-              "number": 3,
-              "pos": "D"
-            },
-            {
-              "name": "Ayyoub Bouaddi",
-              "number": 6,
-              "pos": "M"
-            },
-            {
-              "name": "Neil El Aynaoui",
-              "number": 24,
-              "pos": "M"
-            },
-            {
-              "name": "Brahim D\u00edaz",
-              "number": 10,
-              "pos": "M"
-            },
-            {
-              "name": "Azzedine Ounahi",
-              "number": 8,
-              "pos": "M"
-            },
-            {
-              "name": "Bilal El Khannouss",
-              "number": 23,
-              "pos": "M"
-            },
-            {
-              "name": "Ismael Saibari",
-              "number": 11,
-              "pos": "F"
-            }
-          ],
-          "substitutes": [
-            {
-              "name": "Munir El Kajoui",
-              "number": 12,
-              "pos": "G"
-            },
-            {
-              "name": "Ahmed Reda Tagnaouti",
-              "number": 22,
-              "pos": "G"
-            },
-            {
-              "name": "Anass Salah-Eddine",
-              "number": 26,
-              "pos": "D"
-            },
-            {
-              "name": "Marwane Saadane",
-              "number": 5,
-              "pos": "D"
-            },
-            {
-              "name": "Zakaria El Ouahdi",
-              "number": 13,
-              "pos": "D"
-            },
-            {
-              "name": "Youssef Belammari",
-              "number": 19,
-              "pos": "D"
-            },
-            {
-              "name": "Chadi Riad",
-              "number": 18,
-              "pos": "D"
-            },
-            {
-              "name": "Amine Sbai",
-              "number": 17,
-              "pos": "F"
-            },
-            {
-              "name": "Sofyan Amrabat",
-              "number": 4,
-              "pos": "M"
-            },
-            {
-              "name": "Samir El Mourabet",
-              "number": 15,
-              "pos": "M"
-            },
-            {
-              "name": "Chemsdine Talbi",
-              "number": 7,
-              "pos": "F"
-            },
-            {
-              "name": "Gessime Yassine",
-              "number": 16,
-              "pos": "F"
-            },
-            {
-              "name": "Ayoub El Kaabi",
-              "number": 20,
-              "pos": "F"
-            },
-            {
-              "name": "Soufiane Rahimi",
-              "number": 9,
-              "pos": "F"
-            },
-            {
-              "name": "Ayoube Amaimouni Echghouyab",
-              "number": 21,
-              "pos": "F"
-            }
-          ]
-        }
-      }
-    },
     "MEXICO-SOUTH AFRICA": {
       "fixtureId": 1489369,
       "round": "Group Stage - 1",
@@ -34338,6 +33917,427 @@
       "elapsed": null,
       "kickoffUTC": "2026-07-07T20:00:00+00:00",
       "referee": null
+    },
+    "CANADA-MOROCCO": {
+      "fixtureId": 1567824,
+      "round": "Round of 16",
+      "homeGoals": 0,
+      "awayGoals": 2,
+      "status": "2H",
+      "elapsed": 90,
+      "kickoffUTC": "2026-07-04T17:00:00+00:00",
+      "referee": "Michael Oliver, England",
+      "events": [
+        {
+          "type": "Card",
+          "detail": "Yellow Card",
+          "player": "Redouane Halhal",
+          "team": "MOROCCO",
+          "minute": 20,
+          "extra": null
+        },
+        {
+          "type": "Card",
+          "detail": "Yellow Card",
+          "player": "Achraf Hakimi",
+          "team": "MOROCCO",
+          "minute": 40,
+          "extra": null
+        },
+        {
+          "type": "Card",
+          "detail": "Yellow Card",
+          "player": "Richie Laryea",
+          "team": "CANADA",
+          "minute": 40,
+          "extra": null
+        },
+        {
+          "type": "Card",
+          "detail": "Yellow Card",
+          "player": "Jonathan David",
+          "team": "CANADA",
+          "minute": 43,
+          "extra": null
+        },
+        {
+          "type": "Card",
+          "detail": "Yellow Card",
+          "player": "Azzedine Ounahi",
+          "team": "MOROCCO",
+          "minute": 45,
+          "extra": null
+        },
+        {
+          "type": "Card",
+          "detail": "Yellow Card",
+          "player": "Bilal El Khannouss",
+          "team": "MOROCCO",
+          "minute": 45,
+          "extra": 6
+        },
+        {
+          "type": "Card",
+          "detail": "Yellow Card",
+          "player": "Luc De Fougerolles",
+          "team": "CANADA",
+          "minute": 49,
+          "extra": null
+        },
+        {
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "player": "Azzedine Ounahi",
+          "team": "MOROCCO",
+          "minute": 50,
+          "extra": null
+        },
+        {
+          "type": "Card",
+          "detail": "Yellow Card",
+          "player": "Cyle Larin",
+          "team": "CANADA",
+          "minute": 67,
+          "extra": null
+        },
+        {
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "player": "Azzedine Ounahi",
+          "team": "MOROCCO",
+          "minute": 82,
+          "extra": null
+        }
+      ],
+      "substitutions": {
+        "MOROCCO": [
+          {
+            "out": "Ismael Saibari",
+            "in": "Soufiane Rahimi",
+            "minute": 22
+          },
+          {
+            "out": "Bilal El Khannouss",
+            "in": "Chemsdine Talbi",
+            "minute": 63
+          },
+          {
+            "out": "Ayyoub Bouaddi",
+            "in": "Sofyan Amrabat",
+            "minute": 63
+          },
+          {
+            "out": "Issa Diop",
+            "in": "Marwane Saadane",
+            "minute": 87
+          },
+          {
+            "out": "Azzedine Ounahi",
+            "in": "Samir El-Mourabet",
+            "minute": 87
+          }
+        ],
+        "CANADA": [
+          {
+            "out": "Tani Oluwaseyi",
+            "in": "Cyle Larin",
+            "minute": 63
+          },
+          {
+            "out": "Ali Ahmed",
+            "in": "Promise David",
+            "minute": 78
+          },
+          {
+            "out": "Richie Laryea",
+            "in": "Jacob Shaffelburg",
+            "minute": 78
+          },
+          {
+            "out": "Niko Sigur",
+            "in": "Jonathan Osorio",
+            "minute": 87
+          },
+          {
+            "out": "Tajon Buchanan",
+            "in": "Jayden Nelson",
+            "minute": 87
+          }
+        ]
+      },
+      "lineups": {
+        "CANADA": {
+          "formation": "4-4-2",
+          "coach": "Jesse Marsch",
+          "startXI": [
+            {
+              "name": "Maxime Cr\u00e9peau",
+              "number": 16,
+              "pos": "G"
+            },
+            {
+              "name": "Alistair Johnston",
+              "number": 2,
+              "pos": "D"
+            },
+            {
+              "name": "Luc De Fougerolles",
+              "number": 4,
+              "pos": "D"
+            },
+            {
+              "name": "Moise Bombito",
+              "number": 15,
+              "pos": "D"
+            },
+            {
+              "name": "Richie Laryea",
+              "number": 22,
+              "pos": "D"
+            },
+            {
+              "name": "Tajon Buchanan",
+              "number": 17,
+              "pos": "M"
+            },
+            {
+              "name": "Niko Sigur",
+              "number": 23,
+              "pos": "M"
+            },
+            {
+              "name": "Stephen Eustaquio",
+              "number": 7,
+              "pos": "M"
+            },
+            {
+              "name": "Ali Ahmed",
+              "number": 20,
+              "pos": "M"
+            },
+            {
+              "name": "Jonathan David",
+              "number": 10,
+              "pos": "F"
+            },
+            {
+              "name": "Tani Oluwaseyi",
+              "number": 12,
+              "pos": "F"
+            }
+          ],
+          "substitutes": [
+            {
+              "name": "Owen Goodman",
+              "number": 18,
+              "pos": "G"
+            },
+            {
+              "name": "Dayne St. Clair",
+              "number": 1,
+              "pos": "G"
+            },
+            {
+              "name": "Joel Waterman",
+              "number": 5,
+              "pos": "D"
+            },
+            {
+              "name": "Alphonso Davies",
+              "number": 19,
+              "pos": "D"
+            },
+            {
+              "name": "Alfie Jones",
+              "number": 3,
+              "pos": "D"
+            },
+            {
+              "name": "Derek Cornelius",
+              "number": 13,
+              "pos": "D"
+            },
+            {
+              "name": "Jonathan Osorio",
+              "number": 21,
+              "pos": "M"
+            },
+            {
+              "name": "Mathieu Choini\u00e8re",
+              "number": 6,
+              "pos": "M"
+            },
+            {
+              "name": "Jacob Shaffelburg",
+              "number": 14,
+              "pos": "F"
+            },
+            {
+              "name": "Nathan-Dylan Saliba",
+              "number": 25,
+              "pos": "M"
+            },
+            {
+              "name": "Liam Millar",
+              "number": 11,
+              "pos": "F"
+            },
+            {
+              "name": "Promise David",
+              "number": 24,
+              "pos": "F"
+            },
+            {
+              "name": "Cyle Larin",
+              "number": 9,
+              "pos": "F"
+            },
+            {
+              "name": "Jayden Nelson",
+              "number": 26,
+              "pos": "F"
+            }
+          ]
+        },
+        "MOROCCO": {
+          "formation": "4-2-3-1",
+          "coach": "Mohamed Ouahbi",
+          "startXI": [
+            {
+              "name": "Yassine Bounou",
+              "number": 1,
+              "pos": "G"
+            },
+            {
+              "name": "Achraf Hakimi",
+              "number": 2,
+              "pos": "D"
+            },
+            {
+              "name": "Issa Diop",
+              "number": 14,
+              "pos": "D"
+            },
+            {
+              "name": "Redouane Halhal",
+              "number": 25,
+              "pos": "D"
+            },
+            {
+              "name": "Noussair Mazraoui",
+              "number": 3,
+              "pos": "D"
+            },
+            {
+              "name": "Ayyoub Bouaddi",
+              "number": 6,
+              "pos": "M"
+            },
+            {
+              "name": "Neil El Aynaoui",
+              "number": 24,
+              "pos": "M"
+            },
+            {
+              "name": "Brahim D\u00edaz",
+              "number": 10,
+              "pos": "M"
+            },
+            {
+              "name": "Azzedine Ounahi",
+              "number": 8,
+              "pos": "M"
+            },
+            {
+              "name": "Bilal El Khannouss",
+              "number": 23,
+              "pos": "M"
+            },
+            {
+              "name": "Ismael Saibari",
+              "number": 11,
+              "pos": "F"
+            }
+          ],
+          "substitutes": [
+            {
+              "name": "Munir El Kajoui",
+              "number": 12,
+              "pos": "G"
+            },
+            {
+              "name": "Ahmed Reda Tagnaouti",
+              "number": 22,
+              "pos": "G"
+            },
+            {
+              "name": "Anass Salah-Eddine",
+              "number": 26,
+              "pos": "D"
+            },
+            {
+              "name": "Marwane Saadane",
+              "number": 5,
+              "pos": "D"
+            },
+            {
+              "name": "Zakaria El Ouahdi",
+              "number": 13,
+              "pos": "D"
+            },
+            {
+              "name": "Youssef Belammari",
+              "number": 19,
+              "pos": "D"
+            },
+            {
+              "name": "Chadi Riad",
+              "number": 18,
+              "pos": "D"
+            },
+            {
+              "name": "Amine Sbai",
+              "number": 17,
+              "pos": "F"
+            },
+            {
+              "name": "Sofyan Amrabat",
+              "number": 4,
+              "pos": "M"
+            },
+            {
+              "name": "Samir El Mourabet",
+              "number": 15,
+              "pos": "M"
+            },
+            {
+              "name": "Chemsdine Talbi",
+              "number": 7,
+              "pos": "F"
+            },
+            {
+              "name": "Gessime Yassine",
+              "number": 16,
+              "pos": "F"
+            },
+            {
+              "name": "Ayoub El Kaabi",
+              "number": 20,
+              "pos": "F"
+            },
+            {
+              "name": "Soufiane Rahimi",
+              "number": 9,
+              "pos": "F"
+            },
+            {
+              "name": "Ayoube Amaimouni Echghouyab",
+              "number": 21,
+              "pos": "F"
+            }
+          ]
+        }
+      }
     }
   }
 }
