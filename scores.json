@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-04T18:26:11.656991Z",
+  "updated": "2026-07-04T18:27:13.801532Z",
   "matches": {
     "MEXICO-SOUTH AFRICA": {
       "fixtureId": 1489369,
@@ -33924,7 +33924,7 @@
       "homeGoals": 0,
       "awayGoals": 1,
       "status": "2H",
-      "elapsed": 62,
+      "elapsed": 63,
       "kickoffUTC": "2026-07-04T17:00:00+00:00",
       "referee": "Michael Oliver, England",
       "events": [
@@ -33999,6 +33999,23 @@
             "out": "Ismael Saibari",
             "in": "Soufiane Rahimi",
             "minute": 22
+          },
+          {
+            "out": "Bilal El Khannouss",
+            "in": "Chemsdine Talbi",
+            "minute": 63
+          },
+          {
+            "out": "Ayyoub Bouaddi",
+            "in": "Sofyan Amrabat",
+            "minute": 63
+          }
+        ],
+        "CANADA": [
+          {
+            "out": "Tani Oluwaseyi",
+            "in": "Cyle Larin",
+            "minute": 63
           }
         ]
       },
