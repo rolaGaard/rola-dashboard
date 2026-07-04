@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-04T18:42:13.730481Z",
+  "updated": "2026-07-04T18:43:11.277785Z",
   "matches": {
     "CANADA-MOROCCO": {
       "fixtureId": 1567824,
@@ -7,7 +7,7 @@
       "homeGoals": 0,
       "awayGoals": 1,
       "status": "2H",
-      "elapsed": 78,
+      "elapsed": 79,
       "kickoffUTC": "2026-07-04T17:00:00+00:00",
       "referee": "Michael Oliver, England",
       "events": [
@@ -107,6 +107,16 @@
             "out": "T. Oluwaseyi",
             "in": "C. Larin",
             "minute": 63
+          },
+          {
+            "out": "A. Ahmed",
+            "in": "P. David",
+            "minute": 79
+          },
+          {
+            "out": "R. Laryea",
+            "in": "J. Shaffelburg",
+            "minute": 79
           }
         ]
       },
