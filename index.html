@@ -2374,33 +2374,20 @@ function render() {
     html = buildUnifiedGroupedHtml(sorted);
   } else if (currentFilter === 'today') {
     document.getElementById('search-label').innerHTML = '';
-    // Mezclamos grupos y eliminatoria en una sola lista ordenada por prioridad
-    const knockoutToday = getAllKnockoutEntries()
-      .filter(m => toARDateStr(m.kickoffUTC) === todayAR)
-      .map(m => {
-        const {teamA, teamB} = resolveKnockoutSides(m);
-        const status = knockoutEntryStatus(m).status;
-        return { _ko: m, _status: status, _kickoff: m.kickoffUTC };
-      });
-    // Unir todos los partidos de hoy en una lista con prioridad
-    const allToday = [
-      ...sorted.map(m => ({ _m: m, _status: getUnifiedStatus(m), _kickoff: getUnifiedKickoff(m) })),
-      ...knockoutToday,
-    ].sort((a, b) => {
-      const statusPriority = s => s === 'live' ? 0 : s === 'scheduled' ? 1 : 2;
-      const pa = statusPriority(a._status), pb = statusPriority(b._status);
+    // sorted ya incluye grupos + eliminatoria, solo re-ordenamos por prioridad
+    const statusPriority = s => s === 'live' ? 0 : s === 'scheduled' ? 1 : 2;
+    const allToday = sorted.slice().sort((a, b) => {
+      const pa = statusPriority(getUnifiedStatus(a));
+      const pb = statusPriority(getUnifiedStatus(b));
       if (pa !== pb) return pa - pb;
-      return new Date(a._kickoff) - new Date(b._kickoff);
+      return new Date(getUnifiedKickoff(a)) - new Date(getUnifiedKickoff(b));
     });
-    let knockoutExtraCount = knockoutToday.length;
-    html = '<div class="match-grid">';
-    allToday.forEach(item => {
-      if (item._m) html += buildMatchCard(item._m);
-      else          html += buildKnockoutCardHtml(item._ko);
-    });
-    html += '</div>';
-    if (sorted.length === 0 && knockoutExtraCount === 0) {
+    if (allToday.length === 0) {
       html = '<div class="empty-state">' + t('noHayPartidos') + '</div>';
+    } else {
+      html = '<div class="match-grid">';
+      allToday.forEach(m => { html += buildMatchCard(m); });
+      html += '</div>';
     }
   } else {
     document.getElementById('search-label').innerHTML = '';
