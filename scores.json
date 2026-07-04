@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-04T03:12:13.884532Z",
+  "updated": "2026-07-04T03:13:10.057169Z",
   "matches": {
     "COLOMBIA-GHANA": {
       "fixtureId": 1567310,
@@ -93,6 +93,16 @@
             "out": "K. Sibo",
             "in": "E. Owusu",
             "minute": 62
+          },
+          {
+            "out": "J. Ayew",
+            "in": "E. Nuamah",
+            "minute": 79
+          },
+          {
+            "out": "C. Yirenkyi",
+            "in": "P. Adu",
+            "minute": 79
           }
         ]
       },
