@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-04T18:53:12.674213Z",
+  "updated": "2026-07-04T18:54:10.859462Z",
   "matches": {
     "CANADA-MOROCCO": {
       "fixtureId": 1567824,
@@ -14,7 +14,7 @@
         {
           "type": "Card",
           "detail": "Yellow Card",
-          "player": "R. Halhal",
+          "player": "Redouane Halhal",
           "team": "MOROCCO",
           "minute": 20,
           "extra": null
@@ -22,7 +22,7 @@
         {
           "type": "Card",
           "detail": "Yellow Card",
-          "player": "A. Hakimi",
+          "player": "Achraf Hakimi",
           "team": "MOROCCO",
           "minute": 40,
           "extra": null
@@ -30,7 +30,7 @@
         {
           "type": "Card",
           "detail": "Yellow Card",
-          "player": "R. Laryea",
+          "player": "Richie Laryea",
           "team": "CANADA",
           "minute": 40,
           "extra": null
@@ -38,7 +38,7 @@
         {
           "type": "Card",
           "detail": "Yellow Card",
-          "player": "J. David",
+          "player": "Jonathan David",
           "team": "CANADA",
           "minute": 43,
           "extra": null
@@ -46,7 +46,7 @@
         {
           "type": "Card",
           "detail": "Yellow Card",
-          "player": "A. Ounahi",
+          "player": "Azzedine Ounahi",
           "team": "MOROCCO",
           "minute": 45,
           "extra": null
@@ -54,7 +54,7 @@
         {
           "type": "Card",
           "detail": "Yellow Card",
-          "player": "B. El Khannouss",
+          "player": "Bilal El Khannouss",
           "team": "MOROCCO",
           "minute": 45,
           "extra": 6
@@ -62,7 +62,7 @@
         {
           "type": "Card",
           "detail": "Yellow Card",
-          "player": "L. De Fougerolles",
+          "player": "Luc De Fougerolles",
           "team": "CANADA",
           "minute": 49,
           "extra": null
@@ -70,7 +70,7 @@
         {
           "type": "Goal",
           "detail": "Normal Goal",
-          "player": "A. Ounahi",
+          "player": "Azzedine Ounahi",
           "team": "MOROCCO",
           "minute": 50,
           "extra": null
@@ -78,7 +78,7 @@
         {
           "type": "Card",
           "detail": "Yellow Card",
-          "player": "C. Larin",
+          "player": "Cyle Larin",
           "team": "CANADA",
           "minute": 67,
           "extra": null
@@ -86,7 +86,7 @@
         {
           "type": "Goal",
           "detail": "Normal Goal",
-          "player": "A. Ounahi",
+          "player": "Azzedine Ounahi",
           "team": "MOROCCO",
           "minute": 82,
           "extra": null
@@ -95,56 +95,56 @@
       "substitutions": {
         "MOROCCO": [
           {
-            "out": "I. Saibari",
-            "in": "S. Rahimi",
+            "out": "Ismael Saibari",
+            "in": "Soufiane Rahimi",
             "minute": 22
           },
           {
-            "out": "A. Bouaddi",
-            "in": "S. Amrabat",
+            "out": "Bilal El Khannouss",
+            "in": "Chemsdine Talbi",
             "minute": 63
           },
           {
-            "out": "B. El Khannouss",
-            "in": "C. Talbi",
+            "out": "Ayyoub Bouaddi",
+            "in": "Sofyan Amrabat",
             "minute": 63
           },
           {
-            "out": "I. Diop",
-            "in": "M. Saadane",
+            "out": "Issa Diop",
+            "in": "Marwane Saadane",
             "minute": 87
           },
           {
-            "out": "A. Ounahi",
-            "in": "S. El Mourabet",
+            "out": "Azzedine Ounahi",
+            "in": "Samir El-Mourabet",
             "minute": 87
           }
         ],
         "CANADA": [
           {
-            "out": "T. Oluwaseyi",
-            "in": "C. Larin",
+            "out": "Tani Oluwaseyi",
+            "in": "Cyle Larin",
             "minute": 63
           },
           {
-            "out": "A. Ahmed",
-            "in": "P. David",
+            "out": "Ali Ahmed",
+            "in": "Promise David",
             "minute": 78
           },
           {
-            "out": "R. Laryea",
-            "in": "J. Shaffelburg",
-            "minute": 79
+            "out": "Richie Laryea",
+            "in": "Jacob Shaffelburg",
+            "minute": 78
           },
           {
-            "out": "T. Buchanan",
-            "in": "J. Nelson",
-            "minute": 88
+            "out": "Niko Sigur",
+            "in": "Jonathan Osorio",
+            "minute": 87
           },
           {
-            "out": "N. Sigur",
-            "in": "J. Osorio",
-            "minute": 88
+            "out": "Tajon Buchanan",
+            "in": "Jayden Nelson",
+            "minute": 87
           }
         ]
       },
