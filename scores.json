@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-04T18:51:09.643338Z",
+  "updated": "2026-07-04T18:52:11.025982Z",
   "matches": {
     "CANADA-MOROCCO": {
       "fixtureId": 1567824,
@@ -7,7 +7,7 @@
       "homeGoals": 0,
       "awayGoals": 2,
       "status": "2H",
-      "elapsed": 87,
+      "elapsed": 88,
       "kickoffUTC": "2026-07-04T17:00:00+00:00",
       "referee": "Michael Oliver, England",
       "events": [
@@ -108,6 +108,16 @@
             "out": "B. El Khannouss",
             "in": "C. Talbi",
             "minute": 63
+          },
+          {
+            "out": "I. Diop",
+            "in": "M. Saadane",
+            "minute": 87
+          },
+          {
+            "out": "A. Ounahi",
+            "in": "S. El Mourabet",
+            "minute": 87
           }
         ],
         "CANADA": [
