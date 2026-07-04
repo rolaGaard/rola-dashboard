@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-04T17:40:36.639420Z",
+  "updated": "2026-07-04T17:41:09.985299Z",
   "matches": {
     "CANADA-MOROCCO": {
       "fixtureId": 1567824,
@@ -17,6 +17,14 @@
           "player": "R. Halhal",
           "team": "MOROCCO",
           "minute": 20,
+          "extra": null
+        },
+        {
+          "type": "Card",
+          "detail": "Yellow Card",
+          "player": "A. Hakimi",
+          "team": "MOROCCO",
+          "minute": 40,
           "extra": null
         }
       ],
