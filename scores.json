@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-04T22:47:12.362796Z",
+  "updated": "2026-07-04T22:48:13.640258Z",
   "matches": {
     "PARAGUAY-FRANCE": {
       "fixtureId": 1569870,
@@ -7,7 +7,7 @@
       "homeGoals": 0,
       "awayGoals": 1,
       "status": "2H",
-      "elapsed": 84,
+      "elapsed": 85,
       "kickoffUTC": "2026-07-04T21:00:00+00:00",
       "referee": "Ilgiz Tantashev, Uzbekistan",
       "events": [
@@ -64,6 +64,11 @@
             "out": "B. Barcola",
             "in": "D. Doue",
             "minute": 61
+          },
+          {
+            "out": "O. Dembele",
+            "in": "R. Cherki",
+            "minute": 84
           }
         ]
       },
