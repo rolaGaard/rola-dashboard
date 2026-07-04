@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-04T22:35:15.644936Z",
+  "updated": "2026-07-04T22:36:11.802204Z",
   "matches": {
     "PARAGUAY-FRANCE": {
       "fixtureId": 1569870,
@@ -7,7 +7,7 @@
       "homeGoals": 0,
       "awayGoals": 1,
       "status": "2H",
-      "elapsed": 71,
+      "elapsed": 72,
       "kickoffUTC": "2026-07-04T21:00:00+00:00",
       "referee": "Ilgiz Tantashev, Uzbekistan",
       "events": [
@@ -39,6 +39,16 @@
             "out": "J. Enciso",
             "in": "G. Caballero",
             "minute": 61
+          },
+          {
+            "out": "G. Gomez",
+            "in": "Mauricio",
+            "minute": 71
+          },
+          {
+            "out": "M. Almiron",
+            "in": "G. Avalos",
+            "minute": 72
           }
         ],
         "FRANCE": [
