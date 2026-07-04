@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-04T18:30:55.043029Z",
+  "updated": "2026-07-04T18:31:09.683324Z",
   "matches": {
     "CANADA-MOROCCO": {
       "fixtureId": 1567824,
@@ -14,7 +14,7 @@
         {
           "type": "Card",
           "detail": "Yellow Card",
-          "player": "Redouane Halhal",
+          "player": "R. Halhal",
           "team": "MOROCCO",
           "minute": 20,
           "extra": null
@@ -22,7 +22,7 @@
         {
           "type": "Card",
           "detail": "Yellow Card",
-          "player": "Achraf Hakimi",
+          "player": "A. Hakimi",
           "team": "MOROCCO",
           "minute": 40,
           "extra": null
@@ -30,7 +30,7 @@
         {
           "type": "Card",
           "detail": "Yellow Card",
-          "player": "Richie Laryea",
+          "player": "R. Laryea",
           "team": "CANADA",
           "minute": 40,
           "extra": null
@@ -38,7 +38,7 @@
         {
           "type": "Card",
           "detail": "Yellow Card",
-          "player": "Jonathan David",
+          "player": "J. David",
           "team": "CANADA",
           "minute": 43,
           "extra": null
@@ -46,7 +46,7 @@
         {
           "type": "Card",
           "detail": "Yellow Card",
-          "player": "Azzedine Ounahi",
+          "player": "A. Ounahi",
           "team": "MOROCCO",
           "minute": 45,
           "extra": null
@@ -54,7 +54,7 @@
         {
           "type": "Card",
           "detail": "Yellow Card",
-          "player": "Bilal El Khannouss",
+          "player": "B. El Khannouss",
           "team": "MOROCCO",
           "minute": 45,
           "extra": 6
@@ -62,7 +62,7 @@
         {
           "type": "Card",
           "detail": "Yellow Card",
-          "player": "Luc De Fougerolles",
+          "player": "L. De Fougerolles",
           "team": "CANADA",
           "minute": 49,
           "extra": null
@@ -70,7 +70,7 @@
         {
           "type": "Goal",
           "detail": "Normal Goal",
-          "player": "Azzedine Ounahi",
+          "player": "A. Ounahi",
           "team": "MOROCCO",
           "minute": 50,
           "extra": null
@@ -79,25 +79,25 @@
       "substitutions": {
         "MOROCCO": [
           {
-            "out": "Ismael Saibari",
-            "in": "Soufiane Rahimi",
+            "out": "I. Saibari",
+            "in": "S. Rahimi",
             "minute": 22
           },
           {
-            "out": "Bilal El Khannouss",
-            "in": "Chemsdine Talbi",
+            "out": "A. Bouaddi",
+            "in": "S. Amrabat",
             "minute": 63
           },
           {
-            "out": "Ayyoub Bouaddi",
-            "in": "Sofyan Amrabat",
+            "out": "B. El Khannouss",
+            "in": "C. Talbi",
             "minute": 63
           }
         ],
         "CANADA": [
           {
-            "out": "Tani Oluwaseyi",
-            "in": "Cyle Larin",
+            "out": "T. Oluwaseyi",
+            "in": "C. Larin",
             "minute": 63
           }
         ]
