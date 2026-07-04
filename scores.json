@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-04T18:52:11.025982Z",
+  "updated": "2026-07-04T18:53:12.674213Z",
   "matches": {
     "CANADA-MOROCCO": {
       "fixtureId": 1567824,
@@ -135,6 +135,16 @@
             "out": "R. Laryea",
             "in": "J. Shaffelburg",
             "minute": 79
+          },
+          {
+            "out": "T. Buchanan",
+            "in": "J. Nelson",
+            "minute": 88
+          },
+          {
+            "out": "N. Sigur",
+            "in": "J. Osorio",
+            "minute": 88
           }
         ]
       },
