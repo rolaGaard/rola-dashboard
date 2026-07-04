@@ -908,7 +908,7 @@
     <img class="header-icon" src="icons/icon-192.png" alt="rolaGaard">
     <div class="header-text">
       <div class="header-title">Mundial 2026</div>
-      <div class="header-by">by rolaGaard &nbsp;<span class="app-version">v2.6</span></div>
+      <div class="header-by">by rolaGaard &nbsp;<span class="app-version">v2.9</span></div>
       <div class="header-sub" id="header-sub">USA · Canadá · México</div>
     </div>
   </div>
@@ -1600,10 +1600,26 @@ function isHydrationWindow(apiStatus, elapsed) {
 }
 
 function statusLabel(apiStatus, elapsed){
-  const liveStates = {'1H':t('primerTiempo'),'2H':t('segundoTiempo'),'HT':t('entretiempo'),'ET':t('tiempoExtra'),'P':t('penales')};
-  if (liveStates[apiStatus]) return liveStates[apiStatus] + (elapsed ? ' · ' + elapsed + "'" : '');
-  if (apiStatus === 'FT' || apiStatus === 'AET' || apiStatus === 'PEN') return t('finalizado');
-  return null;
+  const liveStates = {'1H':t('primerTiempo'),'2H':t('segundoTiempo'),'HT':t('entretiempo'),'ET':t('tiempoExtra'),'BT':t('entretiempo'),'P':t('penales')};
+  if (!liveStates[apiStatus]) {
+    if (apiStatus === 'FT')  return t('finalizado');
+    if (apiStatus === 'AET') return t('finalizadoET') || t('finalizado');
+    if (apiStatus === 'PEN') return t('finalizadoPen') || t('finalizado');
+    return null;
+  }
+  let timeStr = '';
+  if (elapsed) {
+    if (apiStatus === 'ET' && elapsed > 90) {
+      // Tiempo extra: mostrar como 90+X' (tiempo relativo al inicio del ET)
+      timeStr = ' · 90+' + (elapsed - 90) + "'";
+    } else if (apiStatus === 'BT' && elapsed > 105) {
+      // Entre tiempos del ET
+      timeStr = ' · 105+' + (elapsed - 105) + "'";
+    } else {
+      timeStr = ' · ' + elapsed + "'";
+    }
+  }
+  return liveStates[apiStatus] + timeStr;
 }
 
 let liveData = {};
@@ -2322,7 +2338,22 @@ function render() {
   updateCounters();
 
   const descending = currentFilter === 'finished';
+
+  // Para "Hoy": en vivo → próximos (cronológico) → finalizados
+  function todayPriority(m) {
+    const s = getUnifiedStatus(m);
+    if (s === 'live') return 0;
+    if (s === 'scheduled') return 1;
+    return 2; // finished
+  }
+
   const sorted = filtered.slice().sort((a, b) => {
+    if (currentFilter === 'today') {
+      const pa = todayPriority(a), pb = todayPriority(b);
+      if (pa !== pb) return pa - pb;
+      // Dentro del mismo grupo: cronológico ascendente
+      return new Date(getUnifiedKickoff(a)) - new Date(getUnifiedKickoff(b));
+    }
     const ka = getUnifiedKickoff(a), kb = getUnifiedKickoff(b);
     return descending ? new Date(kb) - new Date(ka) : new Date(ka) - new Date(kb);
   });
@@ -2341,6 +2372,23 @@ function render() {
   } else if (currentFilter === 'all') {
     document.getElementById('search-label').innerHTML = '';
     html = buildUnifiedGroupedHtml(sorted);
+  } else if (currentFilter === 'today') {
+    document.getElementById('search-label').innerHTML = '';
+    // sorted ya incluye grupos + eliminatoria, solo re-ordenamos por prioridad
+    const statusPriority = s => s === 'live' ? 0 : s === 'scheduled' ? 1 : 2;
+    const allToday = sorted.slice().sort((a, b) => {
+      const pa = statusPriority(getUnifiedStatus(a));
+      const pb = statusPriority(getUnifiedStatus(b));
+      if (pa !== pb) return pa - pb;
+      return new Date(getUnifiedKickoff(a)) - new Date(getUnifiedKickoff(b));
+    });
+    if (allToday.length === 0) {
+      html = '<div class="empty-state">' + t('noHayPartidos') + '</div>';
+    } else {
+      html = '<div class="match-grid">';
+      allToday.forEach(m => { html += buildMatchCard(m); });
+      html += '</div>';
+    }
   } else {
     document.getElementById('search-label').innerHTML = '';
     html = buildUnifiedByDateHtml(sorted);
@@ -3406,31 +3454,139 @@ function buildVbHalfFromSections(sections, side, label16, label8, label4, labelS
   return html;
 }
 
-function buildVbMobileDynamic() {
-  const labels = {
-    r32: t('dieciseisavosTitle').split('(')[0].trim(),
-    r16: t('octavosDeFinal'), qf: t('cuartosDeFinal'),
-    sf: t('semifinales'), final: t('finalTitle'), third: t('tercerPuesto'),
-  };
-  const allCals = [
-    { label: labels.r32, matches: R32_CALENDAR },
-    { label: labels.r16, matches: R16_CALENDAR },
-    { label: labels.qf, matches: QF_CALENDAR },
-    { label: labels.sf, matches: SF_CALENDAR },
-    { label: labels.final, matches: FINAL_CALENDAR },
-    { label: labels.third, matches: THIRD_PLACE_CALENDAR },
-  ];
-  let html = '<div class="vb-mobile">';
-  allCals.forEach(({ label, matches }) => {
-    const cols = matches.length === 1 ? ' one-col' : '';
-    html += '<div class="vb-mobile-round"><div class="vb-mobile-label">' + label + '</div>';
-    html += '<div class="vb-mobile-grid' + cols + '">';
-    matches.forEach(cal => { html += buildVbCardFromMatch(resolveVbMatch(cal)); });
-    html += '</div></div>';
+function buildRadialBracket() {
+  const W=340, H=430, cx=W/2, cy=148;
+  const R={team:138,r32:116,r16:93,qf:70,sf:47,final:22};
+  const R32_ORDER=[74,77,73,75,83,84,81,82,76,78,79,80,86,88,85,87];
+  const R16_MAP=[[89,[74,77]],[90,[73,75]],[93,[83,84]],[94,[81,82]],[91,[76,78]],[92,[79,80]],[95,[86,88]],[96,[85,87]]];
+  const QF_MAP =[[97,[89,90]],[98,[93,94]],[99,[91,92]],[100,[95,96]]];
+  const SF_MAP =[[101,[97,98]],[102,[99,100]]];
+
+  const ang={};
+  R32_ORDER.forEach((n,i)=>{ang['r32_'+n]=i*22.5;});
+  R16_MAP.forEach(([n,[a,b]])=>{ang['r16_'+n]=(ang['r32_'+a]+ang['r32_'+b])/2;});
+  QF_MAP .forEach(([n,[a,b]])=>{ang['qf_' +n]=(ang['r16_'+a]+ang['r16_'+b])/2;});
+  SF_MAP .forEach(([n,[a,b]])=>{ang['sf_' +n]=(ang['qf_' +a]+ang['qf_' +b])/2;});
+
+  function pt(r,deg){
+    const rad=(deg-90)*Math.PI/180;
+    return [+(cx+r*Math.cos(rad)).toFixed(1),+(cy+r*Math.sin(rad)).toFixed(1)];
+  }
+
+  function getWinner(rv){
+    if(!rv||!rv.home||!rv.away) return null;
+    if(rv.penaltyHome!=null&&rv.penaltyHome!==undefined)
+      return rv.penaltyHome>rv.penaltyAway?rv.home:rv.away;
+    if(rv.homeGoals>rv.awayGoals) return rv.home;
+    if(rv.awayGoals>rv.homeGoals) return rv.away;
+    return null;
+  }
+
+  // Nodo: bandera del ganador si jugado, códigos si se sabe quién juega, vacío si TBD
+  function node(r,deg,res,radius){
+    const[nx,ny]=pt(r,deg);
+    const rv=res||{};
+    const done=rv.status&&isFinishedStatus(rv.status);
+    const live=rv.status&&isLiveStatus(rv.status);
+    const hs=rv.homeGoals!=null&&rv.homeGoals!==undefined;
+    const fill=live?'#5a0000':done?'#0a1f4a':'#141c30';
+    const sk=live?'#ef4444':done?'#3b82f6':'#2a3a50';
+    let s=`<circle cx="${nx}" cy="${ny}" r="${radius}" fill="${fill}" stroke="${sk}" stroke-width="1.5"/>`;
+    if(done&&hs&&rv.home&&rv.away){
+      const winner=getWinner(rv);
+      if(winner){
+        const fs=radius*1.5;
+        s+=`<foreignObject x="${+(nx-fs/2).toFixed(1)}" y="${+(ny-fs/2).toFixed(1)}" width="${fs}" height="${fs}"><div xmlns="http://www.w3.org/1999/xhtml" style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:${Math.round(fs*0.75)}px;line-height:1;">${flag(winner)}</div></foreignObject>`;
+      }
+    }else if(!done&&rv.home&&rv.away){
+      s+=`<text x="${nx}" y="${+(ny+2).toFixed(1)}" text-anchor="middle" font-family="monospace" font-size="5.5" fill="#6a7a8a">${countryCode(rv.home)}</text>`;
+      s+=`<text x="${nx}" y="${+(ny+8.5).toFixed(1)}" text-anchor="middle" font-family="monospace" font-size="5.5" fill="#6a7a8a">${countryCode(rv.away)}</text>`;
+    }
+    // Si no se sabe quién juega: círculo vacío
+    return s;
+  }
+
+  let s=`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" width="100%" style="display:block;max-width:340px;margin:0 auto;">`;
+  s+=`<rect width="${W}" height="${H}" rx="12" fill="#0a0e1a"/>`;
+
+  // Anillos guía
+  [R.r32,R.r16,R.qf,R.sf].forEach(r=>{
+    s+=`<circle cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="#1a2535" stroke-width="0.5" stroke-dasharray="2,4"/>`;
   });
-  html += '</div>';
-  return html;
+
+  // Líneas conectoras
+  R16_MAP.forEach(([r16n,[a,b]])=>{[a,b].forEach(r32n=>{const[x1,y1]=pt(R.r32,ang['r32_'+r32n]),[x2,y2]=pt(R.r16,ang['r16_'+r16n]);s+=`<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="#1e2e42" stroke-width="1.3"/>`;});});
+  QF_MAP .forEach(([qfn,[a,b]])=>{[a,b].forEach(r16n=>{const[x1,y1]=pt(R.r16,ang['r16_'+r16n]),[x2,y2]=pt(R.qf,ang['qf_'+qfn]);s+=`<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="#1e2e42" stroke-width="1.3"/>`;});});
+  SF_MAP .forEach(([sfn,[a,b]])=>{[a,b].forEach(qfn=>{const[x1,y1]=pt(R.qf,ang['qf_'+qfn]),[x2,y2]=pt(R.sf,ang['sf_'+sfn]);s+=`<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="#1e2e42" stroke-width="1.3"/>`;});});
+  SF_MAP .forEach(([sfn])=>{const[x1,y1]=pt(R.sf,ang['sf_'+sfn]);s+=`<line x1="${x1}" y1="${y1}" x2="${cx}" y2="${cy}" stroke="#1e2e42" stroke-width="1.3"/>`;});
+
+  // Extensión 3er puesto: línea desde la Final hacia abajo
+  const thirdY=cy+R.team+52;
+  s+=`<line x1="${cx}" y1="${+(cy+R.final).toFixed(1)}" x2="${cx}" y2="${+(thirdY-18).toFixed(1)}" stroke="#1e2e42" stroke-width="1.3" stroke-dasharray="4,3"/>`;
+
+  // Labels del anillo exterior (solo texto, sin HTML)
+  R32_ORDER.forEach(matchNum=>{
+    const cal=R32_CALENDAR.find(m=>m.match===matchNum);
+    const res=resolveVbMatch(cal)||{};
+    const{home,away,homeGoals,awayGoals,status}=res;
+    const done=status&&isFinishedStatus(status);
+    const hs=homeGoals!=null&&homeGoals!==undefined;
+    const deg=ang['r32_'+matchNum];
+    const[hx,hy]=pt(R.team,deg-5.5);
+    const[ax,ay]=pt(R.team,deg+5.5);
+    // Usar getWinner() en vez de comparar goles directamente — cubre penales
+    const winner=done&&hs?getWinner(res):null;
+    const hWin=winner&&winner===home;
+    const aWin=winner&&winner===away;
+    if(home) s+=`<text x="${hx}" y="${+(hy+3).toFixed(1)}" text-anchor="middle" font-family="monospace" font-size="7" font-weight="${hWin?700:400}" fill="${hWin?'#FFD700':done&&hs?'#334155':'#8899aa'}" opacity="${done&&hs&&!hWin?0.4:1}">${countryCode(home)}</text>`;
+    if(away) s+=`<text x="${ax}" y="${+(ay+3).toFixed(1)}" text-anchor="middle" font-family="monospace" font-size="7" font-weight="${aWin?700:400}" fill="${aWin?'#FFD700':done&&hs?'#334155':'#8899aa'}" opacity="${done&&hs&&!aWin?0.4:1}">${countryCode(away)}</text>`;
+    s+=node(R.r32,deg,res,11);
+  });
+
+  // Nodos R16, QF, SF
+  R16_MAP.forEach(([r16n])=>{s+=node(R.r16,ang['r16_'+r16n],resolveVbMatch(R16_CALENDAR.find(m=>m.match===r16n)),11);});
+  QF_MAP .forEach(([qfn]) =>{s+=node(R.qf, ang['qf_' +qfn], resolveVbMatch(QF_CALENDAR .find(m=>m.match===qfn)), 12);});
+  SF_MAP .forEach(([sfn]) =>{s+=node(R.sf, ang['sf_' +sfn], resolveVbMatch(SF_CALENDAR .find(m=>m.match===sfn)), 13);});
+
+  // Centro: Final
+  const fRes=resolveVbMatch(FINAL_CALENDAR[0])||{};
+  const fDone=fRes.status&&isFinishedStatus(fRes.status);
+  const fHs=fRes.homeGoals!=null&&fRes.homeGoals!==undefined;
+  const fFill=fDone&&fHs?'#0a1f4a':'#141c30';
+  const fSk=fDone&&fHs?'#FFD700':'#2a3a50';
+  s+=`<circle cx="${cx}" cy="${cy}" r="${R.final}" fill="${fFill}" stroke="${fSk}" stroke-width="2"/>`;
+  if(fDone&&fHs&&fRes.home&&fRes.away){
+    const winner=getWinner(fRes);
+    const loser=winner===fRes.home?fRes.away:fRes.home;
+    if(winner){
+      const wfs=R.final*1.4;
+      s+=`<foreignObject x="${+(cx-wfs/2).toFixed(1)}" y="${+(cy-R.final*0.85).toFixed(1)}" width="${wfs}" height="${wfs}"><div xmlns="http://www.w3.org/1999/xhtml" style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:${Math.round(wfs*0.8)}px;line-height:1;">${flag(winner)}</div></foreignObject>`;
+      const lfs=R.final*0.85;
+      s+=`<foreignObject x="${+(cx-lfs/2).toFixed(1)}" y="${+(cy+R.final*0.25).toFixed(1)}" width="${lfs}" height="${lfs}"><div xmlns="http://www.w3.org/1999/xhtml" style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:${Math.round(lfs*0.75)}px;line-height:1;opacity:0.6;">${flag(loser)}</div></foreignObject>`;
+    }
+  }else{
+    s+=`<text x="${cx}" y="${+(cy+7).toFixed(1)}" text-anchor="middle" font-size="17">\u{1F3C6}</text>`;
+  }
+
+  // Nodo 3er puesto
+  const tRes=resolveVbMatch(THIRD_PLACE_CALENDAR[0])||{};
+  const tDone=tRes.status&&isFinishedStatus(tRes.status);
+  const tHs=tRes.homeGoals!=null&&tRes.homeGoals!==undefined;
+  s+=`<circle cx="${cx}" cy="${thirdY}" r="16" fill="${tDone&&tHs?'#0a1f4a':'#141c30'}" stroke="${tDone&&tHs?'#94a3b8':'#2a3a50'}" stroke-width="1.5"/>`;
+  if(tDone&&tHs&&tRes.home&&tRes.away){
+    const tw=getWinner(tRes);
+    if(tw){const fs=16*1.5;s+=`<foreignObject x="${+(cx-fs/2).toFixed(1)}" y="${+(thirdY-fs/2).toFixed(1)}" width="${fs}" height="${fs}"><div xmlns="http://www.w3.org/1999/xhtml" style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:${Math.round(fs*0.75)}px;line-height:1;">${flag(tw)}</div></foreignObject>`;}
+  }else if(tRes.home&&tRes.away){
+    s+=`<text x="${cx}" y="${+(thirdY+2).toFixed(1)}" text-anchor="middle" font-family="monospace" font-size="5.5" fill="#6a7a8a">${countryCode(tRes.home)}</text>`;
+    s+=`<text x="${cx}" y="${+(thirdY+8.5).toFixed(1)}" text-anchor="middle" font-family="monospace" font-size="5.5" fill="#6a7a8a">${countryCode(tRes.away)}</text>`;
+  }
+  s+=`<text x="${cx}" y="${+(thirdY+30).toFixed(1)}" text-anchor="middle" font-size="8" fill="#374151">3\u00b0</text>`;
+
+  s+='</svg>';
+  return `<div style="padding:8px 0 4px;">${s}</div>`;
 }
+
+function buildVbMobileDynamic() { return buildRadialBracket(); }
 
 function renderBracket() {
   const leftGroups  = ['A','B','C','D','E','F'];
@@ -3456,7 +3612,9 @@ function renderBracket() {
   bracketHtml += '</div>';
   bracketHtml += buildVbHalfFromSections(right, 'right', labels16, labels8, labels4, labelsSF);
   bracketHtml += '</div>';
-  bracketHtml += buildVbMobileDynamic();
+  // El bracket radial vive dentro de .vb-mobile — el CSS ya lo muestra solo en portrait
+  // y lo oculta en landscape/desktop (donde se usa el .vb-wrap horizontal)
+  bracketHtml += '<div class="vb-mobile">' + buildVbMobileDynamic() + '</div>';
 
   // Grupos debajo del bracket — los 12 en una grilla
   const allGroups = ['A','B','C','D','E','F','G','H','I','J','K','L'];
