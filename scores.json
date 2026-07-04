@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-04T00:14:11.556706Z",
+  "updated": "2026-07-04T00:15:23.882672Z",
   "matches": {
     "ARGENTINA-CAPE VERDE": {
       "fixtureId": 1565179,
@@ -7,7 +7,7 @@
       "homeGoals": 2,
       "awayGoals": 1,
       "status": "ET",
-      "elapsed": 97,
+      "elapsed": 100,
       "kickoffUTC": "2026-07-03T22:00:00+00:00",
       "referee": "Drew Fischer, Canada",
       "events": [
@@ -87,6 +87,11 @@
             "out": "J. Cabral",
             "in": "H. Varela",
             "minute": 80
+          },
+          {
+            "out": "D. Duarte",
+            "in": "Y. Semedo",
+            "minute": 100
           }
         ]
       },
