@@ -1,6 +1,295 @@
 {
-  "updated": "2026-07-04T01:29:10.633001Z",
+  "updated": "2026-07-04T01:30:43.275530Z",
   "matches": {
+    "COLOMBIA-GHANA": {
+      "fixtureId": 1567310,
+      "round": "Round of 32",
+      "homeGoals": 0,
+      "awayGoals": 0,
+      "status": "1H",
+      "elapsed": 1,
+      "kickoffUTC": "2026-07-04T01:30:00+00:00",
+      "referee": "Clement Turpin, France",
+      "events": [],
+      "lineups": {
+        "COLOMBIA": {
+          "formation": "4-3-3",
+          "coach": "Nestor Lorenzo",
+          "startXI": [
+            {
+              "name": "Camilo Vargas",
+              "number": 12,
+              "pos": "G"
+            },
+            {
+              "name": "Daniel Mu\u00f1oz",
+              "number": 2,
+              "pos": "D"
+            },
+            {
+              "name": "Davinson S\u00e1nchez",
+              "number": 23,
+              "pos": "D"
+            },
+            {
+              "name": "Jhon Lucum\u00ed",
+              "number": 3,
+              "pos": "D"
+            },
+            {
+              "name": "Johan Mojica",
+              "number": 17,
+              "pos": "D"
+            },
+            {
+              "name": "Jhon Arias",
+              "number": 11,
+              "pos": "M"
+            },
+            {
+              "name": "Jefferson Lerma",
+              "number": 16,
+              "pos": "M"
+            },
+            {
+              "name": "Gustavo Puerta",
+              "number": 14,
+              "pos": "M"
+            },
+            {
+              "name": "James Rodr\u00edguez",
+              "number": 10,
+              "pos": "F"
+            },
+            {
+              "name": "Jhon C\u00f3rdoba",
+              "number": 9,
+              "pos": "F"
+            },
+            {
+              "name": "Luis D\u00edaz",
+              "number": 7,
+              "pos": "F"
+            }
+          ],
+          "substitutes": [
+            {
+              "name": "David Ospina",
+              "number": 1,
+              "pos": "G"
+            },
+            {
+              "name": "\u00c1lvaro Montero",
+              "number": 24,
+              "pos": "G"
+            },
+            {
+              "name": "Santiago Arias",
+              "number": 4,
+              "pos": "D"
+            },
+            {
+              "name": "Yerry Mina",
+              "number": 13,
+              "pos": "D"
+            },
+            {
+              "name": "Willer Ditta",
+              "number": 18,
+              "pos": "D"
+            },
+            {
+              "name": "Deiver Machado",
+              "number": 22,
+              "pos": "D"
+            },
+            {
+              "name": "Kevin Casta\u00f1o",
+              "number": 5,
+              "pos": "M"
+            },
+            {
+              "name": "Richard R\u00edos",
+              "number": 6,
+              "pos": "M"
+            },
+            {
+              "name": "Jorge Carrascal",
+              "number": 8,
+              "pos": "M"
+            },
+            {
+              "name": "Juan Portilla",
+              "number": 15,
+              "pos": "M"
+            },
+            {
+              "name": "Juan Fernando Quintero",
+              "number": 20,
+              "pos": "M"
+            },
+            {
+              "name": "Jaminton Campaz",
+              "number": 21,
+              "pos": "M"
+            },
+            {
+              "name": "Andr\u00e9s G\u00f3mez",
+              "number": 26,
+              "pos": "F"
+            },
+            {
+              "name": "Cucho Hern\u00e1ndez",
+              "number": 19,
+              "pos": "F"
+            },
+            {
+              "name": "Luis Javier Su\u00e1rez",
+              "number": 25,
+              "pos": "F"
+            }
+          ]
+        },
+        "GHANA": {
+          "formation": "4-1-4-1",
+          "coach": "Carlos Queiroz",
+          "startXI": [
+            {
+              "name": "Lawrence Ati Zigi",
+              "number": 1,
+              "pos": "G"
+            },
+            {
+              "name": "Marvin Senaya",
+              "number": 26,
+              "pos": "D"
+            },
+            {
+              "name": "Derrick Luckassen",
+              "number": 23,
+              "pos": "D"
+            },
+            {
+              "name": "Jerome Opoku",
+              "number": 18,
+              "pos": "D"
+            },
+            {
+              "name": "Gideon Mensah",
+              "number": 14,
+              "pos": "D"
+            },
+            {
+              "name": "Thomas Partey",
+              "number": 5,
+              "pos": "M"
+            },
+            {
+              "name": "I\u00f1aki Williams",
+              "number": 19,
+              "pos": "M"
+            },
+            {
+              "name": "Caleb Yirenkyi",
+              "number": 3,
+              "pos": "M"
+            },
+            {
+              "name": "Kwasi Sibo",
+              "number": 8,
+              "pos": "M"
+            },
+            {
+              "name": "Antoine Semenyo",
+              "number": 11,
+              "pos": "M"
+            },
+            {
+              "name": "Jordan Ayew",
+              "number": 9,
+              "pos": "F"
+            }
+          ],
+          "substitutes": [
+            {
+              "name": "Joseph Anang",
+              "number": 12,
+              "pos": "G"
+            },
+            {
+              "name": "Benjamin Asare",
+              "number": 16,
+              "pos": "G"
+            },
+            {
+              "name": "Alidu Seidu",
+              "number": 2,
+              "pos": "D"
+            },
+            {
+              "name": "Jonas Adjei Adjetey",
+              "number": 4,
+              "pos": "D"
+            },
+            {
+              "name": "Abdul Mumin",
+              "number": 6,
+              "pos": "D"
+            },
+            {
+              "name": "Rahman Baba",
+              "number": 17,
+              "pos": "D"
+            },
+            {
+              "name": "Kojo Peprah Oppong",
+              "number": 21,
+              "pos": "D"
+            },
+            {
+              "name": "Elisha Owusu",
+              "number": 15,
+              "pos": "M"
+            },
+            {
+              "name": "Abdul Fatawu Issahaku",
+              "number": 7,
+              "pos": "F"
+            },
+            {
+              "name": "Christopher Baah",
+              "number": 13,
+              "pos": "F"
+            },
+            {
+              "name": "Augustine Boakye",
+              "number": 20,
+              "pos": "M"
+            },
+            {
+              "name": "Brandon Thomas-Asante",
+              "number": 10,
+              "pos": "F"
+            },
+            {
+              "name": "Kamaldeen Sulemana",
+              "number": 22,
+              "pos": "F"
+            },
+            {
+              "name": "Ernest Nuamah",
+              "number": 24,
+              "pos": "F"
+            },
+            {
+              "name": "Prince Kwabena Adu",
+              "number": 25,
+              "pos": "F"
+            }
+          ]
+        }
+      }
+    },
     "MEXICO-SOUTH AFRICA": {
       "fixtureId": 1489369,
       "round": "Group Stage - 1",
@@ -33453,294 +33742,6 @@
             {
               "name": "Gilson Tavares",
               "number": 9,
-              "pos": "F"
-            }
-          ]
-        }
-      }
-    },
-    "COLOMBIA-GHANA": {
-      "fixtureId": 1567310,
-      "round": "Round of 32",
-      "homeGoals": null,
-      "awayGoals": null,
-      "status": "NS",
-      "elapsed": null,
-      "kickoffUTC": "2026-07-04T01:30:00+00:00",
-      "referee": "Clement Turpin, France",
-      "lineups": {
-        "COLOMBIA": {
-          "formation": "4-3-3",
-          "coach": "Nestor Lorenzo",
-          "startXI": [
-            {
-              "name": "Camilo Vargas",
-              "number": 12,
-              "pos": "G"
-            },
-            {
-              "name": "Daniel Mu\u00f1oz",
-              "number": 2,
-              "pos": "D"
-            },
-            {
-              "name": "Davinson S\u00e1nchez",
-              "number": 23,
-              "pos": "D"
-            },
-            {
-              "name": "Jhon Lucum\u00ed",
-              "number": 3,
-              "pos": "D"
-            },
-            {
-              "name": "Johan Mojica",
-              "number": 17,
-              "pos": "D"
-            },
-            {
-              "name": "Jhon Arias",
-              "number": 11,
-              "pos": "M"
-            },
-            {
-              "name": "Jefferson Lerma",
-              "number": 16,
-              "pos": "M"
-            },
-            {
-              "name": "Gustavo Puerta",
-              "number": 14,
-              "pos": "M"
-            },
-            {
-              "name": "James Rodr\u00edguez",
-              "number": 10,
-              "pos": "F"
-            },
-            {
-              "name": "Jhon C\u00f3rdoba",
-              "number": 9,
-              "pos": "F"
-            },
-            {
-              "name": "Luis D\u00edaz",
-              "number": 7,
-              "pos": "F"
-            }
-          ],
-          "substitutes": [
-            {
-              "name": "David Ospina",
-              "number": 1,
-              "pos": "G"
-            },
-            {
-              "name": "\u00c1lvaro Montero",
-              "number": 24,
-              "pos": "G"
-            },
-            {
-              "name": "Santiago Arias",
-              "number": 4,
-              "pos": "D"
-            },
-            {
-              "name": "Yerry Mina",
-              "number": 13,
-              "pos": "D"
-            },
-            {
-              "name": "Willer Ditta",
-              "number": 18,
-              "pos": "D"
-            },
-            {
-              "name": "Deiver Machado",
-              "number": 22,
-              "pos": "D"
-            },
-            {
-              "name": "Kevin Casta\u00f1o",
-              "number": 5,
-              "pos": "M"
-            },
-            {
-              "name": "Richard R\u00edos",
-              "number": 6,
-              "pos": "M"
-            },
-            {
-              "name": "Jorge Carrascal",
-              "number": 8,
-              "pos": "M"
-            },
-            {
-              "name": "Juan Portilla",
-              "number": 15,
-              "pos": "M"
-            },
-            {
-              "name": "Juan Fernando Quintero",
-              "number": 20,
-              "pos": "M"
-            },
-            {
-              "name": "Jaminton Campaz",
-              "number": 21,
-              "pos": "M"
-            },
-            {
-              "name": "Andr\u00e9s G\u00f3mez",
-              "number": 26,
-              "pos": "F"
-            },
-            {
-              "name": "Cucho Hern\u00e1ndez",
-              "number": 19,
-              "pos": "F"
-            },
-            {
-              "name": "Luis Javier Su\u00e1rez",
-              "number": 25,
-              "pos": "F"
-            }
-          ]
-        },
-        "GHANA": {
-          "formation": "4-1-4-1",
-          "coach": "Carlos Queiroz",
-          "startXI": [
-            {
-              "name": "Lawrence Ati Zigi",
-              "number": 1,
-              "pos": "G"
-            },
-            {
-              "name": "Marvin Senaya",
-              "number": 26,
-              "pos": "D"
-            },
-            {
-              "name": "Derrick Luckassen",
-              "number": 23,
-              "pos": "D"
-            },
-            {
-              "name": "Jerome Opoku",
-              "number": 18,
-              "pos": "D"
-            },
-            {
-              "name": "Gideon Mensah",
-              "number": 14,
-              "pos": "D"
-            },
-            {
-              "name": "Thomas Partey",
-              "number": 5,
-              "pos": "M"
-            },
-            {
-              "name": "I\u00f1aki Williams",
-              "number": 19,
-              "pos": "M"
-            },
-            {
-              "name": "Caleb Yirenkyi",
-              "number": 3,
-              "pos": "M"
-            },
-            {
-              "name": "Kwasi Sibo",
-              "number": 8,
-              "pos": "M"
-            },
-            {
-              "name": "Antoine Semenyo",
-              "number": 11,
-              "pos": "M"
-            },
-            {
-              "name": "Jordan Ayew",
-              "number": 9,
-              "pos": "F"
-            }
-          ],
-          "substitutes": [
-            {
-              "name": "Joseph Anang",
-              "number": 12,
-              "pos": "G"
-            },
-            {
-              "name": "Benjamin Asare",
-              "number": 16,
-              "pos": "G"
-            },
-            {
-              "name": "Alidu Seidu",
-              "number": 2,
-              "pos": "D"
-            },
-            {
-              "name": "Jonas Adjei Adjetey",
-              "number": 4,
-              "pos": "D"
-            },
-            {
-              "name": "Abdul Mumin",
-              "number": 6,
-              "pos": "D"
-            },
-            {
-              "name": "Rahman Baba",
-              "number": 17,
-              "pos": "D"
-            },
-            {
-              "name": "Kojo Peprah Oppong",
-              "number": 21,
-              "pos": "D"
-            },
-            {
-              "name": "Elisha Owusu",
-              "number": 15,
-              "pos": "M"
-            },
-            {
-              "name": "Abdul Fatawu Issahaku",
-              "number": 7,
-              "pos": "F"
-            },
-            {
-              "name": "Christopher Baah",
-              "number": 13,
-              "pos": "F"
-            },
-            {
-              "name": "Augustine Boakye",
-              "number": 20,
-              "pos": "M"
-            },
-            {
-              "name": "Brandon Thomas-Asante",
-              "number": 10,
-              "pos": "F"
-            },
-            {
-              "name": "Kamaldeen Sulemana",
-              "number": 22,
-              "pos": "F"
-            },
-            {
-              "name": "Ernest Nuamah",
-              "number": 24,
-              "pos": "F"
-            },
-            {
-              "name": "Prince Kwabena Adu",
-              "number": 25,
               "pos": "F"
             }
           ]
