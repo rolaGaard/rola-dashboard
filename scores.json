@@ -1,13 +1,13 @@
 {
-  "updated": "2026-07-04T00:31:11.478850Z",
+  "updated": "2026-07-04T00:32:11.082336Z",
   "matches": {
     "ARGENTINA-CAPE VERDE": {
       "fixtureId": 1565179,
       "round": "Round of 32",
-      "homeGoals": 2,
+      "homeGoals": 3,
       "awayGoals": 2,
       "status": "ET",
-      "elapsed": 110,
+      "elapsed": 111,
       "kickoffUTC": "2026-07-03T22:00:00+00:00",
       "referee": "Drew Fischer, Canada",
       "events": [
@@ -49,6 +49,14 @@
           "player": "S. Lopes Cabral",
           "team": "CAPE VERDE",
           "minute": 103,
+          "extra": null
+        },
+        {
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "player": "C. Romero",
+          "team": "ARGENTINA",
+          "minute": 111,
           "extra": null
         }
       ],
