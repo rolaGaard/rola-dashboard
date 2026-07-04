@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-04T02:23:09.743151Z",
+  "updated": "2026-07-04T02:24:13.113413Z",
   "matches": {
     "COLOMBIA-GHANA": {
       "fixtureId": 1567310,
@@ -14,7 +14,7 @@
         {
           "type": "Card",
           "detail": "Yellow Card",
-          "player": "J. Arias",
+          "player": "Jhon Arias",
           "team": "COLOMBIA",
           "minute": 12,
           "extra": null
@@ -22,7 +22,7 @@
         {
           "type": "Goal",
           "detail": "Normal Goal",
-          "player": "J. Arias",
+          "player": "Jhon Arias",
           "team": "COLOMBIA",
           "minute": 14,
           "extra": null
@@ -31,15 +31,15 @@
       "substitutions": {
         "COLOMBIA": [
           {
-            "out": "J. Cordoba",
-            "in": "L. Suarez",
+            "out": "Jhon Cordoba",
+            "in": "Luis Su\u00e1rez",
             "minute": 8
           }
         ],
         "GHANA": [
           {
-            "out": "M. Senaya",
-            "in": "A. Seidu",
+            "out": "Marvin Senaya",
+            "in": "Alidu Seidu",
             "minute": 13
           }
         ]
