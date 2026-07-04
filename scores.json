@@ -1,13 +1,13 @@
 {
-  "updated": "2026-07-04T00:10:28.699086Z",
+  "updated": "2026-07-04T00:11:09.508185Z",
   "matches": {
     "ARGENTINA-CAPE VERDE": {
       "fixtureId": 1565179,
       "round": "Round of 32",
       "homeGoals": 2,
       "awayGoals": 1,
-      "status": "BT",
-      "elapsed": null,
+      "status": "ET",
+      "elapsed": 97,
       "kickoffUTC": "2026-07-03T22:00:00+00:00",
       "referee": "Drew Fischer, Canada",
       "events": [
