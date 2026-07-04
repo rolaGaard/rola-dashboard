@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-04T02:55:16.890061Z",
+  "updated": "2026-07-04T02:56:12.815390Z",
   "matches": {
     "COLOMBIA-GHANA": {
       "fixtureId": 1567310,
@@ -7,7 +7,7 @@
       "homeGoals": 1,
       "awayGoals": 0,
       "status": "2H",
-      "elapsed": 62,
+      "elapsed": 63,
       "kickoffUTC": "2026-07-04T01:30:00+00:00",
       "referee": "Clement Turpin, France",
       "events": [
@@ -54,6 +54,16 @@
             "out": "M. Senaya",
             "in": "A. Seidu",
             "minute": 13
+          },
+          {
+            "out": "I. Williams",
+            "in": "I. Fatawu",
+            "minute": 62
+          },
+          {
+            "out": "K. Sibo",
+            "in": "E. Owusu",
+            "minute": 62
           }
         ]
       },
