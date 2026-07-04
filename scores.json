@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-04T17:29:09.191017Z",
+  "updated": "2026-07-04T17:30:56.230727Z",
   "matches": {
     "CANADA-MOROCCO": {
       "fixtureId": 1567824,
@@ -7,14 +7,14 @@
       "homeGoals": 0,
       "awayGoals": 0,
       "status": "1H",
-      "elapsed": 26,
+      "elapsed": 30,
       "kickoffUTC": "2026-07-04T17:00:00+00:00",
       "referee": "Michael Oliver, England",
       "events": [
         {
           "type": "Card",
           "detail": "Yellow Card",
-          "player": "R. Halhal",
+          "player": "Redouane Halhal",
           "team": "MOROCCO",
           "minute": 20,
           "extra": null
@@ -23,8 +23,8 @@
       "substitutions": {
         "MOROCCO": [
           {
-            "out": "I. Saibari",
-            "in": "S. Rahimi",
+            "out": "Ismael Saibari",
+            "in": "Soufiane Rahimi",
             "minute": 22
           }
         ]
