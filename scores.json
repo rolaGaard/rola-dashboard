@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-04T17:45:26.972070Z",
+  "updated": "2026-07-04T17:46:11.151658Z",
   "matches": {
     "CANADA-MOROCCO": {
       "fixtureId": 1567824,
@@ -41,6 +41,14 @@
           "player": "J. David",
           "team": "CANADA",
           "minute": 43,
+          "extra": null
+        },
+        {
+          "type": "Card",
+          "detail": "Yellow Card",
+          "player": "A. Ounahi",
+          "team": "MOROCCO",
+          "minute": 45,
           "extra": null
         }
       ],
