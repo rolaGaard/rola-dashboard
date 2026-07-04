@@ -1600,10 +1600,26 @@ function isHydrationWindow(apiStatus, elapsed) {
 }
 
 function statusLabel(apiStatus, elapsed){
-  const liveStates = {'1H':t('primerTiempo'),'2H':t('segundoTiempo'),'HT':t('entretiempo'),'ET':t('tiempoExtra'),'P':t('penales')};
-  if (liveStates[apiStatus]) return liveStates[apiStatus] + (elapsed ? ' · ' + elapsed + "'" : '');
-  if (apiStatus === 'FT' || apiStatus === 'AET' || apiStatus === 'PEN') return t('finalizado');
-  return null;
+  const liveStates = {'1H':t('primerTiempo'),'2H':t('segundoTiempo'),'HT':t('entretiempo'),'ET':t('tiempoExtra'),'BT':t('entretiempo'),'P':t('penales')};
+  if (!liveStates[apiStatus]) {
+    if (apiStatus === 'FT')  return t('finalizado');
+    if (apiStatus === 'AET') return t('finalizadoET') || t('finalizado');
+    if (apiStatus === 'PEN') return t('finalizadoPen') || t('finalizado');
+    return null;
+  }
+  let timeStr = '';
+  if (elapsed) {
+    if (apiStatus === 'ET' && elapsed > 90) {
+      // Tiempo extra: mostrar como 90+X' (tiempo relativo al inicio del ET)
+      timeStr = ' · 90+' + (elapsed - 90) + "'";
+    } else if (apiStatus === 'BT' && elapsed > 105) {
+      // Entre tiempos del ET
+      timeStr = ' · 105+' + (elapsed - 105) + "'";
+    } else {
+      timeStr = ' · ' + elapsed + "'";
+    }
+  }
+  return liveStates[apiStatus] + timeStr;
 }
 
 let liveData = {};
