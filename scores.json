@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-04T17:41:09.985299Z",
+  "updated": "2026-07-04T17:42:14.045071Z",
   "matches": {
     "CANADA-MOROCCO": {
       "fixtureId": 1567824,
@@ -7,7 +7,7 @@
       "homeGoals": 0,
       "awayGoals": 0,
       "status": "1H",
-      "elapsed": 40,
+      "elapsed": 41,
       "kickoffUTC": "2026-07-04T17:00:00+00:00",
       "referee": "Michael Oliver, England",
       "events": [
@@ -24,6 +24,14 @@
           "detail": "Yellow Card",
           "player": "A. Hakimi",
           "team": "MOROCCO",
+          "minute": 40,
+          "extra": null
+        },
+        {
+          "type": "Card",
+          "detail": "Yellow Card",
+          "player": "R. Laryea",
+          "team": "CANADA",
           "minute": 40,
           "extra": null
         }
