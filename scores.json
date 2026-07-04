@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-04T18:46:14.382923Z",
+  "updated": "2026-07-04T18:47:10.736731Z",
   "matches": {
     "CANADA-MOROCCO": {
       "fixtureId": 1567824,
@@ -7,7 +7,7 @@
       "homeGoals": 0,
       "awayGoals": 2,
       "status": "2H",
-      "elapsed": 82,
+      "elapsed": 83,
       "kickoffUTC": "2026-07-04T17:00:00+00:00",
       "referee": "Michael Oliver, England",
       "events": [
@@ -86,7 +86,7 @@
         {
           "type": "Goal",
           "detail": "Normal Goal",
-          "player": null,
+          "player": "A. Ounahi",
           "team": "MOROCCO",
           "minute": 82,
           "extra": null
