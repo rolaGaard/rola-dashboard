@@ -235,24 +235,37 @@ function onSessionStateChanged(event) {
   const state = event.sessionState;
 
   if (state === S.SESSION_STARTED || state === S.SESSION_RESUMED) {
-    castSession = cast.framework.CastContext.getInstance().getCurrentSession();
-    const tvName = castSession.getCastDevice()?.friendlyName || 'TV';
-    showRemoteScreen(tvName);
-    castChannel.postMessage('cast-started');
+    try {
+      castSession = cast.framework.CastContext.getInstance().getCurrentSession();
+      let tvName = 'TV';
+      try { tvName = castSession.getCastDevice().friendlyName || 'TV'; } catch(e) {}
+      showRemoteScreen(tvName);
+      try { castChannel.postMessage('cast-started'); } catch(e) {}
+      // Sincronizar filtro activo
+      send({ type:'filter', value:'all' });
+    } catch(err) {
+      console.error('Session error:', err);
+      connectStatus.textContent = 'Error al conectar: ' + err;
+      connectStatus.className = 'connect-status error';
+    }
   } else if (state === S.SESSION_ENDED) {
     castSession = null;
     showConnectScreen();
-    castChannel.postMessage('cast-ended');
+    try { castChannel.postMessage('cast-ended'); } catch(e) {}
   }
 }
 
 // ── UI helpers ────────────────────────────────────────────────────────────────
 function showRemoteScreen(tvName) {
+  screenConnect.style.display = 'none';
+  screenRemote.style.display = 'flex';
   screenConnect.classList.remove('active');
   screenRemote.classList.add('active');
-  remoteTvName.textContent = tvName;
+  remoteTvName.textContent = tvName || 'TV';
 }
 function showConnectScreen() {
+  screenRemote.style.display = 'none';
+  screenConnect.style.display = 'flex';
   screenRemote.classList.remove('active');
   screenConnect.classList.add('active');
 }
