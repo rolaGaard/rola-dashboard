@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-05T21:19:10.419756Z",
+  "updated": "2026-07-05T21:20:38.513878Z",
   "matches": {
     "BRAZIL-NORWAY": {
       "fixtureId": 1568100,
@@ -7,7 +7,7 @@
       "homeGoals": 0,
       "awayGoals": 0,
       "status": "2H",
-      "elapsed": 57,
+      "elapsed": 58,
       "kickoffUTC": "2026-07-05T20:00:00+00:00",
       "referee": "Ismail Elfath, USA",
       "events": [
@@ -31,6 +31,13 @@
             "out": "A. Nusa",
             "in": "A. Schjelderup",
             "minute": 46
+          }
+        ],
+        "BRAZIL": [
+          {
+            "out": "M. Cunha",
+            "in": "Endrick",
+            "minute": 58
           }
         ]
       },
