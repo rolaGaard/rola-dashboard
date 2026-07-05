@@ -1,13 +1,13 @@
 {
-  "updated": "2026-07-05T21:41:12.875652Z",
+  "updated": "2026-07-05T21:42:11.680033Z",
   "matches": {
     "BRAZIL-NORWAY": {
       "fixtureId": 1568100,
       "round": "Round of 16",
       "homeGoals": 0,
-      "awayGoals": 0,
+      "awayGoals": 1,
       "status": "2H",
-      "elapsed": 79,
+      "elapsed": 80,
       "kickoffUTC": "2026-07-05T20:00:00+00:00",
       "referee": "Ismail Elfath, USA",
       "events": [
@@ -17,6 +17,14 @@
           "player": "Bruno Guimaraes",
           "team": "BRAZIL",
           "minute": 14,
+          "extra": null
+        },
+        {
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "player": "E. Haaland",
+          "team": "NORWAY",
+          "minute": 80,
           "extra": null
         }
       ],
