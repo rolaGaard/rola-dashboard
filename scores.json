@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-05T20:02:13.699663Z",
+  "updated": "2026-07-05T20:03:10.876392Z",
   "matches": {
     "BRAZIL-NORWAY": {
       "fixtureId": 1568100,
@@ -7,10 +7,19 @@
       "homeGoals": 0,
       "awayGoals": 0,
       "status": "1H",
-      "elapsed": 2,
+      "elapsed": 3,
       "kickoffUTC": "2026-07-05T20:00:00+00:00",
       "referee": "Ismail Elfath, USA",
-      "events": [],
+      "events": [
+        {
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "player": null,
+          "team": "NORWAY",
+          "minute": 3,
+          "extra": null
+        }
+      ],
       "lineups": {
         "BRAZIL": {
           "formation": "4-4-2",
