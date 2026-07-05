@@ -282,7 +282,41 @@ function render() {
     content.innerHTML = '<div class="tv-empty">Vista Países — usá los filtros para navegar</div>'; return;
   }
   if (currentFilter === 'fixture') {
-    content.innerHTML = '<div class="tv-empty">Vista Fixture — bracket disponible en la app</div>'; return;
+    // Mostrar todos los partidos de eliminatoria agrupados por ronda
+    const knockout = scoresData.filter(m => {
+      const r = (m.group || m.round || '').toLowerCase();
+      return r.includes('round') || r.includes('quarter') || r.includes('semi') ||
+             r.includes('final') || r.includes('third');
+    });
+    if (!knockout.length) {
+      content.innerHTML = '<div class="tv-empty">Fase eliminatoria — pendiente de clasificados</div>';
+      return;
+    }
+    // Orden de rondas
+    const ROUND_ORDER = ['Round of 32','Round of 16','Quarter-finals','Semi-finals','3rd Place Final','Final'];
+    const groups = {};
+    knockout.forEach(m => {
+      const g = m.group || m.round || 'Otros';
+      if (!groups[g]) groups[g] = [];
+      groups[g].push(m);
+    });
+    // Ordenar rondas
+    const sortedRounds = Object.keys(groups).sort((a,b) => {
+      const ia = ROUND_ORDER.findIndex(r => a.includes(r.split('-')[0].trim())) ;
+      const ib = ROUND_ORDER.findIndex(r => b.includes(r.split('-')[0].trim()));
+      return (ia === -1 ? 99 : ia) - (ib === -1 ? 99 : ib);
+    });
+    let html = '';
+    sortedRounds.forEach(g => {
+      const list = groups[g].sort((a,b) => new Date(a.kickoff||0) - new Date(b.kickoff||0));
+      html += '<div class="tv-group-block">';
+      html += '<div class="tv-group-label">' + g + '</div>';
+      html += '<div class="tv-match-grid">';
+      list.forEach(m => { html += buildCard(m); });
+      html += '</div></div>';
+    });
+    content.innerHTML = html;
+    return;
   }
 
   const matches = filterMatches(currentFilter);
@@ -334,13 +368,16 @@ function buildCard(m) {
   if (live)      badge = '<span class="tv-badge-live">🔴 ' + sl + '</span>';
   else if (done) badge = '<span class="tv-badge-done">' + sl + '</span>';
   else           badge = '<span class="tv-badge-ns">' + sl + '</span>';
+  // Fecha localizada
+  const kickoffDate = m.kickoff || m.kickoffUTC || '';
+  const dateStr = kickoffDate ? new Date(kickoffDate).toLocaleDateString([], {weekday:'short', day:'numeric', month:'short'}) : '';
 
   const scoreHtml = ns
     ? '<div class="tv-time-ns">' + sl + '</div>'
     : '<div class="tv-score"><span>' + hg + '</span><span class="tv-score-sep">–</span><span>' + ag + '</span></div>';
 
   return '<div class="tv-card ' + cls + '">' +
-    '<div class="tv-card-top"><span>' + (m.venue||'') + '</span>' + badge + '</div>' +
+    '<div class="tv-card-top"><span>' + dateStr + (m.venue ? ' · ' + m.venue : '') + '</span>' + badge + '</div>' +
     '<div class="tv-teams">' +
       '<div class="tv-team">' + flag(home) + '<div class="tv-team-name">' + displayName(home) + '</div></div>' +
       scoreHtml +
