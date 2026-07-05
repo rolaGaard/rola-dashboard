@@ -1,13 +1,13 @@
 {
-  "updated": "2026-07-05T21:07:12.780037Z",
+  "updated": "2026-07-05T21:08:11.567879Z",
   "matches": {
     "BRAZIL-NORWAY": {
       "fixtureId": 1568100,
       "round": "Round of 16",
       "homeGoals": 0,
       "awayGoals": 0,
-      "status": "HT",
-      "elapsed": 45,
+      "status": "2H",
+      "elapsed": 46,
       "kickoffUTC": "2026-07-05T20:00:00+00:00",
       "referee": "Ismail Elfath, USA",
       "events": [
@@ -20,6 +20,20 @@
           "extra": null
         }
       ],
+      "substitutions": {
+        "NORWAY": [
+          {
+            "out": "A. Sorloth",
+            "in": "O. Bobb",
+            "minute": 46
+          },
+          {
+            "out": "A. Nusa",
+            "in": "A. Schjelderup",
+            "minute": 46
+          }
+        ]
+      },
       "lineups": {
         "BRAZIL": {
           "formation": "4-4-2",
