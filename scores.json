@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-05T21:58:11.055187Z",
+  "updated": "2026-07-05T21:59:10.160906Z",
   "matches": {
     "BRAZIL-NORWAY": {
       "fixtureId": 1568100,
@@ -34,6 +34,14 @@
           "team": "NORWAY",
           "minute": 90,
           "extra": null
+        },
+        {
+          "type": "Card",
+          "detail": "Yellow Card",
+          "player": "Neymar",
+          "team": "BRAZIL",
+          "minute": 90,
+          "extra": 6
         }
       ],
       "substitutions": {
