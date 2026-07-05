@@ -920,7 +920,7 @@
     <img class="header-icon" src="icons/icon-192.png" alt="rolaGaard">
     <div class="header-text">
       <div class="header-title">Mundial 2026</div>
-      <div class="header-by">by rolaGaard &nbsp;<span class="app-version">v3.0</span></div>
+      <div class="header-by">by rolaGaard &nbsp;<span class="app-version">v3.1</span></div>
       <div class="header-sub" id="header-sub">USA · Canadá · México</div>
     </div>
   </div>
@@ -2397,7 +2397,11 @@ function render() {
       const pa = statusPriority(getUnifiedStatus(a));
       const pb = statusPriority(getUnifiedStatus(b));
       if (pa !== pb) return pa - pb;
-      return new Date(getUnifiedKickoff(a)) - new Date(getUnifiedKickoff(b));
+      const da = new Date(getUnifiedKickoff(a));
+      const db = new Date(getUnifiedKickoff(b));
+      // Finalizados: más reciente arriba (desc). Live/scheduled: más próximo arriba (asc).
+      if (pa === 2) return db - da;
+      return da - db;
     });
     if (allToday.length === 0) {
       html = '<div class="empty-state">' + t('noHayPartidos') + '</div>';
