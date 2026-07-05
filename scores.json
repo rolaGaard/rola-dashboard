@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-05T21:52:11.493550Z",
+  "updated": "2026-07-05T21:53:11.154723Z",
   "matches": {
     "BRAZIL-NORWAY": {
       "fixtureId": 1568100,
@@ -30,7 +30,7 @@
         {
           "type": "Goal",
           "detail": "Normal Goal",
-          "player": null,
+          "player": "E. Haaland",
           "team": "NORWAY",
           "minute": 90,
           "extra": null
