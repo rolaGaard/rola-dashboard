@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-05T21:40:38.327956Z",
+  "updated": "2026-07-05T21:41:12.875652Z",
   "matches": {
     "BRAZIL-NORWAY": {
       "fixtureId": 1568100,
@@ -7,7 +7,7 @@
       "homeGoals": 0,
       "awayGoals": 0,
       "status": "2H",
-      "elapsed": 78,
+      "elapsed": 79,
       "kickoffUTC": "2026-07-05T20:00:00+00:00",
       "referee": "Ismail Elfath, USA",
       "events": [
@@ -53,6 +53,11 @@
             "out": "Rayan",
             "in": "Danilo Santos",
             "minute": 67
+          },
+          {
+            "out": "Bruno Guimaraes",
+            "in": "Ederson",
+            "minute": 79
           }
         ]
       },
