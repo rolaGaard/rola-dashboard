@@ -264,8 +264,16 @@ function filterMatches(f) {
     case 'live':      return scoresData.filter(isLive);
     case 'finished':  return scoresData.filter(isDone);
     case 'scheduled': return scoresData.filter(isNS);
-    case 'today':
-      return scoresData.filter(m => (m.kickoff||'').slice(0,10) === todayStr);
+    case 'today': {
+      // Comparar fecha local del kickoff con fecha local de hoy (no UTC)
+      const todayLocal = new Date().toLocaleDateString('en-CA'); // YYYY-MM-DD en timezone local
+      return scoresData.filter(m => {
+        if (!m.kickoff) return false;
+        const d = new Date(m.kickoff);
+        const kickoffLocal = d.toLocaleDateString('en-CA');
+        return kickoffLocal === todayLocal;
+      });
+    }
     default: return [...scoresData];
   }
 }
@@ -285,15 +293,18 @@ function render() {
     // Mostrar todos los partidos de eliminatoria agrupados por ronda
     const knockout = scoresData.filter(m => {
       const r = (m.group || m.round || '').toLowerCase();
-      return r.includes('round') || r.includes('quarter') || r.includes('semi') ||
-             r.includes('final') || r.includes('third');
+      // Excluir fase de grupos, incluir todo lo demás
+      return !r.includes('group stage') && (
+        r.includes('round') || r.includes('quarter') || r.includes('semi') ||
+        r.includes('final') || r.includes('third') || r.includes('playoff')
+      );
     });
     if (!knockout.length) {
       content.innerHTML = '<div class="tv-empty">Fase eliminatoria — pendiente de clasificados</div>';
       return;
     }
     // Orden de rondas
-    const ROUND_ORDER = ['Round of 32','Round of 16','Quarter-finals','Semi-finals','3rd Place Final','Final'];
+    const ROUND_ORDER = ['Round of 32','Round of 16','Quarter-finals','Semi-finals','3rd Place Final','Final','3rd place','Third-place'];
     const groups = {};
     knockout.forEach(m => {
       const g = m.group || m.round || 'Otros';
