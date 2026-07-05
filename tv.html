@@ -265,13 +265,15 @@ function filterMatches(f) {
     case 'finished':  return scoresData.filter(isDone);
     case 'scheduled': return scoresData.filter(isNS);
     case 'today': {
-      // Comparar fecha local del kickoff con fecha local de hoy (no UTC)
-      const todayLocal = new Date().toLocaleDateString('en-CA'); // YYYY-MM-DD en timezone local
+      // Ventana: desde 12hs antes de ahora hasta 24hs después
+      // Funciona independientemente del timezone de la TV
+      const now = Date.now();
+      const from = now - 12 * 60 * 60 * 1000;
+      const to   = now + 24 * 60 * 60 * 1000;
       return scoresData.filter(m => {
         if (!m.kickoff) return false;
-        const d = new Date(m.kickoff);
-        const kickoffLocal = d.toLocaleDateString('en-CA');
-        return kickoffLocal === todayLocal;
+        const t = new Date(m.kickoff).getTime();
+        return t >= from && t <= to;
       });
     }
     default: return [...scoresData];
