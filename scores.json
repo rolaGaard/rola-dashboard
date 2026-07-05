@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-05T21:42:11.680033Z",
+  "updated": "2026-07-05T21:43:10.702757Z",
   "matches": {
     "BRAZIL-NORWAY": {
       "fixtureId": 1568100,
@@ -7,7 +7,7 @@
       "homeGoals": 0,
       "awayGoals": 1,
       "status": "2H",
-      "elapsed": 80,
+      "elapsed": 81,
       "kickoffUTC": "2026-07-05T20:00:00+00:00",
       "referee": "Ismail Elfath, USA",
       "events": [
@@ -24,7 +24,7 @@
           "detail": "Normal Goal",
           "player": "E. Haaland",
           "team": "NORWAY",
-          "minute": 80,
+          "minute": 79,
           "extra": null
         }
       ],
