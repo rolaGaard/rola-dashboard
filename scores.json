@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-05T21:57:09.895048Z",
+  "updated": "2026-07-05T21:58:11.055187Z",
   "matches": {
     "BRAZIL-NORWAY": {
       "fixtureId": 1568100,
@@ -52,6 +52,11 @@
             "out": "J. Ryerson",
             "in": "F. Aursnes",
             "minute": 63
+          },
+          {
+            "out": "D. Wolfe",
+            "in": "L. Ostigard",
+            "minute": 90
           }
         ],
         "BRAZIL": [
