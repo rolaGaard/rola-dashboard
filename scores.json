@@ -1,10 +1,10 @@
 {
-  "updated": "2026-07-05T22:02:13.304598Z",
+  "updated": "2026-07-05T22:03:10.707300Z",
   "matches": {
     "BRAZIL-NORWAY": {
       "fixtureId": 1568100,
       "round": "Round of 16",
-      "homeGoals": 0,
+      "homeGoals": 1,
       "awayGoals": 2,
       "status": "2H",
       "elapsed": 90,
@@ -42,6 +42,14 @@
           "team": "BRAZIL",
           "minute": 90,
           "extra": 6
+        },
+        {
+          "type": "Goal",
+          "detail": "Penalty",
+          "player": "Neymar",
+          "team": "BRAZIL",
+          "minute": 90,
+          "extra": 10
         }
       ],
       "substitutions": {
