@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-05T06:07:09.253824Z",
+  "updated": "2026-07-05T06:08:12.566264Z",
   "matches": {
     "MEXICO-SOUTH AFRICA": {
       "fixtureId": 1489369,
@@ -34693,6 +34693,16 @@
       "status": "NS",
       "elapsed": null,
       "kickoffUTC": "2026-07-07T20:00:00+00:00",
+      "referee": null
+    },
+    "FRANCE-MOROCCO": {
+      "fixtureId": 1578539,
+      "round": "Quarter-finals",
+      "homeGoals": null,
+      "awayGoals": null,
+      "status": "NS",
+      "elapsed": null,
+      "kickoffUTC": "2026-07-09T20:00:00+00:00",
       "referee": null
     }
   }
