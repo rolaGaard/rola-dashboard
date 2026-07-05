@@ -262,7 +262,47 @@ async function loadData() {
   try {
     const r = await fetch(SCORES_URL + '?t=' + Date.now());
     const json = await r.json();
-    scoresData = json.fixtures || json || [];
+
+    // scores.json tiene estructura: { updated, matches: { "HOME-AWAY": {...} } }
+    const raw = json.matches || json.fixtures || json || {};
+    if (Array.isArray(raw)) {
+      scoresData = raw;
+    } else {
+      // Convertir diccionario HOME-AWAY a array con home_name/away_name
+      scoresData = Object.entries(raw).map(([key, m]) => {
+        const parts = key.split('-');
+        // La clave puede tener guiones en los nombres (ej. BOSNIA & HERZEGOVINA)
+        // La API usa HOME-AWAY donde HOME y AWAY son los nombres en mayúsculas
+        // Usamos el campo team de los eventos para inferir, o simplemente splitteamos por el primer guion que separa equipos
+        // Mejor: buscar en eventos qué equipos hay
+        let home_name = m.home || '';
+        let away_name = m.away || '';
+        if (!home_name && !away_name) {
+          // Inferir desde la clave: buscar equipos en eventos
+          const teams = [...new Set((m.events || []).map(e => e.team).filter(Boolean))];
+          if (teams.length >= 2) {
+            home_name = teams[0];
+            away_name = teams[1];
+          } else {
+            // Fallback: split por primer '-' no ideal pero funciona para mayoría
+            const idx = key.indexOf('-');
+            home_name = idx > -1 ? key.slice(0, idx) : key;
+            away_name = idx > -1 ? key.slice(idx + 1) : '';
+          }
+        }
+        return {
+          ...m,
+          matchKey: key,
+          home_name: home_name || key.split('-')[0],
+          away_name: away_name || key.split('-').slice(1).join('-'),
+          home_goals: m.homeGoals,
+          away_goals: m.awayGoals,
+          kickoff: m.kickoffUTC,
+          date: m.kickoffUTC,
+          group: m.round || '',
+        };
+      });
+    }
     render();
   } catch(e) {
     console.error('TV: error cargando scores.json', e);
@@ -295,7 +335,7 @@ function statusLabel(m) {
 
 function flagEmoji(code) {
   if (!code) return '🏴';
-  const c = code.toUpperCase();
+  const c = code.toUpperCase().trim();
   // Mapeo de códigos FIFA a emoji de bandera
   const map = {
     'ARG':'🇦🇷','BRA':'🇧🇷','FRA':'🇫🇷','GER':'🇩🇪','ESP':'🇪🇸','ITA':'🇮🇹',
@@ -409,8 +449,8 @@ function buildCard(m) {
   else if (done) statusHtml = `<span class="tv-card-status-finished">${sl}</span>`;
   else           statusHtml = `<span class="tv-card-status-ns">${sl}</span>`;
 
-  const hg = m.home_goals ?? (ns ? '' : '0');
-  const ag = m.away_goals ?? (ns ? '' : '0');
+  const hg = m.home_goals ?? m.homeGoals ?? (ns ? '' : '0');
+  const ag = m.away_goals ?? m.awayGoals ?? (ns ? '' : '0');
 
   const scoreHtml = ns
     ? `<div class="tv-time-ns">${sl}</div>`
@@ -432,7 +472,7 @@ function buildCard(m) {
       </div>
       ${scoreHtml}
       <div class="tv-team">
-        <div class="tv-team-flag">${flagEmoji(m.away_code)}</div>
+        <div class="tv-team-flag">${flagEmoji(m.away_code || m.away_name)}</div>
         <div class="tv-team-name">${m.away_name || m.away_code || 'TBD'}</div>
       </div>
     </div>
