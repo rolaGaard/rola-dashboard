@@ -5,11 +5,14 @@
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
-  "orientation": "portrait-primary",
+  "orientation": "any",
   "background_color": "#02050f",
   "theme_color": "#02050f",
   "lang": "es",
-  "categories": ["sports", "entertainment"],
+  "categories": [
+    "sports",
+    "entertainment"
+  ],
   "icons": [
     {
       "src": "/icons/favicon-16.png",
