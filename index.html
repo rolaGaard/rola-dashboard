@@ -924,7 +924,7 @@
     <img class="header-icon" src="icons/icon-192.png" alt="rolaGaard">
     <div class="header-text">
       <div class="header-title">Mundial 2026</div>
-      <div class="header-by">by rolaGaard &nbsp;<span class="app-version">v4.0</span></div>
+      <div class="header-by">by rolaGaard &nbsp;<span class="app-version">v4.1</span></div>
       <div class="header-sub" id="header-sub">USA · Canadá · México</div>
     </div>
   </div>
@@ -3345,7 +3345,7 @@ function renderStatsView() {
     topTeams.forEach(([team, goals], idx) => {
       html += '<tr class="thirds-row">' +
         '<td class="thirds-rank">' + (idx + 1) + '</td>' +
-        '<td class="thirds-team" style="text-align:left;" onclick="event.stopPropagation(); openCountryInfo('' + team.replace(/'/g, "\'") + '')">' +
+        '<td class="thirds-team" style="text-align:left;" data-team="' + team + '" onclick="event.stopPropagation(); openCountryInfo(this.dataset.team)">' +
           flag(team) + ' ' + esName(team) +
         '</td>' +
         '<td style="text-align:right;"><b>' + goals + '</b></td>' +
@@ -3377,7 +3377,7 @@ function renderStatsView() {
     const pctStr = row.pct === 0 ? '0%' : row.pct.toFixed(1) + '%';
     html += '<tr class="thirds-row">' +
       '<td class="thirds-rank">' + (idx + 1) + '</td>' +
-      '<td class="thirds-team" style="text-align:left;" onclick="event.stopPropagation(); openCountryInfo('' + row.team.replace(/'/g, "\'") + '')">' +
+      '<td class="thirds-team" style="text-align:left;" data-team="' + row.team + '" onclick="event.stopPropagation(); openCountryInfo(this.dataset.team)">' +
         flag(row.team) + ' ' + esName(row.team) +
       '</td>' +
       '<td style="text-align:right;"><b>' + row.titles + '</b></td>' +
