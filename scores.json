@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-06T20:55:18.692792Z",
+  "updated": "2026-07-06T20:56:14.716109Z",
   "matches": {
     "PORTUGAL-SPAIN": {
       "fixtureId": 1576756,
@@ -26,6 +26,14 @@
           "team": "SPAIN",
           "minute": 90,
           "extra": 1
+        },
+        {
+          "type": "Card",
+          "detail": "Yellow Card",
+          "player": "N. Semedo",
+          "team": "PORTUGAL",
+          "minute": 90,
+          "extra": 4
         }
       ],
       "substitutions": {
