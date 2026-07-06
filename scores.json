@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-06T02:33:10.590634Z",
+  "updated": "2026-07-06T02:34:11.794992Z",
   "matches": {
     "MEXICO-ENGLAND": {
       "fixtureId": 1570714,
@@ -7,7 +7,7 @@
       "homeGoals": 2,
       "awayGoals": 3,
       "status": "2H",
-      "elapsed": 71,
+      "elapsed": 72,
       "kickoffUTC": "2026-07-06T01:00:00+00:00",
       "referee": "Alireza Faghani, Australia",
       "events": [
@@ -73,6 +73,14 @@
           "player": "R. Jimenez",
           "team": "MEXICO",
           "minute": 69,
+          "extra": null
+        },
+        {
+          "type": "Card",
+          "detail": "Yellow Card",
+          "player": "J. Sanchez",
+          "team": "MEXICO",
+          "minute": 72,
           "extra": null
         }
       ],
