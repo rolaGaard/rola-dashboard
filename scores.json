@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-06T20:44:12.610246Z",
+  "updated": "2026-07-06T20:45:26.930585Z",
   "matches": {
     "PORTUGAL-SPAIN": {
       "fixtureId": 1576756,
@@ -7,7 +7,7 @@
       "homeGoals": 0,
       "awayGoals": 0,
       "status": "2H",
-      "elapsed": 82,
+      "elapsed": 83,
       "kickoffUTC": "2026-07-06T19:00:00+00:00",
       "referee": "Anthony Taylor, England",
       "events": [],
@@ -27,6 +27,11 @@
             "out": "J. Cancelo",
             "in": "D. Dalot",
             "minute": 71
+          },
+          {
+            "out": "P. Neto",
+            "in": "F. Conceicao",
+            "minute": 83
           }
         ],
         "SPAIN": [
