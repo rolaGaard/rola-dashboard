@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-06T01:01:07.611589Z",
+  "updated": "2026-07-06T01:02:11.897492Z",
   "matches": {
     "MEXICO-ENGLAND": {
       "fixtureId": 1570714,
@@ -7,10 +7,19 @@
       "homeGoals": 0,
       "awayGoals": 0,
       "status": "1H",
-      "elapsed": 1,
+      "elapsed": 2,
       "kickoffUTC": "2026-07-06T00:00:00+00:00",
       "referee": "Alireza Faghani, Australia",
-      "events": [],
+      "events": [
+        {
+          "type": "Card",
+          "detail": "Yellow Card",
+          "player": "D. Rice",
+          "team": "ENGLAND",
+          "minute": 2,
+          "extra": null
+        }
+      ],
       "lineups": {
         "MEXICO": {
           "formation": "4-3-3",
