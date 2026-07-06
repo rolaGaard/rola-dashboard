@@ -431,6 +431,11 @@
   }
   .vb-score.live-score { background:#CC0000; }
   .vb-card-tbd { padding:4px; text-align:center; color:#64748b; font-size:clamp(7px,0.8vw,9px); }
+  .vb-date {
+    font-size:8px; font-weight:700; color:#94a3b8;
+    text-align:center; letter-spacing:0.04em;
+    text-transform:uppercase; padding:2px 0 1px;
+  }
   .vb-time { font-size:clamp(7px,0.75vw,9px); color:#94a3b8; display:block; text-align:center; padding:1px 3px; background:#0a0a0a; }
 
   /* Centro */
@@ -926,7 +931,7 @@
     <img class="header-icon" src="icons/icon-512.png" alt="rolaFixture">
     <div class="header-text">
       <div class="header-title">rolaFixture WC 2026</div>
-      <div class="header-by">by rolaGaard &nbsp;<span class="app-version">v4.4</span></div>
+      <div class="header-by">by rolaGaard &nbsp;<span class="app-version">v4.5</span></div>
       <div class="header-sub" id="header-sub">USA · Canadá · México</div>
     </div>
   </div>
@@ -3466,10 +3471,16 @@ function buildVbCardFromMatch(match) {
   if (penaltyHome !== null && penaltyHome !== undefined) {
     penHtml = '<div class="vb-time">(' + penaltyHome + '-' + penaltyAway + ') pen</div>';
   }
-  const timeStr = !hasScore && !isLive
+  const isNS = !hasScore && !isLive;
+  const timeStr = isNS
     ? new Date(kickoffUTC).toLocaleTimeString(dateLocale(), { hour: '2-digit', minute: '2-digit', hour12: false })
     : '';
+  // Fecha en formato dd-mmm solo para partidos no jugados
+  const dateStr = isNS && kickoffUTC
+    ? new Date(kickoffUTC).toLocaleDateString(dateLocale(), { day: '2-digit', month: 'short' }).replace('.', '')
+    : '';
   return '<div class="' + cardClass + '">' +
+    (dateStr ? '<div class="vb-date">' + dateStr + '</div>' : '') +
     teamRow(home, homeGoals, homeWin) +
     teamRow(away, awayGoals, awayWin) +
     (timeStr ? '<div class="vb-time">' + timeStr + '</div>' : '') +
