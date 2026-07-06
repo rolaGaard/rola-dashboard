@@ -924,7 +924,7 @@
     <img class="header-icon" src="icons/icon-192.png" alt="rolaGaard">
     <div class="header-text">
       <div class="header-title">Mundial 2026</div>
-      <div class="header-by">by rolaGaard &nbsp;<span class="app-version">v3.5</span></div>
+      <div class="header-by">by rolaGaard &nbsp;<span class="app-version">v3.6</span></div>
       <div class="header-sub" id="header-sub">USA · Canadá · México</div>
     </div>
   </div>
@@ -3282,11 +3282,15 @@ function renderStatsView() {
   const allEvents = collectTournamentEvents();
   const scorers = buildScorersRanking(allEvents).slice(0, 10);
 
-  let html = '<div class="bracket-stage-label" style="font-size:11px; margin-bottom:8px;">\u26BD ' + t('goleadoresTitle') + ' (Top 10)</div>';
+  let html = '<div class="stats-section-title">' + t('goleadoresTitle') + ' 2026</div>';
   if (scorers.length === 0) {
     html += '<div class="ci-pitch-empty">' + t('sinDatosAun') + '</div>';
   } else {
-    html += '<table class="thirds-table"><tr><th>#</th><th style="text-align:left;"></th><th style="text-align:right;">⚽</th></tr>';
+    html += '<table class="thirds-table"><tr>' +
+      '<th style="text-align:left;">' + t('posicion') + '</th>' +
+      '<th style="text-align:left;">' + t('jugador') + '</th>' +
+      '<th style="text-align:right;">' + t('goles') + '</th>' +
+    '</tr>';
     scorers.forEach((s, idx) => {
       html += '<tr class="thirds-row">' +
         '<td class="thirds-rank">' + (idx + 1) + '</td>' +
