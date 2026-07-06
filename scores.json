@@ -1,13 +1,13 @@
 {
-  "updated": "2026-07-06T02:22:13.800004Z",
+  "updated": "2026-07-06T02:23:10.678883Z",
   "matches": {
     "MEXICO-ENGLAND": {
       "fixtureId": 1570714,
       "round": "Round of 16",
       "homeGoals": 1,
-      "awayGoals": 2,
+      "awayGoals": 3,
       "status": "2H",
-      "elapsed": 60,
+      "elapsed": 61,
       "kickoffUTC": "2026-07-06T01:00:00+00:00",
       "referee": "Alireza Faghani, Australia",
       "events": [
@@ -49,6 +49,14 @@
           "player": "J. Quansah",
           "team": "ENGLAND",
           "minute": 54,
+          "extra": null
+        },
+        {
+          "type": "Goal",
+          "detail": "Penalty",
+          "player": "H. Kane",
+          "team": "ENGLAND",
+          "minute": 60,
           "extra": null
         }
       ],
