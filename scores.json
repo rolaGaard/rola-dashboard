@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-06T21:01:09.238970Z",
+  "updated": "2026-07-06T21:02:14.062916Z",
   "matches": {
     "MEXICO-SOUTH AFRICA": {
       "fixtureId": 1489369,
@@ -35520,62 +35520,12 @@
         }
       }
     },
-    "USA-BELGIUM": {
-      "fixtureId": 1570715,
-      "round": "Round of 16",
-      "homeGoals": null,
-      "awayGoals": null,
-      "status": "NS",
-      "elapsed": null,
-      "kickoffUTC": "2026-07-07T00:00:00+00:00",
-      "referee": "A. Makhadmeh"
-    },
-    "ARGENTINA-EGYPT": {
-      "fixtureId": 1576804,
-      "round": "Round of 16",
-      "homeGoals": null,
-      "awayGoals": null,
-      "status": "NS",
-      "elapsed": null,
-      "kickoffUTC": "2026-07-07T16:00:00+00:00",
-      "referee": "F. Letexier"
-    },
-    "SWITZERLAND-COLOMBIA": {
-      "fixtureId": 1576805,
-      "round": "Round of 16",
-      "homeGoals": null,
-      "awayGoals": null,
-      "status": "NS",
-      "elapsed": null,
-      "kickoffUTC": "2026-07-07T20:00:00+00:00",
-      "referee": "I. Barton"
-    },
-    "FRANCE-MOROCCO": {
-      "fixtureId": 1578539,
-      "round": "Quarter-finals",
-      "homeGoals": null,
-      "awayGoals": null,
-      "status": "NS",
-      "elapsed": null,
-      "kickoffUTC": "2026-07-09T20:00:00+00:00",
-      "referee": null
-    },
-    "NORWAY-ENGLAND": {
-      "fixtureId": 1581037,
-      "round": "Quarter-finals",
-      "homeGoals": null,
-      "awayGoals": null,
-      "status": "NS",
-      "elapsed": null,
-      "kickoffUTC": "2026-07-11T21:00:00+00:00",
-      "referee": null
-    },
     "PORTUGAL-SPAIN": {
       "fixtureId": 1576756,
       "round": "Round of 16",
       "homeGoals": 0,
       "awayGoals": 1,
-      "status": "2H",
+      "status": "FT",
       "elapsed": 90,
       "kickoffUTC": "2026-07-06T19:00:00+00:00",
       "referee": "Anthony Taylor, England",
@@ -35934,6 +35884,56 @@
           ]
         }
       }
+    },
+    "USA-BELGIUM": {
+      "fixtureId": 1570715,
+      "round": "Round of 16",
+      "homeGoals": null,
+      "awayGoals": null,
+      "status": "NS",
+      "elapsed": null,
+      "kickoffUTC": "2026-07-07T00:00:00+00:00",
+      "referee": "A. Makhadmeh"
+    },
+    "ARGENTINA-EGYPT": {
+      "fixtureId": 1576804,
+      "round": "Round of 16",
+      "homeGoals": null,
+      "awayGoals": null,
+      "status": "NS",
+      "elapsed": null,
+      "kickoffUTC": "2026-07-07T16:00:00+00:00",
+      "referee": "F. Letexier"
+    },
+    "SWITZERLAND-COLOMBIA": {
+      "fixtureId": 1576805,
+      "round": "Round of 16",
+      "homeGoals": null,
+      "awayGoals": null,
+      "status": "NS",
+      "elapsed": null,
+      "kickoffUTC": "2026-07-07T20:00:00+00:00",
+      "referee": "I. Barton"
+    },
+    "FRANCE-MOROCCO": {
+      "fixtureId": 1578539,
+      "round": "Quarter-finals",
+      "homeGoals": null,
+      "awayGoals": null,
+      "status": "NS",
+      "elapsed": null,
+      "kickoffUTC": "2026-07-09T20:00:00+00:00",
+      "referee": null
+    },
+    "NORWAY-ENGLAND": {
+      "fixtureId": 1581037,
+      "round": "Quarter-finals",
+      "homeGoals": null,
+      "awayGoals": null,
+      "status": "NS",
+      "elapsed": null,
+      "kickoffUTC": "2026-07-11T21:00:00+00:00",
+      "referee": null
     }
   }
 }
