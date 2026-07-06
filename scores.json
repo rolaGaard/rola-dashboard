@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-06T20:53:12.203871Z",
+  "updated": "2026-07-06T20:54:11.443391Z",
   "matches": {
     "PORTUGAL-SPAIN": {
       "fixtureId": 1576756,
@@ -22,7 +22,7 @@
         {
           "type": "Goal",
           "detail": "Normal Goal",
-          "player": null,
+          "player": "M. Merino",
           "team": "SPAIN",
           "minute": 90,
           "extra": 1
