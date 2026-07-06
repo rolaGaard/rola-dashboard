@@ -920,7 +920,7 @@
     <img class="header-icon" src="icons/icon-192.png" alt="rolaGaard">
     <div class="header-text">
       <div class="header-title">Mundial 2026</div>
-      <div class="header-by">by rolaGaard &nbsp;<span class="app-version">v3.1</span></div>
+      <div class="header-by">by rolaGaard &nbsp;<span class="app-version">v3.2</span></div>
       <div class="header-sub" id="header-sub">USA · Canadá · México</div>
     </div>
   </div>
@@ -3221,7 +3221,15 @@ function buildScorersRanking(allEvents) {
     if (!tally[key]) tally[key] = { player: e.player, team: e.team, goals: 0 };
     tally[key].goals++;
   });
-  return Object.values(tally).sort((a, b) => b.goals - a.goals);
+  return Object.values(tally).sort((a, b) => {
+    if (b.goals !== a.goals) return b.goals - a.goals;
+    // Easter egg del creador: si hay empate, Messi va primero
+    const isMessiA = a.player.toLowerCase().includes('messi');
+    const isMessiB = b.player.toLowerCase().includes('messi');
+    if (isMessiA && !isMessiB) return -1;
+    if (isMessiB && !isMessiA) return 1;
+    return 0;
+  });
 }
 
 // Tarjetas + lógica de suspensión por amarillas acumuladas, según la regla
@@ -4228,12 +4236,21 @@ function openCountryInfo(code, forcedMatchKey) {
     }
   }
 
+  // DT — buscarlo en squadsData
+  let coachHtml = '';
+  const squadEntry = squadsData ? squadsData[code] : null;
+  if (squadEntry && squadEntry.coach && squadEntry.coach.name) {
+    const coachName = squadEntry.coach.name;
+    const coachLink = googleSearchLink(coachName, code);
+    coachHtml = '<div class="ci-referee">DT: <a href="' + coachLink + '" target="_blank" rel="noopener" class="ci-coach-link">' + coachName + '</a></div>';
+  }
+
   let html = '<div class="ci-header">' + flagHtml.replace('flag-img', 'flag-img ci-flag-img') +
     '<div class="ci-header-text">' +
       '<div class="ci-name-row"><span class="ci-name">' + name + '</span><span class="ci-code">' + code3 + '</span></div>' +
       '<div class="ci-stars-row">' + stars + '</div>' +
     '</div>' +
-    '<div class="ci-score-col">' + scoreHtml + refereeHtml + '</div>' +
+    '<div class="ci-score-col">' + scoreHtml + coachHtml + refereeHtml + '</div>' +
   '</div>';
 
   if (info) {
