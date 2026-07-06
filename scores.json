@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-06T20:47:12.712833Z",
+  "updated": "2026-07-06T20:48:13.783722Z",
   "matches": {
     "PORTUGAL-SPAIN": {
       "fixtureId": 1576756,
@@ -7,7 +7,7 @@
       "homeGoals": 0,
       "awayGoals": 0,
       "status": "2H",
-      "elapsed": 85,
+      "elapsed": 86,
       "kickoffUTC": "2026-07-06T19:00:00+00:00",
       "referee": "Anthony Taylor, England",
       "events": [],
@@ -44,6 +44,16 @@
             "out": "A. Baena",
             "in": "F. Torres",
             "minute": 75
+          },
+          {
+            "out": "Pedri",
+            "in": "F. Ruiz",
+            "minute": 85
+          },
+          {
+            "out": "D. Olmo",
+            "in": "M. Merino",
+            "minute": 85
           }
         ]
       },
