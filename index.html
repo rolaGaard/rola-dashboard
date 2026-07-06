@@ -244,6 +244,17 @@
     transition:background 0.15s, color 0.15s;
   }
   .report-bug-btn:hover { background:#2a2a2a; color:#FFD700; }
+  .legal-footer {
+    text-align:center; padding:12px 24px 8px;
+    display:flex; align-items:center; justify-content:center;
+    gap:16px; flex-wrap:wrap;
+  }
+  .legal-footer a {
+    color:#475569; font-size:11px; text-decoration:none;
+    transition:color 0.15s;
+  }
+  .legal-footer a:hover { color:#94a3b8; }
+  .legal-footer-sep { color:#334155; font-size:11px; }
 
   .scroll-top-btn {
     position:fixed; bottom:24px; left:50%; transform:translateX(-50%) translateY(10px);
@@ -931,7 +942,7 @@
     <img class="header-icon" src="icons/icon-512.png" alt="rolaFixture">
     <div class="header-text">
       <div class="header-title">rolaFixture WC 2026</div>
-      <div class="header-by">by rolaGaard &nbsp;<span class="app-version">v4.5</span></div>
+      <div class="header-by">by rolaGaard &nbsp;<span class="app-version">v4.6</span></div>
       <div class="header-sub" id="header-sub">USA · Canadá · México</div>
     </div>
   </div>
@@ -1044,6 +1055,16 @@
   <a id="report-bug-link" href="#" target="_blank" rel="noopener" class="report-bug-btn">
     🐞 Reportar un problema
   </a>
+</div>
+
+<div class="legal-footer">
+  <a href="privacy.html" target="_blank" rel="noopener">Política de Privacidad</a>
+  <span class="legal-footer-sep">·</span>
+  <a href="terms.html" target="_blank" rel="noopener">Términos de Uso</a>
+  <span class="legal-footer-sep">·</span>
+  <a href="mailto:contacto@rolagaard.com">Contacto</a>
+  <span class="legal-footer-sep">·</span>
+  <span style="color:#334155;font-size:11px;">© 2026 rolaGaard</span>
 </div>
 
 <button id="scroll-top-btn" class="scroll-top-btn" aria-label="Volver arriba">↑</button>
