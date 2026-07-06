@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-06T20:17:10.332268Z",
+  "updated": "2026-07-06T20:18:12.466858Z",
   "matches": {
     "PORTUGAL-SPAIN": {
       "fixtureId": 1576756,
@@ -7,10 +7,19 @@
       "homeGoals": 0,
       "awayGoals": 0,
       "status": "2H",
-      "elapsed": 55,
+      "elapsed": 56,
       "kickoffUTC": "2026-07-06T19:00:00+00:00",
       "referee": "Anthony Taylor, England",
       "events": [],
+      "substitutions": {
+        "PORTUGAL": [
+          {
+            "out": "N. Mendes",
+            "in": "N. Semedo",
+            "minute": 56
+          }
+        ]
+      },
       "lineups": {
         "PORTUGAL": {
           "formation": "4-2-3-1",
