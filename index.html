@@ -271,47 +271,6 @@
     transition:background 0.15s, color 0.15s;
   }
   .report-bug-btn:hover { background:#2a2a2a; color:#FFD700; }
-  /* Modal de reporte de problemas */
-  .bug-modal {
-    position:fixed; inset:0; z-index:9999;
-    background:rgba(0,0,0,0.8);
-    display:flex; align-items:flex-end; justify-content:center;
-  }
-  .bug-panel {
-    background:#111827; border-top:2px solid #FFD700;
-    border-radius:20px 20px 0 0; width:100%; max-width:520px;
-    padding:0 0 env(safe-area-inset-bottom,20px);
-  }
-  .bug-handle { width:40px; height:4px; border-radius:2px; background:#2a3a50; margin:12px auto 8px; }
-  .bug-header {
-    display:flex; align-items:center; justify-content:space-between;
-    padding:8px 20px 14px; border-bottom:1px solid #1f2937;
-  }
-  .bug-title { font-size:16px; font-weight:800; color:#fff; }
-  .bug-close {
-    background:none; border:none; color:#64748b;
-    font-size:20px; cursor:pointer; padding:4px 8px; line-height:1;
-  }
-  .bug-body { padding:16px 20px; display:flex; flex-direction:column; gap:12px; }
-  .bug-label { font-size:12px; font-weight:700; color:#64748b; letter-spacing:0.04em; }
-  .bug-select, .bug-textarea {
-    width:100%; background:#0a0e1a; border:1px solid #1f2937;
-    border-radius:10px; color:#fff; font-family:inherit;
-    padding:10px 12px; font-size:14px;
-  }
-  .bug-select { height:44px; }
-  .bug-textarea { min-height:100px; resize:vertical; line-height:1.5; }
-  .bug-select:focus, .bug-textarea:focus { outline:none; border-color:#FFD700; }
-  .bug-submit {
-    width:100%; padding:13px; background:#FFD700; color:#0a0a0a;
-    border:none; border-radius:10px; font-size:15px; font-weight:800;
-    cursor:pointer; font-family:inherit; transition:background 0.15s;
-  }
-  .bug-submit:hover { background:#f0c800; }
-  .bug-submit:disabled { background:#2a2a2a; color:#64748b; cursor:not-allowed; }
-  .bug-status { font-size:13px; text-align:center; min-height:18px; }
-  .bug-status.ok { color:#22c55e; }
-  .bug-status.error { color:#f87171; }
   .legal-footer {
     text-align:center; padding:12px 24px 8px;
     display:flex; align-items:center; justify-content:center;
@@ -1007,7 +966,7 @@
     <img class="header-icon" src="icons/icon-512.png" alt="rolaFixture">
     <div class="header-text">
       <div class="header-title">rolaFixture WC 2026</div>
-      <div class="header-by">by rolaGaard &nbsp;<span class="app-version">v5.1</span></div>
+      <div class="header-by">by rolaGaard &nbsp;<span class="app-version">v5.0</span></div>
       <div class="header-sub" id="header-sub">USA · Canadá · México</div>
     </div>
   </div>
@@ -1117,9 +1076,9 @@
 <div class="footer" id="footer">Última actualización: --:--</div>
 
 <div class="report-bug-wrap">
-  <button id="report-bug-link" class="report-bug-btn" onclick="document.getElementById('bug-modal').style.display='flex'">
+  <a id="report-bug-link" href="#" target="_blank" rel="noopener" class="report-bug-btn">
     🐞 Reportar un problema
-  </button>
+  </a>
 </div>
 
 <div class="legal-footer">
@@ -1132,35 +1091,6 @@
   <a href="mailto:contacto@rolagaard.com">Contacto</a>
   <span class="legal-footer-sep">·</span>
   <span style="color:#334155;font-size:11px;">© 2026 rolaGaard</span>
-</div>
-
-<!-- Modal: Reportar problema -->
-<div id="bug-modal" class="bug-modal" style="display:none;">
-  <div class="bug-panel">
-    <div class="bug-handle"></div>
-    <div class="bug-header">
-      <div class="bug-title">🐞 Reportar un problema</div>
-      <button class="bug-close" id="bug-close-btn" aria-label="Cerrar">✕</button>
-    </div>
-    <div class="bug-body">
-      <div>
-        <div class="bug-label">TIPO DE PROBLEMA</div>
-        <select class="bug-select" id="bug-type">
-          <option value="bug">🐛 Error / algo no funciona</option>
-          <option value="data">📊 Dato incorrecto</option>
-          <option value="design">🎨 Problema visual</option>
-          <option value="suggestion">💡 Sugerencia de mejora</option>
-          <option value="other">❓ Otro</option>
-        </select>
-      </div>
-      <div>
-        <div class="bug-label">DESCRIPCIÓN</div>
-        <textarea class="bug-textarea" id="bug-desc" placeholder="Describí el problema con el mayor detalle posible..."></textarea>
-      </div>
-      <div class="bug-status" id="bug-status"></div>
-      <button class="bug-submit" id="bug-submit-btn">Enviar reporte</button>
-    </div>
-  </div>
 </div>
 
 <button id="scroll-top-btn" class="scroll-top-btn" aria-label="Volver arriba">↑</button>
@@ -4583,66 +4513,6 @@ if ('Notification' in window && Notification.permission === 'default') {
   }, { once: true });
 }
 
-
-// ── Modal de reporte de problemas → GitHub Issues ──────────────────────────
-const GITHUB_REPO  = 'rolaGaard/rola-dashboard';
-const GITHUB_TOKEN = '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'; // Reemplazá con tu ghp_... antes de subir
-
-const bugModal     = document.getElementById('bug-modal');
-const bugCloseBtn  = document.getElementById('bug-close-btn');
-const bugSubmitBtn = document.getElementById('bug-submit-btn');
-const bugStatus    = document.getElementById('bug-status');
-
-bugCloseBtn.addEventListener('click', () => { bugModal.style.display = 'none'; });
-bugModal.addEventListener('click', (e) => {
-  if (e.target === bugModal) bugModal.style.display = 'none';
-});
-
-bugSubmitBtn.addEventListener('click', async () => {
-  const type = document.getElementById('bug-type').value;
-  const desc = document.getElementById('bug-desc').value.trim();
-  if (!desc) {
-    bugStatus.textContent = 'Por favor describí el problema.';
-    bugStatus.className = 'bug-status error';
-    return;
-  }
-  const typeLabels = { bug:'bug', data:'datos', design:'diseño', suggestion:'sugerencia', other:'otro' };
-  const typeEmojis = { bug:'🐛', data:'📊', design:'🎨', suggestion:'💡', other:'❓' };
-  const title = typeEmojis[type] + ' ' + desc.slice(0,60) + (desc.length > 60 ? '...' : '');
-  const body = [
-    '**Tipo:** ' + typeLabels[type],
-    '**Versión app:** ' + (document.querySelector('.app-version')?.textContent || 'desconocida'),
-    '**Filtro activo:** ' + (currentFilter || 'desconocido'),
-    '**User Agent:** ' + navigator.userAgent,
-    '', '**Descripción:**', desc,
-  ].join('
-');
-  bugSubmitBtn.disabled = true;
-  bugStatus.textContent = 'Enviando...';
-  bugStatus.className = 'bug-status';
-  try {
-    const res = await fetch('https://api.github.com/repos/' + GITHUB_REPO + '/issues', {
-      method: 'POST',
-      headers: {
-        'Authorization': 'Bearer ' + GITHUB_TOKEN,
-        'Content-Type': 'application/json',
-        'Accept': 'application/vnd.github+json',
-      },
-      body: JSON.stringify({ title, body, labels: [typeLabels[type], 'user-report'] }),
-    });
-    if (res.ok) {
-      const issue = await res.json();
-      bugStatus.textContent = '✅ Reporte enviado. ¡Gracias! (#' + issue.number + ')';
-      bugStatus.className = 'bug-status ok';
-      document.getElementById('bug-desc').value = '';
-      setTimeout(() => { bugModal.style.display = 'none'; bugStatus.textContent = ''; }, 3000);
-    } else { throw new Error('HTTP ' + res.status); }
-  } catch(err) {
-    bugStatus.textContent = 'Error al enviar. Intentá de nuevo.';
-    bugStatus.className = 'bug-status error';
-    console.error('Bug report error:', err);
-  } finally { bugSubmitBtn.disabled = false; }
-});
 
 // ── Cast TV ────────────────────────────────────────────────────────────────
 // La Cast Sender SDK NO funciona en modo standalone PWA (limitación de Chrome).
