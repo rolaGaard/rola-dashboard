@@ -1,13 +1,13 @@
 {
-  "updated": "2026-07-06T01:42:11.594503Z",
+  "updated": "2026-07-06T01:43:12.254262Z",
   "matches": {
     "MEXICO-ENGLAND": {
       "fixtureId": 1570714,
       "round": "Round of 16",
-      "homeGoals": 0,
+      "homeGoals": 1,
       "awayGoals": 2,
       "status": "1H",
-      "elapsed": 42,
+      "elapsed": 43,
       "kickoffUTC": "2026-07-06T01:00:00+00:00",
       "referee": "Alireza Faghani, Australia",
       "events": [
@@ -33,6 +33,14 @@
           "player": "J. Bellingham",
           "team": "ENGLAND",
           "minute": 38,
+          "extra": null
+        },
+        {
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "player": "J. Quinones",
+          "team": "MEXICO",
+          "minute": 42,
           "extra": null
         }
       ],
