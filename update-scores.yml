@@ -1,0 +1,325 @@
+name: Update World Cup Scores
+
+on:
+  schedule:
+    # Runs every 1 minute, but only during match window (16:00-08:00 UTC = 13:00-05:00 AR)
+    # GitHub Actions cron is UTC. We run every minute across the full day
+    # window and the script itself decides whether AR time is within match
+    # hours. 1 minuto es el mínimo técnico posible en cron (no hay
+    # resolución por debajo del minuto).
+    # NOTA: el disparador principal real es cron-job.org llamando a
+    # workflow_dispatch cada 1 min (más confiable que el cron nativo de
+    # GitHub Actions, que documentadamente puede demorarse 1-2 horas). Este
+    # cron de acá es solo un respaldo — si cambiás el intervalo, ajustalo
+    # también en cron-job.org.
+    - cron: '* * * * *'
+  workflow_dispatch: {}
+
+jobs:
+  update-scores:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Check if within match window (13:00-05:00 AR)
+        id: check_window
+        run: |
+          AR_HOUR=$(TZ="America/Argentina/Buenos_Aires" date +%H)
+          echo "Current AR hour: $AR_HOUR"
+          # Match window: 13:00 to 23:59, OR 00:00 to 05:00
+          if [ "$AR_HOUR" -ge 13 ] || [ "$AR_HOUR" -lt 5 ]; then
+            echo "in_window=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "in_window=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Fetch World Cup scores
+        if: steps.check_window.outputs.in_window == 'true'
+        env:
+          API_KEY: ${{ secrets.API_FOOTBALL_KEY }}
+        run: |
+          # FIFA World Cup 2026 league id = 1 (verify in api docs), season = 2026
+          # Get today's fixtures for the World Cup
+          curl -s -H "x-apisports-key: $API_KEY" \
+            "https://v3.football.api-sports.io/fixtures?league=1&season=2026" \
+            -o raw_fixtures.json
+
+          # Parse into our simplified scores.json format using python
+          python3 << 'EOF'
+          import json
+          import urllib.request
+          import unicodedata
+          from datetime import datetime
+
+          def strip_accents(s):
+              return ''.join(c for c in unicodedata.normalize('NFD', s) if unicodedata.category(c) != 'Mn').upper()
+
+          # The API sometimes uses different team name variants than our SCHEDULE.
+          # Map any known alias to the exact name used in SCHEDULE (after accent stripping).
+          NAME_ALIASES = {
+              'CAPE VERDE ISLANDS': 'CAPE VERDE',
+              'IVORY COAST': 'IVORY COAST',
+              'COTE DIVOIRE': 'IVORY COAST',
+              'DR CONGO': 'CONGO DR',
+              'CONGO DR': 'CONGO DR',
+              'REPUBLIC OF IRELAND': 'IRELAND',
+              'SOUTH KOREA': 'SOUTH KOREA',
+              'KOREA REPUBLIC': 'SOUTH KOREA',
+              'USA': 'USA',
+              'UNITED STATES': 'USA',
+              'BOSNIA AND HERZEGOVINA': 'BOSNIA & HERZEGOVINA',
+          }
+
+          def normalize_team(name):
+              clean = strip_accents(name)
+              return NAME_ALIASES.get(clean, clean)
+
+          with open('raw_fixtures.json') as f:
+              data = json.load(f)
+
+          API_KEY = "${{ secrets.API_FOOTBALL_KEY }}"
+          LIVE_STATUSES = {'1H', '2H', 'HT', 'ET', 'BT', 'P'}
+          FINISHED_STATUSES = {'FT', 'AET', 'PEN'}
+
+          def fetch_events(fixture_id):
+              url = f"https://v3.football.api-sports.io/fixtures/events?fixture={fixture_id}"
+              req = urllib.request.Request(url, headers={"x-apisports-key": API_KEY})
+              try:
+                  with urllib.request.urlopen(req, timeout=10) as resp:
+                      body = json.loads(resp.read())
+                  events = []
+                  substitutions = {}  # team -> [{'out':, 'in':, 'minute':}, ...]
+                  for ev in body.get('response', []):
+                      etype = ev.get('type')  # Goal, Card, subst, Var
+                      detail = ev.get('detail')  # Normal Goal, Yellow Card, Red Card, etc
+                      player = (ev.get('player') or {}).get('name')
+                      team = normalize_team((ev.get('team') or {}).get('name', ''))
+                      minute = (ev.get('time') or {}).get('elapsed')
+                      extra = (ev.get('time') or {}).get('extra')
+                      if etype in ('Goal', 'Card'):
+                          ev_entry = {
+                              'type': etype,
+                              'detail': detail,
+                              'player': player,
+                              'team': team,
+                              'minute': minute,
+                              'extra': extra,
+                          }
+                          # Asistencia — solo aplica a goles, la API la trae en 'assist'
+                          if etype == 'Goal':
+                              assist_name = (ev.get('assist') or {}).get('name')
+                              if assist_name:
+                                  ev_entry['assist'] = assist_name
+                          events.append(ev_entry)
+                      elif etype == 'subst':
+                          # En los eventos de cambio, la API usa "player" para el
+                          # que SALE y "assist" para el que ENTRA.
+                          player_in = (ev.get('assist') or {}).get('name')
+                          substitutions.setdefault(team, []).append({
+                              'out': player,
+                              'in': player_in,
+                              'minute': minute,
+                          })
+                  return events, substitutions
+              except Exception as e:
+                  print(f"Could not fetch events for fixture {fixture_id}: {e}")
+                  return [], {}
+
+          # Las alineaciones (titulares + suplentes + DT) las publica la API
+          # recién ~1 hora antes del partido — por eso solo las pedimos para
+          # partidos próximos a arrancar, en vivo, o ya finalizados, igual
+          # criterio que ya usamos para los eventos (goles/tarjetas).
+          def fetch_lineups(fixture_id):
+              url = f"https://v3.football.api-sports.io/fixtures/lineups?fixture={fixture_id}"
+              req = urllib.request.Request(url, headers={"x-apisports-key": API_KEY})
+              try:
+                  with urllib.request.urlopen(req, timeout=10) as resp:
+                      body = json.loads(resp.read())
+                  result = {}
+                  for side in body.get('response', []):
+                      team_name = normalize_team((side.get('team') or {}).get('name', ''))
+                      start_xi = []
+                      for p in side.get('startXI', []):
+                          info = p.get('player', {})
+                          start_xi.append({
+                              'name': info.get('name'),
+                              'number': info.get('number'),
+                              'pos': info.get('pos'),
+                          })
+                      subs = []
+                      for p in side.get('substitutes', []):
+                          info = p.get('player', {})
+                          subs.append({
+                              'name': info.get('name'),
+                              'number': info.get('number'),
+                              'pos': info.get('pos'),
+                          })
+                      result[team_name] = {
+                          'formation': side.get('formation'),
+                          'coach': (side.get('coach') or {}).get('name'),
+                          'startXI': start_xi,
+                          'substitutes': subs,
+                      }
+                  return result
+              except Exception as e:
+                  print(f"Could not fetch lineups for fixture {fixture_id}: {e}")
+                  return {}
+
+          # Leemos el scores.json anterior (si existe) por dos motivos:
+          # 1) Si esta corrida falla o viene vacía, no lo pisamos con la nada.
+          # 2) Si ya teníamos la alineación de un partido, no la volvemos a
+          #    pedir en cada corrida — no cambia durante el partido, y así
+          #    ahorramos muchísimas llamadas a la API.
+          previous_scores = {}
+          try:
+              with open('scores.json') as f:
+                  previous_scores = json.load(f).get('matches', {})
+          except Exception:
+              pass
+
+          scores = {}
+          for fx in data.get('response', []):
+              fixture = fx['fixture']
+              teams = fx['teams']
+              goals = fx['goals']
+              score = fx.get('score', {})
+              penalty = score.get('penalty', {}) or {}
+              home = normalize_team(teams['home']['name'])
+              away = normalize_team(teams['away']['name'])
+              key = home + '-' + away
+              status = fixture['status']['short']
+              prev_entry = previous_scores.get(key, {})
+
+              entry = {
+                  'fixtureId': fixture.get('id'),
+                  'round': fx.get('league', {}).get('round'),
+                  'homeGoals': goals['home'],
+                  'awayGoals': goals['away'],
+                  'status': status,
+                  'elapsed': fixture['status'].get('elapsed'),
+                  'kickoffUTC': fixture.get('date'),
+                  'referee': fixture.get('referee'),
+              }
+              # Si el partido se definió por penales, la API trae el resultado
+              # de la tanda en un campo separado (no se suma al marcador normal).
+              if penalty.get('home') is not None or penalty.get('away') is not None:
+                  entry['penaltyHome'] = penalty.get('home')
+                  entry['penaltyAway'] = penalty.get('away')
+
+              # Los eventos (goles/tarjetas/cambios) solo cambian mientras el
+              # partido está en vivo. Una vez finalizado, ya no cambian más —
+              # así que si ya los tenemos guardados de una corrida anterior,
+              # los reutilizamos en vez de volver a pedirlos. Esto era el
+              # principal motivo de consumo excesivo de cuota: sin este
+              # chequeo, se re-pedían los eventos de TODOS los partidos ya
+              # terminados en cada corrida, para siempre.
+              if status in FINISHED_STATUSES and prev_entry.get('events') is not None:
+                  entry['events'] = prev_entry['events']
+                  if prev_entry.get('substitutions'):
+                      entry['substitutions'] = prev_entry['substitutions']
+              elif status in LIVE_STATUSES or status in FINISHED_STATUSES:
+                  entry['events'], subs = fetch_events(fixture['id'])
+                  if subs:
+                      entry['substitutions'] = subs
+
+              # Las alineaciones se piden recién cuando falta poco para
+              # arrancar (30 min o menos), o si el partido ya está en vivo —
+              # pedirlas con 2hs de anticipación generaba muchos pedidos
+              # "en vano" antes de que la API las publique. Una vez
+              # encontradas, se guardan en caché y nunca se vuelven a pedir.
+              if prev_entry.get('lineups'):
+                  entry['lineups'] = prev_entry['lineups']
+              else:
+                  kickoff_dt = None
+                  try:
+                      kickoff_dt = datetime.fromisoformat(fixture.get('date').replace('Z', '+00:00'))
+                  except Exception:
+                      pass
+                  is_near_kickoff = False
+                  if kickoff_dt:
+                      hours_to_kickoff = (kickoff_dt - datetime.now(kickoff_dt.tzinfo)).total_seconds() / 3600
+                      is_near_kickoff = 0 <= hours_to_kickoff <= (30 / 60)  # 30 minutos o menos
+
+                  if status in LIVE_STATUSES or status in FINISHED_STATUSES or is_near_kickoff:
+                      lineups = fetch_lineups(fixture['id'])
+                      if lineups:
+                          entry['lineups'] = lineups
+
+              scores[key] = entry
+
+          # Si la API no devolvió ningún partido (falla, rate limit, error
+          # transitorio), NO pisamos el archivo bueno que ya teníamos —
+          # mejor mantener el último dato válido que borrar todo.
+          if len(scores) == 0:
+              print("ADVERTENCIA: la API no devolvió partidos en esta corrida.")
+              print("Respuesta cruda:", json.dumps(data)[:500])
+              print("Se mantiene el scores.json anterior sin cambios.")
+              raise SystemExit(0)
+
+          output = {
+              'updated': datetime.utcnow().isoformat() + 'Z',
+              'matches': scores
+          }
+
+          with open('scores.json', 'w') as f:
+              json.dump(output, f, indent=2)
+
+          print(f"Wrote {len(scores)} matches to scores.json")
+          EOF
+
+      # El endpoint /status NO consume cuota — lo llamamos siempre (no solo
+      # en la ventana de partidos) para llevar un registro completo del uso
+      # diario, útil para la página de control de desarrollador.
+      - name: Check API quota usage (free endpoint, doesn't count against quota)
+        env:
+          API_KEY: ${{ secrets.API_FOOTBALL_KEY }}
+        run: |
+          curl -s -H "x-apisports-key: $API_KEY" \
+            "https://v3.football.api-sports.io/status" \
+            -o raw_status.json
+
+          python3 << 'EOF'
+          import json
+          from datetime import datetime, timedelta
+
+          try:
+              with open('raw_status.json') as f:
+                  raw = json.load(f)
+              req = raw.get('response', {}).get('requests', {})
+              current = req.get('current')
+              limit_day = req.get('limit_day')
+          except Exception as e:
+              print(f"Could not read API status: {e}")
+              current, limit_day = None, None
+
+          try:
+              with open('status.json') as f:
+                  history = json.load(f).get('history', [])
+          except Exception:
+              history = []
+
+          if current is not None:
+              history.append({
+                  'time': datetime.utcnow().isoformat() + 'Z',
+                  'current': current,
+                  'limit_day': limit_day,
+              })
+
+          # Guardamos solo las últimas 48hs para que el archivo no crezca sin límite
+          cutoff = datetime.utcnow() - timedelta(hours=48)
+          history = [h for h in history if datetime.fromisoformat(h['time'].replace('Z', '')) >= cutoff]
+
+          with open('status.json', 'w') as f:
+              json.dump({'history': history}, f, indent=2)
+
+          print(f"API quota: {current}/{limit_day}. History entries: {len(history)}")
+          EOF
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add scores.json status.json
+          git diff --staged --quiet || git commit -m "Update scores and API status [automated]"
+          git push
