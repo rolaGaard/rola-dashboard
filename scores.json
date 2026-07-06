@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-06T02:51:12.168521Z",
+  "updated": "2026-07-06T02:52:12.525649Z",
   "matches": {
     "MEXICO-ENGLAND": {
       "fixtureId": 1570714,
@@ -7,7 +7,7 @@
       "homeGoals": 2,
       "awayGoals": 3,
       "status": "2H",
-      "elapsed": 89,
+      "elapsed": 90,
       "kickoffUTC": "2026-07-06T01:00:00+00:00",
       "referee": "Alireza Faghani, Australia",
       "events": [
@@ -135,6 +135,11 @@
             "out": "E. Anderson",
             "in": "D. Burn",
             "minute": 75
+          },
+          {
+            "out": "H. Kane",
+            "in": "M. Rogers",
+            "minute": 90
           }
         ]
       },
