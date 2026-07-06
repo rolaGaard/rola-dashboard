@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-06T02:23:10.678883Z",
+  "updated": "2026-07-06T02:24:12.733134Z",
   "matches": {
     "MEXICO-ENGLAND": {
       "fixtureId": 1570714,
@@ -7,7 +7,7 @@
       "homeGoals": 1,
       "awayGoals": 3,
       "status": "2H",
-      "elapsed": 61,
+      "elapsed": 62,
       "kickoffUTC": "2026-07-06T01:00:00+00:00",
       "referee": "Alireza Faghani, Australia",
       "events": [
@@ -66,6 +66,11 @@
             "out": "C. Montes",
             "in": "E. Alvarez",
             "minute": 46
+          },
+          {
+            "out": "G. Mora",
+            "in": "S. Gimenez",
+            "minute": 62
           }
         ],
         "ENGLAND": [
