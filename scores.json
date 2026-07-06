@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-05T23:59:10.752415Z",
+  "updated": "2026-07-06T00:01:07.698836Z",
   "matches": {
     "MEXICO-SOUTH AFRICA": {
       "fixtureId": 1489369,
@@ -35006,9 +35006,9 @@
       "round": "Round of 16",
       "homeGoals": null,
       "awayGoals": null,
-      "status": "NS",
+      "status": "PST",
       "elapsed": null,
-      "kickoffUTC": "2026-07-06T01:00:00+00:00",
+      "kickoffUTC": "2026-07-06T00:00:00+00:00",
       "referee": "Alireza Faghani, Australia",
       "lineups": {
         "MEXICO": {
