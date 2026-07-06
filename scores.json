@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-06T20:51:10.335949Z",
+  "updated": "2026-07-06T20:52:13.727988Z",
   "matches": {
     "PORTUGAL-SPAIN": {
       "fixtureId": 1576756,
@@ -7,10 +7,19 @@
       "homeGoals": 0,
       "awayGoals": 0,
       "status": "2H",
-      "elapsed": 89,
+      "elapsed": 90,
       "kickoffUTC": "2026-07-06T19:00:00+00:00",
       "referee": "Anthony Taylor, England",
-      "events": [],
+      "events": [
+        {
+          "type": "Card",
+          "detail": "Yellow Card",
+          "player": "B. Silva",
+          "team": "PORTUGAL",
+          "minute": 89,
+          "extra": null
+        }
+      ],
       "substitutions": {
         "PORTUGAL": [
           {
