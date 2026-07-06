@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-06T03:01:05.076341Z",
+  "updated": "2026-07-06T03:02:11.734241Z",
   "matches": {
     "MEXICO-ENGLAND": {
       "fixtureId": 1570714,
@@ -90,6 +90,22 @@
           "team": "ENGLAND",
           "minute": 72,
           "extra": null
+        },
+        {
+          "type": "Card",
+          "detail": "Yellow Card",
+          "player": "J. Vasquez",
+          "team": "MEXICO",
+          "minute": 90,
+          "extra": 8
+        },
+        {
+          "type": "Card",
+          "detail": "Yellow Card",
+          "player": "J. Henderson",
+          "team": "ENGLAND",
+          "minute": 90,
+          "extra": 8
         }
       ],
       "substitutions": {
