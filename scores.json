@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-06T02:32:13.896816Z",
+  "updated": "2026-07-06T02:33:10.590634Z",
   "matches": {
     "MEXICO-ENGLAND": {
       "fixtureId": 1570714,
@@ -7,7 +7,7 @@
       "homeGoals": 2,
       "awayGoals": 3,
       "status": "2H",
-      "elapsed": 70,
+      "elapsed": 71,
       "kickoffUTC": "2026-07-06T01:00:00+00:00",
       "referee": "Alireza Faghani, Australia",
       "events": [
@@ -62,9 +62,9 @@
         {
           "type": "Card",
           "detail": "Yellow Card",
-          "player": "H. Kane",
+          "player": "M. Guehi",
           "team": "ENGLAND",
-          "minute": 69,
+          "minute": 68,
           "extra": null
         },
         {
