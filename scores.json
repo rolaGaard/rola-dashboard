@@ -1,13 +1,13 @@
 {
-  "updated": "2026-07-06T01:36:11.271391Z",
+  "updated": "2026-07-06T01:37:09.686115Z",
   "matches": {
     "MEXICO-ENGLAND": {
       "fixtureId": 1570714,
       "round": "Round of 16",
       "homeGoals": 0,
-      "awayGoals": 0,
+      "awayGoals": 1,
       "status": "1H",
-      "elapsed": 36,
+      "elapsed": 37,
       "kickoffUTC": "2026-07-06T01:00:00+00:00",
       "referee": "Alireza Faghani, Australia",
       "events": [
@@ -17,6 +17,14 @@
           "player": "D. Rice",
           "team": "ENGLAND",
           "minute": 1,
+          "extra": null
+        },
+        {
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "player": "J. Bellingham",
+          "team": "ENGLAND",
+          "minute": 36,
           "extra": null
         }
       ],
