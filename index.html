@@ -924,7 +924,7 @@
     <img class="header-icon" src="icons/icon-192.png" alt="rolaGaard">
     <div class="header-text">
       <div class="header-title">Mundial 2026</div>
-      <div class="header-by">by rolaGaard &nbsp;<span class="app-version">v3.8</span></div>
+      <div class="header-by">by rolaGaard &nbsp;<span class="app-version">v3.9</span></div>
       <div class="header-sub" id="header-sub">USA · Canadá · México</div>
     </div>
   </div>
@@ -4268,11 +4268,19 @@ function openCountryInfo(code, forcedMatchKey) {
     }
   }
 
-  // DT — buscarlo en squadsData
+  // DT — buscarlo en lineups de liveData (cualquier partido del equipo)
   let coachHtml = '';
-  const squadEntry = squadsData ? squadsData[code] : null;
-  if (squadEntry && squadEntry.coach && squadEntry.coach.name) {
-    const coachName = squadEntry.coach.name;
+  let coachName = null;
+  // Buscar en todos los partidos de liveData hasta encontrar el coach de este equipo
+  for (const matchData of Object.values(liveData)) {
+    if (!matchData.lineups) continue;
+    const sideData = matchData.lineups[code];
+    if (sideData && sideData.coach) {
+      coachName = sideData.coach;
+      break;
+    }
+  }
+  if (coachName) {
     const coachLink = googleSearchLink(coachName, code);
     coachHtml = '<div class="ci-referee">DT: <a href="' + coachLink + '" target="_blank" rel="noopener" class="ci-coach-link">' + coachName + '</a></div>';
   }
