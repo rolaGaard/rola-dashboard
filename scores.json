@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-06T05:29:10.207093Z",
+  "updated": "2026-07-06T05:30:49.377156Z",
   "matches": {
     "MEXICO-SOUTH AFRICA": {
       "fixtureId": 1489369,
@@ -35568,6 +35568,16 @@
       "status": "NS",
       "elapsed": null,
       "kickoffUTC": "2026-07-09T20:00:00+00:00",
+      "referee": null
+    },
+    "NORWAY-ENGLAND": {
+      "fixtureId": 1581037,
+      "round": "Quarter-finals",
+      "homeGoals": null,
+      "awayGoals": null,
+      "status": "NS",
+      "elapsed": null,
+      "kickoffUTC": "2026-07-11T21:00:00+00:00",
       "referee": null
     }
   }
