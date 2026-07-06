@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-06T01:31:15.166948Z",
+  "updated": "2026-07-06T01:32:11.500488Z",
   "matches": {
     "MEXICO-ENGLAND": {
       "fixtureId": 1570714,
@@ -7,7 +7,7 @@
       "homeGoals": 0,
       "awayGoals": 0,
       "status": "1H",
-      "elapsed": 31,
+      "elapsed": 32,
       "kickoffUTC": "2026-07-06T01:00:00+00:00",
       "referee": "Alireza Faghani, Australia",
       "events": [
@@ -32807,6 +32807,269 @@
             "minute": 87
           }
         ]
+      },
+      "lineups": {
+        "SWITZERLAND": {
+          "formation": "4-2-3-1",
+          "coach": "Murat Yakin",
+          "startXI": [
+            {
+              "name": "G. Kobel",
+              "number": 1,
+              "pos": "G"
+            },
+            {
+              "name": "D. Zakaria",
+              "number": 6,
+              "pos": "D"
+            },
+            {
+              "name": "N. Elvedi",
+              "number": 4,
+              "pos": "D"
+            },
+            {
+              "name": "M. Akanji",
+              "number": 5,
+              "pos": "D"
+            },
+            {
+              "name": "R. Rodriguez",
+              "number": 13,
+              "pos": "D"
+            },
+            {
+              "name": "R. Freuler",
+              "number": 8,
+              "pos": "M"
+            },
+            {
+              "name": "G. Xhaka",
+              "number": 10,
+              "pos": "M"
+            },
+            {
+              "name": "D. Ndoye",
+              "number": 11,
+              "pos": "M"
+            },
+            {
+              "name": "J. Manzambi",
+              "number": 9,
+              "pos": "M"
+            },
+            {
+              "name": "R. Vargas",
+              "number": 17,
+              "pos": "M"
+            },
+            {
+              "name": "B. Embolo",
+              "number": 7,
+              "pos": "F"
+            }
+          ],
+          "substitutes": [
+            {
+              "name": "Y. Mvogo",
+              "number": 12,
+              "pos": "G"
+            },
+            {
+              "name": "M. Keller",
+              "number": 21,
+              "pos": "G"
+            },
+            {
+              "name": "S. Widmer",
+              "number": 3,
+              "pos": "D"
+            },
+            {
+              "name": "D. Sow",
+              "number": 15,
+              "pos": "M"
+            },
+            {
+              "name": "N. Okafor",
+              "number": 19,
+              "pos": "F"
+            },
+            {
+              "name": "M. Aebischer",
+              "number": 20,
+              "pos": "M"
+            },
+            {
+              "name": "E. Comert",
+              "number": 18,
+              "pos": "D"
+            },
+            {
+              "name": "C. Itten",
+              "number": 26,
+              "pos": "F"
+            },
+            {
+              "name": "C. Fassnacht",
+              "number": 16,
+              "pos": "M"
+            },
+            {
+              "name": "M. Muheim",
+              "number": 2,
+              "pos": "D"
+            },
+            {
+              "name": "F. Rieder",
+              "number": 22,
+              "pos": "M"
+            },
+            {
+              "name": "A. Amenda",
+              "number": 24,
+              "pos": "D"
+            },
+            {
+              "name": "Z. Amdouni",
+              "number": 23,
+              "pos": "F"
+            },
+            {
+              "name": "A. Jashari",
+              "number": 14,
+              "pos": "M"
+            }
+          ]
+        },
+        "ALGERIA": {
+          "formation": "4-3-3",
+          "coach": "Vladimir Petkovic",
+          "startXI": [
+            {
+              "name": "L. Zidane",
+              "number": 23,
+              "pos": "G"
+            },
+            {
+              "name": "R. Belghali",
+              "number": 17,
+              "pos": "D"
+            },
+            {
+              "name": "A. Mandi",
+              "number": 2,
+              "pos": "D"
+            },
+            {
+              "name": "R. Bensebaini",
+              "number": 21,
+              "pos": "D"
+            },
+            {
+              "name": "R. Ait-Nouri",
+              "number": 15,
+              "pos": "D"
+            },
+            {
+              "name": "R. Zerrouki",
+              "number": 6,
+              "pos": "M"
+            },
+            {
+              "name": "N. Bentaleb",
+              "number": 19,
+              "pos": "M"
+            },
+            {
+              "name": "F. Chaibi",
+              "number": 10,
+              "pos": "M"
+            },
+            {
+              "name": "R. Mahrez",
+              "number": 7,
+              "pos": "F"
+            },
+            {
+              "name": "I. Maza",
+              "number": 22,
+              "pos": "F"
+            },
+            {
+              "name": "H. Aouar",
+              "number": 8,
+              "pos": "F"
+            }
+          ],
+          "substitutes": [
+            {
+              "name": "M. Mastil",
+              "number": 1,
+              "pos": "G"
+            },
+            {
+              "name": "O. Benbot",
+              "number": 16,
+              "pos": "G"
+            },
+            {
+              "name": "H. Boudaoui",
+              "number": 14,
+              "pos": "M"
+            },
+            {
+              "name": "S. Chergui",
+              "number": 26,
+              "pos": "D"
+            },
+            {
+              "name": "J. Hadjam",
+              "number": 13,
+              "pos": "D"
+            },
+            {
+              "name": "Y. Titraoui",
+              "number": 24,
+              "pos": "M"
+            },
+            {
+              "name": "A. Boulbina",
+              "number": 20,
+              "pos": "F"
+            },
+            {
+              "name": "F. Ghedjemis",
+              "number": 25,
+              "pos": "F"
+            },
+            {
+              "name": "A. Gouiri",
+              "number": 9,
+              "pos": "F"
+            },
+            {
+              "name": "M. Tougai",
+              "number": 4,
+              "pos": "D"
+            },
+            {
+              "name": "Z. Belaid",
+              "number": 5,
+              "pos": "D"
+            },
+            {
+              "name": "A. Abada",
+              "number": 3,
+              "pos": "D"
+            },
+            {
+              "name": "A. Hadj Moussa",
+              "number": 11,
+              "pos": "F"
+            }
+          ]
+        }
       }
     },
     "AUSTRALIA-EGYPT": {
