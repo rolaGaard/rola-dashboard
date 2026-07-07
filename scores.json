@@ -1,16 +1,25 @@
 {
-  "updated": "2026-07-07T00:09:10.394512Z",
+  "updated": "2026-07-07T00:10:39.694636Z",
   "matches": {
     "USA-BELGIUM": {
       "fixtureId": 1570715,
       "round": "Round of 16",
       "homeGoals": 0,
-      "awayGoals": 0,
+      "awayGoals": 1,
       "status": "1H",
-      "elapsed": 9,
+      "elapsed": 10,
       "kickoffUTC": "2026-07-07T00:00:00+00:00",
       "referee": "Adham Mohammad, Jordan",
-      "events": [],
+      "events": [
+        {
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "player": "C. De Ketelaere",
+          "team": "BELGIUM",
+          "minute": 9,
+          "extra": null
+        }
+      ],
       "lineups": {
         "USA": {
           "formation": "4-3-3",
