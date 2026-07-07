@@ -1,417 +1,6 @@
 {
-  "updated": "2026-07-07T18:05:17.716994Z",
+  "updated": "2026-07-07T18:06:13.092233Z",
   "matches": {
-    "ARGENTINA-EGYPT": {
-      "fixtureId": 1576804,
-      "round": "Round of 16",
-      "homeGoals": 3,
-      "awayGoals": 2,
-      "status": "2H",
-      "elapsed": 90,
-      "kickoffUTC": "2026-07-07T16:00:00+00:00",
-      "referee": "Fran\u00e7ois Letexier, France",
-      "events": [
-        {
-          "type": "Goal",
-          "detail": "Normal Goal",
-          "player": "Y. Ibrahim",
-          "team": "EGYPT",
-          "minute": 15,
-          "extra": null
-        },
-        {
-          "type": "Goal",
-          "detail": "Missed Penalty",
-          "player": "L. Messi",
-          "team": "ARGENTINA",
-          "minute": 21,
-          "extra": null
-        },
-        {
-          "type": "Goal",
-          "detail": "Normal Goal",
-          "player": "M. Ziko",
-          "team": "EGYPT",
-          "minute": 67,
-          "extra": null
-        },
-        {
-          "type": "Goal",
-          "detail": "Normal Goal",
-          "player": "C. Romero",
-          "team": "ARGENTINA",
-          "minute": 79,
-          "extra": null
-        },
-        {
-          "type": "Goal",
-          "detail": "Normal Goal",
-          "player": "L. Messi",
-          "team": "ARGENTINA",
-          "minute": 83,
-          "extra": null
-        },
-        {
-          "type": "Goal",
-          "detail": "Normal Goal",
-          "player": "E. Fernandez",
-          "team": "ARGENTINA",
-          "minute": 90,
-          "extra": 2
-        },
-        {
-          "type": "Card",
-          "detail": "Yellow Card",
-          "player": "M. Shobeir",
-          "team": "EGYPT",
-          "minute": 90,
-          "extra": 3
-        },
-        {
-          "type": "Card",
-          "detail": "Yellow Card",
-          "player": "H. Fathy",
-          "team": "EGYPT",
-          "minute": 90,
-          "extra": 4
-        },
-        {
-          "type": "Card",
-          "detail": "Yellow Card",
-          "player": "M. Attia",
-          "team": "EGYPT",
-          "minute": 90,
-          "extra": 8
-        },
-        {
-          "type": "Card",
-          "detail": "Yellow Card",
-          "player": "H. Hassan",
-          "team": "EGYPT",
-          "minute": 90,
-          "extra": 9
-        }
-      ],
-      "substitutions": {
-        "EGYPT": [
-          {
-            "out": "E. Ashour",
-            "in": "H. Fathy",
-            "minute": 46
-          },
-          {
-            "out": "H. Hassan",
-            "in": "Trezeguet",
-            "minute": 73
-          },
-          {
-            "out": "M. Ziko",
-            "in": "O. Marmoush",
-            "minute": 80
-          },
-          {
-            "out": "M. Lasheen",
-            "in": "Zizo",
-            "minute": 90
-          }
-        ],
-        "ARGENTINA": [
-          {
-            "out": "N. Tagliafico",
-            "in": "N. Gonzalez",
-            "minute": 66
-          },
-          {
-            "out": "R. de Paul",
-            "in": "L. Martinez",
-            "minute": 66
-          },
-          {
-            "out": "N. Molina",
-            "in": "G. Montiel",
-            "minute": 73
-          },
-          {
-            "out": "C. Romero",
-            "in": "N. Otamendi",
-            "minute": 90
-          },
-          {
-            "out": "J. Alvarez",
-            "in": "F. Medina",
-            "minute": 90
-          }
-        ]
-      },
-      "lineups": {
-        "ARGENTINA": {
-          "formation": "4-4-2",
-          "coach": "Lionel Scaloni",
-          "startXI": [
-            {
-              "name": "Emiliano Mart\u00ednez",
-              "number": 23,
-              "pos": "G"
-            },
-            {
-              "name": "Nahuel Molina",
-              "number": 26,
-              "pos": "D"
-            },
-            {
-              "name": "Cristian Romero",
-              "number": 13,
-              "pos": "D"
-            },
-            {
-              "name": "Lisandro Mart\u00ednez",
-              "number": 6,
-              "pos": "D"
-            },
-            {
-              "name": "Nicol\u00e1s Tagliafico",
-              "number": 3,
-              "pos": "D"
-            },
-            {
-              "name": "Rodrigo De Paul",
-              "number": 7,
-              "pos": "M"
-            },
-            {
-              "name": "Alexis Mac Allister",
-              "number": 20,
-              "pos": "M"
-            },
-            {
-              "name": "Leandro Paredes",
-              "number": 5,
-              "pos": "M"
-            },
-            {
-              "name": "Enzo Fern\u00e1ndez",
-              "number": 24,
-              "pos": "M"
-            },
-            {
-              "name": "Lionel Messi",
-              "number": 10,
-              "pos": "F"
-            },
-            {
-              "name": "Juli\u00e1n Alvarez",
-              "number": 9,
-              "pos": "F"
-            }
-          ],
-          "substitutes": [
-            {
-              "name": "Ger\u00f3nimo Rulli",
-              "number": 12,
-              "pos": "G"
-            },
-            {
-              "name": "Juan Musso",
-              "number": 1,
-              "pos": "G"
-            },
-            {
-              "name": "Marcos Senesi",
-              "number": 2,
-              "pos": "D"
-            },
-            {
-              "name": "Gonzalo Montiel",
-              "number": 4,
-              "pos": "D"
-            },
-            {
-              "name": "Nicol\u00e1s Otamendi",
-              "number": 19,
-              "pos": "D"
-            },
-            {
-              "name": "Facundo Medina",
-              "number": 25,
-              "pos": "D"
-            },
-            {
-              "name": "Valent\u00edn Barco",
-              "number": 8,
-              "pos": "M"
-            },
-            {
-              "name": "Giovani Lo Celso",
-              "number": 11,
-              "pos": "M"
-            },
-            {
-              "name": "Exequiel Palacios",
-              "number": 14,
-              "pos": "M"
-            },
-            {
-              "name": "Nicol\u00e1s Gonz\u00e1lez",
-              "number": 15,
-              "pos": "F"
-            },
-            {
-              "name": "Thiago Almada",
-              "number": 16,
-              "pos": "M"
-            },
-            {
-              "name": "Giuliano Simeone",
-              "number": 17,
-              "pos": "F"
-            },
-            {
-              "name": "Nico Paz",
-              "number": 18,
-              "pos": "F"
-            },
-            {
-              "name": "Jos\u00e9 Manuel L\u00f3pez",
-              "number": 21,
-              "pos": "F"
-            },
-            {
-              "name": "Lautaro Mart\u00ednez",
-              "number": 22,
-              "pos": "F"
-            }
-          ]
-        },
-        "EGYPT": {
-          "formation": "4-4-2",
-          "coach": "Hossam Hassan",
-          "startXI": [
-            {
-              "name": "Mostafa Shobeir",
-              "number": 23,
-              "pos": "G"
-            },
-            {
-              "name": "Mohamed Hany",
-              "number": 3,
-              "pos": "D"
-            },
-            {
-              "name": "Yasser Ibrahim",
-              "number": 2,
-              "pos": "D"
-            },
-            {
-              "name": "Rami Rabia",
-              "number": 5,
-              "pos": "D"
-            },
-            {
-              "name": "Karim Hafez",
-              "number": 15,
-              "pos": "D"
-            },
-            {
-              "name": "Emam Ashour",
-              "number": 8,
-              "pos": "M"
-            },
-            {
-              "name": "Marwan Attia",
-              "number": 19,
-              "pos": "M"
-            },
-            {
-              "name": "Mohanad Lasheen",
-              "number": 17,
-              "pos": "M"
-            },
-            {
-              "name": "Haissem Hassan",
-              "number": 12,
-              "pos": "M"
-            },
-            {
-              "name": "Mohamed Salah",
-              "number": 10,
-              "pos": "F"
-            },
-            {
-              "name": "Mostafa Ziko",
-              "number": 11,
-              "pos": "F"
-            }
-          ],
-          "substitutes": [
-            {
-              "name": "Mohamed El-Shenawy",
-              "number": 1,
-              "pos": "G"
-            },
-            {
-              "name": "Mohamed Alaa",
-              "number": 26,
-              "pos": "G"
-            },
-            {
-              "name": "Mahdi Soliman",
-              "number": 16,
-              "pos": "G"
-            },
-            {
-              "name": "Tarek Alaa",
-              "number": 24,
-              "pos": "D"
-            },
-            {
-              "name": "Hossam Abdelmaguid",
-              "number": 4,
-              "pos": "D"
-            },
-            {
-              "name": "Zizo",
-              "number": 25,
-              "pos": "F"
-            },
-            {
-              "name": "Ibrahim Adel",
-              "number": 20,
-              "pos": "F"
-            },
-            {
-              "name": "Mahmoud Tr\u00e9z\u00e9guet",
-              "number": 7,
-              "pos": "F"
-            },
-            {
-              "name": "Mahmoud Saber",
-              "number": 21,
-              "pos": "M"
-            },
-            {
-              "name": "Hamdy Fathy",
-              "number": 14,
-              "pos": "M"
-            },
-            {
-              "name": "Nabil Donga",
-              "number": 18,
-              "pos": "M"
-            },
-            {
-              "name": "Omar Marmoush",
-              "number": 22,
-              "pos": "F"
-            },
-            {
-              "name": "Hamza Abdelkarim",
-              "number": 9,
-              "pos": "F"
-            }
-          ]
-        }
-      }
-    },
     "MEXICO-SOUTH AFRICA": {
       "fixtureId": 1489369,
       "round": "Group Stage - 1",
@@ -36686,6 +36275,417 @@
             },
             {
               "name": "Romelu Lukaku",
+              "number": 9,
+              "pos": "F"
+            }
+          ]
+        }
+      }
+    },
+    "ARGENTINA-EGYPT": {
+      "fixtureId": 1576804,
+      "round": "Round of 16",
+      "homeGoals": 3,
+      "awayGoals": 2,
+      "status": "FT",
+      "elapsed": 90,
+      "kickoffUTC": "2026-07-07T16:00:00+00:00",
+      "referee": "Fran\u00e7ois Letexier, France",
+      "events": [
+        {
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "player": "Y. Ibrahim",
+          "team": "EGYPT",
+          "minute": 15,
+          "extra": null
+        },
+        {
+          "type": "Goal",
+          "detail": "Missed Penalty",
+          "player": "L. Messi",
+          "team": "ARGENTINA",
+          "minute": 21,
+          "extra": null
+        },
+        {
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "player": "M. Ziko",
+          "team": "EGYPT",
+          "minute": 67,
+          "extra": null
+        },
+        {
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "player": "C. Romero",
+          "team": "ARGENTINA",
+          "minute": 79,
+          "extra": null
+        },
+        {
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "player": "L. Messi",
+          "team": "ARGENTINA",
+          "minute": 83,
+          "extra": null
+        },
+        {
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "player": "E. Fernandez",
+          "team": "ARGENTINA",
+          "minute": 90,
+          "extra": 2
+        },
+        {
+          "type": "Card",
+          "detail": "Yellow Card",
+          "player": "M. Shobeir",
+          "team": "EGYPT",
+          "minute": 90,
+          "extra": 3
+        },
+        {
+          "type": "Card",
+          "detail": "Yellow Card",
+          "player": "H. Fathy",
+          "team": "EGYPT",
+          "minute": 90,
+          "extra": 4
+        },
+        {
+          "type": "Card",
+          "detail": "Yellow Card",
+          "player": "M. Attia",
+          "team": "EGYPT",
+          "minute": 90,
+          "extra": 8
+        },
+        {
+          "type": "Card",
+          "detail": "Yellow Card",
+          "player": "H. Hassan",
+          "team": "EGYPT",
+          "minute": 90,
+          "extra": 9
+        }
+      ],
+      "substitutions": {
+        "EGYPT": [
+          {
+            "out": "E. Ashour",
+            "in": "H. Fathy",
+            "minute": 46
+          },
+          {
+            "out": "H. Hassan",
+            "in": "Trezeguet",
+            "minute": 73
+          },
+          {
+            "out": "M. Ziko",
+            "in": "O. Marmoush",
+            "minute": 80
+          },
+          {
+            "out": "M. Lasheen",
+            "in": "Zizo",
+            "minute": 90
+          }
+        ],
+        "ARGENTINA": [
+          {
+            "out": "N. Tagliafico",
+            "in": "N. Gonzalez",
+            "minute": 66
+          },
+          {
+            "out": "R. de Paul",
+            "in": "L. Martinez",
+            "minute": 66
+          },
+          {
+            "out": "N. Molina",
+            "in": "G. Montiel",
+            "minute": 73
+          },
+          {
+            "out": "C. Romero",
+            "in": "N. Otamendi",
+            "minute": 90
+          },
+          {
+            "out": "J. Alvarez",
+            "in": "F. Medina",
+            "minute": 90
+          }
+        ]
+      },
+      "lineups": {
+        "ARGENTINA": {
+          "formation": "4-4-2",
+          "coach": "Lionel Scaloni",
+          "startXI": [
+            {
+              "name": "Emiliano Mart\u00ednez",
+              "number": 23,
+              "pos": "G"
+            },
+            {
+              "name": "Nahuel Molina",
+              "number": 26,
+              "pos": "D"
+            },
+            {
+              "name": "Cristian Romero",
+              "number": 13,
+              "pos": "D"
+            },
+            {
+              "name": "Lisandro Mart\u00ednez",
+              "number": 6,
+              "pos": "D"
+            },
+            {
+              "name": "Nicol\u00e1s Tagliafico",
+              "number": 3,
+              "pos": "D"
+            },
+            {
+              "name": "Rodrigo De Paul",
+              "number": 7,
+              "pos": "M"
+            },
+            {
+              "name": "Alexis Mac Allister",
+              "number": 20,
+              "pos": "M"
+            },
+            {
+              "name": "Leandro Paredes",
+              "number": 5,
+              "pos": "M"
+            },
+            {
+              "name": "Enzo Fern\u00e1ndez",
+              "number": 24,
+              "pos": "M"
+            },
+            {
+              "name": "Lionel Messi",
+              "number": 10,
+              "pos": "F"
+            },
+            {
+              "name": "Juli\u00e1n Alvarez",
+              "number": 9,
+              "pos": "F"
+            }
+          ],
+          "substitutes": [
+            {
+              "name": "Ger\u00f3nimo Rulli",
+              "number": 12,
+              "pos": "G"
+            },
+            {
+              "name": "Juan Musso",
+              "number": 1,
+              "pos": "G"
+            },
+            {
+              "name": "Marcos Senesi",
+              "number": 2,
+              "pos": "D"
+            },
+            {
+              "name": "Gonzalo Montiel",
+              "number": 4,
+              "pos": "D"
+            },
+            {
+              "name": "Nicol\u00e1s Otamendi",
+              "number": 19,
+              "pos": "D"
+            },
+            {
+              "name": "Facundo Medina",
+              "number": 25,
+              "pos": "D"
+            },
+            {
+              "name": "Valent\u00edn Barco",
+              "number": 8,
+              "pos": "M"
+            },
+            {
+              "name": "Giovani Lo Celso",
+              "number": 11,
+              "pos": "M"
+            },
+            {
+              "name": "Exequiel Palacios",
+              "number": 14,
+              "pos": "M"
+            },
+            {
+              "name": "Nicol\u00e1s Gonz\u00e1lez",
+              "number": 15,
+              "pos": "F"
+            },
+            {
+              "name": "Thiago Almada",
+              "number": 16,
+              "pos": "M"
+            },
+            {
+              "name": "Giuliano Simeone",
+              "number": 17,
+              "pos": "F"
+            },
+            {
+              "name": "Nico Paz",
+              "number": 18,
+              "pos": "F"
+            },
+            {
+              "name": "Jos\u00e9 Manuel L\u00f3pez",
+              "number": 21,
+              "pos": "F"
+            },
+            {
+              "name": "Lautaro Mart\u00ednez",
+              "number": 22,
+              "pos": "F"
+            }
+          ]
+        },
+        "EGYPT": {
+          "formation": "4-4-2",
+          "coach": "Hossam Hassan",
+          "startXI": [
+            {
+              "name": "Mostafa Shobeir",
+              "number": 23,
+              "pos": "G"
+            },
+            {
+              "name": "Mohamed Hany",
+              "number": 3,
+              "pos": "D"
+            },
+            {
+              "name": "Yasser Ibrahim",
+              "number": 2,
+              "pos": "D"
+            },
+            {
+              "name": "Rami Rabia",
+              "number": 5,
+              "pos": "D"
+            },
+            {
+              "name": "Karim Hafez",
+              "number": 15,
+              "pos": "D"
+            },
+            {
+              "name": "Emam Ashour",
+              "number": 8,
+              "pos": "M"
+            },
+            {
+              "name": "Marwan Attia",
+              "number": 19,
+              "pos": "M"
+            },
+            {
+              "name": "Mohanad Lasheen",
+              "number": 17,
+              "pos": "M"
+            },
+            {
+              "name": "Haissem Hassan",
+              "number": 12,
+              "pos": "M"
+            },
+            {
+              "name": "Mohamed Salah",
+              "number": 10,
+              "pos": "F"
+            },
+            {
+              "name": "Mostafa Ziko",
+              "number": 11,
+              "pos": "F"
+            }
+          ],
+          "substitutes": [
+            {
+              "name": "Mohamed El-Shenawy",
+              "number": 1,
+              "pos": "G"
+            },
+            {
+              "name": "Mohamed Alaa",
+              "number": 26,
+              "pos": "G"
+            },
+            {
+              "name": "Mahdi Soliman",
+              "number": 16,
+              "pos": "G"
+            },
+            {
+              "name": "Tarek Alaa",
+              "number": 24,
+              "pos": "D"
+            },
+            {
+              "name": "Hossam Abdelmaguid",
+              "number": 4,
+              "pos": "D"
+            },
+            {
+              "name": "Zizo",
+              "number": 25,
+              "pos": "F"
+            },
+            {
+              "name": "Ibrahim Adel",
+              "number": 20,
+              "pos": "F"
+            },
+            {
+              "name": "Mahmoud Tr\u00e9z\u00e9guet",
+              "number": 7,
+              "pos": "F"
+            },
+            {
+              "name": "Mahmoud Saber",
+              "number": 21,
+              "pos": "M"
+            },
+            {
+              "name": "Hamdy Fathy",
+              "number": 14,
+              "pos": "M"
+            },
+            {
+              "name": "Nabil Donga",
+              "number": 18,
+              "pos": "M"
+            },
+            {
+              "name": "Omar Marmoush",
+              "number": 22,
+              "pos": "F"
+            },
+            {
+              "name": "Hamza Abdelkarim",
               "number": 9,
               "pos": "F"
             }
