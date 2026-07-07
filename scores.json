@@ -1,13 +1,13 @@
 {
-  "updated": "2026-07-07T17:47:12.290245Z",
+  "updated": "2026-07-07T17:48:13.055449Z",
   "matches": {
     "ARGENTINA-EGYPT": {
       "fixtureId": 1576804,
       "round": "Round of 16",
-      "homeGoals": 1,
+      "homeGoals": 2,
       "awayGoals": 2,
       "status": "2H",
-      "elapsed": 84,
+      "elapsed": 85,
       "kickoffUTC": "2026-07-07T16:00:00+00:00",
       "referee": "Fran\u00e7ois Letexier, France",
       "events": [
@@ -41,6 +41,14 @@
           "player": "C. Romero",
           "team": "ARGENTINA",
           "minute": 79,
+          "extra": null
+        },
+        {
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "player": "L. Messi",
+          "team": "ARGENTINA",
+          "minute": 84,
           "extra": null
         }
       ],
