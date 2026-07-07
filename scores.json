@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-07T21:25:19.048511Z",
+  "updated": "2026-07-07T21:26:11.251017Z",
   "matches": {
     "MEXICO-SOUTH AFRICA": {
       "fixtureId": 1489369,
@@ -36729,7 +36729,7 @@
       "homeGoals": 0,
       "awayGoals": 0,
       "status": "2H",
-      "elapsed": 65,
+      "elapsed": 66,
       "kickoffUTC": "2026-07-07T20:00:00+00:00",
       "referee": "Iv\u00e1n Barton, El Salvador",
       "events": [
@@ -36764,6 +36764,18 @@
             "out": "Ardon Jashari",
             "in": "Djibril Sow",
             "minute": 45
+          }
+        ],
+        "COLOMBIA": [
+          {
+            "out": "James Rodr\u00edguez",
+            "in": "Juan Quintero",
+            "minute": 66
+          },
+          {
+            "out": "Jhon Arias",
+            "in": "Jaminton Campaz",
+            "minute": 66
           }
         ]
       },
