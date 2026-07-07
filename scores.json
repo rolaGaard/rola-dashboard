@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-07T18:02:16.963996Z",
+  "updated": "2026-07-07T18:03:11.767301Z",
   "matches": {
     "ARGENTINA-EGYPT": {
       "fixtureId": 1576804,
@@ -74,6 +74,14 @@
           "team": "EGYPT",
           "minute": 90,
           "extra": 4
+        },
+        {
+          "type": "Card",
+          "detail": "Yellow Card",
+          "player": "M. Attia",
+          "team": "EGYPT",
+          "minute": 90,
+          "extra": 8
         }
       ],
       "substitutions": {
