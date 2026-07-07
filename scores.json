@@ -1,13 +1,13 @@
 {
-  "updated": "2026-07-07T17:24:13.396792Z",
+  "updated": "2026-07-07T17:25:19.618659Z",
   "matches": {
     "ARGENTINA-EGYPT": {
       "fixtureId": 1576804,
       "round": "Round of 16",
       "homeGoals": 0,
-      "awayGoals": 2,
+      "awayGoals": 1,
       "status": "2H",
-      "elapsed": 60,
+      "elapsed": 61,
       "kickoffUTC": "2026-07-07T16:00:00+00:00",
       "referee": "Fran\u00e7ois Letexier, France",
       "events": [
@@ -25,14 +25,6 @@
           "player": "L. Messi",
           "team": "ARGENTINA",
           "minute": 21,
-          "extra": null
-        },
-        {
-          "type": "Goal",
-          "detail": "Normal Goal",
-          "player": "M. Ziko",
-          "team": "EGYPT",
-          "minute": 58,
           "extra": null
         }
       ],
