@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-07T22:47:11.525124Z",
+  "updated": "2026-07-07T22:48:14.819220Z",
   "matches": {
     "MEXICO-SOUTH AFRICA": {
       "fixtureId": 1489369,
@@ -36822,6 +36822,14 @@
           "team": "SWITZERLAND",
           "minute": 120,
           "extra": 3
+        },
+        {
+          "type": "Goal",
+          "detail": "Missed Penalty",
+          "player": "C. Hernandez",
+          "team": "COLOMBIA",
+          "minute": 120,
+          "extra": 4
         }
       ],
       "substitutions": {
