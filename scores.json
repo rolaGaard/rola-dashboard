@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-07T22:14:13.480269Z",
+  "updated": "2026-07-07T22:15:27.402828Z",
   "matches": {
     "SWITZERLAND-COLOMBIA": {
       "fixtureId": 1576805,
@@ -7,7 +7,7 @@
       "homeGoals": 0,
       "awayGoals": 0,
       "status": "ET",
-      "elapsed": 104,
+      "elapsed": 106,
       "kickoffUTC": "2026-07-07T20:00:00+00:00",
       "referee": "Iv\u00e1n Barton, El Salvador",
       "events": [
@@ -41,6 +41,14 @@
           "player": "D. Sanchez",
           "team": "COLOMBIA",
           "minute": 95,
+          "extra": null
+        },
+        {
+          "type": "Card",
+          "detail": "Yellow Card",
+          "player": "M. Muheim",
+          "team": "SWITZERLAND",
+          "minute": 105,
           "extra": null
         }
       ],
