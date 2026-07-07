@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-07T22:41:12.685502Z",
+  "updated": "2026-07-07T22:42:14.351304Z",
   "matches": {
     "MEXICO-SOUTH AFRICA": {
       "fixtureId": 1489369,
@@ -36732,6 +36732,8 @@
       "elapsed": null,
       "kickoffUTC": "2026-07-07T20:00:00+00:00",
       "referee": "Iv\u00e1n Barton, El Salvador",
+      "penaltyHome": 0,
+      "penaltyAway": 1,
       "events": [
         {
           "type": "Card",
@@ -36772,6 +36774,14 @@
           "team": "SWITZERLAND",
           "minute": 105,
           "extra": null
+        },
+        {
+          "type": "Goal",
+          "detail": "Penalty",
+          "player": "J. Quintero",
+          "team": "COLOMBIA",
+          "minute": 120,
+          "extra": 1
         }
       ],
       "substitutions": {
