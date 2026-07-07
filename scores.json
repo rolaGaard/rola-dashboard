@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-07T21:51:10.355677Z",
+  "updated": "2026-07-07T21:52:12.614580Z",
   "matches": {
     "SWITZERLAND-COLOMBIA": {
       "fixtureId": 1576805,
@@ -57,6 +57,11 @@
             "out": "D. Zakaria",
             "in": "S. Widmer",
             "minute": 87
+          },
+          {
+            "out": "D. Ndoye",
+            "in": "R. Vargas",
+            "minute": 90
           }
         ],
         "COLOMBIA": [
