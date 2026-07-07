@@ -1,16 +1,25 @@
 {
-  "updated": "2026-07-07T21:06:12.609652Z",
+  "updated": "2026-07-07T21:07:11.856495Z",
   "matches": {
     "SWITZERLAND-COLOMBIA": {
       "fixtureId": 1576805,
       "round": "Round of 16",
       "homeGoals": 0,
       "awayGoals": 0,
-      "status": "HT",
-      "elapsed": 45,
+      "status": "2H",
+      "elapsed": 48,
       "kickoffUTC": "2026-07-07T20:00:00+00:00",
       "referee": "Iv\u00e1n Barton, El Salvador",
       "events": [],
+      "substitutions": {
+        "SWITZERLAND": [
+          {
+            "out": "A. Jashari",
+            "in": "D. Sow",
+            "minute": 46
+          }
+        ]
+      },
       "lineups": {
         "SWITZERLAND": {
           "formation": "4-2-3-1",
