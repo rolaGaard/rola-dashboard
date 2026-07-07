@@ -1,13 +1,13 @@
 {
-  "updated": "2026-07-07T21:55:16.061086Z",
+  "updated": "2026-07-07T21:56:12.237767Z",
   "matches": {
     "SWITZERLAND-COLOMBIA": {
       "fixtureId": 1576805,
       "round": "Round of 16",
       "homeGoals": 0,
       "awayGoals": 0,
-      "status": "2H",
-      "elapsed": 90,
+      "status": "BT",
+      "elapsed": null,
       "kickoffUTC": "2026-07-07T20:00:00+00:00",
       "referee": "Iv\u00e1n Barton, El Salvador",
       "events": [
