@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-07T17:43:11.928680Z",
+  "updated": "2026-07-07T17:44:14.326179Z",
   "matches": {
     "ARGENTINA-EGYPT": {
       "fixtureId": 1576804,
@@ -33,6 +33,14 @@
           "player": "M. Ziko",
           "team": "EGYPT",
           "minute": 67,
+          "extra": null
+        },
+        {
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "player": "C. Romero",
+          "team": "ARGENTINA",
+          "minute": 79,
           "extra": null
         }
       ],
