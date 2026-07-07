@@ -1,16 +1,25 @@
 {
-  "updated": "2026-07-07T16:16:13.380317Z",
+  "updated": "2026-07-07T16:17:17.143573Z",
   "matches": {
     "ARGENTINA-EGYPT": {
       "fixtureId": 1576804,
       "round": "Round of 16",
       "homeGoals": 0,
-      "awayGoals": 0,
+      "awayGoals": 1,
       "status": "1H",
-      "elapsed": 15,
+      "elapsed": 16,
       "kickoffUTC": "2026-07-07T16:00:00+00:00",
       "referee": "Fran\u00e7ois Letexier, France",
-      "events": [],
+      "events": [
+        {
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "player": "Y. Ibrahim",
+          "team": "EGYPT",
+          "minute": 15,
+          "extra": null
+        }
+      ],
       "lineups": {
         "ARGENTINA": {
           "formation": "4-4-2",
