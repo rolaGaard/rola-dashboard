@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-07T22:49:11.375455Z",
+  "updated": "2026-07-07T22:50:42.029234Z",
   "matches": {
     "MEXICO-SOUTH AFRICA": {
       "fixtureId": 1489369,
@@ -36733,7 +36733,7 @@
       "kickoffUTC": "2026-07-07T20:00:00+00:00",
       "referee": "Iv\u00e1n Barton, El Salvador",
       "penaltyHome": 3,
-      "penaltyAway": 2,
+      "penaltyAway": 3,
       "events": [
         {
           "type": "Card",
@@ -36838,6 +36838,22 @@
           "team": "SWITZERLAND",
           "minute": 120,
           "extra": 4
+        },
+        {
+          "type": "Goal",
+          "detail": "Penalty",
+          "player": "L. Diaz",
+          "team": "COLOMBIA",
+          "minute": 120,
+          "extra": 5
+        },
+        {
+          "type": "Goal",
+          "detail": "Penalty",
+          "player": null,
+          "team": "SWITZERLAND",
+          "minute": 120,
+          "extra": 5
         }
       ],
       "substitutions": {
