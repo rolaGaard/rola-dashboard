@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-07T17:38:14.605965Z",
+  "updated": "2026-07-07T17:39:10.353065Z",
   "matches": {
     "ARGENTINA-EGYPT": {
       "fixtureId": 1576804,
@@ -28,14 +28,6 @@
           "extra": null
         },
         {
-          "type": "Card",
-          "detail": "Yellow Card",
-          "player": "M. Ziko",
-          "team": "EGYPT",
-          "minute": 61,
-          "extra": null
-        },
-        {
           "type": "Goal",
           "detail": "Normal Goal",
           "player": "M. Ziko",
@@ -54,7 +46,7 @@
           {
             "out": "H. Hassan",
             "in": "Trezeguet",
-            "minute": 74
+            "minute": 73
           }
         ],
         "ARGENTINA": [
