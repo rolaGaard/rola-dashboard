@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-07T23:28:11.380988Z",
+  "updated": "2026-07-07T23:29:09.363422Z",
   "matches": {
     "MEXICO-SOUTH AFRICA": {
       "fixtureId": 1489369,
@@ -37179,6 +37179,16 @@
       "status": "NS",
       "elapsed": null,
       "kickoffUTC": "2026-07-11T21:00:00+00:00",
+      "referee": null
+    },
+    "ARGENTINA-SWITZERLAND": {
+      "fixtureId": 1582681,
+      "round": "Quarter-finals",
+      "homeGoals": null,
+      "awayGoals": null,
+      "status": "NS",
+      "elapsed": null,
+      "kickoffUTC": "2026-07-12T01:00:00+00:00",
       "referee": null
     }
   }
