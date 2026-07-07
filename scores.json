@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-07T21:41:12.402324Z",
+  "updated": "2026-07-07T21:42:13.024960Z",
   "matches": {
     "MEXICO-SOUTH AFRICA": {
       "fixtureId": 1489369,
@@ -36729,7 +36729,7 @@
       "homeGoals": 0,
       "awayGoals": 0,
       "status": "2H",
-      "elapsed": 81,
+      "elapsed": 82,
       "kickoffUTC": "2026-07-07T20:00:00+00:00",
       "referee": "Iv\u00e1n Barton, El Salvador",
       "events": [
@@ -36781,6 +36781,11 @@
             "out": "Jhon Arias",
             "in": "Jaminton Campaz",
             "minute": 66
+          },
+          {
+            "out": "Luis Su\u00e1rez",
+            "in": "Cucho Hern\u00e1ndez",
+            "minute": 82
           }
         ]
       },
