@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-07T22:48:14.819220Z",
+  "updated": "2026-07-07T22:49:11.375455Z",
   "matches": {
     "MEXICO-SOUTH AFRICA": {
       "fixtureId": 1489369,
@@ -36732,7 +36732,7 @@
       "elapsed": null,
       "kickoffUTC": "2026-07-07T20:00:00+00:00",
       "referee": "Iv\u00e1n Barton, El Salvador",
-      "penaltyHome": 2,
+      "penaltyHome": 3,
       "penaltyAway": 2,
       "events": [
         {
@@ -36828,6 +36828,14 @@
           "detail": "Missed Penalty",
           "player": "C. Hernandez",
           "team": "COLOMBIA",
+          "minute": 120,
+          "extra": 4
+        },
+        {
+          "type": "Goal",
+          "detail": "Penalty",
+          "player": "C. Itten",
+          "team": "SWITZERLAND",
           "minute": 120,
           "extra": 4
         }
