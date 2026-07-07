@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-07T16:22:14.221426Z",
+  "updated": "2026-07-07T16:23:11.136988Z",
   "matches": {
     "ARGENTINA-EGYPT": {
       "fixtureId": 1576804,
@@ -7,7 +7,7 @@
       "homeGoals": 0,
       "awayGoals": 1,
       "status": "1H",
-      "elapsed": 21,
+      "elapsed": 22,
       "kickoffUTC": "2026-07-07T16:00:00+00:00",
       "referee": "Fran\u00e7ois Letexier, France",
       "events": [
@@ -17,6 +17,14 @@
           "player": "Y. Ibrahim",
           "team": "EGYPT",
           "minute": 15,
+          "extra": null
+        },
+        {
+          "type": "Goal",
+          "detail": "Missed Penalty",
+          "player": "L. Messi",
+          "team": "ARGENTINA",
+          "minute": 21,
           "extra": null
         }
       ],
