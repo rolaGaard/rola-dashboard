@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-07T22:46:12.222772Z",
+  "updated": "2026-07-07T22:47:11.525124Z",
   "matches": {
     "MEXICO-SOUTH AFRICA": {
       "fixtureId": 1489369,
@@ -36812,6 +36812,14 @@
           "detail": "Penalty",
           "player": "J. Campaz",
           "team": "COLOMBIA",
+          "minute": 120,
+          "extra": 3
+        },
+        {
+          "type": "Goal",
+          "detail": "Missed Penalty",
+          "player": "M. Akanji",
+          "team": "SWITZERLAND",
           "minute": 120,
           "extra": 3
         }
