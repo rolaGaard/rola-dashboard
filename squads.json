@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-30T11:46:21.373537Z",
+  "updated": "2026-07-07T11:53:11.571622Z",
   "squads": {
     "BELGIUM": [
       {
@@ -511,7 +511,7 @@
       {
         "name": "A. Elanga",
         "number": 11,
-        "position": "Attacker"
+        "position": "Midfielder"
       },
       {
         "name": "V. Gyökeres",
@@ -1517,7 +1517,7 @@
       {
         "name": "P. Ciss",
         "number": 6,
-        "position": "Midfielder"
+        "position": "Defender"
       },
       {
         "name": "H. Diarra",
@@ -3161,7 +3161,7 @@
       {
         "name": "Omar Marmoush",
         "number": 22,
-        "position": "Attacker"
+        "position": "Midfielder"
       },
       {
         "name": "Mohamed Salah",
@@ -4685,7 +4685,7 @@
       {
         "name": "H. Aouar",
         "number": 8,
-        "position": "Midfielder"
+        "position": "Attacker"
       },
       {
         "name": "N. Bentaleb",
@@ -4700,7 +4700,7 @@
       {
         "name": "I. Maza",
         "number": 22,
-        "position": "Midfielder"
+        "position": "Attacker"
       },
       {
         "name": "Y. Titraoui",
@@ -5696,7 +5696,7 @@
       {
         "name": "S. Dest",
         "number": 2,
-        "position": "Midfielder"
+        "position": "Attacker"
       },
       {
         "name": "A. Freeman",
