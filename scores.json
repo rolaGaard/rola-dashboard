@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-07T01:09:12.749493Z",
+  "updated": "2026-07-07T01:10:41.463985Z",
   "matches": {
     "USA-BELGIUM": {
       "fixtureId": 1570715,
@@ -7,7 +7,7 @@
       "homeGoals": 1,
       "awayGoals": 2,
       "status": "2H",
-      "elapsed": 46,
+      "elapsed": 47,
       "kickoffUTC": "2026-07-07T00:00:00+00:00",
       "referee": "Adham Mohammad, Jordan",
       "events": [
@@ -50,6 +50,13 @@
             "out": "A. Onana",
             "in": "H. Vanaken",
             "minute": 21
+          }
+        ],
+        "USA": [
+          {
+            "out": "S. Dest",
+            "in": "G. Reyna",
+            "minute": 46
           }
         ]
       },
