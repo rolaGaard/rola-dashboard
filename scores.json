@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-07T22:45:26.116184Z",
+  "updated": "2026-07-07T22:46:12.222772Z",
   "matches": {
     "MEXICO-SOUTH AFRICA": {
       "fixtureId": 1489369,
@@ -36733,7 +36733,7 @@
       "kickoffUTC": "2026-07-07T20:00:00+00:00",
       "referee": "Iv\u00e1n Barton, El Salvador",
       "penaltyHome": 2,
-      "penaltyAway": 1,
+      "penaltyAway": 2,
       "events": [
         {
           "type": "Card",
@@ -36802,10 +36802,18 @@
         {
           "type": "Goal",
           "detail": "Penalty",
-          "player": null,
+          "player": "Z. Amdouni",
           "team": "SWITZERLAND",
           "minute": 120,
           "extra": 2
+        },
+        {
+          "type": "Goal",
+          "detail": "Penalty",
+          "player": "J. Campaz",
+          "team": "COLOMBIA",
+          "minute": 120,
+          "extra": 3
         }
       ],
       "substitutions": {
