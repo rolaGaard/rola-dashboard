@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-07T01:53:09.867529Z",
+  "updated": "2026-07-07T01:54:11.665525Z",
   "matches": {
     "USA-BELGIUM": {
       "fixtureId": 1570715,
@@ -7,7 +7,7 @@
       "homeGoals": 1,
       "awayGoals": 3,
       "status": "2H",
-      "elapsed": 89,
+      "elapsed": 90,
       "kickoffUTC": "2026-07-07T00:00:00+00:00",
       "referee": "Adham Mohammad, Jordan",
       "events": [
@@ -80,6 +80,11 @@
           {
             "out": "L. Trossard",
             "in": "A. Saelemaekers",
+            "minute": 89
+          },
+          {
+            "out": "N. Raskin",
+            "in": "A. Witsel",
             "minute": 89
           }
         ],
