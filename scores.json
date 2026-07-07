@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-07T22:50:42.029234Z",
+  "updated": "2026-07-07T22:51:10.387932Z",
   "matches": {
     "MEXICO-SOUTH AFRICA": {
       "fixtureId": 1489369,
@@ -36693,46 +36693,16 @@
         }
       }
     },
-    "FRANCE-MOROCCO": {
-      "fixtureId": 1578539,
-      "round": "Quarter-finals",
-      "homeGoals": null,
-      "awayGoals": null,
-      "status": "NS",
-      "elapsed": null,
-      "kickoffUTC": "2026-07-09T20:00:00+00:00",
-      "referee": null
-    },
-    "SPAIN-BELGIUM": {
-      "fixtureId": 1581821,
-      "round": "Quarter-finals",
-      "homeGoals": null,
-      "awayGoals": null,
-      "status": "NS",
-      "elapsed": null,
-      "kickoffUTC": "2026-07-10T19:00:00+00:00",
-      "referee": null
-    },
-    "NORWAY-ENGLAND": {
-      "fixtureId": 1581037,
-      "round": "Quarter-finals",
-      "homeGoals": null,
-      "awayGoals": null,
-      "status": "NS",
-      "elapsed": null,
-      "kickoffUTC": "2026-07-11T21:00:00+00:00",
-      "referee": null
-    },
     "SWITZERLAND-COLOMBIA": {
       "fixtureId": 1576805,
       "round": "Round of 16",
       "homeGoals": 0,
       "awayGoals": 0,
-      "status": "P",
-      "elapsed": null,
+      "status": "PEN",
+      "elapsed": 120,
       "kickoffUTC": "2026-07-07T20:00:00+00:00",
       "referee": "Iv\u00e1n Barton, El Salvador",
-      "penaltyHome": 3,
+      "penaltyHome": 4,
       "penaltyAway": 3,
       "events": [
         {
@@ -37180,6 +37150,36 @@
           ]
         }
       }
+    },
+    "FRANCE-MOROCCO": {
+      "fixtureId": 1578539,
+      "round": "Quarter-finals",
+      "homeGoals": null,
+      "awayGoals": null,
+      "status": "NS",
+      "elapsed": null,
+      "kickoffUTC": "2026-07-09T20:00:00+00:00",
+      "referee": null
+    },
+    "SPAIN-BELGIUM": {
+      "fixtureId": 1581821,
+      "round": "Quarter-finals",
+      "homeGoals": null,
+      "awayGoals": null,
+      "status": "NS",
+      "elapsed": null,
+      "kickoffUTC": "2026-07-10T19:00:00+00:00",
+      "referee": null
+    },
+    "NORWAY-ENGLAND": {
+      "fixtureId": 1581037,
+      "round": "Quarter-finals",
+      "homeGoals": null,
+      "awayGoals": null,
+      "status": "NS",
+      "elapsed": null,
+      "kickoffUTC": "2026-07-11T21:00:00+00:00",
+      "referee": null
     }
   }
 }
