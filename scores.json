@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-07T21:21:10.319478Z",
+  "updated": "2026-07-07T21:22:11.474331Z",
   "matches": {
     "MEXICO-SOUTH AFRICA": {
       "fixtureId": 1489369,
@@ -36729,7 +36729,7 @@
       "homeGoals": 0,
       "awayGoals": 0,
       "status": "2H",
-      "elapsed": 60,
+      "elapsed": 62,
       "kickoffUTC": "2026-07-07T20:00:00+00:00",
       "referee": "Iv\u00e1n Barton, El Salvador",
       "events": [
@@ -36747,6 +36747,14 @@
           "player": "Denis Zakaria",
           "team": "SWITZERLAND",
           "minute": 59,
+          "extra": null
+        },
+        {
+          "type": "Card",
+          "detail": "Yellow Card",
+          "player": "Luis Su\u00e1rez",
+          "team": "COLOMBIA",
+          "minute": 60,
           "extra": null
         }
       ],
