@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-07T00:35:17.236097Z",
+  "updated": "2026-07-07T00:36:12.085061Z",
   "matches": {
     "USA-BELGIUM": {
       "fixtureId": 1570715,
@@ -7,7 +7,7 @@
       "homeGoals": 1,
       "awayGoals": 2,
       "status": "1H",
-      "elapsed": 35,
+      "elapsed": 36,
       "kickoffUTC": "2026-07-07T00:00:00+00:00",
       "referee": "Adham Mohammad, Jordan",
       "events": [
@@ -33,6 +33,14 @@
           "player": "C. De Ketelaere",
           "team": "BELGIUM",
           "minute": 33,
+          "extra": null
+        },
+        {
+          "type": "Card",
+          "detail": "Yellow Card",
+          "player": "W. McKennie",
+          "team": "USA",
+          "minute": 35,
           "extra": null
         }
       ],
