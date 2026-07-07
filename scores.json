@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-07T22:42:14.351304Z",
+  "updated": "2026-07-07T22:43:10.118394Z",
   "matches": {
     "MEXICO-SOUTH AFRICA": {
       "fixtureId": 1489369,
@@ -36732,7 +36732,7 @@
       "elapsed": null,
       "kickoffUTC": "2026-07-07T20:00:00+00:00",
       "referee": "Iv\u00e1n Barton, El Salvador",
-      "penaltyHome": 0,
+      "penaltyHome": 1,
       "penaltyAway": 1,
       "events": [
         {
@@ -36780,6 +36780,14 @@
           "detail": "Penalty",
           "player": "J. Quintero",
           "team": "COLOMBIA",
+          "minute": 120,
+          "extra": 1
+        },
+        {
+          "type": "Goal",
+          "detail": "Penalty",
+          "player": "G. Xhaka",
+          "team": "SWITZERLAND",
           "minute": 120,
           "extra": 1
         }
