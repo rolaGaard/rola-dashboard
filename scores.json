@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-07T17:29:11.420930Z",
+  "updated": "2026-07-07T17:30:56.576586Z",
   "matches": {
     "ARGENTINA-EGYPT": {
       "fixtureId": 1576804,
@@ -7,7 +7,7 @@
       "homeGoals": 0,
       "awayGoals": 1,
       "status": "2H",
-      "elapsed": 65,
+      "elapsed": 67,
       "kickoffUTC": "2026-07-07T16:00:00+00:00",
       "referee": "Fran\u00e7ois Letexier, France",
       "events": [
@@ -42,6 +42,18 @@
             "out": "E. Ashour",
             "in": "H. Fathy",
             "minute": 46
+          }
+        ],
+        "ARGENTINA": [
+          {
+            "out": "N. Tagliafico",
+            "in": "N. Gonzalez",
+            "minute": 66
+          },
+          {
+            "out": "R. de Paul",
+            "in": "L. Martinez",
+            "minute": 66
           }
         ]
       },
