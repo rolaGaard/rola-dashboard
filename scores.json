@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-07T17:48:13.055449Z",
+  "updated": "2026-07-07T17:49:12.184866Z",
   "matches": {
     "ARGENTINA-EGYPT": {
       "fixtureId": 1576804,
@@ -48,7 +48,7 @@
           "detail": "Normal Goal",
           "player": "L. Messi",
           "team": "ARGENTINA",
-          "minute": 84,
+          "minute": 83,
           "extra": null
         }
       ],
