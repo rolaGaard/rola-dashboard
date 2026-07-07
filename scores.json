@@ -1,306 +1,6 @@
 {
-  "updated": "2026-07-07T21:19:10.712279Z",
+  "updated": "2026-07-07T21:20:44.671465Z",
   "matches": {
-    "SWITZERLAND-COLOMBIA": {
-      "fixtureId": 1576805,
-      "round": "Round of 16",
-      "homeGoals": 0,
-      "awayGoals": 0,
-      "status": "2H",
-      "elapsed": 60,
-      "kickoffUTC": "2026-07-07T20:00:00+00:00",
-      "referee": "Iv\u00e1n Barton, El Salvador",
-      "events": [
-        {
-          "type": "Card",
-          "detail": "Yellow Card",
-          "player": "Granit Xhaka",
-          "team": "SWITZERLAND",
-          "minute": 51,
-          "extra": null
-        },
-        {
-          "type": "Card",
-          "detail": "Yellow Card",
-          "player": "Denis Zakaria",
-          "team": "SWITZERLAND",
-          "minute": 59,
-          "extra": null
-        }
-      ],
-      "substitutions": {
-        "SWITZERLAND": [
-          {
-            "out": "Ardon Jashari",
-            "in": "Djibril Sow",
-            "minute": 45
-          }
-        ]
-      },
-      "lineups": {
-        "SWITZERLAND": {
-          "formation": "4-2-3-1",
-          "coach": "Murat Yakin",
-          "startXI": [
-            {
-              "name": "Gregor Kobel",
-              "number": 1,
-              "pos": "G"
-            },
-            {
-              "name": "Denis Zakaria",
-              "number": 6,
-              "pos": "D"
-            },
-            {
-              "name": "Nico Elvedi",
-              "number": 4,
-              "pos": "D"
-            },
-            {
-              "name": "Manuel Akanji",
-              "number": 5,
-              "pos": "D"
-            },
-            {
-              "name": "Ricardo Rodr\u00edguez",
-              "number": 13,
-              "pos": "D"
-            },
-            {
-              "name": "Remo Freuler",
-              "number": 8,
-              "pos": "M"
-            },
-            {
-              "name": "Granit Xhaka",
-              "number": 10,
-              "pos": "M"
-            },
-            {
-              "name": "Fabian Rieder",
-              "number": 22,
-              "pos": "M"
-            },
-            {
-              "name": "Ardon Jashari",
-              "number": 14,
-              "pos": "M"
-            },
-            {
-              "name": "Dan Ndoye",
-              "number": 11,
-              "pos": "M"
-            },
-            {
-              "name": "Breel Embolo",
-              "number": 7,
-              "pos": "F"
-            }
-          ],
-          "substitutes": [
-            {
-              "name": "Yvon Mvogo",
-              "number": 12,
-              "pos": "G"
-            },
-            {
-              "name": "Marvin Keller",
-              "number": 21,
-              "pos": "G"
-            },
-            {
-              "name": "Eray C\u00f6mert",
-              "number": 18,
-              "pos": "D"
-            },
-            {
-              "name": "Aur\u00e8le Amenda",
-              "number": 24,
-              "pos": "D"
-            },
-            {
-              "name": "Miro Muheim",
-              "number": 2,
-              "pos": "D"
-            },
-            {
-              "name": "Silvan Widmer",
-              "number": 3,
-              "pos": "D"
-            },
-            {
-              "name": "Djibril Sow",
-              "number": 15,
-              "pos": "M"
-            },
-            {
-              "name": "Christian Fassnacht",
-              "number": 16,
-              "pos": "M"
-            },
-            {
-              "name": "Rub\u00e9n Vargas",
-              "number": 17,
-              "pos": "M"
-            },
-            {
-              "name": "Noah Okafor",
-              "number": 19,
-              "pos": "F"
-            },
-            {
-              "name": "Zeki Amdouni",
-              "number": 23,
-              "pos": "F"
-            },
-            {
-              "name": "C\u00e9dric Itten",
-              "number": 26,
-              "pos": "F"
-            }
-          ]
-        },
-        "COLOMBIA": {
-          "formation": "4-3-3",
-          "coach": "Nestor Lorenzo",
-          "startXI": [
-            {
-              "name": "Camilo Vargas",
-              "number": 12,
-              "pos": "G"
-            },
-            {
-              "name": "Daniel Mu\u00f1oz",
-              "number": 2,
-              "pos": "D"
-            },
-            {
-              "name": "Davinson S\u00e1nchez",
-              "number": 23,
-              "pos": "D"
-            },
-            {
-              "name": "Jhon Lucum\u00ed",
-              "number": 3,
-              "pos": "D"
-            },
-            {
-              "name": "Johan Mojica",
-              "number": 17,
-              "pos": "D"
-            },
-            {
-              "name": "Gustavo Puerta",
-              "number": 14,
-              "pos": "M"
-            },
-            {
-              "name": "Jefferson Lerma",
-              "number": 16,
-              "pos": "M"
-            },
-            {
-              "name": "Jhon Arias",
-              "number": 11,
-              "pos": "M"
-            },
-            {
-              "name": "James Rodr\u00edguez",
-              "number": 10,
-              "pos": "F"
-            },
-            {
-              "name": "Luis Javier Su\u00e1rez",
-              "number": 25,
-              "pos": "F"
-            },
-            {
-              "name": "Luis D\u00edaz",
-              "number": 7,
-              "pos": "F"
-            }
-          ],
-          "substitutes": [
-            {
-              "name": "David Ospina",
-              "number": 1,
-              "pos": "G"
-            },
-            {
-              "name": "\u00c1lvaro Montero",
-              "number": 24,
-              "pos": "G"
-            },
-            {
-              "name": "Santiago Arias",
-              "number": 4,
-              "pos": "D"
-            },
-            {
-              "name": "Yerry Mina",
-              "number": 13,
-              "pos": "D"
-            },
-            {
-              "name": "Willer Ditta",
-              "number": 18,
-              "pos": "D"
-            },
-            {
-              "name": "Deiver Machado",
-              "number": 22,
-              "pos": "D"
-            },
-            {
-              "name": "Kevin Casta\u00f1o",
-              "number": 5,
-              "pos": "M"
-            },
-            {
-              "name": "Richard R\u00edos",
-              "number": 6,
-              "pos": "M"
-            },
-            {
-              "name": "Jorge Carrascal",
-              "number": 8,
-              "pos": "M"
-            },
-            {
-              "name": "Juan Portilla",
-              "number": 15,
-              "pos": "M"
-            },
-            {
-              "name": "Juan Fernando Quintero",
-              "number": 20,
-              "pos": "M"
-            },
-            {
-              "name": "Andr\u00e9s G\u00f3mez",
-              "number": 26,
-              "pos": "F"
-            },
-            {
-              "name": "Jaminton Campaz",
-              "number": 21,
-              "pos": "M"
-            },
-            {
-              "name": "Jhon C\u00f3rdoba",
-              "number": 9,
-              "pos": "F"
-            },
-            {
-              "name": "Cucho Hern\u00e1ndez",
-              "number": 19,
-              "pos": "F"
-            }
-          ]
-        }
-      }
-    },
     "MEXICO-SOUTH AFRICA": {
       "fixtureId": 1489369,
       "round": "Group Stage - 1",
@@ -37022,6 +36722,306 @@
       "elapsed": null,
       "kickoffUTC": "2026-07-11T21:00:00+00:00",
       "referee": null
+    },
+    "SWITZERLAND-COLOMBIA": {
+      "fixtureId": 1576805,
+      "round": "Round of 16",
+      "homeGoals": 0,
+      "awayGoals": 0,
+      "status": "2H",
+      "elapsed": 60,
+      "kickoffUTC": "2026-07-07T20:00:00+00:00",
+      "referee": "Iv\u00e1n Barton, El Salvador",
+      "events": [
+        {
+          "type": "Card",
+          "detail": "Yellow Card",
+          "player": "Granit Xhaka",
+          "team": "SWITZERLAND",
+          "minute": 51,
+          "extra": null
+        },
+        {
+          "type": "Card",
+          "detail": "Yellow Card",
+          "player": "Denis Zakaria",
+          "team": "SWITZERLAND",
+          "minute": 59,
+          "extra": null
+        }
+      ],
+      "substitutions": {
+        "SWITZERLAND": [
+          {
+            "out": "Ardon Jashari",
+            "in": "Djibril Sow",
+            "minute": 45
+          }
+        ]
+      },
+      "lineups": {
+        "SWITZERLAND": {
+          "formation": "4-2-3-1",
+          "coach": "Murat Yakin",
+          "startXI": [
+            {
+              "name": "Gregor Kobel",
+              "number": 1,
+              "pos": "G"
+            },
+            {
+              "name": "Denis Zakaria",
+              "number": 6,
+              "pos": "D"
+            },
+            {
+              "name": "Nico Elvedi",
+              "number": 4,
+              "pos": "D"
+            },
+            {
+              "name": "Manuel Akanji",
+              "number": 5,
+              "pos": "D"
+            },
+            {
+              "name": "Ricardo Rodr\u00edguez",
+              "number": 13,
+              "pos": "D"
+            },
+            {
+              "name": "Remo Freuler",
+              "number": 8,
+              "pos": "M"
+            },
+            {
+              "name": "Granit Xhaka",
+              "number": 10,
+              "pos": "M"
+            },
+            {
+              "name": "Fabian Rieder",
+              "number": 22,
+              "pos": "M"
+            },
+            {
+              "name": "Ardon Jashari",
+              "number": 14,
+              "pos": "M"
+            },
+            {
+              "name": "Dan Ndoye",
+              "number": 11,
+              "pos": "M"
+            },
+            {
+              "name": "Breel Embolo",
+              "number": 7,
+              "pos": "F"
+            }
+          ],
+          "substitutes": [
+            {
+              "name": "Yvon Mvogo",
+              "number": 12,
+              "pos": "G"
+            },
+            {
+              "name": "Marvin Keller",
+              "number": 21,
+              "pos": "G"
+            },
+            {
+              "name": "Eray C\u00f6mert",
+              "number": 18,
+              "pos": "D"
+            },
+            {
+              "name": "Aur\u00e8le Amenda",
+              "number": 24,
+              "pos": "D"
+            },
+            {
+              "name": "Miro Muheim",
+              "number": 2,
+              "pos": "D"
+            },
+            {
+              "name": "Silvan Widmer",
+              "number": 3,
+              "pos": "D"
+            },
+            {
+              "name": "Djibril Sow",
+              "number": 15,
+              "pos": "M"
+            },
+            {
+              "name": "Christian Fassnacht",
+              "number": 16,
+              "pos": "M"
+            },
+            {
+              "name": "Rub\u00e9n Vargas",
+              "number": 17,
+              "pos": "M"
+            },
+            {
+              "name": "Noah Okafor",
+              "number": 19,
+              "pos": "F"
+            },
+            {
+              "name": "Zeki Amdouni",
+              "number": 23,
+              "pos": "F"
+            },
+            {
+              "name": "C\u00e9dric Itten",
+              "number": 26,
+              "pos": "F"
+            }
+          ]
+        },
+        "COLOMBIA": {
+          "formation": "4-3-3",
+          "coach": "Nestor Lorenzo",
+          "startXI": [
+            {
+              "name": "Camilo Vargas",
+              "number": 12,
+              "pos": "G"
+            },
+            {
+              "name": "Daniel Mu\u00f1oz",
+              "number": 2,
+              "pos": "D"
+            },
+            {
+              "name": "Davinson S\u00e1nchez",
+              "number": 23,
+              "pos": "D"
+            },
+            {
+              "name": "Jhon Lucum\u00ed",
+              "number": 3,
+              "pos": "D"
+            },
+            {
+              "name": "Johan Mojica",
+              "number": 17,
+              "pos": "D"
+            },
+            {
+              "name": "Gustavo Puerta",
+              "number": 14,
+              "pos": "M"
+            },
+            {
+              "name": "Jefferson Lerma",
+              "number": 16,
+              "pos": "M"
+            },
+            {
+              "name": "Jhon Arias",
+              "number": 11,
+              "pos": "M"
+            },
+            {
+              "name": "James Rodr\u00edguez",
+              "number": 10,
+              "pos": "F"
+            },
+            {
+              "name": "Luis Javier Su\u00e1rez",
+              "number": 25,
+              "pos": "F"
+            },
+            {
+              "name": "Luis D\u00edaz",
+              "number": 7,
+              "pos": "F"
+            }
+          ],
+          "substitutes": [
+            {
+              "name": "David Ospina",
+              "number": 1,
+              "pos": "G"
+            },
+            {
+              "name": "\u00c1lvaro Montero",
+              "number": 24,
+              "pos": "G"
+            },
+            {
+              "name": "Santiago Arias",
+              "number": 4,
+              "pos": "D"
+            },
+            {
+              "name": "Yerry Mina",
+              "number": 13,
+              "pos": "D"
+            },
+            {
+              "name": "Willer Ditta",
+              "number": 18,
+              "pos": "D"
+            },
+            {
+              "name": "Deiver Machado",
+              "number": 22,
+              "pos": "D"
+            },
+            {
+              "name": "Kevin Casta\u00f1o",
+              "number": 5,
+              "pos": "M"
+            },
+            {
+              "name": "Richard R\u00edos",
+              "number": 6,
+              "pos": "M"
+            },
+            {
+              "name": "Jorge Carrascal",
+              "number": 8,
+              "pos": "M"
+            },
+            {
+              "name": "Juan Portilla",
+              "number": 15,
+              "pos": "M"
+            },
+            {
+              "name": "Juan Fernando Quintero",
+              "number": 20,
+              "pos": "M"
+            },
+            {
+              "name": "Andr\u00e9s G\u00f3mez",
+              "number": 26,
+              "pos": "F"
+            },
+            {
+              "name": "Jaminton Campaz",
+              "number": 21,
+              "pos": "M"
+            },
+            {
+              "name": "Jhon C\u00f3rdoba",
+              "number": 9,
+              "pos": "F"
+            },
+            {
+              "name": "Cucho Hern\u00e1ndez",
+              "number": 19,
+              "pos": "F"
+            }
+          ]
+        }
+      }
     }
   }
 }
