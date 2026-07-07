@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-07T21:42:13.024960Z",
+  "updated": "2026-07-07T21:43:12.864579Z",
   "matches": {
     "MEXICO-SOUTH AFRICA": {
       "fixtureId": 1489369,
@@ -36729,7 +36729,7 @@
       "homeGoals": 0,
       "awayGoals": 0,
       "status": "2H",
-      "elapsed": 82,
+      "elapsed": 83,
       "kickoffUTC": "2026-07-07T20:00:00+00:00",
       "referee": "Iv\u00e1n Barton, El Salvador",
       "events": [
@@ -36781,6 +36781,11 @@
             "out": "Jhon Arias",
             "in": "Jaminton Campaz",
             "minute": 66
+          },
+          {
+            "out": "Jefferson Lerma",
+            "in": "Richard R\u00edos Montoya",
+            "minute": 82
           },
           {
             "out": "Luis Su\u00e1rez",
