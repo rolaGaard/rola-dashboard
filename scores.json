@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-07T21:10:45.240226Z",
+  "updated": "2026-07-07T21:11:10.090334Z",
   "matches": {
     "MEXICO-SOUTH AFRICA": {
       "fixtureId": 1489369,
@@ -36732,7 +36732,16 @@
       "elapsed": 51,
       "kickoffUTC": "2026-07-07T20:00:00+00:00",
       "referee": "Iv\u00e1n Barton, El Salvador",
-      "events": [],
+      "events": [
+        {
+          "type": "Card",
+          "detail": "Yellow Card",
+          "player": "Granit Xhaka",
+          "team": "SWITZERLAND",
+          "minute": 51,
+          "extra": null
+        }
+      ],
       "substitutions": {
         "SWITZERLAND": [
           {
