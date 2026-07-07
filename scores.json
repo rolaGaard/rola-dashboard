@@ -1,13 +1,13 @@
 {
-  "updated": "2026-07-07T01:08:12.107247Z",
+  "updated": "2026-07-07T01:09:12.749493Z",
   "matches": {
     "USA-BELGIUM": {
       "fixtureId": 1570715,
       "round": "Round of 16",
       "homeGoals": 1,
       "awayGoals": 2,
-      "status": "HT",
-      "elapsed": 45,
+      "status": "2H",
+      "elapsed": 46,
       "kickoffUTC": "2026-07-07T00:00:00+00:00",
       "referee": "Adham Mohammad, Jordan",
       "events": [
