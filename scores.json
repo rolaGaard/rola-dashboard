@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-07T22:12:12.540394Z",
+  "updated": "2026-07-07T22:13:11.314570Z",
   "matches": {
     "SWITZERLAND-COLOMBIA": {
       "fixtureId": 1576805,
@@ -7,7 +7,7 @@
       "homeGoals": 0,
       "awayGoals": 0,
       "status": "ET",
-      "elapsed": 103,
+      "elapsed": 104,
       "kickoffUTC": "2026-07-07T20:00:00+00:00",
       "referee": "Iv\u00e1n Barton, El Salvador",
       "events": [
@@ -70,6 +70,11 @@
             "out": "D. Ndoye",
             "in": "R. Vargas",
             "minute": 90
+          },
+          {
+            "out": "F. Rieder",
+            "in": "Z. Amdouni",
+            "minute": 103
           }
         ],
         "COLOMBIA": [
