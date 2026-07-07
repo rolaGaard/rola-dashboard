@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-07T17:59:09.801205Z",
+  "updated": "2026-07-07T18:01:11.409821Z",
   "matches": {
     "ARGENTINA-EGYPT": {
       "fixtureId": 1576804,
@@ -62,18 +62,18 @@
         {
           "type": "Card",
           "detail": "Yellow Card",
-          "player": "H. Fathy",
+          "player": "M. Shobeir",
           "team": "EGYPT",
           "minute": 90,
-          "extra": 5
+          "extra": 3
         },
         {
           "type": "Card",
           "detail": "Yellow Card",
-          "player": "M. Shobeir",
+          "player": "H. Fathy",
           "team": "EGYPT",
           "minute": 90,
-          "extra": 5
+          "extra": 4
         }
       ],
       "substitutions": {
@@ -92,6 +92,11 @@
             "out": "M. Ziko",
             "in": "O. Marmoush",
             "minute": 80
+          },
+          {
+            "out": "M. Lasheen",
+            "in": "Zizo",
+            "minute": 90
           }
         ],
         "ARGENTINA": [
@@ -109,6 +114,16 @@
             "out": "N. Molina",
             "in": "G. Montiel",
             "minute": 73
+          },
+          {
+            "out": "C. Romero",
+            "in": "N. Otamendi",
+            "minute": 90
+          },
+          {
+            "out": "J. Alvarez",
+            "in": "F. Medina",
+            "minute": 90
           }
         ]
       },
