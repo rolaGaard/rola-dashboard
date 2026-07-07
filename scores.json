@@ -1,12 +1,12 @@
 {
-  "updated": "2026-07-07T16:53:10.729639Z",
+  "updated": "2026-07-07T16:54:13.691927Z",
   "matches": {
     "ARGENTINA-EGYPT": {
       "fixtureId": 1576804,
       "round": "Round of 16",
       "homeGoals": 0,
       "awayGoals": 1,
-      "status": "1H",
+      "status": "HT",
       "elapsed": 45,
       "kickoffUTC": "2026-07-07T16:00:00+00:00",
       "referee": "Fran\u00e7ois Letexier, France",
