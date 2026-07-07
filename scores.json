@@ -1,10 +1,10 @@
 {
-  "updated": "2026-07-07T17:56:14.959154Z",
+  "updated": "2026-07-07T17:57:10.343527Z",
   "matches": {
     "ARGENTINA-EGYPT": {
       "fixtureId": 1576804,
       "round": "Round of 16",
-      "homeGoals": 2,
+      "homeGoals": 3,
       "awayGoals": 2,
       "status": "2H",
       "elapsed": 90,
@@ -50,6 +50,14 @@
           "team": "ARGENTINA",
           "minute": 83,
           "extra": null
+        },
+        {
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "player": "E. Fernandez",
+          "team": "ARGENTINA",
+          "minute": 90,
+          "extra": 2
         }
       ],
       "substitutions": {
