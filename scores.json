@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-07T22:44:13.413288Z",
+  "updated": "2026-07-07T22:45:26.116184Z",
   "matches": {
     "MEXICO-SOUTH AFRICA": {
       "fixtureId": 1489369,
@@ -36732,7 +36732,7 @@
       "elapsed": null,
       "kickoffUTC": "2026-07-07T20:00:00+00:00",
       "referee": "Iv\u00e1n Barton, El Salvador",
-      "penaltyHome": 1,
+      "penaltyHome": 2,
       "penaltyAway": 1,
       "events": [
         {
@@ -36790,6 +36790,22 @@
           "team": "SWITZERLAND",
           "minute": 120,
           "extra": 1
+        },
+        {
+          "type": "Goal",
+          "detail": "Missed Penalty",
+          "player": "D. Sanchez",
+          "team": "COLOMBIA",
+          "minute": 120,
+          "extra": 2
+        },
+        {
+          "type": "Goal",
+          "detail": "Penalty",
+          "player": null,
+          "team": "SWITZERLAND",
+          "minute": 120,
+          "extra": 2
         }
       ],
       "substitutions": {
