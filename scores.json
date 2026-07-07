@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-07T16:58:12.376734Z",
+  "updated": "2026-07-07T16:59:13.784066Z",
   "matches": {
     "ARGENTINA-EGYPT": {
       "fixtureId": 1576804,
@@ -14,7 +14,7 @@
         {
           "type": "Goal",
           "detail": "Normal Goal",
-          "player": "Y. Ibrahim",
+          "player": "Yasser Ibrahim Hanafi",
           "team": "EGYPT",
           "minute": 15,
           "extra": null
@@ -22,7 +22,7 @@
         {
           "type": "Goal",
           "detail": "Missed Penalty",
-          "player": "L. Messi",
+          "player": "Lionel Messi",
           "team": "ARGENTINA",
           "minute": 21,
           "extra": null
