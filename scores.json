@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-07T04:07:12.034099Z",
+  "updated": "2026-07-07T04:08:12.730592Z",
   "matches": {
     "MEXICO-SOUTH AFRICA": {
       "fixtureId": 1489369,
@@ -21568,7 +21568,7 @@
       "status": "FT",
       "elapsed": 90,
       "kickoffUTC": "2026-06-25T23:00:00+00:00",
-      "referee": "I. Barton",
+      "referee": "Iv\u00e1n Barton, El Salvador",
       "events": [
         {
           "type": "Card",
@@ -22317,7 +22317,7 @@
       "status": "FT",
       "elapsed": 90,
       "kickoffUTC": "2026-06-26T02:00:00+00:00",
-      "referee": "M. Ghorbal",
+      "referee": "Mustapha Ghorbal, Algeria",
       "events": [
         {
           "type": "Goal",
@@ -22706,7 +22706,7 @@
       "status": "FT",
       "elapsed": 90,
       "kickoffUTC": "2026-06-26T02:00:00+00:00",
-      "referee": "C. Turpin",
+      "referee": "Clement Turpin, France",
       "events": [
         {
           "type": "Card",
@@ -23043,7 +23043,7 @@
       "status": "FT",
       "elapsed": 90,
       "kickoffUTC": "2026-06-26T19:00:00+00:00",
-      "referee": "A. Taylor",
+      "referee": "Anthony Taylor, England",
       "events": [
         {
           "type": "Goal",
@@ -23464,7 +23464,7 @@
       "status": "FT",
       "elapsed": 90,
       "kickoffUTC": "2026-06-26T19:00:00+00:00",
-      "referee": "M. Oliver",
+      "referee": "Michael Oliver, England",
       "events": [
         {
           "type": "Goal",
@@ -23874,7 +23874,7 @@
       "status": "FT",
       "elapsed": 90,
       "kickoffUTC": "2026-06-27T00:00:00+00:00",
-      "referee": "I. Elfath",
+      "referee": "Ismail Elfath, USA",
       "events": [
         {
           "type": "Goal",
@@ -24263,7 +24263,7 @@
       "status": "FT",
       "elapsed": 90,
       "kickoffUTC": "2026-06-27T00:00:00+00:00",
-      "referee": "F. Letexier",
+      "referee": "Fran\u00e7ois Letexier, France",
       "events": [
         {
           "type": "Card",
@@ -24631,7 +24631,7 @@
       "status": "FT",
       "elapsed": 90,
       "kickoffUTC": "2026-06-27T03:00:00+00:00",
-      "referee": "S. Marciniak",
+      "referee": "Szymon Marciniak, Poland",
       "events": [
         {
           "type": "Goal",
@@ -25037,7 +25037,7 @@
       "status": "FT",
       "elapsed": 90,
       "kickoffUTC": "2026-06-27T03:00:00+00:00",
-      "referee": "A. Makhadmeh",
+      "referee": "Adham Mohammad, Jordan",
       "events": [
         {
           "type": "Goal",
@@ -25445,7 +25445,7 @@
       "status": "FT",
       "elapsed": 90,
       "kickoffUTC": "2026-06-27T21:00:00+00:00",
-      "referee": "D. Fischer",
+      "referee": "Drew Fischer, Canada",
       "events": [
         {
           "type": "Goal",
@@ -25826,7 +25826,7 @@
       "status": "FT",
       "elapsed": 90,
       "kickoffUTC": "2026-06-27T21:00:00+00:00",
-      "referee": "A. Al Jassim",
+      "referee": "Abdulrahman Al-Jassim, Qatar",
       "events": [
         {
           "type": "Card",
@@ -26207,7 +26207,7 @@
       "status": "FT",
       "elapsed": 90,
       "kickoffUTC": "2026-06-27T23:30:00+00:00",
-      "referee": "A. Faghani",
+      "referee": "Alireza Faghani, Australia",
       "events": [
         {
           "type": "Card",
@@ -26561,7 +26561,7 @@
       "status": "FT",
       "elapsed": 90,
       "kickoffUTC": "2026-06-27T23:30:00+00:00",
-      "referee": "F. Zwayer",
+      "referee": "Felix Zwayer, Germany",
       "events": [
         {
           "type": "Goal",
@@ -27773,7 +27773,7 @@
       "status": "FT",
       "elapsed": 90,
       "kickoffUTC": "2026-06-28T19:00:00+00:00",
-      "referee": "J. Pinheiro",
+      "referee": "Joao Pedro Pinheiro, Portugal",
       "events": [
         {
           "type": "Card",
@@ -28123,7 +28123,7 @@
       "status": "FT",
       "elapsed": 90,
       "kickoffUTC": "2026-06-29T17:00:00+00:00",
-      "referee": "M. Mariani",
+      "referee": "Maurizio Mariani, Italy",
       "events": [
         {
           "type": "Card",
@@ -28523,7 +28523,7 @@
       "status": "PEN",
       "elapsed": 120,
       "kickoffUTC": "2026-06-29T20:30:00+00:00",
-      "referee": "J. Jayed",
+      "referee": "Jalal Jayed, Morocco",
       "penaltyHome": 3,
       "penaltyAway": 4,
       "events": [
@@ -29376,7 +29376,7 @@
       "status": "FT",
       "elapsed": 90,
       "kickoffUTC": "2026-06-30T17:00:00+00:00",
-      "referee": "J. Valenzuela",
+      "referee": "Jes\u00fas Valenzuela, Venezuela",
       "events": [
         {
           "type": "Goal",
@@ -29744,7 +29744,7 @@
       "status": "FT",
       "elapsed": 90,
       "kickoffUTC": "2026-06-30T21:00:00+00:00",
-      "referee": "D. Makkelie",
+      "referee": "Danny Makkelie, Netherlands",
       "events": [
         {
           "type": "Goal",
@@ -30503,7 +30503,7 @@
       "status": "FT",
       "elapsed": 90,
       "kickoffUTC": "2026-07-01T16:00:00+00:00",
-      "referee": "A. Makhadmeh",
+      "referee": "Adham Mohammad, Jordan",
       "events": [
         {
           "type": "Goal",
@@ -30884,7 +30884,7 @@
       "status": "AET",
       "elapsed": 120,
       "kickoffUTC": "2026-07-01T20:00:00+00:00",
-      "referee": "S. Martinez",
+      "referee": "Said Martinez, Honduras",
       "events": [
         {
           "type": "Goal",
@@ -31652,7 +31652,7 @@
       "status": "FT",
       "elapsed": 90,
       "kickoffUTC": "2026-07-02T19:00:00+00:00",
-      "referee": "G. Nyberg",
+      "referee": "Glenn Nyberg, Sweden",
       "events": [
         {
           "type": "Goal",
@@ -32030,7 +32030,7 @@
       "status": "FT",
       "elapsed": 90,
       "kickoffUTC": "2026-07-02T23:00:00+00:00",
-      "referee": "E. Eskas",
+      "referee": "Espen Eskas, Norway",
       "events": [
         {
           "type": "Card",
@@ -32782,7 +32782,7 @@
       "status": "PEN",
       "elapsed": 120,
       "kickoffUTC": "2026-07-03T18:00:00+00:00",
-      "referee": "G. Tejera",
+      "referee": "Gustavo Tejera, Uruguay",
       "penaltyHome": 2,
       "penaltyAway": 4,
       "events": [
@@ -33142,7 +33142,7 @@
       "status": "AET",
       "elapsed": 120,
       "kickoffUTC": "2026-07-03T22:00:00+00:00",
-      "referee": "D. Fischer",
+      "referee": "Drew Fischer, Canada",
       "events": [
         {
           "type": "Goal",
@@ -33938,7 +33938,7 @@
       "status": "FT",
       "elapsed": 90,
       "kickoffUTC": "2026-07-04T17:00:00+00:00",
-      "referee": "M. Oliver",
+      "referee": "Michael Oliver, England",
       "events": [
         {
           "type": "Card",
@@ -34367,7 +34367,7 @@
       "status": "FT",
       "elapsed": 90,
       "kickoffUTC": "2026-07-04T21:00:00+00:00",
-      "referee": "I. Tantashev",
+      "referee": "Ilgiz Tantashev, Uzbekistan",
       "events": [
         {
           "type": "Card",
@@ -34725,7 +34725,7 @@
       "status": "FT",
       "elapsed": 90,
       "kickoffUTC": "2026-07-05T20:00:00+00:00",
-      "referee": "I. Elfath",
+      "referee": "Ismail Elfath, USA",
       "events": [
         {
           "type": "Goal",
