@@ -966,7 +966,7 @@
     <img class="header-icon" src="icons/icon-512.png" alt="rolaFixture">
     <div class="header-text">
       <div class="header-title">rolaFixture WC 2026</div>
-      <div class="header-by">by rolaGaard &nbsp;<span class="app-version">v5.0</span></div>
+      <div class="header-by">by rolaGaard &nbsp;<span class="app-version">v5.1</span></div>
       <div class="header-sub" id="header-sub">USA · Canadá · México</div>
     </div>
   </div>
@@ -3281,15 +3281,7 @@ function buildScorersRanking(allEvents) {
     if (!tally[key]) tally[key] = { player: e.player, team: e.team, goals: 0 };
     tally[key].goals++;
   });
-  return Object.values(tally).sort((a, b) => {
-    if (b.goals !== a.goals) return b.goals - a.goals;
-    // Easter egg del creador: si hay empate, Messi va primero
-    const isMessiA = a.player.toLowerCase().includes('messi');
-    const isMessiB = b.player.toLowerCase().includes('messi');
-    if (isMessiA && !isMessiB) return -1;
-    if (isMessiB && !isMessiA) return 1;
-    return 0;
-  });
+  return Object.values(tally).sort((a, b) => b.goals - a.goals);
 }
 
 // Tarjetas + lógica de suspensión por amarillas acumuladas, según la regla
