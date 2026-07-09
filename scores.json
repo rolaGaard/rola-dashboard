@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-09T21:41:12.236484Z",
+  "updated": "2026-07-09T21:42:11.990225Z",
   "matches": {
     "FRANCE-MOROCCO": {
       "fixtureId": 1578539,
@@ -7,7 +7,7 @@
       "homeGoals": 2,
       "awayGoals": 0,
       "status": "2H",
-      "elapsed": 77,
+      "elapsed": 78,
       "kickoffUTC": "2026-07-09T20:00:00+00:00",
       "referee": "Facundo Raul Tello Figueroa, Argentina",
       "events": [
@@ -72,6 +72,16 @@
             "out": "M. Kone",
             "in": "W. Zaire-Emery",
             "minute": 71
+          },
+          {
+            "out": "K. Mbappe",
+            "in": "J. Mateta",
+            "minute": 77
+          },
+          {
+            "out": "D. Doue",
+            "in": "B. Barcola",
+            "minute": 78
           }
         ]
       },
