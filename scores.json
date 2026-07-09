@@ -1,12 +1,12 @@
 {
-  "updated": "2026-07-09T20:51:12.190993Z",
+  "updated": "2026-07-09T20:52:13.041452Z",
   "matches": {
     "FRANCE-MOROCCO": {
       "fixtureId": 1578539,
       "round": "Quarter-finals",
       "homeGoals": 0,
       "awayGoals": 0,
-      "status": "1H",
+      "status": "HT",
       "elapsed": 45,
       "kickoffUTC": "2026-07-09T20:00:00+00:00",
       "referee": "Facundo Raul Tello Figueroa, Argentina",
