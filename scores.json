@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-09T21:25:19.840164Z",
+  "updated": "2026-07-09T21:26:13.390851Z",
   "matches": {
     "FRANCE-MOROCCO": {
       "fixtureId": 1578539,
@@ -7,7 +7,7 @@
       "homeGoals": 1,
       "awayGoals": 0,
       "status": "2H",
-      "elapsed": 61,
+      "elapsed": 62,
       "kickoffUTC": "2026-07-09T20:00:00+00:00",
       "referee": "Facundo Raul Tello Figueroa, Argentina",
       "events": [
@@ -28,6 +28,15 @@
           "extra": null
         }
       ],
+      "substitutions": {
+        "MOROCCO": [
+          {
+            "out": "A. Bouaddi",
+            "in": "S. Amrabat",
+            "minute": 62
+          }
+        ]
+      },
       "lineups": {
         "FRANCE": {
           "formation": "4-2-3-1",
