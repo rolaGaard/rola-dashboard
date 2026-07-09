@@ -1,13 +1,13 @@
 {
-  "updated": "2026-07-09T21:24:14.772469Z",
+  "updated": "2026-07-09T21:25:19.840164Z",
   "matches": {
     "FRANCE-MOROCCO": {
       "fixtureId": 1578539,
       "round": "Quarter-finals",
-      "homeGoals": 0,
+      "homeGoals": 1,
       "awayGoals": 0,
       "status": "2H",
-      "elapsed": 58,
+      "elapsed": 61,
       "kickoffUTC": "2026-07-09T20:00:00+00:00",
       "referee": "Facundo Raul Tello Figueroa, Argentina",
       "events": [
@@ -17,6 +17,14 @@
           "player": "K. Mbappe",
           "team": "FRANCE",
           "minute": 28,
+          "extra": null
+        },
+        {
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "player": "K. Mbappe",
+          "team": "FRANCE",
+          "minute": 60,
           "extra": null
         }
       ],
