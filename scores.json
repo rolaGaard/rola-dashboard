@@ -1,374 +1,6 @@
 {
-  "updated": "2026-07-09T21:53:12.919364Z",
+  "updated": "2026-07-09T21:54:13.303532Z",
   "matches": {
-    "FRANCE-MOROCCO": {
-      "fixtureId": 1578539,
-      "round": "Quarter-finals",
-      "homeGoals": 2,
-      "awayGoals": 0,
-      "status": "2H",
-      "elapsed": 87,
-      "kickoffUTC": "2026-07-09T20:00:00+00:00",
-      "referee": "Facundo Raul Tello Figueroa, Argentina",
-      "events": [
-        {
-          "type": "Goal",
-          "detail": "Missed Penalty",
-          "player": "K. Mbappe",
-          "team": "FRANCE",
-          "minute": 28,
-          "extra": null
-        },
-        {
-          "type": "Goal",
-          "detail": "Normal Goal",
-          "player": "K. Mbappe",
-          "team": "FRANCE",
-          "minute": 60,
-          "extra": null
-        },
-        {
-          "type": "Card",
-          "detail": "Yellow Card",
-          "player": "I. Diop",
-          "team": "MOROCCO",
-          "minute": 63,
-          "extra": null
-        },
-        {
-          "type": "Goal",
-          "detail": "Normal Goal",
-          "player": "O. Dembele",
-          "team": "FRANCE",
-          "minute": 66,
-          "extra": null
-        }
-      ],
-      "substitutions": {
-        "MOROCCO": [
-          {
-            "out": "A. Bouaddi",
-            "in": "S. Amrabat",
-            "minute": 62
-          },
-          {
-            "out": "B. El Khannouss",
-            "in": "S. Rahimi",
-            "minute": 62
-          },
-          {
-            "out": "B. Diaz",
-            "in": "G. Yassine",
-            "minute": 74
-          },
-          {
-            "out": "A. Salah-Eddine",
-            "in": "Z. El Ouahdi",
-            "minute": 74
-          },
-          {
-            "out": "C. Talbi",
-            "in": "A. Sbai",
-            "minute": 85
-          }
-        ],
-        "FRANCE": [
-          {
-            "out": "M. Kone",
-            "in": "W. Zaire-Emery",
-            "minute": 71
-          },
-          {
-            "out": "K. Mbappe",
-            "in": "J. Mateta",
-            "minute": 77
-          },
-          {
-            "out": "D. Doue",
-            "in": "B. Barcola",
-            "minute": 77
-          }
-        ]
-      },
-      "lineups": {
-        "FRANCE": {
-          "formation": "4-2-3-1",
-          "coach": "Didier Deschamps",
-          "startXI": [
-            {
-              "name": "Mike Maignan",
-              "number": 16,
-              "pos": "G"
-            },
-            {
-              "name": "Jules Kound\u00e9",
-              "number": 5,
-              "pos": "D"
-            },
-            {
-              "name": "Dayot Upamecano",
-              "number": 4,
-              "pos": "D"
-            },
-            {
-              "name": "William Saliba",
-              "number": 17,
-              "pos": "D"
-            },
-            {
-              "name": "Lucas Digne",
-              "number": 3,
-              "pos": "D"
-            },
-            {
-              "name": "Manu Kon\u00e9",
-              "number": 6,
-              "pos": "M"
-            },
-            {
-              "name": "Adrien Rabiot",
-              "number": 14,
-              "pos": "M"
-            },
-            {
-              "name": "Ousmane Demb\u00e9l\u00e9",
-              "number": 7,
-              "pos": "M"
-            },
-            {
-              "name": "Michael Olise",
-              "number": 11,
-              "pos": "M"
-            },
-            {
-              "name": "D\u00e9sir\u00e9 Dou\u00e9",
-              "number": 20,
-              "pos": "M"
-            },
-            {
-              "name": "Kylian Mbapp\u00e9",
-              "number": 10,
-              "pos": "F"
-            }
-          ],
-          "substitutes": [
-            {
-              "name": "Brice Samba",
-              "number": 1,
-              "pos": "G"
-            },
-            {
-              "name": "Robin Risser",
-              "number": 23,
-              "pos": "G"
-            },
-            {
-              "name": "Ibrahima Konat\u00e9",
-              "number": 15,
-              "pos": "D"
-            },
-            {
-              "name": "Lucas Hern\u00e1ndez",
-              "number": 21,
-              "pos": "D"
-            },
-            {
-              "name": "Malo Gusto",
-              "number": 2,
-              "pos": "D"
-            },
-            {
-              "name": "Theo Hern\u00e1ndez",
-              "number": 19,
-              "pos": "D"
-            },
-            {
-              "name": "Maxence Lacroix",
-              "number": 26,
-              "pos": "D"
-            },
-            {
-              "name": "Aur\u00e9lien Tchouam\u00e9ni",
-              "number": 8,
-              "pos": "M"
-            },
-            {
-              "name": "Warren Za\u00efre-Emery",
-              "number": 18,
-              "pos": "M"
-            },
-            {
-              "name": "Rayan Cherki",
-              "number": 24,
-              "pos": "M"
-            },
-            {
-              "name": "N'Golo Kant\u00e9",
-              "number": 13,
-              "pos": "M"
-            },
-            {
-              "name": "Maghnes Akliouche",
-              "number": 25,
-              "pos": "M"
-            },
-            {
-              "name": "Marcus Thuram",
-              "number": 9,
-              "pos": "F"
-            },
-            {
-              "name": "Jean-Philippe Mateta",
-              "number": 22,
-              "pos": "F"
-            },
-            {
-              "name": "Bradley Barcola",
-              "number": 12,
-              "pos": "F"
-            }
-          ]
-        },
-        "MOROCCO": {
-          "formation": "4-2-3-1",
-          "coach": "Mohamed Ouahbi",
-          "startXI": [
-            {
-              "name": "Yassine Bounou",
-              "number": 1,
-              "pos": "G"
-            },
-            {
-              "name": "Achraf Hakimi",
-              "number": 2,
-              "pos": "D"
-            },
-            {
-              "name": "Issa Diop",
-              "number": 14,
-              "pos": "D"
-            },
-            {
-              "name": "Noussair Mazraoui",
-              "number": 3,
-              "pos": "D"
-            },
-            {
-              "name": "Anass Salah-Eddine",
-              "number": 26,
-              "pos": "D"
-            },
-            {
-              "name": "Ayyoub Bouaddi",
-              "number": 6,
-              "pos": "M"
-            },
-            {
-              "name": "Neil El Aynaoui",
-              "number": 24,
-              "pos": "M"
-            },
-            {
-              "name": "Chemsdine Talbi",
-              "number": 7,
-              "pos": "M"
-            },
-            {
-              "name": "Azzedine Ounahi",
-              "number": 8,
-              "pos": "M"
-            },
-            {
-              "name": "Bilal El Khannouss",
-              "number": 23,
-              "pos": "M"
-            },
-            {
-              "name": "Brahim D\u00edaz",
-              "number": 10,
-              "pos": "F"
-            }
-          ],
-          "substitutes": [
-            {
-              "name": "Munir El Kajoui",
-              "number": 12,
-              "pos": "G"
-            },
-            {
-              "name": "Ahmed Reda Tagnaouti",
-              "number": 22,
-              "pos": "G"
-            },
-            {
-              "name": "Marwane Saadane",
-              "number": 5,
-              "pos": "D"
-            },
-            {
-              "name": "Zakaria El Ouahdi",
-              "number": 13,
-              "pos": "D"
-            },
-            {
-              "name": "Chadi Riad",
-              "number": 18,
-              "pos": "D"
-            },
-            {
-              "name": "Redouane Halhal",
-              "number": 25,
-              "pos": "D"
-            },
-            {
-              "name": "Youssef Belammari",
-              "number": 19,
-              "pos": "D"
-            },
-            {
-              "name": "Amine Sbai",
-              "number": 17,
-              "pos": "F"
-            },
-            {
-              "name": "Gessime Yassine",
-              "number": 16,
-              "pos": "F"
-            },
-            {
-              "name": "Samir El Mourabet",
-              "number": 15,
-              "pos": "M"
-            },
-            {
-              "name": "Sofyan Amrabat",
-              "number": 4,
-              "pos": "M"
-            },
-            {
-              "name": "Ismael Saibari",
-              "number": 11,
-              "pos": "M"
-            },
-            {
-              "name": "Ayoub El Kaabi",
-              "number": 20,
-              "pos": "F"
-            },
-            {
-              "name": "Ayoube Amaimouni Echghouyab",
-              "number": 21,
-              "pos": "F"
-            },
-            {
-              "name": "Soufiane Rahimi",
-              "number": 9,
-              "pos": "F"
-            }
-          ]
-        }
-      }
-    },
     "MEXICO-SOUTH AFRICA": {
       "fixtureId": 1489369,
       "round": "Group Stage - 1",
@@ -37548,6 +37180,379 @@
       "elapsed": null,
       "kickoffUTC": "2026-07-12T01:00:00+00:00",
       "referee": null
+    },
+    "FRANCE-MOROCCO": {
+      "fixtureId": 1578539,
+      "round": "Quarter-finals",
+      "homeGoals": 2,
+      "awayGoals": 0,
+      "status": "2H",
+      "elapsed": 90,
+      "kickoffUTC": "2026-07-09T20:00:00+00:00",
+      "referee": "Facundo Raul Tello Figueroa, Argentina",
+      "events": [
+        {
+          "type": "Goal",
+          "detail": "Missed Penalty",
+          "player": "Kylian Mbapp\u00e9",
+          "team": "FRANCE",
+          "minute": 28,
+          "extra": null
+        },
+        {
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "player": "Kylian Mbapp\u00e9",
+          "team": "FRANCE",
+          "minute": 60,
+          "extra": null
+        },
+        {
+          "type": "Card",
+          "detail": "Yellow Card",
+          "player": "Issa Diop",
+          "team": "MOROCCO",
+          "minute": 63,
+          "extra": null
+        },
+        {
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "player": "Ousmane Demb\u00e9l\u00e9",
+          "team": "FRANCE",
+          "minute": 66,
+          "extra": null
+        }
+      ],
+      "substitutions": {
+        "MOROCCO": [
+          {
+            "out": "Bilal El Khannouss",
+            "in": "Soufiane Rahimi",
+            "minute": 62
+          },
+          {
+            "out": "Ayyoub Bouaddi",
+            "in": "Sofyan Amrabat",
+            "minute": 62
+          },
+          {
+            "out": "Anass Salah-Eddine",
+            "in": "Zakaria El Ouahdi",
+            "minute": 74
+          },
+          {
+            "out": "Brahim D\u00edaz",
+            "in": "Gessime Yassine",
+            "minute": 74
+          },
+          {
+            "out": "Chemsdine Talbi",
+            "in": "Amine Sba\u00ef",
+            "minute": 85
+          }
+        ],
+        "FRANCE": [
+          {
+            "out": "Manu Kon\u00e9",
+            "in": "Warren Zaire-Emery",
+            "minute": 71
+          },
+          {
+            "out": "Kylian Mbapp\u00e9",
+            "in": "Jean-Philippe Mateta",
+            "minute": 77
+          },
+          {
+            "out": "D\u00e9sir\u00e9 Doue",
+            "in": "Bradley Barcola",
+            "minute": 77
+          },
+          {
+            "out": "Jules Kound\u00e9",
+            "in": "Malo Gusto",
+            "minute": 87
+          }
+        ]
+      },
+      "lineups": {
+        "FRANCE": {
+          "formation": "4-2-3-1",
+          "coach": "Didier Deschamps",
+          "startXI": [
+            {
+              "name": "Mike Maignan",
+              "number": 16,
+              "pos": "G"
+            },
+            {
+              "name": "Jules Kound\u00e9",
+              "number": 5,
+              "pos": "D"
+            },
+            {
+              "name": "Dayot Upamecano",
+              "number": 4,
+              "pos": "D"
+            },
+            {
+              "name": "William Saliba",
+              "number": 17,
+              "pos": "D"
+            },
+            {
+              "name": "Lucas Digne",
+              "number": 3,
+              "pos": "D"
+            },
+            {
+              "name": "Manu Kon\u00e9",
+              "number": 6,
+              "pos": "M"
+            },
+            {
+              "name": "Adrien Rabiot",
+              "number": 14,
+              "pos": "M"
+            },
+            {
+              "name": "Ousmane Demb\u00e9l\u00e9",
+              "number": 7,
+              "pos": "M"
+            },
+            {
+              "name": "Michael Olise",
+              "number": 11,
+              "pos": "M"
+            },
+            {
+              "name": "D\u00e9sir\u00e9 Dou\u00e9",
+              "number": 20,
+              "pos": "M"
+            },
+            {
+              "name": "Kylian Mbapp\u00e9",
+              "number": 10,
+              "pos": "F"
+            }
+          ],
+          "substitutes": [
+            {
+              "name": "Brice Samba",
+              "number": 1,
+              "pos": "G"
+            },
+            {
+              "name": "Robin Risser",
+              "number": 23,
+              "pos": "G"
+            },
+            {
+              "name": "Ibrahima Konat\u00e9",
+              "number": 15,
+              "pos": "D"
+            },
+            {
+              "name": "Lucas Hern\u00e1ndez",
+              "number": 21,
+              "pos": "D"
+            },
+            {
+              "name": "Malo Gusto",
+              "number": 2,
+              "pos": "D"
+            },
+            {
+              "name": "Theo Hern\u00e1ndez",
+              "number": 19,
+              "pos": "D"
+            },
+            {
+              "name": "Maxence Lacroix",
+              "number": 26,
+              "pos": "D"
+            },
+            {
+              "name": "Aur\u00e9lien Tchouam\u00e9ni",
+              "number": 8,
+              "pos": "M"
+            },
+            {
+              "name": "Warren Za\u00efre-Emery",
+              "number": 18,
+              "pos": "M"
+            },
+            {
+              "name": "Rayan Cherki",
+              "number": 24,
+              "pos": "M"
+            },
+            {
+              "name": "N'Golo Kant\u00e9",
+              "number": 13,
+              "pos": "M"
+            },
+            {
+              "name": "Maghnes Akliouche",
+              "number": 25,
+              "pos": "M"
+            },
+            {
+              "name": "Marcus Thuram",
+              "number": 9,
+              "pos": "F"
+            },
+            {
+              "name": "Jean-Philippe Mateta",
+              "number": 22,
+              "pos": "F"
+            },
+            {
+              "name": "Bradley Barcola",
+              "number": 12,
+              "pos": "F"
+            }
+          ]
+        },
+        "MOROCCO": {
+          "formation": "4-2-3-1",
+          "coach": "Mohamed Ouahbi",
+          "startXI": [
+            {
+              "name": "Yassine Bounou",
+              "number": 1,
+              "pos": "G"
+            },
+            {
+              "name": "Achraf Hakimi",
+              "number": 2,
+              "pos": "D"
+            },
+            {
+              "name": "Issa Diop",
+              "number": 14,
+              "pos": "D"
+            },
+            {
+              "name": "Noussair Mazraoui",
+              "number": 3,
+              "pos": "D"
+            },
+            {
+              "name": "Anass Salah-Eddine",
+              "number": 26,
+              "pos": "D"
+            },
+            {
+              "name": "Ayyoub Bouaddi",
+              "number": 6,
+              "pos": "M"
+            },
+            {
+              "name": "Neil El Aynaoui",
+              "number": 24,
+              "pos": "M"
+            },
+            {
+              "name": "Chemsdine Talbi",
+              "number": 7,
+              "pos": "M"
+            },
+            {
+              "name": "Azzedine Ounahi",
+              "number": 8,
+              "pos": "M"
+            },
+            {
+              "name": "Bilal El Khannouss",
+              "number": 23,
+              "pos": "M"
+            },
+            {
+              "name": "Brahim D\u00edaz",
+              "number": 10,
+              "pos": "F"
+            }
+          ],
+          "substitutes": [
+            {
+              "name": "Munir El Kajoui",
+              "number": 12,
+              "pos": "G"
+            },
+            {
+              "name": "Ahmed Reda Tagnaouti",
+              "number": 22,
+              "pos": "G"
+            },
+            {
+              "name": "Marwane Saadane",
+              "number": 5,
+              "pos": "D"
+            },
+            {
+              "name": "Zakaria El Ouahdi",
+              "number": 13,
+              "pos": "D"
+            },
+            {
+              "name": "Chadi Riad",
+              "number": 18,
+              "pos": "D"
+            },
+            {
+              "name": "Redouane Halhal",
+              "number": 25,
+              "pos": "D"
+            },
+            {
+              "name": "Youssef Belammari",
+              "number": 19,
+              "pos": "D"
+            },
+            {
+              "name": "Amine Sbai",
+              "number": 17,
+              "pos": "F"
+            },
+            {
+              "name": "Gessime Yassine",
+              "number": 16,
+              "pos": "F"
+            },
+            {
+              "name": "Samir El Mourabet",
+              "number": 15,
+              "pos": "M"
+            },
+            {
+              "name": "Sofyan Amrabat",
+              "number": 4,
+              "pos": "M"
+            },
+            {
+              "name": "Ismael Saibari",
+              "number": 11,
+              "pos": "M"
+            },
+            {
+              "name": "Ayoub El Kaabi",
+              "number": 20,
+              "pos": "F"
+            },
+            {
+              "name": "Ayoube Amaimouni Echghouyab",
+              "number": 21,
+              "pos": "F"
+            },
+            {
+              "name": "Soufiane Rahimi",
+              "number": 9,
+              "pos": "F"
+            }
+          ]
+        }
+      }
     }
   }
 }
