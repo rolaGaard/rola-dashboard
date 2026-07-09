@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-09T21:38:13.651619Z",
+  "updated": "2026-07-09T21:39:10.429358Z",
   "matches": {
     "FRANCE-MOROCCO": {
       "fixtureId": 1578539,
@@ -7,7 +7,7 @@
       "homeGoals": 2,
       "awayGoals": 0,
       "status": "2H",
-      "elapsed": 74,
+      "elapsed": 75,
       "kickoffUTC": "2026-07-09T20:00:00+00:00",
       "referee": "Facundo Raul Tello Figueroa, Argentina",
       "events": [
@@ -55,6 +55,16 @@
             "out": "B. El Khannouss",
             "in": "S. Rahimi",
             "minute": 62
+          },
+          {
+            "out": "B. Diaz",
+            "in": "G. Yassine",
+            "minute": 74
+          },
+          {
+            "out": "A. Salah-Eddine",
+            "in": "Z. El Ouahdi",
+            "minute": 74
           }
         ],
         "FRANCE": [
