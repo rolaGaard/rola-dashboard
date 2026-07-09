@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-09T20:28:12.759301Z",
+  "updated": "2026-07-09T20:29:10.412607Z",
   "matches": {
     "FRANCE-MOROCCO": {
       "fixtureId": 1578539,
@@ -10,7 +10,16 @@
       "elapsed": 28,
       "kickoffUTC": "2026-07-09T20:00:00+00:00",
       "referee": "Facundo Raul Tello Figueroa, Argentina",
-      "events": [],
+      "events": [
+        {
+          "type": "Goal",
+          "detail": "Missed Penalty",
+          "player": "K. Mbappe",
+          "team": "FRANCE",
+          "minute": 28,
+          "extra": null
+        }
+      ],
       "lineups": {
         "FRANCE": {
           "formation": "4-2-3-1",
