@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-10T20:56:13.186863Z",
+  "updated": "2026-07-10T20:57:11.358162Z",
   "matches": {
     "SPAIN-BELGIUM": {
       "fixtureId": 1581821,
@@ -58,6 +58,14 @@
           "team": "SPAIN",
           "minute": 90,
           "extra": 3
+        },
+        {
+          "type": "Card",
+          "detail": "Yellow Card",
+          "player": "A. Witsel",
+          "team": "BELGIUM",
+          "minute": 90,
+          "extra": 5
         }
       ],
       "substitutions": {
