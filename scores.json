@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-10T21:16:11.396107Z",
+  "updated": "2026-07-10T21:17:12.969062Z",
   "matches": {
     "MEXICO-SOUTH AFRICA": {
       "fixtureId": 1489369,
@@ -37929,6 +37929,16 @@
       "status": "NS",
       "elapsed": null,
       "kickoffUTC": "2026-07-12T01:00:00+00:00",
+      "referee": null
+    },
+    "FRANCE-SPAIN": {
+      "fixtureId": 1585131,
+      "round": "Semi-finals",
+      "homeGoals": null,
+      "awayGoals": null,
+      "status": "NS",
+      "elapsed": null,
+      "kickoffUTC": "2026-07-14T19:00:00+00:00",
       "referee": null
     }
   }
