@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-11T23:29:12.261126Z",
+  "updated": "2026-07-11T23:30:57.381566Z",
   "matches": {
     "NORWAY-ENGLAND": {
       "fixtureId": 1581037,
@@ -7,7 +7,7 @@
       "homeGoals": 1,
       "awayGoals": 2,
       "status": "ET",
-      "elapsed": 109,
+      "elapsed": 96,
       "kickoffUTC": "2026-07-11T21:00:00+00:00",
       "referee": "Clement Turpin, France",
       "events": [
@@ -89,6 +89,11 @@
             "out": "T. Heggem",
             "in": "L. Ostigard",
             "minute": 91
+          },
+          {
+            "out": "E. Haaland",
+            "in": "J. Larsen",
+            "minute": 106
           }
         ]
       },
