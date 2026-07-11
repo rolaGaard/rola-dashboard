@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-11T23:41:12.670037Z",
+  "updated": "2026-07-11T23:42:12.235877Z",
   "matches": {
     "NORWAY-ENGLAND": {
       "fixtureId": 1581037,
@@ -7,7 +7,7 @@
       "homeGoals": 1,
       "awayGoals": 2,
       "status": "ET",
-      "elapsed": 117,
+      "elapsed": 118,
       "kickoffUTC": "2026-07-11T21:00:00+00:00",
       "referee": "Clement Turpin, France",
       "events": [
@@ -33,6 +33,14 @@
           "player": "J. Bellingham",
           "team": "ENGLAND",
           "minute": 93,
+          "extra": null
+        },
+        {
+          "type": "Card",
+          "detail": "Yellow Card",
+          "player": "K. Ajer",
+          "team": "NORWAY",
+          "minute": 117,
           "extra": null
         }
       ],
