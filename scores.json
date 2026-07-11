@@ -1,11 +1,11 @@
 {
-  "updated": "2026-07-11T21:47:10.157430Z",
+  "updated": "2026-07-11T21:48:12.880558Z",
   "matches": {
     "NORWAY-ENGLAND": {
       "fixtureId": 1581037,
       "round": "Quarter-finals",
       "homeGoals": 1,
-      "awayGoals": 0,
+      "awayGoals": 1,
       "status": "1H",
       "elapsed": 45,
       "kickoffUTC": "2026-07-11T21:00:00+00:00",
@@ -18,6 +18,14 @@
           "team": "NORWAY",
           "minute": 36,
           "extra": null
+        },
+        {
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "player": "J. Bellingham",
+          "team": "ENGLAND",
+          "minute": 45,
+          "extra": 2
         }
       ],
       "lineups": {
