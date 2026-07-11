@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-11T23:07:44.690982Z",
+  "updated": "2026-07-11T23:08:11.568748Z",
   "matches": {
     "NORWAY-ENGLAND": {
       "fixtureId": 1581037,
@@ -76,6 +76,11 @@
             "out": "D. Wolfe",
             "in": "M. Pedersen",
             "minute": 90
+          },
+          {
+            "out": "T. Heggem",
+            "in": "L. Ostigard",
+            "minute": 91
           }
         ]
       },
