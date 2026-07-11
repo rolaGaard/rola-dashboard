@@ -1,13 +1,13 @@
 {
-  "updated": "2026-07-11T23:09:09.698471Z",
+  "updated": "2026-07-11T23:10:47.744977Z",
   "matches": {
     "NORWAY-ENGLAND": {
       "fixtureId": 1581037,
       "round": "Quarter-finals",
       "homeGoals": 1,
-      "awayGoals": 1,
+      "awayGoals": 2,
       "status": "ET",
-      "elapsed": 98,
+      "elapsed": 100,
       "kickoffUTC": "2026-07-11T21:00:00+00:00",
       "referee": "Clement Turpin, France",
       "events": [
@@ -26,6 +26,14 @@
           "team": "ENGLAND",
           "minute": 45,
           "extra": 2
+        },
+        {
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "player": "J. Bellingham",
+          "team": "ENGLAND",
+          "minute": 93,
+          "extra": null
         }
       ],
       "substitutions": {
