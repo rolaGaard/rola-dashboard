@@ -1,6 +1,290 @@
 {
-  "updated": "2026-07-11T21:01:07.230400Z",
+  "updated": "2026-07-11T21:02:13.120756Z",
   "matches": {
+    "NORWAY-ENGLAND": {
+      "fixtureId": 1581037,
+      "round": "Quarter-finals",
+      "homeGoals": 0,
+      "awayGoals": 0,
+      "status": "1H",
+      "elapsed": 1,
+      "kickoffUTC": "2026-07-11T21:00:00+00:00",
+      "referee": "Clement Turpin, France",
+      "events": [],
+      "lineups": {
+        "NORWAY": {
+          "formation": "4-3-3",
+          "coach": "Stale Solbakken",
+          "startXI": [
+            {
+              "name": "\u00d8rjan Nyland",
+              "number": 1,
+              "pos": "G"
+            },
+            {
+              "name": "Julian Ryerson",
+              "number": 26,
+              "pos": "D"
+            },
+            {
+              "name": "Kristoffer Ajer",
+              "number": 3,
+              "pos": "D"
+            },
+            {
+              "name": "Torbj\u00f8rn Heggem",
+              "number": 17,
+              "pos": "D"
+            },
+            {
+              "name": "David M\u00f8ller Wolfe",
+              "number": 5,
+              "pos": "D"
+            },
+            {
+              "name": "Martin \u00d8degaard",
+              "number": 10,
+              "pos": "M"
+            },
+            {
+              "name": "Sander Berge",
+              "number": 8,
+              "pos": "M"
+            },
+            {
+              "name": "Patrick Berg",
+              "number": 6,
+              "pos": "M"
+            },
+            {
+              "name": "Alexander S\u00f8rloth",
+              "number": 7,
+              "pos": "F"
+            },
+            {
+              "name": "Erling Haaland",
+              "number": 9,
+              "pos": "F"
+            },
+            {
+              "name": "Andreas Schjelderup",
+              "number": 21,
+              "pos": "F"
+            }
+          ],
+          "substitutes": [
+            {
+              "name": "Sander Tangvik",
+              "number": 12,
+              "pos": "G"
+            },
+            {
+              "name": "Egil Selvik",
+              "number": 13,
+              "pos": "G"
+            },
+            {
+              "name": "Leo \u00d8stig\u00e5rd",
+              "number": 4,
+              "pos": "D"
+            },
+            {
+              "name": "Fredrik Andr\u00e9 Bj\u00f8rkan",
+              "number": 15,
+              "pos": "D"
+            },
+            {
+              "name": "Sondre Lang\u00e5s",
+              "number": 24,
+              "pos": "D"
+            },
+            {
+              "name": "Henrik S\u00e6lebakke Falchener",
+              "number": 25,
+              "pos": "D"
+            },
+            {
+              "name": "Marcus Pedersen",
+              "number": 16,
+              "pos": "D"
+            },
+            {
+              "name": "Morten Thorsby",
+              "number": 2,
+              "pos": "M"
+            },
+            {
+              "name": "Fredrik Aursnes",
+              "number": 14,
+              "pos": "M"
+            },
+            {
+              "name": "Kristian Thorstvedt",
+              "number": 18,
+              "pos": "M"
+            },
+            {
+              "name": "Thelo Aasgaard",
+              "number": 19,
+              "pos": "M"
+            },
+            {
+              "name": "Oscar Bobb",
+              "number": 22,
+              "pos": "M"
+            },
+            {
+              "name": "Jens Petter Hauge",
+              "number": 23,
+              "pos": "M"
+            },
+            {
+              "name": "J\u00f8rgen Strand Larsen",
+              "number": 11,
+              "pos": "F"
+            },
+            {
+              "name": "Antonio Nusa",
+              "number": 20,
+              "pos": "M"
+            }
+          ]
+        },
+        "ENGLAND": {
+          "formation": "4-2-3-1",
+          "coach": "Thomas Tuchel",
+          "startXI": [
+            {
+              "name": "Jordan Pickford",
+              "number": 1,
+              "pos": "G"
+            },
+            {
+              "name": "Ezri Konsa",
+              "number": 2,
+              "pos": "D"
+            },
+            {
+              "name": "John Stones",
+              "number": 5,
+              "pos": "D"
+            },
+            {
+              "name": "Marc Gu\u00e9hi",
+              "number": 6,
+              "pos": "D"
+            },
+            {
+              "name": "Nico O'Reilly",
+              "number": 3,
+              "pos": "D"
+            },
+            {
+              "name": "Elliot Anderson",
+              "number": 8,
+              "pos": "M"
+            },
+            {
+              "name": "Declan Rice",
+              "number": 4,
+              "pos": "M"
+            },
+            {
+              "name": "Noni Madueke",
+              "number": 20,
+              "pos": "M"
+            },
+            {
+              "name": "Jude Bellingham",
+              "number": 10,
+              "pos": "M"
+            },
+            {
+              "name": "Anthony Gordon",
+              "number": 18,
+              "pos": "M"
+            },
+            {
+              "name": "Harry Kane",
+              "number": 9,
+              "pos": "F"
+            }
+          ],
+          "substitutes": [
+            {
+              "name": "Dean Henderson",
+              "number": 13,
+              "pos": "G"
+            },
+            {
+              "name": "James Trafford",
+              "number": 23,
+              "pos": "G"
+            },
+            {
+              "name": "Trevoh Chalobah",
+              "number": 12,
+              "pos": "D"
+            },
+            {
+              "name": "Dan Burn",
+              "number": 15,
+              "pos": "D"
+            },
+            {
+              "name": "Reece James",
+              "number": 24,
+              "pos": "D"
+            },
+            {
+              "name": "Djed Spence",
+              "number": 25,
+              "pos": "D"
+            },
+            {
+              "name": "Jordan Henderson",
+              "number": 14,
+              "pos": "M"
+            },
+            {
+              "name": "Kobbie Mainoo",
+              "number": 16,
+              "pos": "M"
+            },
+            {
+              "name": "Morgan Rogers",
+              "number": 17,
+              "pos": "M"
+            },
+            {
+              "name": "Eberechi Eze",
+              "number": 21,
+              "pos": "M"
+            },
+            {
+              "name": "Bukayo Saka",
+              "number": 7,
+              "pos": "F"
+            },
+            {
+              "name": "Marcus Rashford",
+              "number": 11,
+              "pos": "F"
+            },
+            {
+              "name": "Ollie Watkins",
+              "number": 19,
+              "pos": "F"
+            },
+            {
+              "name": "Ivan Toney",
+              "number": 22,
+              "pos": "F"
+            }
+          ]
+        }
+      }
+    },
     "MEXICO-SOUTH AFRICA": {
       "fixtureId": 1489369,
       "round": "Group Stage - 1",
@@ -37905,289 +38189,6 @@
             {
               "name": "Mat\u00edas Fern\u00e1ndez-Pardo",
               "number": 26,
-              "pos": "F"
-            }
-          ]
-        }
-      }
-    },
-    "NORWAY-ENGLAND": {
-      "fixtureId": 1581037,
-      "round": "Quarter-finals",
-      "homeGoals": null,
-      "awayGoals": null,
-      "status": "NS",
-      "elapsed": null,
-      "kickoffUTC": "2026-07-11T21:00:00+00:00",
-      "referee": "Clement Turpin, France",
-      "lineups": {
-        "NORWAY": {
-          "formation": "4-3-3",
-          "coach": "Stale Solbakken",
-          "startXI": [
-            {
-              "name": "\u00d8rjan Nyland",
-              "number": 1,
-              "pos": "G"
-            },
-            {
-              "name": "Julian Ryerson",
-              "number": 26,
-              "pos": "D"
-            },
-            {
-              "name": "Kristoffer Ajer",
-              "number": 3,
-              "pos": "D"
-            },
-            {
-              "name": "Torbj\u00f8rn Heggem",
-              "number": 17,
-              "pos": "D"
-            },
-            {
-              "name": "David M\u00f8ller Wolfe",
-              "number": 5,
-              "pos": "D"
-            },
-            {
-              "name": "Martin \u00d8degaard",
-              "number": 10,
-              "pos": "M"
-            },
-            {
-              "name": "Sander Berge",
-              "number": 8,
-              "pos": "M"
-            },
-            {
-              "name": "Patrick Berg",
-              "number": 6,
-              "pos": "M"
-            },
-            {
-              "name": "Alexander S\u00f8rloth",
-              "number": 7,
-              "pos": "F"
-            },
-            {
-              "name": "Erling Haaland",
-              "number": 9,
-              "pos": "F"
-            },
-            {
-              "name": "Andreas Schjelderup",
-              "number": 21,
-              "pos": "F"
-            }
-          ],
-          "substitutes": [
-            {
-              "name": "Sander Tangvik",
-              "number": 12,
-              "pos": "G"
-            },
-            {
-              "name": "Egil Selvik",
-              "number": 13,
-              "pos": "G"
-            },
-            {
-              "name": "Leo \u00d8stig\u00e5rd",
-              "number": 4,
-              "pos": "D"
-            },
-            {
-              "name": "Fredrik Andr\u00e9 Bj\u00f8rkan",
-              "number": 15,
-              "pos": "D"
-            },
-            {
-              "name": "Sondre Lang\u00e5s",
-              "number": 24,
-              "pos": "D"
-            },
-            {
-              "name": "Henrik S\u00e6lebakke Falchener",
-              "number": 25,
-              "pos": "D"
-            },
-            {
-              "name": "Marcus Pedersen",
-              "number": 16,
-              "pos": "D"
-            },
-            {
-              "name": "Morten Thorsby",
-              "number": 2,
-              "pos": "M"
-            },
-            {
-              "name": "Fredrik Aursnes",
-              "number": 14,
-              "pos": "M"
-            },
-            {
-              "name": "Kristian Thorstvedt",
-              "number": 18,
-              "pos": "M"
-            },
-            {
-              "name": "Thelo Aasgaard",
-              "number": 19,
-              "pos": "M"
-            },
-            {
-              "name": "Oscar Bobb",
-              "number": 22,
-              "pos": "M"
-            },
-            {
-              "name": "Jens Petter Hauge",
-              "number": 23,
-              "pos": "M"
-            },
-            {
-              "name": "J\u00f8rgen Strand Larsen",
-              "number": 11,
-              "pos": "F"
-            },
-            {
-              "name": "Antonio Nusa",
-              "number": 20,
-              "pos": "M"
-            }
-          ]
-        },
-        "ENGLAND": {
-          "formation": "4-2-3-1",
-          "coach": "Thomas Tuchel",
-          "startXI": [
-            {
-              "name": "Jordan Pickford",
-              "number": 1,
-              "pos": "G"
-            },
-            {
-              "name": "Ezri Konsa",
-              "number": 2,
-              "pos": "D"
-            },
-            {
-              "name": "John Stones",
-              "number": 5,
-              "pos": "D"
-            },
-            {
-              "name": "Marc Gu\u00e9hi",
-              "number": 6,
-              "pos": "D"
-            },
-            {
-              "name": "Nico O'Reilly",
-              "number": 3,
-              "pos": "D"
-            },
-            {
-              "name": "Elliot Anderson",
-              "number": 8,
-              "pos": "M"
-            },
-            {
-              "name": "Declan Rice",
-              "number": 4,
-              "pos": "M"
-            },
-            {
-              "name": "Noni Madueke",
-              "number": 20,
-              "pos": "M"
-            },
-            {
-              "name": "Jude Bellingham",
-              "number": 10,
-              "pos": "M"
-            },
-            {
-              "name": "Anthony Gordon",
-              "number": 18,
-              "pos": "M"
-            },
-            {
-              "name": "Harry Kane",
-              "number": 9,
-              "pos": "F"
-            }
-          ],
-          "substitutes": [
-            {
-              "name": "Dean Henderson",
-              "number": 13,
-              "pos": "G"
-            },
-            {
-              "name": "James Trafford",
-              "number": 23,
-              "pos": "G"
-            },
-            {
-              "name": "Trevoh Chalobah",
-              "number": 12,
-              "pos": "D"
-            },
-            {
-              "name": "Dan Burn",
-              "number": 15,
-              "pos": "D"
-            },
-            {
-              "name": "Reece James",
-              "number": 24,
-              "pos": "D"
-            },
-            {
-              "name": "Djed Spence",
-              "number": 25,
-              "pos": "D"
-            },
-            {
-              "name": "Jordan Henderson",
-              "number": 14,
-              "pos": "M"
-            },
-            {
-              "name": "Kobbie Mainoo",
-              "number": 16,
-              "pos": "M"
-            },
-            {
-              "name": "Morgan Rogers",
-              "number": 17,
-              "pos": "M"
-            },
-            {
-              "name": "Eberechi Eze",
-              "number": 21,
-              "pos": "M"
-            },
-            {
-              "name": "Bukayo Saka",
-              "number": 7,
-              "pos": "F"
-            },
-            {
-              "name": "Marcus Rashford",
-              "number": 11,
-              "pos": "F"
-            },
-            {
-              "name": "Ollie Watkins",
-              "number": 19,
-              "pos": "F"
-            },
-            {
-              "name": "Ivan Toney",
-              "number": 22,
               "pos": "F"
             }
           ]
