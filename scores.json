@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-11T22:29:10.555844Z",
+  "updated": "2026-07-11T22:30:57.922254Z",
   "matches": {
     "NORWAY-ENGLAND": {
       "fixtureId": 1581037,
@@ -7,7 +7,7 @@
       "homeGoals": 1,
       "awayGoals": 1,
       "status": "2H",
-      "elapsed": 67,
+      "elapsed": 69,
       "kickoffUTC": "2026-07-11T21:00:00+00:00",
       "referee": "Clement Turpin, France",
       "events": [
@@ -46,6 +46,16 @@
             "out": "J. Ryerson",
             "in": "F. Aursnes",
             "minute": 60
+          },
+          {
+            "out": "A. Sorloth",
+            "in": "O. Bobb",
+            "minute": 68
+          },
+          {
+            "out": "A. Schjelderup",
+            "in": "A. Nusa",
+            "minute": 68
           }
         ]
       },
