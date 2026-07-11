@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-11T22:08:11.410505Z",
+  "updated": "2026-07-11T22:08:25.904481Z",
   "matches": {
     "NORWAY-ENGLAND": {
       "fixtureId": 1581037,
@@ -28,6 +28,20 @@
           "extra": 2
         }
       ],
+      "substitutions": {
+        "ENGLAND": [
+          {
+            "out": "N. Madueke",
+            "in": "B. Saka",
+            "minute": 46
+          },
+          {
+            "out": "D. Rice",
+            "in": "E. Eze",
+            "minute": 46
+          }
+        ]
+      },
       "lineups": {
         "NORWAY": {
           "formation": "4-3-3",
