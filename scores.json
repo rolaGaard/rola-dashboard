@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-11T23:18:11.063251Z",
+  "updated": "2026-07-11T23:19:09.563387Z",
   "matches": {
     "NORWAY-ENGLAND": {
       "fixtureId": 1581037,
@@ -7,7 +7,7 @@
       "homeGoals": 1,
       "awayGoals": 2,
       "status": "ET",
-      "elapsed": 101,
+      "elapsed": 102,
       "kickoffUTC": "2026-07-11T21:00:00+00:00",
       "referee": "Clement Turpin, France",
       "events": [
