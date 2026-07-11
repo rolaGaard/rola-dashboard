@@ -1,13 +1,13 @@
 {
-  "updated": "2026-07-11T23:01:05.984923Z",
+  "updated": "2026-07-11T23:02:12.890016Z",
   "matches": {
     "NORWAY-ENGLAND": {
       "fixtureId": 1581037,
       "round": "Quarter-finals",
       "homeGoals": 1,
       "awayGoals": 1,
-      "status": "2H",
-      "elapsed": 90,
+      "status": "BT",
+      "elapsed": null,
       "kickoffUTC": "2026-07-11T21:00:00+00:00",
       "referee": "Clement Turpin, France",
       "events": [
