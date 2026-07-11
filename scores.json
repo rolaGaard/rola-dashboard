@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-11T22:33:10.328226Z",
+  "updated": "2026-07-11T22:34:12.717435Z",
   "matches": {
     "NORWAY-ENGLAND": {
       "fixtureId": 1581037,
@@ -7,7 +7,7 @@
       "homeGoals": 1,
       "awayGoals": 1,
       "status": "2H",
-      "elapsed": 71,
+      "elapsed": 72,
       "kickoffUTC": "2026-07-11T21:00:00+00:00",
       "referee": "Clement Turpin, France",
       "events": [
@@ -39,6 +39,11 @@
             "out": "D. Rice",
             "in": "E. Eze",
             "minute": 46
+          },
+          {
+            "out": "A. Gordon",
+            "in": "R. James",
+            "minute": 71
           }
         ],
         "NORWAY": [
