@@ -1,13 +1,13 @@
 {
-  "updated": "2026-07-11T22:17:09.193445Z",
+  "updated": "2026-07-11T22:18:12.771068Z",
   "matches": {
     "NORWAY-ENGLAND": {
       "fixtureId": 1581037,
       "round": "Quarter-finals",
-      "homeGoals": 1,
+      "homeGoals": 2,
       "awayGoals": 1,
       "status": "2H",
-      "elapsed": 55,
+      "elapsed": 56,
       "kickoffUTC": "2026-07-11T21:00:00+00:00",
       "referee": "Clement Turpin, France",
       "events": [
@@ -26,6 +26,14 @@
           "team": "ENGLAND",
           "minute": 45,
           "extra": 2
+        },
+        {
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "player": "T. Heggem",
+          "team": "NORWAY",
+          "minute": 55,
+          "extra": null
         }
       ],
       "substitutions": {
