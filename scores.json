@@ -1,13 +1,13 @@
 {
-  "updated": "2026-07-12T03:05:18.216100Z",
+  "updated": "2026-07-12T03:06:12.690733Z",
   "matches": {
     "ARGENTINA-SWITZERLAND": {
       "fixtureId": 1582681,
       "round": "Quarter-finals",
       "homeGoals": 1,
       "awayGoals": 1,
-      "status": "BT",
-      "elapsed": null,
+      "status": "ET",
+      "elapsed": 95,
       "kickoffUTC": "2026-07-12T01:00:00+00:00",
       "referee": "Joao Pedro Pinheiro, Portugal",
       "events": [
@@ -68,6 +68,11 @@
             "out": "N. Molina",
             "in": "G. Montiel",
             "minute": 85
+          },
+          {
+            "out": "E. Fernandez",
+            "in": "T. Almada",
+            "minute": 91
           }
         ],
         "SWITZERLAND": [
