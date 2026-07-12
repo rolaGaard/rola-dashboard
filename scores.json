@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-12T02:39:11.362128Z",
+  "updated": "2026-07-12T02:40:43.391917Z",
   "matches": {
     "ARGENTINA-SWITZERLAND": {
       "fixtureId": 1582681,
@@ -7,7 +7,7 @@
       "homeGoals": 1,
       "awayGoals": 1,
       "status": "2H",
-      "elapsed": 78,
+      "elapsed": 80,
       "kickoffUTC": "2026-07-12T01:00:00+00:00",
       "referee": "Joao Pedro Pinheiro, Portugal",
       "events": [
@@ -52,6 +52,15 @@
           "extra": null
         }
       ],
+      "substitutions": {
+        "ARGENTINA": [
+          {
+            "out": "N. Tagliafico",
+            "in": "N. Gonzalez",
+            "minute": 78
+          }
+        ]
+      },
       "lineups": {
         "ARGENTINA": {
           "formation": "4-1-3-2",
