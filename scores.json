@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-12T05:51:12.103055Z",
+  "updated": "2026-07-12T05:52:14.170650Z",
   "matches": {
     "MEXICO-SOUTH AFRICA": {
       "fixtureId": 1489369,
@@ -38733,6 +38733,16 @@
       "status": "NS",
       "elapsed": null,
       "kickoffUTC": "2026-07-14T19:00:00+00:00",
+      "referee": null
+    },
+    "ENGLAND-ARGENTINA": {
+      "fixtureId": 1586077,
+      "round": "Semi-finals",
+      "homeGoals": null,
+      "awayGoals": null,
+      "status": "NS",
+      "elapsed": null,
+      "kickoffUTC": "2026-07-15T19:00:00+00:00",
       "referee": null
     }
   }
