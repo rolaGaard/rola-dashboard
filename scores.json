@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-12T03:29:11.162935Z",
+  "updated": "2026-07-12T03:30:57.757444Z",
   "matches": {
     "ARGENTINA-SWITZERLAND": {
       "fixtureId": 1582681,
@@ -7,7 +7,7 @@
       "homeGoals": 1,
       "awayGoals": 1,
       "status": "ET",
-      "elapsed": 109,
+      "elapsed": 111,
       "kickoffUTC": "2026-07-12T01:00:00+00:00",
       "referee": "Joao Pedro Pinheiro, Portugal",
       "events": [
@@ -94,6 +94,11 @@
             "out": "C. Romero",
             "in": "N. Otamendi",
             "minute": 106
+          },
+          {
+            "out": "L. Paredes",
+            "in": "J. Lopez",
+            "minute": 110
           }
         ],
         "SWITZERLAND": [
