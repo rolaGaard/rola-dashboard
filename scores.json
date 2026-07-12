@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-12T02:33:10.920597Z",
+  "updated": "2026-07-12T02:34:12.225396Z",
   "matches": {
     "ARGENTINA-SWITZERLAND": {
       "fixtureId": 1582681,
@@ -7,7 +7,7 @@
       "homeGoals": 1,
       "awayGoals": 1,
       "status": "2H",
-      "elapsed": 72,
+      "elapsed": 73,
       "kickoffUTC": "2026-07-12T01:00:00+00:00",
       "referee": "Joao Pedro Pinheiro, Portugal",
       "events": [
@@ -33,14 +33,6 @@
           "player": "D. Ndoye",
           "team": "SWITZERLAND",
           "minute": 67,
-          "extra": null
-        },
-        {
-          "type": "Card",
-          "detail": "Yellow Card",
-          "player": "L. Paredes",
-          "team": "ARGENTINA",
-          "minute": 69,
           "extra": null
         },
         {
