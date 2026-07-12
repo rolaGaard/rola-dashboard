@@ -1,13 +1,13 @@
 {
-  "updated": "2026-07-12T02:28:11.584171Z",
+  "updated": "2026-07-12T02:29:11.056916Z",
   "matches": {
     "ARGENTINA-SWITZERLAND": {
       "fixtureId": 1582681,
       "round": "Quarter-finals",
       "homeGoals": 1,
-      "awayGoals": 0,
+      "awayGoals": 1,
       "status": "2H",
-      "elapsed": 67,
+      "elapsed": 68,
       "kickoffUTC": "2026-07-12T01:00:00+00:00",
       "referee": "Joao Pedro Pinheiro, Portugal",
       "events": [
@@ -25,6 +25,14 @@
           "player": "B. Embolo",
           "team": "SWITZERLAND",
           "minute": 44,
+          "extra": null
+        },
+        {
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "player": "D. Ndoye",
+          "team": "SWITZERLAND",
+          "minute": 67,
           "extra": null
         }
       ],
