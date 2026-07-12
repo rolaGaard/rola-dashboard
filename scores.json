@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-12T03:34:13.860950Z",
+  "updated": "2026-07-12T03:35:18.493103Z",
   "matches": {
     "ARGENTINA-SWITZERLAND": {
       "fixtureId": 1582681,
@@ -7,7 +7,7 @@
       "homeGoals": 2,
       "awayGoals": 1,
       "status": "ET",
-      "elapsed": 114,
+      "elapsed": 115,
       "kickoffUTC": "2026-07-12T01:00:00+00:00",
       "referee": "Joao Pedro Pinheiro, Portugal",
       "events": [
@@ -73,6 +73,14 @@
           "player": "J. Alvarez",
           "team": "ARGENTINA",
           "minute": 112,
+          "extra": null
+        },
+        {
+          "type": "Card",
+          "detail": "Yellow Card",
+          "player": "J. Lopez",
+          "team": "ARGENTINA",
+          "minute": 115,
           "extra": null
         }
       ],
