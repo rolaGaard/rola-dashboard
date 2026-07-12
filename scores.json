@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-12T02:46:16.527934Z",
+  "updated": "2026-07-12T02:47:10.029045Z",
   "matches": {
     "ARGENTINA-SWITZERLAND": {
       "fixtureId": 1582681,
@@ -7,7 +7,7 @@
       "homeGoals": 1,
       "awayGoals": 1,
       "status": "2H",
-      "elapsed": 85,
+      "elapsed": 86,
       "kickoffUTC": "2026-07-12T01:00:00+00:00",
       "referee": "Joao Pedro Pinheiro, Portugal",
       "events": [
@@ -58,6 +58,16 @@
             "out": "N. Tagliafico",
             "in": "N. Gonzalez",
             "minute": 78
+          },
+          {
+            "out": "R. de Paul",
+            "in": "L. Martinez",
+            "minute": 85
+          },
+          {
+            "out": "N. Molina",
+            "in": "G. Montiel",
+            "minute": 85
           }
         ]
       },
