@@ -1,437 +1,6 @@
 {
-  "updated": "2026-07-12T03:44:11.236055Z",
+  "updated": "2026-07-12T03:45:25.009589Z",
   "matches": {
-    "ARGENTINA-SWITZERLAND": {
-      "fixtureId": 1582681,
-      "round": "Quarter-finals",
-      "homeGoals": 3,
-      "awayGoals": 1,
-      "status": "ET",
-      "elapsed": 124,
-      "kickoffUTC": "2026-07-12T01:00:00+00:00",
-      "referee": "Joao Pedro Pinheiro, Portugal",
-      "events": [
-        {
-          "type": "Goal",
-          "detail": "Normal Goal",
-          "player": "A. Mac Allister",
-          "team": "ARGENTINA",
-          "minute": 10,
-          "extra": null
-        },
-        {
-          "type": "Card",
-          "detail": "Yellow Card",
-          "player": "B. Embolo",
-          "team": "SWITZERLAND",
-          "minute": 44,
-          "extra": null
-        },
-        {
-          "type": "Goal",
-          "detail": "Normal Goal",
-          "player": "D. Ndoye",
-          "team": "SWITZERLAND",
-          "minute": 67,
-          "extra": null
-        },
-        {
-          "type": "Card",
-          "detail": "Yellow Card",
-          "player": "B. Embolo",
-          "team": "SWITZERLAND",
-          "minute": 72,
-          "extra": null
-        },
-        {
-          "type": "Card",
-          "detail": "Red Card",
-          "player": "B. Embolo",
-          "team": "SWITZERLAND",
-          "minute": 72,
-          "extra": null
-        },
-        {
-          "type": "Card",
-          "detail": "Yellow Card",
-          "player": "T. Almada",
-          "team": "ARGENTINA",
-          "minute": 97,
-          "extra": null
-        },
-        {
-          "type": "Card",
-          "detail": "Yellow Card",
-          "player": "L. Martinez",
-          "team": "ARGENTINA",
-          "minute": 98,
-          "extra": null
-        },
-        {
-          "type": "Goal",
-          "detail": "Normal Goal",
-          "player": "J. Alvarez",
-          "team": "ARGENTINA",
-          "minute": 112,
-          "extra": null
-        },
-        {
-          "type": "Card",
-          "detail": "Yellow Card",
-          "player": "J. Lopez",
-          "team": "ARGENTINA",
-          "minute": 114,
-          "extra": null
-        },
-        {
-          "type": "Goal",
-          "detail": "Normal Goal",
-          "player": "L. Martinez",
-          "team": "ARGENTINA",
-          "minute": 120,
-          "extra": 1
-        }
-      ],
-      "substitutions": {
-        "ARGENTINA": [
-          {
-            "out": "N. Tagliafico",
-            "in": "N. Gonzalez",
-            "minute": 78
-          },
-          {
-            "out": "R. de Paul",
-            "in": "L. Martinez",
-            "minute": 85
-          },
-          {
-            "out": "N. Molina",
-            "in": "G. Montiel",
-            "minute": 85
-          },
-          {
-            "out": "E. Fernandez",
-            "in": "T. Almada",
-            "minute": 91
-          },
-          {
-            "out": "C. Romero",
-            "in": "N. Otamendi",
-            "minute": 106
-          },
-          {
-            "out": "L. Paredes",
-            "in": "J. Lopez",
-            "minute": 110
-          }
-        ],
-        "SWITZERLAND": [
-          {
-            "out": "D. Sow",
-            "in": "S. Widmer",
-            "minute": 86
-          },
-          {
-            "out": "D. Ndoye",
-            "in": "Z. Amdouni",
-            "minute": 86
-          },
-          {
-            "out": "F. Rieder",
-            "in": "M. Muheim",
-            "minute": 86
-          },
-          {
-            "out": "R. Rodriguez",
-            "in": "E. Comert",
-            "minute": 90
-          },
-          {
-            "out": "D. Zakaria",
-            "in": "A. Jashari",
-            "minute": 96
-          },
-          {
-            "out": "R. Freuler",
-            "in": "R. Vargas",
-            "minute": 115
-          }
-        ]
-      },
-      "lineups": {
-        "ARGENTINA": {
-          "formation": "4-1-3-2",
-          "coach": "Lionel Scaloni",
-          "startXI": [
-            {
-              "name": "Emiliano Mart\u00ednez",
-              "number": 23,
-              "pos": "G"
-            },
-            {
-              "name": "Nahuel Molina",
-              "number": 26,
-              "pos": "D"
-            },
-            {
-              "name": "Cristian Romero",
-              "number": 13,
-              "pos": "D"
-            },
-            {
-              "name": "Lisandro Mart\u00ednez",
-              "number": 6,
-              "pos": "D"
-            },
-            {
-              "name": "Nicol\u00e1s Tagliafico",
-              "number": 3,
-              "pos": "D"
-            },
-            {
-              "name": "Leandro Paredes",
-              "number": 5,
-              "pos": "M"
-            },
-            {
-              "name": "Rodrigo De Paul",
-              "number": 7,
-              "pos": "M"
-            },
-            {
-              "name": "Alexis Mac Allister",
-              "number": 20,
-              "pos": "M"
-            },
-            {
-              "name": "Enzo Fern\u00e1ndez",
-              "number": 24,
-              "pos": "M"
-            },
-            {
-              "name": "Lionel Messi",
-              "number": 10,
-              "pos": "F"
-            },
-            {
-              "name": "Juli\u00e1n Alvarez",
-              "number": 9,
-              "pos": "F"
-            }
-          ],
-          "substitutes": [
-            {
-              "name": "Juan Musso",
-              "number": 1,
-              "pos": "G"
-            },
-            {
-              "name": "Ger\u00f3nimo Rulli",
-              "number": 12,
-              "pos": "G"
-            },
-            {
-              "name": "Marcos Senesi",
-              "number": 2,
-              "pos": "D"
-            },
-            {
-              "name": "Gonzalo Montiel",
-              "number": 4,
-              "pos": "D"
-            },
-            {
-              "name": "Nicol\u00e1s Otamendi",
-              "number": 19,
-              "pos": "D"
-            },
-            {
-              "name": "Facundo Medina",
-              "number": 25,
-              "pos": "D"
-            },
-            {
-              "name": "Valent\u00edn Barco",
-              "number": 8,
-              "pos": "M"
-            },
-            {
-              "name": "Giovani Lo Celso",
-              "number": 11,
-              "pos": "M"
-            },
-            {
-              "name": "Exequiel Palacios",
-              "number": 14,
-              "pos": "M"
-            },
-            {
-              "name": "Nicol\u00e1s Gonz\u00e1lez",
-              "number": 15,
-              "pos": "F"
-            },
-            {
-              "name": "Thiago Almada",
-              "number": 16,
-              "pos": "M"
-            },
-            {
-              "name": "Giuliano Simeone",
-              "number": 17,
-              "pos": "F"
-            },
-            {
-              "name": "Nico Paz",
-              "number": 18,
-              "pos": "F"
-            },
-            {
-              "name": "Jos\u00e9 Manuel L\u00f3pez",
-              "number": 21,
-              "pos": "F"
-            },
-            {
-              "name": "Lautaro Mart\u00ednez",
-              "number": 22,
-              "pos": "F"
-            }
-          ]
-        },
-        "SWITZERLAND": {
-          "formation": "4-2-3-1",
-          "coach": "Murat Yakin",
-          "startXI": [
-            {
-              "name": "Gregor Kobel",
-              "number": 1,
-              "pos": "G"
-            },
-            {
-              "name": "Denis Zakaria",
-              "number": 6,
-              "pos": "D"
-            },
-            {
-              "name": "Nico Elvedi",
-              "number": 4,
-              "pos": "D"
-            },
-            {
-              "name": "Manuel Akanji",
-              "number": 5,
-              "pos": "D"
-            },
-            {
-              "name": "Ricardo Rodr\u00edguez",
-              "number": 13,
-              "pos": "D"
-            },
-            {
-              "name": "Remo Freuler",
-              "number": 8,
-              "pos": "M"
-            },
-            {
-              "name": "Granit Xhaka",
-              "number": 10,
-              "pos": "M"
-            },
-            {
-              "name": "Fabian Rieder",
-              "number": 22,
-              "pos": "M"
-            },
-            {
-              "name": "Djibril Sow",
-              "number": 15,
-              "pos": "M"
-            },
-            {
-              "name": "Dan Ndoye",
-              "number": 11,
-              "pos": "M"
-            },
-            {
-              "name": "Breel Embolo",
-              "number": 7,
-              "pos": "F"
-            }
-          ],
-          "substitutes": [
-            {
-              "name": "Yvon Mvogo",
-              "number": 12,
-              "pos": "G"
-            },
-            {
-              "name": "Marvin Keller",
-              "number": 21,
-              "pos": "G"
-            },
-            {
-              "name": "Eray C\u00f6mert",
-              "number": 18,
-              "pos": "D"
-            },
-            {
-              "name": "Aur\u00e8le Amenda",
-              "number": 24,
-              "pos": "D"
-            },
-            {
-              "name": "Luca Jaquez",
-              "number": 25,
-              "pos": "D"
-            },
-            {
-              "name": "Miro Muheim",
-              "number": 2,
-              "pos": "D"
-            },
-            {
-              "name": "Silvan Widmer",
-              "number": 3,
-              "pos": "D"
-            },
-            {
-              "name": "Ardon Jashari",
-              "number": 14,
-              "pos": "M"
-            },
-            {
-              "name": "Michel Aebischer",
-              "number": 20,
-              "pos": "M"
-            },
-            {
-              "name": "Christian Fassnacht",
-              "number": 16,
-              "pos": "M"
-            },
-            {
-              "name": "Rub\u00e9n Vargas",
-              "number": 17,
-              "pos": "M"
-            },
-            {
-              "name": "Noah Okafor",
-              "number": 19,
-              "pos": "F"
-            },
-            {
-              "name": "Zeki Amdouni",
-              "number": 23,
-              "pos": "F"
-            },
-            {
-              "name": "C\u00e9dric Itten",
-              "number": 26,
-              "pos": "F"
-            }
-          ]
-        }
-      }
-    },
     "MEXICO-SOUTH AFRICA": {
       "fixtureId": 1489369,
       "round": "Group Stage - 1",
@@ -38719,6 +38288,437 @@
             {
               "name": "Ivan Toney",
               "number": 22,
+              "pos": "F"
+            }
+          ]
+        }
+      }
+    },
+    "ARGENTINA-SWITZERLAND": {
+      "fixtureId": 1582681,
+      "round": "Quarter-finals",
+      "homeGoals": 3,
+      "awayGoals": 1,
+      "status": "AET",
+      "elapsed": 120,
+      "kickoffUTC": "2026-07-12T01:00:00+00:00",
+      "referee": "Joao Pedro Pinheiro, Portugal",
+      "events": [
+        {
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "player": "A. Mac Allister",
+          "team": "ARGENTINA",
+          "minute": 10,
+          "extra": null
+        },
+        {
+          "type": "Card",
+          "detail": "Yellow Card",
+          "player": "B. Embolo",
+          "team": "SWITZERLAND",
+          "minute": 44,
+          "extra": null
+        },
+        {
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "player": "D. Ndoye",
+          "team": "SWITZERLAND",
+          "minute": 67,
+          "extra": null
+        },
+        {
+          "type": "Card",
+          "detail": "Yellow Card",
+          "player": "B. Embolo",
+          "team": "SWITZERLAND",
+          "minute": 72,
+          "extra": null
+        },
+        {
+          "type": "Card",
+          "detail": "Red Card",
+          "player": "B. Embolo",
+          "team": "SWITZERLAND",
+          "minute": 72,
+          "extra": null
+        },
+        {
+          "type": "Card",
+          "detail": "Yellow Card",
+          "player": "T. Almada",
+          "team": "ARGENTINA",
+          "minute": 97,
+          "extra": null
+        },
+        {
+          "type": "Card",
+          "detail": "Yellow Card",
+          "player": "L. Martinez",
+          "team": "ARGENTINA",
+          "minute": 98,
+          "extra": null
+        },
+        {
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "player": "J. Alvarez",
+          "team": "ARGENTINA",
+          "minute": 112,
+          "extra": null
+        },
+        {
+          "type": "Card",
+          "detail": "Yellow Card",
+          "player": "J. Lopez",
+          "team": "ARGENTINA",
+          "minute": 114,
+          "extra": null
+        },
+        {
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "player": "L. Martinez",
+          "team": "ARGENTINA",
+          "minute": 120,
+          "extra": 1
+        }
+      ],
+      "substitutions": {
+        "ARGENTINA": [
+          {
+            "out": "N. Tagliafico",
+            "in": "N. Gonzalez",
+            "minute": 78
+          },
+          {
+            "out": "R. de Paul",
+            "in": "L. Martinez",
+            "minute": 85
+          },
+          {
+            "out": "N. Molina",
+            "in": "G. Montiel",
+            "minute": 85
+          },
+          {
+            "out": "E. Fernandez",
+            "in": "T. Almada",
+            "minute": 91
+          },
+          {
+            "out": "C. Romero",
+            "in": "N. Otamendi",
+            "minute": 106
+          },
+          {
+            "out": "L. Paredes",
+            "in": "J. Lopez",
+            "minute": 110
+          }
+        ],
+        "SWITZERLAND": [
+          {
+            "out": "D. Sow",
+            "in": "S. Widmer",
+            "minute": 86
+          },
+          {
+            "out": "D. Ndoye",
+            "in": "Z. Amdouni",
+            "minute": 86
+          },
+          {
+            "out": "F. Rieder",
+            "in": "M. Muheim",
+            "minute": 86
+          },
+          {
+            "out": "R. Rodriguez",
+            "in": "E. Comert",
+            "minute": 90
+          },
+          {
+            "out": "D. Zakaria",
+            "in": "A. Jashari",
+            "minute": 96
+          },
+          {
+            "out": "R. Freuler",
+            "in": "R. Vargas",
+            "minute": 115
+          }
+        ]
+      },
+      "lineups": {
+        "ARGENTINA": {
+          "formation": "4-1-3-2",
+          "coach": "Lionel Scaloni",
+          "startXI": [
+            {
+              "name": "Emiliano Mart\u00ednez",
+              "number": 23,
+              "pos": "G"
+            },
+            {
+              "name": "Nahuel Molina",
+              "number": 26,
+              "pos": "D"
+            },
+            {
+              "name": "Cristian Romero",
+              "number": 13,
+              "pos": "D"
+            },
+            {
+              "name": "Lisandro Mart\u00ednez",
+              "number": 6,
+              "pos": "D"
+            },
+            {
+              "name": "Nicol\u00e1s Tagliafico",
+              "number": 3,
+              "pos": "D"
+            },
+            {
+              "name": "Leandro Paredes",
+              "number": 5,
+              "pos": "M"
+            },
+            {
+              "name": "Rodrigo De Paul",
+              "number": 7,
+              "pos": "M"
+            },
+            {
+              "name": "Alexis Mac Allister",
+              "number": 20,
+              "pos": "M"
+            },
+            {
+              "name": "Enzo Fern\u00e1ndez",
+              "number": 24,
+              "pos": "M"
+            },
+            {
+              "name": "Lionel Messi",
+              "number": 10,
+              "pos": "F"
+            },
+            {
+              "name": "Juli\u00e1n Alvarez",
+              "number": 9,
+              "pos": "F"
+            }
+          ],
+          "substitutes": [
+            {
+              "name": "Juan Musso",
+              "number": 1,
+              "pos": "G"
+            },
+            {
+              "name": "Ger\u00f3nimo Rulli",
+              "number": 12,
+              "pos": "G"
+            },
+            {
+              "name": "Marcos Senesi",
+              "number": 2,
+              "pos": "D"
+            },
+            {
+              "name": "Gonzalo Montiel",
+              "number": 4,
+              "pos": "D"
+            },
+            {
+              "name": "Nicol\u00e1s Otamendi",
+              "number": 19,
+              "pos": "D"
+            },
+            {
+              "name": "Facundo Medina",
+              "number": 25,
+              "pos": "D"
+            },
+            {
+              "name": "Valent\u00edn Barco",
+              "number": 8,
+              "pos": "M"
+            },
+            {
+              "name": "Giovani Lo Celso",
+              "number": 11,
+              "pos": "M"
+            },
+            {
+              "name": "Exequiel Palacios",
+              "number": 14,
+              "pos": "M"
+            },
+            {
+              "name": "Nicol\u00e1s Gonz\u00e1lez",
+              "number": 15,
+              "pos": "F"
+            },
+            {
+              "name": "Thiago Almada",
+              "number": 16,
+              "pos": "M"
+            },
+            {
+              "name": "Giuliano Simeone",
+              "number": 17,
+              "pos": "F"
+            },
+            {
+              "name": "Nico Paz",
+              "number": 18,
+              "pos": "F"
+            },
+            {
+              "name": "Jos\u00e9 Manuel L\u00f3pez",
+              "number": 21,
+              "pos": "F"
+            },
+            {
+              "name": "Lautaro Mart\u00ednez",
+              "number": 22,
+              "pos": "F"
+            }
+          ]
+        },
+        "SWITZERLAND": {
+          "formation": "4-2-3-1",
+          "coach": "Murat Yakin",
+          "startXI": [
+            {
+              "name": "Gregor Kobel",
+              "number": 1,
+              "pos": "G"
+            },
+            {
+              "name": "Denis Zakaria",
+              "number": 6,
+              "pos": "D"
+            },
+            {
+              "name": "Nico Elvedi",
+              "number": 4,
+              "pos": "D"
+            },
+            {
+              "name": "Manuel Akanji",
+              "number": 5,
+              "pos": "D"
+            },
+            {
+              "name": "Ricardo Rodr\u00edguez",
+              "number": 13,
+              "pos": "D"
+            },
+            {
+              "name": "Remo Freuler",
+              "number": 8,
+              "pos": "M"
+            },
+            {
+              "name": "Granit Xhaka",
+              "number": 10,
+              "pos": "M"
+            },
+            {
+              "name": "Fabian Rieder",
+              "number": 22,
+              "pos": "M"
+            },
+            {
+              "name": "Djibril Sow",
+              "number": 15,
+              "pos": "M"
+            },
+            {
+              "name": "Dan Ndoye",
+              "number": 11,
+              "pos": "M"
+            },
+            {
+              "name": "Breel Embolo",
+              "number": 7,
+              "pos": "F"
+            }
+          ],
+          "substitutes": [
+            {
+              "name": "Yvon Mvogo",
+              "number": 12,
+              "pos": "G"
+            },
+            {
+              "name": "Marvin Keller",
+              "number": 21,
+              "pos": "G"
+            },
+            {
+              "name": "Eray C\u00f6mert",
+              "number": 18,
+              "pos": "D"
+            },
+            {
+              "name": "Aur\u00e8le Amenda",
+              "number": 24,
+              "pos": "D"
+            },
+            {
+              "name": "Luca Jaquez",
+              "number": 25,
+              "pos": "D"
+            },
+            {
+              "name": "Miro Muheim",
+              "number": 2,
+              "pos": "D"
+            },
+            {
+              "name": "Silvan Widmer",
+              "number": 3,
+              "pos": "D"
+            },
+            {
+              "name": "Ardon Jashari",
+              "number": 14,
+              "pos": "M"
+            },
+            {
+              "name": "Michel Aebischer",
+              "number": 20,
+              "pos": "M"
+            },
+            {
+              "name": "Christian Fassnacht",
+              "number": 16,
+              "pos": "M"
+            },
+            {
+              "name": "Rub\u00e9n Vargas",
+              "number": 17,
+              "pos": "M"
+            },
+            {
+              "name": "Noah Okafor",
+              "number": 19,
+              "pos": "F"
+            },
+            {
+              "name": "Zeki Amdouni",
+              "number": 23,
+              "pos": "F"
+            },
+            {
+              "name": "C\u00e9dric Itten",
+              "number": 26,
               "pos": "F"
             }
           ]
