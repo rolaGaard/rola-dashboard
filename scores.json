@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-12T01:09:09.868414Z",
+  "updated": "2026-07-12T01:10:45.236936Z",
   "matches": {
     "ARGENTINA-SWITZERLAND": {
       "fixtureId": 1582681,
@@ -7,10 +7,19 @@
       "homeGoals": 0,
       "awayGoals": 0,
       "status": "1H",
-      "elapsed": 9,
+      "elapsed": 10,
       "kickoffUTC": "2026-07-12T01:00:00+00:00",
       "referee": null,
-      "events": [],
+      "events": [
+        {
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "player": null,
+          "team": "ARGENTINA",
+          "minute": 10,
+          "extra": null
+        }
+      ],
       "lineups": {
         "ARGENTINA": {
           "formation": "4-1-3-2",
