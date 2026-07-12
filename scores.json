@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-12T02:56:15.174489Z",
+  "updated": "2026-07-12T02:57:12.567644Z",
   "matches": {
     "ARGENTINA-SWITZERLAND": {
       "fixtureId": 1582681,
@@ -85,6 +85,11 @@
             "out": "F. Rieder",
             "in": "M. Muheim",
             "minute": 86
+          },
+          {
+            "out": "R. Rodriguez",
+            "in": "E. Comert",
+            "minute": 90
           }
         ]
       },
