@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-12T01:24:13.227895Z",
+  "updated": "2026-07-12T01:25:16.005469Z",
   "matches": {
     "ARGENTINA-SWITZERLAND": {
       "fixtureId": 1582681,
@@ -7,7 +7,7 @@
       "homeGoals": 1,
       "awayGoals": 0,
       "status": "1H",
-      "elapsed": 24,
+      "elapsed": 25,
       "kickoffUTC": "2026-07-12T01:00:00+00:00",
       "referee": null,
       "events": [
