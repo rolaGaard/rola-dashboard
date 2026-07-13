@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-07T11:53:11.571622Z",
+  "updated": "2026-07-13T12:08:55.824913Z",
   "squads": {
     "BELGIUM": [
       {
@@ -120,7 +120,7 @@
       {
         "name": "D. Lukebakio",
         "number": 14,
-        "position": "Attacker"
+        "position": "Midfielder"
       },
       {
         "name": "C. De Ketelaere",
@@ -633,7 +633,7 @@
       {
         "name": "Gabriel Martinelli",
         "number": 22,
-        "position": "Attacker"
+        "position": "Midfielder"
       },
       {
         "name": "Neymar",
@@ -648,7 +648,7 @@
       {
         "name": "Rayan",
         "number": 26,
-        "position": "Attacker"
+        "position": "Midfielder"
       },
       {
         "name": "Thiago",
@@ -1171,7 +1171,7 @@
       {
         "name": "M. Rashford",
         "number": 11,
-        "position": "Midfielder"
+        "position": "Attacker"
       },
       {
         "name": "B. Saka",
@@ -2984,7 +2984,7 @@
       {
         "name": "B. El Khannouss",
         "number": 23,
-        "position": "Midfielder"
+        "position": "Attacker"
       },
       {
         "name": "S. El Mourabet",
