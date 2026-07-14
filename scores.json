@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-14T19:31:12.020817Z",
+  "updated": "2026-07-14T19:32:12.606709Z",
   "matches": {
     "FRANCE-SPAIN": {
       "fixtureId": 1585131,
@@ -7,7 +7,7 @@
       "homeGoals": 0,
       "awayGoals": 1,
       "status": "1H",
-      "elapsed": 32,
+      "elapsed": 33,
       "kickoffUTC": "2026-07-14T19:00:00+00:00",
       "referee": "Iv\u00e1n Barton, El Salvador",
       "events": [
@@ -25,6 +25,14 @@
           "player": "Mikel Oyarzabal",
           "team": "SPAIN",
           "minute": 22,
+          "extra": null
+        },
+        {
+          "type": "Card",
+          "detail": "Yellow Card",
+          "player": "Marc Cucurella",
+          "team": "SPAIN",
+          "minute": 31,
           "extra": null
         }
       ],
