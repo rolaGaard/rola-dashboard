@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-14T20:34:14.044818Z",
+  "updated": "2026-07-14T20:35:16.877538Z",
   "matches": {
     "MEXICO-SOUTH AFRICA": {
       "fixtureId": 1489369,
@@ -38741,7 +38741,7 @@
       "homeGoals": 0,
       "awayGoals": 2,
       "status": "2H",
-      "elapsed": 72,
+      "elapsed": 73,
       "kickoffUTC": "2026-07-14T19:00:00+00:00",
       "referee": "Iv\u00e1n Barton, El Salvador",
       "events": [
@@ -38794,6 +38794,16 @@
             "out": "Bradley Barcola",
             "in": "D\u00e9sir\u00e9 Doue",
             "minute": 57
+          },
+          {
+            "out": "Lucas Digne",
+            "in": "Theo Hernandez",
+            "minute": 72
+          },
+          {
+            "out": "Michael Olise",
+            "in": "Rayan Cherki",
+            "minute": 72
           }
         ]
       },
