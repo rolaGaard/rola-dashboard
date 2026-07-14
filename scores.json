@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-14T20:45:20.088862Z",
+  "updated": "2026-07-14T20:46:16.883647Z",
   "matches": {
     "MEXICO-SOUTH AFRICA": {
       "fixtureId": 1489369,
@@ -38741,7 +38741,7 @@
       "homeGoals": 0,
       "awayGoals": 2,
       "status": "2H",
-      "elapsed": 83,
+      "elapsed": 84,
       "kickoffUTC": "2026-07-14T19:00:00+00:00",
       "referee": "Iv\u00e1n Barton, El Salvador",
       "events": [
@@ -38821,6 +38821,16 @@
             "out": "Fabi\u00e1n Ruiz",
             "in": "Pedri",
             "minute": 78
+          },
+          {
+            "out": "Pedro Porro",
+            "in": "Marcos Llorente",
+            "minute": 84
+          },
+          {
+            "out": "Alejandro Baena Rodr\u00edguez",
+            "in": "Nico Williams",
+            "minute": 84
           }
         ]
       },
