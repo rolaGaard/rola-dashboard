@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-14T20:19:13.476499Z",
+  "updated": "2026-07-14T20:20:50.647030Z",
   "matches": {
     "MEXICO-SOUTH AFRICA": {
       "fixtureId": 1489369,
@@ -38739,9 +38739,9 @@
       "fixtureId": 1585131,
       "round": "Semi-finals",
       "homeGoals": 0,
-      "awayGoals": 1,
+      "awayGoals": 2,
       "status": "2H",
-      "elapsed": 57,
+      "elapsed": 59,
       "kickoffUTC": "2026-07-14T19:00:00+00:00",
       "referee": "Iv\u00e1n Barton, El Salvador",
       "events": [
@@ -38767,6 +38767,14 @@
           "player": "Marc Cucurella",
           "team": "SPAIN",
           "minute": 31,
+          "extra": null
+        },
+        {
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "player": "Pedro Porro",
+          "team": "SPAIN",
+          "minute": 58,
           "extra": null
         }
       ],
