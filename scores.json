@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-14T20:59:10.679161Z",
+  "updated": "2026-07-14T21:01:06.174529Z",
   "matches": {
     "MEXICO-SOUTH AFRICA": {
       "fixtureId": 1489369,
@@ -38725,22 +38725,12 @@
         }
       }
     },
-    "ENGLAND-ARGENTINA": {
-      "fixtureId": 1586077,
-      "round": "Semi-finals",
-      "homeGoals": null,
-      "awayGoals": null,
-      "status": "NS",
-      "elapsed": null,
-      "kickoffUTC": "2026-07-15T19:00:00+00:00",
-      "referee": null
-    },
     "FRANCE-SPAIN": {
       "fixtureId": 1585131,
       "round": "Semi-finals",
       "homeGoals": 0,
       "awayGoals": 2,
-      "status": "2H",
+      "status": "FT",
       "elapsed": 90,
       "kickoffUTC": "2026-07-14T19:00:00+00:00",
       "referee": "Iv\u00e1n Barton, El Salvador",
@@ -39120,6 +39110,16 @@
           ]
         }
       }
+    },
+    "ENGLAND-ARGENTINA": {
+      "fixtureId": 1586077,
+      "round": "Semi-finals",
+      "homeGoals": null,
+      "awayGoals": null,
+      "status": "NS",
+      "elapsed": null,
+      "kickoffUTC": "2026-07-15T19:00:00+00:00",
+      "referee": null
     }
   }
 }
