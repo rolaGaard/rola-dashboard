@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-14T20:39:10.804747Z",
+  "updated": "2026-07-14T20:40:50.677386Z",
   "matches": {
     "MEXICO-SOUTH AFRICA": {
       "fixtureId": 1489369,
@@ -38741,7 +38741,7 @@
       "homeGoals": 0,
       "awayGoals": 2,
       "status": "2H",
-      "elapsed": 77,
+      "elapsed": 79,
       "kickoffUTC": "2026-07-14T19:00:00+00:00",
       "referee": "Iv\u00e1n Barton, El Salvador",
       "events": [
@@ -38811,6 +38811,16 @@
             "out": "Mikel Oyarzabal",
             "in": "Ferr\u00e1n Torres",
             "minute": 74
+          },
+          {
+            "out": "Daniel Olmo Carvajal",
+            "in": "Mikel Merino",
+            "minute": 78
+          },
+          {
+            "out": "Fabi\u00e1n Ruiz",
+            "in": "Pedri",
+            "minute": 78
           }
         ]
       },
