@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-14T19:09:12.326918Z",
+  "updated": "2026-07-14T19:10:51.311654Z",
   "matches": {
     "FRANCE-SPAIN": {
       "fixtureId": 1585131,
@@ -7,10 +7,19 @@
       "homeGoals": 0,
       "awayGoals": 0,
       "status": "1H",
-      "elapsed": 10,
+      "elapsed": 11,
       "kickoffUTC": "2026-07-14T19:00:00+00:00",
       "referee": "Iv\u00e1n Barton, El Salvador",
-      "events": [],
+      "events": [
+        {
+          "type": "Card",
+          "detail": "Yellow Card",
+          "player": "Adrien Rabiot",
+          "team": "FRANCE",
+          "minute": 9,
+          "extra": null
+        }
+      ],
       "lineups": {
         "FRANCE": {
           "formation": "4-2-3-1",
