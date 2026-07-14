@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-14T19:29:11.549077Z",
+  "updated": "2026-07-14T19:31:01.775482Z",
   "matches": {
     "FRANCE-SPAIN": {
       "fixtureId": 1585131,
@@ -7,7 +7,7 @@
       "homeGoals": 0,
       "awayGoals": 1,
       "status": "1H",
-      "elapsed": 30,
+      "elapsed": 31,
       "kickoffUTC": "2026-07-14T19:00:00+00:00",
       "referee": "Iv\u00e1n Barton, El Salvador",
       "events": [
@@ -28,6 +28,15 @@
           "extra": null
         }
       ],
+      "substitutions": {
+        "FRANCE": [
+          {
+            "out": "William Saliba",
+            "in": "Maxence Lacroix",
+            "minute": 30
+          }
+        ]
+      },
       "lineups": {
         "FRANCE": {
           "formation": "4-2-3-1",
