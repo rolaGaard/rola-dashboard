@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-15T20:12:13.044092Z",
+  "updated": "2026-07-15T20:13:10.860482Z",
   "matches": {
     "ENGLAND-ARGENTINA": {
       "fixtureId": 1586077,
@@ -7,7 +7,7 @@
       "homeGoals": 0,
       "awayGoals": 0,
       "status": "2H",
-      "elapsed": 51,
+      "elapsed": 53,
       "kickoffUTC": "2026-07-15T19:00:00+00:00",
       "referee": "Ismail Elfath, USA",
       "events": [
@@ -32,7 +32,7 @@
           "detail": "Yellow Card",
           "player": "C. Romero",
           "team": "ARGENTINA",
-          "minute": 52,
+          "minute": 51,
           "extra": null
         }
       ],
