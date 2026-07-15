@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-15T18:29:12.505578Z",
+  "updated": "2026-07-15T18:31:01.619846Z",
   "matches": {
     "MEXICO-SOUTH AFRICA": {
       "fixtureId": 1489369,
@@ -39119,7 +39119,280 @@
       "status": "NS",
       "elapsed": null,
       "kickoffUTC": "2026-07-15T19:00:00+00:00",
-      "referee": "Ismail Elfath, USA"
+      "referee": "Ismail Elfath, USA",
+      "lineups": {
+        "ENGLAND": {
+          "formation": "4-2-3-1",
+          "coach": "Thomas Tuchel",
+          "startXI": [
+            {
+              "name": "Jordan Pickford",
+              "number": 1,
+              "pos": "G"
+            },
+            {
+              "name": "Reece James",
+              "number": 24,
+              "pos": "D"
+            },
+            {
+              "name": "John Stones",
+              "number": 5,
+              "pos": "D"
+            },
+            {
+              "name": "Marc Gu\u00e9hi",
+              "number": 6,
+              "pos": "D"
+            },
+            {
+              "name": "Djed Spence",
+              "number": 25,
+              "pos": "D"
+            },
+            {
+              "name": "Declan Rice",
+              "number": 4,
+              "pos": "M"
+            },
+            {
+              "name": "Elliot Anderson",
+              "number": 8,
+              "pos": "M"
+            },
+            {
+              "name": "Morgan Rogers",
+              "number": 17,
+              "pos": "M"
+            },
+            {
+              "name": "Jude Bellingham",
+              "number": 10,
+              "pos": "M"
+            },
+            {
+              "name": "Anthony Gordon",
+              "number": 18,
+              "pos": "M"
+            },
+            {
+              "name": "Harry Kane",
+              "number": 9,
+              "pos": "F"
+            }
+          ],
+          "substitutes": [
+            {
+              "name": "James Trafford",
+              "number": 23,
+              "pos": "G"
+            },
+            {
+              "name": "Dean Henderson",
+              "number": 13,
+              "pos": "G"
+            },
+            {
+              "name": "Nico O'Reilly",
+              "number": 3,
+              "pos": "D"
+            },
+            {
+              "name": "Ezri Konsa",
+              "number": 2,
+              "pos": "D"
+            },
+            {
+              "name": "Dan Burn",
+              "number": 15,
+              "pos": "D"
+            },
+            {
+              "name": "Trevoh Chalobah",
+              "number": 12,
+              "pos": "D"
+            },
+            {
+              "name": "Eberechi Eze",
+              "number": 21,
+              "pos": "M"
+            },
+            {
+              "name": "Jordan Henderson",
+              "number": 14,
+              "pos": "M"
+            },
+            {
+              "name": "Kobbie Mainoo",
+              "number": 16,
+              "pos": "M"
+            },
+            {
+              "name": "Bukayo Saka",
+              "number": 7,
+              "pos": "F"
+            },
+            {
+              "name": "Noni Madueke",
+              "number": 20,
+              "pos": "F"
+            },
+            {
+              "name": "Marcus Rashford",
+              "number": 11,
+              "pos": "F"
+            },
+            {
+              "name": "Ivan Toney",
+              "number": 22,
+              "pos": "F"
+            },
+            {
+              "name": "Ollie Watkins",
+              "number": 19,
+              "pos": "F"
+            }
+          ]
+        },
+        "ARGENTINA": {
+          "formation": "4-4-2",
+          "coach": "Lionel Scaloni",
+          "startXI": [
+            {
+              "name": "Emiliano Mart\u00ednez",
+              "number": 23,
+              "pos": "G"
+            },
+            {
+              "name": "Nahuel Molina",
+              "number": 26,
+              "pos": "D"
+            },
+            {
+              "name": "Cristian Romero",
+              "number": 13,
+              "pos": "D"
+            },
+            {
+              "name": "Lisandro Mart\u00ednez",
+              "number": 6,
+              "pos": "D"
+            },
+            {
+              "name": "Nicol\u00e1s Tagliafico",
+              "number": 3,
+              "pos": "D"
+            },
+            {
+              "name": "Giuliano Simeone",
+              "number": 17,
+              "pos": "M"
+            },
+            {
+              "name": "Leandro Paredes",
+              "number": 5,
+              "pos": "M"
+            },
+            {
+              "name": "Alexis Mac Allister",
+              "number": 20,
+              "pos": "M"
+            },
+            {
+              "name": "Enzo Fern\u00e1ndez",
+              "number": 24,
+              "pos": "M"
+            },
+            {
+              "name": "Lionel Messi",
+              "number": 10,
+              "pos": "F"
+            },
+            {
+              "name": "Juli\u00e1n Alvarez",
+              "number": 9,
+              "pos": "F"
+            }
+          ],
+          "substitutes": [
+            {
+              "name": "Juan Musso",
+              "number": 1,
+              "pos": "G"
+            },
+            {
+              "name": "Ger\u00f3nimo Rulli",
+              "number": 12,
+              "pos": "G"
+            },
+            {
+              "name": "Facundo Medina",
+              "number": 25,
+              "pos": "D"
+            },
+            {
+              "name": "Nicol\u00e1s Otamendi",
+              "number": 19,
+              "pos": "D"
+            },
+            {
+              "name": "Gonzalo Montiel",
+              "number": 4,
+              "pos": "D"
+            },
+            {
+              "name": "Marcos Senesi",
+              "number": 2,
+              "pos": "D"
+            },
+            {
+              "name": "Nicol\u00e1s Gonz\u00e1lez",
+              "number": 15,
+              "pos": "F"
+            },
+            {
+              "name": "Thiago Almada",
+              "number": 16,
+              "pos": "M"
+            },
+            {
+              "name": "Rodrigo De Paul",
+              "number": 7,
+              "pos": "M"
+            },
+            {
+              "name": "Giovani Lo Celso",
+              "number": 11,
+              "pos": "M"
+            },
+            {
+              "name": "Exequiel Palacios",
+              "number": 14,
+              "pos": "M"
+            },
+            {
+              "name": "Nico Paz",
+              "number": 18,
+              "pos": "F"
+            },
+            {
+              "name": "Valent\u00edn Barco",
+              "number": 8,
+              "pos": "M"
+            },
+            {
+              "name": "Lautaro Mart\u00ednez",
+              "number": 22,
+              "pos": "F"
+            },
+            {
+              "name": "Jos\u00e9 Manuel L\u00f3pez",
+              "number": 21,
+              "pos": "F"
+            }
+          ]
+        }
+      }
     }
   }
 }
