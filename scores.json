@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-15T20:11:11.582299Z",
+  "updated": "2026-07-15T20:12:13.044092Z",
   "matches": {
     "ENGLAND-ARGENTINA": {
       "fixtureId": 1586077,
@@ -25,6 +25,14 @@
           "player": "L. Martinez",
           "team": "ARGENTINA",
           "minute": 42,
+          "extra": null
+        },
+        {
+          "type": "Card",
+          "detail": "Yellow Card",
+          "player": "C. Romero",
+          "team": "ARGENTINA",
+          "minute": 52,
           "extra": null
         }
       ],
