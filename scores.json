@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-15T20:52:15.287364Z",
+  "updated": "2026-07-15T20:53:12.252700Z",
   "matches": {
     "ENGLAND-ARGENTINA": {
       "fixtureId": 1586077,
@@ -50,6 +50,14 @@
           "team": "ARGENTINA",
           "minute": 85,
           "extra": null
+        },
+        {
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "player": "L. Martinez",
+          "team": "ARGENTINA",
+          "minute": 90,
+          "extra": 2
         }
       ],
       "substitutions": {
