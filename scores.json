@@ -1,11 +1,11 @@
 {
-  "updated": "2026-07-15T20:46:15.267067Z",
+  "updated": "2026-07-15T20:47:12.869897Z",
   "matches": {
     "ENGLAND-ARGENTINA": {
       "fixtureId": 1586077,
       "round": "Semi-finals",
       "homeGoals": 1,
-      "awayGoals": 0,
+      "awayGoals": 1,
       "status": "2H",
       "elapsed": 86,
       "kickoffUTC": "2026-07-15T19:00:00+00:00",
@@ -41,6 +41,14 @@
           "player": "A. Gordon",
           "team": "ENGLAND",
           "minute": 55,
+          "extra": null
+        },
+        {
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "player": "E. Fernandez",
+          "team": "ARGENTINA",
+          "minute": 86,
           "extra": null
         }
       ],
