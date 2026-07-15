@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-15T20:57:10.646055Z",
+  "updated": "2026-07-15T20:58:12.606885Z",
   "matches": {
     "ENGLAND-ARGENTINA": {
       "fixtureId": 1586077,
@@ -115,6 +115,11 @@
           {
             "out": "J. Stones",
             "in": "I. Toney",
+            "minute": 90
+          },
+          {
+            "out": "D. Spence",
+            "in": "M. Rashford",
             "minute": 90
           }
         ]
