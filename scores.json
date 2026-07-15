@@ -1,10 +1,10 @@
 {
-  "updated": "2026-07-15T20:15:27.437148Z",
+  "updated": "2026-07-15T20:16:13.383570Z",
   "matches": {
     "ENGLAND-ARGENTINA": {
       "fixtureId": 1586077,
       "round": "Semi-finals",
-      "homeGoals": 0,
+      "homeGoals": 1,
       "awayGoals": 0,
       "status": "2H",
       "elapsed": 55,
@@ -33,6 +33,14 @@
           "player": "C. Romero",
           "team": "ARGENTINA",
           "minute": 51,
+          "extra": null
+        },
+        {
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "player": null,
+          "team": "ENGLAND",
+          "minute": 55,
           "extra": null
         }
       ],
