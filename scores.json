@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-15T20:32:12.855675Z",
+  "updated": "2026-07-15T20:33:13.253561Z",
   "matches": {
     "ENGLAND-ARGENTINA": {
       "fixtureId": 1586077,
@@ -7,7 +7,7 @@
       "homeGoals": 1,
       "awayGoals": 0,
       "status": "2H",
-      "elapsed": 72,
+      "elapsed": 73,
       "kickoffUTC": "2026-07-15T19:00:00+00:00",
       "referee": "Ismail Elfath, USA",
       "events": [
@@ -50,6 +50,13 @@
             "out": "L. Paredes",
             "in": "N. Gonzalez",
             "minute": 64
+          }
+        ],
+        "ENGLAND": [
+          {
+            "out": "A. Gordon",
+            "in": "E. Konsa",
+            "minute": 72
           }
         ]
       },
