@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-15T19:41:11.779003Z",
+  "updated": "2026-07-15T19:42:14.129482Z",
   "matches": {
     "ENGLAND-ARGENTINA": {
       "fixtureId": 1586077,
@@ -7,7 +7,7 @@
       "homeGoals": 0,
       "awayGoals": 0,
       "status": "1H",
-      "elapsed": 41,
+      "elapsed": 42,
       "kickoffUTC": "2026-07-15T19:00:00+00:00",
       "referee": "Ismail Elfath, USA",
       "events": [
@@ -17,6 +17,14 @@
           "player": "E. Anderson",
           "team": "ENGLAND",
           "minute": 37,
+          "extra": null
+        },
+        {
+          "type": "Card",
+          "detail": "Yellow Card",
+          "player": "L. Martinez",
+          "team": "ARGENTINA",
+          "minute": 42,
           "extra": null
         }
       ],
