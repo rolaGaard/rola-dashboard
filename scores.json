@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-15T20:56:13.310220Z",
+  "updated": "2026-07-15T20:57:10.646055Z",
   "matches": {
     "ENGLAND-ARGENTINA": {
       "fixtureId": 1586077,
@@ -111,6 +111,11 @@
             "out": "D. Rice",
             "in": "N. O'Reilly",
             "minute": 82
+          },
+          {
+            "out": "J. Stones",
+            "in": "I. Toney",
+            "minute": 90
           }
         ]
       },
