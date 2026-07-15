@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-15T21:04:13.205377Z",
+  "updated": "2026-07-15T21:05:17.597684Z",
   "matches": {
     "MEXICO-SOUTH AFRICA": {
       "fixtureId": 1489369,
@@ -39507,6 +39507,26 @@
           ]
         }
       }
+    },
+    "FRANCE-ENGLAND": {
+      "fixtureId": 1591865,
+      "round": "3rd Place Final",
+      "homeGoals": null,
+      "awayGoals": null,
+      "status": "NS",
+      "elapsed": null,
+      "kickoffUTC": "2026-07-18T21:00:00+00:00",
+      "referee": null
+    },
+    "SPAIN-ARGENTINA": {
+      "fixtureId": 1591866,
+      "round": "Final",
+      "homeGoals": null,
+      "awayGoals": null,
+      "status": "NS",
+      "elapsed": null,
+      "kickoffUTC": "2026-07-19T19:00:00+00:00",
+      "referee": null
     }
   }
 }
