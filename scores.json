@@ -1,13 +1,13 @@
 {
-  "updated": "2026-07-15T20:05:17.449443Z",
+  "updated": "2026-07-15T20:06:12.167809Z",
   "matches": {
     "ENGLAND-ARGENTINA": {
       "fixtureId": 1586077,
       "round": "Semi-finals",
       "homeGoals": 0,
       "awayGoals": 0,
-      "status": "HT",
-      "elapsed": 45,
+      "status": "2H",
+      "elapsed": 46,
       "kickoffUTC": "2026-07-15T19:00:00+00:00",
       "referee": "Ismail Elfath, USA",
       "events": [
