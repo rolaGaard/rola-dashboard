@@ -1,11 +1,11 @@
 {
-  "updated": "2026-07-18T21:46:11.775463Z",
+  "updated": "2026-07-18T21:47:10.904494Z",
   "matches": {
     "FRANCE-ENGLAND": {
       "fixtureId": 1591865,
       "round": "3rd Place Final",
       "homeGoals": 0,
-      "awayGoals": 3,
+      "awayGoals": 4,
       "status": "1H",
       "elapsed": 45,
       "kickoffUTC": "2026-07-18T21:00:00+00:00",
@@ -34,6 +34,14 @@
           "team": "ENGLAND",
           "minute": 37,
           "extra": null
+        },
+        {
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "player": "B. Saka",
+          "team": "ENGLAND",
+          "minute": 45,
+          "extra": 2
         }
       ],
       "lineups": {
