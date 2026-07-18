@@ -1,13 +1,13 @@
 {
-  "updated": "2026-07-18T21:18:12.015528Z",
+  "updated": "2026-07-18T21:19:10.714545Z",
   "matches": {
     "FRANCE-ENGLAND": {
       "fixtureId": 1591865,
       "round": "3rd Place Final",
       "homeGoals": 0,
-      "awayGoals": 1,
+      "awayGoals": 2,
       "status": "1H",
-      "elapsed": 18,
+      "elapsed": 19,
       "kickoffUTC": "2026-07-18T21:00:00+00:00",
       "referee": "Jes\u00fas Valenzuela, Venezuela",
       "events": [
@@ -17,6 +17,14 @@
           "player": "D. Rice",
           "team": "ENGLAND",
           "minute": 3,
+          "extra": null
+        },
+        {
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "player": "E. Konsa",
+          "team": "ENGLAND",
+          "minute": 19,
           "extra": null
         }
       ],
