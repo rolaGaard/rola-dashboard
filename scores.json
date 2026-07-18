@@ -1,16 +1,25 @@
 {
-  "updated": "2026-07-18T21:02:12.409429Z",
+  "updated": "2026-07-18T21:03:10.362884Z",
   "matches": {
     "FRANCE-ENGLAND": {
       "fixtureId": 1591865,
       "round": "3rd Place Final",
       "homeGoals": 0,
-      "awayGoals": 0,
+      "awayGoals": 1,
       "status": "1H",
-      "elapsed": 2,
+      "elapsed": 3,
       "kickoffUTC": "2026-07-18T21:00:00+00:00",
       "referee": "Jes\u00fas Valenzuela, Venezuela",
-      "events": [],
+      "events": [
+        {
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "player": null,
+          "team": "ENGLAND",
+          "minute": 3,
+          "extra": null
+        }
+      ],
       "lineups": {
         "FRANCE": {
           "formation": "4-2-3-1",
