@@ -1,13 +1,13 @@
 {
-  "updated": "2026-07-18T22:49:11.170978Z",
+  "updated": "2026-07-18T22:50:21.839066Z",
   "matches": {
     "FRANCE-ENGLAND": {
       "fixtureId": 1591865,
       "round": "3rd Place Final",
       "homeGoals": 3,
-      "awayGoals": 4,
+      "awayGoals": 5,
       "status": "2H",
-      "elapsed": 87,
+      "elapsed": 88,
       "kickoffUTC": "2026-07-18T21:00:00+00:00",
       "referee": "Jes\u00fas Valenzuela, Venezuela",
       "events": [
