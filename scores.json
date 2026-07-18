@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-18T22:59:12.905186Z",
+  "updated": "2026-07-18T23:00:54.505096Z",
   "matches": {
     "FRANCE-ENGLAND": {
       "fixtureId": 1591865,
@@ -78,7 +78,7 @@
         {
           "type": "Goal",
           "detail": "Normal Goal",
-          "player": null,
+          "player": "O. Dembele",
           "team": "FRANCE",
           "minute": 90,
           "extra": 6
