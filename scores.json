@@ -1,10 +1,10 @@
 {
-  "updated": "2026-07-18T22:58:12.141665Z",
+  "updated": "2026-07-18T22:59:12.905186Z",
   "matches": {
     "FRANCE-ENGLAND": {
       "fixtureId": 1591865,
       "round": "3rd Place Final",
-      "homeGoals": 3,
+      "homeGoals": 4,
       "awayGoals": 5,
       "status": "2H",
       "elapsed": 90,
@@ -74,6 +74,14 @@
           "team": "ENGLAND",
           "minute": 87,
           "extra": null
+        },
+        {
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "player": null,
+          "team": "FRANCE",
+          "minute": 90,
+          "extra": 6
         }
       ],
       "substitutions": {
