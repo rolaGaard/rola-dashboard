@@ -1,427 +1,6 @@
 {
-  "updated": "2026-07-18T23:01:10.021354Z",
+  "updated": "2026-07-18T23:02:13.873902Z",
   "matches": {
-    "FRANCE-ENGLAND": {
-      "fixtureId": 1591865,
-      "round": "3rd Place Final",
-      "homeGoals": 4,
-      "awayGoals": 5,
-      "status": "2H",
-      "elapsed": 90,
-      "kickoffUTC": "2026-07-18T21:00:00+00:00",
-      "referee": "Jes\u00fas Valenzuela, Venezuela",
-      "events": [
-        {
-          "type": "Goal",
-          "detail": "Normal Goal",
-          "player": "D. Rice",
-          "team": "ENGLAND",
-          "minute": 3,
-          "extra": null
-        },
-        {
-          "type": "Goal",
-          "detail": "Normal Goal",
-          "player": "E. Konsa",
-          "team": "ENGLAND",
-          "minute": 18,
-          "extra": null
-        },
-        {
-          "type": "Goal",
-          "detail": "Normal Goal",
-          "player": "B. Saka",
-          "team": "ENGLAND",
-          "minute": 37,
-          "extra": null
-        },
-        {
-          "type": "Goal",
-          "detail": "Normal Goal",
-          "player": "B. Saka",
-          "team": "ENGLAND",
-          "minute": 45,
-          "extra": 1
-        },
-        {
-          "type": "Goal",
-          "detail": "Normal Goal",
-          "player": "K. Mbappe",
-          "team": "FRANCE",
-          "minute": 48,
-          "extra": null
-        },
-        {
-          "type": "Goal",
-          "detail": "Normal Goal",
-          "player": "B. Barcola",
-          "team": "FRANCE",
-          "minute": 54,
-          "extra": null
-        },
-        {
-          "type": "Goal",
-          "detail": "Normal Goal",
-          "player": "K. Mbappe",
-          "team": "FRANCE",
-          "minute": 66,
-          "extra": null
-        },
-        {
-          "type": "Goal",
-          "detail": "Penalty",
-          "player": "B. Saka",
-          "team": "ENGLAND",
-          "minute": 87,
-          "extra": null
-        },
-        {
-          "type": "Goal",
-          "detail": "Normal Goal",
-          "player": "O. Dembele",
-          "team": "FRANCE",
-          "minute": 90,
-          "extra": 6
-        },
-        {
-          "type": "Goal",
-          "detail": "Normal Goal",
-          "player": "J. Bellingham",
-          "team": "ENGLAND",
-          "minute": 90,
-          "extra": 8
-        }
-      ],
-      "substitutions": {
-        "FRANCE": [
-          {
-            "out": "R. Cherki",
-            "in": "O. Dembele",
-            "minute": 46
-          },
-          {
-            "out": "D. Doue",
-            "in": "B. Barcola",
-            "minute": 46
-          },
-          {
-            "out": "T. Hernandez",
-            "in": "L. Digne",
-            "minute": 46
-          },
-          {
-            "out": "I. Konate",
-            "in": "D. Upamecano",
-            "minute": 46
-          },
-          {
-            "out": "M. Gusto",
-            "in": "J. Kounde",
-            "minute": 90
-          }
-        ],
-        "ENGLAND": [
-          {
-            "out": "M. Rashford",
-            "in": "O. Watkins",
-            "minute": 46
-          },
-          {
-            "out": "I. Toney",
-            "in": "E. Anderson",
-            "minute": 79
-          },
-          {
-            "out": "E. Eze",
-            "in": "J. Bellingham",
-            "minute": 79
-          },
-          {
-            "out": "J. Quansah",
-            "in": "R. James",
-            "minute": 83
-          },
-          {
-            "out": "M. Guehi",
-            "in": "T. Chalobah",
-            "minute": 90
-          }
-        ]
-      },
-      "lineups": {
-        "FRANCE": {
-          "formation": "4-2-3-1",
-          "coach": "Didier Deschamps",
-          "startXI": [
-            {
-              "name": "Mike Maignan",
-              "number": 16,
-              "pos": "G"
-            },
-            {
-              "name": "Malo Gusto",
-              "number": 2,
-              "pos": "D"
-            },
-            {
-              "name": "Ibrahima Konat\u00e9",
-              "number": 15,
-              "pos": "D"
-            },
-            {
-              "name": "Maxence Lacroix",
-              "number": 26,
-              "pos": "D"
-            },
-            {
-              "name": "Theo Hern\u00e1ndez",
-              "number": 19,
-              "pos": "D"
-            },
-            {
-              "name": "Adrien Rabiot",
-              "number": 14,
-              "pos": "M"
-            },
-            {
-              "name": "Warren Za\u00efre-Emery",
-              "number": 18,
-              "pos": "M"
-            },
-            {
-              "name": "Michael Olise",
-              "number": 11,
-              "pos": "M"
-            },
-            {
-              "name": "Rayan Cherki",
-              "number": 24,
-              "pos": "M"
-            },
-            {
-              "name": "D\u00e9sir\u00e9 Dou\u00e9",
-              "number": 20,
-              "pos": "M"
-            },
-            {
-              "name": "Kylian Mbapp\u00e9",
-              "number": 10,
-              "pos": "F"
-            }
-          ],
-          "substitutes": [
-            {
-              "name": "Robin Risser",
-              "number": 23,
-              "pos": "G"
-            },
-            {
-              "name": "Brice Samba",
-              "number": 30,
-              "pos": "G"
-            },
-            {
-              "name": "Dayot Upamecano",
-              "number": 4,
-              "pos": "D"
-            },
-            {
-              "name": "Jules Kound\u00e9",
-              "number": 5,
-              "pos": "D"
-            },
-            {
-              "name": "Lucas Digne",
-              "number": 3,
-              "pos": "D"
-            },
-            {
-              "name": "Lucas Hern\u00e1ndez",
-              "number": 21,
-              "pos": "D"
-            },
-            {
-              "name": "William Saliba",
-              "number": 2,
-              "pos": "D"
-            },
-            {
-              "name": "Aur\u00e9lien Tchouam\u00e9ni",
-              "number": 8,
-              "pos": "M"
-            },
-            {
-              "name": "Maghnes Akliouche",
-              "number": 25,
-              "pos": "M"
-            },
-            {
-              "name": "Manu Kon\u00e9",
-              "number": 6,
-              "pos": "M"
-            },
-            {
-              "name": "N'Golo Kant\u00e9",
-              "number": 13,
-              "pos": "M"
-            },
-            {
-              "name": "Jean-Philippe Mateta",
-              "number": 22,
-              "pos": "F"
-            },
-            {
-              "name": "Ousmane Demb\u00e9l\u00e9",
-              "number": 7,
-              "pos": "F"
-            },
-            {
-              "name": "Marcus Thuram",
-              "number": 9,
-              "pos": "F"
-            },
-            {
-              "name": "Bradley Barcola",
-              "number": 12,
-              "pos": "F"
-            }
-          ]
-        },
-        "ENGLAND": {
-          "formation": "4-1-2-3",
-          "coach": "Thomas Tuchel",
-          "startXI": [
-            {
-              "name": "Dean Henderson",
-              "number": 13,
-              "pos": "G"
-            },
-            {
-              "name": "Jarell Quansah",
-              "number": 26,
-              "pos": "D"
-            },
-            {
-              "name": "Marc Gu\u00e9hi",
-              "number": 6,
-              "pos": "D"
-            },
-            {
-              "name": "Ezri Konsa",
-              "number": 2,
-              "pos": "D"
-            },
-            {
-              "name": "Djed Spence",
-              "number": 24,
-              "pos": "D"
-            },
-            {
-              "name": "Declan Rice",
-              "number": 4,
-              "pos": "M"
-            },
-            {
-              "name": "Eberechi Eze",
-              "number": 21,
-              "pos": "M"
-            },
-            {
-              "name": "Morgan Rogers",
-              "number": 17,
-              "pos": "M"
-            },
-            {
-              "name": "Bukayo Saka",
-              "number": 7,
-              "pos": "M"
-            },
-            {
-              "name": "Ivan Toney",
-              "number": 22,
-              "pos": "F"
-            },
-            {
-              "name": "Marcus Rashford",
-              "number": 11,
-              "pos": "M"
-            }
-          ],
-          "substitutes": [
-            {
-              "name": "James Trafford",
-              "number": 23,
-              "pos": "G"
-            },
-            {
-              "name": "Jordan Pickford",
-              "number": 1,
-              "pos": "G"
-            },
-            {
-              "name": "Dan Burn",
-              "number": 15,
-              "pos": "D"
-            },
-            {
-              "name": "John Stones",
-              "number": 5,
-              "pos": "D"
-            },
-            {
-              "name": "Reece James",
-              "number": 24,
-              "pos": "D"
-            },
-            {
-              "name": "Trevoh Chalobah",
-              "number": 12,
-              "pos": "D"
-            },
-            {
-              "name": "Nico O'Reilly",
-              "number": 3,
-              "pos": "D"
-            },
-            {
-              "name": "Elliot Anderson",
-              "number": 8,
-              "pos": "M"
-            },
-            {
-              "name": "Jude Bellingham",
-              "number": 10,
-              "pos": "M"
-            },
-            {
-              "name": "Kobbie Mainoo",
-              "number": 16,
-              "pos": "M"
-            },
-            {
-              "name": "Anthony Gordon",
-              "number": 18,
-              "pos": "F"
-            },
-            {
-              "name": "Ollie Watkins",
-              "number": 19,
-              "pos": "F"
-            },
-            {
-              "name": "Harry Kane",
-              "number": 9,
-              "pos": "F"
-            },
-            {
-              "name": "Noni Madueke",
-              "number": 20,
-              "pos": "F"
-            }
-          ]
-        }
-      }
-    },
     "MEXICO-SOUTH AFRICA": {
       "fixtureId": 1489369,
       "round": "Group Stage - 1",
@@ -39923,6 +39502,427 @@
             {
               "name": "Jos\u00e9 Manuel L\u00f3pez",
               "number": 21,
+              "pos": "F"
+            }
+          ]
+        }
+      }
+    },
+    "FRANCE-ENGLAND": {
+      "fixtureId": 1591865,
+      "round": "3rd Place Final",
+      "homeGoals": 4,
+      "awayGoals": 6,
+      "status": "FT",
+      "elapsed": 90,
+      "kickoffUTC": "2026-07-18T21:00:00+00:00",
+      "referee": "Jes\u00fas Valenzuela, Venezuela",
+      "events": [
+        {
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "player": "D. Rice",
+          "team": "ENGLAND",
+          "minute": 3,
+          "extra": null
+        },
+        {
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "player": "E. Konsa",
+          "team": "ENGLAND",
+          "minute": 18,
+          "extra": null
+        },
+        {
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "player": "B. Saka",
+          "team": "ENGLAND",
+          "minute": 37,
+          "extra": null
+        },
+        {
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "player": "B. Saka",
+          "team": "ENGLAND",
+          "minute": 45,
+          "extra": 1
+        },
+        {
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "player": "K. Mbappe",
+          "team": "FRANCE",
+          "minute": 48,
+          "extra": null
+        },
+        {
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "player": "B. Barcola",
+          "team": "FRANCE",
+          "minute": 54,
+          "extra": null
+        },
+        {
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "player": "K. Mbappe",
+          "team": "FRANCE",
+          "minute": 66,
+          "extra": null
+        },
+        {
+          "type": "Goal",
+          "detail": "Penalty",
+          "player": "B. Saka",
+          "team": "ENGLAND",
+          "minute": 87,
+          "extra": null
+        },
+        {
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "player": "O. Dembele",
+          "team": "FRANCE",
+          "minute": 90,
+          "extra": 6
+        },
+        {
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "player": "J. Bellingham",
+          "team": "ENGLAND",
+          "minute": 90,
+          "extra": 8
+        }
+      ],
+      "substitutions": {
+        "FRANCE": [
+          {
+            "out": "R. Cherki",
+            "in": "O. Dembele",
+            "minute": 46
+          },
+          {
+            "out": "D. Doue",
+            "in": "B. Barcola",
+            "minute": 46
+          },
+          {
+            "out": "T. Hernandez",
+            "in": "L. Digne",
+            "minute": 46
+          },
+          {
+            "out": "I. Konate",
+            "in": "D. Upamecano",
+            "minute": 46
+          },
+          {
+            "out": "M. Gusto",
+            "in": "J. Kounde",
+            "minute": 90
+          }
+        ],
+        "ENGLAND": [
+          {
+            "out": "M. Rashford",
+            "in": "O. Watkins",
+            "minute": 46
+          },
+          {
+            "out": "I. Toney",
+            "in": "E. Anderson",
+            "minute": 79
+          },
+          {
+            "out": "E. Eze",
+            "in": "J. Bellingham",
+            "minute": 79
+          },
+          {
+            "out": "J. Quansah",
+            "in": "R. James",
+            "minute": 83
+          },
+          {
+            "out": "M. Guehi",
+            "in": "T. Chalobah",
+            "minute": 90
+          }
+        ]
+      },
+      "lineups": {
+        "FRANCE": {
+          "formation": "4-2-3-1",
+          "coach": "Didier Deschamps",
+          "startXI": [
+            {
+              "name": "Mike Maignan",
+              "number": 16,
+              "pos": "G"
+            },
+            {
+              "name": "Malo Gusto",
+              "number": 2,
+              "pos": "D"
+            },
+            {
+              "name": "Ibrahima Konat\u00e9",
+              "number": 15,
+              "pos": "D"
+            },
+            {
+              "name": "Maxence Lacroix",
+              "number": 26,
+              "pos": "D"
+            },
+            {
+              "name": "Theo Hern\u00e1ndez",
+              "number": 19,
+              "pos": "D"
+            },
+            {
+              "name": "Adrien Rabiot",
+              "number": 14,
+              "pos": "M"
+            },
+            {
+              "name": "Warren Za\u00efre-Emery",
+              "number": 18,
+              "pos": "M"
+            },
+            {
+              "name": "Michael Olise",
+              "number": 11,
+              "pos": "M"
+            },
+            {
+              "name": "Rayan Cherki",
+              "number": 24,
+              "pos": "M"
+            },
+            {
+              "name": "D\u00e9sir\u00e9 Dou\u00e9",
+              "number": 20,
+              "pos": "M"
+            },
+            {
+              "name": "Kylian Mbapp\u00e9",
+              "number": 10,
+              "pos": "F"
+            }
+          ],
+          "substitutes": [
+            {
+              "name": "Robin Risser",
+              "number": 23,
+              "pos": "G"
+            },
+            {
+              "name": "Brice Samba",
+              "number": 30,
+              "pos": "G"
+            },
+            {
+              "name": "Dayot Upamecano",
+              "number": 4,
+              "pos": "D"
+            },
+            {
+              "name": "Jules Kound\u00e9",
+              "number": 5,
+              "pos": "D"
+            },
+            {
+              "name": "Lucas Digne",
+              "number": 3,
+              "pos": "D"
+            },
+            {
+              "name": "Lucas Hern\u00e1ndez",
+              "number": 21,
+              "pos": "D"
+            },
+            {
+              "name": "William Saliba",
+              "number": 2,
+              "pos": "D"
+            },
+            {
+              "name": "Aur\u00e9lien Tchouam\u00e9ni",
+              "number": 8,
+              "pos": "M"
+            },
+            {
+              "name": "Maghnes Akliouche",
+              "number": 25,
+              "pos": "M"
+            },
+            {
+              "name": "Manu Kon\u00e9",
+              "number": 6,
+              "pos": "M"
+            },
+            {
+              "name": "N'Golo Kant\u00e9",
+              "number": 13,
+              "pos": "M"
+            },
+            {
+              "name": "Jean-Philippe Mateta",
+              "number": 22,
+              "pos": "F"
+            },
+            {
+              "name": "Ousmane Demb\u00e9l\u00e9",
+              "number": 7,
+              "pos": "F"
+            },
+            {
+              "name": "Marcus Thuram",
+              "number": 9,
+              "pos": "F"
+            },
+            {
+              "name": "Bradley Barcola",
+              "number": 12,
+              "pos": "F"
+            }
+          ]
+        },
+        "ENGLAND": {
+          "formation": "4-1-2-3",
+          "coach": "Thomas Tuchel",
+          "startXI": [
+            {
+              "name": "Dean Henderson",
+              "number": 13,
+              "pos": "G"
+            },
+            {
+              "name": "Jarell Quansah",
+              "number": 26,
+              "pos": "D"
+            },
+            {
+              "name": "Marc Gu\u00e9hi",
+              "number": 6,
+              "pos": "D"
+            },
+            {
+              "name": "Ezri Konsa",
+              "number": 2,
+              "pos": "D"
+            },
+            {
+              "name": "Djed Spence",
+              "number": 24,
+              "pos": "D"
+            },
+            {
+              "name": "Declan Rice",
+              "number": 4,
+              "pos": "M"
+            },
+            {
+              "name": "Eberechi Eze",
+              "number": 21,
+              "pos": "M"
+            },
+            {
+              "name": "Morgan Rogers",
+              "number": 17,
+              "pos": "M"
+            },
+            {
+              "name": "Bukayo Saka",
+              "number": 7,
+              "pos": "M"
+            },
+            {
+              "name": "Ivan Toney",
+              "number": 22,
+              "pos": "F"
+            },
+            {
+              "name": "Marcus Rashford",
+              "number": 11,
+              "pos": "M"
+            }
+          ],
+          "substitutes": [
+            {
+              "name": "James Trafford",
+              "number": 23,
+              "pos": "G"
+            },
+            {
+              "name": "Jordan Pickford",
+              "number": 1,
+              "pos": "G"
+            },
+            {
+              "name": "Dan Burn",
+              "number": 15,
+              "pos": "D"
+            },
+            {
+              "name": "John Stones",
+              "number": 5,
+              "pos": "D"
+            },
+            {
+              "name": "Reece James",
+              "number": 24,
+              "pos": "D"
+            },
+            {
+              "name": "Trevoh Chalobah",
+              "number": 12,
+              "pos": "D"
+            },
+            {
+              "name": "Nico O'Reilly",
+              "number": 3,
+              "pos": "D"
+            },
+            {
+              "name": "Elliot Anderson",
+              "number": 8,
+              "pos": "M"
+            },
+            {
+              "name": "Jude Bellingham",
+              "number": 10,
+              "pos": "M"
+            },
+            {
+              "name": "Kobbie Mainoo",
+              "number": 16,
+              "pos": "M"
+            },
+            {
+              "name": "Anthony Gordon",
+              "number": 18,
+              "pos": "F"
+            },
+            {
+              "name": "Ollie Watkins",
+              "number": 19,
+              "pos": "F"
+            },
+            {
+              "name": "Harry Kane",
+              "number": 9,
+              "pos": "F"
+            },
+            {
+              "name": "Noni Madueke",
+              "number": 20,
               "pos": "F"
             }
           ]
