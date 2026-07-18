@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-18T22:50:21.839066Z",
+  "updated": "2026-07-18T22:51:10.132793Z",
   "matches": {
     "FRANCE-ENGLAND": {
       "fixtureId": 1591865,
@@ -7,7 +7,7 @@
       "homeGoals": 3,
       "awayGoals": 5,
       "status": "2H",
-      "elapsed": 88,
+      "elapsed": 89,
       "kickoffUTC": "2026-07-18T21:00:00+00:00",
       "referee": "Jes\u00fas Valenzuela, Venezuela",
       "events": [
@@ -65,6 +65,14 @@
           "player": "K. Mbappe",
           "team": "FRANCE",
           "minute": 66,
+          "extra": null
+        },
+        {
+          "type": "Goal",
+          "detail": "Penalty",
+          "player": "B. Saka",
+          "team": "ENGLAND",
+          "minute": 87,
           "extra": null
         }
       ],
