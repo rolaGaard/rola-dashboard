@@ -1,13 +1,13 @@
 {
-  "updated": "2026-07-18T22:17:10.762257Z",
+  "updated": "2026-07-18T22:18:13.999057Z",
   "matches": {
     "FRANCE-ENGLAND": {
       "fixtureId": 1591865,
       "round": "3rd Place Final",
-      "homeGoals": 1,
+      "homeGoals": 2,
       "awayGoals": 4,
       "status": "2H",
-      "elapsed": 54,
+      "elapsed": 55,
       "kickoffUTC": "2026-07-18T21:00:00+00:00",
       "referee": "Jes\u00fas Valenzuela, Venezuela",
       "events": [
@@ -49,6 +49,14 @@
           "player": "K. Mbappe",
           "team": "FRANCE",
           "minute": 48,
+          "extra": null
+        },
+        {
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "player": "B. Barcola",
+          "team": "FRANCE",
+          "minute": 54,
           "extra": null
         }
       ],
