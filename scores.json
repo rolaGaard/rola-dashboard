@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-18T22:55:16.007679Z",
+  "updated": "2026-07-18T22:56:12.374585Z",
   "matches": {
     "FRANCE-ENGLAND": {
       "fixtureId": 1591865,
@@ -124,6 +124,11 @@
             "out": "J. Quansah",
             "in": "R. James",
             "minute": 83
+          },
+          {
+            "out": "M. Guehi",
+            "in": "T. Chalobah",
+            "minute": 90
           }
         ]
       },
