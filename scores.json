@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-18T23:00:54.505096Z",
+  "updated": "2026-07-18T23:01:10.021354Z",
   "matches": {
     "FRANCE-ENGLAND": {
       "fixtureId": 1591865,
@@ -82,6 +82,14 @@
           "team": "FRANCE",
           "minute": 90,
           "extra": 6
+        },
+        {
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "player": "J. Bellingham",
+          "team": "ENGLAND",
+          "minute": 90,
+          "extra": 8
         }
       ],
       "substitutions": {
