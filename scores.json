@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-18T22:54:14.569243Z",
+  "updated": "2026-07-18T22:55:16.007679Z",
   "matches": {
     "FRANCE-ENGLAND": {
       "fixtureId": 1591865,
@@ -97,6 +97,11 @@
             "out": "I. Konate",
             "in": "D. Upamecano",
             "minute": 46
+          },
+          {
+            "out": "M. Gusto",
+            "in": "J. Kounde",
+            "minute": 90
           }
         ],
         "ENGLAND": [
