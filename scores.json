@@ -1,13 +1,13 @@
 {
-  "updated": "2026-07-18T21:37:10.403636Z",
+  "updated": "2026-07-18T21:38:13.158216Z",
   "matches": {
     "FRANCE-ENGLAND": {
       "fixtureId": 1591865,
       "round": "3rd Place Final",
       "homeGoals": 0,
-      "awayGoals": 2,
+      "awayGoals": 3,
       "status": "1H",
-      "elapsed": 37,
+      "elapsed": 38,
       "kickoffUTC": "2026-07-18T21:00:00+00:00",
       "referee": "Jes\u00fas Valenzuela, Venezuela",
       "events": [
@@ -25,6 +25,14 @@
           "player": "E. Konsa",
           "team": "ENGLAND",
           "minute": 18,
+          "extra": null
+        },
+        {
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "player": "B. Saka",
+          "team": "ENGLAND",
+          "minute": 37,
           "extra": null
         }
       ],
