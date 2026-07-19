@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-19T19:46:12.231345Z",
+  "updated": "2026-07-19T19:47:12.025485Z",
   "matches": {
     "SPAIN-ARGENTINA": {
       "fixtureId": 1591866,
@@ -7,10 +7,19 @@
       "homeGoals": 0,
       "awayGoals": 0,
       "status": "1H",
-      "elapsed": 40,
+      "elapsed": 41,
       "kickoffUTC": "2026-07-19T19:00:00+00:00",
       "referee": "Slavko Vin\u010di\u0107, Slovenia",
-      "events": [],
+      "events": [
+        {
+          "type": "Card",
+          "detail": "Yellow Card",
+          "player": "Lisandro Mart\u00ednez",
+          "team": "ARGENTINA",
+          "minute": 41,
+          "extra": null
+        }
+      ],
       "lineups": {
         "SPAIN": {
           "formation": "4-2-3-1",
