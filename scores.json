@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-19T21:29:09.808578Z",
+  "updated": "2026-07-19T21:30:43.594257Z",
   "matches": {
     "SPAIN-ARGENTINA": {
       "fixtureId": 1591866,
@@ -7,7 +7,7 @@
       "homeGoals": 0,
       "awayGoals": 0,
       "status": "ET",
-      "elapsed": 99,
+      "elapsed": 100,
       "kickoffUTC": "2026-07-19T19:00:00+00:00",
       "referee": "Slavko Vin\u010di\u0107, Slovenia",
       "events": [
@@ -92,6 +92,16 @@
             "out": "Daniel Olmo Carvajal",
             "in": "Mikel Merino",
             "minute": 75
+          },
+          {
+            "out": "Rodrigo Hernandez Cascante",
+            "in": "Mart\u00edn Zubimendi",
+            "minute": 99
+          },
+          {
+            "out": "Aymeric Laporte",
+            "in": "Eric Garc\u00eda",
+            "minute": 99
           }
         ]
       },
