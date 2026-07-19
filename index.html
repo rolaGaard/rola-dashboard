@@ -68,8 +68,7 @@
     box-shadow:0 0 0 2px #0a0a0a, 0 0 0 3px #FFD700;
   }
   .header-text { display:flex; flex-direction:column; gap:1px; }
-  .header-title { color:#fff; font-size:clamp(17px,2.4vw,28px); font-weight:700; line-height:1.2; }
-  .header-title-sub { color:#FFD700; font-size:clamp(13px,1.8vw,22px); font-weight:700; display:block; line-height:1.2; }
+  .header-title { color:#fff; font-size:clamp(17px,2.4vw,28px); font-weight:700; line-height:1.15; }
   .header-by { color:#94a3b8; font-size:clamp(11px,1.3vw,15px); font-weight:500; }
   .app-version { color:#64748b; }
   .header-sub { color:#94a3b8; font-size:clamp(11px,1.3vw,15px); margin-top:2px; }
@@ -630,6 +629,34 @@
     from { opacity:1; }
     to { opacity:0; transform:translateX(-50%) translateY(-20px); }
   }
+  /* ── Easter Egg Argentina Campeón ── */
+  .arg-flag-strip {
+    width:100%; height:clamp(28px,4vw,52px);
+    background:linear-gradient(to bottom,
+      #74ACDF 0%, #74ACDF 33.3%,
+      #fff 33.3%, #fff 66.6%,
+      #74ACDF 66.6%, #74ACDF 100%);
+    display:none; flex-shrink:0;
+  }
+  .arg-stars {
+    width:100%; text-align:center;
+    font-size:clamp(28px,6vw,64px);
+    line-height:1; padding:clamp(4px,1vw,12px) 0;
+    display:none; letter-spacing:clamp(4px,1.5vw,16px);
+  }
+  .arg-video-overlay {
+    position:fixed; inset:0; z-index:9000;
+    background:rgba(0,0,0,0.85);
+    display:none; align-items:center; justify-content:center;
+    cursor:pointer;
+  }
+  .arg-video-overlay.active { display:flex; }
+  .arg-video {
+    max-width:min(90vw,600px);
+    max-height:80vh;
+    border-radius:16px;
+    box-shadow:0 0 60px rgba(116,172,223,0.5);
+  }
   .progress-wrap {
     display:flex; align-items:center; gap:8px; padding:14px 24px 0;
   }
@@ -966,8 +993,8 @@
   <div class="header-left">
     <img class="header-icon" src="icons/icon-512.png" alt="rolaFixture">
     <div class="header-text">
-      <div class="header-title">rolaFixture<br><span class="header-title-sub">WC 2026</span></div>
-      <div class="header-by">by rolaGaard &nbsp;<span class="app-version">v5.2</span></div>
+      <div class="header-title">rolaFixture WC 2026</div>
+      <div class="header-by">by rolaGaard &nbsp;<span class="app-version">v5.4</span></div>
       <div class="header-sub" id="header-sub">USA · Canadá · México</div>
     </div>
   </div>
@@ -1005,6 +1032,16 @@
   </div>
   <div class="progress-trophy">🏆</div>
 </div>
+<div class="arg-flag-strip" id="arg-flag-strip"></div>
+<div class="arg-stars" id="arg-stars">⭐⭐⭐⭐</div>
+
+<!-- Video overlay easter egg -->
+<div class="arg-video-overlay" id="arg-video-overlay">
+  <video class="arg-video" id="arg-video" autoplay playsinline muted>
+    <source src="Messi-4Estrellas.mp4" type="video/mp4">
+  </video>
+</div>
+
 
 <div id="shortcut-instructions" class="shortcut-instructions" style="display:none;">
   <div class="shortcut-instructions-box">
@@ -3282,7 +3319,15 @@ function buildScorersRanking(allEvents) {
     if (!tally[key]) tally[key] = { player: e.player, team: e.team, goals: 0 };
     tally[key].goals++;
   });
-  return Object.values(tally).sort((a, b) => b.goals - a.goals);
+  return Object.values(tally).sort((a, b) => {
+    if (b.goals !== a.goals) return b.goals - a.goals;
+    // Easter egg del creador: si hay empate, Messi va primero
+    const isMessiA = a.player.toLowerCase().includes('messi');
+    const isMessiB = b.player.toLowerCase().includes('messi');
+    if (isMessiA && !isMessiB) return -1;
+    if (isMessiB && !isMessiA) return 1;
+    return 0;
+  });
 }
 
 // Tarjetas + lógica de suspensión por amarillas acumuladas, según la regla
@@ -4559,6 +4604,63 @@ castTvBtn.addEventListener('click', () => {
 });
 
 applyTranslations();
+
+// ── Easter Egg: Argentina Campeón ───────────────────────────────────────────
+function checkArgentinaCampeon() {
+  // Buscar el partido Final (match 104) en liveData
+  const finalCal = FINAL_CALENDAR[0];
+  if (!finalCal) return;
+
+  const { teamA, teamB } = resolveKnockoutSides(finalCal);
+  const liveMatch = getLiveData({ home: teamA, away: teamB });
+  if (!liveMatch) return;
+
+  const status = liveMatch.status;
+  const isDone = ['FT','AET','PEN'].includes(status);
+  if (!isDone) return;
+
+  const homeGoals = liveMatch.homeGoals ?? 0;
+  const awayGoals = liveMatch.awayGoals ?? 0;
+
+  // Penales
+  const homePen = liveMatch.penaltyHome ?? homeGoals;
+  const awayPen = liveMatch.penaltyAway ?? awayGoals;
+
+  const homeWins = homePen > awayPen;
+  const winner = homeWins ? teamA : teamB;
+
+  if (winner === 'ARGENTINA') {
+    triggerArgentinaCampeon(false);
+  }
+}
+
+function triggerArgentinaCampeon(isDebug) {
+  // Bandera y estrellas — siempre visibles si Argentina es campeón
+  document.getElementById('arg-flag-strip').style.display = 'block';
+  document.getElementById('arg-stars').style.display = 'block';
+
+  // Video — solo una vez por sesión
+  const seen = sessionStorage.getItem('arg-video-seen');
+  if (!seen || isDebug) {
+    sessionStorage.setItem('arg-video-seen', '1');
+    const overlay = document.getElementById('arg-video-overlay');
+    const video   = document.getElementById('arg-video');
+    overlay.classList.add('active');
+    video.play();
+    // Cerrar al tocar o al terminar el video
+    overlay.addEventListener('click', () => {
+      overlay.classList.remove('active');
+      video.pause();
+      video.currentTime = 0;
+    }, { once: true });
+    video.addEventListener('ended', () => {
+      overlay.classList.remove('active');
+    }, { once: true });
+  }
+}
+
+// Ejecutar al cargar y cada vez que llegan datos nuevos
+setTimeout(checkArgentinaCampeon, 2000);
 
 </script>
 </body>
