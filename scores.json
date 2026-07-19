@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-19T21:11:12.690120Z",
+  "updated": "2026-07-19T21:12:12.283320Z",
   "matches": {
     "MEXICO-SOUTH AFRICA": {
       "fixtureId": 1489369,
@@ -39962,6 +39962,14 @@
           "team": "ARGENTINA",
           "minute": 82,
           "extra": null
+        },
+        {
+          "type": "Card",
+          "detail": "Yellow Card",
+          "player": "Cristian Romero",
+          "team": "ARGENTINA",
+          "minute": 90,
+          "extra": 5
         }
       ],
       "substitutions": {
