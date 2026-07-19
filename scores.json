@@ -1,13 +1,13 @@
 {
-  "updated": "2026-07-19T21:38:12.017608Z",
+  "updated": "2026-07-19T21:39:12.199032Z",
   "matches": {
     "SPAIN-ARGENTINA": {
       "fixtureId": 1591866,
       "round": "Final",
       "homeGoals": 0,
       "awayGoals": 0,
-      "status": "ET",
-      "elapsed": 108,
+      "status": "BT",
+      "elapsed": null,
       "kickoffUTC": "2026-07-19T19:00:00+00:00",
       "referee": "Slavko Vin\u010di\u0107, Slovenia",
       "events": [
