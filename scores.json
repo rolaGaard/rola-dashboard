@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-19T20:34:14.924932Z",
+  "updated": "2026-07-19T20:35:18.276936Z",
   "matches": {
     "MEXICO-SOUTH AFRICA": {
       "fixtureId": 1489369,
@@ -39935,7 +39935,7 @@
       "homeGoals": 0,
       "awayGoals": 0,
       "status": "2H",
-      "elapsed": 57,
+      "elapsed": 58,
       "kickoffUTC": "2026-07-19T19:00:00+00:00",
       "referee": "Slavko Vin\u010di\u0107, Slovenia",
       "events": [
@@ -39967,6 +39967,11 @@
             "out": "Nicol\u00e1s Iv\u00e1n Gonzalez",
             "in": "Leandro Paredes",
             "minute": 45
+          },
+          {
+            "out": "Gonzalo Montiel",
+            "in": "Nahuel Molina",
+            "minute": 58
           }
         ]
       },
