@@ -1,418 +1,6 @@
 {
-  "updated": "2026-07-19T22:03:10.223904Z",
+  "updated": "2026-07-19T22:04:12.777633Z",
   "matches": {
-    "SPAIN-ARGENTINA": {
-      "fixtureId": 1591866,
-      "round": "Final",
-      "homeGoals": 1,
-      "awayGoals": 0,
-      "status": "BT",
-      "elapsed": null,
-      "kickoffUTC": "2026-07-19T19:00:00+00:00",
-      "referee": "Slavko Vin\u010di\u0107, Slovenia",
-      "events": [
-        {
-          "type": "Card",
-          "detail": "Yellow Card",
-          "player": "Lisandro Mart\u00ednez",
-          "team": "ARGENTINA",
-          "minute": 41,
-          "extra": null
-        },
-        {
-          "type": "Card",
-          "detail": "Yellow Card",
-          "player": "Leandro Paredes",
-          "team": "ARGENTINA",
-          "minute": 52,
-          "extra": null
-        },
-        {
-          "type": "Card",
-          "detail": "Yellow Card",
-          "player": "Enzo Fern\u00e1ndez",
-          "team": "ARGENTINA",
-          "minute": 82,
-          "extra": null
-        },
-        {
-          "type": "Card",
-          "detail": "Yellow Card",
-          "player": "Cristian Romero",
-          "team": "ARGENTINA",
-          "minute": 90,
-          "extra": 2
-        },
-        {
-          "type": "Card",
-          "detail": "Yellow Card",
-          "player": "Lionel Sebasti\u00e1n Scaloni",
-          "team": "ARGENTINA",
-          "minute": 104,
-          "extra": null
-        },
-        {
-          "type": "Goal",
-          "detail": "Normal Goal",
-          "player": "Ferr\u00e1n Torres",
-          "team": "SPAIN",
-          "minute": 106,
-          "extra": null
-        },
-        {
-          "type": "Card",
-          "detail": "Yellow Card",
-          "player": "Alexis Mac Allister",
-          "team": "ARGENTINA",
-          "minute": 111,
-          "extra": null
-        }
-      ],
-      "substitutions": {
-        "ARGENTINA": [
-          {
-            "out": "Lisandro Mart\u00ednez",
-            "in": "Nicol\u00e1s Otamendi",
-            "minute": 44
-          },
-          {
-            "out": "Nicol\u00e1s Iv\u00e1n Gonzalez",
-            "in": "Leandro Paredes",
-            "minute": 45
-          },
-          {
-            "out": "Gonzalo Montiel",
-            "in": "Nahuel Molina",
-            "minute": 58
-          },
-          {
-            "out": "Cristian Romero",
-            "in": "Facundo Medina",
-            "minute": 70
-          },
-          {
-            "out": "Rodrigo De Paul",
-            "in": "Giuliano Simeone Baldini",
-            "minute": 70
-          },
-          {
-            "out": "Juli\u00e1n \u00c1lvarez",
-            "in": "Marcos Senesi",
-            "minute": 102
-          }
-        ],
-        "SPAIN": [
-          {
-            "out": "Mikel Oyarzabal",
-            "in": "Ferr\u00e1n Torres",
-            "minute": 62
-          },
-          {
-            "out": "Fabi\u00e1n Ruiz",
-            "in": "Pedri",
-            "minute": 62
-          },
-          {
-            "out": "Alejandro Baena Rodr\u00edguez",
-            "in": "Nico Williams",
-            "minute": 75
-          },
-          {
-            "out": "Daniel Olmo Carvajal",
-            "in": "Mikel Merino",
-            "minute": 75
-          },
-          {
-            "out": "Rodrigo Hernandez Cascante",
-            "in": "Mart\u00edn Zubimendi",
-            "minute": 99
-          },
-          {
-            "out": "Aymeric Laporte",
-            "in": "Eric Garc\u00eda",
-            "minute": 99
-          }
-        ]
-      },
-      "lineups": {
-        "SPAIN": {
-          "formation": "4-2-3-1",
-          "coach": "Luis de la Fuente",
-          "startXI": [
-            {
-              "name": "Unai Sim\u00f3n",
-              "number": 23,
-              "pos": "G"
-            },
-            {
-              "name": "Pedro Porro",
-              "number": 12,
-              "pos": "D"
-            },
-            {
-              "name": "Pau Cubars\u00ed",
-              "number": 22,
-              "pos": "D"
-            },
-            {
-              "name": "Aymeric Laporte",
-              "number": 14,
-              "pos": "D"
-            },
-            {
-              "name": "Marc Cucurella",
-              "number": 24,
-              "pos": "D"
-            },
-            {
-              "name": "Rodri",
-              "number": 16,
-              "pos": "M"
-            },
-            {
-              "name": "Fabi\u00e1n Ruiz",
-              "number": 8,
-              "pos": "M"
-            },
-            {
-              "name": "Lamine Yamal",
-              "number": 19,
-              "pos": "M"
-            },
-            {
-              "name": "Dani Olmo",
-              "number": 10,
-              "pos": "M"
-            },
-            {
-              "name": "Alex Baena",
-              "number": 15,
-              "pos": "M"
-            },
-            {
-              "name": "Mikel Oyarzabal",
-              "number": 21,
-              "pos": "F"
-            }
-          ],
-          "substitutes": [
-            {
-              "name": "David Raya",
-              "number": 1,
-              "pos": "G"
-            },
-            {
-              "name": "Joan Garc\u00eda",
-              "number": 13,
-              "pos": "G"
-            },
-            {
-              "name": "Eric Garc\u00eda",
-              "number": 4,
-              "pos": "D"
-            },
-            {
-              "name": "Marc Pubill",
-              "number": 2,
-              "pos": "D"
-            },
-            {
-              "name": "Marcos Llorente",
-              "number": 5,
-              "pos": "M"
-            },
-            {
-              "name": "Alejandro Grimaldo",
-              "number": 3,
-              "pos": "D"
-            },
-            {
-              "name": "Mart\u00edn Zubimendi",
-              "number": 18,
-              "pos": "M"
-            },
-            {
-              "name": "Mikel Merino",
-              "number": 6,
-              "pos": "M"
-            },
-            {
-              "name": "Nico Williams",
-              "number": 17,
-              "pos": "F"
-            },
-            {
-              "name": "Pablo Gavi",
-              "number": 9,
-              "pos": "M"
-            },
-            {
-              "name": "Pedri",
-              "number": 20,
-              "pos": "M"
-            },
-            {
-              "name": "Borja Iglesias",
-              "number": 26,
-              "pos": "F"
-            },
-            {
-              "name": "Ferran Torres",
-              "number": 7,
-              "pos": "F"
-            },
-            {
-              "name": "V\u00edctor Mu\u00f1oz",
-              "number": 25,
-              "pos": "F"
-            },
-            {
-              "name": "Y\u00e9remy Pino",
-              "number": 11,
-              "pos": "M"
-            }
-          ]
-        },
-        "ARGENTINA": {
-          "formation": "4-4-2",
-          "coach": "Lionel Scaloni",
-          "startXI": [
-            {
-              "name": "Emiliano Mart\u00ednez",
-              "number": 23,
-              "pos": "G"
-            },
-            {
-              "name": "Gonzalo Montiel",
-              "number": 4,
-              "pos": "D"
-            },
-            {
-              "name": "Cristian Romero",
-              "number": 13,
-              "pos": "D"
-            },
-            {
-              "name": "Lisandro Mart\u00ednez",
-              "number": 6,
-              "pos": "D"
-            },
-            {
-              "name": "Nicol\u00e1s Tagliafico",
-              "number": 3,
-              "pos": "D"
-            },
-            {
-              "name": "Rodrigo De Paul",
-              "number": 7,
-              "pos": "M"
-            },
-            {
-              "name": "Alexis Mac Allister",
-              "number": 20,
-              "pos": "M"
-            },
-            {
-              "name": "Enzo Fern\u00e1ndez",
-              "number": 24,
-              "pos": "M"
-            },
-            {
-              "name": "Nicol\u00e1s Gonz\u00e1lez",
-              "number": 15,
-              "pos": "M"
-            },
-            {
-              "name": "Lionel Messi",
-              "number": 10,
-              "pos": "F"
-            },
-            {
-              "name": "Juli\u00e1n Alvarez",
-              "number": 9,
-              "pos": "F"
-            }
-          ],
-          "substitutes": [
-            {
-              "name": "Ger\u00f3nimo Rulli",
-              "number": 12,
-              "pos": "G"
-            },
-            {
-              "name": "Juan Musso",
-              "number": 1,
-              "pos": "G"
-            },
-            {
-              "name": "Facundo Medina",
-              "number": 25,
-              "pos": "D"
-            },
-            {
-              "name": "Marcos Senesi",
-              "number": 2,
-              "pos": "D"
-            },
-            {
-              "name": "Nicol\u00e1s Otamendi",
-              "number": 19,
-              "pos": "D"
-            },
-            {
-              "name": "Nahuel Molina",
-              "number": 26,
-              "pos": "D"
-            },
-            {
-              "name": "Exequiel Palacios",
-              "number": 14,
-              "pos": "M"
-            },
-            {
-              "name": "Thiago Almada",
-              "number": 16,
-              "pos": "M"
-            },
-            {
-              "name": "Valent\u00edn Barco",
-              "number": 8,
-              "pos": "M"
-            },
-            {
-              "name": "Nico Paz",
-              "number": 18,
-              "pos": "F"
-            },
-            {
-              "name": "Giuliano Simeone",
-              "number": 17,
-              "pos": "F"
-            },
-            {
-              "name": "Giovani Lo Celso",
-              "number": 11,
-              "pos": "M"
-            },
-            {
-              "name": "Leandro Paredes",
-              "number": 5,
-              "pos": "M"
-            },
-            {
-              "name": "Jos\u00e9 Manuel L\u00f3pez",
-              "number": 21,
-              "pos": "F"
-            },
-            {
-              "name": "Lautaro Mart\u00ednez",
-              "number": 22,
-              "pos": "F"
-            }
-          ]
-        }
-      }
-    },
     "MEXICO-SOUTH AFRICA": {
       "fixtureId": 1489369,
       "round": "Group Stage - 1",
@@ -40335,6 +39923,418 @@
             {
               "name": "Noni Madueke",
               "number": 20,
+              "pos": "F"
+            }
+          ]
+        }
+      }
+    },
+    "SPAIN-ARGENTINA": {
+      "fixtureId": 1591866,
+      "round": "Final",
+      "homeGoals": 1,
+      "awayGoals": 0,
+      "status": "AET",
+      "elapsed": 120,
+      "kickoffUTC": "2026-07-19T19:00:00+00:00",
+      "referee": "Slavko Vin\u010di\u0107, Slovenia",
+      "events": [
+        {
+          "type": "Card",
+          "detail": "Yellow Card",
+          "player": "Lisandro Mart\u00ednez",
+          "team": "ARGENTINA",
+          "minute": 41,
+          "extra": null
+        },
+        {
+          "type": "Card",
+          "detail": "Yellow Card",
+          "player": "Leandro Paredes",
+          "team": "ARGENTINA",
+          "minute": 52,
+          "extra": null
+        },
+        {
+          "type": "Card",
+          "detail": "Yellow Card",
+          "player": "Enzo Fern\u00e1ndez",
+          "team": "ARGENTINA",
+          "minute": 82,
+          "extra": null
+        },
+        {
+          "type": "Card",
+          "detail": "Yellow Card",
+          "player": "Cristian Romero",
+          "team": "ARGENTINA",
+          "minute": 90,
+          "extra": 2
+        },
+        {
+          "type": "Card",
+          "detail": "Yellow Card",
+          "player": "Lionel Sebasti\u00e1n Scaloni",
+          "team": "ARGENTINA",
+          "minute": 104,
+          "extra": null
+        },
+        {
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "player": "Ferr\u00e1n Torres",
+          "team": "SPAIN",
+          "minute": 106,
+          "extra": null
+        },
+        {
+          "type": "Card",
+          "detail": "Yellow Card",
+          "player": "Alexis Mac Allister",
+          "team": "ARGENTINA",
+          "minute": 111,
+          "extra": null
+        }
+      ],
+      "substitutions": {
+        "ARGENTINA": [
+          {
+            "out": "Lisandro Mart\u00ednez",
+            "in": "Nicol\u00e1s Otamendi",
+            "minute": 44
+          },
+          {
+            "out": "Nicol\u00e1s Iv\u00e1n Gonzalez",
+            "in": "Leandro Paredes",
+            "minute": 45
+          },
+          {
+            "out": "Gonzalo Montiel",
+            "in": "Nahuel Molina",
+            "minute": 58
+          },
+          {
+            "out": "Cristian Romero",
+            "in": "Facundo Medina",
+            "minute": 70
+          },
+          {
+            "out": "Rodrigo De Paul",
+            "in": "Giuliano Simeone Baldini",
+            "minute": 70
+          },
+          {
+            "out": "Juli\u00e1n \u00c1lvarez",
+            "in": "Marcos Senesi",
+            "minute": 102
+          }
+        ],
+        "SPAIN": [
+          {
+            "out": "Mikel Oyarzabal",
+            "in": "Ferr\u00e1n Torres",
+            "minute": 62
+          },
+          {
+            "out": "Fabi\u00e1n Ruiz",
+            "in": "Pedri",
+            "minute": 62
+          },
+          {
+            "out": "Alejandro Baena Rodr\u00edguez",
+            "in": "Nico Williams",
+            "minute": 75
+          },
+          {
+            "out": "Daniel Olmo Carvajal",
+            "in": "Mikel Merino",
+            "minute": 75
+          },
+          {
+            "out": "Rodrigo Hernandez Cascante",
+            "in": "Mart\u00edn Zubimendi",
+            "minute": 99
+          },
+          {
+            "out": "Aymeric Laporte",
+            "in": "Eric Garc\u00eda",
+            "minute": 99
+          }
+        ]
+      },
+      "lineups": {
+        "SPAIN": {
+          "formation": "4-2-3-1",
+          "coach": "Luis de la Fuente",
+          "startXI": [
+            {
+              "name": "Unai Sim\u00f3n",
+              "number": 23,
+              "pos": "G"
+            },
+            {
+              "name": "Pedro Porro",
+              "number": 12,
+              "pos": "D"
+            },
+            {
+              "name": "Pau Cubars\u00ed",
+              "number": 22,
+              "pos": "D"
+            },
+            {
+              "name": "Aymeric Laporte",
+              "number": 14,
+              "pos": "D"
+            },
+            {
+              "name": "Marc Cucurella",
+              "number": 24,
+              "pos": "D"
+            },
+            {
+              "name": "Rodri",
+              "number": 16,
+              "pos": "M"
+            },
+            {
+              "name": "Fabi\u00e1n Ruiz",
+              "number": 8,
+              "pos": "M"
+            },
+            {
+              "name": "Lamine Yamal",
+              "number": 19,
+              "pos": "M"
+            },
+            {
+              "name": "Dani Olmo",
+              "number": 10,
+              "pos": "M"
+            },
+            {
+              "name": "Alex Baena",
+              "number": 15,
+              "pos": "M"
+            },
+            {
+              "name": "Mikel Oyarzabal",
+              "number": 21,
+              "pos": "F"
+            }
+          ],
+          "substitutes": [
+            {
+              "name": "David Raya",
+              "number": 1,
+              "pos": "G"
+            },
+            {
+              "name": "Joan Garc\u00eda",
+              "number": 13,
+              "pos": "G"
+            },
+            {
+              "name": "Eric Garc\u00eda",
+              "number": 4,
+              "pos": "D"
+            },
+            {
+              "name": "Marc Pubill",
+              "number": 2,
+              "pos": "D"
+            },
+            {
+              "name": "Marcos Llorente",
+              "number": 5,
+              "pos": "M"
+            },
+            {
+              "name": "Alejandro Grimaldo",
+              "number": 3,
+              "pos": "D"
+            },
+            {
+              "name": "Mart\u00edn Zubimendi",
+              "number": 18,
+              "pos": "M"
+            },
+            {
+              "name": "Mikel Merino",
+              "number": 6,
+              "pos": "M"
+            },
+            {
+              "name": "Nico Williams",
+              "number": 17,
+              "pos": "F"
+            },
+            {
+              "name": "Pablo Gavi",
+              "number": 9,
+              "pos": "M"
+            },
+            {
+              "name": "Pedri",
+              "number": 20,
+              "pos": "M"
+            },
+            {
+              "name": "Borja Iglesias",
+              "number": 26,
+              "pos": "F"
+            },
+            {
+              "name": "Ferran Torres",
+              "number": 7,
+              "pos": "F"
+            },
+            {
+              "name": "V\u00edctor Mu\u00f1oz",
+              "number": 25,
+              "pos": "F"
+            },
+            {
+              "name": "Y\u00e9remy Pino",
+              "number": 11,
+              "pos": "M"
+            }
+          ]
+        },
+        "ARGENTINA": {
+          "formation": "4-4-2",
+          "coach": "Lionel Scaloni",
+          "startXI": [
+            {
+              "name": "Emiliano Mart\u00ednez",
+              "number": 23,
+              "pos": "G"
+            },
+            {
+              "name": "Gonzalo Montiel",
+              "number": 4,
+              "pos": "D"
+            },
+            {
+              "name": "Cristian Romero",
+              "number": 13,
+              "pos": "D"
+            },
+            {
+              "name": "Lisandro Mart\u00ednez",
+              "number": 6,
+              "pos": "D"
+            },
+            {
+              "name": "Nicol\u00e1s Tagliafico",
+              "number": 3,
+              "pos": "D"
+            },
+            {
+              "name": "Rodrigo De Paul",
+              "number": 7,
+              "pos": "M"
+            },
+            {
+              "name": "Alexis Mac Allister",
+              "number": 20,
+              "pos": "M"
+            },
+            {
+              "name": "Enzo Fern\u00e1ndez",
+              "number": 24,
+              "pos": "M"
+            },
+            {
+              "name": "Nicol\u00e1s Gonz\u00e1lez",
+              "number": 15,
+              "pos": "M"
+            },
+            {
+              "name": "Lionel Messi",
+              "number": 10,
+              "pos": "F"
+            },
+            {
+              "name": "Juli\u00e1n Alvarez",
+              "number": 9,
+              "pos": "F"
+            }
+          ],
+          "substitutes": [
+            {
+              "name": "Ger\u00f3nimo Rulli",
+              "number": 12,
+              "pos": "G"
+            },
+            {
+              "name": "Juan Musso",
+              "number": 1,
+              "pos": "G"
+            },
+            {
+              "name": "Facundo Medina",
+              "number": 25,
+              "pos": "D"
+            },
+            {
+              "name": "Marcos Senesi",
+              "number": 2,
+              "pos": "D"
+            },
+            {
+              "name": "Nicol\u00e1s Otamendi",
+              "number": 19,
+              "pos": "D"
+            },
+            {
+              "name": "Nahuel Molina",
+              "number": 26,
+              "pos": "D"
+            },
+            {
+              "name": "Exequiel Palacios",
+              "number": 14,
+              "pos": "M"
+            },
+            {
+              "name": "Thiago Almada",
+              "number": 16,
+              "pos": "M"
+            },
+            {
+              "name": "Valent\u00edn Barco",
+              "number": 8,
+              "pos": "M"
+            },
+            {
+              "name": "Nico Paz",
+              "number": 18,
+              "pos": "F"
+            },
+            {
+              "name": "Giuliano Simeone",
+              "number": 17,
+              "pos": "F"
+            },
+            {
+              "name": "Giovani Lo Celso",
+              "number": 11,
+              "pos": "M"
+            },
+            {
+              "name": "Leandro Paredes",
+              "number": 5,
+              "pos": "M"
+            },
+            {
+              "name": "Jos\u00e9 Manuel L\u00f3pez",
+              "number": 21,
+              "pos": "F"
+            },
+            {
+              "name": "Lautaro Mart\u00ednez",
+              "number": 22,
               "pos": "F"
             }
           ]
