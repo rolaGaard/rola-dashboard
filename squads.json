@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-13T12:08:55.824913Z",
+  "updated": "2026-07-19T10:36:53.454870Z",
   "squads": {
     "BELGIUM": [
       {
@@ -2608,7 +2608,7 @@
       {
         "name": "J. Álvarez",
         "number": 9,
-        "position": "Attacker"
+        "position": "Midfielder"
       },
       {
         "name": "N. Paz",
@@ -3166,7 +3166,7 @@
       {
         "name": "Mohamed Salah",
         "number": 10,
-        "position": "Midfielder"
+        "position": "Attacker"
       }
     ],
     "CZECHIA": [
