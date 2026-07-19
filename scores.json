@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-19T20:47:10.968288Z",
+  "updated": "2026-07-19T20:48:13.307252Z",
   "matches": {
     "MEXICO-SOUTH AFRICA": {
       "fixtureId": 1489369,
@@ -39935,7 +39935,7 @@
       "homeGoals": 0,
       "awayGoals": 0,
       "status": "2H",
-      "elapsed": 70,
+      "elapsed": 71,
       "kickoffUTC": "2026-07-19T19:00:00+00:00",
       "referee": "Slavko Vin\u010di\u0107, Slovenia",
       "events": [
@@ -39972,6 +39972,16 @@
             "out": "Gonzalo Montiel",
             "in": "Nahuel Molina",
             "minute": 58
+          },
+          {
+            "out": "Cristian Romero",
+            "in": "Facundo Medina",
+            "minute": 70
+          },
+          {
+            "out": "Rodrigo De Paul",
+            "in": "Giuliano Simeone Baldini",
+            "minute": 70
           }
         ],
         "SPAIN": [
