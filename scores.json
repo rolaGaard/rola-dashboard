@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-19T19:50:26.654835Z",
+  "updated": "2026-07-19T19:51:12.148380Z",
   "matches": {
     "SPAIN-ARGENTINA": {
       "fixtureId": 1591866,
@@ -20,6 +20,15 @@
           "extra": null
         }
       ],
+      "substitutions": {
+        "ARGENTINA": [
+          {
+            "out": "Lisandro Mart\u00ednez",
+            "in": "Nicol\u00e1s Otamendi",
+            "minute": 44
+          }
+        ]
+      },
       "lineups": {
         "SPAIN": {
           "formation": "4-2-3-1",
