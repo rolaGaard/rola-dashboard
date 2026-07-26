@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-19T10:36:53.454870Z",
+  "updated": "2026-07-26T10:46:12.287344Z",
   "squads": {
     "BELGIUM": [
       {
@@ -1171,7 +1171,7 @@
       {
         "name": "M. Rashford",
         "number": 11,
-        "position": "Attacker"
+        "position": "Midfielder"
       },
       {
         "name": "B. Saka",
@@ -2593,7 +2593,7 @@
       {
         "name": "N. González",
         "number": 15,
-        "position": "Attacker"
+        "position": "Midfielder"
       },
       {
         "name": "R. De Paul",
